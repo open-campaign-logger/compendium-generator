@@ -12,11 +12,14 @@ Whether you're in the middle of an epic campaign or just getting started with yo
 * [Microsoft SQL Server Express 2022](https://www.microsoft.com/en-us/download/details.aspx?id=104781)
 * [Microsoft SQL Server Management Studio](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
 
-*Note: All tools are free to download and use.*
+*All tools are free to download and use.*
 
 ## Database Setup
 1. Open SQL Server Management Studio (SSMS)
-
+2. Connect to your SQLEXPRESS server
+![S S M S](doc/SSMS.png)
+2. Create a new database named MonsterDb
+![Monster D B](doc/MonsterDB.png)
 
 ## Workspace Setup
 
