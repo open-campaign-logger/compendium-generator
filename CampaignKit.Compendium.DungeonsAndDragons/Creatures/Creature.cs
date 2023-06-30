@@ -14,7 +14,7 @@
 // limitations under the License.
 // </copyright>
 
-namespace CampaignKit.Compendium.Core.Models.Creatures
+namespace CampaignKit.Compendium.DungeonsAndDragons.Creatures
 {
     using System;
     using System.Collections.Generic;
@@ -29,12 +29,6 @@ namespace CampaignKit.Compendium.Core.Models.Creatures
     /// </summary>
     public class Creature
     {
-        // ************************************************************* //
-        // ************************************************************* //
-        //                  Part II - Tombstone Info
-        // ************************************************************* //
-        // ************************************************************* //
-
         /// <summary>
         /// Gets or sets acrobatics skill bonus.
         /// Leave zero if creature does not have the skill specified.
@@ -70,12 +64,6 @@ namespace CampaignKit.Compendium.Core.Models.Creatures
         /// Gets or sets armor class of the creature.  Example: 17.
         /// </summary>
         public int ArmorClass { get; set; } = 0;
-
-        // ************************************************************* //
-        // ************************************************************* //
-        //                  Part III - AC, HP, Speed
-        // ************************************************************* //
-        // ************************************************************* //
 
         /// <summary>
         /// Gets or sets type of armor worn by the creature.  Example: natural armor.
@@ -331,18 +319,6 @@ namespace CampaignKit.Compendium.Core.Models.Creatures
         /// </summary>
         public int PassivePerception { get; set; } = 0;
 
-        // ************************************************************* //
-        // ************************************************************* //
-        //      Part VI - Resistances, Vulnerabilities, and Immunities
-        // ************************************************************* //
-        // ************************************************************* //
-
-        // ************************************************************* //
-        // ************************************************************* //
-        //                    Part VII - Skills
-        // ************************************************************* //
-        // ************************************************************* //
-
         /// <summary>
         /// Gets or sets perception skill bonus.
         /// Leave zero if creature does not have the skill specified.
@@ -474,23 +450,10 @@ namespace CampaignKit.Compendium.Core.Models.Creatures
         /// </summary>
         public int Walk { get; set; } = 0;
 
-        // ************************************************************* //
-        // ************************************************************* //
-        //                  Part IV - Ability Scores
-        // ************************************************************* //
-        // ************************************************************* //
-
         /// <summary>
         /// Gets or sets wisdom of the creature.  Example: 15.
         /// </summary>
         public int Wisdom { get; set; } = 0;
-
-        // ************************************************************* //
-        // ************************************************************* //
-        //           Part V - Saving Throws, Senses, Language,
-        //                 Challenge, Proficiency Bonus
-        // ************************************************************* //
-        // ************************************************************* //
 
         /// <summary>
         /// Gets or sets wisdom saving throw of the creature.
@@ -498,12 +461,6 @@ namespace CampaignKit.Compendium.Core.Models.Creatures
         /// Example: 6.
         /// </summary>
         public int WisdomSave { get; set; } = 0;
-
-        // ************************************************************* //
-        // ************************************************************* //
-        //                  Part VIII - Utility Methods
-        // ************************************************************* //
-        // ************************************************************* //
 
         /// <summary>
         /// Calculate the ability score bonus.

@@ -1,4 +1,4 @@
-﻿// <copyright file="CreatureReaction.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="CreatureSpecialAbility.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,40 +14,41 @@
 // limitations under the License.
 // </copyright>
 
-namespace CampaignKit.Compendium.Core.Models.Creatures
+namespace CampaignKit.Compendium.DungeonsAndDragons.Creatures
 {
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+
     using Newtonsoft.Json;
 
     /// <summary>
-    /// Represents a creature's reaction in a Dungeons &amp; Dragons game.
-    /// A reaction is an instantaneous response to a trigger of some kind which can occur on the creature's turn or someone else's.
+    /// Represents a creature's Special Ability entity in the Compendium Generator database.
+    /// This class is used to represent a particular special ability that a creature can perform.
     /// </summary>
-    public class CreatureReaction
+    public class CreatureSpecialAbility
     {
         /// <summary>
-        /// Gets or sets the creature which can perform this reaction.
-        /// This property is ignored during JSON serialization and deserialization.
+        /// Gets or sets the creature associated with this Special Ability.
+        /// This property is marked to be ignored by Json serialization.
         /// </summary>
         [JsonIgnore]
         public Creature? Creature { get; set; }
 
         /// <summary>
-        /// Gets or sets the identifier of the creature which can perform this reaction.
-        /// This property is ignored during JSON serialization and deserialization.
+        /// Gets or sets the creature Id associated with this creature's Special Ability.
+        /// This property is marked to be ignored by Json serialization.
         /// </summary>
         [JsonIgnore]
         public int CreatureId { get; set; }
 
         /// <summary>
-        /// Gets or sets the description of this reaction.
+        /// Gets or sets the description of this creature's Special Ability.
         /// </summary>
         public string Description { get; set; } = string.Empty;
 
         /// <summary>
-        /// Gets or sets the identifier of this reaction.
-        /// This property is ignored during JSON serialization and deserialization.
+        /// Gets or sets the unique identifier for this creature's Special Ability.
+        /// This property is marked to be ignored by Json serialization.
         /// </summary>
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -55,7 +56,7 @@ namespace CampaignKit.Compendium.Core.Models.Creatures
         public int Id { get; set; }
 
         /// <summary>
-        /// Gets or sets the name of this reaction.
+        /// Gets or sets the name of this creature's Special Ability.
         /// </summary>
         public string Name { get; set; } = string.Empty;
 
@@ -63,22 +64,22 @@ namespace CampaignKit.Compendium.Core.Models.Creatures
         /// Determines whether the specified object is equal to the current object.
         /// </summary>
         /// <param name="obj">The object to compare with the current object.</param>
-        /// <returns>true if the specified object is equal to the current object; otherwise, false.</returns>
+        /// <returns>True if the specified object is equal to the current object; otherwise, false.</returns>
         public override bool Equals(object? obj)
         {
-            if (obj != null && obj is CreatureReaction)
+            if (obj == null || obj is not CreatureSpecialAbility)
             {
-                if (obj is not CreatureReaction other)
-                {
-                    return false;
-                }
-                else
-                {
-                    return this.Name.Equals(other.Name);
-                }
+                return false;
             }
 
-            return false;
+            if (obj is not CreatureSpecialAbility other)
+            {
+                return false;
+            }
+            else
+            {
+                return this.Name.Equals(other.Name);
+            }
         }
 
         /// <summary>

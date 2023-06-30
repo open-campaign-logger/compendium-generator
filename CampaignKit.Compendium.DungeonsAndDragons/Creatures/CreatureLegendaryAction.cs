@@ -1,4 +1,4 @@
-﻿// <copyright file="CreatureAction.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="CreatureLegendaryAction.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,40 +14,40 @@
 // limitations under the License.
 // </copyright>
 
-namespace CampaignKit.Compendium.Core.Models.Creatures
+namespace CampaignKit.Compendium.DungeonsAndDragons.Creatures
 {
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-
     using Newtonsoft.Json;
 
     /// <summary>
-    /// This class is used to represent a particular action that a creature can perform.
+    /// Represents a creature LegendaryAction in a Dungeons &amp; Dragons game.
+    /// A LegendaryAction represents a special action that can be performed by a legendary creature.
     /// </summary>
-    public class CreatureAction
+    public class CreatureLegendaryAction
     {
         /// <summary>
-        /// Gets or sets the creature associated with this creature Action.
-        /// This property is marked to be ignored by Json serialization.
+        /// Gets or sets the creature which can perform this legendary action.
+        /// This property is ignored during JSON serialization and deserialization.
         /// </summary>
         [JsonIgnore]
         public Creature? Creature { get; set; }
 
         /// <summary>
-        /// Gets or sets the creature Id associated with this creature Action.
-        /// This property is marked to be ignored by Json serialization.
+        /// Gets or sets the identifier of the creature which can perform this legendary action.
+        /// This property is ignored during JSON serialization and deserialization.
         /// </summary>
         [JsonIgnore]
         public int CreatureId { get; set; }
 
         /// <summary>
-        /// Gets or sets the description of this creature Action.
+        /// Gets or sets the description of this legendary action.
         /// </summary>
         public string Description { get; set; } = string.Empty;
 
         /// <summary>
-        /// Gets or sets the unique identifier for this creature Action.
-        /// This property is marked to be ignored by Json serialization.
+        /// Gets or sets the identifier of this legendary action.
+        /// This property is ignored during JSON serialization and deserialization.
         /// </summary>
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -55,7 +55,7 @@ namespace CampaignKit.Compendium.Core.Models.Creatures
         public int Id { get; set; }
 
         /// <summary>
-        /// Gets or sets the name of this creature Action.
+        /// Gets or sets the name of this legendary action.
         /// </summary>
         public string Name { get; set; } = string.Empty;
 
@@ -63,15 +63,15 @@ namespace CampaignKit.Compendium.Core.Models.Creatures
         /// Determines whether the specified object is equal to the current object.
         /// </summary>
         /// <param name="obj">The object to compare with the current object.</param>
-        /// <returns>True if the specified object is equal to the current object; otherwise, false.</returns>
+        /// <returns>true if the specified object is equal to the current object; otherwise, false.</returns>
         public override bool Equals(object? obj)
         {
-            if (obj == null || obj is not CreatureAction)
+            if (obj == null || obj is not CreatureLegendaryAction)
             {
                 return false;
             }
 
-            if (obj is not CreatureAction other)
+            if (obj is not CreatureLegendaryAction other)
             {
                 return false;
             }

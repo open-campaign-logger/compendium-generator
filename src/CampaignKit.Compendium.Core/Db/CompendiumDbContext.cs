@@ -16,9 +16,6 @@
 
 namespace Campaign.Compendium.Core.Db
 {
-    using CampaignKit.Compendium.Core.Models;
-    using CampaignKit.Compendium.Core.Models.Creatures;
-
     using Microsoft.EntityFrameworkCore;
 
     /// <summary>
@@ -26,11 +23,6 @@ namespace Campaign.Compendium.Core.Db
     /// </summary>
     public class CompendiumDbContext : DbContext
     {
-        /// <summary>
-        /// Gets or sets the collection of Creatures in the context.
-        /// </summary>
-        public DbSet<Creature> Creatures { get; set; }
-
         /// <summary>
         /// Configures the context for use with a SQL Server database.
         /// </summary>
@@ -46,27 +38,27 @@ namespace Campaign.Compendium.Core.Db
         /// <param name="modelBuilder">The builder being used to construct the model for this context.</param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<CreatureAction>()
-                .HasOne(c => c.Creature)
-                .WithMany(p => p.Actions)
-                .HasForeignKey(p => p.CreatureId);
+            // modelBuilder.Entity<CreatureAction>()
+            //    .HasOne(c => c.Creature)
+            //    .WithMany(p => p.Actions)
+            //    .HasForeignKey(p => p.CreatureId);
 
-            modelBuilder.Entity<CreatureReaction>()
-                .HasOne(c => c.Creature)
-                .WithMany(p => p.Reactions)
-                .HasForeignKey(p => p.CreatureId);
+            // modelBuilder.Entity<CreatureReaction>()
+            //    .HasOne(c => c.Creature)
+            //    .WithMany(p => p.Reactions)
+            //    .HasForeignKey(p => p.CreatureId);
 
-            modelBuilder.Entity<CreatureSpecialAbility>()
-                .HasOne(c => c.Creature)
-                .WithMany(p => p.SpecialAbilities)
-                .HasForeignKey(p => p.CreatureId);
+            // modelBuilder.Entity<CreatureSpecialAbility>()
+            //    .HasOne(c => c.Creature)
+            //    .WithMany(p => p.SpecialAbilities)
+            //    .HasForeignKey(p => p.CreatureId);
 
-            modelBuilder.Entity<CreatureLegendaryAction>()
-                .HasOne(c => c.Creature)
-                .WithMany(p => p.LegendaryActions)
-                .HasForeignKey(p => p.CreatureId);
+            // modelBuilder.Entity<CreatureLegendaryAction>()
+            //    .HasOne(c => c.Creature)
+            //    .WithMany(p => p.LegendaryActions)
+            //    .HasForeignKey(p => p.CreatureId);
 
-            modelBuilder.Entity<CompendiumData>();
+            // modelBuilder.Entity<CompendiumData>();
         }
     }
 }
