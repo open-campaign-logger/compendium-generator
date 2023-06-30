@@ -1,4 +1,4 @@
-﻿// <copyright file="MonsterAction.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="CreatureAction.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,7 +14,7 @@
 // limitations under the License.
 // </copyright>
 
-namespace CampaignKit.Compendium.Core.Models.Monsters
+namespace CampaignKit.Compendium.Core.Models.Creatures
 {
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
@@ -22,12 +22,31 @@ namespace CampaignKit.Compendium.Core.Models.Monsters
     using Newtonsoft.Json;
 
     /// <summary>
-    /// This class is used to represent a particular action that a monster can perform.
+    /// This class is used to represent a particular action that a creature can perform.
     /// </summary>
-    public class MonsterAction
+    public class CreatureAction
     {
         /// <summary>
-        /// Gets or sets the unique identifier for this Monster Action.
+        /// Gets or sets the creature associated with this creature Action.
+        /// This property is marked to be ignored by Json serialization.
+        /// </summary>
+        [JsonIgnore]
+        public Creature? Creature { get; set; }
+
+        /// <summary>
+        /// Gets or sets the creature Id associated with this creature Action.
+        /// This property is marked to be ignored by Json serialization.
+        /// </summary>
+        [JsonIgnore]
+        public int CreatureId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the description of this creature Action.
+        /// </summary>
+        public string Description { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Gets or sets the unique identifier for this creature Action.
         /// This property is marked to be ignored by Json serialization.
         /// </summary>
         [Key]
@@ -36,28 +55,9 @@ namespace CampaignKit.Compendium.Core.Models.Monsters
         public int Id { get; set; }
 
         /// <summary>
-        /// Gets or sets the Monster Id associated with this Monster Action.
-        /// This property is marked to be ignored by Json serialization.
-        /// </summary>
-        [JsonIgnore]
-        public int MonsterId { get; set; }
-
-        /// <summary>
-        /// Gets or sets the name of this Monster Action.
+        /// Gets or sets the name of this creature Action.
         /// </summary>
         public string Name { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Gets or sets the description of this Monster Action.
-        /// </summary>
-        public string Description { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Gets or sets the Monster associated with this Monster Action.
-        /// This property is marked to be ignored by Json serialization.
-        /// </summary>
-        [JsonIgnore]
-        public Monster? Monster { get; set; }
 
         /// <summary>
         /// Determines whether the specified object is equal to the current object.
@@ -66,12 +66,12 @@ namespace CampaignKit.Compendium.Core.Models.Monsters
         /// <returns>True if the specified object is equal to the current object; otherwise, false.</returns>
         public override bool Equals(object? obj)
         {
-            if (obj == null || obj is not MonsterAction)
+            if (obj == null || obj is not CreatureAction)
             {
                 return false;
             }
 
-            if (obj is not MonsterAction other)
+            if (obj is not CreatureAction other)
             {
                 return false;
             }

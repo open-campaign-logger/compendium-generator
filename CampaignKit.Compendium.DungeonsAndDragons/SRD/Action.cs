@@ -19,7 +19,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
     using Newtonsoft.Json;
 
     /// <summary>
-    /// Represents a creature action in a Dungeons &amp; Dragons.
+    /// Represents a creature action in a Dungeons &amp; Dragons game.
     /// An Action represents what a character or creature can do during their turn in a combat scenario.
     /// </summary>
     public class Action

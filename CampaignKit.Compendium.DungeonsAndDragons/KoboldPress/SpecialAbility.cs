@@ -19,7 +19,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
     using Newtonsoft.Json;
 
     /// <summary>
-    /// Represents a creature's SpecialAbility in a Dungeons &amp; Dragons.
+    /// Represents a creature's SpecialAbility in a Dungeons &amp; Dragons game.
     /// A SpecialAbility is a unique ability that certain creatures can use.
     /// </summary>
     public class SpecialAbility

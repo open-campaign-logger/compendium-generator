@@ -19,7 +19,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
     using Newtonsoft.Json;
 
     /// <summary>
-    /// Represents a creature LegendaryAction in a Dungeons &amp; Dragons.
+    /// Represents a creature LegendaryAction in a Dungeons &amp; Dragons game.
     /// A LegendaryAction represents a special action that can be performed by a legendary creature.
     /// </summary>
     public class LegendaryAction

@@ -19,7 +19,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
     using Newtonsoft.Json;
 
     /// <summary>
-    /// Represents a creature reaction in a Dungeons &amp; Dragons.
+    /// Represents a creature reaction in a Dungeons &amp; Dragons game.
     /// A Reaction is an instant response to a trigger of some kind which can occur on your turn or on someone else's.
     /// </summary>
     public class Reaction

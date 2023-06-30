@@ -19,7 +19,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
     using Newtonsoft.Json;
 
     /// <summary>
-    /// Represents a creature's speed in a Dungeons &amp; Dragons.
+    /// Represents a creature's speed in a Dungeons &amp; Dragons game.
     /// SpeedJson is a class that describes the various movement speeds of a creature.
     /// </summary>
     public class SpeedJson
