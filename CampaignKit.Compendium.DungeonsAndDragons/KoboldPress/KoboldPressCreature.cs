@@ -16,6 +16,8 @@
 
 namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
 {
+    using CampaignKit.Compendium.DungeonsAndDragons.Generic;
+
     using Newtonsoft.Json;
 
     /// <summary>
@@ -366,5 +368,143 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
         /// </summary>
         [JsonProperty("wisdom_save")]
         public int? WisdomSave { get; set; }
+
+        /// <summary>
+        /// Creates a generic Creature object populated with values from this KoboldPressCreature object.
+        /// </summary>
+        /// <returns>Generic Creature object populated with values from this KoboldPressCreature object.</returns>
+        public Creature ToCreature()
+        {
+            var creature = new Creature()
+            {
+                Name = this.Name ?? string.Empty,
+                Size = this.Size ?? string.Empty,
+                Type = this.Type ?? string.Empty,
+                SourceDocumentTitle = "Creature Codex OGL",
+                SourceDocumentDescription = "Creature Codex Open-Gaming License Content by Kobold Press",
+                SourceDocumentVersion = "1.0",
+                LicenseName = "Open Gaming License",
+                LicenseURL = "https://koboldpress.com/kpstore/product/creature-codex-for-5th-edition-dnd/",
+                Author = "Wolfgang Baur, Dan Dillon, Richard Green, James Haeck, Chris Harris, Jeremy Hochhalter, James Introcaso, Chris Lockey, Shawn Merwin, and Jon Sawatsky",
+                Organization = "Kobold Press",
+                Copyright = "Creature Codex. © 2018 Open Design LLC; Authors Wolfgang Baur, Dan Dillon, Richard Green, James Haeck, Chris Harris, Jeremy Hochhalter, James Introcaso, Chris Lockey, Shawn Merwin, and Jon Sawatsky.",
+                RuleSystem = "Dungeons & Dragons 5e",
+                Alignment = this.Alignment ?? string.Empty,
+                ArmorClass = int.Parse(this.ArmorClass ?? "0"),
+                HitPoints = int.Parse(this.HitPoints ?? "0"),
+                HitDice = this.HitDice ?? string.Empty,
+                Walk = this.SpeedJson?.Walk ?? 0,
+                Swim = this.SpeedJson?.Swim ?? 0,
+                Fly = this.SpeedJson?.Fly ?? 0,
+                Burrow = this.SpeedJson?.Burrow ?? 0,
+                Climb = this.SpeedJson?.Climb ?? 0,
+                Hover = this.SpeedJson?.Hover ?? false,
+                Strength = int.Parse(this.Strength ?? "0"),
+                Dexterity = int.Parse(this.Dexterity ?? "0"),
+                Constitution = int.Parse(this.Constitution ?? "0"),
+                Intelligence = int.Parse(this.Intelligence ?? "0"),
+                Wisdom = int.Parse(this.Wisdom ?? "0"),
+                Charisma = int.Parse(this.Charisma ?? "0"),
+                StrengthSave = this.StrengthSave ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Strength ?? "0")),
+                DexteritySave = this.DexteritySave ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Dexterity ?? "0")),
+                ConstitutionSave = this.ConstitutionSave ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Constitution ?? "0")),
+                IntelligenceSave = this.IntelligenceSave ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Intelligence ?? "0")),
+                WisdomSave = this.WisdomSave ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Wisdom ?? "0")),
+                CharismaSave = this.CharismaSave ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Charisma ?? "0")),
+                DamageImmunities = this.DamageImmunities ?? string.Empty,
+                DamageResistances = this.DamageResistances ?? string.Empty,
+                DamageVulnerabilities = this.DamageVulnerabilities ?? string.Empty,
+                ConditionImmunities = this.ConditionImmunities ?? string.Empty,
+                Languages = this.Languages ?? string.Empty,
+                ArmorDesc = this.ArmorDesc ?? string.Empty,
+                PassivePerception = CreatureHelper.ParseAttributeValue(this.Senses ?? string.Empty, "passive perception") ?? 0,
+                Darkvision = CreatureHelper.ParseAttributeValue(this.Senses ?? string.Empty, "darkvision") ?? 0,
+                Blindsight = CreatureHelper.ParseAttributeValue(this.Senses ?? string.Empty, "blindsight") ?? 0,
+                Tremorsense = CreatureHelper.ParseAttributeValue(this.Senses ?? string.Empty, "tremorsense") ?? 0,
+                Truesight = CreatureHelper.ParseAttributeValue(this.Senses ?? string.Empty, "truesight") ?? 0,
+                ChallengeRating = CreatureHelper.ConvertChallengeRatingToDouble(this.ChallengeRating ?? string.Empty) ?? 0.0,
+                Acrobatics = this.Acrobatics ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Dexterity ?? "0")),
+                AnimalHandling = this.AnimalHandling ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Wisdom ?? "0")),
+                Arcana = this.Arcana ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Intelligence ?? "0")),
+                Athletics = this.Athletics ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Strength ?? "0")),
+                Deception = this.Deception ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Charisma ?? "0")),
+                History = this.History ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Intelligence ?? "0")),
+                Insight = this.Insight ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Wisdom ?? "0")),
+                Intimidation = this.Intimidation ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Charisma ?? "0")),
+                Investigation = this.Investigation ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Intelligence ?? "0")),
+                Medicine = this.Medicine ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Wisdom ?? "0")),
+                Nature = this.Nature ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Intelligence ?? "0")),
+                Perception = this.Perception ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Wisdom ?? "0")),
+                Performance = this.Performance ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Charisma ?? "0")),
+                Persuasion = this.Persuasion ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Charisma ?? "0")),
+                Religion = this.Religion ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Intelligence ?? "0")),
+                SleightOfHand = this.SleightOfHand ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Dexterity ?? "0")),
+                Stealth = this.Stealth ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Dexterity ?? "0")),
+                Survival = this.Survival ?? CreatureHelper.CalculateAbilityBonus(int.Parse(this.Wisdom ?? "0")),
+            };
+
+            // Populate Special Abilities
+            if (this.SpecialAbilities != null)
+            {
+                foreach (var specialAbility in this.SpecialAbilities)
+                {
+                    creature.SpecialAbilities.Add(new Generic.SpecialAbility()
+                    {
+                        Name = specialAbility.Name ?? string.Empty,
+                        Description = specialAbility.Desc ?? string.Empty,
+                        Creature = creature,
+                        CreatureId = creature.Id,
+                    });
+                }
+            }
+
+            // Populate Actions
+            if (this.Actions != null)
+            {
+                foreach (var action in this.Actions)
+                {
+                    creature.Actions.Add(new Generic.Action()
+                    {
+                        Name = action.Name ?? string.Empty,
+                        Description = action.Desc ?? string.Empty,
+                        Creature = creature,
+                        CreatureId = creature.Id,
+                    });
+                }
+            }
+
+            // Populate Reactions
+            if (this.Reactions != null)
+            {
+                foreach (var reaction in this.Reactions)
+                {
+                    creature.Reactions.Add(new Generic.Reaction()
+                    {
+                        Name = reaction.Name ?? string.Empty,
+                        Description = reaction.Desc ?? string.Empty,
+                        Creature = creature,
+                        CreatureId = creature.Id,
+                    });
+                }
+            }
+
+            // Populate LegendaryActions
+            if (this.LegendaryActions != null)
+            {
+                creature.LegendaryActionDescription = this.LegendaryDesc ?? string.Empty;
+                foreach (var legendaryAction in this.LegendaryActions)
+                {
+                    creature.LegendaryActions.Add(new Generic.LegendaryAction()
+                    {
+                        Name = legendaryAction.Name ?? string.Empty,
+                        Description = legendaryAction.Desc ?? string.Empty,
+                        Creature = creature,
+                        CreatureId = creature.Id,
+                    });
+                }
+            }
+
+            return creature;
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿// <copyright file="CreatureReaction.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="Reaction.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,7 +14,7 @@
 // limitations under the License.
 // </copyright>
 
-namespace CampaignKit.Compendium.DungeonsAndDragons.Creatures
+namespace CampaignKit.Compendium.DungeonsAndDragons.Generic
 {
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
@@ -24,7 +24,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Creatures
     /// Represents a creature's reaction in a Dungeons &amp; Dragons game.
     /// A reaction is an instantaneous response to a trigger of some kind which can occur on the creature's turn or someone else's.
     /// </summary>
-    public class CreatureReaction
+    public class Reaction
     {
         /// <summary>
         /// Gets or sets the creature which can perform this reaction.
@@ -66,9 +66,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Creatures
         /// <returns>true if the specified object is equal to the current object; otherwise, false.</returns>
         public override bool Equals(object? obj)
         {
-            if (obj != null && obj is CreatureReaction)
+            if (obj != null && obj is Reaction)
             {
-                if (obj is not CreatureReaction other)
+                if (obj is not Reaction other)
                 {
                     return false;
                 }

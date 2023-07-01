@@ -14,7 +14,7 @@
 // limitations under the License.
 // </copyright>
 
-namespace CampaignKit.Compendium.Core.Models.CampaignLogger
+namespace CampaignKit.Compendium.Core.CampaignLogger
 {
     using System.Collections.Generic;
 

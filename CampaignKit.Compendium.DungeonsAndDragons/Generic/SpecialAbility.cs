@@ -1,4 +1,4 @@
-﻿// <copyright file="CreatureSpecialAbility.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="SpecialAbility.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,7 +14,7 @@
 // limitations under the License.
 // </copyright>
 
-namespace CampaignKit.Compendium.DungeonsAndDragons.Creatures
+namespace CampaignKit.Compendium.DungeonsAndDragons.Generic
 {
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
@@ -25,7 +25,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Creatures
     /// Represents a creature's Special Ability entity in the Compendium Generator database.
     /// This class is used to represent a particular special ability that a creature can perform.
     /// </summary>
-    public class CreatureSpecialAbility
+    public class SpecialAbility
     {
         /// <summary>
         /// Gets or sets the creature associated with this Special Ability.
@@ -67,12 +67,12 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Creatures
         /// <returns>True if the specified object is equal to the current object; otherwise, false.</returns>
         public override bool Equals(object? obj)
         {
-            if (obj == null || obj is not CreatureSpecialAbility)
+            if (obj == null || obj is not SpecialAbility)
             {
                 return false;
             }
 
-            if (obj is not CreatureSpecialAbility other)
+            if (obj is not SpecialAbility other)
             {
                 return false;
             }
