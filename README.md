@@ -26,12 +26,13 @@ Whether you're in the middle of an epic campaign or just getting started with yo
 Execute the following
 ``` shell
 git clone https://github.com/open-campaign-logger/compendium-generator.git
+cd ./compendium-generator
 dotnet build
 dotnet test
 dotnet run --project CampaignKit.Compendium.Utility
 ```
 
-This will download the solution, build it, run automated unit tests then execute the utility.
+This will download the solution, install dependencies, perform a build, run automated unit tests then execute the utility.
 
 ## Features
 
