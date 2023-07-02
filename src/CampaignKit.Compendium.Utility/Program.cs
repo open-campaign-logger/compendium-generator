@@ -14,4 +14,14 @@
 // limitations under the License.
 // </copyright>
 
+using CampaignKit.Compendium.Core.Base;
+
 Console.WriteLine("Hello, World!");
+
+var sourceDataUrl = "https://raw.githubusercontent.com/open5e/open5e-api/main/data/WOTC_5e_SRD_v5.1/conditions.json";
+var sourceLicenseUrl = "https://raw.githubusercontent.com/open5e/open5e-api/main/data/WOTC_5e_SRD_v5.1/document.json";
+string dataDirectory = "C:\\source\\compendium-generator\\data\\open5e\\open5e-api\\main\\data\\WOTC_5e_SRD_v5.1";
+var downloader = new CompendiumSourceDownloader(sourceDataUrl, sourceLicenseUrl, dataDirectory);
+
+// Act
+await downloader.GetSourceData();

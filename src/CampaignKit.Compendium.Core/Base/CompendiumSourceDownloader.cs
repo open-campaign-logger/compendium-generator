@@ -80,6 +80,11 @@ namespace CampaignKit.Compendium.Core.Base
                 // Read the response as a stream
                 var responseBody = await response.Content.ReadAsStreamAsync();
 
+                // Create data folder if required
+                if (!Directory.Exists(this.dataFolder)) {
+                    Directory.CreateDirectory(this.dataFolder);
+                }
+
                 // Create a new file in the data folder
                 using var fs = File.Create(Path.Combine(this.dataFolder, fileName));
 
