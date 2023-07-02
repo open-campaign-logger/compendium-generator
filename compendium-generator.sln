@@ -11,11 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.DungeonsAndDragons", "CampaignKit.Compendium.DungeonsAndDragons\CampaignKit.Compendium.DungeonsAndDragons.csproj", "{6C5A9B3F-9B03-433F-8C1E-B11AD658F7EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.DungeonsAndDragons", "src\CampaignKit.Compendium.DungeonsAndDragons\CampaignKit.Compendium.DungeonsAndDragons.csproj", "{6C5A9B3F-9B03-433F-8C1E-B11AD658F7EC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.Utility", "CampaignKit.Compendium.Utility\CampaignKit.Compendium.Utility.csproj", "{61784E72-86A4-453B-8995-BFC1CF23F169}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.Utility", "src\CampaignKit.Compendium.Utility\CampaignKit.Compendium.Utility.csproj", "{61784E72-86A4-453B-8995-BFC1CF23F169}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampaignKit.Compendium.Tests", "CampaignKit.Compendium.Tests\CampaignKit.Compendium.Tests.csproj", "{0D8B1B5C-141A-4B37-894B-0B3DA20C50ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampaignKit.Compendium.Tests", "src\CampaignKit.Compendium.Tests\CampaignKit.Compendium.Tests.csproj", "{0D8B1B5C-141A-4B37-894B-0B3DA20C50ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
