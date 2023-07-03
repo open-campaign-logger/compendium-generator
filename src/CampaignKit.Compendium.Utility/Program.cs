@@ -17,6 +17,7 @@
 namespace CampaignKit.Compendium.Utility
 {
     using CampaignKit.Compendium.Core; // Import the CampaignKit.Compendium.Core namespace
+    using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection; // Import the Microsoft.Extensions.DependencyInjection namespace
     using Microsoft.Extensions.Hosting; // Import the Microsoft.Extensions.Hosting namespace
     using Microsoft.Extensions.Logging; // Import the Microsoft.Extensions.Logging namespace
@@ -38,6 +39,16 @@ namespace CampaignKit.Compendium.Utility
             // Create a host with default configuration
             var host = Host.CreateDefaultBuilder()
 
+                // Add Configuration to host
+                .ConfigureAppConfiguration((hostingContext, configuration) =>
+                {
+                    configuration.Sources.Clear();
+                    configuration.SetBasePath(Directory.GetCurrentDirectory())
+                                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                                 .AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", optional: true);
+                    configuration.AddEnvironmentVariables();
+                })
+
                 // Configure services to add the SourceHelper class.
                 .ConfigureServices((context, services) =>
                 {
@@ -56,6 +67,9 @@ namespace CampaignKit.Compendium.Utility
 
             // Get the SourceHelper service from the host
             var downloader = host.Services.GetRequiredService<SourceHelper>();
+
+            // Get configuration
+            var configuration = host.Services.GetRequiredService<IConfiguration>();
 
             // Download Dungeons and Dragons source files
             var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";

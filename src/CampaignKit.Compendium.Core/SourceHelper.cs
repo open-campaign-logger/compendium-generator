@@ -18,7 +18,7 @@ namespace CampaignKit.Compendium.Core
 {
     using System;
     using System.Threading.Tasks;
-
+    using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.Logging;
 
     /// <summary>
@@ -30,16 +30,21 @@ namespace CampaignKit.Compendium.Core
         // with the type CompendiumSourceDownloader
         private readonly ILogger<SourceHelper> logger;
 
+        // Create a private readonly field to store an IConfiguration instance.
+        private readonly IConfiguration configuration;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="SourceHelper"/> class.
         /// </summary>
         /// <param name="logger">The logger for the downloader.</param>
+        /// <param name="configuration">Application configuration information.</param>
         /// <returns>
         /// A CompendiumSourceDownloader instance.
         /// </returns>
-        public SourceHelper(ILogger<SourceHelper> logger)
+        public SourceHelper(ILogger<SourceHelper> logger, IConfiguration configuration)
         {
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            this.configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
         }
 
         /// <summary>

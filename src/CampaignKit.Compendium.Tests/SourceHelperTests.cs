@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Moq;
 
@@ -12,6 +13,18 @@ namespace CampaignKit.Compendium.Core.Tests
     public class SourceHelperTests
     {
         private readonly string rootDataFolder = Path.Combine(Path.GetTempPath(), "CompendiumGenerator");
+
+        private IConfiguration GetConfiguration()
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory()) // Set the path to the current directory
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true); // Add the json configuration file
+
+            var configuration = builder.Build(); // Build the configuration
+
+            return configuration;
+
+        }
 
         [TestInitialize] public void Setup()
         {
@@ -43,7 +56,7 @@ namespace CampaignKit.Compendium.Core.Tests
             var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
             var overwrite = false;
             var loggerMock = new Mock<ILogger<SourceHelper>>();
-            var sourceHelper = new SourceHelper(loggerMock.Object);
+            var sourceHelper = new SourceHelper(loggerMock.Object, GetConfiguration());
             string path, file;
             sourceHelper.DerivePathAndFileNames(sourceDataUri, out path, out file);
 
@@ -62,7 +75,7 @@ namespace CampaignKit.Compendium.Core.Tests
             var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
             var overwrite = false;
             var loggerMock = new Mock<ILogger<SourceHelper>>();
-            var sourceHelper = new SourceHelper(loggerMock.Object);
+            var sourceHelper = new SourceHelper(loggerMock.Object, GetConfiguration());
             string path, file;
             sourceHelper.DerivePathAndFileNames(sourceDataUri, out path, out file);
 
@@ -86,7 +99,7 @@ namespace CampaignKit.Compendium.Core.Tests
             var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
             var overwrite = true;
             var loggerMock = new Mock<ILogger<SourceHelper>>();
-            var sourceHelper = new SourceHelper(loggerMock.Object);
+            var sourceHelper = new SourceHelper(loggerMock.Object, GetConfiguration());
             string path, file;
             sourceHelper.DerivePathAndFileNames(sourceDataUri, out path, out file);
 
