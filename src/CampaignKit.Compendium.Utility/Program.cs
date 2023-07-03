@@ -16,8 +16,9 @@
 
 namespace CampaignKit.Compendium.Utility
 {
-    using CampaignKit.Compendium.Core; // Import the CampaignKit.Compendium.Core namespace
+    using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Configuration;
+    using CampaignKit.Compendium.Core.Services;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection; // Import the Microsoft.Extensions.DependencyInjection namespace
     using Microsoft.Extensions.Hosting; // Import the Microsoft.Extensions.Hosting namespace
@@ -54,7 +55,7 @@ namespace CampaignKit.Compendium.Utility
                 // Configure services to add the SourceHelper class.
                 .ConfigureServices((context, services) =>
                 {
-                    services.AddTransient<SourceHelper>();
+                    services.AddTransient<DownloadService>();
                 })
 
                 // Configure logging to clear existing providers and add the console provider.
@@ -68,28 +69,34 @@ namespace CampaignKit.Compendium.Utility
                 // Build the host.
                 .Build();
 
-            // Get the SourceHelper service from the host
-            var sourceHelper = host.Services.GetRequiredService<SourceHelper>();
+            // Access services from the host
+            var downloadService = host.Services.GetRequiredService<DownloadService>();
             var configuration = host.Services.GetRequiredService<IConfiguration>();
             var loggerFactory = host.Services.GetService<ILoggerFactory>() ?? new LoggerFactory();
             var logger = loggerFactory.CreateLogger(typeof(Program));
 
-            // Download all source data sets
-            var sourceDataSets = new List<SourceDataSet>();
-            configuration.GetSection("SourceDataSets").Bind(sourceDataSets);
-            foreach (var sourceDataSet in sourceDataSets)
+            // Process each campaign entry
+            var compendiums = new List<Compendium>();
+            configuration.GetSection("Compendiums").Bind(compendiums);
+            foreach (var compendium in compendiums)
             {
-                logger.LogInformation("Downloading source data for data set: {name}.", sourceDataSet.SourceDataSetName);
-                await sourceHelper.DownloadFile(
-                    sourceDataSet.SourceDataURI ?? string.Empty,
-                    configuration.GetValue<string>("RootDataFolder") ?? string.Empty,
-                    configuration.GetValue<bool>("OverwriteExisting"));
+                logger.LogInformation("Processing Compendium: {campaign}.", compendium.Title);
 
-                logger.LogInformation("Downloading license data for data set: {name}.", sourceDataSet.SourceDataSetName);
-                await sourceHelper.DownloadFile(
-                    sourceDataSet.LicenseDataURI ?? string.Empty,
-                    configuration.GetValue<string>("RootDataFolder") ?? string.Empty,
-                    configuration.GetValue<bool>("OverwriteExisting"));
+                // Download campaign data sets
+                foreach (var sourceDataSet in compendium.SourceDataSets ?? new List<SourceDataSet>())
+                {
+                    logger.LogInformation("Downloading license data for data set: {name}.", sourceDataSet.SourceDataSetName);
+                    await downloadService.DownloadFile(
+                        sourceDataSet.LicenseDataURI ?? string.Empty,
+                        configuration.GetValue<string>("RootDataFolder") ?? string.Empty,
+                        sourceDataSet.OverwriteExisting ?? true);
+
+                    logger.LogInformation("Downloading source data for data set: {name}.", sourceDataSet.SourceDataSetName);
+                    await downloadService.DownloadFile(
+                        sourceDataSet.SourceDataURI ?? string.Empty,
+                        configuration.GetValue<string>("RootDataFolder") ?? string.Empty,
+                        sourceDataSet.OverwriteExisting ?? true);
+                }
             }
         }
     }

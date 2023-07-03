@@ -5,6 +5,13 @@
     /// </summary>
     public class SourceDataSet
     {
+
+        /// <summary>
+        /// Gets or sets the boolean value that determines whether new data should be downloaded to replace
+        /// existing data.
+        /// </summary>
+        public bool? OverwriteExisting { get; set; }
+
         /// <summary>
         /// Gets or sets the name of the source data set. This is primarily used for identification purposes.
         /// </summary>

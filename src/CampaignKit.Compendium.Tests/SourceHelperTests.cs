@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
+using CampaignKit.Compendium.Core.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Moq;
@@ -55,8 +56,8 @@ namespace CampaignKit.Compendium.Core.Tests
             // Arrange
             var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
             var overwrite = false;
-            var loggerMock = new Mock<ILogger<SourceHelper>>();
-            var sourceHelper = new SourceHelper(loggerMock.Object, GetConfiguration());
+            var loggerMock = new Mock<ILogger<DownloadService>>();
+            var sourceHelper = new DownloadService(loggerMock.Object, GetConfiguration());
             string path, file;
             sourceHelper.DerivePathAndFileNames(sourceDataUri, out path, out file);
 
@@ -74,8 +75,8 @@ namespace CampaignKit.Compendium.Core.Tests
             // Arrange
             var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
             var overwrite = false;
-            var loggerMock = new Mock<ILogger<SourceHelper>>();
-            var sourceHelper = new SourceHelper(loggerMock.Object, GetConfiguration());
+            var loggerMock = new Mock<ILogger<DownloadService>>();
+            var sourceHelper = new DownloadService(loggerMock.Object, GetConfiguration());
             string path, file;
             sourceHelper.DerivePathAndFileNames(sourceDataUri, out path, out file);
 
@@ -98,8 +99,8 @@ namespace CampaignKit.Compendium.Core.Tests
             // Arrange
             var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
             var overwrite = true;
-            var loggerMock = new Mock<ILogger<SourceHelper>>();
-            var sourceHelper = new SourceHelper(loggerMock.Object, GetConfiguration());
+            var loggerMock = new Mock<ILogger<DownloadService>>();
+            var sourceHelper = new DownloadService(loggerMock.Object, GetConfiguration());
             string path, file;
             sourceHelper.DerivePathAndFileNames(sourceDataUri, out path, out file);
 

@@ -1,4 +1,4 @@
-﻿// <copyright file="SourceHelper.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="DownloadService.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,7 +14,7 @@
 // limitations under the License.
 // </copyright>
 
-namespace CampaignKit.Compendium.Core
+namespace CampaignKit.Compendium.Core.Services
 {
     using System;
     using System.Threading.Tasks;
@@ -24,24 +24,24 @@ namespace CampaignKit.Compendium.Core
     /// <summary>
     /// Represents a downloader for TTRPG (Tabletop Role-Playing Games) source data.
     /// </summary>
-    public class SourceHelper
+    public class DownloadService
     {
         // Create a private readonly field to store an ILogger instance
         // with the type CompendiumSourceDownloader
-        private readonly ILogger<SourceHelper> logger;
+        private readonly ILogger<DownloadService> logger;
 
         // Create a private readonly field to store an IConfiguration instance.
         private readonly IConfiguration configuration;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SourceHelper"/> class.
+        /// Initializes a new instance of the <see cref="DownloadService"/> class.
         /// </summary>
         /// <param name="logger">The logger for the downloader.</param>
         /// <param name="configuration">Application configuration information.</param>
         /// <returns>
         /// A CompendiumSourceDownloader instance.
         /// </returns>
-        public SourceHelper(ILogger<SourceHelper> logger, IConfiguration configuration)
+        public DownloadService(ILogger<DownloadService> logger, IConfiguration configuration)
         {
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
             this.configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
@@ -59,21 +59,21 @@ namespace CampaignKit.Compendium.Core
             try
             {
                 string path, page;
-                this.DerivePathAndFileNames(sourceDataUri, out path, out page);
+                DerivePathAndFileNames(sourceDataUri, out path, out page);
 
                 // If overwrite = false and the file already exists, return.
                 var localFolderPath = Path.Combine(rootDataFolder, path);
                 var localFilePath = Path.Combine(localFolderPath, page);
                 if (!overwrite && File.Exists(localFilePath))
                 {
-                    this.logger.LogInformation("Local file already exists: {localFilePath}.  Overwrite option set to false.  Skipping download.", localFilePath);
+                    logger.LogInformation("Local file already exists: {localFilePath}.  Overwrite option set to false.  Skipping download.", localFilePath);
                     return;
                 }
 
                 // Create data folder if required.
                 if (!Directory.Exists(localFolderPath))
                 {
-                    this.logger.LogDebug("Creating directory for source files: {localDataFolder}.", localFolderPath);
+                    logger.LogDebug("Creating directory for source files: {localDataFolder}.", localFolderPath);
                     Directory.CreateDirectory(localFolderPath);
                 }
 
@@ -81,7 +81,7 @@ namespace CampaignKit.Compendium.Core
                 using var client = new HttpClient();
 
                 // Send a GET request to the URL
-                this.logger.LogDebug("Starting to download file: {sourceDataUri}.", sourceDataUri);
+                logger.LogDebug("Starting to download file: {sourceDataUri}.", sourceDataUri);
                 var response = await client.GetAsync(sourceDataUri);
 
                 // Ensure the request was successful
@@ -99,7 +99,7 @@ namespace CampaignKit.Compendium.Core
             catch (HttpRequestException e)
             {
                 // If an error occurs, print the error message and re-throw the exception
-                this.logger.LogError("Error downloading file: {e.Message}", e.Message);
+                logger.LogError("Error downloading file: {e.Message}", e.Message);
                 throw e;
             }
         }
@@ -113,7 +113,7 @@ namespace CampaignKit.Compendium.Core
         public void DerivePathAndFileNames(string sourceDataUri, out string path, out string file)
         {
             // Separate the URI into components
-            this.logger.LogDebug("Parsing components of URI: {sourceDataUri}.", sourceDataUri);
+            logger.LogDebug("Parsing components of URI: {sourceDataUri}.", sourceDataUri);
             var uri = new Uri(sourceDataUri);
             path = uri.AbsolutePath;
             file = Path.GetFileName(uri.AbsolutePath);
@@ -126,8 +126,8 @@ namespace CampaignKit.Compendium.Core
 
             // Remove the page name from the path.
             path = Path.GetDirectoryName(path) ?? path;
-            this.logger.LogDebug("URI Path: {path}.", path);
-            this.logger.LogDebug("URI Page: {page}.", file);
+            logger.LogDebug("URI Path: {path}.", path);
+            logger.LogDebug("URI Page: {page}.", file);
         }
     }
 }
