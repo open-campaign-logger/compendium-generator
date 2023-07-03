@@ -295,7 +295,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Generic
             {
                 if (token.Trim().StartsWith(attributeName, StringComparison.OrdinalIgnoreCase))
                 {
-                    string[] subTokens = token.Trim()[(attributeName.Length + 1) ..].Split(' ');
+                    string[] subTokens = token.Trim()[(attributeName.Length + 1)..].Split(' ');
 
                     if (int.TryParse(subTokens[0], out int result))
                     {
@@ -318,7 +318,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Generic
         /// <returns>Campaign-Logger statblock for the creature.</returns>
         public static string ToCampaignLoggerStatBlock(Creature creature)
         {
-            StringBuilder builder = new ();
+            StringBuilder builder = new();
             builder.AppendLine($"```clyt");
             builder.AppendLine($"template: stat-block.5e");
             builder.AppendLine($"title: {creature.Name}");
@@ -326,7 +326,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Generic
             builder.AppendLine($"stats:");
             builder.AppendLine($"- Armor Class: {creature.ArmorClass} ({creature.ArmorDesc})");
             builder.AppendLine($"- Hit Points: {creature.HitPoints} ({creature.HitDice})");
-            List<string> speeds = new ()
+            List<string> speeds = new()
             {
                 $"{creature.Walk} ft.",
             };
@@ -363,7 +363,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Generic
             builder.AppendLine($"     INT: {creature.Intelligence} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(creature.Intelligence))})");
             builder.AppendLine($"     WIS: {creature.Wisdom} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(creature.Wisdom))})");
             builder.AppendLine($"     CHA: {creature.Charisma} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(creature.Charisma))})");
-            List<string> savingThrows = new ();
+            List<string> savingThrows = new();
             if (creature.StrengthSave > CreatureHelper.CalculateAbilityBonus(creature.Strength))
             {
                 savingThrows.Add($"STR {CreatureHelper.ConvertBonusToSignedString(creature.StrengthSave)}");
@@ -399,7 +399,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Generic
                 builder.AppendLine($"- Saving Throws: {string.Join(", ", savingThrows)}");
             }
 
-            List<string> skillsList = new ();
+            List<string> skillsList = new();
             if (creature.Acrobatics > CreatureHelper.CalculateAbilityBonus(creature.Dexterity))
             {
                 skillsList.Add($"Acrobatics {CreatureHelper.ConvertBonusToSignedString(creature.Acrobatics)}");
@@ -515,7 +515,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Generic
                 builder.AppendLine($"- Condition Immunities: {creature.ConditionImmunities}");
             }
 
-            List<string> sensesList = new ();
+            List<string> sensesList = new();
             if (creature.Blindsight > 0)
             {
                 sensesList.Add($"Blindsight {creature.Blindsight} ft.");
@@ -643,12 +643,12 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Generic
         /// <returns>Standard text statblock for the creature.</returns>
         public static string ToTextStatBlock(Creature creature)
         {
-            StringBuilder builder = new ();
+            StringBuilder builder = new();
             builder.AppendLine($"{creature.Name}");
             builder.AppendLine($"{creature.Size} {creature.Type}, {creature.Alignment}");
             builder.AppendLine($"Armor Class {creature.ArmorClass} ({creature.ArmorDesc})");
             builder.AppendLine($"Hit Points {creature.HitPoints} ({creature.HitDice})");
-            List<string> speeds = new ()
+            List<string> speeds = new()
             {
                 $"{creature.Walk} ft.",
             };
@@ -684,7 +684,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Generic
             builder.AppendLine($"INT {creature.Intelligence} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(creature.Intelligence))})");
             builder.AppendLine($"WIS {creature.Wisdom} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(creature.Wisdom))})");
             builder.AppendLine($"CHA {creature.Charisma} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(creature.Charisma))})");
-            List<string> savingThrows = new ();
+            List<string> savingThrows = new();
             if (creature.StrengthSave > CreatureHelper.CalculateAbilityBonus(creature.Strength))
             {
                 savingThrows.Add($"STR {CreatureHelper.ConvertBonusToSignedString(creature.StrengthSave)}");
@@ -720,7 +720,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Generic
                 builder.AppendLine($"Saving Throws {string.Join(", ", savingThrows)}");
             }
 
-            List<string> skillsList = new ();
+            List<string> skillsList = new();
             if (creature.Acrobatics > CreatureHelper.CalculateAbilityBonus(creature.Dexterity))
             {
                 skillsList.Add($"Acrobatics {CreatureHelper.ConvertBonusToSignedString(creature.Acrobatics)}");
@@ -836,7 +836,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Generic
                 builder.AppendLine($"Condition Immunities {creature.ConditionImmunities}");
             }
 
-            List<string> sensesList = new ();
+            List<string> sensesList = new();
             if (creature.Blindsight > 0)
             {
                 sensesList.Add($"Blindsight {creature.Blindsight} ft.");

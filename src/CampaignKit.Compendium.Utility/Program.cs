@@ -14,14 +14,53 @@
 // limitations under the License.
 // </copyright>
 
-using CampaignKit.Compendium.Core.Base;
+namespace CampaignKit.Compendium.Utility
+{
+    using CampaignKit.Compendium.Core; // Import the CampaignKit.Compendium.Core namespace
+    using Microsoft.Extensions.DependencyInjection; // Import the Microsoft.Extensions.DependencyInjection namespace
+    using Microsoft.Extensions.Hosting; // Import the Microsoft.Extensions.Hosting namespace
+    using Microsoft.Extensions.Logging; // Import the Microsoft.Extensions.Logging namespace
 
-Console.WriteLine("Hello, World!");
+    /// <summary>
+    /// Creates a host with default configuration, adds required services, configures logging,
+    /// gets the SourceHelper service from the host, and uses the downloader.
+    /// </summary>
+    public class Program
+    {
+        /// <summary>
+        /// Creates a host with default configuration, adds required services, and
+        /// configures logging.
+        /// </summary>
+        /// <param name="args">Command line arguments.</param>
+        /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
+        public static async Task Main(string[] args)
+        {
+            // Create a host with default configuration
+            var host = Host.CreateDefaultBuilder()
 
-var sourceDataUrl = "https://raw.githubusercontent.com/open5e/open5e-api/main/data/WOTC_5e_SRD_v5.1/conditions.json";
-var sourceLicenseUrl = "https://raw.githubusercontent.com/open5e/open5e-api/main/data/WOTC_5e_SRD_v5.1/document.json";
-string dataDirectory = "C:\\source\\compendium-generator\\data\\open5e\\open5e-api\\main\\data\\WOTC_5e_SRD_v5.1";
-var downloader = new CompendiumSourceDownloader(sourceDataUrl, sourceLicenseUrl, dataDirectory);
+                // Configure services to add the SourceHelper class.
+                .ConfigureServices((context, services) =>
+                {
+                    services.AddTransient<SourceHelper>();
+                })
 
-// Act
-await downloader.GetSourceData();
+                // Configure logging to clear existing providers and add the console provider.
+                .ConfigureLogging(logging =>
+                {
+                    logging.ClearProviders();
+                    logging.AddConsole();
+                })
+
+                // Build the host.
+                .Build();
+
+            // Get the SourceHelper service from the host
+            var downloader = host.Services.GetRequiredService<SourceHelper>();
+
+            // Download Dungeons and Dragons source files
+            var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
+            string rootDataFolder = "C:\\source\\compendium-generator\\data";
+            await downloader.DownloadFile(sourceDataUri, rootDataFolder);
+        }
+    }
+}

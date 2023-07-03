@@ -1,6 +1,6 @@
 using CampaignKit.Compendium.DungeonsAndDragons.Generic;
 
-namespace CampaignKit.Compendium.Tests.DungeonsAndDragons.Generic
+namespace CampaignKit.Compendium.Tests
 {
     [TestClass]
     public class CreatureHelperTests
