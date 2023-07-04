@@ -23,7 +23,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
     /// <summary>
     /// Class representing a creature from the Dungeons &amp; Dragons System Reference Document (SRD).
     /// </summary>
-    public class SRDCreature
+    public class SRDCreature : ICreature
     {
         /// <summary>
         /// Gets or sets the creature's Acrobatics skill, representing its ability to perform tasks
@@ -225,7 +225,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         /// Gets or sets the list of legendary actions that the creature can take.
         /// </summary>
         [JsonProperty("legendary_actions")]
-        public List<LegendaryAction>? LegendaryActions { get; set; } = new List<LegendaryAction>();
+        public List<Common.Action>? LegendaryActions { get; set; } = new List<Common.Action>();
 
         /// <summary>
         /// Gets or sets the description of the creature's legendary actions.
@@ -277,7 +277,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         /// events or triggers.
         /// </summary>
         [JsonProperty("reactions")]
-        public List<Reaction>? Reactions { get; set; } = new List<Reaction>();
+        public List<Common.Action>? Reactions { get; set; } = new List<Common.Action>();
 
         /// <summary>
         /// Gets or sets the creature's Religion skill, representing knowledge about deities and
@@ -309,7 +309,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         /// Gets or sets the list of special abilities the creature has.
         /// </summary>
         [JsonProperty("special_abilities")]
-        public List<SpecialAbility>? SpecialAbilities { get; set; } = new List<SpecialAbility>();
+        public List<Common.Action>? SpecialAbilities { get; set; } = new List<Common.Action>();
 
         /// <summary>
         /// Gets or sets the speed of the creature indicating how far it can move.
@@ -392,14 +392,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
                 Name = this.Name ?? string.Empty,
                 Size = this.Size ?? string.Empty,
                 Type = this.Type ?? string.Empty,
-                SourceDocumentTitle = "Systems Reference Document",
-                SourceDocumentDescription = "Dungeons and Dragons 5th Edition Systems Reference Document by Wizards of the Coast",
-                SourceDocumentVersion = "5.1",
-                LicenseURL = "http://dnd.wizards.com/articles/features/systems-reference-document-srd",
-                Author = "Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend, based on original material by E. Gary Gygax and Dave Arneson.",
-                Organization = "Wizards of the Coast",
-                Copyright = "System Reference Document 5.1 Copyright 2016, Wizards of the Coast, Inc.; Authors Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend, based on original material by E. Gary Gygax and Dave Arneson.",
-                RuleSystem = "Dungeons & Dragons 5E",
                 Alignment = this.Alignment ?? string.Empty,
                 ArmorClass = this.ArmorClass ?? 0,
                 HitPoints = this.HitPoints ?? 0,
@@ -459,12 +451,10 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
             {
                 foreach (var specialAbility in this.SpecialAbilities)
                 {
-                    creature.SpecialAbilities.Add(new Common.SpecialAbility()
+                    creature.SpecialAbilities.Add(new Common.Action()
                     {
                         Name = specialAbility.Name ?? string.Empty,
-                        Description = specialAbility.Desc ?? string.Empty,
-                        Creature = creature,
-                        CreatureId = creature.Id,
+                        Description = specialAbility.Description ?? string.Empty,
                     });
                 }
             }
@@ -477,9 +467,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
                     creature.Actions.Add(new Common.Action()
                     {
                         Name = action.Name ?? string.Empty,
-                        Description = action.Desc ?? string.Empty,
-                        Creature = creature,
-                        CreatureId = creature.Id,
+                        Description = action.Description ?? string.Empty,
                     });
                 }
             }
@@ -490,12 +478,10 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
                 creature.LegendaryActionDescription = this.LegendaryDesc ?? string.Empty;
                 foreach (var legendaryAction in this.LegendaryActions)
                 {
-                    creature.LegendaryActions.Add(new Common.LegendaryAction()
+                    creature.LegendaryActions.Add(new Common.Action()
                     {
                         Name = legendaryAction.Name ?? string.Empty,
-                        Description = legendaryAction.Desc ?? string.Empty,
-                        Creature = creature,
-                        CreatureId = creature.Id,
+                        Description = legendaryAction.Description ?? string.Empty,
                     });
                 }
             }

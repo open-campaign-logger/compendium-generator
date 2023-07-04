@@ -27,37 +27,37 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
     public class Action
     {
         /// <summary>
-        /// Gets or sets the creature associated with this creature Action.
-        /// This property is marked to be ignored by Json serialization.
-        /// </summary>
-        [JsonIgnore]
-        public Creature? Creature { get; set; }
-
-        /// <summary>
-        /// Gets or sets the creature Id associated with this creature Action.
-        /// This property is marked to be ignored by Json serialization.
-        /// </summary>
-        [JsonIgnore]
-        public int CreatureId { get; set; }
-
-        /// <summary>
         /// Gets or sets the description of this creature Action.
         /// </summary>
+        [JsonProperty("desc")]
         public string Description { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Gets or sets the unique identifier for this creature Action.
-        /// This property is marked to be ignored by Json serialization.
-        /// </summary>
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [JsonIgnore]
-        public int Id { get; set; }
 
         /// <summary>
         /// Gets or sets the name of this creature Action.
         /// </summary>
+        [JsonProperty("name")]
         public string Name { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Gets or sets the attack bonus of the SpecialAbility, if any.
+        /// The attack bonus is a number you add to your attack roll.
+        /// </summary>
+        [JsonProperty("attack_bonus")]
+        public int? AttackBonus { get; set; } = 0;
+
+        /// <summary>
+        /// Gets or sets the dice used for the damage of the LegendaryAction.
+        /// This is a string representation of the dice roll (e.g., "1d6").
+        /// </summary>
+        [JsonProperty("damage_dice")]
+        public string? DamageDice { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Gets or sets the damage bonus of the Action, if any.
+        /// The damage bonus is a number you add to your damage roll.
+        /// </summary>
+        [JsonProperty("damage_bonus")]
+        public int? DamageBonus { get; set; } = 0;
 
         /// <summary>
         /// Determines whether the specified object is equal to the current object.

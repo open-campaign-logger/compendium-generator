@@ -548,7 +548,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             if (creature.SpecialAbilities != null && creature.SpecialAbilities.Count > 0)
             {
                 builder.AppendLine("traits:");
-                foreach (SpecialAbility specialAbility in creature.SpecialAbilities)
+                foreach (Common.Action specialAbility in creature.SpecialAbilities)
                 {
                     builder.AppendLine($"- {specialAbility.Name}: >");
                     foreach (string line in specialAbility.Description.Split("\n"))
@@ -587,7 +587,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             if (creature.Actions != null && creature.Actions.Count > 0)
             {
                 builder.AppendLine("actions:");
-                foreach (Action action in creature.Actions)
+                foreach (Common.Action action in creature.Actions)
                 {
                     builder.AppendLine($"- {action.Name}: >");
                     foreach (string line in action.Description.Split("\n"))
@@ -603,7 +603,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             if (creature.Reactions != null && creature.Reactions.Count > 0)
             {
                 builder.AppendLine($"- Reactions: The {creature.Name} has the following reactions.");
-                foreach (Reaction reaction in creature.Reactions)
+                foreach (Common.Action reaction in creature.Reactions)
                 {
                     builder.AppendLine($"- {reaction.Name}: >");
                     foreach (string line in reaction.Description.Split("\n"))
@@ -619,7 +619,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             if (creature.LegendaryActions != null && creature.LegendaryActions.Count > 0)
             {
                 builder.AppendLine($"- Legendary Actions: {creature.LegendaryActionDescription}");
-                foreach (LegendaryAction legendaryAction in creature.LegendaryActions)
+                foreach (Common.Action legendaryAction in creature.LegendaryActions)
                 {
                     builder.AppendLine($"-  {legendaryAction.Name}: >");
                     foreach (string line in legendaryAction.Description.Split("\n"))
@@ -868,7 +868,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             builder.AppendLine($"Proficiency Bonus {CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateProficiencyBonus(creature.ChallengeRating))}");
             if (creature.SpecialAbilities != null && creature.SpecialAbilities.Count > 0)
             {
-                foreach (SpecialAbility specialAbility in creature.SpecialAbilities)
+                foreach (Common.Action specialAbility in creature.SpecialAbilities)
                 {
                     builder.AppendLine($"{specialAbility.Name}. {specialAbility.Description}");
                 }
@@ -887,7 +887,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             {
                 builder.AppendLine("Legendary Actions");
                 builder.AppendLine($"{creature.LegendaryActionDescription}");
-                foreach (LegendaryAction action in creature.LegendaryActions)
+                foreach (Common.Action action in creature.LegendaryActions)
                 {
                     builder.AppendLine($"{action.Name}. {action.Description}");
                 }

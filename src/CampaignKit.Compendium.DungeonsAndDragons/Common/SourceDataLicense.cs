@@ -16,6 +16,8 @@
 
 namespace CampaignKit.Compendium.DungeonsAndDragons.Common
 {
+    using Newtonsoft.Json;
+
     /// <summary>
     /// Represents the license information for a particular data set within the application.
     /// </summary>
@@ -24,47 +26,62 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// <summary>
         /// Gets or sets the title of the license.
         /// </summary>
+        [JsonProperty("title")]
         public string? Title { get; set; }
 
         /// <summary>
         /// Gets or sets the slug of the license.
         /// A slug is a URL-friendly version of the title which is typically used in links to the license.
         /// </summary>
+        [JsonProperty("slug")]
         public string? Slug { get; set; }
 
         /// <summary>
         /// Gets or sets the description of the license.
         /// </summary>
+        [JsonProperty("desc")]
         public string? Desc { get; set; }
 
         /// <summary>
         /// Gets or sets the actual text of the license agreement.
         /// </summary>
+        [JsonProperty("license")]
         public string? License { get; set; }
 
         /// <summary>
         /// Gets or sets the author of the licensed content.
         /// </summary>
+        [JsonProperty("author")]
         public string? Author { get; set; }
 
         /// <summary>
         /// Gets or sets the organization that owns the licensed content.
         /// </summary>
+        [JsonProperty("organization")]
         public string? Organization { get; set; }
 
         /// <summary>
         /// Gets or sets the version of the licensed content.
         /// </summary>
+        [JsonProperty("version")]
         public string? Version { get; set; }
 
         /// <summary>
         /// Gets or sets the copyright information for the licensed content.
         /// </summary>
+        [JsonProperty("copyright")]
         public string? Copyright { get; set; }
 
         /// <summary>
         /// Gets or sets the URL where more information about the license can be found.
         /// </summary>
+        [JsonProperty("url")]
         public string? Url { get; set; }
+
+        /// <summary>
+        /// Gets or sets the list of OGL lines.
+        /// </summary>
+        [JsonProperty("ogl-lines")]
+        public List<string>? OGLLines { get; set; }
     }
 }

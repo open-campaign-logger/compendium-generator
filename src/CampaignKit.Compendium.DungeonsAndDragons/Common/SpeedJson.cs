@@ -14,7 +14,7 @@
 // limitations under the License.
 // </copyright>
 
-namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
+namespace CampaignKit.Compendium.DungeonsAndDragons.Common
 {
     using Newtonsoft.Json;
 
@@ -28,25 +28,25 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
         /// Gets or sets the burrowing speed of the creature in feet.
         /// </summary>
         [JsonProperty("burrow")]
-        public int? Burrow { get; set; }
+        public int? Burrow { get; set; } = 0;
 
         /// <summary>
         /// Gets or sets the climbing speed of the creature in feet.
         /// </summary>
         [JsonProperty("climb")]
-        public int? Climb { get; set; }
+        public int? Climb { get; set; } = 0;
 
         /// <summary>
         /// Gets or sets the flying speed of the creature in feet.
         /// </summary>
         [JsonProperty("fly")]
-        public int? Fly { get; set; }
+        public int? Fly { get; set; } = 0;
 
         /// <summary>
         /// Gets or sets a boolean indicating whether the creature can hover while flying.
         /// </summary>
         [JsonProperty("hover")]
-        public bool? Hover { get; set; }
+        public bool? Hover { get; set; } = false;
 
         /// <summary>
         /// Gets or sets the distance a creature can teleport from one beam of moonlight to another.
@@ -55,15 +55,21 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
         public int? Lightwalking { get; set; }
 
         /// <summary>
+        /// Gets or sets any additional notes about the creature's speed.
+        /// </summary>
+        [JsonProperty("notes")]
+        public string? Notes { get; set; } = string.Empty;
+
+        /// <summary>
         /// Gets or sets the swimming speed of the creature in feet.
         /// </summary>
         [JsonProperty("swim")]
-        public int? Swim { get; set; }
+        public int? Swim { get; set; } = 0;
 
         /// <summary>
         /// Gets or sets the walking speed of the creature in feet.
         /// </summary>
         [JsonProperty("walk")]
-        public int? Walk { get; set; }
+        public int? Walk { get; set; } = 0;
     }
 }

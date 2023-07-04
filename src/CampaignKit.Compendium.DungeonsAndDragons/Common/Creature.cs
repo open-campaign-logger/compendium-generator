@@ -77,11 +77,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         public int Athletics { get; set; } = 0;
 
         /// <summary>
-        /// Gets or sets author of the creature data.
-        /// </summary>
-        public string Author { get; set; } = string.Empty;
-
-        /// <summary>
         /// Gets or sets distance in feet that the creature can see with blindsight.
         /// Leave 0 if not specified.
         /// Example 0.
@@ -137,11 +132,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// Example: 15.
         /// </summary>
         public int ConstitutionSave { get; set; } = 0;
-
-        /// <summary>
-        /// Gets or sets copyright associated with the creature data.
-        /// </summary>
-        public string Copyright { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets damage immunities belonging to the creature.  Example: Poison, Psychic; Bludgeoning, Piercing, and Slashing From Nonmagical Attacks That Aren't Adamantine.
@@ -212,14 +202,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         public bool Hover { get; set; } = false;
 
         /// <summary>
-        /// Gets or sets primary key for creature.
-        /// </summary>
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [JsonIgnore]
-        public int Id { get; set; }
-
-        /// <summary>
         /// Gets or sets insight skill bonus.
         /// Leave zero if creature does not have the skill specified.
         /// Example: 0.
@@ -271,17 +253,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// <summary>
         /// Gets or sets a collection of legendary actions associated with the creature.
         /// </summary>
-        public List<LegendaryAction> LegendaryActions { get; set; } = new List<LegendaryAction> { };
-
-        /// <summary>
-        /// Gets or sets name of the license associated with the creature data.
-        /// </summary>
-        public string LicenseName { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Gets or sets license URL associated with the creature data.
-        /// </summary>
-        public string LicenseURL { get; set; } = string.Empty;
+        public List<Common.Action> LegendaryActions { get; set; } = new List<Common.Action> { };
 
         /// <summary>
         /// Gets or sets light walking capability of the creature to hover.  Example: 80.
@@ -306,11 +278,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// Example: 0.
         /// </summary>
         public int Nature { get; set; } = 0;
-
-        /// <summary>
-        /// Gets or sets organization owning the content.
-        /// </summary>
-        public string Organization { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets passive perception is calculated as 10+all modifiers that would apply to a rolled
@@ -342,7 +309,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// <summary>
         /// Gets or sets a collection of reactions associated with the creature.
         /// </summary>
-        public List<Reaction> Reactions { get; set; } = new List<Reaction> { };
+        public List<Common.Action> Reactions { get; set; } = new List<Common.Action> { };
 
         /// <summary>
         /// Gets or sets religion skill bonus.
@@ -350,11 +317,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// Example: 0.
         /// </summary>
         public int Religion { get; set; } = 0;
-
-        /// <summary>
-        /// Gets or sets rule system associated with the creature data.
-        /// </summary>
-        public string RuleSystem { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets size of the creature.  Example: Large.
@@ -369,24 +331,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         public int SleightOfHand { get; set; } = 0;
 
         /// <summary>
-        /// Gets or sets source document descrition associated with the creature data.
-        /// </summary>
-        public string SourceDocumentDescription { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Gets or sets source document of the creature data.
-        /// </summary>
-        public string SourceDocumentTitle { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Gets or sets version of the source document associated with the creature data.
-        /// </summary>
-        public string SourceDocumentVersion { get; set; } = string.Empty;
-
-        /// <summary>
         /// Gets or sets a collection of special abilities associated with the creature.
         /// </summary>
-        public List<SpecialAbility> SpecialAbilities { get; set; } = new List<SpecialAbility> { };
+        public List<Common.Action> SpecialAbilities { get; set; } = new List<Common.Action> { };
 
         /// <summary>
         /// Gets or sets stealth skill bonus.

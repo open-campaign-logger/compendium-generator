@@ -44,6 +44,16 @@ TODO
 
 ## Contributing
 
+* https://json2csharp.com/
+  * Use Nullable Types
+  * Add JsonProperty Attributes
+  * Use Pascal Case
+* Add "?" nullable type operator
+* set default value:
+   * = string.Empty;
+   * = int.MinValue;
+   * = new List<Type>();
+
 TODO
 
 ## Links

@@ -23,7 +23,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
     /// <summary>
     /// Class representing a creature from the Dungeons &amp; Dragons materials published by Kobold Press.
     /// </summary>
-    public class KoboldPressCreature
+    public class KoboldPressCreature : ICreature
     {
         /// <summary>
         /// Gets or sets the creature's Acrobatics skill, representing its ability to perform tasks
@@ -219,7 +219,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
         /// Gets or sets the list of legendary actions that the creature can take.
         /// </summary>
         [JsonProperty("legendary_actions")]
-        public List<LegendaryAction>? LegendaryActions { get; set; }
+        public List<Common.Action>? LegendaryActions { get; set; }
 
         /// <summary>
         /// Gets or sets the description of the creature's legendary actions.
@@ -271,7 +271,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
         /// events or triggers.
         /// </summary>
         [JsonProperty("reactions")]
-        public List<Reaction>? Reactions { get; set; }
+        public List<Common.Action>? Reactions { get; set; }
 
         /// <summary>
         /// Gets or sets the creature's Religion skill, representing knowledge about deities and
@@ -303,7 +303,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
         /// Gets or sets the list of special abilities the creature has.
         /// </summary>
         [JsonProperty("special_abilities")]
-        public List<SpecialAbility>? SpecialAbilities { get; set; }
+        public List<Common.Action>? SpecialAbilities { get; set; }
 
         /// <summary>
         /// Gets or sets the speed of the creature indicating how far it can move.
@@ -380,15 +380,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
                 Name = this.Name ?? string.Empty,
                 Size = this.Size ?? string.Empty,
                 Type = this.Type ?? string.Empty,
-                SourceDocumentTitle = "Creature Codex OGL",
-                SourceDocumentDescription = "Creature Codex Open-Gaming License Content by Kobold Press",
-                SourceDocumentVersion = "1.0",
-                LicenseName = "Open Gaming License",
-                LicenseURL = "https://koboldpress.com/kpstore/product/creature-codex-for-5th-edition-dnd/",
-                Author = "Wolfgang Baur, Dan Dillon, Richard Green, James Haeck, Chris Harris, Jeremy Hochhalter, James Introcaso, Chris Lockey, Shawn Merwin, and Jon Sawatsky",
-                Organization = "Kobold Press",
-                Copyright = "Creature Codex. © 2018 Open Design LLC; Authors Wolfgang Baur, Dan Dillon, Richard Green, James Haeck, Chris Harris, Jeremy Hochhalter, James Introcaso, Chris Lockey, Shawn Merwin, and Jon Sawatsky.",
-                RuleSystem = "Dungeons & Dragons 5e",
                 Alignment = this.Alignment ?? string.Empty,
                 ArmorClass = int.Parse(this.ArmorClass ?? "0"),
                 HitPoints = int.Parse(this.HitPoints ?? "0"),
@@ -448,12 +439,10 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
             {
                 foreach (var specialAbility in this.SpecialAbilities)
                 {
-                    creature.SpecialAbilities.Add(new Common.SpecialAbility()
+                    creature.SpecialAbilities.Add(new Common.Action()
                     {
                         Name = specialAbility.Name ?? string.Empty,
-                        Description = specialAbility.Desc ?? string.Empty,
-                        Creature = creature,
-                        CreatureId = creature.Id,
+                        Description = specialAbility.Description ?? string.Empty,
                     });
                 }
             }
@@ -466,9 +455,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
                     creature.Actions.Add(new Common.Action()
                     {
                         Name = action.Name ?? string.Empty,
-                        Description = action.Desc ?? string.Empty,
-                        Creature = creature,
-                        CreatureId = creature.Id,
+                        Description = action.Description ?? string.Empty,
                     });
                 }
             }
@@ -478,12 +465,10 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
             {
                 foreach (var reaction in this.Reactions)
                 {
-                    creature.Reactions.Add(new Common.Reaction()
+                    creature.Reactions.Add(new Common.Action()
                     {
                         Name = reaction.Name ?? string.Empty,
-                        Description = reaction.Desc ?? string.Empty,
-                        Creature = creature,
-                        CreatureId = creature.Id,
+                        Description = reaction.Description ?? string.Empty,
                     });
                 }
             }
@@ -494,12 +479,10 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
                 creature.LegendaryActionDescription = this.LegendaryDesc ?? string.Empty;
                 foreach (var legendaryAction in this.LegendaryActions)
                 {
-                    creature.LegendaryActions.Add(new Common.LegendaryAction()
+                    creature.LegendaryActions.Add(new Common.Action()
                     {
                         Name = legendaryAction.Name ?? string.Empty,
-                        Description = legendaryAction.Desc ?? string.Empty,
-                        Creature = creature,
-                        CreatureId = creature.Id,
+                        Description = legendaryAction.Description ?? string.Empty,
                     });
                 }
             }
