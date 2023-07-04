@@ -337,7 +337,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
 
             if (creature.Fly > 0)
             {
-                speeds.Add($"Fly {creature.Fly} ft." + (creature.Hover ? " (hover)" : string.Empty));
+                speeds.Add($"Fly {creature.Fly} ft." + ((creature.Hover ?? false) ? " (hover)" : string.Empty));
             }
 
             if (creature.Burrow > 0)
@@ -366,32 +366,32 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             List<string> savingThrows = new ();
             if (creature.StrengthSave > CreatureHelper.CalculateAbilityBonus(creature.Strength))
             {
-                savingThrows.Add($"STR {CreatureHelper.ConvertBonusToSignedString(creature.StrengthSave)}");
+                savingThrows.Add($"STR {CreatureHelper.ConvertBonusToSignedString(creature.StrengthSave ?? 0)}");
             }
 
             if (creature.DexteritySave > CreatureHelper.CalculateAbilityBonus(creature.Dexterity))
             {
-                savingThrows.Add($"DEX {CreatureHelper.ConvertBonusToSignedString(creature.DexteritySave)}");
+                savingThrows.Add($"DEX {CreatureHelper.ConvertBonusToSignedString(creature.DexteritySave ?? 0)}");
             }
 
             if (creature.ConstitutionSave > CreatureHelper.CalculateAbilityBonus(creature.Constitution))
             {
-                savingThrows.Add($"CON {CreatureHelper.ConvertBonusToSignedString(creature.ConstitutionSave)}");
+                savingThrows.Add($"CON {CreatureHelper.ConvertBonusToSignedString(creature.ConstitutionSave ?? 0)}");
             }
 
             if (creature.IntelligenceSave > CreatureHelper.CalculateAbilityBonus(creature.Intelligence))
             {
-                savingThrows.Add($"INT {CreatureHelper.ConvertBonusToSignedString(creature.IntelligenceSave)}");
+                savingThrows.Add($"INT {CreatureHelper.ConvertBonusToSignedString(creature.IntelligenceSave ?? 0)}");
             }
 
             if (creature.WisdomSave > CreatureHelper.CalculateAbilityBonus(creature.Wisdom))
             {
-                savingThrows.Add($"WIS {CreatureHelper.ConvertBonusToSignedString(creature.WisdomSave)}");
+                savingThrows.Add($"WIS {CreatureHelper.ConvertBonusToSignedString(creature.WisdomSave ?? 0)}");
             }
 
             if (creature.CharismaSave > CreatureHelper.CalculateAbilityBonus(creature.Charisma))
             {
-                savingThrows.Add($"CHA {CreatureHelper.ConvertBonusToSignedString(creature.CharismaSave)}");
+                savingThrows.Add($"CHA {CreatureHelper.ConvertBonusToSignedString(creature.CharismaSave ?? 0)}");
             }
 
             if (savingThrows.Count > 0)
@@ -402,92 +402,92 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             List<string> skillsList = new ();
             if (creature.Acrobatics > CreatureHelper.CalculateAbilityBonus(creature.Dexterity))
             {
-                skillsList.Add($"Acrobatics {CreatureHelper.ConvertBonusToSignedString(creature.Acrobatics)}");
+                skillsList.Add($"Acrobatics {CreatureHelper.ConvertBonusToSignedString(creature.Acrobatics ?? 0)}");
             }
 
             if (creature.AnimalHandling > CreatureHelper.CalculateAbilityBonus(creature.Wisdom))
             {
-                skillsList.Add($"Animal Handling {CreatureHelper.ConvertBonusToSignedString(creature.AnimalHandling)}");
+                skillsList.Add($"Animal Handling {CreatureHelper.ConvertBonusToSignedString(creature.AnimalHandling ?? 0)}");
             }
 
             if (creature.Arcana > CreatureHelper.CalculateAbilityBonus(creature.Intelligence))
             {
-                skillsList.Add($"Arcana {CreatureHelper.ConvertBonusToSignedString(creature.Arcana)}");
+                skillsList.Add($"Arcana {CreatureHelper.ConvertBonusToSignedString(creature.Arcana ?? 0)}");
             }
 
             if (creature.Athletics > CreatureHelper.CalculateAbilityBonus(creature.Strength))
             {
-                skillsList.Add($"Athletics {CreatureHelper.ConvertBonusToSignedString(creature.Athletics)}");
+                skillsList.Add($"Athletics {CreatureHelper.ConvertBonusToSignedString(creature.Athletics ?? 0)}");
             }
 
             if (creature.Deception > CreatureHelper.CalculateAbilityBonus(creature.Charisma))
             {
-                skillsList.Add($"Deception {CreatureHelper.ConvertBonusToSignedString(creature.Deception)}");
+                skillsList.Add($"Deception {CreatureHelper.ConvertBonusToSignedString(creature.Deception ?? 0)}");
             }
 
             if (creature.History > CreatureHelper.CalculateAbilityBonus(creature.Intelligence))
             {
-                skillsList.Add($"History {CreatureHelper.ConvertBonusToSignedString(creature.History)}");
+                skillsList.Add($"History {CreatureHelper.ConvertBonusToSignedString(creature.History ?? 0)}");
             }
 
             if (creature.Insight > CreatureHelper.CalculateAbilityBonus(creature.Wisdom))
             {
-                skillsList.Add($"Insight {CreatureHelper.ConvertBonusToSignedString(creature.Insight)}");
+                skillsList.Add($"Insight {CreatureHelper.ConvertBonusToSignedString(creature.Insight ?? 0)}");
             }
 
             if (creature.Intimidation > CreatureHelper.CalculateAbilityBonus(creature.Charisma))
             {
-                skillsList.Add($"Intimidation {CreatureHelper.ConvertBonusToSignedString(creature.Intimidation)}");
+                skillsList.Add($"Intimidation {CreatureHelper.ConvertBonusToSignedString(creature.Intimidation ?? 0)}");
             }
 
             if (creature.Investigation > CreatureHelper.CalculateAbilityBonus(creature.Intelligence))
             {
-                skillsList.Add($"Investigation {CreatureHelper.ConvertBonusToSignedString(creature.Investigation)}");
+                skillsList.Add($"Investigation {CreatureHelper.ConvertBonusToSignedString(creature.Investigation ?? 0)}");
             }
 
             if (creature.Medicine > CreatureHelper.CalculateAbilityBonus(creature.Wisdom))
             {
-                skillsList.Add($"Medicine {CreatureHelper.ConvertBonusToSignedString(creature.Medicine)}");
+                skillsList.Add($"Medicine {CreatureHelper.ConvertBonusToSignedString(creature.Medicine ?? 0)}");
             }
 
             if (creature.Nature > CreatureHelper.CalculateAbilityBonus(creature.Intelligence))
             {
-                skillsList.Add($"Nature {CreatureHelper.ConvertBonusToSignedString(creature.Nature)}");
+                skillsList.Add($"Nature {CreatureHelper.ConvertBonusToSignedString(creature.Nature ?? 0)}");
             }
 
             if (creature.Perception > CreatureHelper.CalculateAbilityBonus(creature.Wisdom))
             {
-                skillsList.Add($"Perception {CreatureHelper.ConvertBonusToSignedString(creature.Perception)}");
+                skillsList.Add($"Perception {CreatureHelper.ConvertBonusToSignedString(creature.Perception ?? 0)}");
             }
 
             if (creature.Performance > CreatureHelper.CalculateAbilityBonus(creature.Charisma))
             {
-                skillsList.Add($"Performance {CreatureHelper.ConvertBonusToSignedString(creature.Performance)}");
+                skillsList.Add($"Performance {CreatureHelper.ConvertBonusToSignedString(creature.Performance ?? 0)}");
             }
 
             if (creature.Persuasion > CreatureHelper.CalculateAbilityBonus(creature.Charisma))
             {
-                skillsList.Add($"Persuasion {CreatureHelper.ConvertBonusToSignedString(creature.Persuasion)}");
+                skillsList.Add($"Persuasion {CreatureHelper.ConvertBonusToSignedString(creature.Persuasion ?? 0)}");
             }
 
             if (creature.Religion > CreatureHelper.CalculateAbilityBonus(creature.Intelligence))
             {
-                skillsList.Add($"Religion {CreatureHelper.ConvertBonusToSignedString(creature.Religion)}");
+                skillsList.Add($"Religion {CreatureHelper.ConvertBonusToSignedString(creature.Religion ?? 0)}");
             }
 
             if (creature.SleightOfHand > CreatureHelper.CalculateAbilityBonus(creature.Dexterity))
             {
-                skillsList.Add($"Sleight of Hand {CreatureHelper.ConvertBonusToSignedString(creature.SleightOfHand)}");
+                skillsList.Add($"Sleight of Hand {CreatureHelper.ConvertBonusToSignedString(creature.SleightOfHand ?? 0)}");
             }
 
             if (creature.Stealth > CreatureHelper.CalculateAbilityBonus(creature.Dexterity))
             {
-                skillsList.Add($"Stealth {CreatureHelper.ConvertBonusToSignedString(creature.Stealth)}");
+                skillsList.Add($"Stealth {CreatureHelper.ConvertBonusToSignedString(creature.Stealth ?? 0)}");
             }
 
             if (creature.Survival > CreatureHelper.CalculateAbilityBonus(creature.Wisdom))
             {
-                skillsList.Add($"Survival {CreatureHelper.ConvertBonusToSignedString(creature.Survival)}");
+                skillsList.Add($"Survival {CreatureHelper.ConvertBonusToSignedString(creature.Survival ?? 0)}");
             }
 
             if (skillsList.Count > 0)
@@ -551,7 +551,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
                 foreach (Common.Action specialAbility in creature.SpecialAbilities)
                 {
                     builder.AppendLine($"- {specialAbility.Name}: >");
-                    foreach (string line in specialAbility.Description.Split("\n"))
+                    foreach (string line in (specialAbility.Description ?? string.Empty).Split("\n"))
                     {
                         if (!string.IsNullOrEmpty(line))
                         {
@@ -590,7 +590,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
                 foreach (Common.Action action in creature.Actions)
                 {
                     builder.AppendLine($"- {action.Name}: >");
-                    foreach (string line in action.Description.Split("\n"))
+                    foreach (string line in (action.Description ?? string.Empty).Split("\n"))
                     {
                         if (!string.IsNullOrEmpty(line))
                         {
@@ -606,7 +606,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
                 foreach (Common.Action reaction in creature.Reactions)
                 {
                     builder.AppendLine($"- {reaction.Name}: >");
-                    foreach (string line in reaction.Description.Split("\n"))
+                    foreach (string line in (reaction.Description ?? string.Empty).Split("\n"))
                     {
                         if (!string.IsNullOrEmpty(line))
                         {
@@ -622,7 +622,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
                 foreach (Common.Action legendaryAction in creature.LegendaryActions)
                 {
                     builder.AppendLine($"-  {legendaryAction.Name}: >");
-                    foreach (string line in legendaryAction.Description.Split("\n"))
+                    foreach (string line in (legendaryAction.Description ?? string.Empty).Split("\n"))
                     {
                         if (!string.IsNullOrEmpty(line))
                         {
@@ -632,8 +632,15 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
                 }
             }
 
+            // Add License Info
+            if (creature.License != null)
+            {
+                builder.AppendLine();
+                builder.AppendLine($"License: [{creature.License.Desc ?? creature.License.Name ?? creature.License.Title}]({creature.License.Url})");
+            }
+
             builder.AppendLine($"```");
-            return builder.ToString();
+            return builder.ToString().Replace("\t", "     ");
         }
 
         /// <summary>
@@ -659,7 +666,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
 
             if (creature.Fly > 0)
             {
-                speeds.Add($"Fly {creature.Fly} ft." + (creature.Hover ? " (hover)" : string.Empty));
+                speeds.Add($"Fly {creature.Fly} ft." + ((creature.Hover ?? false) ? " (hover)" : string.Empty));
             }
 
             if (creature.Burrow > 0)
@@ -687,32 +694,32 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             List<string> savingThrows = new ();
             if (creature.StrengthSave > CreatureHelper.CalculateAbilityBonus(creature.Strength))
             {
-                savingThrows.Add($"STR {CreatureHelper.ConvertBonusToSignedString(creature.StrengthSave)}");
+                savingThrows.Add($"STR {CreatureHelper.ConvertBonusToSignedString(creature.StrengthSave ?? 0)}");
             }
 
             if (creature.DexteritySave > CreatureHelper.CalculateAbilityBonus(creature.Dexterity))
             {
-                savingThrows.Add($"DEX {CreatureHelper.ConvertBonusToSignedString(creature.DexteritySave)}");
+                savingThrows.Add($"DEX {CreatureHelper.ConvertBonusToSignedString(creature.DexteritySave ?? 0)}");
             }
 
             if (creature.ConstitutionSave > CreatureHelper.CalculateAbilityBonus(creature.Constitution))
             {
-                savingThrows.Add($"CON {CreatureHelper.ConvertBonusToSignedString(creature.ConstitutionSave)}");
+                savingThrows.Add($"CON {CreatureHelper.ConvertBonusToSignedString(creature.ConstitutionSave ?? 0)}");
             }
 
             if (creature.IntelligenceSave > CreatureHelper.CalculateAbilityBonus(creature.Intelligence))
             {
-                savingThrows.Add($"INT {CreatureHelper.ConvertBonusToSignedString(creature.IntelligenceSave)}");
+                savingThrows.Add($"INT {CreatureHelper.ConvertBonusToSignedString(creature.IntelligenceSave ?? 0)}");
             }
 
             if (creature.WisdomSave > CreatureHelper.CalculateAbilityBonus(creature.Wisdom))
             {
-                savingThrows.Add($"WIS {CreatureHelper.ConvertBonusToSignedString(creature.WisdomSave)}");
+                savingThrows.Add($"WIS {CreatureHelper.ConvertBonusToSignedString(creature.WisdomSave ?? 0)}");
             }
 
             if (creature.CharismaSave > CreatureHelper.CalculateAbilityBonus(creature.Charisma))
             {
-                savingThrows.Add($"CHA {CreatureHelper.ConvertBonusToSignedString(creature.CharismaSave)}");
+                savingThrows.Add($"CHA {CreatureHelper.ConvertBonusToSignedString(creature.CharismaSave ?? 0)}");
             }
 
             if (savingThrows.Count > 0)
@@ -723,92 +730,92 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             List<string> skillsList = new ();
             if (creature.Acrobatics > CreatureHelper.CalculateAbilityBonus(creature.Dexterity))
             {
-                skillsList.Add($"Acrobatics {CreatureHelper.ConvertBonusToSignedString(creature.Acrobatics)}");
+                skillsList.Add($"Acrobatics {CreatureHelper.ConvertBonusToSignedString(creature.Acrobatics ?? 0)}");
             }
 
             if (creature.AnimalHandling > CreatureHelper.CalculateAbilityBonus(creature.Wisdom))
             {
-                skillsList.Add($"Animal Handling {CreatureHelper.ConvertBonusToSignedString(creature.AnimalHandling)}");
+                skillsList.Add($"Animal Handling {CreatureHelper.ConvertBonusToSignedString(creature.AnimalHandling ?? 0)}");
             }
 
             if (creature.Arcana > CreatureHelper.CalculateAbilityBonus(creature.Intelligence))
             {
-                skillsList.Add($"Arcana {CreatureHelper.ConvertBonusToSignedString(creature.Arcana)}");
+                skillsList.Add($"Arcana {CreatureHelper.ConvertBonusToSignedString(creature.Arcana ?? 0)}");
             }
 
             if (creature.Athletics > CreatureHelper.CalculateAbilityBonus(creature.Strength))
             {
-                skillsList.Add($"Athletics {CreatureHelper.ConvertBonusToSignedString(creature.Athletics)}");
+                skillsList.Add($"Athletics {CreatureHelper.ConvertBonusToSignedString(creature.Athletics ?? 0)}");
             }
 
             if (creature.Deception > CreatureHelper.CalculateAbilityBonus(creature.Charisma))
             {
-                skillsList.Add($"Deception {CreatureHelper.ConvertBonusToSignedString(creature.Deception)}");
+                skillsList.Add($"Deception {CreatureHelper.ConvertBonusToSignedString(creature.Deception ?? 0)}");
             }
 
             if (creature.History > CreatureHelper.CalculateAbilityBonus(creature.Intelligence))
             {
-                skillsList.Add($"History {CreatureHelper.ConvertBonusToSignedString(creature.History)}");
+                skillsList.Add($"History {CreatureHelper.ConvertBonusToSignedString(creature.History ?? 0)}");
             }
 
             if (creature.Insight > CreatureHelper.CalculateAbilityBonus(creature.Wisdom))
             {
-                skillsList.Add($"Insight {CreatureHelper.ConvertBonusToSignedString(creature.Insight)}");
+                skillsList.Add($"Insight {CreatureHelper.ConvertBonusToSignedString(creature.Insight ?? 0)}");
             }
 
             if (creature.Intimidation > CreatureHelper.CalculateAbilityBonus(creature.Charisma))
             {
-                skillsList.Add($"Intimidation {CreatureHelper.ConvertBonusToSignedString(creature.Intimidation)}");
+                skillsList.Add($"Intimidation {CreatureHelper.ConvertBonusToSignedString(creature.Intimidation ?? 0)}");
             }
 
             if (creature.Investigation > CreatureHelper.CalculateAbilityBonus(creature.Intelligence))
             {
-                skillsList.Add($"Investigation {CreatureHelper.ConvertBonusToSignedString(creature.Investigation)}");
+                skillsList.Add($"Investigation {CreatureHelper.ConvertBonusToSignedString(creature.Investigation ?? 0)}");
             }
 
             if (creature.Medicine > CreatureHelper.CalculateAbilityBonus(creature.Wisdom))
             {
-                skillsList.Add($"Medicine {CreatureHelper.ConvertBonusToSignedString(creature.Medicine)}");
+                skillsList.Add($"Medicine {CreatureHelper.ConvertBonusToSignedString(creature.Medicine ?? 0)}");
             }
 
             if (creature.Nature > CreatureHelper.CalculateAbilityBonus(creature.Intelligence))
             {
-                skillsList.Add($"Nature {CreatureHelper.ConvertBonusToSignedString(creature.Nature)}");
+                skillsList.Add($"Nature {CreatureHelper.ConvertBonusToSignedString(creature.Nature ?? 0)}");
             }
 
             if (creature.Perception > CreatureHelper.CalculateAbilityBonus(creature.Wisdom))
             {
-                skillsList.Add($"Perception {CreatureHelper.ConvertBonusToSignedString(creature.Perception)}");
+                skillsList.Add($"Perception {CreatureHelper.ConvertBonusToSignedString(creature.Perception ?? 0)}");
             }
 
             if (creature.Performance > CreatureHelper.CalculateAbilityBonus(creature.Charisma))
             {
-                skillsList.Add($"Performance {CreatureHelper.ConvertBonusToSignedString(creature.Performance)}");
+                skillsList.Add($"Performance {CreatureHelper.ConvertBonusToSignedString(creature.Performance ?? 0)}");
             }
 
             if (creature.Persuasion > CreatureHelper.CalculateAbilityBonus(creature.Charisma))
             {
-                skillsList.Add($"Persuasion {CreatureHelper.ConvertBonusToSignedString(creature.Persuasion)}");
+                skillsList.Add($"Persuasion {CreatureHelper.ConvertBonusToSignedString(creature.Persuasion ?? 0)}");
             }
 
             if (creature.Religion > CreatureHelper.CalculateAbilityBonus(creature.Intelligence))
             {
-                skillsList.Add($"Religion {CreatureHelper.ConvertBonusToSignedString(creature.Religion)}");
+                skillsList.Add($"Religion {CreatureHelper.ConvertBonusToSignedString(creature.Religion ?? 0)}");
             }
 
             if (creature.SleightOfHand > CreatureHelper.CalculateAbilityBonus(creature.Dexterity))
             {
-                skillsList.Add($"Sleight of Hand {CreatureHelper.ConvertBonusToSignedString(creature.SleightOfHand)}");
+                skillsList.Add($"Sleight of Hand {CreatureHelper.ConvertBonusToSignedString(creature.SleightOfHand ?? 0)}");
             }
 
             if (creature.Stealth > CreatureHelper.CalculateAbilityBonus(creature.Dexterity))
             {
-                skillsList.Add($"Stealth {CreatureHelper.ConvertBonusToSignedString(creature.Stealth)}");
+                skillsList.Add($"Stealth {CreatureHelper.ConvertBonusToSignedString(creature.Stealth ?? 0)}");
             }
 
             if (creature.Survival > CreatureHelper.CalculateAbilityBonus(creature.Wisdom))
             {
-                skillsList.Add($"Survival {CreatureHelper.ConvertBonusToSignedString(creature.Survival)}");
+                skillsList.Add($"Survival {CreatureHelper.ConvertBonusToSignedString(creature.Survival ?? 0)}");
             }
 
             if (skillsList.Count > 0)
@@ -891,6 +898,13 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
                 {
                     builder.AppendLine($"{action.Name}. {action.Description}");
                 }
+            }
+
+            // Add License Info
+            if (creature.License != null)
+            {
+                builder.AppendLine();
+                builder.AppendLine($"License: [{creature.License.Desc ?? creature.License.Name ?? creature.License.Title}]({creature.License.Url})");
             }
 
             return builder.ToString();

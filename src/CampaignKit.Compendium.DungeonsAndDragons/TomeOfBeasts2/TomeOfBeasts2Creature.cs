@@ -19,7 +19,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts2
     /// <summary>
     /// Represents a creature from the Tome of Beasts 2 from Kobold Press.
     /// </summary>
-    public class TomeOfBeasts2Creature : KoboldPress.KoboldPressCreature
+    public class TomeOfBeasts2Creature : TomeOfBeasts.TomeOfBeastsCreature
     {
     }
 }

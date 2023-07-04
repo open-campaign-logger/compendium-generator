@@ -234,6 +234,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         public string? LegendaryDesc { get; set; } = string.Empty;
 
         /// <summary>
+        /// Gets or sets the license object.
+        /// </summary>
+        public License? License { get; set; } = new License();
+
+        /// <summary>
         /// Gets or sets the creature's Medicine skill, which might be used for healing.
         /// </summary>
         [JsonProperty("medicine")]
@@ -451,6 +456,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
             {
                 foreach (var specialAbility in this.SpecialAbilities)
                 {
+                    creature.SpecialAbilities ??= new List<Action> { };
                     creature.SpecialAbilities.Add(new Common.Action()
                     {
                         Name = specialAbility.Name ?? string.Empty,
@@ -464,6 +470,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
             {
                 foreach (var action in this.Actions)
                 {
+                    creature.Actions ??= new List<Action> { };
                     creature.Actions.Add(new Common.Action()
                     {
                         Name = action.Name ?? string.Empty,
@@ -478,6 +485,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
                 creature.LegendaryActionDescription = this.LegendaryDesc ?? string.Empty;
                 foreach (var legendaryAction in this.LegendaryActions)
                 {
+                    creature.LegendaryActions ??= new List<Action> { };
                     creature.LegendaryActions.Add(new Common.Action()
                     {
                         Name = legendaryAction.Name ?? string.Empty,
@@ -485,6 +493,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
                     });
                 }
             }
+
+            // Populate License
+            creature.License = this.License;
 
             return creature;
         }

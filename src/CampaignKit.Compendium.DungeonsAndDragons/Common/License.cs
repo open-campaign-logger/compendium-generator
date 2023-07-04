@@ -1,4 +1,4 @@
-﻿// <copyright file="SourceDataLicense.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="License.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,67 +21,67 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
     /// <summary>
     /// Represents the license information for a particular data set within the application.
     /// </summary>
-    public class SourceDataLicense
+    public class License
     {
         /// <summary>
         /// Gets or sets the title of the license.
         /// </summary>
         [JsonProperty("title")]
-        public string? Title { get; set; }
+        public string? Title { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the slug of the license.
         /// A slug is a URL-friendly version of the title which is typically used in links to the license.
         /// </summary>
         [JsonProperty("slug")]
-        public string? Slug { get; set; }
+        public string? Slug { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the description of the license.
         /// </summary>
         [JsonProperty("desc")]
-        public string? Desc { get; set; }
+        public string? Desc { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the actual text of the license agreement.
         /// </summary>
         [JsonProperty("license")]
-        public string? License { get; set; }
+        public string? Name { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the author of the licensed content.
         /// </summary>
         [JsonProperty("author")]
-        public string? Author { get; set; }
+        public string? Author { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the organization that owns the licensed content.
         /// </summary>
         [JsonProperty("organization")]
-        public string? Organization { get; set; }
+        public string? Organization { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the version of the licensed content.
         /// </summary>
         [JsonProperty("version")]
-        public string? Version { get; set; }
+        public string? Version { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the copyright information for the licensed content.
         /// </summary>
         [JsonProperty("copyright")]
-        public string? Copyright { get; set; }
+        public string? Copyright { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the URL where more information about the license can be found.
         /// </summary>
         [JsonProperty("url")]
-        public string? Url { get; set; }
+        public string? Url { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the list of OGL lines.
         /// </summary>
         [JsonProperty("ogl-lines")]
-        public List<string>? OGLLines { get; set; }
+        public List<string>? OGLLines { get; set; } = new List<string>();
     }
 }

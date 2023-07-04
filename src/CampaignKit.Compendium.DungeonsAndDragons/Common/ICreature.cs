@@ -22,9 +22,19 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
     public interface ICreature
     {
         /// <summary>
-        /// Creates a generic Creature object populated with values from this SRDCreature object.
+        /// Gets or sets the License object. This needs to be done before calling the "ToCreature" method.
         /// </summary>
-        /// <returns>Generic Creature object populated with values from this SRDCreature object.</returns>
+        public License? License { get; set; }
+
+        /// <summary>
+        /// Gets or sets the creature's name.
+        /// </summary>
+        public string? Name { get; set; }
+
+        /// <summary>
+        /// Creates a generic Creature object populated with values from the underlying class.
+        /// </summary>
+        /// <returns>Generic Creature object populated with values from the underlying class.</returns>
         public Creature ToCreature();
     }
 }

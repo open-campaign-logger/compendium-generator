@@ -30,13 +30,13 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// Gets or sets the description of this creature Action.
         /// </summary>
         [JsonProperty("desc")]
-        public string Description { get; set; } = string.Empty;
+        public string? Description { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the name of this creature Action.
         /// </summary>
         [JsonProperty("name")]
-        public string Name { get; set; } = string.Empty;
+        public string? Name { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the attack bonus of the SpecialAbility, if any.
@@ -77,7 +77,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             }
             else
             {
-                return this.Name.Equals(other.Name);
+                return (this.Name ?? string.Empty).Equals(other.Name);
             }
         }
 
@@ -87,7 +87,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// <returns>A hash code for the current object.</returns>
         public override int GetHashCode()
         {
-            return this.Name.GetHashCode();
+            return (this.Name ?? string.Empty).GetHashCode();
         }
     }
 }

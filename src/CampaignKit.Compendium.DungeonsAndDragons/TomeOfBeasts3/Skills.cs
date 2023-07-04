@@ -1,4 +1,20 @@
-﻿namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts3
+﻿// <copyright file="Skills.cs" company="Jochen Linnemann - IT-Service">
+// Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+// </copyright>
+
+namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts3
 {
     using Newtonsoft.Json;
 
@@ -13,6 +29,12 @@
         /// </summary>
         [JsonProperty("acrobatics")]
         public int? Acrobatics { get; set; } = int.MinValue;
+
+        /// <summary>
+        /// Gets or sets the creature's proficiency in the Animal Handling skill.
+        /// </summary>
+        [JsonProperty("animal_handling")]
+        public int? AnimalHandling { get; set; } = int.MinValue;
 
         /// <summary>
         /// Gets or sets the creature's proficiency in the Arcana skill.
@@ -30,7 +52,7 @@
         /// Gets or sets the creature's proficiency in the Deception skill.
         /// </summary>
         [JsonProperty("deception")]
-        public int? Seception { get; set; } = int.MinValue;
+        public int? Deception { get; set; } = int.MinValue;
 
         /// <summary>
         /// Gets or sets the creature's proficiency in the History skill.
@@ -45,10 +67,22 @@
         public int? Insight { get; set; } = int.MinValue;
 
         /// <summary>
+        /// Gets or sets the creature's proficiency in the Investigation skill.
+        /// </summary>
+        [JsonProperty("investigation")]
+        public int? Investigation { get; set; } = int.MinValue;
+
+        /// <summary>
         /// Gets or sets the creature's proficiency in the Intimidation skill.
         /// </summary>
         [JsonProperty("intimidation")]
         public int? Intimidation { get; set; } = int.MinValue;
+
+        /// <summary>
+        /// Gets or sets the creature's proficiency in the Medicine skill.
+        /// </summary>
+        [JsonProperty("medicine")]
+        public int? Medicine { get; set; } = int.MinValue;
 
         /// <summary>
         /// Gets or sets the creature's proficiency in the Nature skill.
@@ -84,7 +118,7 @@
         /// Gets or sets the creature's proficiency in the Sleight of Hand skill.
         /// </summary>
         [JsonProperty("slight_of_hand")]
-        public int? Slight_of_hand { get; set; } = int.MinValue;
+        public int? SleightOfHand { get; set; } = int.MinValue;
 
         /// <summary>
         /// Gets or sets the creature's proficiency in the Stealth skill.

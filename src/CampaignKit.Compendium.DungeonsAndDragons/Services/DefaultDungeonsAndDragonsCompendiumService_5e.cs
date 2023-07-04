@@ -16,8 +16,11 @@
 
 namespace CampaignKit.Compendium.DungeonsAndDragons.Services
 {
+    using System.Text;
     using System.Threading.Tasks;
+    using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Services;
+    using CampaignKit.Compendium.DungeonsAndDragons.Common;
     using Microsoft.Extensions.Logging;
     using Newtonsoft.Json;
 
@@ -78,9 +81,10 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                 return;
             }
 
+            var creatureList = new List<Common.Creature>();
             foreach (var compendium in compendiums)
             {
-                this.logger.LogInformation("Processing compendium: {compendium}.", compendium.Title);
+                this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
 
                 // Download data sets
                 foreach (var sourceDataSet in compendium.SourceDataSets)
@@ -120,7 +124,55 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                         ?? throw new Exception($"Configuration parmater not defined: {nameof(sourceDataSet.SourceDataSetParser)}.");
                     var sourceDataSetListType = typeof(List<>).MakeGenericType(sourceDataSetParserType);
                     var sourceDataSetParsed = JsonConvert.DeserializeObject(sourceDataSetJSON, sourceDataSetListType);
+
+                    // Convert each object to Common.Creature and add it to the collection if it doesn't already exist.
+                    // Cast the deserialized list to the interface type
+                    IEnumerable<ICreature> creatures = (IEnumerable<ICreature>)(sourceDataSetParsed ?? new List<ICreature>());
+
+                    // Convert each creature to the standard format
+                    foreach (ICreature creature in creatures)
+                    {
+                        this.logger.LogDebug("Converting creature to standard format: {Name}.", creature.Name);
+                        var convertedCreature = creature.ToCreature();
+                        if (licenseParsed != null && licenseParsed is List<License> && ((List<License>)licenseParsed).Count > 0)
+                        {
+                            convertedCreature.License = ((List<License>)licenseParsed)[0];
+                        }
+
+                        if (!creatureList.Contains(convertedCreature))
+                        {
+                            this.logger.LogDebug("New creature found and added to compendium list: {creature}.", convertedCreature.Name);
+                            creatureList.Add(convertedCreature);
+                        }
+                    }
                 }
+
+                // Create CampaignLogger File
+                this.logger.LogInformation("Creating CampaignLogger file for compendium: {compendium}.", compendium.Title);
+                var campaignLoggerFile = new Campaign()
+                {
+                    Version = 2,
+                    Type = "campaign",
+                    Title = compendium.Title,
+                    Description = compendium.Description,
+                    CampaignEntries = new List<CampaignEntry>(),
+                    Logs = new List<Log>(),
+                    ImageUrl = string.Empty,
+                };
+                foreach (var creature in creatureList)
+                {
+                    campaignLoggerFile.CampaignEntries.Add(new CampaignEntry()
+                    {
+                        RawText = CreatureHelper.ToCampaignLoggerStatBlock(creature),
+                        Labels = new List<string>() { "monster", creature.Type ?? "no type", $"CL {creature.ChallengeRating}" },
+                        TagSymbol = "~",
+                        TagValue = creature.Name,
+                    });
+                }
+
+                File.WriteAllText(Path.Combine(rootDataDirectory, compendium.Title + ".json"), JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented));
+
+                this.logger.LogInformation("Processing of compendium complete: {compendium}.", compendium.Title);
             }
         }
     }
