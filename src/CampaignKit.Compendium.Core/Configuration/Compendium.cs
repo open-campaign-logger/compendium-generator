@@ -22,6 +22,11 @@ namespace CampaignKit.Compendium.Core.Configuration
     public class Compendium
     {
         /// <summary>
+        /// Gets or sets the name of the CompendiumService to use for processing this compendium.
+        /// </summary>
+        public string CompendiumService { get; set; } = string.Empty;
+
+        /// <summary>
         /// Gets or sets the description of the Compendium.
         /// This property is typically used to provide a brief explanation of the Compendium's content.
         /// </summary>

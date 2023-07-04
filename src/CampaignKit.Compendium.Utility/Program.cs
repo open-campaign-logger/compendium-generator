@@ -17,17 +17,14 @@
 namespace CampaignKit.Compendium.Utility
 {
     using System.Collections.Generic;
-    using System.Reflection;
     using System.Runtime.Loader;
-    using System.Text.RegularExpressions;
-    using CampaignKit.Compendium.Core.Common;
     using CampaignKit.Compendium.Core.Configuration;
     using CampaignKit.Compendium.Core.Services;
+    using CampaignKit.Compendium.DungeonsAndDragons.Services;
     using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.DependencyInjection; // Import the Microsoft.Extensions.DependencyInjection namespace
-    using Microsoft.Extensions.Hosting; // Import the Microsoft.Extensions.Hosting namespace
-    using Microsoft.Extensions.Logging; // Import the Microsoft.Extensions.Logging namespace
-    using Microsoft.IdentityModel.Tokens;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Hosting;
+    using Microsoft.Extensions.Logging;
     using Newtonsoft.Json;
 
     /// <summary>
@@ -60,7 +57,9 @@ namespace CampaignKit.Compendium.Utility
                 // Configure services to add the SourceHelper class.
                 .ConfigureServices((context, services) =>
                 {
-                    services.AddTransient<DownloadService>();
+                    services.AddTransient<IDownloadService, DefaultDownloadService>();
+                    services.AddTransient<IConfigurationService, DefaultConfigurationService>();
+                    services.AddTransient<IDungeonsAndDragonsCompendiumService_5e, DefaultDungeonsAndDragonsCompendiumService_5e>();
                 })
 
                 // Configure logging to clear existing providers and add the console provider.
@@ -74,59 +73,9 @@ namespace CampaignKit.Compendium.Utility
                 // Build the host.
                 .Build();
 
-            // Access services from the host
-            var downloadService = host.Services.GetRequiredService<DownloadService>();
-            var configuration = host.Services.GetRequiredService<IConfiguration>();
-            var loggerFactory = host.Services.GetService<ILoggerFactory>() ?? new LoggerFactory();
-            var logger = loggerFactory.CreateLogger(typeof(Program));
-            var rootDataFolder = configuration.GetValue<string>("RootDataFolder") ?? Path.Combine(Path.GetTempPath(), "CompendiumGenerator");
-
-            // Process each campaign entry
-            var compendiums = new List<Compendium>();
-            configuration.GetSection("Compendiums").Bind(compendiums);
-            foreach (var compendium in compendiums)
-            {
-                logger.LogInformation("Processing Compendium: {campaign}.", compendium.Title);
-
-                // Process campaign data sets
-                if (compendium.SourceDataSets is not null)
-                {
-                    // Download data sets
-                    foreach (var sourceDataSet in compendium.SourceDataSets)
-                    {
-                        // Setup local variables
-                        downloadService.DerivePathAndFileNames(sourceDataSet.LicenseDataURI, out string licenseDirectory, out string licenseFile);
-                        var licenseFilePath = Path.Combine(rootDataFolder, licenseDirectory, licenseFile);
-
-                        logger.LogInformation("Downloading license data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
-                        await downloadService.DownloadFile(
-                            sourceDataSet.LicenseDataURI,
-                            rootDataFolder,
-                            sourceDataSet.OverwriteExisting);
-
-                        logger.LogDebug("Reading local copy of license data from: {LicenseFilePath}.", licenseFilePath);
-                        var licenseJSON = File.ReadAllText(Path.Combine(rootDataFolder, licenseDirectory, licenseFile))
-                            ?? throw new Exception($"Unable to read license information from file: {licenseFilePath}.");
-
-                        logger.LogDebug("Parsing local copy of license data using parser: {LicenseDataParser}.", sourceDataSet.LicenseDataParser);
-                        string assemblyPath = AppDomain.CurrentDomain.BaseDirectory + "CampaignKit.Compendium.DungeonsAndDragons.dll";
-                        var assembly = AssemblyLoadContext.Default.LoadFromAssemblyPath(assemblyPath);
-                        var licenseParserType = assembly.GetType(sourceDataSet.LicenseDataParser)
-                            ?? throw new Exception($"Unable to recognize license parser class type: {sourceDataSet.LicenseDataParser}.");
-                        var genericListType = typeof(List<>).MakeGenericType(licenseParserType)
-                            ?? throw new Exception($"Unable to create list of license parser class type: {sourceDataSet.LicenseDataParser}.");
-                        var license = JsonConvert.DeserializeObject(licenseJSON, genericListType);
-
-                        //logger.LogInformation("Downloading source data for data set: {name}.", sourceDataSet.SourceDataSetName);
-                        //await downloadService.DownloadFile(
-                        //    sourceDataSet.SourceDataURI ?? string.Empty,
-                        //    rootDataFolder,
-                        //    sourceDataSet.OverwriteExisting ?? false);
-
-                        //downloadService.DerivePathAndFileNames(sourceDataSet.SourceDataURI ?? string.Empty, out string sourceDataDirectory, out string sourceDataFile);
-                    }
-                }
-            }
+            // Process compendiums
+            var dungeonsAndDragonsCompendiumService_5e = host.Services.GetRequiredService<IDungeonsAndDragonsCompendiumService_5e>();
+            await dungeonsAndDragonsCompendiumService_5e.CreateCompendiums();
         }
     }
 }

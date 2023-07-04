@@ -1,4 +1,4 @@
-﻿// <copyright file="DownloadService.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="DefaultDownloadService.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,26 +22,25 @@ namespace CampaignKit.Compendium.Core.Services
     using Microsoft.Extensions.Logging;
 
     /// <summary>
-    /// Represents a downloader for TTRPG (Tabletop Role-Playing Games) source data.
+    /// Default service for downloading source data for tabletop role-playing games.
     /// </summary>
-    public class DownloadService
+    public class DefaultDownloadService : IDownloadService
     {
-        // Create a private readonly field to store an ILogger instance
-        // with the type CompendiumSourceDownloader
-        private readonly ILogger<DownloadService> logger;
+        // Create a private readonly field to store an ILogger instance.
+        private readonly ILogger<DefaultDownloadService> logger;
 
         // Create a private readonly field to store an IConfiguration instance.
         private readonly IConfiguration configuration;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DownloadService"/> class.
+        /// Initializes a new instance of the <see cref="DefaultDownloadService"/> class.
         /// </summary>
-        /// <param name="logger">The logger for the downloader.</param>
+        /// <param name="logger">The logger for the service.</param>
         /// <param name="configuration">Application configuration information.</param>
         /// <returns>
         /// A CompendiumSourceDownloader instance.
         /// </returns>
-        public DownloadService(ILogger<DownloadService> logger, IConfiguration configuration)
+        public DefaultDownloadService(ILogger<DefaultDownloadService> logger, IConfiguration configuration)
         {
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
             this.configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));

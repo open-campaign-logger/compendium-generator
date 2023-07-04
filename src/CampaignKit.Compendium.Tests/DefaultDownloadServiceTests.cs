@@ -1,8 +1,4 @@
 ﻿// Unit Test
-using System;
-using System.IO;
-using System.Net.Http;
-using System.Threading.Tasks;
 using CampaignKit.Compendium.Core.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -11,23 +7,78 @@ using Moq;
 namespace CampaignKit.Compendium.Core.Tests
 {
     [TestClass]
-    public class SourceHelperTests
+    public class DefaultDownloadServiceTests
     {
         private readonly string rootDataFolder = Path.Combine(Path.GetTempPath(), "CompendiumGenerator");
 
-        private IConfiguration GetConfiguration()
+        [TestMethod]
+        public async Task DownloadFile_Should_Create_Directory_If_Not_Exists()
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory()) // Set the path to the current directory
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true); // Add the json configuration file
+            // Arrange
+            var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
+            var overwrite = false;
+            var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
+            var sourceHelper = new DefaultDownloadService(loggerMock.Object, GetConfiguration());
+            string path, file;
+            sourceHelper.DerivePathAndFileNames(sourceDataUri, out path, out file);
 
-            var configuration = builder.Build(); // Build the configuration
+            // Act
+            await sourceHelper.DownloadFile(sourceDataUri, rootDataFolder, overwrite);
 
-            return configuration;
+            // Assert
+            Assert.IsTrue(Directory.Exists(Path.Combine(rootDataFolder, path)));
+            Assert.IsTrue(File.Exists(Path.Combine(rootDataFolder, path, file)));
+        }
+
+        [TestMethod]
+        public async Task DownloadFile_Should_Download_If_File_Exists_And_Overwrite_Is_True()
+        {
+            // Arrange
+            var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
+            var overwrite = true;
+            var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
+            var sourceHelper = new DefaultDownloadService(loggerMock.Object, GetConfiguration());
+            string path, file;
+            sourceHelper.DerivePathAndFileNames(sourceDataUri, out path, out file);
+
+            // Act
+            Directory.CreateDirectory(Path.Combine(rootDataFolder, path));
+            File.WriteAllText(Path.Combine(rootDataFolder, path, file), string.Empty);
+            await sourceHelper.DownloadFile(sourceDataUri, rootDataFolder, overwrite);
+            FileInfo fileInfoAfter = new(Path.Combine(rootDataFolder, path, file));
+
+            // Assert
+            Assert.IsTrue(Directory.Exists(Path.Combine(rootDataFolder, path)));
+            Assert.IsTrue(File.Exists(Path.Combine(rootDataFolder, path, file)));
+            Assert.AreNotEqual(0, fileInfoAfter.Length);
+        }
+
+        [TestMethod]
+        public async Task DownloadFile_Should_Not_Download_If_File_Exists_And_Overwrite_Is_False()
+        {
+            // Arrange
+            var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
+            var overwrite = false;
+            var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
+            var sourceHelper = new DefaultDownloadService(loggerMock.Object, GetConfiguration());
+            string path, file;
+            sourceHelper.DerivePathAndFileNames(sourceDataUri, out path, out file);
+
+            // Act
+            Directory.CreateDirectory(Path.Combine(rootDataFolder, path));
+            File.WriteAllText(Path.Combine(rootDataFolder, path, file), string.Empty);
+            await sourceHelper.DownloadFile(sourceDataUri, rootDataFolder, overwrite);
+            FileInfo fileInfoAfter = new FileInfo(Path.Combine(rootDataFolder, path, file));
+
+            // Assert
+            Assert.IsTrue(Directory.Exists(Path.Combine(rootDataFolder, path)));
+            Assert.IsTrue(File.Exists(Path.Combine(rootDataFolder, path, file)));
+            Assert.AreEqual(0, fileInfoAfter.Length);
 
         }
 
-        [TestInitialize] public void Setup()
+        [TestInitialize]
+        public void Setup()
         {
             // Check if the directory exists.
             if (Directory.Exists(rootDataFolder))
@@ -50,70 +101,16 @@ namespace CampaignKit.Compendium.Core.Tests
             }
         }
 
-        [TestMethod]
-        public async Task DownloadFile_Should_Create_Directory_If_Not_Exists()
+        private IConfiguration GetConfiguration()
         {
-            // Arrange
-            var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
-            var overwrite = false;
-            var loggerMock = new Mock<ILogger<DownloadService>>();
-            var sourceHelper = new DownloadService(loggerMock.Object, GetConfiguration());
-            string path, file;
-            sourceHelper.DerivePathAndFileNames(sourceDataUri, out path, out file);
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory()) // Set the path to the current directory
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true); // Add the json configuration file
 
-            // Act
-            await sourceHelper.DownloadFile(sourceDataUri, rootDataFolder, overwrite);
+            var configuration = builder.Build(); // Build the configuration
 
-            // Assert
-            Assert.IsTrue(Directory.Exists(Path.Combine(rootDataFolder, path)));
-            Assert.IsTrue(File.Exists(Path.Combine(rootDataFolder, path, file)));
-        }
+            return configuration;
 
-        [TestMethod]
-        public async Task DownloadFile_Should_Not_Download_If_File_Exists_And_Overwrite_Is_False()
-        {
-            // Arrange
-            var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
-            var overwrite = false;
-            var loggerMock = new Mock<ILogger<DownloadService>>();
-            var sourceHelper = new DownloadService(loggerMock.Object, GetConfiguration());
-            string path, file;
-            sourceHelper.DerivePathAndFileNames(sourceDataUri, out path, out file);
-
-            // Act
-            Directory.CreateDirectory(Path.Combine(rootDataFolder, path));
-            File.WriteAllText(Path.Combine(rootDataFolder, path, file), string.Empty);
-            await sourceHelper.DownloadFile(sourceDataUri, rootDataFolder, overwrite);
-            FileInfo fileInfoAfter = new FileInfo(Path.Combine(rootDataFolder, path, file));
-
-            // Assert
-            Assert.IsTrue(Directory.Exists(Path.Combine(rootDataFolder, path)));
-            Assert.IsTrue(File.Exists(Path.Combine(rootDataFolder, path, file)));
-            Assert.AreEqual(0, fileInfoAfter.Length);
-
-        }
-
-        [TestMethod]
-        public async Task DownloadFile_Should_Download_If_File_Exists_And_Overwrite_Is_True()
-        {
-            // Arrange
-            var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
-            var overwrite = true;
-            var loggerMock = new Mock<ILogger<DownloadService>>();
-            var sourceHelper = new DownloadService(loggerMock.Object, GetConfiguration());
-            string path, file;
-            sourceHelper.DerivePathAndFileNames(sourceDataUri, out path, out file);
-
-            // Act
-            Directory.CreateDirectory(Path.Combine(rootDataFolder, path));
-            File.WriteAllText(Path.Combine(rootDataFolder, path, file), string.Empty);
-            await sourceHelper.DownloadFile(sourceDataUri, rootDataFolder, overwrite);
-            FileInfo fileInfoAfter = new(Path.Combine(rootDataFolder, path, file));
-
-            // Assert
-            Assert.IsTrue(Directory.Exists(Path.Combine(rootDataFolder, path)));
-            Assert.IsTrue(File.Exists(Path.Combine(rootDataFolder, path, file)));
-            Assert.AreNotEqual(0, fileInfoAfter.Length);
         }
     }
 }

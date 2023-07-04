@@ -16,12 +16,10 @@
 
 namespace CampaignKit.Compendium.DungeonsAndDragons.Common
 {
-    using CampaignKit.Compendium.Core.Common;
-
     /// <summary>
     /// Represents the license information for a particular data set within the application.
     /// </summary>
-    public class SourceDataLicense : ISourceDataLicense
+    public class SourceDataLicense
     {
         /// <summary>
         /// Gets or sets the title of the license.

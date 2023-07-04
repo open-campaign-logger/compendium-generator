@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.Dung
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.Utility", "src\CampaignKit.Compendium.Utility\CampaignKit.Compendium.Utility.csproj", "{61784E72-86A4-453B-8995-BFC1CF23F169}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampaignKit.Compendium.Tests", "src\CampaignKit.Compendium.Tests\CampaignKit.Compendium.Tests.csproj", "{0D8B1B5C-141A-4B37-894B-0B3DA20C50ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.Tests", "src\CampaignKit.Compendium.Tests\CampaignKit.Compendium.Tests.csproj", "{0D8B1B5C-141A-4B37-894B-0B3DA20C50ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
