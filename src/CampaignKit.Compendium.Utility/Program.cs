@@ -16,14 +16,19 @@
 
 namespace CampaignKit.Compendium.Utility
 {
-    using CampaignKit.Compendium.Core.CampaignLogger;
+    using System.Collections.Generic;
+    using System.Reflection;
+    using System.Runtime.Loader;
+    using System.Text.RegularExpressions;
+    using CampaignKit.Compendium.Core.Common;
     using CampaignKit.Compendium.Core.Configuration;
     using CampaignKit.Compendium.Core.Services;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection; // Import the Microsoft.Extensions.DependencyInjection namespace
     using Microsoft.Extensions.Hosting; // Import the Microsoft.Extensions.Hosting namespace
     using Microsoft.Extensions.Logging; // Import the Microsoft.Extensions.Logging namespace
-    using System.Resources;
+    using Microsoft.IdentityModel.Tokens;
+    using Newtonsoft.Json;
 
     /// <summary>
     /// Creates a host with default configuration, adds required services, configures logging,
@@ -74,6 +79,7 @@ namespace CampaignKit.Compendium.Utility
             var configuration = host.Services.GetRequiredService<IConfiguration>();
             var loggerFactory = host.Services.GetService<ILoggerFactory>() ?? new LoggerFactory();
             var logger = loggerFactory.CreateLogger(typeof(Program));
+            var rootDataFolder = configuration.GetValue<string>("RootDataFolder") ?? Path.Combine(Path.GetTempPath(), "CompendiumGenerator");
 
             // Process each campaign entry
             var compendiums = new List<Compendium>();
@@ -82,20 +88,43 @@ namespace CampaignKit.Compendium.Utility
             {
                 logger.LogInformation("Processing Compendium: {campaign}.", compendium.Title);
 
-                // Download campaign data sets
-                foreach (var sourceDataSet in compendium.SourceDataSets ?? new List<SourceDataSet>())
+                // Process campaign data sets
+                if (compendium.SourceDataSets is not null)
                 {
-                    logger.LogInformation("Downloading license data for data set: {name}.", sourceDataSet.SourceDataSetName);
-                    await downloadService.DownloadFile(
-                        sourceDataSet.LicenseDataURI ?? string.Empty,
-                        configuration.GetValue<string>("RootDataFolder") ?? string.Empty,
-                        sourceDataSet.OverwriteExisting ?? true);
+                    // Download data sets
+                    foreach (var sourceDataSet in compendium.SourceDataSets)
+                    {
+                        // Setup local variables
+                        downloadService.DerivePathAndFileNames(sourceDataSet.LicenseDataURI, out string licenseDirectory, out string licenseFile);
+                        var licenseFilePath = Path.Combine(rootDataFolder, licenseDirectory, licenseFile);
 
-                    logger.LogInformation("Downloading source data for data set: {name}.", sourceDataSet.SourceDataSetName);
-                    await downloadService.DownloadFile(
-                        sourceDataSet.SourceDataURI ?? string.Empty,
-                        configuration.GetValue<string>("RootDataFolder") ?? string.Empty,
-                        sourceDataSet.OverwriteExisting ?? true);
+                        logger.LogInformation("Downloading license data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
+                        await downloadService.DownloadFile(
+                            sourceDataSet.LicenseDataURI,
+                            rootDataFolder,
+                            sourceDataSet.OverwriteExisting);
+
+                        logger.LogDebug("Reading local copy of license data from: {LicenseFilePath}.", licenseFilePath);
+                        var licenseJSON = File.ReadAllText(Path.Combine(rootDataFolder, licenseDirectory, licenseFile))
+                            ?? throw new Exception($"Unable to read license information from file: {licenseFilePath}.");
+
+                        logger.LogDebug("Parsing local copy of license data using parser: {LicenseDataParser}.", sourceDataSet.LicenseDataParser);
+                        string assemblyPath = AppDomain.CurrentDomain.BaseDirectory + "CampaignKit.Compendium.DungeonsAndDragons.dll";
+                        var assembly = AssemblyLoadContext.Default.LoadFromAssemblyPath(assemblyPath);
+                        var licenseParserType = assembly.GetType(sourceDataSet.LicenseDataParser)
+                            ?? throw new Exception($"Unable to recognize license parser class type: {sourceDataSet.LicenseDataParser}.");
+                        var genericListType = typeof(List<>).MakeGenericType(licenseParserType)
+                            ?? throw new Exception($"Unable to create list of license parser class type: {sourceDataSet.LicenseDataParser}.");
+                        var license = JsonConvert.DeserializeObject(licenseJSON, genericListType);
+
+                        //logger.LogInformation("Downloading source data for data set: {name}.", sourceDataSet.SourceDataSetName);
+                        //await downloadService.DownloadFile(
+                        //    sourceDataSet.SourceDataURI ?? string.Empty,
+                        //    rootDataFolder,
+                        //    sourceDataSet.OverwriteExisting ?? false);
+
+                        //downloadService.DerivePathAndFileNames(sourceDataSet.SourceDataURI ?? string.Empty, out string sourceDataDirectory, out string sourceDataFile);
+                    }
                 }
             }
         }

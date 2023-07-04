@@ -25,24 +25,24 @@ namespace CampaignKit.Compendium.Core.Configuration
         /// Gets or sets the description of the Compendium.
         /// This property is typically used to provide a brief explanation of the Compendium's content.
         /// </summary>
-        public string? Description { get; set; }
+        public string Description { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the URL of the image associated with the Compendium.
         /// This property is typically used to provide a visual representation of the Compendium's content.
         /// </summary>
-        public string? ImageUrl { get; set; }
+        public string ImageUrl { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the list of source data sets associated with the Compendium.
         /// Each item in this list represents a set of data that is used in the Compendium.
         /// </summary>
-        public List<SourceDataSet>? SourceDataSets { get; set; }
+        public List<SourceDataSet> SourceDataSets { get; set; } = new List<SourceDataSet>();
 
         /// <summary>
         /// Gets or sets the title of the Compendium.
         /// This property is typically used to provide a succinct name for the Compendium.
         /// </summary>
-        public string? Title { get; set; }
+        public string Title { get; set; } = string.Empty;
     }
 }

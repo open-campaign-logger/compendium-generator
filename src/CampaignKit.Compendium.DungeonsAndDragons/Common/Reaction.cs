@@ -14,7 +14,7 @@
 // limitations under the License.
 // </copyright>
 
-namespace CampaignKit.Compendium.DungeonsAndDragons.Generic
+namespace CampaignKit.Compendium.DungeonsAndDragons.Common
 {
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;

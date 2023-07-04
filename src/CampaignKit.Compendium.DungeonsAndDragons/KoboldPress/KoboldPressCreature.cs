@@ -16,7 +16,7 @@
 
 namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
 {
-    using CampaignKit.Compendium.DungeonsAndDragons.Generic;
+    using CampaignKit.Compendium.DungeonsAndDragons.Common;
 
     using Newtonsoft.Json;
 
@@ -448,7 +448,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
             {
                 foreach (var specialAbility in this.SpecialAbilities)
                 {
-                    creature.SpecialAbilities.Add(new Generic.SpecialAbility()
+                    creature.SpecialAbilities.Add(new Common.SpecialAbility()
                     {
                         Name = specialAbility.Name ?? string.Empty,
                         Description = specialAbility.Desc ?? string.Empty,
@@ -463,7 +463,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
             {
                 foreach (var action in this.Actions)
                 {
-                    creature.Actions.Add(new Generic.Action()
+                    creature.Actions.Add(new Common.Action()
                     {
                         Name = action.Name ?? string.Empty,
                         Description = action.Desc ?? string.Empty,
@@ -478,7 +478,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
             {
                 foreach (var reaction in this.Reactions)
                 {
-                    creature.Reactions.Add(new Generic.Reaction()
+                    creature.Reactions.Add(new Common.Reaction()
                     {
                         Name = reaction.Name ?? string.Empty,
                         Description = reaction.Desc ?? string.Empty,
@@ -494,7 +494,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.KoboldPress
                 creature.LegendaryActionDescription = this.LegendaryDesc ?? string.Empty;
                 foreach (var legendaryAction in this.LegendaryActions)
                 {
-                    creature.LegendaryActions.Add(new Generic.LegendaryAction()
+                    creature.LegendaryActions.Add(new Common.LegendaryAction()
                     {
                         Name = legendaryAction.Name ?? string.Empty,
                         Description = legendaryAction.Desc ?? string.Empty,

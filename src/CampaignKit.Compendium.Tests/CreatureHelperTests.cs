@@ -1,4 +1,4 @@
-using CampaignKit.Compendium.DungeonsAndDragons.Generic;
+using CampaignKit.Compendium.DungeonsAndDragons.Common;
 
 namespace CampaignKit.Compendium.Tests
 {

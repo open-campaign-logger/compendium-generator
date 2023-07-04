@@ -59,21 +59,21 @@ namespace CampaignKit.Compendium.Core.Services
             try
             {
                 string path, page;
-                DerivePathAndFileNames(sourceDataUri, out path, out page);
+                this.DerivePathAndFileNames(sourceDataUri, out path, out page);
 
                 // If overwrite = false and the file already exists, return.
                 var localFolderPath = Path.Combine(rootDataFolder, path);
                 var localFilePath = Path.Combine(localFolderPath, page);
                 if (!overwrite && File.Exists(localFilePath))
                 {
-                    logger.LogInformation("Local file already exists: {localFilePath}.  Overwrite option set to false.  Skipping download.", localFilePath);
+                    this.logger.LogInformation("Local file already exists: {localFilePath}.  Overwrite option set to false.  Skipping download.", localFilePath);
                     return;
                 }
 
                 // Create data folder if required.
                 if (!Directory.Exists(localFolderPath))
                 {
-                    logger.LogDebug("Creating directory for source files: {localDataFolder}.", localFolderPath);
+                    this.logger.LogDebug("Creating directory for source files: {localDataFolder}.", localFolderPath);
                     Directory.CreateDirectory(localFolderPath);
                 }
 
@@ -81,7 +81,7 @@ namespace CampaignKit.Compendium.Core.Services
                 using var client = new HttpClient();
 
                 // Send a GET request to the URL
-                logger.LogDebug("Starting to download file: {sourceDataUri}.", sourceDataUri);
+                this.logger.LogDebug("Starting to download file: {sourceDataUri}.", sourceDataUri);
                 var response = await client.GetAsync(sourceDataUri);
 
                 // Ensure the request was successful
@@ -99,7 +99,7 @@ namespace CampaignKit.Compendium.Core.Services
             catch (HttpRequestException e)
             {
                 // If an error occurs, print the error message and re-throw the exception
-                logger.LogError("Error downloading file: {e.Message}", e.Message);
+                this.logger.LogError("Error downloading file: {e.Message}", e.Message);
                 throw e;
             }
         }
@@ -113,7 +113,7 @@ namespace CampaignKit.Compendium.Core.Services
         public void DerivePathAndFileNames(string sourceDataUri, out string path, out string file)
         {
             // Separate the URI into components
-            logger.LogDebug("Parsing components of URI: {sourceDataUri}.", sourceDataUri);
+            this.logger.LogDebug("Parsing components of URI: {sourceDataUri}.", sourceDataUri);
             var uri = new Uri(sourceDataUri);
             path = uri.AbsolutePath;
             file = Path.GetFileName(uri.AbsolutePath);
@@ -126,8 +126,8 @@ namespace CampaignKit.Compendium.Core.Services
 
             // Remove the page name from the path.
             path = Path.GetDirectoryName(path) ?? path;
-            logger.LogDebug("URI Path: {path}.", path);
-            logger.LogDebug("URI Page: {page}.", file);
+            this.logger.LogDebug("URI Path: {path}.", path);
+            this.logger.LogDebug("URI Page: {page}.", file);
         }
     }
 }
