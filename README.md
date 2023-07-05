@@ -39,7 +39,7 @@ This will download the solution, install dependencies, perform a build, run auto
 
 The following compendiums are currently supported:
 
-### Dungeons & Ddragons 5th Edition Bestiary
+### Dungeons & Dragons 5th Edition Bestiary
 A collection of open-sourced, 5e compatible mosters derived from the following [open5e-api ](https://github.com/open5e/open5e-api) data sets:
 * **Systems Reference Document** (Wizards of the Coast)
 * **Tome of Beasts**, (Kobold Press)
