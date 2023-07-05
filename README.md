@@ -109,22 +109,28 @@ A standard .Net `appsettings.json` file is used to configure the application.
 
 ## Contributing
 
-* https://json2csharp.com/
-  * Use Nullable Types
-  * Add JsonProperty Attributes
-  * Use Pascal Case
-* Add "?" nullable type operator
-* set default value:
-   * = string.Empty;
-   * = int.MinValue;
-   * = new List<Type>();
+### Deserializing JSON Files
 
-TODO
+[json2csharp](https://json2csharp.com/) can be used to create C# classes for deserializing JSON source data sets.
+
+Recommended json2csharp settings:
+* Use Nullable Types
+* Add JsonProperty Attributes
+* Use Pascal Case
+
+Once a JSON deserialization class has been created perform the following steps to customize the code:
+* Add "?" nullable type operator for each property
+* set a default value for each property.  Examples:
+   * `public string? Alignment { get; set; } = string.Empty;`
+   * `public int? AnimalHandling { get; set; } = int.MinValue;`
+   * `public List<Action>? Actions { get; set; } = new List<Action>();`
 
 ## Links
 
-TODO
-
+* [Campaign Logger](https://campaign-logger.com/)
+* [Role Playing Tips](https://www.roleplayingtips.com/)
+* [Campaign Community](https://campaign-community.com/)
+* [Open5e API](https://github.com/open5e/open5e-api)
 
 ## Licensing
 
