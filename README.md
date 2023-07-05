@@ -41,17 +41,71 @@ The following compendiums are currently supported:
 
 ### Dungeons & Ddragons 5th Edition Bestiary
 A collection of open-sourced, 5e compatible mosters derived from the following [open5e-api ](https://github.com/open5e/open5e-api) data sets:
-* Systems Reference Document, Wizards of the Coast
-* Tome of Beasts, Kobold Press
-* Tome of Beast2 2, Kobold Press
-* Tome of Bests 3, Kobold Press
-* Creature Codex, Kobold Press (WIP)
-* Monstrous Menagerie, Kobold Press (WIP)
+* **Systems Reference Document** (Wizards of the Coast)
+* **Tome of Beasts**, (Kobold Press)
+* **Tome of Beasts2 2**, (Kobold Press)
+* **Tome of Beasts 3**, (Kobold Press)
+* **Creature Codex**, (Kobold Press)
+* **Monstrous Menagerie**, (Kobold Press)
 
+The application is currently configured to create two different compendiums from these data sets:
+* **5e Bestiary.json** - Full set of 2,136 monsters.
+* **5e Bestiary Test.json** - 4-5 monsters from each set.  Used for quick testing and validation.
 
 ## Configuration
 
-TODO
+A standard .Net `appsettings.json` file is used to configure the application.
+
+```json
+{
+  // List of compendiums to process.
+  "Compendiums": [
+    {
+      // DI service class to use for processing this compendium.
+      "CompendiumService": "CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e",
+      // Description of the compendium.
+      "Description": "Preformatted 5e monsters from the SRD and Kobold Press.",
+      // Image to use for the compendium.
+      "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
+      // List of source data sets to parse and compile into the compendium.
+      "SourceDataSets": [
+        {
+          // Limits number of items to parse from the source data set.
+          // Generally this is only used for testing purposes when you only want a limited number of items to include in the compendium.
+          "ExportLimit": 5,
+          // Class to use for parsing license information.
+          "LicenseDataParser": "CampaignKit.Compendium.DungeonsAndDragons.Common.License",
+          // URI of license information.
+          "LicenseDataURI": "https://raw.githubusercontent.com/open5e/open5e-api/main/data/WOTC_5e_SRD_v5.1/document.json",
+          // Controls whether to always download source data files or to only download once.
+          "OverwriteExisting": false,
+          // Descriptive name of the source data set.
+          "SourceDataSetName": "Dungeons & Dragons SRD - Monsters",
+          // Class to use for parsing source data information.
+          "SourceDataSetParser": "CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature",
+          // URI of source data set.
+          "SourceDataSetURI": "https://raw.githubusercontent.com/open5e/open5e-api/main/data/WOTC_5e_SRD_v5.1/monsters.json"
+        },
+		...
+      ],
+      // Compendium title.
+      "Title": "5e Bestiary - Test"
+    },
+    ...
+  ],
+  // Standard .Net environment and logging settings.
+  "Environments": {
+    ...
+  },
+  // This is where source data sets will be downloaded to and where compendiums
+  // will be generated.  
+  // 
+  // If you leave this blank files will be stored in a temporary directory.
+  // Windows Temporary Directory: `C:\Users\[Username]\AppData\Local\Temp`
+  // LinuxTemporary Directory: Resolves to the value of the environment variable `TMPDIR`, which is usually set to `/tmp`.
+  "RootDataFolder": "C:\\source\\compendium-generator\\data"
+}
+```
 
 ## Contributing
 
