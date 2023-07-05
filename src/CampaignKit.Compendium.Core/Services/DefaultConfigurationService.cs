@@ -65,8 +65,7 @@ namespace CampaignKit.Compendium.Core.Services
         /// <returns>A list of Compendiums for the specified service name.</returns>
         public List<Compendium> GetCompendiumsForService(string serviceName)
         {
-            var compendiums = new List<Compendium>();
-            this.configuration.GetSection("Compendiums").Bind(compendiums);
+            var compendiums = this.configuration.GetSection("Compendiums").Get<List<Compendium>>() ?? new List<Compendium>();
             return compendiums.Where(c => c.CompendiumService == serviceName).ToList();
         }
     }

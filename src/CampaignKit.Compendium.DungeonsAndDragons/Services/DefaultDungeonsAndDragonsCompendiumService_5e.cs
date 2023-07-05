@@ -130,7 +130,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                     IEnumerable<ICreature> creatures = (IEnumerable<ICreature>)(sourceDataSetParsed ?? new List<ICreature>());
 
                     // Convert each creature to the standard format
-                    foreach (ICreature creature in creatures)
+                    foreach (ICreature creature in creatures.Take(sourceDataSet.ExportLimit ?? int.MaxValue))
                     {
                         this.logger.LogDebug("Converting creature to standard format: {Name}.", creature.Name);
                         var convertedCreature = creature.ToCreature();
@@ -159,15 +159,29 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                     Logs = new List<Log>(),
                     ImageUrl = string.Empty,
                 };
+
+                CampaignEntry campaignEntry;
                 foreach (var creature in creatureList)
                 {
-                    campaignLoggerFile.CampaignEntries.Add(new CampaignEntry()
+                    campaignEntry = new CampaignEntry()
                     {
                         RawText = CreatureHelper.ToCampaignLoggerStatBlock(creature),
-                        Labels = new List<string>() { "monster", creature.Type ?? "no type", $"CL {creature.ChallengeRating}" },
+                        Labels = new List<string>() { "Monster", $"CR {creature.ChallengeRating}" },
                         TagSymbol = "~",
                         TagValue = creature.Name,
-                    });
+                    };
+
+                    if (creature.Type != null)
+                    {
+                        campaignEntry.Labels.Add(creature.Type);
+                    }
+
+                    if (creature.License != null && creature.License.Organization != null)
+                    {
+                        campaignEntry.Labels.Add(creature.License.Organization);
+                    }
+
+                    campaignLoggerFile.CampaignEntries.Add(campaignEntry);
                 }
 
                 File.WriteAllText(Path.Combine(rootDataDirectory, compendium.Title + ".json"), JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented));

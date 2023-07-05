@@ -632,14 +632,15 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
                 }
             }
 
-            // Add License Info
+            builder.AppendLine($"```");
+
+            // Add Attribution
             if (creature.License != null)
             {
                 builder.AppendLine();
-                builder.AppendLine($"License: [{creature.License.Desc ?? creature.License.Name ?? creature.License.Title}]({creature.License.Url})");
+                builder.AppendLine($"Source: [{creature.License.Desc ?? creature.License.Name ?? creature.License.Title}]({creature.License.Url})");
             }
 
-            builder.AppendLine($"```");
             return builder.ToString().Replace("\t", "     ");
         }
 
