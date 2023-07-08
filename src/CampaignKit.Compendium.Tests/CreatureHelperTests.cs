@@ -945,5 +945,30 @@ namespace CampaignKit.Compendium.Tests
             Assert.IsTrue(creatureStatBlockLines.Contains("- Armor Class: 16 (natural armor)"));
 
         }
+
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"TestFiles\sulsha.json")]
+        public void ConvertToCLStatBlock_ValidateLabels_5ELabelFound()
+        {
+            // Arrange
+            var creatureJSON = File.ReadAllText("sulsha.json");
+            Assert.IsNotNull(creatureJSON);
+
+            // Act
+            var creature = JsonConvert.DeserializeObject<TomeOfBeasts2Creature>(creatureJSON);
+            Assert.IsNotNull(creature);
+            var creatureConverted = creature.ToCreature();
+            Assert.IsNotNull(creatureConverted);
+            var creatureCampaignEntry = CreatureHelper.ToCampaignEntry(creatureConverted);
+            Assert.IsNotNull(creatureCampaignEntry);
+            Assert.IsNotNull(creatureCampaignEntry.Labels);
+
+            // Assert
+            Assert.IsTrue(creatureCampaignEntry.Labels.Contains("D&D 5E"));
+
+        }
     }
 }
