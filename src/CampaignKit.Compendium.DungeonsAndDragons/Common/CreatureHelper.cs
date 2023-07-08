@@ -324,7 +324,15 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             builder.AppendLine($"title: {creature.Name}");
             builder.AppendLine($"description: {creature.Size} {creature.Type}, {creature.Alignment}");
             builder.AppendLine($"stats:");
-            builder.AppendLine($"- Armor Class: {creature.ArmorClass} ({creature.ArmorDesc})");
+            if (!string.IsNullOrEmpty(creature.ArmorDesc))
+            {
+                builder.AppendLine($"- Armor Class: {creature.ArmorClass} ({creature.ArmorDesc})");
+            }
+            else
+            {
+                builder.AppendLine($"- Armor Class: {creature.ArmorClass}");
+            }
+
             builder.AppendLine($"- Hit Points: {creature.HitPoints} ({creature.HitDice})");
             List<string> speeds = new ()
             {

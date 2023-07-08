@@ -1,4 +1,11 @@
 using CampaignKit.Compendium.DungeonsAndDragons.Common;
+using CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts2;
+
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+using Newtonsoft.Json;
+
+using System.Reflection;
 
 namespace CampaignKit.Compendium.Tests
 {
@@ -888,5 +895,55 @@ namespace CampaignKit.Compendium.Tests
             Assert.AreEqual(20, result);
         }
 
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"TestFiles\backup_holler_spider.json")]
+        public void ConvertToCLStatBlock_EmptyArmorDescription_ParenthesisExcluded ()
+        {
+            // Arrange
+            var creatureJSON = File.ReadAllText("backup_holler_spider.json");
+            Assert.IsNotNull(creatureJSON);
+
+            // Act
+            var creature = JsonConvert.DeserializeObject<TomeOfBeasts2Creature>(creatureJSON);
+            Assert.IsNotNull(creature);
+            var creatureConverted = creature.ToCreature();
+            Assert.IsNotNull(creatureConverted);
+            var creatureStatBlock = CreatureHelper.ToCampaignLoggerStatBlock(creatureConverted);
+            Assert.IsNotNull(creatureStatBlock);
+            var creatureStatBlockLines = creatureStatBlock.Split(Environment.NewLine);
+
+            // Assert
+            Assert.IsFalse(creatureStatBlockLines.Contains("- Armor Class: 12 ()"));
+            Assert.IsTrue(creatureStatBlockLines.Contains("- Armor Class: 12"));
+
+        }
+
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"TestFiles\sulsha.json")]
+        public void ConvertToCLStatBlock_NonEmptyArmorDescription_ParenthesisAndDescriptionIncluded()
+        {
+            // Arrange
+            var creatureJSON = File.ReadAllText("sulsha.json");
+            Assert.IsNotNull(creatureJSON);
+
+            // Act
+            var creature = JsonConvert.DeserializeObject<TomeOfBeasts2Creature>(creatureJSON);
+            Assert.IsNotNull(creature);
+            var creatureConverted = creature.ToCreature();
+            Assert.IsNotNull(creatureConverted);
+            var creatureStatBlock = CreatureHelper.ToCampaignLoggerStatBlock(creatureConverted);
+            Assert.IsNotNull(creatureStatBlock);
+            var creatureStatBlockLines = creatureStatBlock.Split(Environment.NewLine);
+
+            // Assert
+            Assert.IsTrue(creatureStatBlockLines.Contains("- Armor Class: 16 (natural armor)"));
+
+        }
     }
 }

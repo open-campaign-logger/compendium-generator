@@ -1,0 +1,64 @@
+{
+  "name": "Backup Holler Spider",
+  "size": "Tiny",
+  "type": "Beast",
+  "subtype": "",
+  "alignment": "chaotic neutral",
+  "armor_class": "12",
+  "hit_points": "14",
+  "hit_dice": "4d4+4",
+  "speed": "25 ft., climb 25 ft.",
+  "speed_json": {
+    "climb": 25,
+    "walk": 25
+  },
+  "strength": "7",
+  "dexterity": "15",
+  "constitution": "10",
+  "intelligence": "5",
+  "wisdom": "14",
+  "charisma": "5",
+  "dexterity_save": 4,
+  "stealth": 4,
+  "perception": 4,
+  "damage_resistances": "thunder",
+  "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 14",
+  "languages": "understands Common but can’t speak",
+  "challenge_rating": "1/4",
+  "special_abilities": [
+    {
+      "name": "Spider Climb",
+      "desc": "The holler spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Vigilant",
+      "desc": "If the holler spider remains motionless for at least 1 minute, it has advantage on Wisdom (Perception) checks and Dexterity (Stealth) checks."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage.",
+      "attack_bonus": 4,
+      "damage_dice": "1d4+2"
+    },
+    {
+      "name": "Hoot",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 5 (1d6 + 2) thunder damage. If the holler spider scores a critical hit, it is pushed 5 feet away from the target.",
+      "attack_bonus": 4,
+      "damage_dice": "1d6+2"
+    },
+    {
+      "name": "Distressed Discharge (Recharge 5-6)",
+      "desc": "The holler spider releases a short, distressed cacophony in a 15-foot cone. Each creature in the area must make a DC 12 Constitution saving throw, taking 5 (2d4) thunder damage on a failed save, or half as much damage on a successful one. The holler spider is pushed 15 feet in the opposite direction of the cone."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Tune Up",
+      "desc": "When an ally within 15 feet of the backup holler spider casts a spell that deals thunder damage, the backup holler spider chooses one of the spell’s targets. That target has disadvantage on the saving throw against the spell."
+    }
+  ],
+  "page_no": 395,
+  "desc": "While the chitinous horn-like protrusion makes holler spiders appear comical, they can use it to release a loud sound, calling their masters when they detect trespassers. Unlike most spiders, Open Game License"
+}
