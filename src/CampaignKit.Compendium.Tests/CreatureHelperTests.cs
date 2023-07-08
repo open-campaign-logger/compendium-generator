@@ -920,5 +920,30 @@ namespace CampaignKit.Compendium.Tests
             Assert.IsTrue(creatureStatBlockLines.Contains("- Armor Class: 12"));
 
         }
+
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"TestFiles\sulsha.json")]
+        public void ConvertToCLStatBlock_NonEmptyArmorDescription_ParenthesisAndDescriptionIncluded()
+        {
+            // Arrange
+            var creatureJSON = File.ReadAllText("sulsha.json");
+            Assert.IsNotNull(creatureJSON);
+
+            // Act
+            var creature = JsonConvert.DeserializeObject<TomeOfBeasts2Creature>(creatureJSON);
+            Assert.IsNotNull(creature);
+            var creatureConverted = creature.ToCreature();
+            Assert.IsNotNull(creatureConverted);
+            var creatureStatBlock = CreatureHelper.ToCampaignLoggerStatBlock(creatureConverted);
+            Assert.IsNotNull(creatureStatBlock);
+            var creatureStatBlockLines = creatureStatBlock.Split(Environment.NewLine);
+
+            // Assert
+            Assert.IsTrue(creatureStatBlockLines.Contains("- Armor Class: 16 (natural armor)"));
+
+        }
     }
 }

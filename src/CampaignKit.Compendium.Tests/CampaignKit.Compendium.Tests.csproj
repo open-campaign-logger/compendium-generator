@@ -11,10 +11,14 @@
 
   <ItemGroup>
     <None Remove="TestFiles\backup_holler_spider.json" />
+    <None Remove="TestFiles\sulsha.json" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="TestFiles\backup_holler_spider.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\sulsha.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
