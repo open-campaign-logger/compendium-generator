@@ -7,25 +7,27 @@
   "imageUrl": "",
   "campaignEntries": [
     {
-      "rawText": "```clyt\r\ntemplate: stat-block.5e\r\ntitle: Aboleth\r\ndescription: Large Aberration, lawful evil\r\nstats:\r\n- Armor Class: 17 (natural armor)\r\n- Hit Points: 135 (18d10+36)\r\n- Speed: 10 ft., Swim 40 ft.\r\n- abilities:\r\n     STR: 21 (+5)\r\n     DEX: 9 (-1)\r\n     CON: 15 (+2)\r\n     INT: 18 (+4)\r\n     WIS: 15 (+2)\r\n     CHA: 18 (+4)\r\n- Saving Throws: DEX +0, CON +6, INT +8, WIS +6\r\n- Skills: Acrobatics +0, History +12, Perception +10, Sleight of Hand +0, Stealth +0\r\n- Senses: Darkvision 120 ft., Passive Perception 20\r\n- Languages: Deep Speech, telepathy 120 ft.\r\n- Challenge: 10 (5900 XP)\r\n- Proficiency Bonus: +5\r\ntraits:\r\n- Amphibious: >\r\n    The aboleth can breathe air and water.\r\n- Mucous Cloud: >\r\n    While underwater, the aboleth is surrounded by transformative mucus. A creature that touches the aboleth or that hits it with a melee attack while within 5 ft. of it must make a DC 14 Constitution saving throw. On a failure, the creature is diseased for 1d4 hours. The diseased creature can breathe only underwater.\r\n- Probing Telepathy: >\r\n    If a creature communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires if the aboleth can see the creature.\r\nactions:\r\n- Multiattack: >\r\n    The aboleth makes three tentacle attacks.\r\n- Tentacle: >\r\n    Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 6 (1d12) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.\r\n- Tail: >\r\n    Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 15 (3d6 + 5) bludgeoning damage.\r\n- Enslave (3/day): >\r\n    The aboleth targets one creature it can see within 30 ft. of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The charmed target is under the aboleth's control and can't take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.\r\n    Whenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth.\r\n- Legendary Actions: The aboleth can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The aboleth regains spent legendary actions at the start of its turn.\r\n-  Detect: >\r\n    The aboleth makes a Wisdom (Perception) check.\r\n-  Tail Swipe: >\r\n    The aboleth makes one tail attack.\r\n-  Psychic Drain (Costs 2 Actions): >\r\n    One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.\r\n```\r\n\r\nSource: [Dungeons and Dragons 5th Edition Systems Reference Document by Wizards of the Coast](http://dnd.wizards.com/articles/features/systems-reference-document-srd)\r\n",
+      "rawText": "```clyt\r\ntemplate: stat-block.5e\r\ntitle: Aboleth\r\ndescription: Large Aberration, lawful evil\r\nstats:\r\n- Armor Class: 17 (natural armor)\r\n- Hit Points: 135 (18d10+36)\r\n- Speed: 10 ft., Swim 40 ft.\r\n- abilities:\r\n     STR: 21 (+5)\r\n     DEX: 9 (-1)\r\n     CON: 15 (+2)\r\n     INT: 18 (+4)\r\n     WIS: 15 (+2)\r\n     CHA: 18 (+4)\r\n- Saving Throws: CON +6, INT +8, WIS +6\r\n- Skills: History +12, Perception +10\r\n- Senses: Darkvision 120 ft., Passive Perception 20\r\n- Languages: Deep Speech, telepathy 120 ft.\r\n- Challenge: 10 (5900 XP)\r\n- Proficiency Bonus: +5\r\ntraits:\r\n- Amphibious: >\r\n    The aboleth can breathe air and water.\r\n- Mucous Cloud: >\r\n    While underwater, the aboleth is surrounded by transformative mucus. A creature that touches the aboleth or that hits it with a melee attack while within 5 ft. of it must make a DC 14 Constitution saving throw. On a failure, the creature is diseased for 1d4 hours. The diseased creature can breathe only underwater.\r\n- Probing Telepathy: >\r\n    If a creature communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires if the aboleth can see the creature.\r\nactions:\r\n- Multiattack: >\r\n    The aboleth makes three tentacle attacks.\r\n- Tentacle: >\r\n    Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 6 (1d12) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.\r\n- Tail: >\r\n    Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 15 (3d6 + 5) bludgeoning damage.\r\n- Enslave (3/day): >\r\n    The aboleth targets one creature it can see within 30 ft. of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The charmed target is under the aboleth's control and can't take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.\r\n    Whenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth.\r\n- Legendary Actions: The aboleth can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The aboleth regains spent legendary actions at the start of its turn.\r\n-  Detect: >\r\n    The aboleth makes a Wisdom (Perception) check.\r\n-  Tail Swipe: >\r\n    The aboleth makes one tail attack.\r\n-  Psychic Drain (Costs 2 Actions): >\r\n    One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.\r\n```\r\n\r\nSource: [Dungeons and Dragons 5th Edition Systems Reference Document by Wizards of the Coast](http://dnd.wizards.com/articles/features/systems-reference-document-srd)\r\n",
       "rawPublic": null,
       "labels": [
         "Monster",
         "CR 10",
         "Aberration",
-        "Wizards of the Coast"
+        "Wizards of the Coast",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Aboleth"
     },
     {
-      "rawText": "```clyt\r\ntemplate: stat-block.5e\r\ntitle: Acolyte\r\ndescription: Medium Humanoid, any alignment\r\nstats:\r\n- Armor Class: 10 ()\r\n- Hit Points: 9 (2d8)\r\n- Speed: 30 ft.\r\n- abilities:\r\n     STR: 10 (+0)\r\n     DEX: 10 (+0)\r\n     CON: 10 (+0)\r\n     INT: 10 (+0)\r\n     WIS: 14 (+2)\r\n     CHA: 11 (+0)\r\n- Skills: Medicine +4, Religion +2\r\n- Senses: Passive Perception 12\r\n- Languages: any one language (usually Common)\r\n- Challenge: 1/4 (50 XP)\r\n- Proficiency Bonus: +2\r\ntraits:\r\n- Spellcasting: >\r\n    The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:\r\n- Cantrips (at will): light, sacred flame, thaumaturgy\r\n- 1st level (3 slots): bless, cure wounds, sanctuary\r\nactions:\r\n- Club: >\r\n    Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.\r\n```\r\n\r\nSource: [Dungeons and Dragons 5th Edition Systems Reference Document by Wizards of the Coast](http://dnd.wizards.com/articles/features/systems-reference-document-srd)\r\n",
+      "rawText": "```clyt\r\ntemplate: stat-block.5e\r\ntitle: Acolyte\r\ndescription: Medium Humanoid, any alignment\r\nstats:\r\n- Armor Class: 10\r\n- Hit Points: 9 (2d8)\r\n- Speed: 30 ft.\r\n- abilities:\r\n     STR: 10 (+0)\r\n     DEX: 10 (+0)\r\n     CON: 10 (+0)\r\n     INT: 10 (+0)\r\n     WIS: 14 (+2)\r\n     CHA: 11 (+0)\r\n- Skills: Medicine +4, Religion +2\r\n- Senses: Passive Perception 12\r\n- Languages: any one language (usually Common)\r\n- Challenge: 1/4 (50 XP)\r\n- Proficiency Bonus: +2\r\ntraits:\r\n- Spellcasting: >\r\n    The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:\r\n- Cantrips (at will): light, sacred flame, thaumaturgy\r\n- 1st level (3 slots): bless, cure wounds, sanctuary\r\nactions:\r\n- Club: >\r\n    Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.\r\n```\r\n\r\nSource: [Dungeons and Dragons 5th Edition Systems Reference Document by Wizards of the Coast](http://dnd.wizards.com/articles/features/systems-reference-document-srd)\r\n",
       "rawPublic": null,
       "labels": [
         "Monster",
         "CR 0.25",
         "Humanoid",
-        "Wizards of the Coast"
+        "Wizards of the Coast",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Acolyte"
@@ -37,7 +39,8 @@
         "Monster",
         "CR 14",
         "Dragon",
-        "Wizards of the Coast"
+        "Wizards of the Coast",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Adult Black Dragon"
@@ -49,7 +52,8 @@
         "Monster",
         "CR 16",
         "Dragon",
-        "Wizards of the Coast"
+        "Wizards of the Coast",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Adult Blue Dragon"
@@ -61,7 +65,8 @@
         "Monster",
         "CR 13",
         "Dragon",
-        "Wizards of the Coast"
+        "Wizards of the Coast",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Adult Brass Dragon"
@@ -73,7 +78,8 @@
         "Monster",
         "CR 12",
         "Undead",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Aboleth, Nihilith"
@@ -85,7 +91,8 @@
         "Monster",
         "CR 1",
         "Undead",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Nihilethic Zombie"
@@ -97,19 +104,21 @@
         "Monster",
         "CR 11",
         "Fey",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Abominable Beauty"
     },
     {
-      "rawText": "```clyt\r\ntemplate: stat-block.5e\r\ntitle: Accursed Defiler\r\ndescription: Medium Undead, neutral evil\r\nstats:\r\n- Armor Class: 12 ()\r\n- Hit Points: 75 (10d8+30)\r\n- Speed: 30 ft.\r\n- abilities:\r\n     STR: 19 (+4)\r\n     DEX: 14 (+2)\r\n     CON: 17 (+3)\r\n     INT: 6 (-2)\r\n     WIS: 15 (+2)\r\n     CHA: 14 (+2)\r\n- Skills: Perception +4, Stealth +4\r\n- Damage Resistances: necrotic; bludgeoning, piercing, and slashing from nonmagical attacks\r\n- Damage Immunities: poison\r\n- Condition Immunities: charmed, exhaustion, frightened, poisoned\r\n- Senses: Darkvision 60 ft., Passive Perception 14\r\n- Languages: understands an ancient language, but can't speak\r\n- Challenge: 4 (1100 XP)\r\n- Proficiency Bonus: +3\r\ntraits:\r\n- Cursed Existence: >\r\n    When it drops to 0 hit points in desert terrain, the accursed defiler's body disintegrates into sand and a sudden parched breeze. However, unless it was killed in a hallowed location, with radiant damage, or by a blessed creature, the accursed defiler reforms at the next sundown 1d100 miles away in a random direction.\r\n- Sand Shroud: >\r\n    A miniature sandstorm constantly whirls around the accursed defiler in a 10-foot radius. This area is lightly obscured to creatures other than an accursed defiler. Wisdom (Survival) checks made to follow tracks left by an accursed defiler or other creatures that were traveling in its sand shroud are made with disadvantage.\r\nactions:\r\n- Multiattack: >\r\n    The accursed defiler makes two slam attacks.\r\n- Slam: >\r\n    Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 11 (2d6 + 4) bludgeoning damage. If a creature is hit by this attack twice in the same round (from the same or different accursed defilers), the target must make a DC 13 Constitution saving throw or gain one level of exhaustion.\r\n- Sandslash (Recharge 5-6): >\r\n    As an action, the accursed defiler intensifies the vortex of sand that surrounds it. All creatures within 10 feet of the accursed defiler take 21 (6d6) slashing damage, or half damage with a successful DC 14 Dexterity saving throw.\r\n```\r\n\r\nSource: [Tome of Beasts Open-Gaming License Content by Kobold Press](https://koboldpress.com/kpstore/product/tome-of-beasts-for-5th-edition-print/)\r\n",
+      "rawText": "```clyt\r\ntemplate: stat-block.5e\r\ntitle: Accursed Defiler\r\ndescription: Medium Undead, neutral evil\r\nstats:\r\n- Armor Class: 12\r\n- Hit Points: 75 (10d8+30)\r\n- Speed: 30 ft.\r\n- abilities:\r\n     STR: 19 (+4)\r\n     DEX: 14 (+2)\r\n     CON: 17 (+3)\r\n     INT: 6 (-2)\r\n     WIS: 15 (+2)\r\n     CHA: 14 (+2)\r\n- Skills: Perception +4, Stealth +4\r\n- Damage Resistances: necrotic; bludgeoning, piercing, and slashing from nonmagical attacks\r\n- Damage Immunities: poison\r\n- Condition Immunities: charmed, exhaustion, frightened, poisoned\r\n- Senses: Darkvision 60 ft., Passive Perception 14\r\n- Languages: understands an ancient language, but can't speak\r\n- Challenge: 4 (1100 XP)\r\n- Proficiency Bonus: +3\r\ntraits:\r\n- Cursed Existence: >\r\n    When it drops to 0 hit points in desert terrain, the accursed defiler's body disintegrates into sand and a sudden parched breeze. However, unless it was killed in a hallowed location, with radiant damage, or by a blessed creature, the accursed defiler reforms at the next sundown 1d100 miles away in a random direction.\r\n- Sand Shroud: >\r\n    A miniature sandstorm constantly whirls around the accursed defiler in a 10-foot radius. This area is lightly obscured to creatures other than an accursed defiler. Wisdom (Survival) checks made to follow tracks left by an accursed defiler or other creatures that were traveling in its sand shroud are made with disadvantage.\r\nactions:\r\n- Multiattack: >\r\n    The accursed defiler makes two slam attacks.\r\n- Slam: >\r\n    Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 11 (2d6 + 4) bludgeoning damage. If a creature is hit by this attack twice in the same round (from the same or different accursed defilers), the target must make a DC 13 Constitution saving throw or gain one level of exhaustion.\r\n- Sandslash (Recharge 5-6): >\r\n    As an action, the accursed defiler intensifies the vortex of sand that surrounds it. All creatures within 10 feet of the accursed defiler take 21 (6d6) slashing damage, or half damage with a successful DC 14 Dexterity saving throw.\r\n```\r\n\r\nSource: [Tome of Beasts Open-Gaming License Content by Kobold Press](https://koboldpress.com/kpstore/product/tome-of-beasts-for-5th-edition-print/)\r\n",
       "rawPublic": null,
       "labels": [
         "Monster",
         "CR 4",
         "Undead",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Accursed Defiler"
@@ -121,7 +130,8 @@
         "Monster",
         "CR 8",
         "Fey",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Ala"
@@ -133,7 +143,8 @@
         "Monster",
         "CR 7",
         "Aberration",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "A-mi-kuk"
@@ -145,7 +156,8 @@
         "Monster",
         "CR 7",
         "Monstrosity",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Aalpamac"
@@ -157,7 +169,8 @@
         "Monster",
         "CR 3",
         "Giant",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Abbanith Giant"
@@ -169,7 +182,8 @@
         "Monster",
         "CR 17",
         "Dragon",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Adult Boreal Dragon"
@@ -181,7 +195,8 @@
         "Monster",
         "CR 20",
         "Dragon",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Adult Imperial Dragon"
@@ -193,7 +208,8 @@
         "Monster",
         "CR 4",
         "Beast",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Dire Pangolin"
@@ -205,7 +221,8 @@
         "Monster",
         "CR 2",
         "Beast",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Wakwak"
@@ -217,7 +234,8 @@
         "Monster",
         "CR 0.25",
         "Construct",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Clockwork Armadillo"
@@ -229,7 +247,8 @@
         "Monster",
         "CR 8",
         "Giant",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Ogre, Black Sun"
@@ -241,55 +260,60 @@
         "Monster",
         "CR 0.5",
         "Humanoid",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Dwarf, Pike Guard"
     },
     {
-      "rawText": "```clyt\r\ntemplate: stat-block.5e\r\ntitle: Aboleth Thrall\r\ndescription: Medium Humanoid, \r\nstats:\r\n- Armor Class: 12 ()\r\n- Hit Points: 45 (7d8+14)\r\n- Speed: 0 ft.\r\n- abilities:\r\n     STR: 14 (+2)\r\n     DEX: 14 (+2)\r\n     CON: 14 (+2)\r\n     INT: 10 (+0)\r\n     WIS: 10 (+0)\r\n     CHA: 12 (+1)\r\n- Senses: Passive Perception 10\r\n- Languages: Common, unlimited-range telepathy with aboleth\r\n- Challenge: 2 (450 XP)\r\n- Proficiency Bonus: +3\r\ntraits:\r\n- Sea Changed: >\r\n    The aboleth thrall can breathe water and air, but must bathe in water for 1 hour for every 12 hours it spends dry or it begins to suffocate. It is magically charmed by the aboleth.\r\nactions:\r\n- Poison Ink Knife: >\r\n    Melee Weapon Attack: +4 to hit  reach 5 ft.  one target. Hit: 4 (1d4 + 2) slashing damage plus 10 (3d6) poison damage.\r\n- Reactions: The Aboleth Thrall has the following reactions.\r\n- Self-Sacrifice: >\r\n    When a creature within 5 feet of the thrall that the thrall can see hits an aboleth with an attack, the thrall can make itself the target of the attack instead.\r\n```\r\n\r\nSource: [Monstrous Menagerie OGL by EN Publishing](https://www.levelup5e.com)\r\n",
+      "rawText": "```clyt\r\ntemplate: stat-block.5e\r\ntitle: Aboleth Thrall\r\ndescription: Medium Humanoid, \r\nstats:\r\n- Armor Class: 12\r\n- Hit Points: 45 (7d8+14)\r\n- Speed: 0 ft.\r\n- abilities:\r\n     STR: 14 (+2)\r\n     DEX: 14 (+2)\r\n     CON: 14 (+2)\r\n     INT: 10 (+0)\r\n     WIS: 10 (+0)\r\n     CHA: 12 (+1)\r\n- Senses: Passive Perception 10\r\n- Languages: Common, unlimited-range telepathy with aboleth\r\n- Challenge: 2 (450 XP)\r\n- Proficiency Bonus: +3\r\ntraits:\r\n- Sea Changed: >\r\n    The aboleth thrall can breathe water and air, but must bathe in water for 1 hour for every 12 hours it spends dry or it begins to suffocate. It is magically charmed by the aboleth.\r\nactions:\r\n- Poison Ink Knife: >\r\n    Melee Weapon Attack: +4 to hit  reach 5 ft.  one target. Hit: 4 (1d4 + 2) slashing damage plus 10 (3d6) poison damage.\r\n- Reactions: The Aboleth Thrall has the following reactions.\r\n- Self-Sacrifice: >\r\n    When a creature within 5 feet of the thrall that the thrall can see hits an aboleth with an attack, the thrall can make itself the target of the attack instead.\r\n```\r\n\r\nSource: [Monstrous Menagerie OGL by EN Publishing](https://www.levelup5e.com)\r\n",
       "rawPublic": null,
       "labels": [
         "Monster",
         "CR 2",
         "Humanoid",
-        "EN Publishing"
+        "EN Publishing",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Aboleth Thrall"
     },
     {
-      "rawText": "```clyt\r\ntemplate: stat-block.5e\r\ntitle: Abominable Snowman\r\ndescription: Large Monstrosity, \r\nstats:\r\n- Armor Class: 12 ()\r\n- Hit Points: 136 (16d10+48)\r\n- Speed: 0 ft.\r\n- abilities:\r\n     STR: 18 (+4)\r\n     DEX: 12 (+1)\r\n     CON: 16 (+3)\r\n     INT: 8 (-1)\r\n     WIS: 12 (+1)\r\n     CHA: 16 (+3)\r\n- Damage Immunities: cold\r\n- Senses: Passive Perception 13\r\n- Languages: Yeti\r\n- Challenge: 4 (1100 XP)\r\n- Proficiency Bonus: +3\r\ntraits:\r\n- Camouflage: >\r\n    The yeti has advantage on Stealth checks made to hide in snowy terrain.\r\n- Fire Fear: >\r\n    When the yeti takes fire damage, it is rattled until the end of its next turn.\r\n- Storm Sight: >\r\n    The yetis vision is not obscured by weather conditions.\r\nactions:\r\n- Multiattack: >\r\n    The yeti uses Chilling Gaze and makes two claw attacks.\r\n- Claw: >\r\n    Melee Weapon Attack: +6 to hit  reach 10 ft.  one target. Hit: 9 (2d4 + 4) slashing damage.\r\n- Chilling Gaze (Gaze): >\r\n    One creature within 30 feet that is not immune to cold damage makes a DC 13 Constitution saving throw. On a failure  the creature takes 10 (3d6) cold damage and is paralyzed for 1 minute. It repeats the saving throw at the end of each of its turns  ending the effect on a success. If a creatures saving throw is successful or the effect ends for it  it is immune to any Chilling Gaze for 24 hours.\r\n```\r\n\r\nSource: [Monstrous Menagerie OGL by EN Publishing](https://www.levelup5e.com)\r\n",
+      "rawText": "```clyt\r\ntemplate: stat-block.5e\r\ntitle: Abominable Snowman\r\ndescription: Large Monstrosity, \r\nstats:\r\n- Armor Class: 12\r\n- Hit Points: 136 (16d10+48)\r\n- Speed: 0 ft.\r\n- abilities:\r\n     STR: 18 (+4)\r\n     DEX: 12 (+1)\r\n     CON: 16 (+3)\r\n     INT: 8 (-1)\r\n     WIS: 12 (+1)\r\n     CHA: 16 (+3)\r\n- Damage Immunities: cold\r\n- Senses: Passive Perception 13\r\n- Languages: Yeti\r\n- Challenge: 4 (1100 XP)\r\n- Proficiency Bonus: +3\r\ntraits:\r\n- Camouflage: >\r\n    The yeti has advantage on Stealth checks made to hide in snowy terrain.\r\n- Fire Fear: >\r\n    When the yeti takes fire damage, it is rattled until the end of its next turn.\r\n- Storm Sight: >\r\n    The yetis vision is not obscured by weather conditions.\r\nactions:\r\n- Multiattack: >\r\n    The yeti uses Chilling Gaze and makes two claw attacks.\r\n- Claw: >\r\n    Melee Weapon Attack: +6 to hit  reach 10 ft.  one target. Hit: 9 (2d4 + 4) slashing damage.\r\n- Chilling Gaze (Gaze): >\r\n    One creature within 30 feet that is not immune to cold damage makes a DC 13 Constitution saving throw. On a failure  the creature takes 10 (3d6) cold damage and is paralyzed for 1 minute. It repeats the saving throw at the end of each of its turns  ending the effect on a success. If a creatures saving throw is successful or the effect ends for it  it is immune to any Chilling Gaze for 24 hours.\r\n```\r\n\r\nSource: [Monstrous Menagerie OGL by EN Publishing](https://www.levelup5e.com)\r\n",
       "rawPublic": null,
       "labels": [
         "Monster",
         "CR 4",
         "Monstrosity",
-        "EN Publishing"
+        "EN Publishing",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Abominable Snowman"
     },
     {
-      "rawText": "```clyt\r\ntemplate: stat-block.5e\r\ntitle: Accursed Guardian Naga\r\ndescription: Large Monstrosity, \r\nstats:\r\n- Armor Class: 18 ()\r\n- Hit Points: 136 (16d10+48)\r\n- Speed: 0 ft.\r\n- abilities:\r\n     STR: 16 (+3)\r\n     DEX: 18 (+4)\r\n     CON: 16 (+3)\r\n     INT: 16 (+3)\r\n     WIS: 18 (+4)\r\n     CHA: 18 (+4)\r\n- Saving Throws: DEX +8, CON +7, INT +7, WIS +8, CHA +8\r\n- Damage Immunities: poison\r\n- Condition Immunities: charmed, poisoned\r\n- Senses: Darkvision 60 ft., Passive Perception 14\r\n- Languages: Abyssal, Celestial, Common\r\n- Challenge: 12 (8400 XP)\r\n- Proficiency Bonus: +5\r\ntraits:\r\n- Amphibious: >\r\n    The naga can breathe air and water.\r\n- Forbiddance: >\r\n    The nagas lair is under the forbiddance spell. Until it is dispelled, creatures in the lair can't teleport or use planar travel. Fiends and undead that are not the nagas allies take 27 (5d10) radiant damage when they enter or start their turn in the lair.\r\n- Magic Resistance: >\r\n    The naga has advantage on saving throws against spells and magical effects.\r\n- Spellcasting: >\r\n    The naga is an 11th level spellcaster. Its spellcasting ability is Wisdom (spell save DC 16). The naga has the following cleric spells prepared\r\n     which it can cast with only vocalized components:\r\n     Cantrips (at will): mending\r\n     thaumaturgy\r\n     1st-level (4 slots): command\r\n     cure wounds\r\n     false life\r\n     2nd-level (3 slots): calm emotions\r\n     hold person\r\n     locate object\r\n     3rd-level (3 slots) clairvoyance\r\n     create food and water\r\n     4th-level (3 slots): divination\r\n     freedom of movement\r\n     5th-level (2 slots): flame strike\r\n     geas\r\n     scrying\r\n     6th-level (1 slot): forbiddance\r\nactions:\r\n- Bite: >\r\n    Melee Weapon Attack: +8 to hit  reach 5 ft.  one target. Hit: 11 (2d6 + 4) piercing damage. The target makes a DC 15 Constitution saving throw  taking 35 (10d6) poison damage on a failure or half damage on a success.\r\n- Spit Poison: >\r\n    Melee Weapon Attack: +8 to hit  range 20/60 ft.  one creature. Hit: The target makes a DC 15 Constitution saving throw  taking 35 (10d6) poison damage on a failure or half damage on a success.\r\n- Command (1st-Level; V): >\r\n    One living creature within 60 feet that the naga can see and that can hear and understand it makes a DC 16 Wisdom saving throw. On a failure  the target uses its next turn to move as far from the naga as possible  avoiding hazardous terrain.\r\n- Hold Person (2nd-Level; V, Concentration): >\r\n    One humanoid the naga can see within 60 feet makes a DC 16 Wisdom saving throw. On a failure  the target is paralyzed for 1 minute. It repeats the saving throw at the end of each of its turns  ending the effect on a success.\r\n- Flame Strike (5th-Level; V): >\r\n    A column of divine flame fills a 10-foot-radius  40-foot-high cylinder within 60 feet. Creatures in the area make a DC 16 Dexterity saving throw  taking 14 (4d6) fire damage and 14 (4d6) radiant damage on a failure or half damage on a success.\r\n- Multiattack: >\r\n    The naga casts a spell and uses its vampiric bite.\r\n- Vampiric Bite: >\r\n    The naga attacks with its bite. If it hits and the target fails its saving throw against poison  the naga magically gains temporary hit points equal to the poison damage dealt.\r\n```\r\n\r\nSource: [Monstrous Menagerie OGL by EN Publishing](https://www.levelup5e.com)\r\n",
+      "rawText": "```clyt\r\ntemplate: stat-block.5e\r\ntitle: Accursed Guardian Naga\r\ndescription: Large Monstrosity, \r\nstats:\r\n- Armor Class: 18\r\n- Hit Points: 136 (16d10+48)\r\n- Speed: 0 ft.\r\n- abilities:\r\n     STR: 16 (+3)\r\n     DEX: 18 (+4)\r\n     CON: 16 (+3)\r\n     INT: 16 (+3)\r\n     WIS: 18 (+4)\r\n     CHA: 18 (+4)\r\n- Saving Throws: DEX +8, CON +7, INT +7, WIS +8, CHA +8\r\n- Damage Immunities: poison\r\n- Condition Immunities: charmed, poisoned\r\n- Senses: Darkvision 60 ft., Passive Perception 14\r\n- Languages: Abyssal, Celestial, Common\r\n- Challenge: 12 (8400 XP)\r\n- Proficiency Bonus: +5\r\ntraits:\r\n- Amphibious: >\r\n    The naga can breathe air and water.\r\n- Forbiddance: >\r\n    The nagas lair is under the forbiddance spell. Until it is dispelled, creatures in the lair can't teleport or use planar travel. Fiends and undead that are not the nagas allies take 27 (5d10) radiant damage when they enter or start their turn in the lair.\r\n- Magic Resistance: >\r\n    The naga has advantage on saving throws against spells and magical effects.\r\n- Spellcasting: >\r\n    The naga is an 11th level spellcaster. Its spellcasting ability is Wisdom (spell save DC 16). The naga has the following cleric spells prepared\r\n     which it can cast with only vocalized components:\r\n     Cantrips (at will): mending\r\n     thaumaturgy\r\n     1st-level (4 slots): command\r\n     cure wounds\r\n     false life\r\n     2nd-level (3 slots): calm emotions\r\n     hold person\r\n     locate object\r\n     3rd-level (3 slots) clairvoyance\r\n     create food and water\r\n     4th-level (3 slots): divination\r\n     freedom of movement\r\n     5th-level (2 slots): flame strike\r\n     geas\r\n     scrying\r\n     6th-level (1 slot): forbiddance\r\nactions:\r\n- Bite: >\r\n    Melee Weapon Attack: +8 to hit  reach 5 ft.  one target. Hit: 11 (2d6 + 4) piercing damage. The target makes a DC 15 Constitution saving throw  taking 35 (10d6) poison damage on a failure or half damage on a success.\r\n- Spit Poison: >\r\n    Melee Weapon Attack: +8 to hit  range 20/60 ft.  one creature. Hit: The target makes a DC 15 Constitution saving throw  taking 35 (10d6) poison damage on a failure or half damage on a success.\r\n- Command (1st-Level; V): >\r\n    One living creature within 60 feet that the naga can see and that can hear and understand it makes a DC 16 Wisdom saving throw. On a failure  the target uses its next turn to move as far from the naga as possible  avoiding hazardous terrain.\r\n- Hold Person (2nd-Level; V, Concentration): >\r\n    One humanoid the naga can see within 60 feet makes a DC 16 Wisdom saving throw. On a failure  the target is paralyzed for 1 minute. It repeats the saving throw at the end of each of its turns  ending the effect on a success.\r\n- Flame Strike (5th-Level; V): >\r\n    A column of divine flame fills a 10-foot-radius  40-foot-high cylinder within 60 feet. Creatures in the area make a DC 16 Dexterity saving throw  taking 14 (4d6) fire damage and 14 (4d6) radiant damage on a failure or half damage on a success.\r\n- Multiattack: >\r\n    The naga casts a spell and uses its vampiric bite.\r\n- Vampiric Bite: >\r\n    The naga attacks with its bite. If it hits and the target fails its saving throw against poison  the naga magically gains temporary hit points equal to the poison damage dealt.\r\n```\r\n\r\nSource: [Monstrous Menagerie OGL by EN Publishing](https://www.levelup5e.com)\r\n",
       "rawPublic": null,
       "labels": [
         "Monster",
         "CR 12",
         "Monstrosity",
-        "EN Publishing"
+        "EN Publishing",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Accursed Guardian Naga"
     },
     {
-      "rawText": "```clyt\r\ntemplate: stat-block.5e\r\ntitle: Accursed Spirit Naga\r\ndescription: Large Monstrosity, \r\nstats:\r\n- Armor Class: 16 ()\r\n- Hit Points: 85 (10d10+30)\r\n- Speed: 0 ft.\r\n- abilities:\r\n     STR: 16 (+3)\r\n     DEX: 16 (+3)\r\n     CON: 16 (+3)\r\n     INT: 16 (+3)\r\n     WIS: 14 (+2)\r\n     CHA: 16 (+3)\r\n- Saving Throws: DEX +6, CON +6, WIS +5, CHA +6\r\n- Damage Immunities: poison\r\n- Condition Immunities: charmed, poisoned\r\n- Senses: Darkvision 60 ft., Passive Perception 12\r\n- Languages: Abyssal, Celestial, Common\r\n- Challenge: 8 (3900 XP)\r\n- Proficiency Bonus: +4\r\ntraits:\r\n- Amphibious: >\r\n    The naga can breathe air and water.\r\n- Magic Resistance: >\r\n    The naga has advantage on saving throws against spells and magical effects.\r\nactions:\r\n- Bite: >\r\n    Melee Weapon Attack: +6 to hit  reach 5 ft.  one target. Hit: 10 (2d6 + 3) piercing damage. The target makes a DC 15 Constitution saving throw  taking 28 (8d6) poison damage on a failure or half damage on a success.\r\n- Hypnotic Pattern (3rd-Level; V, Concentration): >\r\n    A swirling pattern of light appears at a point within 120 feet of the naga. Each creature within 10 feet of the pattern that can see it makes a DC 14 Wisdom saving throw. On a failure  the creature is charmed for 1 minute. While charmed  the creature is incapacitated and its Speed is 0. The effect ends on a creature if it takes damage or if another creature uses an action to shake it out of its daze.\r\n- Lightning Bolt (3rd-Level; V): >\r\n    A bolt of lightning 5 feet wide and 100 feet long arcs from the naga. Each creature in the area makes a DC 14 Dexterity saving throw  taking 28 (8d6) lightning damage on a failure or half damage on a success.\r\n- Blight (4th-Level; V, Concentration): >\r\n    The naga targets a living creature or plant within 30 feet  draining moisture and vitality from it. The target makes a DC 14 Constitution saving throw  taking 36 (8d8) necrotic damage on a failure or half damage on a success. Plant creatures have disadvantage on their saving throw and take maximum damage. A nonmagical plant dies.\r\n- Multiattack: >\r\n    The naga casts a spell and uses its vampiric bite.\r\n- Vampiric Bite: >\r\n    The naga attacks with its bite. If it hits and the target fails its saving throw against poison  the naga magically gains temporary hit points equal to the poison damage dealt.\r\n- Reactions: The Accursed Spirit Naga has the following reactions.\r\n- Shield (1st-Level; V): >\r\n    When the naga is hit by an attack or targeted by magic missile, it gains a +5 bonus to AC (including against the triggering attack) and immunity to magic missile. These benefits last until the beginning of its next turn.\r\n```\r\n\r\nSource: [Monstrous Menagerie OGL by EN Publishing](https://www.levelup5e.com)\r\n",
+      "rawText": "```clyt\r\ntemplate: stat-block.5e\r\ntitle: Accursed Spirit Naga\r\ndescription: Large Monstrosity, \r\nstats:\r\n- Armor Class: 16\r\n- Hit Points: 85 (10d10+30)\r\n- Speed: 0 ft.\r\n- abilities:\r\n     STR: 16 (+3)\r\n     DEX: 16 (+3)\r\n     CON: 16 (+3)\r\n     INT: 16 (+3)\r\n     WIS: 14 (+2)\r\n     CHA: 16 (+3)\r\n- Saving Throws: DEX +6, CON +6, WIS +5, CHA +6\r\n- Damage Immunities: poison\r\n- Condition Immunities: charmed, poisoned\r\n- Senses: Darkvision 60 ft., Passive Perception 12\r\n- Languages: Abyssal, Celestial, Common\r\n- Challenge: 8 (3900 XP)\r\n- Proficiency Bonus: +4\r\ntraits:\r\n- Amphibious: >\r\n    The naga can breathe air and water.\r\n- Magic Resistance: >\r\n    The naga has advantage on saving throws against spells and magical effects.\r\nactions:\r\n- Bite: >\r\n    Melee Weapon Attack: +6 to hit  reach 5 ft.  one target. Hit: 10 (2d6 + 3) piercing damage. The target makes a DC 15 Constitution saving throw  taking 28 (8d6) poison damage on a failure or half damage on a success.\r\n- Hypnotic Pattern (3rd-Level; V, Concentration): >\r\n    A swirling pattern of light appears at a point within 120 feet of the naga. Each creature within 10 feet of the pattern that can see it makes a DC 14 Wisdom saving throw. On a failure  the creature is charmed for 1 minute. While charmed  the creature is incapacitated and its Speed is 0. The effect ends on a creature if it takes damage or if another creature uses an action to shake it out of its daze.\r\n- Lightning Bolt (3rd-Level; V): >\r\n    A bolt of lightning 5 feet wide and 100 feet long arcs from the naga. Each creature in the area makes a DC 14 Dexterity saving throw  taking 28 (8d6) lightning damage on a failure or half damage on a success.\r\n- Blight (4th-Level; V, Concentration): >\r\n    The naga targets a living creature or plant within 30 feet  draining moisture and vitality from it. The target makes a DC 14 Constitution saving throw  taking 36 (8d8) necrotic damage on a failure or half damage on a success. Plant creatures have disadvantage on their saving throw and take maximum damage. A nonmagical plant dies.\r\n- Multiattack: >\r\n    The naga casts a spell and uses its vampiric bite.\r\n- Vampiric Bite: >\r\n    The naga attacks with its bite. If it hits and the target fails its saving throw against poison  the naga magically gains temporary hit points equal to the poison damage dealt.\r\n- Reactions: The Accursed Spirit Naga has the following reactions.\r\n- Shield (1st-Level; V): >\r\n    When the naga is hit by an attack or targeted by magic missile, it gains a +5 bonus to AC (including against the triggering attack) and immunity to magic missile. These benefits last until the beginning of its next turn.\r\n```\r\n\r\nSource: [Monstrous Menagerie OGL by EN Publishing](https://www.levelup5e.com)\r\n",
       "rawPublic": null,
       "labels": [
         "Monster",
         "CR 8",
         "Monstrosity",
-        "EN Publishing"
+        "EN Publishing",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Accursed Spirit Naga"
@@ -301,7 +325,8 @@
         "Monster",
         "CR 5",
         "Celestial",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Aatxe"
@@ -313,7 +338,8 @@
         "Monster",
         "CR 0.25",
         "Monstrosity",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Acid Ant"
@@ -325,7 +351,8 @@
         "Monster",
         "CR 16",
         "Dragon",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Adult Light Dragon"
@@ -337,19 +364,21 @@
         "Monster",
         "CR 17",
         "Dragon",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Adult Wasteland Dragon"
     },
     {
-      "rawText": "```clyt\r\ntemplate: stat-block.5e\r\ntitle: Agnibarra\r\ndescription: Small Monstrosity, chaotic neutral\r\nstats:\r\n- Armor Class: 12 ()\r\n- Hit Points: 39 (6d6+18)\r\n- Speed: 30 ft.\r\n- abilities:\r\n     STR: 12 (+1)\r\n     DEX: 14 (+2)\r\n     CON: 16 (+3)\r\n     INT: 8 (-1)\r\n     WIS: 10 (+0)\r\n     CHA: 12 (+1)\r\n- Damage Vulnerabilities: cold\r\n- Damage Immunities: fire\r\n- Senses: Passive Perception 10\r\n- Languages: Common, Ignan\r\n- Challenge: 1 (200 XP)\r\n- Proficiency Bonus: +2\r\ntraits:\r\n- Body in Flames: >\r\n    A creature that touches the agnibarra or hits it with a melee attack while within 5 feet of it takes 3 (1d6) fire damage, and flammable objects within 5 feet of the agnibarra that aren't being worn or carried ignite.\r\n- Illumination: >\r\n    The agnibarra sheds bright light in a 10-foot radius and dim light an additional 10 feet.\r\nactions:\r\n- Burning Claw: >\r\n    Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage plus 3 (1d6) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.\r\n- Spit Fire: >\r\n    Ranged Weapon Attack: +4 to hit, range 15/30 ft., one target. Hit: 9 (2d6 + 2) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.\r\n```\r\n\r\nSource: [Creature Codex Open-Gaming License Content by Kobold Press](https://koboldpress.com/kpstore/product/creature-codex-for-5th-edition-dnd/)\r\n",
+      "rawText": "```clyt\r\ntemplate: stat-block.5e\r\ntitle: Agnibarra\r\ndescription: Small Monstrosity, chaotic neutral\r\nstats:\r\n- Armor Class: 12\r\n- Hit Points: 39 (6d6+18)\r\n- Speed: 30 ft.\r\n- abilities:\r\n     STR: 12 (+1)\r\n     DEX: 14 (+2)\r\n     CON: 16 (+3)\r\n     INT: 8 (-1)\r\n     WIS: 10 (+0)\r\n     CHA: 12 (+1)\r\n- Damage Vulnerabilities: cold\r\n- Damage Immunities: fire\r\n- Senses: Passive Perception 10\r\n- Languages: Common, Ignan\r\n- Challenge: 1 (200 XP)\r\n- Proficiency Bonus: +2\r\ntraits:\r\n- Body in Flames: >\r\n    A creature that touches the agnibarra or hits it with a melee attack while within 5 feet of it takes 3 (1d6) fire damage, and flammable objects within 5 feet of the agnibarra that aren't being worn or carried ignite.\r\n- Illumination: >\r\n    The agnibarra sheds bright light in a 10-foot radius and dim light an additional 10 feet.\r\nactions:\r\n- Burning Claw: >\r\n    Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage plus 3 (1d6) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.\r\n- Spit Fire: >\r\n    Ranged Weapon Attack: +4 to hit, range 15/30 ft., one target. Hit: 9 (2d6 + 2) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.\r\n```\r\n\r\nSource: [Creature Codex Open-Gaming License Content by Kobold Press](https://koboldpress.com/kpstore/product/creature-codex-for-5th-edition-dnd/)\r\n",
       "rawPublic": null,
       "labels": [
         "Monster",
         "CR 1",
         "Monstrosity",
-        "Kobold Press"
+        "Kobold Press",
+        "D&D 5E"
       ],
       "tagSymbol": "~",
       "tagValue": "Agnibarra"

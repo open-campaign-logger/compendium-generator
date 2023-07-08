@@ -52,6 +52,7 @@ namespace CampaignKit.Compendium.Utility
                                  .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                                  .AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", optional: true);
                     configuration.AddEnvironmentVariables();
+                    configuration.AddUserSecrets<Program>();
                 })
 
                 // Configure services to add the SourceHelper class.

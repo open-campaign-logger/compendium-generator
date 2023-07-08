@@ -184,7 +184,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                     campaignLoggerFile.CampaignEntries.Add(campaignEntry);
                 }
 
-                File.WriteAllText(Path.Combine(rootDataDirectory, compendium.Title + ".json"), JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented));
+                string campaignLoggerFileString = JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented);
+
+                File.WriteAllText(Path.Combine(rootDataDirectory, compendium.Title + ".json"), campaignLoggerFileString);
 
                 this.logger.LogInformation("Processing of compendium complete: {compendium}.", compendium.Title);
             }
