@@ -19,8 +19,7 @@ namespace CampaignKit.Compendium.Core.Tests
             var overwrite = false;
             var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
             var sourceHelper = new DefaultDownloadService(loggerMock.Object, GetConfiguration());
-            string path, file;
-            sourceHelper.DerivePathAndFileNames(sourceDataUri, out path, out file);
+            sourceHelper.DerivePathAndFileNames(sourceDataUri, out string path, out string file);
 
             // Act
             await sourceHelper.DownloadFile(sourceDataUri, rootDataFolder, overwrite);
@@ -38,8 +37,7 @@ namespace CampaignKit.Compendium.Core.Tests
             var overwrite = true;
             var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
             var sourceHelper = new DefaultDownloadService(loggerMock.Object, GetConfiguration());
-            string path, file;
-            sourceHelper.DerivePathAndFileNames(sourceDataUri, out path, out file);
+            sourceHelper.DerivePathAndFileNames(sourceDataUri, out string path, out string file);
 
             // Act
             Directory.CreateDirectory(Path.Combine(rootDataFolder, path));
@@ -61,14 +59,13 @@ namespace CampaignKit.Compendium.Core.Tests
             var overwrite = false;
             var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
             var sourceHelper = new DefaultDownloadService(loggerMock.Object, GetConfiguration());
-            string path, file;
-            sourceHelper.DerivePathAndFileNames(sourceDataUri, out path, out file);
+            sourceHelper.DerivePathAndFileNames(sourceDataUri, out string path, out string file);
 
             // Act
             Directory.CreateDirectory(Path.Combine(rootDataFolder, path));
             File.WriteAllText(Path.Combine(rootDataFolder, path, file), string.Empty);
             await sourceHelper.DownloadFile(sourceDataUri, rootDataFolder, overwrite);
-            FileInfo fileInfoAfter = new FileInfo(Path.Combine(rootDataFolder, path, file));
+            FileInfo fileInfoAfter = new (Path.Combine(rootDataFolder, path, file));
 
             // Assert
             Assert.IsTrue(Directory.Exists(Path.Combine(rootDataFolder, path)));
@@ -101,7 +98,7 @@ namespace CampaignKit.Compendium.Core.Tests
             }
         }
 
-        private IConfiguration GetConfiguration()
+        private static IConfiguration GetConfiguration()
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory()) // Set the path to the current directory

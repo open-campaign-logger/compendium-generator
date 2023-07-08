@@ -57,8 +57,7 @@ namespace CampaignKit.Compendium.Core.Services
         {
             try
             {
-                string path, page;
-                this.DerivePathAndFileNames(sourceDataUri, out path, out page);
+                this.DerivePathAndFileNames(sourceDataUri, out string path, out string page);
 
                 // If overwrite = false and the file already exists, return.
                 var localFolderPath = Path.Combine(rootDataFolder, path);
