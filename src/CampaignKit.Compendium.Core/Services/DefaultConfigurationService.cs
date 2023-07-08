@@ -22,6 +22,7 @@ namespace CampaignKit.Compendium.Core.Services
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.Logging;
     using Microsoft.Identity.Client;
+    using Microsoft.IdentityModel.Tokens;
 
     /// <summary>
     /// DefaultConfigurationService provides a default implementation of the IConfigurationService interface.
@@ -55,7 +56,19 @@ namespace CampaignKit.Compendium.Core.Services
         /// <returns>The root data directory.</returns>
         public string GetRootDataDirectory()
         {
-            return this.configuration.GetValue<string>("RootDataFolder") ?? Path.Combine(Path.GetTempPath(), "CompendiumGenerator");
+            var rootFolder = this.configuration.GetValue<string>("RootDataFolder");
+            if (rootFolder.IsNullOrEmpty())
+            {
+                this.logger.LogError("Unable to load configuration paramter: {configuration}", "RootDataFolder"); 
+                rootFolder = Path.Combine(Path.GetTempPath(), "CompendiumGenerator");
+            }
+
+            if (rootFolder.IsNullOrEmpty())
+            {
+                this.logger.LogError("Unable to load configuration paramter: {configuration}", "RootDataFolder");
+            }
+
+            return rootFolder;
         }
 
         /// <summary>

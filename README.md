@@ -103,7 +103,19 @@ A standard .Net `appsettings.json` file is used to configure the application.
   // If you leave this blank files will be stored in a temporary directory.
   // Windows Temporary Directory: `C:\Users\[Username]\AppData\Local\Temp`
   // LinuxTemporary Directory: Resolves to the value of the environment variable `TMPDIR`, which is usually set to `/tmp`.
-  "RootDataFolder": "C:\\source\\compendium-generator\\data"
+  "RootDataFolder": ""
+}
+```
+
+Visual Studio has built in support for user secrets that you can use to provide configuration overrides during development.
+
+![User Secrets](doc/user-secrets.png)
+
+This is especially helpful for the `RootDataFolder` configuration element found in `appsettings.json` which will differ in each developer's environment.
+
+```json
+{
+  "RootDataFolder": "D:\\source\\compendium-generator\\data"
 }
 ```
 
