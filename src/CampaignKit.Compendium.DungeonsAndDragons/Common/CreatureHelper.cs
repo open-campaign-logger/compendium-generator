@@ -18,6 +18,8 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
 {
     using System.Text;
 
+    using CampaignKit.Compendium.Core.CampaignLogger;
+
     /// <summary>
     /// Utility class for working with Dungeons &amp; Dragons creatures.
     /// </summary>
@@ -917,6 +919,36 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             }
 
             return builder.ToString();
+        }
+
+        /// <summary>
+        /// Gets a CampaignEntry object from a Creature instance.
+        /// </summary>
+        /// <param name="creature">The Creature instance to create the CampaignEntry from.</param>
+        /// <returns>The generated CampaignEntry instance.</returns>
+        public static CampaignEntry ToCampaignEntry(Creature creature)
+        {
+            CampaignEntry campaignEntry = new ()
+            {
+                RawText = CreatureHelper.ToCampaignLoggerStatBlock(creature),
+                Labels = new List<string>() { "Monster", $"CR {creature.ChallengeRating}" },
+                TagSymbol = "~",
+                TagValue = creature.Name,
+            };
+
+            if (creature.Type != null)
+            {
+                campaignEntry.Labels.Add(creature.Type);
+            }
+
+            if (creature.License != null && creature.License.Organization != null)
+            {
+                campaignEntry.Labels.Add(creature.License.Organization);
+            }
+
+            campaignEntry.Labels.Add("D&D 5E");
+
+            return campaignEntry;
         }
     }
 }
