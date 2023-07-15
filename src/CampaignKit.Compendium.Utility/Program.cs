@@ -17,7 +17,10 @@
 namespace CampaignKit.Compendium.Utility
 {
     using System.Collections.Generic;
+    using System.Reflection;
     using System.Runtime.Loader;
+
+    using CampaignKit.Compendium.Core.Common;
     using CampaignKit.Compendium.Core.Configuration;
     using CampaignKit.Compendium.Core.Services;
     using CampaignKit.Compendium.DungeonsAndDragons.Services;
@@ -75,8 +78,24 @@ namespace CampaignKit.Compendium.Utility
                 .Build();
 
             // Process compendiums
-            var dungeonsAndDragonsCompendiumService_5e = host.Services.GetRequiredService<IDungeonsAndDragonsCompendiumService_5e>();
-            await dungeonsAndDragonsCompendiumService_5e.CreateCompendiums();
+            var configurationService = host.Services.GetRequiredService<IConfigurationService>();
+            var compendiums = configurationService.GetAllCompendiums();
+            foreach (var comp in compendiums)
+            {
+                // Assume the assembly name is the part of the type name before the first dot.
+                var classNameParts = comp.CompendiumService.Split(",");
+                var className = classNameParts[0].Trim();
+                var assemblyName = classNameParts[1].Trim();
+
+                // Load the assembly.
+                Assembly assembly = Assembly.Load(assemblyName);
+
+                // Now try to get the type again.
+                var serviceType = assembly.GetType(className) ?? throw new Exception($"Unable to load class: {className}");
+                var t = Type.GetType(comp.CompendiumService) as Type;
+                ICompendiumService compendiumService = (ICompendiumService) host.Services.GetRequiredService(serviceType);
+                await compendiumService.CreateCompendiums();
+            }
         }
     }
 }

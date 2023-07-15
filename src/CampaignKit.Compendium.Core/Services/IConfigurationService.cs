@@ -32,10 +32,16 @@ namespace CampaignKit.Compendium.Core.Services
         string GetRootDataDirectory();
 
         /// <summary>
-        /// Gets a list of Compendiums for the specified service name.
+        /// Gets a list of compendiums configured for the specified service name.
         /// </summary>
         /// <param name="serviceName">The name of the service.</param>
-        /// <returns>A list of Compendiums for the specified service name.</returns>
+        /// <returns>A list of Compendiums configured for the specified service name.</returns>
         List<Compendium> GetCompendiumsForService(string serviceName);
+
+        /// <summary>
+        /// Gets a list of all configured compendiums.
+        /// </summary>
+        /// <returns>A list of configured compendiums.</returns>
+        List<Compendium> GetAllCompendiums();
     }
 }
