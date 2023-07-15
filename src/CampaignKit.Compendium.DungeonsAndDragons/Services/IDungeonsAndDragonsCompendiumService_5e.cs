@@ -16,15 +16,12 @@
 
 namespace CampaignKit.Compendium.DungeonsAndDragons.Services
 {
+    using CampaignKit.Compendium.Core.Common;
+
     /// <summary>
     /// Interface for services that create Dungeons &amp; Dragons 5e compendiums.
     /// </summary>
-    public interface IDungeonsAndDragonsCompendiumService_5e
+    public interface IDungeonsAndDragonsCompendiumService_5e : ICompendiumService
     {
-        /// <summary>
-        /// Processes any Dungeons &amp; Dragons 5e compendiums defined in the application's configuration.
-        /// </summary>
-        /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
-        Task CreateCompendiums();
     }
 }
