@@ -16,19 +16,13 @@
 
 namespace CampaignKit.Compendium.Utility
 {
-    using System.Collections.Generic;
-    using System.Reflection;
-    using System.Runtime.Loader;
-
-    using CampaignKit.Compendium.Core.Common;
-    using CampaignKit.Compendium.Core.Configuration;
     using CampaignKit.Compendium.Core.Services;
     using CampaignKit.Compendium.DungeonsAndDragons.Services;
+    using CampaignKit.Compendium.Utility.Services;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Microsoft.Extensions.Logging;
-    using Newtonsoft.Json;
 
     /// <summary>
     /// Creates a host with default configuration, adds required services, configures logging,
@@ -36,66 +30,49 @@ namespace CampaignKit.Compendium.Utility
     /// </summary>
     public class Program
     {
-        /// <summary>
-        /// Creates a host with default configuration, adds required services, and
-        /// configures logging.
-        /// </summary>
-        /// <param name="args">Command line arguments.</param>
-        /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
         public static async Task Main(string[] args)
         {
-            // Create a host with default configuration
-            var host = Host.CreateDefaultBuilder()
-
-                // Add Configuration to host
-                .ConfigureAppConfiguration((hostingContext, configuration) =>
-                {
-                    configuration.Sources.Clear();
-                    configuration.SetBasePath(Directory.GetCurrentDirectory())
-                                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                                 .AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", optional: true);
-                    configuration.AddEnvironmentVariables();
-                    configuration.AddUserSecrets<Program>();
-                })
-
-                // Configure services to add the SourceHelper class.
-                .ConfigureServices((context, services) =>
-                {
-                    services.AddTransient<IDownloadService, DefaultDownloadService>();
-                    services.AddTransient<IConfigurationService, DefaultConfigurationService>();
-                    services.AddTransient<IDungeonsAndDragonsCompendiumService_5e, DefaultDungeonsAndDragonsCompendiumService_5e>();
-                })
-
-                // Configure logging to clear existing providers and add the console provider.
-                .ConfigureLogging((hostingContext, logging) =>
-                {
-                    logging.ClearProviders();
-                    logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
-                    logging.AddConsole();
-                })
-
-                // Build the host.
-                .Build();
-
-            // Process compendiums
-            var configurationService = host.Services.GetRequiredService<IConfigurationService>();
-            var compendiums = configurationService.GetAllCompendiums();
-            foreach (var comp in compendiums)
+            var host = CreateHostBuilder(args).Build();
+            var app = host.Services.GetRequiredService<IApplication>();
+            if (app != null)
             {
-                // Assume the assembly name is the part of the type name before the first dot.
-                var classNameParts = comp.CompendiumService.Split(",");
-                var className = classNameParts[0].Trim();
-                var assemblyName = classNameParts[1].Trim();
-
-                // Load the assembly.
-                Assembly assembly = Assembly.Load(assemblyName);
-
-                // Now try to get the type again.
-                var serviceType = assembly.GetType(className) ?? throw new Exception($"Unable to load class: {className}");
-                var t = Type.GetType(comp.CompendiumService) as Type;
-                ICompendiumService compendiumService = (ICompendiumService) host.Services.GetRequiredService(serviceType);
-                await compendiumService.CreateCompendiums();
+                await app.RunAsync(); 
+            } else
+            {
+                throw new Exception ($"Unable to load application class: {nameof(DefaultApplication)}");
             }
+        }
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+         Host.CreateDefaultBuilder(args)
+             .ConfigureAppConfiguration(ConfigureAppConfiguration)
+             .ConfigureServices(ConfigureServices)
+             .ConfigureLogging(ConfigureLogging)
+             .UseConsoleLifetime();
+
+        private static void ConfigureAppConfiguration(HostBuilderContext hostingContext, IConfigurationBuilder configuration)
+        {
+            configuration.Sources.Clear();
+            configuration.SetBasePath(Directory.GetCurrentDirectory())
+                         .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                         .AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", optional: true);
+            configuration.AddEnvironmentVariables();
+            configuration.AddUserSecrets<Program>();
+        }
+
+        private static void ConfigureServices(HostBuilderContext hostingContext, IServiceCollection services)
+        {
+            services.AddTransient<IDownloadService, DefaultDownloadService>();
+            services.AddTransient<IConfigurationService, DefaultConfigurationService>();
+            services.AddTransient<IApplication, DefaultApplication>();
+            services.AddTransient<IDungeonsAndDragonsCompendiumService_5e, DefaultDungeonsAndDragonsCompendiumService_5e>();
+        }
+
+        private static void ConfigureLogging(HostBuilderContext hostingContext, ILoggingBuilder logging)
+        {
+            logging.ClearProviders();
+            logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
+            logging.AddConsole();
         }
     }
 }
