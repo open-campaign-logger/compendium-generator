@@ -1,7 +1,10 @@
 ﻿// Unit Test
 using CampaignKit.Compendium.Core.Services;
+using CampaignKit.Compendium.Utility;
+
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+
 using Moq;
 
 namespace CampaignKit.Compendium.Core.Tests
@@ -9,7 +12,7 @@ namespace CampaignKit.Compendium.Core.Tests
     [TestClass]
     public class DefaultDownloadServiceTests
     {
-        private readonly string rootDataFolder = Path.Combine(Path.GetTempPath(), "CompendiumGenerator");
+        private IConfigurationService? configurationService;
 
         [TestMethod]
         public async Task DownloadFile_Should_Create_Directory_If_Not_Exists()
@@ -18,15 +21,15 @@ namespace CampaignKit.Compendium.Core.Tests
             var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
             var overwrite = false;
             var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
-            var sourceHelper = new DefaultDownloadService(loggerMock.Object, GetConfiguration());
+            var sourceHelper = new DefaultDownloadService(loggerMock.Object, GetConfigurationService());
             sourceHelper.DerivePathAndFileNames(sourceDataUri, out string path, out string file);
 
             // Act
-            await sourceHelper.DownloadFile(sourceDataUri, rootDataFolder, overwrite);
+            await sourceHelper.DownloadFile(sourceDataUri, overwrite);
 
             // Assert
-            Assert.IsTrue(Directory.Exists(Path.Combine(rootDataFolder, path)));
-            Assert.IsTrue(File.Exists(Path.Combine(rootDataFolder, path, file)));
+            Assert.IsTrue(Directory.Exists(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path)));
+            Assert.IsTrue(File.Exists(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path, file)));
         }
 
         [TestMethod]
@@ -36,18 +39,18 @@ namespace CampaignKit.Compendium.Core.Tests
             var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
             var overwrite = true;
             var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
-            var sourceHelper = new DefaultDownloadService(loggerMock.Object, GetConfiguration());
+            var sourceHelper = new DefaultDownloadService(loggerMock.Object, GetConfigurationService());
             sourceHelper.DerivePathAndFileNames(sourceDataUri, out string path, out string file);
 
             // Act
-            Directory.CreateDirectory(Path.Combine(rootDataFolder, path));
-            File.WriteAllText(Path.Combine(rootDataFolder, path, file), string.Empty);
-            await sourceHelper.DownloadFile(sourceDataUri, rootDataFolder, overwrite);
-            FileInfo fileInfoAfter = new(Path.Combine(rootDataFolder, path, file));
+            Directory.CreateDirectory(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path));
+            File.WriteAllText(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path, file), string.Empty);
+            await sourceHelper.DownloadFile(sourceDataUri, overwrite);
+            FileInfo fileInfoAfter = new(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path, file));
 
             // Assert
-            Assert.IsTrue(Directory.Exists(Path.Combine(rootDataFolder, path)));
-            Assert.IsTrue(File.Exists(Path.Combine(rootDataFolder, path, file)));
+            Assert.IsTrue(Directory.Exists(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path)));
+            Assert.IsTrue(File.Exists(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path, file)));
             Assert.AreNotEqual(0, fileInfoAfter.Length);
         }
 
@@ -58,18 +61,18 @@ namespace CampaignKit.Compendium.Core.Tests
             var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
             var overwrite = false;
             var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
-            var sourceHelper = new DefaultDownloadService(loggerMock.Object, GetConfiguration());
+            var sourceHelper = new DefaultDownloadService(loggerMock.Object, GetConfigurationService());
             sourceHelper.DerivePathAndFileNames(sourceDataUri, out string path, out string file);
 
             // Act
-            Directory.CreateDirectory(Path.Combine(rootDataFolder, path));
-            File.WriteAllText(Path.Combine(rootDataFolder, path, file), string.Empty);
-            await sourceHelper.DownloadFile(sourceDataUri, rootDataFolder, overwrite);
-            FileInfo fileInfoAfter = new (Path.Combine(rootDataFolder, path, file));
+            Directory.CreateDirectory(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path));
+            File.WriteAllText(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path, file), string.Empty);
+            await sourceHelper.DownloadFile(sourceDataUri, overwrite);
+            FileInfo fileInfoAfter = new (Path.Combine(GetConfigurationService().GetRootDataDirectory(), path, file));
 
             // Assert
-            Assert.IsTrue(Directory.Exists(Path.Combine(rootDataFolder, path)));
-            Assert.IsTrue(File.Exists(Path.Combine(rootDataFolder, path, file)));
+            Assert.IsTrue(Directory.Exists(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path)));
+            Assert.IsTrue(File.Exists(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path, file)));
             Assert.AreEqual(0, fileInfoAfter.Length);
 
         }
@@ -77,12 +80,15 @@ namespace CampaignKit.Compendium.Core.Tests
         [TestInitialize]
         public void Setup()
         {
+            // Setup the configuration service if required.
+            this.configurationService ??= GetConfigurationService();
+
             // Check if the directory exists.
-            if (Directory.Exists(rootDataFolder))
+            if (Directory.Exists(this.configurationService.GetRootDataDirectory()))
             {
                 // If the directory exists, delete it. The 'true' parameter means 
                 // all files and subdirectories will also be deleted.
-                Directory.Delete(rootDataFolder, true);
+                Directory.Delete(this.configurationService.GetRootDataDirectory(), true);
             }
         }
 
@@ -90,23 +96,32 @@ namespace CampaignKit.Compendium.Core.Tests
         public void TestCleanup()
         {
             // Check if the directory exists.
-            if (Directory.Exists(rootDataFolder))
+            if (Directory.Exists(GetConfigurationService().GetRootDataDirectory()))
             {
                 // If the directory exists, delete it. The 'true' parameter means 
                 // all files and subdirectories will also be deleted.
-                Directory.Delete(rootDataFolder, true);
+                Directory.Delete(GetConfigurationService().GetRootDataDirectory(), true);
             }
         }
 
-        private static IConfiguration GetConfiguration()
+        private IConfigurationService GetConfigurationService()
         {
+            if (this.configurationService != null)
+            {
+                return this.configurationService;
+            }
+
             var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory()) // Set the path to the current directory
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true); // Add the json configuration file
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddEnvironmentVariables()
+                .AddUserSecrets<Program>();
 
             var configuration = builder.Build(); // Build the configuration
 
-            return configuration;
+            var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
+
+            return new DefaultConfigurationService(loggerMock.Object, configuration);
 
         }
     }

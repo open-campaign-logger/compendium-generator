@@ -69,7 +69,7 @@ namespace CampaignKit.Compendium.Core.Services
         public List<Compendium> GetCompendiumsForService(string serviceName)
         {
             var compendiums = this.configuration.GetSection("Compendiums").Get<List<Compendium>>() ?? new List<Compendium>();
-            return compendiums.Where(c => c.CompendiumService == serviceName).ToList();
+            return compendiums.Where(c => c.CompendiumService.StartsWith(serviceName)).ToList();
         }
 
         /// <inheritdoc/>

@@ -1,4 +1,4 @@
-﻿// <copyright file="CreatureCodeCreature.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="CreatureCodexCreature.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");

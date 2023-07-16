@@ -14,7 +14,7 @@
 // limitations under the License.
 // </copyright>
 
-namespace CampaignKit.Compendium.Core.Common
+namespace CampaignKit.Compendium.Core.Services
 {
     /// <summary>
     /// All Tabletop Roleplaying Game (TTRPG) compendium services must implement this interface.

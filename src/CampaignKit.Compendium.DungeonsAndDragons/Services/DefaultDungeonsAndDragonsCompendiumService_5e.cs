@@ -70,14 +70,14 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
         /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
         public async Task CreateCompendiums()
         {
-            this.logger.LogDebug("Processing compendiums for service: {service}.", typeof(DefaultDungeonsAndDragonsCompendiumService_5e).FullName);
+            this.logger.LogDebug("Processing compendiums for service: {service}.", typeof(IDungeonsAndDragonsCompendiumService_5e).FullName);
             var rootDataDirectory = this.configurationService.GetRootDataDirectory();
-            var serviceName = typeof(DefaultDungeonsAndDragonsCompendiumService_5e).FullName
-                ?? throw new Exception($"Unable to determine service name for class: {typeof(DefaultDungeonsAndDragonsCompendiumService_5e).FullName}");
+            var serviceName = typeof(IDungeonsAndDragonsCompendiumService_5e).FullName
+                ?? throw new Exception($"Unable to determine service name for class: {typeof(IDungeonsAndDragonsCompendiumService_5e).FullName}");
             var compendiums = this.configurationService.GetCompendiumsForService(serviceName);
             if (compendiums == null || compendiums.Count == 0)
             {
-                this.logger.LogInformation("No compendiums to process for service: {service}.", typeof(DefaultDungeonsAndDragonsCompendiumService_5e).FullName);
+                this.logger.LogInformation("No compendiums to process for service: {service}.", typeof(IDungeonsAndDragonsCompendiumService_5e).FullName);
                 return;
             }
 
@@ -95,7 +95,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                     this.logger.LogInformation("Downloading license data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
                     await this.downloadService.DownloadFile(
                         sourceDataSet.LicenseDataURI,
-                        rootDataDirectory,
                         sourceDataSet.OverwriteExisting);
 
                     // Parse license file
@@ -113,7 +112,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                     this.logger.LogInformation("Downloading SourceDataSet data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
                     await this.downloadService.DownloadFile(
                         sourceDataSet.SourceDataSetURI,
-                        rootDataDirectory,
                         sourceDataSet.OverwriteExisting);
 
                     // Parse SourceDataSet file
