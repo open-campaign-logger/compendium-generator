@@ -40,6 +40,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CampaignKit.Compendium.Core\CampaignKit.Compendium.Core.csproj" />
     <ProjectReference Include="..\CampaignKit.Compendium.DungeonsAndDragons\CampaignKit.Compendium.DungeonsAndDragons.csproj" />
+    <ProjectReference Include="..\CampaignKit.Compendium.OldSchoolEssentials\CampaignKit.Compendium.OldSchoolEssentials.csproj" />
     <ProjectReference Include="..\CampaignKit.Compendium.Utility\CampaignKit.Compendium.Utility.csproj" />
   </ItemGroup>
 
