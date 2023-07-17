@@ -57,15 +57,9 @@ namespace CampaignKit.Compendium.Core.Services
         public string GetRootDataDirectory()
         {
             var rootFolder = this.configuration.GetValue<string>("RootDataFolder");
-            if (rootFolder.IsNullOrEmpty())
+            if (string.IsNullOrEmpty(rootFolder))
             {
-                this.logger.LogError("Unable to load configuration paramter: {configuration}", "RootDataFolder"); 
                 rootFolder = Path.Combine(Path.GetTempPath(), "CompendiumGenerator");
-            }
-
-            if (rootFolder.IsNullOrEmpty())
-            {
-                this.logger.LogError("Unable to load configuration paramter: {configuration}", "RootDataFolder");
             }
 
             return rootFolder;
