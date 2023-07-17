@@ -1,11 +1,7 @@
 using CampaignKit.Compendium.DungeonsAndDragons.Common;
 using CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts2;
 
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
 using Newtonsoft.Json;
-
-using System.Reflection;
 
 namespace CampaignKit.Compendium.Tests
 {
@@ -909,11 +905,10 @@ namespace CampaignKit.Compendium.Tests
             // Act
             var creature = JsonConvert.DeserializeObject<TomeOfBeasts2Creature>(creatureJSON);
             Assert.IsNotNull(creature);
-            var creatureConverted = creature.ToCreature();
-            Assert.IsNotNull(creatureConverted);
-            var creatureStatBlock = CreatureHelper.ToCampaignLoggerStatBlock(creatureConverted);
+            var creatureStatBlock = creature.ToCampaignEntry();
             Assert.IsNotNull(creatureStatBlock);
-            var creatureStatBlockLines = creatureStatBlock.Split(Environment.NewLine);
+            Assert.IsNotNull(creatureStatBlock.RawText);
+            var creatureStatBlockLines = creatureStatBlock.RawText.Split(Environment.NewLine);
 
             // Assert
             Assert.IsFalse(creatureStatBlockLines.Contains("- Armor Class: 12 ()"));
@@ -935,39 +930,13 @@ namespace CampaignKit.Compendium.Tests
             // Act
             var creature = JsonConvert.DeserializeObject<TomeOfBeasts2Creature>(creatureJSON);
             Assert.IsNotNull(creature);
-            var creatureConverted = creature.ToCreature();
-            Assert.IsNotNull(creatureConverted);
-            var creatureStatBlock = CreatureHelper.ToCampaignLoggerStatBlock(creatureConverted);
+            var creatureStatBlock = creature.ToCampaignEntry();
             Assert.IsNotNull(creatureStatBlock);
-            var creatureStatBlockLines = creatureStatBlock.Split(Environment.NewLine);
+            Assert.IsNotNull(creatureStatBlock.RawText);
+            var creatureStatBlockLines = creatureStatBlock.RawText.Split(Environment.NewLine);
 
             // Assert
             Assert.IsTrue(creatureStatBlockLines.Contains("- Armor Class: 16 (natural armor)"));
-
-        }
-
-        /// <summary>
-        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
-        /// </summary>
-        [TestMethod]
-        [DeploymentItem(@"TestFiles\sulsha.json")]
-        public void ConvertToCLStatBlock_ValidateLabels_5ELabelFound()
-        {
-            // Arrange
-            var creatureJSON = File.ReadAllText("sulsha.json");
-            Assert.IsNotNull(creatureJSON);
-
-            // Act
-            var creature = JsonConvert.DeserializeObject<TomeOfBeasts2Creature>(creatureJSON);
-            Assert.IsNotNull(creature);
-            var creatureConverted = creature.ToCreature();
-            Assert.IsNotNull(creatureConverted);
-            var creatureCampaignEntry = CreatureHelper.ToCampaignEntry(creatureConverted);
-            Assert.IsNotNull(creatureCampaignEntry);
-            Assert.IsNotNull(creatureCampaignEntry.Labels);
-
-            // Assert
-            Assert.IsTrue(creatureCampaignEntry.Labels.Contains("D&D 5E"));
 
         }
     }

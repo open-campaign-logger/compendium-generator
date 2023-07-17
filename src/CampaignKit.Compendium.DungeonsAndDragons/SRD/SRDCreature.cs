@@ -16,6 +16,8 @@
 
 namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
 {
+    using CampaignKit.Compendium.Core.CampaignLogger;
+    using CampaignKit.Compendium.Core.Common;
     using CampaignKit.Compendium.DungeonsAndDragons.Common;
 
     using Newtonsoft.Json;
@@ -233,10 +235,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         [JsonProperty("legendary_desc")]
         public string? LegendaryDesc { get; set; } = string.Empty;
 
-        /// <summary>
-        /// Gets or sets the license object.
-        /// </summary>
-        public License? License { get; set; } = new License();
+        /// <inheritdoc/>
+        public string? PublisherName { get; set; }
+
+        /// <inheritdoc/>
+        public string? LicenseURL { get; set; }
 
         /// <summary>
         /// Gets or sets the creature's Medicine skill, which might be used for healing.
@@ -386,11 +389,17 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         [JsonProperty("wisdom_save")]
         public int? WisdomSave { get; set; } = int.MinValue;
 
+        /// <inheritdoc/>
+        public CampaignEntry ToCampaignEntry()
+        {
+            return this.ToCreature().ToCampaignEntry();
+        }
+
         /// <summary>
         /// Creates a generic Creature object populated with values from this SRDCreature object.
         /// </summary>
         /// <returns>Generic Creature object populated with values from this SRDCreature object.</returns>
-        public Creature ToCreature()
+        private Creature ToCreature()
         {
             var creature = new Creature()
             {
@@ -495,7 +504,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
             }
 
             // Populate License
-            creature.License = this.License;
+            if (!string.IsNullOrEmpty(this.PublisherName) && !string.IsNullOrEmpty(this.LicenseURL))
+            {
+                creature.PublisherName = this.PublisherName;
+                creature.LicenseURL = this.LicenseURL;
+            }
 
             return creature;
         }

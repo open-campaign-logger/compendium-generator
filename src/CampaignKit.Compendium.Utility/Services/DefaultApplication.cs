@@ -21,7 +21,6 @@ namespace CampaignKit.Compendium.Utility.Services
     using System.Threading.Tasks;
 
     using CampaignKit.Compendium.Core.Services;
-    using CampaignKit.Compendium.DungeonsAndDragons.Services;
 
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;

@@ -16,6 +16,8 @@
 
 namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts
 {
+    using CampaignKit.Compendium.Core.CampaignLogger;
+    using CampaignKit.Compendium.Core.Common;
     using CampaignKit.Compendium.DungeonsAndDragons.Common;
 
     using Newtonsoft.Json;
@@ -227,10 +229,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts
         [JsonProperty("legendary_desc")]
         public string? LegendaryDesc { get; set; }
 
-        /// <summary>
-        /// Gets or sets the license object.
-        /// </summary>
-        public License? License { get; set; } = new License();
+        /// <inheritdoc/>
+        public string? PublisherName { get; set; }
+
+        /// <inheritdoc/>
+        public string? LicenseURL { get; set; }
 
         /// <summary>
         /// Gets or sets the creature's Medicine skill, which might be used for healing.
@@ -374,11 +377,17 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts
         [JsonProperty("wisdom_save")]
         public int? WisdomSave { get; set; }
 
+        /// <inheritdoc/>
+        public CampaignEntry ToCampaignEntry()
+        {
+            return this.ToCreature().ToCampaignEntry();
+        }
+
         /// <summary>
         /// Creates a generic Creature object populated with values from this KoboldPressCreature object.
         /// </summary>
         /// <returns>Generic Creature object populated with values from this KoboldPressCreature object.</returns>
-        public Creature ToCreature()
+        private Creature ToCreature()
         {
             var creature = new Creature()
             {
@@ -497,7 +506,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts
             }
 
             // Populate License
-            creature.License = this.License;
+            if (!string.IsNullOrEmpty(this.PublisherName) && !string.IsNullOrEmpty(this.LicenseURL))
+            {
+                creature.PublisherName = this.PublisherName;
+                creature.LicenseURL = this.LicenseURL;
+            }
 
             return creature;
         }
