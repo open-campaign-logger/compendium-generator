@@ -67,10 +67,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
             this.downloadService = downloadService ?? throw new ArgumentNullException(nameof(downloadService));
         }
 
-        /// <summary>
-        /// Processes any Dungeons &amp; Dragons 5e compendiums defined in the application's configuration.
-        /// </summary>
-        /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
+        /// <inheritdoc/>
         public async Task CreateCompendiums()
         {
             this.logger.LogDebug("Processing compendiums for service: {service}.", typeof(IDungeonsAndDragonsCompendiumService_5e).FullName);
