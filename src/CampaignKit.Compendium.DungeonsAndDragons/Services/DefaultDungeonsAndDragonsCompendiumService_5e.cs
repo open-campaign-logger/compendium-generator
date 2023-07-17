@@ -16,12 +16,15 @@
 
 namespace CampaignKit.Compendium.DungeonsAndDragons.Services
 {
-    using System.Text;
     using System.Threading.Tasks;
+
     using CampaignKit.Compendium.Core.CampaignLogger;
+    using CampaignKit.Compendium.Core.Common;
     using CampaignKit.Compendium.Core.Services;
     using CampaignKit.Compendium.DungeonsAndDragons.Common;
+
     using Microsoft.Extensions.Logging;
+
     using Newtonsoft.Json;
 
     /// <summary>
@@ -67,18 +70,18 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
         /// <inheritdoc/>
         public async Task CreateCompendiums()
         {
-            this.logger.LogDebug("Processing compendiums for service: {service}.", typeof(DefaultDungeonsAndDragonsCompendiumService_5e).FullName);
+            this.logger.LogDebug("Processing compendiums for service: {service}.", typeof(IDungeonsAndDragonsCompendiumService_5e).FullName);
             var rootDataDirectory = this.configurationService.GetRootDataDirectory();
-            var serviceName = typeof(DefaultDungeonsAndDragonsCompendiumService_5e).FullName
-                ?? throw new Exception($"Unable to determine service name for class: {typeof(DefaultDungeonsAndDragonsCompendiumService_5e).FullName}");
+            var serviceName = typeof(IDungeonsAndDragonsCompendiumService_5e).FullName
+                ?? throw new Exception($"Unable to determine service name for class: {typeof(IDungeonsAndDragonsCompendiumService_5e).FullName}");
             var compendiums = this.configurationService.GetCompendiumsForService(serviceName);
             if (compendiums == null || compendiums.Count == 0)
             {
-                this.logger.LogInformation("No compendiums to process for service: {service}.", typeof(DefaultDungeonsAndDragonsCompendiumService_5e).FullName);
+                this.logger.LogInformation("No compendiums to process for service: {service}.", typeof(IDungeonsAndDragonsCompendiumService_5e).FullName);
                 return;
             }
 
-            var creatureList = new List<Common.Creature>();
+            var creatureList = new List<ICreature>();
             foreach (var compendium in compendiums)
             {
                 this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
@@ -92,7 +95,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                     this.logger.LogInformation("Downloading license data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
                     await this.downloadService.DownloadFile(
                         sourceDataSet.LicenseDataURI,
-                        rootDataDirectory,
                         sourceDataSet.OverwriteExisting);
 
                     // Parse license file
@@ -110,7 +112,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                     this.logger.LogInformation("Downloading SourceDataSet data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
                     await this.downloadService.DownloadFile(
                         sourceDataSet.SourceDataSetURI,
-                        rootDataDirectory,
                         sourceDataSet.OverwriteExisting);
 
                     // Parse SourceDataSet file
@@ -130,16 +131,16 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                     foreach (ICreature creature in creatures.Take(sourceDataSet.ExportLimit ?? int.MaxValue))
                     {
                         this.logger.LogDebug("Converting creature to standard format: {Name}.", creature.Name);
-                        var convertedCreature = creature.ToCreature();
                         if (licenseParsed != null && licenseParsed is List<License> list && list.Count > 0)
                         {
-                            convertedCreature.License = list[0];
+                            creature.PublisherName = list[0].Name;
+                            creature.LicenseURL = list[0].Url;
                         }
 
-                        if (!creatureList.Contains(convertedCreature))
+                        if (!creatureList.Any(creature => (creature.Name is not null) && creature.Name.Equals(creature.Name)))
                         {
-                            this.logger.LogDebug("New creature found and added to compendium list: {creature}.", convertedCreature.Name);
-                            creatureList.Add(convertedCreature);
+                            this.logger.LogDebug("New creature found and added to compendium list: {creature}.", creature.Name);
+                            creatureList.Add(creature);
                         }
                     }
                 }
@@ -159,7 +160,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
 
                 foreach (var creature in creatureList)
                 {
-                    campaignLoggerFile.CampaignEntries.Add(CreatureHelper.ToCampaignEntry(creature));
+                    campaignLoggerFile.CampaignEntries.Add(creature.ToCampaignEntry());
                 }
 
                 string campaignLoggerFileString = JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented);

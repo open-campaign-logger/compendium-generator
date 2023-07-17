@@ -1,4 +1,4 @@
-﻿// <copyright file="MonstrousMenagerieCreature.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="IApplication.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,19 +14,17 @@
 // limitations under the License.
 // </copyright>
 
-namespace CampaignKit.Compendium.DungeonsAndDragons.MonstrousMenagerie
+namespace CampaignKit.Compendium.Utility.Services
 {
-    using Newtonsoft.Json;
-
     /// <summary>
-    /// Represents a creature from the Advanced Level Up Monstrous Menagerie.
+    /// Interface defining the contract for an application runner service.
     /// </summary>
-    public class MonstrousMenagerieCreature : TomeOfBeasts3.TomeOfBeasts3Creature
+    public interface IApplication
     {
         /// <summary>
-        /// Gets or sets the creature's movement speeds, deserialized from the 'speed' field in the JSON source.
+        /// Runs the application asynchronously.
         /// </summary>
-        [JsonProperty("speed")]
-        public new Speed Speed { get; set; } = new Speed();
+        /// <returns>A task that represents the asynchronous operation.</returns>
+        Task RunAsync();
     }
 }

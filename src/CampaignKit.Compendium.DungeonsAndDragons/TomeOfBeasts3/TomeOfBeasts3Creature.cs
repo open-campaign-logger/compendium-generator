@@ -16,7 +16,9 @@
 
 namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts3
 {
+    using CampaignKit.Compendium.Core.Common;
     using CampaignKit.Compendium.DungeonsAndDragons.Common;
+
     using Newtonsoft.Json;
 
     /// <summary>
@@ -84,7 +86,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts3
         /// Creates a generic Creature object populated with values from this KoboldPressCreature object.
         /// </summary>
         /// <returns>Generic Creature object populated with values from this KoboldPressCreature object.</returns>
-        public new Creature ToCreature()
+        public Creature ToCreature()
         {
             var creature = new Creature()
             {
@@ -204,7 +206,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts3
             }
 
             // Populate License
-            creature.License = this.License;
+            if (!string.IsNullOrEmpty(this.PublisherName) && !string.IsNullOrEmpty(this.LicenseURL))
+            {
+                creature.PublisherName = this.PublisherName;
+                creature.LicenseURL = this.LicenseURL;
+            }
 
             return creature;
         }

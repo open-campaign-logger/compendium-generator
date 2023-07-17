@@ -25,10 +25,9 @@ namespace CampaignKit.Compendium.Core.Services
         /// Download the source data and source license.
         /// </summary>
         /// <param name="sourceDataUri">The URI of the source data to download.</param>
-        /// <param name="rootDataFolder">The folder to download the data to.</param>
         /// <param name="overwrite">Set to true to overwrite previously downloaded files.  Default: false.</param>
         /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
-        Task DownloadFile(string sourceDataUri, string rootDataFolder, bool overwrite = false);
+        Task DownloadFile(string sourceDataUri, bool overwrite = false);
 
         /// <summary>
         /// Separates the given source data URI into its path and file components.

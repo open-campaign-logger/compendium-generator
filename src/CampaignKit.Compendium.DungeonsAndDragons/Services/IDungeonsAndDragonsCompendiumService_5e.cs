@@ -16,7 +16,7 @@
 
 namespace CampaignKit.Compendium.DungeonsAndDragons.Services
 {
-    using CampaignKit.Compendium.Core.Common;
+    using CampaignKit.Compendium.Core.Services;
 
     /// <summary>
     /// Interface for services that create Dungeons &amp; Dragons 5e compendiums.

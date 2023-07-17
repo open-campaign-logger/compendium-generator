@@ -18,15 +18,16 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Text;
+    using CampaignKit.Compendium.Core.CampaignLogger;
+    using CampaignKit.Compendium.Core.Common;
 
     using Newtonsoft.Json;
 
     /// <summary>
     /// This class is used to represent a creature.
     /// </summary>
-    public class Creature
+    public class Creature : ICreature
     {
         /// <summary>
         /// Gets or sets acrobatics skill bonus.
@@ -75,6 +76,12 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// Example: 0.
         /// </summary>
         public int? Athletics { get; set; } = 0;
+
+        /// <summary>
+        /// Gets or sets the SourceDataLicense object.
+        /// </summary>
+        /// <returns>The SourceDataLicense object.</returns>
+        public string? Attribution { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets distance in feet that the creature can see with blindsight.
@@ -255,15 +262,13 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// </summary>
         public List<Common.Action>? LegendaryActions { get; set; } = new List<Common.Action> { };
 
+        /// <inheritdoc/>
+        public string? LicenseURL { get; set; } = string.Empty;
+
         /// <summary>
         /// Gets or sets light walking capability of the creature to hover.  Example: 80.
         /// </summary>
         public int? LightWalking { get; set; } = 0;
-
-        /// <summary>
-        /// Gets or sets the license information for the creature data.
-        /// </summary>
-        public License? License { get; set; } = new License();
 
         /// <summary>
         /// Gets or sets medicine skill bonus.
@@ -311,6 +316,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// </summary>
         public int? Persuasion { get; set; } = 0;
 
+        /// <inheritdoc/>
+        public string? PublisherName { get; set; } = string.Empty;
+
         /// <summary>
         /// Gets or sets a collection of reactions associated with the creature.
         /// </summary>
@@ -334,12 +342,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// Example: 0.
         /// </summary>
         public int? SleightOfHand { get; set; } = 0;
-
-        /// <summary>
-        /// Gets or sets the SourceDataLicense object.
-        /// </summary>
-        /// <returns>The SourceDataLicense object.</returns>
-        public string? Attribution { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets a collection of special abilities associated with the creature.
@@ -450,6 +452,372 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             return hash;
         }
 
+        /// <inheritdoc/>
+        public CampaignEntry ToCampaignEntry()
+        {
+            CampaignEntry campaignEntry = new ()
+            {
+                RawText = this.ToCampaignLoggerStatBlock(),
+                Labels = new List<string>() { "Monster", $"CR {this.ChallengeRating}" },
+                TagSymbol = "~",
+                TagValue = this.Name,
+            };
+
+            if (this.Type != null)
+            {
+                campaignEntry.Labels.Add(this.Type);
+            }
+
+            if (!string.IsNullOrEmpty(this.PublisherName))
+            {
+                campaignEntry.Labels.Add(this.PublisherName);
+            }
+
+            campaignEntry.Labels.Add("D&D 5E");
+
+            return campaignEntry;
+        }
+
+        /// <summary>
+        /// Creates a Campaign-Logger statblock for the creature.
+        /// </summary>
+        /// <returns>Campaign-Logger statblock for the creature.</returns>
+        public string ToCampaignLoggerStatBlock()
+        {
+            StringBuilder builder = new ();
+            builder.AppendLine($"```clyt");
+            builder.AppendLine($"template: stat-block.5e");
+            builder.AppendLine($"title: {this.Name}");
+            builder.AppendLine($"description: {this.Size} {this.Type}, {this.Alignment}");
+            builder.AppendLine($"stats:");
+            if (!string.IsNullOrEmpty(this.ArmorDesc))
+            {
+                builder.AppendLine($"- Armor Class: {this.ArmorClass} ({this.ArmorDesc})");
+            }
+            else
+            {
+                builder.AppendLine($"- Armor Class: {this.ArmorClass}");
+            }
+
+            builder.AppendLine($"- Hit Points: {this.HitPoints} ({this.HitDice})");
+            List<string> speeds = new ()
+            {
+                $"{this.Walk} ft.",
+            };
+            if (this.Swim > 0)
+            {
+                speeds.Add($"Swim {this.Swim} ft.");
+            }
+
+            if (this.Fly > 0)
+            {
+                speeds.Add($"Fly {this.Fly} ft." + ((this.Hover ?? false) ? " (hover)" : string.Empty));
+            }
+
+            if (this.Burrow > 0)
+            {
+                speeds.Add($"Burrow {this.Burrow} ft.");
+            }
+
+            if (this.Climb > 0)
+            {
+                speeds.Add($"Climb {this.Climb} ft.");
+            }
+
+            if (this.LightWalking > 0)
+            {
+                speeds.Add($"Lightwalking {this.LightWalking} ft.");
+            }
+
+            builder.AppendLine($"- Speed: {string.Join(", ", speeds)}");
+            builder.AppendLine($"- abilities:");
+            builder.AppendLine($"     STR: {this.Strength} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(this.Strength))})");
+            builder.AppendLine($"     DEX: {this.Dexterity} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(this.Dexterity))})");
+            builder.AppendLine($"     CON: {this.Constitution} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(this.Constitution))})");
+            builder.AppendLine($"     INT: {this.Intelligence} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(this.Intelligence))})");
+            builder.AppendLine($"     WIS: {this.Wisdom} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(this.Wisdom))})");
+            builder.AppendLine($"     CHA: {this.Charisma} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(this.Charisma))})");
+            List<string> savingThrows = new ();
+            if (this.StrengthSave > CreatureHelper.CalculateAbilityBonus(this.Strength))
+            {
+                savingThrows.Add($"STR {CreatureHelper.ConvertBonusToSignedString(this.StrengthSave ?? 0)}");
+            }
+
+            if (this.DexteritySave > CreatureHelper.CalculateAbilityBonus(this.Dexterity))
+            {
+                savingThrows.Add($"DEX {CreatureHelper.ConvertBonusToSignedString(this.DexteritySave ?? 0)}");
+            }
+
+            if (this.ConstitutionSave > CreatureHelper.CalculateAbilityBonus(this.Constitution))
+            {
+                savingThrows.Add($"CON {CreatureHelper.ConvertBonusToSignedString(this.ConstitutionSave ?? 0)}");
+            }
+
+            if (this.IntelligenceSave > CreatureHelper.CalculateAbilityBonus(this.Intelligence))
+            {
+                savingThrows.Add($"INT {CreatureHelper.ConvertBonusToSignedString(this.IntelligenceSave ?? 0)}");
+            }
+
+            if (this.WisdomSave > CreatureHelper.CalculateAbilityBonus(this.Wisdom))
+            {
+                savingThrows.Add($"WIS {CreatureHelper.ConvertBonusToSignedString(this.WisdomSave ?? 0)}");
+            }
+
+            if (this.CharismaSave > CreatureHelper.CalculateAbilityBonus(this.Charisma))
+            {
+                savingThrows.Add($"CHA {CreatureHelper.ConvertBonusToSignedString(this.CharismaSave ?? 0)}");
+            }
+
+            if (savingThrows.Count > 0)
+            {
+                builder.AppendLine($"- Saving Throws: {string.Join(", ", savingThrows)}");
+            }
+
+            List<string> skillsList = new ();
+            if (this.Acrobatics > CreatureHelper.CalculateAbilityBonus(this.Dexterity))
+            {
+                skillsList.Add($"Acrobatics {CreatureHelper.ConvertBonusToSignedString(this.Acrobatics ?? 0)}");
+            }
+
+            if (this.AnimalHandling > CreatureHelper.CalculateAbilityBonus(this.Wisdom))
+            {
+                skillsList.Add($"Animal Handling {CreatureHelper.ConvertBonusToSignedString(this.AnimalHandling ?? 0)}");
+            }
+
+            if (this.Arcana > CreatureHelper.CalculateAbilityBonus(this.Intelligence))
+            {
+                skillsList.Add($"Arcana {CreatureHelper.ConvertBonusToSignedString(this.Arcana ?? 0)}");
+            }
+
+            if (this.Athletics > CreatureHelper.CalculateAbilityBonus(this.Strength))
+            {
+                skillsList.Add($"Athletics {CreatureHelper.ConvertBonusToSignedString(this.Athletics ?? 0)}");
+            }
+
+            if (this.Deception > CreatureHelper.CalculateAbilityBonus(this.Charisma))
+            {
+                skillsList.Add($"Deception {CreatureHelper.ConvertBonusToSignedString(this.Deception ?? 0)}");
+            }
+
+            if (this.History > CreatureHelper.CalculateAbilityBonus(this.Intelligence))
+            {
+                skillsList.Add($"History {CreatureHelper.ConvertBonusToSignedString(this.History ?? 0)}");
+            }
+
+            if (this.Insight > CreatureHelper.CalculateAbilityBonus(this.Wisdom))
+            {
+                skillsList.Add($"Insight {CreatureHelper.ConvertBonusToSignedString(this.Insight ?? 0)}");
+            }
+
+            if (this.Intimidation > CreatureHelper.CalculateAbilityBonus(this.Charisma))
+            {
+                skillsList.Add($"Intimidation {CreatureHelper.ConvertBonusToSignedString(this.Intimidation ?? 0)}");
+            }
+
+            if (this.Investigation > CreatureHelper.CalculateAbilityBonus(this.Intelligence))
+            {
+                skillsList.Add($"Investigation {CreatureHelper.ConvertBonusToSignedString(this.Investigation ?? 0)}");
+            }
+
+            if (this.Medicine > CreatureHelper.CalculateAbilityBonus(this.Wisdom))
+            {
+                skillsList.Add($"Medicine {CreatureHelper.ConvertBonusToSignedString(this.Medicine ?? 0)}");
+            }
+
+            if (this.Nature > CreatureHelper.CalculateAbilityBonus(this.Intelligence))
+            {
+                skillsList.Add($"Nature {CreatureHelper.ConvertBonusToSignedString(this.Nature ?? 0)}");
+            }
+
+            if (this.Perception > CreatureHelper.CalculateAbilityBonus(this.Wisdom))
+            {
+                skillsList.Add($"Perception {CreatureHelper.ConvertBonusToSignedString(this.Perception ?? 0)}");
+            }
+
+            if (this.Performance > CreatureHelper.CalculateAbilityBonus(this.Charisma))
+            {
+                skillsList.Add($"Performance {CreatureHelper.ConvertBonusToSignedString(this.Performance ?? 0)}");
+            }
+
+            if (this.Persuasion > CreatureHelper.CalculateAbilityBonus(this.Charisma))
+            {
+                skillsList.Add($"Persuasion {CreatureHelper.ConvertBonusToSignedString(this.Persuasion ?? 0)}");
+            }
+
+            if (this.Religion > CreatureHelper.CalculateAbilityBonus(this.Intelligence))
+            {
+                skillsList.Add($"Religion {CreatureHelper.ConvertBonusToSignedString(this.Religion ?? 0)}");
+            }
+
+            if (this.SleightOfHand > CreatureHelper.CalculateAbilityBonus(this.Dexterity))
+            {
+                skillsList.Add($"Sleight of Hand {CreatureHelper.ConvertBonusToSignedString(this.SleightOfHand ?? 0)}");
+            }
+
+            if (this.Stealth > CreatureHelper.CalculateAbilityBonus(this.Dexterity))
+            {
+                skillsList.Add($"Stealth {CreatureHelper.ConvertBonusToSignedString(this.Stealth ?? 0)}");
+            }
+
+            if (this.Survival > CreatureHelper.CalculateAbilityBonus(this.Wisdom))
+            {
+                skillsList.Add($"Survival {CreatureHelper.ConvertBonusToSignedString(this.Survival ?? 0)}");
+            }
+
+            if (skillsList.Count > 0)
+            {
+                builder.AppendLine($"- Skills: {string.Join(", ", skillsList)}");
+            }
+
+            if (!string.IsNullOrEmpty(this.DamageVulnerabilities))
+            {
+                builder.AppendLine($"- Damage Vulnerabilities: {this.DamageVulnerabilities}");
+            }
+
+            if (!string.IsNullOrEmpty(this.DamageResistances))
+            {
+                builder.AppendLine($"- Damage Resistances: {this.DamageResistances}");
+            }
+
+            if (!string.IsNullOrEmpty(this.DamageImmunities))
+            {
+                builder.AppendLine($"- Damage Immunities: {this.DamageImmunities}");
+            }
+
+            if (!string.IsNullOrEmpty(this.ConditionImmunities))
+            {
+                builder.AppendLine($"- Condition Immunities: {this.ConditionImmunities}");
+            }
+
+            List<string> sensesList = new ();
+            if (this.Blindsight > 0)
+            {
+                sensesList.Add($"Blindsight {this.Blindsight} ft.");
+            }
+
+            if (this.Darkvision > 0)
+            {
+                sensesList.Add($"Darkvision {this.Darkvision} ft.");
+            }
+
+            if (this.Tremorsense > 0)
+            {
+                sensesList.Add($"Tremorsense {this.Tremorsense} ft.");
+            }
+
+            if (this.Truesight > 0)
+            {
+                sensesList.Add($"Truesight {this.Truesight} ft.");
+            }
+
+            sensesList.Add($"Passive Perception {this.PassivePerception}");
+            builder.AppendLine($"- Senses: {string.Join(", ", sensesList)}");
+            if (!string.IsNullOrEmpty(this.Languages))
+            {
+                builder.AppendLine($"- Languages: {this.Languages}");
+            }
+
+            builder.AppendLine($"- Challenge: {CreatureHelper.ConvertChallengeRatingToString(this.ChallengeRating)} ({CreatureHelper.CalculateExperiencePoints(this.ChallengeRating)} XP)");
+            builder.AppendLine($"- Proficiency Bonus: {CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateProficiencyBonus(this.ChallengeRating))}");
+            if (this.SpecialAbilities != null && this.SpecialAbilities.Count > 0)
+            {
+                builder.AppendLine("traits:");
+                foreach (Common.Action specialAbility in this.SpecialAbilities)
+                {
+                    builder.AppendLine($"- {specialAbility.Name}: >");
+                    foreach (string line in (specialAbility.Description ?? string.Empty).Split("\n"))
+                    {
+                        if (!string.IsNullOrEmpty(line))
+                        {
+                            if (line.StartsWith("•"))
+                            {
+                                builder.AppendLine($"- {line[2..]}");
+                            }
+                            else if (line.StartsWith("Cantrips")
+                                || line.StartsWith("1st level")
+                                || line.StartsWith("2nd level")
+                                || line.StartsWith("3rd level")
+                                || line.StartsWith("4th level")
+                                || line.StartsWith("5th level")
+                                || line.StartsWith("6th level")
+                                || line.StartsWith("7th level")
+                                || line.StartsWith("8th level")
+                                || line.StartsWith("9th level")
+                                || line.StartsWith("10th level")
+                                || line.StartsWith("11th level")
+                                || line.StartsWith("12th level"))
+                            {
+                                builder.AppendLine($"- {line}");
+                            }
+                            else
+                            {
+                                builder.AppendLine($"    {line}");
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (this.Actions != null && this.Actions.Count > 0)
+            {
+                builder.AppendLine("actions:");
+                foreach (Common.Action action in this.Actions)
+                {
+                    builder.AppendLine($"- {action.Name}: >");
+                    foreach (string line in (action.Description ?? string.Empty).Split("\n"))
+                    {
+                        if (!string.IsNullOrEmpty(line))
+                        {
+                            builder.AppendLine($"    {line}");
+                        }
+                    }
+                }
+            }
+
+            if (this.Reactions != null && this.Reactions.Count > 0)
+            {
+                builder.AppendLine($"- Reactions: The {this.Name} has the following reactions.");
+                foreach (Common.Action reaction in this.Reactions)
+                {
+                    builder.AppendLine($"- {reaction.Name}: >");
+                    foreach (string line in (reaction.Description ?? string.Empty).Split("\n"))
+                    {
+                        if (!string.IsNullOrEmpty(line))
+                        {
+                            builder.AppendLine($"    {line}");
+                        }
+                    }
+                }
+            }
+
+            if (this.LegendaryActions != null && this.LegendaryActions.Count > 0)
+            {
+                builder.AppendLine($"- Legendary Actions: {this.LegendaryActionDescription}");
+                foreach (Common.Action legendaryAction in this.LegendaryActions)
+                {
+                    builder.AppendLine($"-  {legendaryAction.Name}: >");
+                    foreach (string line in (legendaryAction.Description ?? string.Empty).Split("\n"))
+                    {
+                        if (!string.IsNullOrEmpty(line))
+                        {
+                            builder.AppendLine($"    {line}");
+                        }
+                    }
+                }
+            }
+
+            builder.AppendLine($"```");
+
+            // Add Attribution
+            if (!string.IsNullOrEmpty(this.PublisherName) && !string.IsNullOrEmpty(this.LicenseURL))
+            {
+                builder.AppendLine();
+                builder.AppendLine($"Publisher: [{this.PublisherName}]({this.LicenseURL})");
+            }
+
+            return builder.ToString().Replace("\t", "     ");
+        }
+
         /// <summary>
         /// Exports a simple textual description of this creature.
         /// </summary>
@@ -457,6 +825,272 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         public override string ToString()
         {
             return $"Name: {this.Name}, Size: {this.Size}, Type: {this.Type}";
+        }
+
+        /// <summary>
+        /// Creates a text statblock for the this creature.
+        /// </summary>
+        /// <returns>Standard text statblock for the this creature..</returns>
+        public string ToTextStatBlock()
+        {
+            StringBuilder builder = new ();
+            builder.AppendLine($"{this.Name}");
+            builder.AppendLine($"{this.Size} {this.Type}, {this.Alignment}");
+            builder.AppendLine($"Armor Class {this.ArmorClass} ({this.ArmorDesc})");
+            builder.AppendLine($"Hit Points {this.HitPoints} ({this.HitDice})");
+            List<string> speeds = new ()
+            {
+                $"{this.Walk} ft.",
+            };
+            if (this.Swim > 0)
+            {
+                speeds.Add($"Swim {this.Swim} ft.");
+            }
+
+            if (this.Fly > 0)
+            {
+                speeds.Add($"Fly {this.Fly} ft." + ((this.Hover ?? false) ? " (hover)" : string.Empty));
+            }
+
+            if (this.Burrow > 0)
+            {
+                speeds.Add($"Burrow {this.Burrow} ft.");
+            }
+
+            if (this.Climb > 0)
+            {
+                speeds.Add($"Climb {this.Climb} ft.");
+            }
+
+            if (this.LightWalking > 0)
+            {
+                speeds.Add($"Lightwalking {this.LightWalking} ft.");
+            }
+
+            builder.AppendLine($"Speed {string.Join(", ", speeds)}");
+            builder.AppendLine($"STR {this.Strength} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(this.Strength))})");
+            builder.AppendLine($"DEX {this.Dexterity} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(this.Dexterity))})");
+            builder.AppendLine($"CON {this.Constitution} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(this.Constitution))})");
+            builder.AppendLine($"INT {this.Intelligence} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(this.Intelligence))})");
+            builder.AppendLine($"WIS {this.Wisdom} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(this.Wisdom))})");
+            builder.AppendLine($"CHA {this.Charisma} ({CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateAbilityBonus(this.Charisma))})");
+            List<string> savingThrows = new ();
+            if (this.StrengthSave > CreatureHelper.CalculateAbilityBonus(this.Strength))
+            {
+                savingThrows.Add($"STR {CreatureHelper.ConvertBonusToSignedString(this.StrengthSave ?? 0)}");
+            }
+
+            if (this.DexteritySave > CreatureHelper.CalculateAbilityBonus(this.Dexterity))
+            {
+                savingThrows.Add($"DEX {CreatureHelper.ConvertBonusToSignedString(this.DexteritySave ?? 0)}");
+            }
+
+            if (this.ConstitutionSave > CreatureHelper.CalculateAbilityBonus(this.Constitution))
+            {
+                savingThrows.Add($"CON {CreatureHelper.ConvertBonusToSignedString(this.ConstitutionSave ?? 0)}");
+            }
+
+            if (this.IntelligenceSave > CreatureHelper.CalculateAbilityBonus(this.Intelligence))
+            {
+                savingThrows.Add($"INT {CreatureHelper.ConvertBonusToSignedString(this.IntelligenceSave ?? 0)}");
+            }
+
+            if (this.WisdomSave > CreatureHelper.CalculateAbilityBonus(this.Wisdom))
+            {
+                savingThrows.Add($"WIS {CreatureHelper.ConvertBonusToSignedString(this.WisdomSave ?? 0)}");
+            }
+
+            if (this.CharismaSave > CreatureHelper.CalculateAbilityBonus(this.Charisma))
+            {
+                savingThrows.Add($"CHA {CreatureHelper.ConvertBonusToSignedString(this.CharismaSave ?? 0)}");
+            }
+
+            if (savingThrows.Count > 0)
+            {
+                builder.AppendLine($"Saving Throws {string.Join(", ", savingThrows)}");
+            }
+
+            List<string> skillsList = new ();
+            if (this.Acrobatics > CreatureHelper.CalculateAbilityBonus(this.Dexterity))
+            {
+                skillsList.Add($"Acrobatics {CreatureHelper.ConvertBonusToSignedString(this.Acrobatics ?? 0)}");
+            }
+
+            if (this.AnimalHandling > CreatureHelper.CalculateAbilityBonus(this.Wisdom))
+            {
+                skillsList.Add($"Animal Handling {CreatureHelper.ConvertBonusToSignedString(this.AnimalHandling ?? 0)}");
+            }
+
+            if (this.Arcana > CreatureHelper.CalculateAbilityBonus(this.Intelligence))
+            {
+                skillsList.Add($"Arcana {CreatureHelper.ConvertBonusToSignedString(this.Arcana ?? 0)}");
+            }
+
+            if (this.Athletics > CreatureHelper.CalculateAbilityBonus(this.Strength))
+            {
+                skillsList.Add($"Athletics {CreatureHelper.ConvertBonusToSignedString(this.Athletics ?? 0)}");
+            }
+
+            if (this.Deception > CreatureHelper.CalculateAbilityBonus(this.Charisma))
+            {
+                skillsList.Add($"Deception {CreatureHelper.ConvertBonusToSignedString(this.Deception ?? 0)}");
+            }
+
+            if (this.History > CreatureHelper.CalculateAbilityBonus(this.Intelligence))
+            {
+                skillsList.Add($"History {CreatureHelper.ConvertBonusToSignedString(this.History ?? 0)}");
+            }
+
+            if (this.Insight > CreatureHelper.CalculateAbilityBonus(this.Wisdom))
+            {
+                skillsList.Add($"Insight {CreatureHelper.ConvertBonusToSignedString(this.Insight ?? 0)}");
+            }
+
+            if (this.Intimidation > CreatureHelper.CalculateAbilityBonus(this.Charisma))
+            {
+                skillsList.Add($"Intimidation {CreatureHelper.ConvertBonusToSignedString(this.Intimidation ?? 0)}");
+            }
+
+            if (this.Investigation > CreatureHelper.CalculateAbilityBonus(this.Intelligence))
+            {
+                skillsList.Add($"Investigation {CreatureHelper.ConvertBonusToSignedString(this.Investigation ?? 0)}");
+            }
+
+            if (this.Medicine > CreatureHelper.CalculateAbilityBonus(this.Wisdom))
+            {
+                skillsList.Add($"Medicine {CreatureHelper.ConvertBonusToSignedString(this.Medicine ?? 0)}");
+            }
+
+            if (this.Nature > CreatureHelper.CalculateAbilityBonus(this.Intelligence))
+            {
+                skillsList.Add($"Nature {CreatureHelper.ConvertBonusToSignedString(this.Nature ?? 0)}");
+            }
+
+            if (this.Perception > CreatureHelper.CalculateAbilityBonus(this.Wisdom))
+            {
+                skillsList.Add($"Perception {CreatureHelper.ConvertBonusToSignedString(this.Perception ?? 0)}");
+            }
+
+            if (this.Performance > CreatureHelper.CalculateAbilityBonus(this.Charisma))
+            {
+                skillsList.Add($"Performance {CreatureHelper.ConvertBonusToSignedString(this.Performance ?? 0)}");
+            }
+
+            if (this.Persuasion > CreatureHelper.CalculateAbilityBonus(this.Charisma))
+            {
+                skillsList.Add($"Persuasion {CreatureHelper.ConvertBonusToSignedString(this.Persuasion ?? 0)}");
+            }
+
+            if (this.Religion > CreatureHelper.CalculateAbilityBonus(this.Intelligence))
+            {
+                skillsList.Add($"Religion {CreatureHelper.ConvertBonusToSignedString(this.Religion ?? 0)}");
+            }
+
+            if (this.SleightOfHand > CreatureHelper.CalculateAbilityBonus(this.Dexterity))
+            {
+                skillsList.Add($"Sleight of Hand {CreatureHelper.ConvertBonusToSignedString(this.SleightOfHand ?? 0)}");
+            }
+
+            if (this.Stealth > CreatureHelper.CalculateAbilityBonus(this.Dexterity))
+            {
+                skillsList.Add($"Stealth {CreatureHelper.ConvertBonusToSignedString(this.Stealth ?? 0)}");
+            }
+
+            if (this.Survival > CreatureHelper.CalculateAbilityBonus(this.Wisdom))
+            {
+                skillsList.Add($"Survival {CreatureHelper.ConvertBonusToSignedString(this.Survival ?? 0)}");
+            }
+
+            if (skillsList.Count > 0)
+            {
+                builder.AppendLine($"Skills {string.Join(", ", skillsList)}");
+            }
+
+            if (!string.IsNullOrEmpty(this.DamageVulnerabilities))
+            {
+                builder.AppendLine($"Damage Vulnerabilities {this.DamageVulnerabilities}");
+            }
+
+            if (!string.IsNullOrEmpty(this.DamageResistances))
+            {
+                builder.AppendLine($"Damage Resistances {this.DamageResistances}");
+            }
+
+            if (!string.IsNullOrEmpty(this.DamageImmunities))
+            {
+                builder.AppendLine($"Damage Immunities {this.DamageImmunities}");
+            }
+
+            if (!string.IsNullOrEmpty(this.ConditionImmunities))
+            {
+                builder.AppendLine($"Condition Immunities {this.ConditionImmunities}");
+            }
+
+            List<string> sensesList = new ();
+            if (this.Blindsight > 0)
+            {
+                sensesList.Add($"Blindsight {this.Blindsight} ft.");
+            }
+
+            if (this.Darkvision > 0)
+            {
+                sensesList.Add($"Darkvision {this.Darkvision} ft.");
+            }
+
+            if (this.Tremorsense > 0)
+            {
+                sensesList.Add($"Tremorsense {this.Tremorsense} ft.");
+            }
+
+            if (this.Truesight > 0)
+            {
+                sensesList.Add($"Truesight {this.Truesight} ft.");
+            }
+
+            sensesList.Add($"Passive Perception {this.PassivePerception}");
+            builder.AppendLine($"Senses {string.Join(", ", sensesList)}");
+            if (!string.IsNullOrEmpty(this.Languages))
+            {
+                builder.AppendLine($"Languages {this.Languages}");
+            }
+
+            builder.AppendLine($"Challenge {CreatureHelper.ConvertChallengeRatingToString(this.ChallengeRating)} ({CreatureHelper.CalculateExperiencePoints(this.ChallengeRating)} XP)");
+            builder.AppendLine($"Proficiency Bonus {CreatureHelper.ConvertBonusToSignedString(CreatureHelper.CalculateProficiencyBonus(this.ChallengeRating))}");
+            if (this.SpecialAbilities != null && this.SpecialAbilities.Count > 0)
+            {
+                foreach (Common.Action specialAbility in this.SpecialAbilities)
+                {
+                    builder.AppendLine($"{specialAbility.Name}. {specialAbility.Description}");
+                }
+            }
+
+            if (this.Actions != null && this.Actions.Count > 0)
+            {
+                builder.AppendLine("Actions");
+                foreach (Action action in this.Actions)
+                {
+                    builder.AppendLine($"{action.Name}. {action.Description}");
+                }
+            }
+
+            if (this.LegendaryActions != null && this.LegendaryActions.Count > 0)
+            {
+                builder.AppendLine("Legendary Actions");
+                builder.AppendLine($"{this.LegendaryActionDescription}");
+                foreach (Common.Action action in this.LegendaryActions)
+                {
+                    builder.AppendLine($"{action.Name}. {action.Description}");
+                }
+            }
+
+            // Add Attribution
+            if (!string.IsNullOrEmpty(this.PublisherName) && !string.IsNullOrEmpty(this.LicenseURL))
+            {
+                builder.AppendLine();
+                builder.AppendLine($"Publisher: [{this.PublisherName}]({this.LicenseURL})");
+            }
+
+            return builder.ToString();
         }
     }
 }
