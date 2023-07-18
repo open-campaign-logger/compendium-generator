@@ -133,11 +133,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                         this.logger.LogDebug("Converting creature to standard format: {Name}.", creature.Name);
                         if (licenseParsed != null && licenseParsed is List<License> list && list.Count > 0)
                         {
-                            creature.PublisherName = list[0].Name;
+                            creature.PublisherName = list[0].Organization;
                             creature.LicenseURL = list[0].Url;
                         }
 
-                        if (!creatureList.Any(creature => (creature.Name is not null) && creature.Name.Equals(creature.Name)))
+                        if (!creatureList.Any(c => (c.Name is not null) && c.Name.Equals(creature.Name)))
                         {
                             this.logger.LogDebug("New creature found and added to compendium list: {creature}.", creature.Name);
                             creatureList.Add(creature);
