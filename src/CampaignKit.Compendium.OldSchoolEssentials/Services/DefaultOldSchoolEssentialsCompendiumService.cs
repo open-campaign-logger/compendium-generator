@@ -17,9 +17,11 @@
 namespace CampaignKit.Compendium.OldSchoolEssentials.Services
 {
     using System.Reflection;
+    using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Common;
     using CampaignKit.Compendium.Core.Services;
     using Microsoft.Extensions.Logging;
+    using Newtonsoft.Json;
 
     /// <summary>
     /// Default service for creating Old School Essentials compendiums.
@@ -82,6 +84,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
                 using (StreamReader reader = new (stream))
                 {
                     string result = reader.ReadToEnd();
+                    Campaign? campaign = JsonConvert.DeserializeObject<Campaign>(result);
 
                     // Now you can use the content of the file
                 }
