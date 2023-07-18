@@ -21,7 +21,7 @@ Visual Studio Community Edition was used for development work but you don't need
 	* Install the ".Net Desktop Development" workload.
     * [CodeMaid](https://www.codemaid.net/) VS Extension - For reording and reformatting class elements.
     * [MarkdownEditor2022](https://github.com/MadsKristensen/MarkdownEditor2022) VS Extension - Facilitates the creation of Markdown files like this one.
-    * [Visual chatGPT Studio](https://marketplace.visualstudio.com/items?itemName=jefferson-pires.VisualChatGPTStudio) VS Extension - Adds chatGPT functionality directly within Visual Stuio.  OpenAI API key required.
+    * [Visual chatGPT Studio](https://marketplace.visualstudio.com/items?itemName=jefferson-pires.VisualChatGPTStudio) VS Extension - Adds chatGPT functionality directly within Visual Studio.  OpenAI API key required.
 
 ### Workspace Setup
 Execute the following
@@ -62,7 +62,7 @@ A standard .Net `appsettings.json` file is used to configure the application.
   "Compendiums": [
     {
       // DI service class to use for processing this compendium.
-      "CompendiumService": "CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e",
+      "CompendiumService": "CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e, CampaignKit.Compendium.DungeonsAndDragons.dll",
       // Description of the compendium.
       "Description": "Preformatted 5e monsters from the SRD and Kobold Press.",
       // Image to use for the compendium.
