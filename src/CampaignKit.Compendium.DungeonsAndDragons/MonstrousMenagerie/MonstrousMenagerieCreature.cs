@@ -14,10 +14,10 @@
 // limitations under the License.
 // </copyright>
 
-using Newtonsoft.Json;
-
 namespace CampaignKit.Compendium.DungeonsAndDragons.MonstrousMenagerie
 {
+    using Newtonsoft.Json;
+
     /// <summary>
     /// Represents a creature from the Advanced Level Up Monstrous Menagerie.
     /// </summary>

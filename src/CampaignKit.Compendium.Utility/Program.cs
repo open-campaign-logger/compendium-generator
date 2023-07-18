@@ -16,16 +16,14 @@
 
 namespace CampaignKit.Compendium.Utility
 {
-    using System.Collections.Generic;
-    using System.Runtime.Loader;
-    using CampaignKit.Compendium.Core.Configuration;
     using CampaignKit.Compendium.Core.Services;
     using CampaignKit.Compendium.DungeonsAndDragons.Services;
+    using CampaignKit.Compendium.Utility.Services;
+
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Microsoft.Extensions.Logging;
-    using Newtonsoft.Json;
 
     /// <summary>
     /// Creates a host with default configuration, adds required services, configures logging,
@@ -34,49 +32,115 @@ namespace CampaignKit.Compendium.Utility
     public class Program
     {
         /// <summary>
-        /// Creates a host with default configuration, adds required services, and
-        /// configures logging.
+        /// Creates a host builder and runs the application.
         /// </summary>
-        /// <param name="args">Command line arguments.</param>
-        /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
+        /// <param name="args">The command line arguments.</param>
+        /// <returns>A task that represents the asynchronous operation.</returns>
         public static async Task Main(string[] args)
         {
-            // Create a host with default configuration
-            var host = Host.CreateDefaultBuilder()
+            var host = CreateHostBuilder(args).Build();
+            var app = host.Services.GetRequiredService<IApplication>();
+            if (app != null)
+            {
+                await app.RunAsync();
+            }
+            else
+            {
+                throw new Exception($"Unable to load application class: {nameof(DefaultApplication)}");
+            }
+        }
 
-                // Add Configuration to host
-                .ConfigureAppConfiguration((hostingContext, configuration) =>
-                {
-                    configuration.Sources.Clear();
-                    configuration.SetBasePath(Directory.GetCurrentDirectory())
-                                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                                 .AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", optional: true);
-                    configuration.AddEnvironmentVariables();
-                    configuration.AddUserSecrets<Program>();
-                })
+        /// <summary>
+        /// Creates a host builder with default configuration, app configuration, services
+        /// configuration, logging configuration and console lifetime.
+        /// </summary>
+        /// <param name="args">Arguments to pass to the host builder.</param>
+        /// <returns>The created host builder.</returns>
+        public static IHostBuilder CreateHostBuilder(string[] args)
+        {
+            // Create a host builder using the default configuration
+            return Host.CreateDefaultBuilder(args)
 
-                // Configure services to add the SourceHelper class.
-                .ConfigureServices((context, services) =>
-                {
-                    services.AddTransient<IDownloadService, DefaultDownloadService>();
-                    services.AddTransient<IConfigurationService, DefaultConfigurationService>();
-                    services.AddTransient<IDungeonsAndDragonsCompendiumService_5e, DefaultDungeonsAndDragonsCompendiumService_5e>();
-                })
+                // Configure the application configuration
+                .ConfigureAppConfiguration(ConfigureAppConfiguration)
 
-                // Configure logging to clear existing providers and add the console provider.
-                .ConfigureLogging((hostingContext, logging) =>
-                {
-                    logging.ClearProviders();
-                    logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
-                    logging.AddConsole();
-                })
+                // Configure the services
+                .ConfigureServices(ConfigureServices)
 
-                // Build the host.
-                .Build();
+                // Configure the logging
+                .ConfigureLogging(ConfigureLogging)
 
-            // Process compendiums
-            var dungeonsAndDragonsCompendiumService_5e = host.Services.GetRequiredService<IDungeonsAndDragonsCompendiumService_5e>();
-            await dungeonsAndDragonsCompendiumService_5e.CreateCompendiums();
+                // Use the console lifetime
+                .UseConsoleLifetime();
+        }
+
+        /// <summary>
+        /// Configures the app configuration by clearing existing sources, setting the base path,
+        /// adding appsettings.json,
+        /// appsettings.hostingContext.HostingEnvironment.EnvironmentNamejson, environment
+        /// variables, and user secrets.
+        /// </summary>
+        /// <param name="hostingContext">The hosting context.</param>
+        /// <param name="configuration">The application configuration builder.</param>
+        private static void ConfigureAppConfiguration(HostBuilderContext hostingContext, IConfigurationBuilder configuration)
+        {
+            // Clear any existing sources from the configuration
+            configuration.Sources.Clear();
+
+            // Set the base path of the configuration to the current directory
+            configuration.SetBasePath(Directory.GetCurrentDirectory());
+
+            // Add the appsettings.json file to the configuration, making it non-optional and reloading it when it changes
+            configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
+            // Add the appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json file to the configuration, making it optional
+            configuration.AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", optional: true);
+
+            // Add environment variables to the configuration
+            configuration.AddEnvironmentVariables();
+
+            // Add user secrets to the configuration
+            configuration.AddUserSecrets<Program>();
+        }
+
+        /// <summary>
+        /// Configures the services for the application.
+        /// </summary>
+        /// <param name="hostingContext">The hosting context.</param>
+        /// <param name="services">The services.</param>
+        private static void ConfigureServices(HostBuilderContext hostingContext, IServiceCollection services)
+        {
+            // Add transient services to the service collection
+            // Add DefaultDownloadService to the service collection as an IDownloadService
+            services.AddTransient<IDownloadService, DefaultDownloadService>();
+
+            // Add DefaultConfigurationService to the service collection as an IConfigurationService
+            services.AddTransient<IConfigurationService, DefaultConfigurationService>();
+
+            // Add DefaultApplication to the service collection as an IApplication
+            services.AddTransient<IApplication, DefaultApplication>();
+
+            // Add DefaultDungeonsAndDragonsCompendiumService_5e to the service collection as an IDungeonsAndDragonsCompendiumService_5e
+            services.AddTransient<IDungeonsAndDragonsCompendiumService_5e, DefaultDungeonsAndDragonsCompendiumService_5e>();
+        }
+
+        /// <summary>
+        /// Configures logging for the application by clearing existing providers, adding
+        /// configuration from the hosting context, and adding console and debug logging providers.
+        /// </summary>
+        private static void ConfigureLogging(HostBuilderContext hostingContext, ILoggingBuilder logging)
+        {
+            logging.AddDebug();
+
+            // Clear any existing logging providers
+            logging.ClearProviders();
+
+            // Add configuration from the hosting context
+            logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
+
+            // Add console and debug logging providers
+            logging.AddConsole();
+            logging.AddDebug();
         }
     }
 }

@@ -29,23 +29,18 @@ namespace CampaignKit.Compendium.Core.Services
     /// </summary>
     public class DefaultConfigurationService : IConfigurationService
     {
-        // Create a private readonly field to store an ILogger instance.
-        private readonly ILogger<DefaultDownloadService> logger;
-
         // Create a private readonly field to store an IConfiguration instance.
         private readonly IConfiguration configuration;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DefaultConfigurationService"/> class.
         /// </summary>
-        /// <param name="logger">The logger for the service.</param>
         /// <param name="configuration">Application configuration information.</param>
         /// <returns>
         /// A DefaultDownloadService instance.
         /// </returns>
-        public DefaultConfigurationService(ILogger<DefaultDownloadService> logger, IConfiguration configuration)
+        public DefaultConfigurationService(IConfiguration configuration)
         {
-            this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
             this.configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
         }
 
@@ -57,29 +52,25 @@ namespace CampaignKit.Compendium.Core.Services
         public string GetRootDataDirectory()
         {
             var rootFolder = this.configuration.GetValue<string>("RootDataFolder");
-            if (rootFolder.IsNullOrEmpty())
+            if (string.IsNullOrEmpty(rootFolder))
             {
-                this.logger.LogError("Unable to load configuration paramter: {configuration}", "RootDataFolder"); 
                 rootFolder = Path.Combine(Path.GetTempPath(), "CompendiumGenerator");
-            }
-
-            if (rootFolder.IsNullOrEmpty())
-            {
-                this.logger.LogError("Unable to load configuration paramter: {configuration}", "RootDataFolder");
             }
 
             return rootFolder;
         }
 
-        /// <summary>
-        /// Gets a list of Compendiums for the specified service name.
-        /// </summary>
-        /// <param name="serviceName">The name of the service.</param>
-        /// <returns>A list of Compendiums for the specified service name.</returns>
+        /// <inheritdoc/>
         public List<Compendium> GetCompendiumsForService(string serviceName)
         {
             var compendiums = this.configuration.GetSection("Compendiums").Get<List<Compendium>>() ?? new List<Compendium>();
-            return compendiums.Where(c => c.CompendiumService == serviceName).ToList();
+            return compendiums.Where(c => c.CompendiumService.StartsWith(serviceName)).ToList();
+        }
+
+        /// <inheritdoc/>
+        public List<Compendium> GetAllCompendiums()
+        {
+            return this.configuration.GetSection("Compendiums").Get<List<Compendium>>() ?? new List<Compendium>();
         }
     }
 }
