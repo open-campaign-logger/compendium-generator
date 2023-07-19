@@ -24,7 +24,7 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
             var campaign = JsonConvert.DeserializeObject<Campaign>(campaignJSON);
             Assert.IsNotNull(campaign);
             Assert.IsNotNull(campaign.CampaignEntries);
-            var campaignEntry = campaign.CampaignEntries.First(ce => ce.TagValue == "Golem, Amber");
+            var campaignEntry = campaign.CampaignEntries.First(ce => ce.TagValue == "Amber Golem");
             Assert.IsNotNull(campaignEntry);
             Assert.IsNotNull(campaignEntry.RawText);
             var creature = new SRDCreature(campaignEntry);
@@ -33,7 +33,7 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
             Assert.IsNotNull(convertedCampaignEntry.RawText);
 
             // Assert
-            Assert.IsTrue(convertedCampaignEntry.RawText.Contains($"[{creature.PublisherName}]({creature.LicenseURL})"));
+            Assert.IsTrue(convertedCampaignEntry.RawText.Contains($"Source: [{creature.PublisherName}]({creature.LicenseURL})"));
 
         }
     }

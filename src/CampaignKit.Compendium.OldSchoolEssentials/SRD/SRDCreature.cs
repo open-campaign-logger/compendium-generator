@@ -189,6 +189,8 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
                 builder.AppendLine(text);
             }
 
+            builder.AppendLine($"Source: [{this.PublisherName}]({this.LicenseURL})");
+
             builder.AppendLine(string.Empty);
             campaignEntry.RawText = builder.ToString();
             campaignEntry.TagSymbol = "~";
