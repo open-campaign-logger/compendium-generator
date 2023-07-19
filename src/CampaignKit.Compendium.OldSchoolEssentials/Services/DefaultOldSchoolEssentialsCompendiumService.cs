@@ -17,10 +17,13 @@
 namespace CampaignKit.Compendium.OldSchoolEssentials.Services
 {
     using System.Reflection;
+
     using CampaignKit.Compendium.Core.CampaignLogger;
-    using CampaignKit.Compendium.Core.Common;
     using CampaignKit.Compendium.Core.Services;
+    using CampaignKit.Compendium.OldSchoolEssentials.SRD;
+
     using Microsoft.Extensions.Logging;
+
     using Newtonsoft.Json;
 
     /// <summary>
@@ -29,15 +32,15 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
     public class DefaultOldSchoolEssentialsCompendiumService : IOldSchoolEssentialsCompendiumService
     {
         /// <summary>
+        /// Create a private readonly field to store an IConfigurationService instance.
+        /// </summary>
+        private readonly IConfigurationService configurationService;
+
+        /// <summary>
         /// Create a private readonly field to store an ILogger instance
         /// with the type DungeonsAndDragonsService_5e.
         /// </summary>
         private readonly ILogger<DefaultOldSchoolEssentialsCompendiumService> logger;
-
-        /// <summary>
-        /// Create a private readonly field to store an IConfigurationService instance.
-        /// </summary>
-        private readonly IConfigurationService configurationService;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DefaultOldSchoolEssentialsCompendiumService"/> class.
@@ -67,27 +70,66 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
                 return;
             }
 
-            var creatureList = new List<ICreature>();
             foreach (var compendium in compendiums)
             {
                 this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
 
+                // Create a campaign object to hold the new campaign entries.
+                var destinationCampaign = new Campaign()
+                {
+                    Version = 2,
+                    Type = "campaign",
+                    Title = compendium.Title,
+                    Description = compendium.Description,
+                    CampaignEntries = new List<CampaignEntry>(),
+                    Logs = new List<Log>(),
+                    ImageUrl = "https://cdn.shopify.com/s/files/1/0592/6934/9566/files/OSE_Black_Box_480x480.png?v=1632224048",
+                };
+
                 // Get the current assembly
                 Assembly assembly = Assembly.GetExecutingAssembly();
 
-                // The resource name is the default namespace of the project, followed by the file path within the project (with '.' instead of '/')
-                // If the file is in the 'SourceDataSets' subfolder under the project root and the default namespace is 'MyNamespace', it would be "MyNamespace.SourceDataSets.MyFile.txt"
+                // The resource name is the default namespace of the project, followed by the file
+                // path within the project (with '.' instead of '/') If the file is in the
+                // 'SourceDataSets' subfolder under the project root and the default namespace is
+                // 'MyNamespace', it would be "MyNamespace.SourceDataSets.MyFile.txt"
                 string resourceName = "CampaignKit.Compendium.OldSchoolEssentials.SourceDataSets.OSE-SRD-v1.0.json";
-
+                string campaignJSON;
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName)
                     ?? throw new Exception($"Unable to load embedded resource: {resourceName}"))
-                using (StreamReader reader = new (stream))
                 {
-                    string result = reader.ReadToEnd();
-                    Campaign? campaign = JsonConvert.DeserializeObject<Campaign>(result);
-
-                    // Now you can use the content of the file
+                    using StreamReader reader = new (stream);
+                    campaignJSON = await reader.ReadToEndAsync();
                 }
+
+                // Deserialize the JSON string into a Campaign object
+                var campaign = JsonConvert.DeserializeObject<Campaign>(campaignJSON) ?? throw new Exception($"Source data could not be parsed.");
+
+                // Iterate through each CampaignEntry in the Campaign
+                if (campaign.CampaignEntries != null)
+                {
+                    foreach (var campaignEntry in campaign.CampaignEntries)
+                    {
+                        // Check if the CampaignEntry contains the label "Monster"
+                        if (campaignEntry != null && campaignEntry.Labels != null && campaignEntry.Labels.Contains("Monster"))
+                        {
+                            // Create a new SRDCreature object from the CampaignEntry
+                            var creature = new SRDCreature(campaignEntry);
+
+                            // Add the creature to the destinationCampaign
+                            destinationCampaign.CampaignEntries.Add(creature.ToCampaignEntry());
+                        }
+                    }
+                }
+
+                // Serialize the destinationCampaign object into a string
+                string campaignLoggerFileString = JsonConvert.SerializeObject(destinationCampaign, Formatting.Indented);
+
+                // Combine the rootDataDirectory with the compendium title and add a .json extension
+                string filePath = Path.Combine(rootDataDirectory, compendium.Title + ".json");
+
+                // Write the campaignLoggerFileString to the filePath
+                File.WriteAllText(filePath, campaignLoggerFileString);
 
                 this.logger.LogInformation("Processing of compendium complete: {compendium}.", compendium.Title);
             }

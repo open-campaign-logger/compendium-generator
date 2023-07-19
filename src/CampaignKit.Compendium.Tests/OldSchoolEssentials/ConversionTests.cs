@@ -48,11 +48,33 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
             Assert.IsNotNull(convertedCampaignEntry);
             Assert.IsNotNull(convertedCampaignEntry.Labels);
             Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Alignment: Neutral"));
+            Assert.IsTrue(convertedCampaignEntry.Labels.Where(l => l.StartsWith("HD:")).Count() == 3);
             Assert.IsTrue(convertedCampaignEntry.Labels.Contains("HD: 8"));
             Assert.IsTrue(convertedCampaignEntry.Labels.Contains("HD: 12"));
             Assert.IsTrue(convertedCampaignEntry.Labels.Contains("HD: 16"));
             Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Special Abilities"));
             Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Treasure Type: None"));
+
+        }
+
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
+        public void ConvertToCLStatBlock_Harpy_HitDiceCorrect()
+        {
+            // Arrange
+            var campaignEntry = GetCampaignEntry("Harpy");
+
+            // Act
+            var creature = new SRDCreature(campaignEntry);
+            var convertedCampaignEntry = creature.ToCampaignEntry();
+
+            // Assert
+            Assert.IsNotNull(convertedCampaignEntry);
+            Assert.IsNotNull(convertedCampaignEntry.Labels);
+            Assert.IsTrue(convertedCampaignEntry.Labels.Where(l => l.StartsWith("HD:")).Count() == 1);
 
         }
 

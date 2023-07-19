@@ -168,7 +168,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             var builder = new StringBuilder();
 
             builder.AppendLine("```clyt");
-            builder.AppendLine("template: stat - block.ose");
+            builder.AppendLine("template: stat-block.ose");
             builder.AppendLine(title);
             builder.AppendLine(description);
             builder.AppendLine("stats:");
@@ -187,6 +187,11 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             foreach (var text in freetext)
             {
                 builder.AppendLine(text);
+            }
+
+            if (freetext.Count == 0)
+            {
+                builder.AppendLine();
             }
 
             builder.AppendLine($"Source: [{this.PublisherName}]({this.LicenseURL})");
@@ -226,7 +231,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             return campaignEntry;
         }
 
-        [GeneratedRegex("/|\\*")]
+        [GeneratedRegex("(\\d+)")]
         private static partial Regex HitDiceRegEx();
 
         [GeneratedRegex("^(.*?):(.*)$")]
@@ -243,14 +248,18 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             string hitDiceString = input.Split('(')[0];
 
             // Split the string by slashes and asterisks, and trim each part
-            string[] hitDiceValues = HitDiceRegEx().Split(hitDiceString);
+            var matches = HitDiceRegEx().Matches(hitDiceString);
+            var hitDiceValues = new List<string>();
 
-            for (int i = 0; i < hitDiceValues.Length; i++)
+            foreach (Match match in matches)
             {
-                hitDiceValues[i] = hitDiceValues[i].Trim();
+                for (int i = 1; i < match.Groups.Count; i++) // Start from 1, because 0 is the entire match
+                {
+                    hitDiceValues.Add(match.Groups[i].Value);
+                }
             }
 
-            return new List<string>(hitDiceValues);
+            return hitDiceValues;
         }
     }
 }
