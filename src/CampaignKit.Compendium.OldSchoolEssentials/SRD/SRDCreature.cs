@@ -80,7 +80,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
                 throw new Exception($"Required data not found in CampaignEntry: {nameof(this.campaignEntry.RawText)}");
             }
 
-            var lines = this.campaignEntry.RawText.Split("\\n", StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+            var lines = this.campaignEntry.RawText.Split("\n", StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
 
             // Initialize variables for each property you want to extract
             string title = string.Empty, description = string.Empty, treasureType = string.Empty, alignment = string.Empty, hitdice = string.Empty;

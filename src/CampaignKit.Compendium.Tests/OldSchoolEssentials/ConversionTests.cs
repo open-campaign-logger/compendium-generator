@@ -14,7 +14,7 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
         /// </summary>
         [TestMethod]
         [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
-        public void ConvertToCLStatBlock_SRDMonster_AttributionCorrect()
+        public void ConvertToCLStatBlock_AmberGolem_ConversionCorrect()
         {
             // Arrange
             var campaignJSON = File.ReadAllText("OSE-SRD-v1.0.json");
