@@ -127,9 +127,6 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
                             {
                                 case "stats":
                                     stats.Add(trimmedLine);
-                                    break;
-                                case "traits":
-                                    traits.Add(trimmedLine);
                                     switch (key)
                                     {
                                         case "- Treasure Type":
@@ -143,6 +140,9 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
                                             break;
                                     }
 
+                                    break;
+                                case "traits":
+                                    traits.Add(trimmedLine);
                                     break;
                             }
 

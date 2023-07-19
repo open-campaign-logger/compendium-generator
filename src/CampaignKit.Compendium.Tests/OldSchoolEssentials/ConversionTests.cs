@@ -14,7 +14,49 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
         /// </summary>
         [TestMethod]
         [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
-        public void ConvertToCLStatBlock_AmberGolem_ConversionCorrect()
+        public void ConvertToCLStatBlock_AmberGolem_AttributionCorrect()
+        {
+            // Arrange
+            var campaignEntry = GetCampaignEntry("Amber Golem");
+
+            // Act
+            var creature = new SRDCreature(campaignEntry);
+            var convertedCampaignEntry = creature.ToCampaignEntry();
+
+            // Assert
+            Assert.IsNotNull(convertedCampaignEntry);
+            Assert.IsNotNull(convertedCampaignEntry.RawText);
+            Assert.IsTrue(convertedCampaignEntry.RawText.Contains($"Source: [{creature.PublisherName}]({creature.LicenseURL})"));
+
+        }
+
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
+        public void ConvertToCLStatBlock_AirElemental_LabelsCorrect()
+        {
+            // Arrange
+            var campaignEntry = GetCampaignEntry("Air Elemental");
+
+            // Act
+            var creature = new SRDCreature(campaignEntry);
+            var convertedCampaignEntry = creature.ToCampaignEntry();
+
+            // Assert
+            Assert.IsNotNull(convertedCampaignEntry);
+            Assert.IsNotNull(convertedCampaignEntry.Labels);
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Alignment: Neutral"));
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("HD: 8"));
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("HD: 12"));
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("HD: 16"));
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Special Abilities"));
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Treasure Type: None"));
+
+        }
+
+        private CampaignEntry GetCampaignEntry(string TagValue)
         {
             // Arrange
             var campaignJSON = File.ReadAllText("OSE-SRD-v1.0.json");
@@ -24,17 +66,11 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
             var campaign = JsonConvert.DeserializeObject<Campaign>(campaignJSON);
             Assert.IsNotNull(campaign);
             Assert.IsNotNull(campaign.CampaignEntries);
-            var campaignEntry = campaign.CampaignEntries.First(ce => ce.TagValue == "Amber Golem");
+            var campaignEntry = campaign.CampaignEntries.First(ce => ce.TagValue == TagValue);
             Assert.IsNotNull(campaignEntry);
             Assert.IsNotNull(campaignEntry.RawText);
-            var creature = new SRDCreature(campaignEntry);
-            var convertedCampaignEntry = creature.ToCampaignEntry();
-            Assert.IsNotNull(convertedCampaignEntry);
-            Assert.IsNotNull(convertedCampaignEntry.RawText);
 
-            // Assert
-            Assert.IsTrue(convertedCampaignEntry.RawText.Contains($"Source: [{creature.PublisherName}]({creature.LicenseURL})"));
-
+            return campaignEntry;
         }
     }
 }
