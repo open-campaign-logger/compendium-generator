@@ -16,15 +16,20 @@
 
 namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
 {
+    using System.Text;
+    using System.Text.RegularExpressions;
+
     using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Common;
-    using Microsoft.Extensions.Logging;
 
     /// <summary>
     /// Class representing a creature from the Old School Essentials System Reference Document (SRD).
     /// </summary>
     public class SRDCreature : ICreature
     {
+        /// <summary>
+        /// Represents a read-only instance of a CampaignEntry object.
+        /// </summary>
         private readonly CampaignEntry campaignEntry;
 
         /// <summary>
@@ -33,7 +38,17 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
         /// <param name="campaignEntry">The source CampaignLogger CampaignEntry that contains the source data.</param>
         public SRDCreature(CampaignEntry campaignEntry)
         {
+            // Check if campaignEntry is null, if it is, throw an ArgumentNullException
             this.campaignEntry = campaignEntry ?? throw new ArgumentNullException(nameof(campaignEntry));
+
+            // Set the Name property of this object to the value of the TagValue property of the campaignEntry object, or throw an ArgumentNullException if TagValue is null
+            this.Name = this.campaignEntry.TagValue ?? throw new ArgumentNullException(nameof(campaignEntry.TagValue));
+
+            // Set the PublisherName property of this object to "Necrotic Gnome"
+            this.PublisherName = "Necrotic Gnome";
+
+            // Set the LicenseURL property of this object to the URL of the Open Game License
+            this.LicenseURL = "https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD";
         }
 
         /// <inheritdoc/>
@@ -48,7 +63,186 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
         /// <inheritdoc/>
         public CampaignEntry ToCampaignEntry()
         {
-            throw new NotImplementedException();
+            // Declare a label variable and set it to "Monster"
+            var label = "Monster";
+
+            // Check if the Labels property of campaignEntry is null or if it does not contain the label variable
+            if (this.campaignEntry.Labels == null || !this.campaignEntry.Labels.Contains(label))
+            {
+                // If either of the conditions are true, throw an exception
+                throw new Exception($"Required label not found in CampaignEntry: {label}");
+            }
+
+            // Check if the RawText property of campaignEntry is null or empty
+            if (string.IsNullOrEmpty(this.campaignEntry.RawText))
+            {
+                // If it is, throw an exception
+                throw new Exception($"Required data not found in CampaignEntry: {nameof(this.campaignEntry.RawText)}");
+            }
+
+            var lines = this.campaignEntry.RawText.Split("\\n", StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+
+            // Initialize variables for each property you want to extract
+            string title = string.Empty, description = string.Empty, treasureType = string.Empty, alignment = string.Empty, hitdice = string.Empty;
+            List<string> stats = new();
+            List<string> traits = new();
+            List<string> freetext = new();
+
+            // Initialize a variable to keep track of the current section
+            string currentSection = string.Empty;
+
+            // Iterate over the lines
+            foreach (string line in lines)
+            {
+                // Trim leading and trailing whitespace
+                string trimmedLine = line.Trim();
+
+                // Match lines with the format "key: value"
+                Match match = Regex.Match(trimmedLine, @"^(.*?):(.*)$");
+
+                // If the match is successful, assign the key and value to the appropriate variables.
+                if (match.Success)
+                {
+                    string key = match.Groups[1].Value.Trim();
+                    string value = match.Groups[2].Value.Trim();
+
+                    switch (key)
+                    {
+                        case "title":
+                            title = trimmedLine;
+                            currentSection = string.Empty;
+                            break;
+                        case "description":
+                            description = trimmedLine;
+                            currentSection = string.Empty;
+                            break;
+                        case "stats":
+                            currentSection = "stats";
+                            break;
+                        case "traits":
+                            currentSection = "traits";
+                            break;
+                        default:
+                            switch (currentSection)
+                            {
+                                case "stats":
+                                    stats.Add(trimmedLine);
+                                    break;
+                                case "traits":
+                                    traits.Add(trimmedLine);
+                                    switch (key)
+                                    {
+                                        case "- Treasure Type":
+                                            treasureType = value;
+                                            break;
+                                        case "- Alignment":
+                                            alignment = value;
+                                            break;
+                                        case "- Hit Dice":
+                                            hitdice = value;
+                                            break;
+                                    }
+
+                                    break;
+                            }
+
+                            break;
+                    }
+                }
+
+                // If the trimmed line does not start with a backtick, add the trimmed line to the freetext list and set the currentSection to an empty string
+                else if (!trimmedLine.StartsWith("```"))
+                {
+                    currentSection = string.Empty;
+                    freetext.Add(trimmedLine);
+                }
+
+                // Otherwise, set the currentSection to an empty string
+                else
+                {
+                    currentSection = string.Empty;
+                }
+            }
+
+            var campaignEntry = new CampaignEntry();
+            var builder = new StringBuilder();
+
+            builder.AppendLine("```clyt");
+            builder.AppendLine("template: stat - block.ose");
+            builder.AppendLine(title);
+            builder.AppendLine(description);
+            builder.AppendLine("stats:");
+            foreach (var stat in stats)
+            {
+                builder.AppendLine(stat);
+            }
+
+            builder.AppendLine("traits:");
+            foreach (var trait in traits)
+            {
+                builder.AppendLine(trait);
+            }
+
+            builder.AppendLine("```");
+            foreach (var text in freetext)
+            {
+                builder.AppendLine(text);
+            }
+
+            builder.AppendLine(string.Empty);
+            campaignEntry.RawText = builder.ToString();
+            campaignEntry.TagSymbol = "~";
+            campaignEntry.TagValue = this.Name;
+            campaignEntry.Labels = new List<string>
+            {
+                "Monster",
+            };
+            if (!string.IsNullOrEmpty(treasureType))
+            {
+                campaignEntry.Labels.Add($"Treasure Type: {treasureType}");
+            }
+
+            if (!string.IsNullOrEmpty(alignment))
+            {
+                campaignEntry.Labels.Add($"Alignment: {alignment}");
+            }
+
+            if (!string.IsNullOrEmpty(hitdice))
+            {
+                if (hitdice.Contains('*'))
+                {
+                    campaignEntry.Labels.Add("Special Abilities");
+                }
+
+                var hitdicelabels = this.ParseHitDiceValues(hitdice);
+                foreach (var hitdicelabel in hitdicelabels)
+                {
+                    campaignEntry.Labels.Add($"HD: {hitdicelabel}");
+                }
+            }
+
+            return campaignEntry;
+        }
+
+        /// <summary>
+        /// Parses a string for hit dice values before the opening parenthesis.
+        /// </summary>
+        /// <param name="input">The string to parse.</param>
+        /// <returns>A list of strings containing the hit dice values.</returns>
+        private List<string> ParseHitDiceValues(string input)
+        {
+            // Search for hit dice values before the opening parenthesis
+            string hitDiceString = input.Split('(')[0];
+
+            // Split the string by slashes and asterisks, and trim each part
+            string[] hitDiceValues = Regex.Split(hitDiceString, @"/|\*");
+
+            for (int i = 0; i < hitDiceValues.Length; i++)
+            {
+                hitDiceValues[i] = hitDiceValues[i].Trim();
+            }
+
+            return new List<string>(hitDiceValues);
         }
     }
 }
