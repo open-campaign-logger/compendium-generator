@@ -25,7 +25,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
     /// <summary>
     /// Class representing a creature from the Old School Essentials System Reference Document (SRD).
     /// </summary>
-    public class SRDCreature : ICreature
+    public partial class SRDCreature : ICreature
     {
         /// <summary>
         /// Represents a read-only instance of a CampaignEntry object.
@@ -42,7 +42,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             this.campaignEntry = campaignEntry ?? throw new ArgumentNullException(nameof(campaignEntry));
 
             // Set the Name property of this object to the value of the TagValue property of the campaignEntry object, or throw an ArgumentNullException if TagValue is null
-            this.Name = this.campaignEntry.TagValue ?? throw new ArgumentNullException(nameof(campaignEntry.TagValue));
+            this.Name = this.campaignEntry.TagValue ?? throw new Exception($"CampaignEntry missing attribute: TagValue");
 
             // Set the PublisherName property of this object to "Necrotic Gnome"
             this.PublisherName = "Necrotic Gnome";
@@ -55,10 +55,10 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
         public string? LicenseURL { get; set; }
 
         /// <inheritdoc/>
-        public string? PublisherName { get; set; }
+        public string? Name { get; set; }
 
         /// <inheritdoc/>
-        public string? Name { get; set; }
+        public string? PublisherName { get; set; }
 
         /// <inheritdoc/>
         public CampaignEntry ToCampaignEntry()
@@ -84,9 +84,9 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
 
             // Initialize variables for each property you want to extract
             string title = string.Empty, description = string.Empty, treasureType = string.Empty, alignment = string.Empty, hitdice = string.Empty;
-            List<string> stats = new();
-            List<string> traits = new();
-            List<string> freetext = new();
+            List<string> stats = new ();
+            List<string> traits = new ();
+            List<string> freetext = new ();
 
             // Initialize a variable to keep track of the current section
             string currentSection = string.Empty;
@@ -98,7 +98,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
                 string trimmedLine = line.Trim();
 
                 // Match lines with the format "key: value"
-                Match match = Regex.Match(trimmedLine, @"^(.*?):(.*)$");
+                Match match = OSEStatBlockRegEx().Match(trimmedLine);
 
                 // If the match is successful, assign the key and value to the appropriate variables.
                 if (match.Success)
@@ -226,6 +226,12 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             return campaignEntry;
         }
 
+        [GeneratedRegex("/|\\*")]
+        private static partial Regex HitDiceRegEx();
+
+        [GeneratedRegex("^(.*?):(.*)$")]
+        private static partial Regex OSEStatBlockRegEx();
+
         /// <summary>
         /// Parses a string for hit dice values before the opening parenthesis.
         /// </summary>
@@ -237,7 +243,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             string hitDiceString = input.Split('(')[0];
 
             // Split the string by slashes and asterisks, and trim each part
-            string[] hitDiceValues = Regex.Split(hitDiceString, @"/|\*");
+            string[] hitDiceValues = HitDiceRegEx().Split(hitDiceString);
 
             for (int i = 0; i < hitDiceValues.Length; i++)
             {
