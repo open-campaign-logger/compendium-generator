@@ -244,22 +244,30 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
         /// <returns>A list of strings containing the hit dice values.</returns>
         private List<string> ParseHitDiceValues(string input)
         {
-            // Search for hit dice values before the opening parenthesis
-            string hitDiceString = input.Split('(')[0];
+            // Instantiate local variables
+            var result = new List<string>();
 
-            // Split the string by slashes and asterisks, and trim each part
-            var matches = HitDiceRegEx().Matches(hitDiceString);
-            var hitDiceValues = new List<string>();
+            // Search for hit dice values before the opening parenthesis.
+            string hd_combined = input.Split('(')[0].Trim();
 
-            foreach (Match match in matches)
+            // Split the hitdice values into pieces.
+            var hd_separated = hd_combined.Split(" ") ?? Array.Empty<string>();
+
+            // Iterate over hitdice values and create labels.
+            foreach (var hd in hd_separated)
             {
-                for (int i = 1; i < match.Groups.Count; i++) // Start from 1, because 0 is the entire match
+                // Use RegEx to extract just the first grouping of digits.
+                var match = HitDiceRegEx().Match(hd);
+
+                // Check if the match was successful and the value of the first group is not empty.
+                if (match.Success && match.Groups.Count > 1 && !string.IsNullOrEmpty(match.Groups[1].Value))
                 {
-                    hitDiceValues.Add(match.Groups[i].Value);
+                    // Add the value of the first group to the result list.
+                    result.Add(match.Groups[1].Value);
                 }
             }
 
-            return hitDiceValues;
+            return result;
         }
     }
 }
