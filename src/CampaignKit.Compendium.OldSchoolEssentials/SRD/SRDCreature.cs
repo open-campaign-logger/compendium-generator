@@ -240,6 +240,8 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
                 }
             }
 
+            campaignEntry.Labels.Add("OSE");
+
             return campaignEntry;
         }
 

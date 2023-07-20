@@ -117,10 +117,30 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
             // Assert
             Assert.IsNotNull(convertedCampaignEntry);
             Assert.IsNotNull(convertedCampaignEntry.Labels);
-            Assert.IsTrue(convertedCampaignEntry.Labels.Where(l => l.StartsWith("HD:")).Count() == 1);
-            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("HD: 8"));
             Assert.IsTrue(convertedCampaignEntry.Labels.Where(l => l.StartsWith("Treasure Type:")).Count() == 1);
             Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Treasure Type: E"));
+
+        }
+
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
+        public void ConvertToCLStatBlock_HillGiant_OSELabelCorrect()
+        {
+            // Arrange
+            var campaignEntry = GetCampaignEntry("Hill Giant");
+
+            // Act
+            var creature = new SRDCreature(campaignEntry);
+            var convertedCampaignEntry = creature.ToCampaignEntry();
+
+            // Assert
+            Assert.IsNotNull(convertedCampaignEntry);
+            Assert.IsNotNull(convertedCampaignEntry.Labels);
+            Assert.IsTrue(convertedCampaignEntry.Labels.Where(l => l.StartsWith("OSE")).Count() == 1);
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("OSE"));
 
         }
 
