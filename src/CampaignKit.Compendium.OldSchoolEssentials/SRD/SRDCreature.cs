@@ -214,7 +214,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
                     {
                         campaignEntry.Labels.Add($"Treasure Type: {treasureTypeLabel}");
                     }
-                } 
+                }
                 else
                 {
                     campaignEntry.Labels.Add($"Treasure Type: None");
@@ -223,7 +223,25 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
 
             if (!string.IsNullOrEmpty(alignment))
             {
-                campaignEntry.Labels.Add($"Alignment: {alignment}");
+                if (alignment.Contains("Chaotic"))
+                {
+                    campaignEntry.Labels.Add($"Alignment: Chaotic");
+                }
+
+                if (alignment.Contains("Lawful"))
+                {
+                    campaignEntry.Labels.Add($"Alignment: Lawful");
+                }
+
+                if (alignment.Contains("Neutral"))
+                {
+                    campaignEntry.Labels.Add($"Alignment: Neutral");
+                }
+
+                if (alignment.Contains("Any"))
+                {
+                    campaignEntry.Labels.Add($"Alignment: Any");
+                }
             }
 
             if (!string.IsNullOrEmpty(hitdice))
@@ -248,7 +266,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
         [GeneratedRegex("(\\d+)")]
         private static partial Regex HitDiceRegEx();
 
-        [GeneratedRegex("([A-Z])")]
+        [GeneratedRegex("\\(?([A-Z])\\)?")]
         private static partial Regex TreasureTypeRegEx();
 
         [GeneratedRegex("^(.*?):(.*)$")]
@@ -303,17 +321,18 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             // Iterate over treasure type values and create labels.
             foreach (var tt in tt_separated)
             {
-                // Ensure that the value is only one character
-                if (tt.Length != 1)
+                // Check for the keyword "None"
+                if (tt.Trim().Equals("None"))
                 {
-                    continue;
+                    result.Add("None");
+                    break;
                 }
 
                 // Use RegEx to extract just the first grouping of digits.
                 var match = TreasureTypeRegEx().Match(tt);
 
                 // Check if the match was successful and the value of the first group is not empty.
-                if (match.Success && match.Groups.Count > 1 && !string.IsNullOrEmpty(match.Groups[1].Value))
+                if (match.Success && match.Groups.Count > 1 && !string.IsNullOrEmpty(match.Groups[1].Value) && match.Groups[1].Value.Length == 1)
                 {
                     // Add the value of the first group to the result list.
                     result.Add(match.Groups[1].Value);

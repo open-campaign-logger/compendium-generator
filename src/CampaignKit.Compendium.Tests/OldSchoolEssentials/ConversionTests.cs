@@ -144,7 +144,95 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
 
         }
 
-        private CampaignEntry GetCampaignEntry(string TagValue)
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
+        public void ConvertToCLStatBlock_Acolyte_AlignmentCorrect()
+        {
+            // Arrange
+            var campaignEntry = GetCampaignEntry("Acolyte");
+
+            // Act
+            var creature = new SRDCreature(campaignEntry);
+            var convertedCampaignEntry = creature.ToCampaignEntry();
+
+            // Assert
+            Assert.IsNotNull(convertedCampaignEntry);
+            Assert.IsNotNull(convertedCampaignEntry.Labels);
+            Assert.IsTrue(convertedCampaignEntry.Labels.Where(l => l.StartsWith("Alignment")).Count() == 1);
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Alignment: Any"));
+
+        }
+
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
+        public void ConvertToCLStatBlock_Bugbear_AlignmentChaotic()
+        {
+            // Arrange
+            var campaignEntry = GetCampaignEntry("Bugbear");
+
+            // Act
+            var creature = new SRDCreature(campaignEntry);
+            var convertedCampaignEntry = creature.ToCampaignEntry();
+
+            // Assert
+            Assert.IsNotNull(convertedCampaignEntry);
+            Assert.IsNotNull(convertedCampaignEntry.Labels);
+            Assert.IsTrue(convertedCampaignEntry.Labels.Where(l => l.StartsWith("Alignment")).Count() == 1);
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Alignment: Chaotic"));
+
+        }
+
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
+        public void ConvertToCLStatBlock_Dervish_AlignmentLawful()
+        {
+            // Arrange
+            var campaignEntry = GetCampaignEntry("Dervish");
+
+            // Act
+            var creature = new SRDCreature(campaignEntry);
+            var convertedCampaignEntry = creature.ToCampaignEntry();
+
+            // Assert
+            Assert.IsNotNull(convertedCampaignEntry);
+            Assert.IsNotNull(convertedCampaignEntry.Labels);
+            Assert.IsTrue(convertedCampaignEntry.Labels.Where(l => l.StartsWith("Alignment")).Count() == 1);
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Alignment: Lawful"));
+
+        }
+
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
+        public void ConvertToCLStatBlock_Bandit_AlignmentAndTreasureTypeCorrect()
+        {
+            // Arrange
+            var campaignEntry = GetCampaignEntry("Bandit");
+
+            // Act
+            var creature = new SRDCreature(campaignEntry);
+            var convertedCampaignEntry = creature.ToCampaignEntry();
+
+            // Assert
+            Assert.IsNotNull(convertedCampaignEntry);
+            Assert.IsNotNull(convertedCampaignEntry.Labels);
+            Assert.IsTrue(convertedCampaignEntry.Labels.Where(l => l.StartsWith("Alignment")).Count() == 2);
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Alignment: Neutral"));
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Alignment: Chaotic"));
+            Assert.IsTrue(convertedCampaignEntry.Labels.Where(l => l.StartsWith("Treasure Type")).Count() == 2);
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Treasure Type: U"));
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Treasure Type: A"));
+
+        }
+
+        private static CampaignEntry GetCampaignEntry(string TagValue)
         {
             // Arrange
             var campaignJSON = File.ReadAllText("OSE-SRD-v1.0.json");
