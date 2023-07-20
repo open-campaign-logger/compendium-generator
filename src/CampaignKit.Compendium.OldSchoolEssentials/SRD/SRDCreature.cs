@@ -204,9 +204,21 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             {
                 "Monster",
             };
+
             if (!string.IsNullOrEmpty(treasureType))
             {
-                campaignEntry.Labels.Add($"Treasure Type: {treasureType}");
+                var treasureTypeLables = this.ParseTreasureTypes(treasureType);
+                if (treasureTypeLables.Count > 0)
+                {
+                    foreach (var treasureTypeLabel in treasureTypeLables)
+                    {
+                        campaignEntry.Labels.Add($"Treasure Type: {treasureTypeLabel}");
+                    }
+                } 
+                else
+                {
+                    campaignEntry.Labels.Add($"Treasure Type: None");
+                }
             }
 
             if (!string.IsNullOrEmpty(alignment))
@@ -234,6 +246,9 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
         [GeneratedRegex("(\\d+)")]
         private static partial Regex HitDiceRegEx();
 
+        [GeneratedRegex("([A-Z])")]
+        private static partial Regex TreasureTypeRegEx();
+
         [GeneratedRegex("^(.*?):(.*)$")]
         private static partial Regex OSEStatBlockRegEx();
 
@@ -258,6 +273,42 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             {
                 // Use RegEx to extract just the first grouping of digits.
                 var match = HitDiceRegEx().Match(hd);
+
+                // Check if the match was successful and the value of the first group is not empty.
+                if (match.Success && match.Groups.Count > 1 && !string.IsNullOrEmpty(match.Groups[1].Value))
+                {
+                    // Add the value of the first group to the result list.
+                    result.Add(match.Groups[1].Value);
+                }
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Parses a string for treasure type values.
+        /// </summary>
+        /// <param name="input">The string to parse.</param>
+        /// <returns>A list of strings containing the hit treasure types.</returns>
+        private List<string> ParseTreasureTypes(string input)
+        {
+            // Instantiate local variables
+            var result = new List<string>();
+
+            // Split the treasure type values into pieces.
+            var tt_separated = input.Split(" ") ?? Array.Empty<string>();
+
+            // Iterate over treasure type values and create labels.
+            foreach (var tt in tt_separated)
+            {
+                // Ensure that the value is only one character
+                if (tt.Length != 1)
+                {
+                    continue;
+                }
+
+                // Use RegEx to extract just the first grouping of digits.
+                var match = TreasureTypeRegEx().Match(tt);
 
                 // Check if the match was successful and the value of the first group is not empty.
                 if (match.Success && match.Groups.Count > 1 && !string.IsNullOrEmpty(match.Groups[1].Value))
