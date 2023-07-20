@@ -18,6 +18,7 @@ namespace CampaignKit.Compendium.Utility
 {
     using CampaignKit.Compendium.Core.Services;
     using CampaignKit.Compendium.DungeonsAndDragons.Services;
+    using CampaignKit.Compendium.OldSchoolEssentials.Services;
     using CampaignKit.Compendium.Utility.Services;
 
     using Microsoft.Extensions.Configuration;
@@ -122,6 +123,9 @@ namespace CampaignKit.Compendium.Utility
 
             // Add DefaultDungeonsAndDragonsCompendiumService_5e to the service collection as an IDungeonsAndDragonsCompendiumService_5e
             services.AddTransient<IDungeonsAndDragonsCompendiumService_5e, DefaultDungeonsAndDragonsCompendiumService_5e>();
+
+            // Add DefaultOldSchoolEssentialsCompendiumService to the service collection as an IOldSchoolEssentialsCompendiumService
+            services.AddTransient<IOldSchoolEssentialsCompendiumService, DefaultOldSchoolEssentialsCompendiumService>();
         }
 
         /// <summary>

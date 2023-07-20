@@ -236,9 +236,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         public string? LegendaryDesc { get; set; } = string.Empty;
 
         /// <inheritdoc/>
-        public string? PublisherName { get; set; }
-
-        /// <inheritdoc/>
         public string? LicenseURL { get; set; }
 
         /// <summary>
@@ -279,6 +276,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         /// </summary>
         [JsonProperty("persuasion")]
         public int? Persuasion { get; set; } = int.MinValue;
+
+        /// <inheritdoc/>
+        public string? PublisherName { get; set; }
 
         /// <summary>
         /// Gets or sets the list of reactions that the creature can take in response to certain

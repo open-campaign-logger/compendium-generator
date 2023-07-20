@@ -12,7 +12,7 @@ namespace CampaignKit.Compendium.Tests.DungeonsAndDragons
         /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
         /// </summary>
         [TestMethod]
-        [DeploymentItem(@"TestFiles\backup_holler_spider.json")]
+        [DeploymentItem(@"DungeonsAndDragons\TestFiles\backup_holler_spider.json")]
         public void ConvertToCLStatBlock_EmptyArmorDescription_ParenthesisExcluded()
         {
             // Arrange
@@ -37,7 +37,7 @@ namespace CampaignKit.Compendium.Tests.DungeonsAndDragons
         /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
         /// </summary>
         [TestMethod]
-        [DeploymentItem(@"TestFiles\sulsha.json")]
+        [DeploymentItem(@"DungeonsAndDragons\TestFiles\sulsha.json")]
         public void ConvertToCLStatBlock_NonEmptyArmorDescription_ParenthesisAndDescriptionIncluded()
         {
             // Arrange
@@ -61,7 +61,7 @@ namespace CampaignKit.Compendium.Tests.DungeonsAndDragons
         /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
         /// </summary>
         [TestMethod]
-        [DeploymentItem(@"TestFiles\aboleth.json")]
+        [DeploymentItem(@"DungeonsAndDragons\TestFiles\aboleth.json")]
         public void ConvertToCLStatBlock_SRDMonster_AttributionCorrect()
         {
             // Arrange
@@ -85,7 +85,7 @@ namespace CampaignKit.Compendium.Tests.DungeonsAndDragons
         /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
         /// </summary>
         [TestMethod]
-        [DeploymentItem(@"TestFiles\aboleth.json")]
+        [DeploymentItem(@"DungeonsAndDragons\TestFiles\aboleth.json")]
         public void ConvertToCLStatBlock_KoboldPressMonster_AttributionCorrect()
         {
             // Arrange
