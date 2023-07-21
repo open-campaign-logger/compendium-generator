@@ -25,7 +25,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
     /// <summary>
     /// Class representing a creature from the Dungeons &amp; Dragons System Reference Document (SRD).
     /// </summary>
-    public class SRDCreature : ICreature
+    public class SRDCreature : IGameComponent
     {
         /// <summary>
         /// Gets or sets the creature's Acrobatics skill, representing its ability to perform tasks

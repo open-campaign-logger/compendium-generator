@@ -24,7 +24,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
     /// <summary>
     /// Class representing a spell from the Old School Essentials System Reference Document (SRD).
     /// </summary>
-    public class SRDSpell : ISpell
+    public class SRDSpell : IGameComponent
     {
         /// <summary>
         /// Represents a read-only instance of a CampaignEntry object.

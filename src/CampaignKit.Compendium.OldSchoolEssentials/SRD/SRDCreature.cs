@@ -25,7 +25,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
     /// <summary>
     /// Class representing a creature from the Old School Essentials System Reference Document (SRD).
     /// </summary>
-    public partial class SRDCreature : ICreature
+    public partial class SRDCreature : IGameComponent
     {
         /// <summary>
         /// Represents a read-only instance of a CampaignEntry object.
@@ -43,13 +43,6 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
 
             // Set the Name property of this object to the value of the TagValue property of the campaignEntry object, or throw an ArgumentNullException if TagValue is null
             this.Name = this.campaignEntry.TagValue ?? throw new Exception($"CampaignEntry missing attribute: TagValue");
-
-            // Check if the Labels property of campaignEntry is null or if it does not contain the label variable
-            if (this.campaignEntry.Labels == null || !this.campaignEntry.Labels.Contains("Monster"))
-            {
-                // If either of the conditions are true, throw an exception
-                throw new Exception($"Required label not found in CampaignEntry: Monster");
-            }
 
             // Set the PublisherName property of this object to "Necrotic Gnome"
             this.PublisherName = "Necrotic Gnome";
@@ -70,8 +63,24 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
         /// <inheritdoc/>
         public CampaignEntry ToCampaignEntry()
         {
-            // Split the campaign entry text on line breaks.
-            var lines = this.campaignEntry.RawText?.Split("\n", StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries) ?? Array.Empty<string>();
+            // Declare a label variable and set it to "Monster"
+            var label = "Monster";
+
+            // Check if the Labels property of campaignEntry is null or if it does not contain the label variable
+            if (this.campaignEntry.Labels == null || !this.campaignEntry.Labels.Contains(label))
+            {
+                // If either of the conditions are true, throw an exception
+                throw new Exception($"Required label not found in CampaignEntry: {label}");
+            }
+
+            // Check if the RawText property of campaignEntry is null or empty
+            if (string.IsNullOrEmpty(this.campaignEntry.RawText))
+            {
+                // If it is, throw an exception
+                throw new Exception($"Required data not found in CampaignEntry: {nameof(this.campaignEntry.RawText)}");
+            }
+
+            var lines = this.campaignEntry.RawText.Split("\n", StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
 
             // Initialize variables for each property you want to extract
             string title = string.Empty, description = string.Empty, treasureType = string.Empty, alignment = string.Empty, hitdice = string.Empty;
