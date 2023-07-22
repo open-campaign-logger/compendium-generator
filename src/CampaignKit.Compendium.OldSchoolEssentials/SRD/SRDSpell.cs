@@ -16,10 +16,10 @@
 
 namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
 {
+    using System.Text;
+
     using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Common;
-
-    using System.Text;
 
     /// <summary>
     /// Class representing a spell from the Old School Essentials System Reference Document (SRD).

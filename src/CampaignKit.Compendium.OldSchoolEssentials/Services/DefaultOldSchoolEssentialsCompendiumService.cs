@@ -119,18 +119,28 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
                                 // Create a new SRDCreature object from the CampaignEntry
                                 var creature = new SRDCreature(campaignEntry);
 
-                                // Add the creature to the destinationCampaign
+                                // Add the creature to the destination Campaign
                                 destinationCampaign.CampaignEntries.Add(creature.ToCampaignEntry());
                             }
 
                             // Process spells
                             if (campaignEntry.Labels.Contains("Spell"))
                             {
-                                // Create a new SRDCreature object from the CampaignEntry
+                                // Create a new SRDSpell object from the CampaignEntry
                                 var creature = new SRDSpell(campaignEntry);
 
-                                // Add the creature to the destinationCampaign
+                                // Add the spell to the destination Campaign
                                 destinationCampaign.CampaignEntries.Add(creature.ToCampaignEntry());
+                            }
+
+                            // Process magic items
+                            if (campaignEntry.Labels.Contains("Magic Items"))
+                            {
+                                // Create a new SRDMagicItem object from the CampaignEntry
+                                var magicItem = new SRDMagicItem(campaignEntry);
+
+                                // Add the magic item to the destination Campaign
+                                destinationCampaign.CampaignEntries.Add(magicItem.ToCampaignEntry());
                             }
                         }
                     }

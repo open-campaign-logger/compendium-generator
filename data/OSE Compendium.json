@@ -19,6 +19,17 @@
       "tagValue": "Spell of Infravision - MU3"
     },
     {
+      "rawText": "## Control Undead\n\n* **Affects**: Up to 3d6 Hit Dice of undead.\n* **When the potion’s effect ends**: Affected undead have a hostile reaction.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Control Undead"
+    },
+    {
       "rawText": "## Detect Magic (C)\n\n1st Level Cleric Spell\n\n**Duration:** 2 turns\n\n**Range:** 60’\n\nEnchanted objects, areas, or creatures are caused to glow. Both permanent and temporary enchantments are revealed.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
       "rawPublic": null,
       "labels": [
@@ -29,6 +40,17 @@
       ],
       "tagSymbol": "~",
       "tagValue": "Spell of Detect Magic (C) - CL1"
+    },
+    {
+      "rawText": "## Broom of Flying\n\nA broom that can be commanded to fly, carrying the owner aloft.\n\n* **Speed**: The broom flies at 240’ (80’).\n* **Passengers**: An additional passenger may be carried. When carrying two people, the broom’s speed is 180’ (60’).\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Broom of Flying"
     },
     {
       "rawText": "## Purify Food and Water\n\n1st Level Cleric Spell\n\n**Duration:** Permanent\n\n**Range:** 10’\n\nPoisoned, rotten, spoiled, or contaminated food and water are purified. One of the following may be affected:\n\n**Drink:** 6 quarts.\n\n**Rations:** One ration (iron or standard).\n\n**Unpreserved food:** A quantity sufficient for 12 people.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
@@ -247,6 +269,17 @@
       "tagValue": "Spell of Growth of Animal - CL3"
     },
     {
+      "rawText": "## Ring of Controlling Plants\n\nGrants the power to control plants.\n\n* **Affects**: All plants (including plant monsters) in a 10’ square area.\n* **Range**: The area may be up to 60’ distant.\n* **Commands**: Affected plants may be commanded to move around as the character wishes.\n* **Concentration**: The effect lasts as long as the wearer of the ring concentrates.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rings"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Ring of Controlling Plants"
+    },
+    {
       "rawText": "## Locate Object (C)\n\n3rd Level Cleric Spell\n\n**Duration:** 6 turns\n\n**Range:** 120’\n\nThe caster can sense the direction (but not distance) of an object. One of two types of object may be located:\n\n**General class:** An object of a general class (e.g. a stairway, an altar, etc). In this case, the nearest object of that type is located.\n\n**Specific object:** A specific object which the caster can clearly visualise in all aspects.\n\n**Restrictions:** This spell cannot be used to locate creatures. \r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
       "rawPublic": null,
       "labels": [
@@ -343,6 +376,17 @@
       "tagValue": "Spell of Raise Dead (Finger of Death) - CL5"
     },
     {
+      "rawText": "## Control Plant\n\n* **Affects**: All plants (including plant monsters) in a 30’ square area up to 60’ distant.\n* **Commands**: Affected plants may be commanded to move around as the character wishes, and may be used to entangle creatures in the area.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Control Plant"
+    },
+    {
       "rawText": "## Remove Curse (Curse) (C)\n\n3rd Level Cleric Spell\n\n**Duration:** Instant / Permanent (*curse*)\n\n**Range:** The caster or a creature touched\n\nThis spell removes a single curse from the subject. It may allow a character to discard a cursed magic item.\n\n## Reversed: Curse\n\nPlaces a deleterious effect upon a creature, if it fails a **save versus spells**.\n\n**Effects:** The exact form and effects of the curse are determined by the caster.\n\n**Maximum possible effects include:** A –2 penalty to saving throws, a –4 penalty to attack rolls, reducing an ability score by 50%\n\n**Multiple curses:** May afflict a creature, as long as each has a different effect.\n\n**Referee judgement:** The referee should judge the effects of this spell and may turn overly powerful curses back onto the caster!\n\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
       "rawPublic": null,
       "labels": [
@@ -427,6 +471,622 @@
       "tagValue": "Spell of Quest (Remove Quest) - CL5"
     },
     {
+      "rawText": "## Ring of Controlling Animals\n\nGrants the power to control the actions of animals.\n\n* **Affects**: 1d6 normal animals or 1 giant animal (not magical or intelligent animals).\n* **Resisting**: No saving throw is allowed.\n* **Visual range**: The character can only control animals that they can see.\n* **Concentration**: Control is broken if the user of the ring moves or attacks.\n* **When concentration ends**: The referee should make a reaction roll with a -1 penalty (see Encounters) to determine the animals’ behaviour.\n* **Usage frequency**: May be used up to once per turn.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rings"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Ring of Controlling Animals"
+    },
+    {
+      "rawText": "## Ring of Controlling Humans\n\nGrants the power to charm humans.\n\n* **Usage**: A charm may be placed upon a human within 60’. One target may be charmed per round.\n* **Resisting**: The subject may **save versus spells (with a -2 penalty)** to resist.\n* **Maximum subjects**: Up to 6 Hit Dice of humans may be charmed in this way. Normal humans count as ½ HD.\n* **Charmed individuals**: Regard the character as a trusted friend, and will come to their defence. They will obey the character’s commands, as long as these are not obviously harmful and do not contradict the subject’s alignment.\n* **Duration**: The charm lasts until dispelled, until the ring is removed, or until the wearer cancels it.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rings"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Ring of Controlling Humans"
+    },
+    {
+      "rawText": "## Ring of Delusion\n\nThe wearer believes is under the effects of another type of magic ring.\n\n* **Type**: The other type of ring should be determined by the referee (e.g. a ring of protection or a ring of spell turning).\n* **Describing**: The referee should try to trick the player into believing that the character is under the effects of the other ring, only revealing the truth at some vital juncture.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rings"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Ring of Delusion"
+    },
+    {
+      "rawText": "## Ring of Fire Resistance\n\nGrants the wearer protection against fire.\n\n* **Normal fire**: Unharmed by non-magical fire.\n* **Save bonus**: Gain a +2 bonus to all saving throws versus fire-based magical or breath attacks.\n* **Fire-based damage**: Is reduced by 1 point per damage die rolled. (Each die inflicts a minimum of 1 hit point damage.)\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rings"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Ring of Fire Resistance"
+    },
+    {
+      "rawText": "## Ring of Protection\n\nGrants a measure of protection from harm:\n\n* **Armour Class**: A +1 AC bonus.\n* **Saving throws**: A +1 bonus to all saves.\n\n## Ring of Protection, 5’ Radius\n\nAllies within 5’ of the wearer also benefit from the ring’s protective power. For example, two characters fighting beside the wearer of the ring would gain the protective benefit. \r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rings"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Ring of Protection"
+    },
+    {
+      "rawText": "## Ring of Spell Storing\n\nStores a number of magical spells that the wearer can release on command.\n\n* **Capacity**: The ring contains 1d6 spells. (The spells can be triggered and recharged, but cannot be changed.)\n* **Type of magic**: There is a 20% chance of divine spells, otherwise they are arcane spells.\n* **Knowledge**: The wearer of the ring knows which spells it contains.\n* **Triggering**: The wearer of the ring can trigger the spells at will (up to one spell per round).\n* **Caster level**: For spells whose effects vary by the level of the caster, the wearer of the ring is treated as a caster of the lowest level required to cast the spell.\n* **Recharging**: Once a spell is triggered, it may not be reused until it is recharged—the expired spell must be cast directly onto the ring.\n\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rings"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Ring of Spell Storing"
+    },
+    {
+      "rawText": "## Ring of Telekinesis\n\nGrants the power to move objects or creatures within 120’ by concentrating.\n\n* **Weight**: Up to 2,000 coins of weight may be targeted.\n* **Movement**: The target may be moved up to 20’ per round, in whatever direction the wearer of the ring wishes (including vertically).\n* **Resisting**: A targeted creature may save versus spells to resist.\n* **Concentration**: If concentration is broken, the target falls.\n\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rings"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Ring of Telekinesis"
+    },
+    {
+      "rawText": "## Ring of Weakness\n\nA cursed ring that weakens the wearer.\n\n* **Effect**: Within 6 rounds of putting the ring on, the wearer’s STR is reduced to 3.\n* **Removing**: The ring cannot be removed, once worn.\n* **Dispelling**: The curse can be removed by magic (e.g. remove curse), or (at the referee’s option) by performing a special quest.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rings"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Ring of Weakness"
+    },
+    {
+      "rawText": "## Ring of X-Ray Vision\n\nGrants the power to see through solid objects.\n\n* **Through dense materials**: Sight up to 60’ through less dense materials (cloth, water, wood) is possible.\n* **Through stone**: Sight up to 30’ through stone is possible.\n* **Obstructions**: Sight through gold or lead is blocked.\n* **Searching**: When used for the purpose of searching (see Dungeon Adventuring), the wearer is guaranteed to notice secret doors or traps in the 10’ square area being examined.\n* **Concentration**: Using the ring requires concentration (the wearer cannot move).\n* **Usage frequency**: May be used at most once per turn.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rings"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Ring of X-Ray Vision"
+    },
+    {
+      "rawText": "## Wand of Illusion\n\nExpending a charge, an illusion of the character’s choosing manifests. This works in the same way as the magic-user spell phantasmal force, except:\n\n* **Concentration**: Is required to maintain the illusion. The wielder of the wand may move at up to half normal movement rate while concentrating. Concentration is broken if the wielder attacks, casts a spell, or is successfully attacked (damaged, targeted by a malicious spell, etc.).\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Wands"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Wand of Illusion"
+    },
+    {
+      "rawText": "## Wand of Magic Detection\n\nGrants the power to detect magic nearby.\n\n* **Expending a charge**: Causes magic items within 20’ to be haloed with light.\n* **Concealed items**: Also glow, but the light might not be seen.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Wands"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Wand of Magic Detection"
+    },
+    {
+      "rawText": "## Ring of Djinni Summoning\n\nThis ring grants the power to summon a djinni (see Djinni).\n\n* **Duration of service**: The djinni will serve the character who summoned it for up to 24 hours.\n* **Commands**: The djinni only obeys the one who summoned it—another character who takes the ring has no power over the djinni.\n* **Usage frequency**: The ring may be used up to once per day.\n\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rings"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Ring of Djinni Summoning"
+    },
+    {
+      "rawText": "## Ring of Invisibility\n\nThe wearer of this ring becomes invisible.\n\n* **Attacking**: If the character attacks or casts a spell, the invisibility is broken.\n* **Usage frequency**: May be used up to once per turn.\n\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rings"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Ring of Invisibility"
+    },
+    {
+      "rawText": "## Ring of Regeneration\n\nThe wearer heals at an accelerated rate.\n\n* **Rate**: The wearer regains 1 hit point per round.\n* **Severed limbs**: Will also regrow. The rate depends on the size of the limb (e.g. a finger may regrow in one day, while a whole limb may take a week).\n* **Fire or acid damage**: Cannot be regenerated.\n* **Death**: The ring does not function if the wearer is reduced to 0 or less hit points.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rings"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Ring of Regeneration"
+    },
+    {
+      "rawText": "## Ring of Spell Turning\n\nSpells cast on the wearer of this ring are reflected back onto the caster.\n\n* **Charges**: After 2d6 spells are reflected, the ring loses its power.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rings"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Ring of Spell Turning"
+    },
+    {
+      "rawText": "## Ring of Water Walking\n\nGrants the power to walk on the surface of water, without sinking. \n\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rings"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Ring of Water Walking"
+    },
+    {
+      "rawText": "## Ring of Wishes\n\nGrants the wearer’s wishes (see Wishes).\n\n* **Charges**: The number of wishes granted is noted in the Rings table. Once all wishes have been used, the ring’s magic is spent.\n\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rings"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Ring of Wishes"
+    },
+    {
+      "rawText": "## Rod of Cancellation\n\nDrains the enchantment from a magic item that is touched.\n\n* **In combat**: Usage requires an attack roll against AC 9 [10] (adjusted by the referee, if the target item is being actively used).\n* **Effect**: The item that is touched becomes utterly non-magical.\n* **One use only**: The rod may only be used once: it has but a single charge.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Rods"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Rod of Cancellation"
+    },
+    {
+      "rawText": "## Staff of Healing\n\nHas the power to heal those touched.\n\n* **Divine magic**: Usable by divine spell casters only.\n* **Effect**: Heals 1d6+1 hit points with each usage.\n* **Usage limit**: Is effective on any individual at most once per day.\n* **No charges**: Does not use charges; may be used an unlimited number of times.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Staff"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Staff of Healing"
+    },
+    {
+      "rawText": "## Staff of Snakes\n\nA magical staff that has the power to transform into a snake, on command.\n\n* **Divine magic**: Usable by divine spell casters only.\n* **In melee**: Treated as a staff with a +1 magic bonus to attacks and damage.\n* **On a successful hit**: Upon a human-sized (or smaller) creature, the wielder of the staff may speak the command word, causing it to transform into a serpent and coil around the victim.\n* **Victims**: Must **save versus spells** or be immobilised in the coils of the snake. Victims are completely helpless while held by the snake (1d4 turns, or released as the wielder of the staff commands).\n* **Snake**: Has AC 5 [14], HD 3 (20hp), and a movement rate of 60’ (20’).\n* **When the victim is released**: The snake returns to the owner and transforms back into a staff. (At this point, it is healed of any damage it has suffered.)\n* **If the snake is killed**: It does not return to its staff form, becoming non-magical.\n* **No charges**: Does not use charges; may be used any number of times.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Staff"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Staff of Snakes"
+    },
+    {
+      "rawText": "## Staff of Withering\n\nCreatures hit by the staff are magically aged:\n\n* **Divine magic**: Usable by divine spell casters only.\n* **Effect**: The target is aged 10 years. Living creatures die upon reaching their natural life span.\n* **Especially long-lived species**: Ignore the effects of a certain amount of ageing. (For example, elves may ignore up to 200 years of ageing, dwarves ignore up to 50 years, and so on.)\n* **Undead creatures**: Are unaffected by the power of this staff.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Staff"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Staff of Withering"
+    },
+    {
+      "rawText": "## Wand of Cold\n\nConjures a cone of freezing energy.\n\n* **Area**: The cone is 60’ long and 30’ wide at the far end.\n* **Creatures caught in the cone**: Suffer 6d6 damage, with a successful **save versus wands** indicating half damage.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Wands"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Wand of Cold"
+    },
+    {
+      "rawText": "## Wand of Fear\n\nConjures a cone of magical energy that terrifies those within it.\n\n* **Area**: The cone is 60’ long and 30’ wide at the far end.\n* **Creatures in the cone**: Are struck with terror, and will flee from the wielder of the wand at maximum speed for 30 rounds. (A **save versus wands** negates the effect).\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Wands"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Wand of Fear"
+    },
+    {
+      "rawText": "## Staff of Commanding\n\nGrants the power to control animals, humans, and plants.\n\n### Commanding Animals\n\n* **Affects**: 1d6 normal animals or 1 giant animal (but not magical or intelligent animals).\n* **Resisting**: No saving throw is allowed.\n* **Visual range**: The character can only control animals that they can see.\n* **Concentration**: Control is broken if the user of the staff moves or attacks.\n* **When concentration ends**: The referee should make a reaction roll with a -1 penalty (see Encounters) to determine the animals’ behaviour.\n* **Usage frequency**: This power of the staff may be used up to once per turn.\n\n### Commanding Humans\n\n* **Usage**: A charm may be placed upon a human within 60’. One target may be charmed per round.\n* **Resisting**: The subject may save versus spells (with a -2 penalty) to resist.\n* **Maximum subjects**: Up to 6 Hit Dice of humans may be charmed in this way. Normal humans count as ½ HD.\n* **Charmed individuals**: Regard the character as a trusted friend, and will come to their defence. They will obey the character’s commands, as long as these are not obviously harmful and do not contradict the subject’s alignment.\n* **Duration**: The charm lasts indefinitely, but ends if cancelled by the wielder of the staff, or when dispelled.\n\n### Commanding Plants\n\n* **Affects**: All plants (including plant monsters) in a 10’ square area.\n* **Range**: The area may be up to 60’ distant.\n* **Commands**: Affected plants may be commanded to move around as the character wishes.\n* **Concentration**: The effect lasts as long as the wielder of the staff concentrates.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Staff"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Staff of Commanding"
+    },
+    {
+      "rawText": "## Staff of Power\n\nAn item of great wizardly power, this staff may be used as a weapon in melee, and may evoke five different magical effects.\n\n* **Arcane magic**: Usable by arcane spell casters only.\n* **Melee**: Expending one charge, inflicts 2d6 damage on a successful hit.\n* **Cone of cold**: Conjures a cone of freezing energy, 60’ long and 30’ wide at the far end. Creatures caught in the cone suffer 8d6 damage (**save versus spells** for half damage).\n* **Spells**: Can cast: continual light, fire ball (8d6 damage), lightning bolt (8d6 damage), telekinesis (up to 2,400 coins of weight).\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Staff"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Staff of Power"
+    },
+    {
+      "rawText": "## Staff of Striking\n\nUsed as a magical melee weapon.\n\n* **Expending one charge**: Inflicts 2d6 damage on a successful hit.\n* **Usage frequency**: Only one charge may be spent per strike.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Staff"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Staff of Striking"
+    },
+    {
+      "rawText": "## Staff of Wizardry\n\nAn item of supreme wizardly power, this staff may be used as a weapon in melee, and may evoke a dozen different magical effects.\n\n* **Arcane magic**: Usable by arcane spell casters only.\n* **In melee**: Treated as a staff with a +1 magic bonus to attack and damage rolls.\n    Striking: Expending one charge, inflicts 2d6 damage on a successful hit.\n* **Cone of cold**: Conjures a cone of freezing energy, 60’ long and 30’ wide at the far end. Creatures caught in the cone suffer 8d6 damage, with a successful **save versus spells** indicating half damage.\n* **Paralysation**: Conjures a cone of magical energy, 60’ long and 30’ wide at the far end. Creatures caught in the cone are paralysed for 6 turns (**save versus spells** to avoid).\n* **Spells**: Can cast: conjure elemental (8 HD), continual light, fire ball (8d6 damage), invisibility, lightning bolt (8d6 damage), pass-wall, telekinesis (up to 2,400 coins of weight), web.\n* **Whirlwind**: Conjures a whirlwind 70’ tall, 20’ wide at the top, and 10’ wide at the base. The whirlwind lasts for 3 rounds, and moves at 120’ (40’), as the wielder of the staff directs. All in its path suffer 2d6 damage. Creatures with less than 2HD are swept aside (**save versus death** to avoid).\n* **Sacrifice**: The wielder may sacrifice the staff by breaking it in two. Doing so unleashes a 30’ radius fireball that inflicts 8 points of damage per remaining charge in the staff. The wielder of the staff also suffers this damage.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Staff"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Staff of Wizardry"
+    },
+    {
+      "rawText": "## Wand of Enemy Detection\n\nGrants the power to detect nearby enemies.\n\n* **Expending a charge**: Causes enemies within 60’ to be haloed in a fiery glow.\n* **Hidden enemies**: Even enemies that are concealed or invisible are affected.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Wands"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Wand of Enemy Detection"
+    },
+    {
+      "rawText": "## Wand of Fire Balls\n\nConjures fire balls:\n\n* **Range**: A streak of flame shoots towards an area up to 240’ distant.\n* **Area**: The flame detonates in a 40’ diameter sphere of fire.\n* **Creatures caught in the fire ball**: Suffer 6d6 damage, with a successful **save versus wands** indicating half damage.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Wands"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Wand of Fire Balls"
+    },
+    {
+      "rawText": "## Wand of Lightning Bolts\n\nConjures strokes of powerful electricity:\n\n* **Point of origin**: A lightning bolt may emanate from a point up to 180’ distant.\n* **Area**: The bolt is 60’ long and 5’ wide.\n* **Creatures caught in the lightning bolt**: Suffer 6d6 damage, with a successful **save versus wands** indicating half damage.\n* **Bouncing**: If the lightning bolt hits a solid barrier before its full length is reached, it is reflected and travels for any remaining distance of its full length in the direction of the wielder of the wand.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Wands"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Wand of Lightning Bolts"
+    },
+    {
+      "rawText": "## Wand of Metal Detection\n\nGrants the power to detect masses of metal of any type.\n\n* **Expending a charge**: Causes the wand to point towards metal within 20’.\n* **Type**: The type of metal is revealed.\n* **Minimum mass**: Only masses of metal of at least 1,000 coins in weight are detected.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Wands"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Wand of Metal Detection"
+    },
+    {
+      "rawText": "## Wand of Negation\n\nHas the power to negate the effects of other wands or staves.\n\n* **Declare intent**: Before rolling initiative, the wielder of the wand must declare the intention to use it.\n* **Target**: Another wand or staff must be targeted.\n* **Effect**: The effects of the targeted item are negated for one round.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Wands"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Wand of Negation"
+    },
+    {
+      "rawText": "## Potion of Delusion\n\nA character who drinks this potion believes is under the effects of another type of potion.\n\n* **Type**: The other type of potion should be determined by the referee.\n* **Describing**: The referee should try to trick the player into believing that the character is under the effects of the other potion, only revealing the truth at some vital juncture.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Delusion"
+    },
+    {
+      "rawText": "## Potion of ESP\n\nGrants the power of reading thoughts. This works in the same way as the magic-user spell ESP. The standard potion duration applies. \r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of ESP"
+    },
+    {
+      "rawText": "## Potion of Flying\n\nGrants the ability to fly through the air.\n\n* **Movement rate**: Up to 360’ (120’).\n* **Free movement**: Is possible in any direction, including the ability to levitate and to hover in mid-air.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Flying"
+    },
+    {
+      "rawText": "## Potion of Giant Strength\n\nGrants the strength of a frost giant.\n\n* **Attacks with weapons**: Inflict double damage.\n* **Throw boulders**: The character may throw boulders for 3d6 damage, with a range of up to 200’.\n* **Non-cumulative**: The effects of this potion are not cumulative with other magic items that augment strength (e.g. a girdle of giant strength).\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Giant Strength"
+    },
+    {
+      "rawText": "## Potion of Healing\n\nHas one of two effects on the character who drinks it:\n\n* **Healing a living subject**: Restores 1d6+1 hit points of damage. This cannot grant more hit points than the subject’s normal maximum.\n* **Curing paralysis**: Paralysing effects are negated.\n\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Healing"
+    },
+    {
+      "rawText": "## Potion of Invisibility\n\nDrinking this potion, the character becomes invisible. This works the same as the magic-user spell invisibility. The standard potion duration applies.\n\n* **Small doses**: At the referee’s discretion, a potion of invisibility may be consumed in six smaller doses, each with a reduced duration.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Invisibility"
+    },
+    {
+      "rawText": "## Potion of Levitation\n\nThe character gains the ability to move up and down through the air at will.\n\n* **Vertical**: The character mentally directs vertical movement at up to 60’ per round.\n* **Horizontal**: The character can push against solid objects to move laterally.\n* **Weight**: A normal amount of weight can be carried while levitating.\n\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Levitation"
+    },
+    {
+      "rawText": "## Potion of Poison\n\nAppears the same as any other potion.\n\n* **Effect**: Causes death (save vs poison).\n* **Sipping**: Even a sip has the full effect.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Poison"
+    },
+    {
+      "rawText": "## Potion of Speed\n\nThe character’s movements and actions are magically accelerated.\n\n* **Movement**: Movement rate is doubled.\n* **Attacks**: The number of attacks per round the character can make is doubled.\n* **Other actions**: May be performed at double speed.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Speed"
+    },
+    {
+      "rawText": "## Mixing Potions\n\nDrinking a potion while already under the effects of another potion is dangerous:\n\n* **Sickness**: The character is completely disabled for 3 turns, due to sickness.\n* **Cancellation**: The effects of both potions are cancelled.\n\nThis rule does not apply to potions with instantaneous or permanent duration. \n\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Mixing Potions"
+    },
+    {
+      "rawText": "## Bag of Devouring\n\nA normal-looking, small sack that devours objects placed inside it.\n\n* **Objects**: Anything placed inside the bag vanishes from existence after 1d6+6 turns.\n* **Living creatures**: May be affected, but only if the entire creature fits inside the bag.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Bag of Devouring"
+    },
+    {
+      "rawText": "## Boots of Levitation\n\nThe wearer is able to move up and down through the air at will.\n\n* **Vertical**: The caster mentally directs vertical movement at up to 20’ per round.\n* **Horizontal**: The caster can push against solid objects to move laterally.\n* **Weight**: A normal amount of weight can be carried while levitating.\n* **Usage**: The enchantment may be used without limit of frequency or duration.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Boots of Levitation"
+    },
+    {
+      "rawText": "## Potion of Diminution\n\nThe character shrinks to 6” high.\n\n* **Combat effectiveness**: While shrunk, the character is unable to harm creatures larger than 1’ tall.\n* **Narrow spaces**: The character can slip through narrow spaces.\n* **Remaining motionless**: The character only has a 10% chance of being spotted.\n\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Diminution"
+    },
+    {
+      "rawText": "## Potion of Fire Resistance\n\nGrants protection against fire:\n\n* **Normal heat**: Unharmed by non-magical heat or fire.\n* **Save bonus**: Gain a +2 bonus to all saving throws versus fire-based magical or breath attacks.\n* **Fire-based damage**: Is reduced by 1 point per damage die rolled. (Each die inflicts a minimum of 1 hit point damage.)\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of  Fire Resistance"
+    },
+    {
+      "rawText": "## Potion of Gaseous Form\n\nThe character’s body becomes a cloud of vapour. This has the following effects:\n\n* **Equipment and clothing**: Drops to the floor.\n* **Movement**: The character may move, as a cloud of gas, through small cracks in stone walls, wooden objects, etc.\n* **Attacking**: Is not possible, while in gaseous form.\n* **Invulnerability**:The character’s AC is -2 [21]. Non-magical weapons cannot harm the character.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Gaseous Form"
+    },
+    {
+      "rawText": "## Potion of Growth\n\nThe character doubles in size.\n\n* **Melee attacks**: The character’s increased strength means that their melee attacks deal double damage.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Growth"
+    },
+    {
+      "rawText": "## Potion of Heroism\n\nNormal humans and characters of a combat-focused, non-magic using class (e.g. dwarf, fighter, halfling) who drink a potion of heroism temporarily gain additional levels. The number of levels gained depends on the character’s normal experience level:\n\n* **Normal human**: Gain the abilities of a 4th level fighter.\n* **1st–3rd level**: Gain 3 levels.\n* **4th–7th level**: Gain 2 levels.\n* **8th–10th level**: Gain 1 level.\n* **11th level+**: No effect.\n\n**Effects**: All abilities of the additional levels are gained, including extra hit points.\n\n**Damage**: Damage suffered while under the effects of this potion is first deducted from the pool of additional hit points granted. \r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Heroism"
+    },
+    {
+      "rawText": "## Potion of Invulnerability\n\nThe character is magically protected from harm, gaining the following benefits:\n\n* **Armour Class**: A +2 AC bonus.\n* **Saving throws**: A +2 bonus to all saves.\n* **Usage frequency**: If a character consumes more than one potion of invulnerability in the space of a week, the effects are inverted (a -2 penalty to AC and saves).\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Invulnerability"
+    },
+    {
+      "rawText": "## Potion of Longevity\n\nInstantly and permanently causes the character to become 10 years younger. \r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Longevity"
+    },
+    {
+      "rawText": "## Potion of Polymorph Self\n\nUpon drinking this potion, the character transforms into another being (of their choice). This works in the same way as the magic-user spell polymorph self. The standard potion duration applies. \r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Polymorph Self"
+    },
+    {
+      "rawText": "## Potion of Treasure Finding\n\nGrants the ability to sense treasure.\n\n* **Range**: Treasure up to 360’ away can be detected.\n* **Direction and distance**: The character gains an awareness of the direction and distance of treasure.\n* **Concentration**: The character must concentrate in order to sense this information.\n* **Multiple hoards**: The largest treasure hoard within range is sensed.\n* **Obstructions**: The magic is blocked by lead.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Treasure Finding"
+    },
+    {
+      "rawText": "## Amulet of Protection Against Scrying\n\nAn amulet that provides protection against remote viewing and mind-reading.\n\n* **Crystal balls**: The person wearing this amulet cannot be viewed in a crystal ball.\n* **ESP**: The wearer is immune to all forms of ESP.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Amulet of Protection Against Scrying"
+    },
+    {
+      "rawText": "## Bag of Holding\n\nA normal-looking, small sack that can magically contain large objects and weights.\n\n* **Size**: Objects of up to 10’×5’×3’ can fit inside the bag.\n* **Weight**: Up to 10,000 coins of weight can be placed in the bag.\n* **When full**: The bag weighs 600 coins.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Bag of Holding"
+    },
+    {
+      "rawText": "## Boots of Speed\n\nThe wearer is able to move at up to 240’ (80’)—the speed of a riding horse.\n\n* **Duration**: This can be maintained for up to 12 hours.\n* **Rest**: Afterwards, the wearer must rest for 1 day.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Boots of Speed"
+    },
+    {
       "rawText": "## Detect Magic (MU)\n\n**Duration:** 2 turns\n\n**Range:** 60’\n\nEnchanted objects, areas, or creatures are caused to glow. Both permanent and temporary enchantments are revealed.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
       "rawPublic": null,
       "labels": [
@@ -437,6 +1097,292 @@
       ],
       "tagSymbol": "~",
       "tagValue": "Spell of Detect Magic - MU1"
+    },
+    {
+      "rawText": "## Boots of Travelling and Leaping\n\nThe wearer is able to travel without tiring and leap great distances.\n\n* **Tirelessness**: The normal need for rest when travelling may be ignored (see Wilderness Adventuring).\n* **Jumping**: The wearer can leap up to 10’ high and 30’ horizontally.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Boots of Travelling and Leaping"
+    },
+    {
+      "rawText": "## Crystal Ball\n\nAllows an arcane spell caster to view any place or object that is brought to mind:\n\n* **Duration**: The vision lasts for one turn.\n* **Clarity** The clarity of the vision is dependant on the scryer’s familiarity with the subject.\n* **Usage frequency**: A crystal ball may be used at most 3 times a day.\n* **Casting spells**: It is not possible to cast spells through a crystal ball into the viewed scene.\n\n## Crystal Ball With Clairaudience\n\nThe scryer can hear, as well as see, the desired scene.\n\n## Crystal Ball With ESP\n\nAllows the scryer to spy on the thoughts of creatures viewed in the crystal ball:\n\n* **Reading thoughts**: The thoughts of a single creature viewed through the crystal ball may be read.\n* **Meaning**: The scryer understands the meaning of all thoughts even if he or she does not share the creature’s language.\n* **Obstructions**: The ability to perceive thoughts is obstructed by a thin layer of lead or by rock of 2’ thick or greater.\n\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Crystal Ball"
+    },
+    {
+      "rawText": "## Drums of Panic\n\nLarge war drums that induce panic in those who hear their sound.\n\n* **Range**: Creatures up to 240’ away, are affected, when the drums are played. Those within 10’ of the drums are not affected.\n* **Affected creatures**: Are afflicted by the drums’ enchantment of fear: they must save versus spells or make a morale check with a -2 penalty (if the optional morale rules are being used—see Morale).\n* **Effects**: Creatures that fail the saving throw or morale check flee from the sound of the drums at full running speed for 30 rounds.\n\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Drums of Panic"
+    },
+    {
+      "rawText": "## Elemental Summoning Device\n\nRitual items enchanted with the power to summon beings from the elemental planes. Each elemental plane has a different type of device:\n\n* **Air**: A censer.\n* **Earth**: A 6” diameter stone.\n* **Fire**: A brazier.\n* **Water**: A 3’ diameter bowl.\n\nUsage: The items may be used as follows:\n\n* **Frequency**: The summoning power may only be used once per day.\n* **Before use**: The device must be prepared. This takes one turn.\n* **Activation**: Once prepared, activating the device takes one round.\n* **Summoned elemental**: A 12 HD elemental (see Elemental) is conjured to do the summoner’s bidding.\n* **Command over the elemental**: Works as described in the magic-user spell conjure elemental (see Conjure Elemental).\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Elemental Summoning Device"
+    },
+    {
+      "rawText": "## Flying Carpet\n\nAn enchanted carpet that can fly through the air, carrying up to three passengers (and their gear). The movement rate depends on the number of passengers:\n\n* **1 passenger**: 300’ (100’).\n* **2 passengers**: 240’ (80’).\n* **3 passengers**: 180’ (60’).\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Flying Carpet"
+    },
+    {
+      "rawText": "## Girdle of Giant Strength\n\nA character who wears this girdle gains the strength of a hill giant.\n\n* **Combat ability**: The wearer’s ability in combat is augmented: the character attacks as an 8 Hit Dice monster. (If the character already has better attack probabilities, the girdle does not alter these.)\n* **Damage**: The wearer inflicts 2d8 damage in combat, or twice normal damage, if using the optional variable weapon damage rules (see Combat).\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Girdle of Giant Strength"
+    },
+    {
+      "rawText": "## Helm of Reading Languages and Magic\n\nA fragile helmet that grants the wearer the ability to read writing of all kinds.\n\n* **Normal text**: Text in any language can be understood.\n* **Magical text**: Even magical writing is comprehensible. (This does not grant the ability to cast spells, however.)\n* **Fragility**: Each time the wearer is hit, there is a 1-in-10 chance of the helm being destroyed. If the wearer is killed, the helm is destroyed.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Helm of Reading Languages and Magic"
+    },
+    {
+      "rawText": "## Helm of Teleportation\n\nA magical helm that gives an arcane spell caster the ability to cast the teleport spell.\n\n* **Subject**: The wearer may teleport themselves, another creature, or an object.\n* **Resisting**: If used on another creature or object, a save versus spells is allowed to resist being teleported.\n* **When first found**: The helm’s power is usable only once.\n* **Recharging**: To be used again, a teleport spell must be cast upon the helm.\n* **Once recharged**: The wearer may use the helm an unlimited number of times (at most once per round). If the helm is used on an unwilling subject, it once again loses its power and must be recharged, as above, to be used again.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Helm of Teleportation"
+    },
+    {
+      "rawText": "## Medallion of ESP 30’\n\nA medallion on a chain, enchanted with the power of reading thoughts.\n\n* **Focus**: By concentrating for 1 round, the wearer may target a creature within 30’.\n* **Resisting**: At the referee’s option, the target may save versus spells to resist.\n* **Concentration**: While reading thoughts, the wearer may move, but cannot cast spells or attack.\n* **Misfires**: The medallion is not entirely reliable. Per usage, there is a 1-in-6 chance of it misfiring, instead sending the wearer’s thoughts to all within 30’.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Medallion of ESP 30’"
+    },
+    {
+      "rawText": "## Displacer Cloak\n\nA cloak that bends light, making one who wears it appear to be 5’ away from their true location.\n\n* **Save bonus**: The wearer gains a +2 bonus to saving throws against petrification, rods, spells, staves, and wands.\n* **Melee attacks**: Against the wearer are penalised by -2\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Displacer Cloak"
+    },
+    {
+      "rawText": "## Efreeti Bottle\n\nA 3’ tall, weighty jug with a sealed stopper. Breaking the seal and removing the stopper releases a trapped efreeti (see Efreeti), who will serve the character.\n\n* **Frequency of service**: The efreeti will serve the one who freed it (and only that character) once per day.\n* **Duration**: After 101 days, its service ends. The creature then returns to its home—the legendary City of Brass.\n* **If the efreeti is killed**: Its service ends.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Efreeti Bottle"
+    },
+    {
+      "rawText": "## Elven Cloak and Boots\n\nA set of enchanted boots and a matching cloak, of elven origin.\n\n* **Stealth**: The wearer of the boots is able to move silently.\n* **Near invisibility**: The wearer of the cloak is rendered almost invisible: there is only a 1-in-6 chance of them being spotted.\n* **Attacking**: The cloak’s power of invisibility is nullified for one turn, if the wearer attacks.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Elven Cloak and Boots"
+    },
+    {
+      "rawText": "## Gauntlets of Ogre Power\n\nA character who wears these gauntlets has a Strength score of 18. This grants all the usual bonuses, including:\n\n* **Melee attacks**: +3 bonus to attack and damage rolls, in melee.\n* **Unarmed attacks**: Deal 1d2+3 damage.\n* **Encumbrance**: If using the optional rules for detailed encumbrance (see Time, Weight, Movement).\n* **Extra weight**: The character’s ability to carry weight is increased by 1,000 coins. (i.e. the character can carry 1,400 coins without becoming encumbered.)\n\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Gauntlets of Ogre Power"
+    },
+    {
+      "rawText": "## Helm of Alignment Changing\n\nA beautifully crafted but cursed helmet.\n\n* **Putting on the helmet**: Instantly causes the wearer’s alignment to change. The new alignment is determined at random.\n* **Removing**: The curse is such that the wearer cannot remove the helmet, once in place, and will resist attempts to remove it.\n* **Dispelling**: The curse can be removed by magic (e.g. remove curse), or (at the referee’s option) by performing a special quest.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Helm of Alignment Changing"
+    },
+    {
+      "rawText": "## Helm of Telepathy\n\nA beautifully crafted helmet that grants the magical ability of telepathy: reading and sending thoughts.\n\n* **Range**: The range of the power is 90’.\n* **Concentration**: To read a creature’s thoughts, the wearer must remain still and concentrate on that creature.\n* **Comprehension**: The creature’s thoughts are made comprehensible to the wearer of the helm.\n* **Bidirectional communication**: The wearer may initiate bidirectional, telepathic communication, though the creature\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Helm of Telepathy"
+    },
+    {
+      "rawText": "## Horn of Blasting\n\nA horn that can be blown to release a blast of destructive noise.\n\n* **Creatures**: Within a 100’ long cone (20’ wide at the end) suffer 2d6 damage.\n* **Deafness**: Affected creatures are also deafened for one turn (save versus spells to avoid).\n* **Buildings**: At the referee’s discretion, the horn may also be able to damage objects and buildings (e.g. a single blast might be enough to destroy a simple cottage; a 10’ section of castle wall might require three blasts).\n* **Frequency**: The horn may be used once per turn.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Horn of Blasting"
+    },
+    {
+      "rawText": "## Medallion of ESP 90’\n\nA medallion on a chain, enchanted with the power of reading thoughts. This works in the same way as the magic-user spell ESP. \r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Medallion of ESP 90’"
+    },
+    {
+      "rawText": "## Rope of Climbing\n\nA coil of thin, strong rope, 50’ in length.\n\n* **Commanding**: The owner may command it to climb in any direction.\n* **Attaching**: The rope can also be commanded to attach to a surface.\n* **Load**: Up to 10,000 coins of weight can be suspended from the rope\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Rope of Climbing"
+    },
+    {
+      "rawText": "## Potion of Clairaudience\n\nEnables the character to hear through the ears of another creature.\n\n* **Range**: The other creature must be within 60’.\n* **Obstructions**: Lead blocks the effect.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Potions",
+        "Magic Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Clairaudience"
+    },
+    {
+      "rawText": "## Control Animal\n\n* **Affects**: Up to 3d6 Hit Dice of normal or giant (but not magical) animals.\n* **When the potion’s effect ends**: Affected animals will move away.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Control Animal"
+    },
+    {
+      "rawText": "## Control Giant\n\n* **Affects**: 1–4 giants of a specific type. (The referee should determine which type of giant the potion affects.)\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Control Giant"
+    },
+    {
+      "rawText": "## Mirror of Life Trapping\n\nA mirror with the ability to magically trap living creatures behind its pane.\n\n* **Gazing into the mirror**: Any creature of human size or smaller who gazes into the mirror is sucked inside (save versus spells to resist), with all its belongings.\n* **Capacity**: Up to 20 creatures can be trapped in the mirror. When this number is reached, it becomes safe to look into the mirror.\n* **Inside the mirror**: A creature will live indefinitely, without the need for air or sustenance, and unaffected by ageing.\n* **Communication**: Trapped creatures may converse with those outside, but are utterly powerless.\n* **Breaking the mirror**: Releases those trapped.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Mirror of Life Trapping"
+    },
+    {
+      "rawText": "## Scarab of Protection\n\nProtects the bearer from baleful magic.\n\n* **Curses**: Of all kinds are nullified.\n* **Finger of death**: is nullified. See Raise Dead (Finger of Death).\n* **Charges**: The scarab’s enchantment works 2d6 times before it is spent.\n\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Scarab of Protection"
+    },
+    {
+      "rawText": "## Potion of Clairvoyance\n\nEnables the character to see through the eyes of another creature.\n\n* **Range**: The other creature must be within 60’.\n* **Obstructions**: Lead blocks the effect.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Clairvoyance"
+    },
+    {
+      "rawText": "## Control Dragon\n\n* **Affects**: 1–3 dragons of a specific type. (The referee should determine which type of dragon the potion affects.)\n* **Spell casting**: It is not possible to command a dragon to cast spells.\n* **When the potion’s effect ends**: Affected dragons have a hostile reaction.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Potions",
+        "Magic Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Control Dragon"
+    },
+    {
+      "rawText": "## Control Human\n\n* **Usage**: A charm may be placed upon a human within 60’. One target may be charmed per round.\n* **Resisting**: The subject may save versus spells to resist the charm.\n* **Maximum subjects**: Up to 6 Hit Dice of humans may be charmed in this way. Normal humans count as ½ HD.\n*  **Charmed individuals**: Regard the character as a trusted friend, and will come to their defence. They will obey the character’s commands, as long as these are not obviously harmful and do not contradict the subject’s alignment.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Control Human"
     },
     {
       "rawText": "## Charm Person\n\n**Duration:** One or more days (see below)\n\n**Range:** 120’\n\nA single human, demihuman, or human-like monster (see Persons) must **save versus spells** or be charmed, as follows:\n\n* **Friendship:** The subject regards the caster as a close friend and will come to the caster’s defence.\n\n* **Commands:** If they share a language, the caster may give the charmed creature commands, which they will obey.\n\n* **Subject’s nature:** The subject may resist commands that contradict their habits or alignment.\n\n* **Suicidal commands:** Are always refused.\n\n**Restrictions:** Undead and human-like monsters of greater than 4+1 HD (see Hit point modifiers) are not affected.\n\n**Duration:** The charm lasts indefinitely, but the subject is allowed to make further saves versus spells at intervals, depending on their INT score. If one of these **saves succeeds, the spell** ends.\n\n* **INT 3–8:** New save once every month.\n\n* **INT 9–12:** New save each week.\n\n* **INT 13–18:** New save once every day\n\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
