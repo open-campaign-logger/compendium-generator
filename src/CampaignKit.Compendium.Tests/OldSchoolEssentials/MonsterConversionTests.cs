@@ -232,6 +232,26 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
 
         }
 
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
+        public void ConvertToCLStatBlock_Bandit_PublicDescriptionNull()
+        {
+            // Arrange
+            var campaignEntry = GetCampaignEntry("Bandit");
+
+            // Act
+            var creature = new SRDCreature(campaignEntry);
+            var convertedCampaignEntry = creature.ToCampaignEntry();
+
+            // Assert
+            Assert.IsNotNull(convertedCampaignEntry);
+            Assert.IsNull(convertedCampaignEntry.RawPublic);
+            Assert.IsNotNull(convertedCampaignEntry.RawText);
+
+        }
+
         private static CampaignEntry GetCampaignEntry(string TagValue)
         {
             // Arrange

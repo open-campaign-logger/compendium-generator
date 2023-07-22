@@ -101,7 +101,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             }
 
             // Set the RawText of the CampaignEntry to the StringBuilder object.
-            campaignEntry.RawText = builder.ToString();
+            campaignEntry.RawPublic = builder.ToString();
 
             // Return the CampaignEntry object.
             return campaignEntry;
