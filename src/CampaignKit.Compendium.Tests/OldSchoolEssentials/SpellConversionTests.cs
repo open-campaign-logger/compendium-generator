@@ -49,8 +49,28 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
 
             // Assert
             Assert.IsNotNull(convertedCampaignEntry);
-            Assert.IsNotNull(convertedCampaignEntry.RawText);
-            Assert.IsTrue(convertedCampaignEntry.RawText.Contains("Trapped areas are caused to magically glow with a faint blue light."));
+            Assert.IsNotNull(convertedCampaignEntry.RawPublic);
+            Assert.IsTrue(convertedCampaignEntry.RawPublic.Contains("Trapped areas are caused to magically glow with a faint blue light."));
+
+        }
+
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
+        public void ConvertToCLStatBlock_SpellOfClairvoyance_PublicDescriptionNotNull()
+        {
+            // Arrange
+            var campaignEntry = GetCampaignEntry("Spell of Clairvoyance - MU3");
+
+            // Act
+            var spell = new SRDSpell(campaignEntry);
+            var convertedCampaignEntry = spell.ToCampaignEntry();
+
+            // Assert
+            Assert.IsNotNull(convertedCampaignEntry);
+            Assert.IsNotNull(convertedCampaignEntry.RawPublic);
+            Assert.IsNull(convertedCampaignEntry.RawText);
 
         }
 
