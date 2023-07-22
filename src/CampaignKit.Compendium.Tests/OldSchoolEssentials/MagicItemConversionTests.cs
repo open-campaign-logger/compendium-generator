@@ -32,6 +32,27 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
 
         }
 
+
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
+        public void ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull()
+        {
+            // Arrange
+            var campaignEntry = GetCampaignEntry("Ring of Spell Turning");
+
+            // Act
+            var magicItem = new SRDMagicItem(campaignEntry);
+            var convertedCampaignEntry = magicItem.ToCampaignEntry();
+
+            // Assert
+            Assert.IsNotNull(convertedCampaignEntry);
+            Assert.IsNotNull(convertedCampaignEntry.RawPublic);
+            Assert.IsNull(convertedCampaignEntry.RawText);
+
+        }
+
         private static CampaignEntry GetCampaignEntry(string TagValue)
         {
             // Arrange
