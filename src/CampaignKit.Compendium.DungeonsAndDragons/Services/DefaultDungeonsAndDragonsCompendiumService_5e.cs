@@ -81,7 +81,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                 return;
             }
 
-            var creatureList = new List<ICreature>();
+            var creatureList = new List<IGameComponent>();
             foreach (var compendium in compendiums)
             {
                 this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
@@ -125,10 +125,10 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
 
                     // Convert each object to Common.Creature and add it to the collection if it doesn't already exist.
                     // Cast the deserialized list to the interface type
-                    IEnumerable<ICreature> creatures = (IEnumerable<ICreature>)(sourceDataSetParsed ?? new List<ICreature>());
+                    IEnumerable<IGameComponent> creatures = (IEnumerable<IGameComponent>)(sourceDataSetParsed ?? new List<IGameComponent>());
 
                     // Convert each creature to the standard format
-                    foreach (ICreature creature in creatures.Take(sourceDataSet.ExportLimit ?? int.MaxValue))
+                    foreach (IGameComponent creature in creatures.Take(sourceDataSet.ExportLimit ?? int.MaxValue))
                     {
                         this.logger.LogDebug("Converting creature to standard format: {Name}.", creature.Name);
                         if (licenseParsed != null && licenseParsed is List<License> list && list.Count > 0)

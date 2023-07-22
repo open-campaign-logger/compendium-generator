@@ -110,14 +110,38 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
                 {
                     foreach (var campaignEntry in campaign.CampaignEntries)
                     {
-                        // Check if the CampaignEntry contains the label "Monster"
-                        if (campaignEntry != null && campaignEntry.Labels != null && campaignEntry.Labels.Contains("Monster"))
+                        // Check if the CampaignEntry contains labels
+                        if (campaignEntry != null && campaignEntry.Labels != null)
                         {
-                            // Create a new SRDCreature object from the CampaignEntry
-                            var creature = new SRDCreature(campaignEntry);
+                            // Process monsters
+                            if (campaignEntry.Labels.Contains("Monster"))
+                            {
+                                // Create a new SRDCreature object from the CampaignEntry
+                                var creature = new SRDCreature(campaignEntry);
 
-                            // Add the creature to the destinationCampaign
-                            destinationCampaign.CampaignEntries.Add(creature.ToCampaignEntry());
+                                // Add the creature to the destination Campaign
+                                destinationCampaign.CampaignEntries.Add(creature.ToCampaignEntry());
+                            }
+
+                            // Process spells
+                            if (campaignEntry.Labels.Contains("Spell"))
+                            {
+                                // Create a new SRDSpell object from the CampaignEntry
+                                var creature = new SRDSpell(campaignEntry);
+
+                                // Add the spell to the destination Campaign
+                                destinationCampaign.CampaignEntries.Add(creature.ToCampaignEntry());
+                            }
+
+                            // Process magic items
+                            if (campaignEntry.Labels.Contains("Magic Items"))
+                            {
+                                // Create a new SRDMagicItem object from the CampaignEntry
+                                var magicItem = new SRDMagicItem(campaignEntry);
+
+                                // Add the magic item to the destination Campaign
+                                destinationCampaign.CampaignEntries.Add(magicItem.ToCampaignEntry());
+                            }
                         }
                     }
                 }

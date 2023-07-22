@@ -25,7 +25,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
     /// <summary>
     /// Class representing a creature from the Old School Essentials System Reference Document (SRD).
     /// </summary>
-    public partial class SRDCreature : ICreature
+    public partial class SRDCreature : IGameComponent
     {
         /// <summary>
         /// Represents a read-only instance of a CampaignEntry object.
