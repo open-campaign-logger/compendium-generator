@@ -27,7 +27,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
     /// <summary>
     /// This class is used to represent a creature.
     /// </summary>
-    public class Creature : ICreature
+    public class Creature : IGameComponent
     {
         /// <summary>
         /// Gets or sets acrobatics skill bonus.

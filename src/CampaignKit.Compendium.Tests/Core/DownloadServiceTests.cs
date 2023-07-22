@@ -1,6 +1,5 @@
 ﻿// Unit Test
 using CampaignKit.Compendium.Core.Services;
-using CampaignKit.Compendium.Utility;
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -114,8 +113,7 @@ namespace CampaignKit.Compendium.Tests.Core
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                .AddEnvironmentVariables()
-                .AddUserSecrets<Program>();
+                .AddEnvironmentVariables();
 
             var configuration = builder.Build(); // Build the configuration
 

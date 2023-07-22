@@ -7,22 +7,30 @@
 
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
+    <UserSecretsId>b9b3fab0-78ed-402c-88ad-276692431aab</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="TestFiles\aboleth.json" />
-    <None Remove="TestFiles\backup_holler_spider.json" />
-    <None Remove="TestFiles\sulsha.json" />
+    <None Remove="OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json" />
+    <None Remove="DungeonsAndDragons\TestFiles\aboleth.json" />
+    <None Remove="DungeonsAndDragons\TestFiles\backup_holler_spider.json" />
+    <None Remove="DungeonsAndDragons\TestFiles\sulsha.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="TestFiles\aboleth.json">
+    <Content Include="DungeonsAndDragons\TestFiles\aboleth.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="TestFiles\backup_holler_spider.json">
+    <Content Include="DungeonsAndDragons\TestFiles\backup_holler_spider.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="TestFiles\sulsha.json">
+    <Content Include="DungeonsAndDragons\TestFiles\sulsha.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -45,7 +53,6 @@
     <ProjectReference Include="..\CampaignKit.Compendium.Core\CampaignKit.Compendium.Core.csproj" />
     <ProjectReference Include="..\CampaignKit.Compendium.DungeonsAndDragons\CampaignKit.Compendium.DungeonsAndDragons.csproj" />
     <ProjectReference Include="..\CampaignKit.Compendium.OldSchoolEssentials\CampaignKit.Compendium.OldSchoolEssentials.csproj" />
-    <ProjectReference Include="..\CampaignKit.Compendium.Utility\CampaignKit.Compendium.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>

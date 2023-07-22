@@ -25,7 +25,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts
     /// <summary>
     /// Class representing a creature from the Dungeons &amp; Dragons materials published by Kobold Press.
     /// </summary>
-    public class TomeOfBeastsCreature : ICreature
+    public class TomeOfBeastsCreature : IGameComponent
     {
         /// <summary>
         /// Gets or sets the creature's Acrobatics skill, representing its ability to perform tasks
