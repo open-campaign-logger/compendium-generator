@@ -71,10 +71,10 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
         public async Task CreateCompendiums()
         {
             this.logger.LogDebug("Processing compendiums for service: {service}.", typeof(IDungeonsAndDragonsCompendiumService_5e).FullName);
-            var rootDataDirectory = this.configurationService.GetRootDataDirectory();
+            var rootDataDirectory = this.configurationService.GetPublicDataDirectory();
             var serviceName = typeof(IDungeonsAndDragonsCompendiumService_5e).FullName
                 ?? throw new Exception($"Unable to determine service name for class: {typeof(IDungeonsAndDragonsCompendiumService_5e).FullName}");
-            var compendiums = this.configurationService.GetCompendiumsForService(serviceName);
+            var compendiums = this.configurationService.GetPublicCompendiumsForService(serviceName);
             if (compendiums == null || compendiums.Count == 0)
             {
                 this.logger.LogInformation("No compendiums to process for service: {service}.", typeof(IDungeonsAndDragonsCompendiumService_5e).FullName);

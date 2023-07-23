@@ -45,32 +45,61 @@ namespace CampaignKit.Compendium.Core.Services
         }
 
         /// <summary>
-        /// This method returns the root data directory from the configuration or a default path if
-        /// it is not set.
+        /// This method returns the public data directory from the configuration
+        /// or a default path if it is not set.
         /// </summary>
-        /// <returns>The root data directory.</returns>
-        public string GetRootDataDirectory()
+        /// <returns>The public data directory.</returns>
+        public string GetPublicDataDirectory()
         {
-            var rootFolder = this.configuration.GetValue<string>("RootDataFolder");
+            var rootFolder = this.configuration.GetValue<string>("PublicDataFolder");
             if (string.IsNullOrEmpty(rootFolder))
             {
-                rootFolder = Path.Combine(Path.GetTempPath(), "CompendiumGenerator");
+                rootFolder = Path.Combine(Path.GetTempPath(), "CompendiumGenerator", "Public");
+            }
+
+            return rootFolder;
+        }
+
+        /// <summary>
+        /// This method returns the private data directory from the configuration
+        /// or a default path if it is not set.
+        /// </summary>
+        /// <returns>The private data directory.</returns>
+        public string GetPrivateDataDirectory()
+        {
+            var rootFolder = this.configuration.GetValue<string>("PrivateDataFolder");
+            if (string.IsNullOrEmpty(rootFolder))
+            {
+                rootFolder = Path.Combine(Path.GetTempPath(), "CompendiumGenerator", "Private");
             }
 
             return rootFolder;
         }
 
         /// <inheritdoc/>
-        public List<Compendium> GetCompendiumsForService(string serviceName)
+        public List<PublicCompendium> GetPublicCompendiumsForService(string serviceName)
         {
-            var compendiums = this.configuration.GetSection("Compendiums").Get<List<Compendium>>() ?? new List<Compendium>();
+            var compendiums = this.configuration.GetSection("PublicCompendiums").Get<List<PublicCompendium>>() ?? new List<PublicCompendium>();
             return compendiums.Where(c => c.CompendiumService.StartsWith(serviceName)).ToList();
         }
 
         /// <inheritdoc/>
-        public List<Compendium> GetAllCompendiums()
+        public List<PublicCompendium> GetAllPublicCompendiums()
         {
-            return this.configuration.GetSection("Compendiums").Get<List<Compendium>>() ?? new List<Compendium>();
+            return this.configuration.GetSection("PublicCompendiums").Get<List<PublicCompendium>>() ?? new List<PublicCompendium>();
+        }
+
+        /// <inheritdoc/>
+        public List<PublicCompendium> GetPrivateCompendiumsForService(string serviceName)
+        {
+            var compendiums = this.configuration.GetSection("PrivateCompendiums").Get<List<PublicCompendium>>() ?? new List<PublicCompendium>();
+            return compendiums.Where(c => c.CompendiumService.StartsWith(serviceName)).ToList();
+        }
+
+        /// <inheritdoc/>
+        public List<PublicCompendium> GetAllPrivateCompendiums()
+        {
+            return this.configuration.GetSection("PrivateCompendiums").Get<List<PublicCompendium>>() ?? new List<PublicCompendium>();
         }
     }
 }

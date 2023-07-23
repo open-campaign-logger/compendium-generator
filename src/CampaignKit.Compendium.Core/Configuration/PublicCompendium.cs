@@ -1,4 +1,4 @@
-﻿// <copyright file="Compendium.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="PublicCompendium.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,9 +17,10 @@
 namespace CampaignKit.Compendium.Core.Configuration
 {
     /// <summary>
-    /// Represents a Compendium configuration within the application.
+    /// Represents the configuration of an open-source compendium within the application.
+    /// These should be defined and shared in the appsettings.json file.
     /// </summary>
-    public class Compendium
+    public class PublicCompendium
     {
         /// <summary>
         /// Gets or sets the name of the CompendiumService to use for processing this compendium.
