@@ -60,10 +60,10 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
         public async Task CreateCompendiums()
         {
             this.logger.LogDebug("Processing compendiums for service: {service}.", typeof(IOldSchoolEssentialsCompendiumService).FullName);
-            var rootDataDirectory = this.configurationService.GetRootDataDirectory();
+            var rootDataDirectory = this.configurationService.GetPublicDataDirectory();
             var serviceName = typeof(IOldSchoolEssentialsCompendiumService).FullName
                 ?? throw new Exception($"Unable to determine service name for class: {typeof(IOldSchoolEssentialsCompendiumService).FullName}");
-            var compendiums = this.configurationService.GetCompendiumsForService(serviceName);
+            var compendiums = this.configurationService.GetPublicCompendiumsForService(serviceName);
             if (compendiums == null || compendiums.Count == 0)
             {
                 this.logger.LogInformation("No compendiums to process for service: {service}.", typeof(IOldSchoolEssentialsCompendiumService).FullName);

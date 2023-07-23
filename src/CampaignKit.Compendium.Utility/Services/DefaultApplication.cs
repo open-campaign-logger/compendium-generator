@@ -103,7 +103,7 @@ namespace CampaignKit.Compendium.Utility.Services
             }
 
             // Retrieve all compendiums from the configuration
-            var compendiums = this.configurationService.GetAllCompendiums()
+            var compendiums = this.configurationService.GetAllPublicCompendiums()
                 ?? throw new Exception("No compendiums found in application configuration.");
 
             // Process each compendium

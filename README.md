@@ -48,9 +48,14 @@ This is especially helpful for the `RootDataFolder` configuration element found 
 
 ```json
 {
-  // Location to be used by the program for storage of downloaded source files
-  // and for the generation of compendium files.
-  "RootDataFolder": "D:\\source\\compendium-generator\\data"
+  // List of public compendiums to process.
+  "PrivateCompendiums": [...]
+  // Location to be used by the program for storage of downloaded open-source
+  // TTRPG data files and for the generation of Campaign Logger compendium files.
+  "PublicDataFolder": "D:\\source\\compendium-generator\\public",
+  // Location to be used by the program for storage of private
+  // TTRPG data files and for the generation of Campaign Logger compendium files.
+  "PrivateDataFolder": "D:\\source\\compendium-generator\\private",
 }
 ```
 
@@ -62,13 +67,20 @@ The following configuration elements apply to all compendiums:
   "Environments": {
     ...
   },
-  // This is where source data sets will be downloaded to and where compendiums
-  // will be generated.  
+  // This is where source data sets for private compendiums will be accessed
+  // and where compendiums will be generated.  
   // 
   // If you leave this blank files will be stored in a temporary directory.
-  // Windows Temporary Directory: `C:\Users\[Username]\AppData\Local\Temp`
+  // Windows Temporary Directory: `C:\Users\[Username]\AppData\Local\Temp\CampaignCompendium\Private`
   // LinuxTemporary Directory: Resolves to the value of the environment variable `TMPDIR`, which is usually set to `/tmp`.
-  "RootDataFolder": ""
+  "PrivateDataFolder": "",
+  // This is where source data sets for public compendiums will be downloaded
+  // to and where compendiums will be generated.  
+  // 
+  // If you leave this blank files will be stored in a temporary directory.
+  // Windows Temporary Directory: `C:\Users\[Username]\AppData\Local\Temp\CampaignCompendium\Public`
+  // LinuxTemporary Directory: Resolves to the value of the environment variable `TMPDIR`, which is usually set to `/tmp`.
+  "PublicDataFolder": ""
   ....
 ```
 
@@ -92,8 +104,8 @@ The application is currently configured to create two different compendiums from
 #### Configuration
 ```json
 {
-    // List of compendiums to process.
-    "Compendiums": [{
+    // List of public compendiums to process.
+    "PublicCompendiums": [{
             // DI service class to use for processing this compendium.
             "CompendiumService": "CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e, CampaignKit.Compendium.DungeonsAndDragons.dll",
             // Description of the compendium.
@@ -137,7 +149,6 @@ The application is currently configured to create one compendium from this data:
 * **OSE Compendiums.json**
 
 #### Configuration
-
 At this time there is only one source data file for OSE.  It is embedded in the project itself so `SourceDataSets` configuration section is not required.
 ```json
     {
@@ -153,7 +164,11 @@ At this time there is only one source data file for OSE.  It is embedded in the 
 ```
 
 ### Markdown File Conversion
+The intent of this module is provide support for converting document in [Markdown](https://www.markdownguide.org/) format to a compendium that can be imported into the Campaign Logger application. 
+The module assumes that any line that starts all entries are denoted by a heading level 1 tag `# YOUR ENTRY TITLE`.
+All subsequent markdown will be copied directly into the resulting Campaign Entry.
 
+#### Configuration
 
 ## Contributing
 
@@ -172,6 +187,7 @@ At this time there is only one source data file for OSE.  It is embedded in the 
 1. Create a folder called `Services` and add the following:
     1. `I<YOUR SERVICE NAME>.cs` - interface inheriting from `ICompendiumService`.
     1. `Default<YOUR SERVICE NAME>.cs` - default implementation of the service.
+1. Copy the `stylecop.json` settings file from another project and place it in your project's root directory.
 1. Create a folder in `CampaignKit.Compendium.Tests` for your new module.  Add basic unit tests that can be run during the build pipeline to ensure that the overall application is working correctly.
 1. Reigster your service in `CampaignKit.Compendium.Utility.Program`:
 
