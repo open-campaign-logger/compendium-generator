@@ -39,29 +39,15 @@ namespace CampaignKit.Compendium.Core.Services
         string GetPublicDataDirectory();
 
         /// <summary>
-        /// Gets a list of open source compendiums configured for the specified service name.
-        /// </summary>
-        /// <param name="serviceName">The name of the service.</param>
-        /// <returns>A list of open source compendiums configured for the specified service name.</returns>
-        List<PublicCompendium> GetPublicCompendiumsForService(string serviceName);
-
-        /// <summary>
         /// Gets a list of all configured open source compendiums.
         /// </summary>
         /// <returns>A list of configured open source compendiums.</returns>
-        List<PublicCompendium> GetAllPublicCompendiums();
-
-        /// <summary>
-        /// Gets a list of private compendiums configured for the specified service name.
-        /// </summary>
-        /// <param name="serviceName">The name of the service.</param>
-        /// <returns>A list of private compendiums configured for the specified service name.</returns>
-        List<PublicCompendium> GetPrivateCompendiumsForService(string serviceName);
+        List<ICompendium> GetAllPublicCompendiums();
 
         /// <summary>
         /// Gets a list of all configured private compendiums.
         /// </summary>
         /// <returns>A list of configured private compendiums.</returns>
-        List<PublicCompendium> GetAllPrivateCompendiums();
+        List<ICompendium> GetAllPrivateCompendiums();
     }
 }

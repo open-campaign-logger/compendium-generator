@@ -20,6 +20,7 @@ namespace CampaignKit.Compendium.Utility.Services
     using System.Reflection;
     using System.Threading.Tasks;
 
+    using CampaignKit.Compendium.Core.Configuration;
     using CampaignKit.Compendium.Core.Services;
 
     using Microsoft.Extensions.DependencyInjection;
@@ -103,45 +104,58 @@ namespace CampaignKit.Compendium.Utility.Services
             }
 
             // Retrieve all compendiums from the configuration
-            var compendiums = this.configurationService.GetAllPublicCompendiums()
-                ?? throw new Exception("No compendiums found in application configuration.");
+            var publicCompendiums = this.configurationService.GetAllPublicCompendiums();
 
-            // Process each compendium
-            foreach (var comp in compendiums)
+            // Process each public compendium
+            foreach (var comp in publicCompendiums)
             {
-                // Ensure that a service name has been provided for the compendium
-                if (string.IsNullOrWhiteSpace(comp.CompendiumService))
-                {
-                    throw new Exception($"Compendium {comp.Title} does not have an associated service.");
-                }
+                await this.ProcessCompendium(comp, this.configurationService.GetPublicDataDirectory());
+            }
 
-                // Split the CompendiumService string into class name and assembly name
-                var classNameParts = comp.CompendiumService.Split(",");
+            // Retrieve all private compendiums from the configuration
+            var privateCompendiums = this.configurationService.GetAllPrivateCompendiums();
 
-                // Ensure that class and package have both been provided.
-                if (classNameParts.Length != 2)
-                {
-                    throw new Exception($"Wrong number of elements specified for {nameof(comp.CompendiumService)} parameter.  Expecting \"class name, assembly name\".");
-                }
-
-                // Load the assembly containing the compendium service
-                var className = classNameParts[0].Trim();
-                var assemblyName = classNameParts[1].Trim();
-                Assembly assembly = Assembly.LoadFrom(assemblyName);
-
-                // Get the type of the compendium service
-                var serviceType = assembly.GetType(className)
-                    ?? throw new Exception($"Unable to load class: {className}");
-
-                // Retrieve an instance of the compendium service from the service provider
-                ICompendiumService compendiumService = (ICompendiumService)this.serviceProvider.GetRequiredService(serviceType)
-                    ?? throw new Exception($"Unable to retrieve service: {serviceType.FullName}");
-
-                // Create the compendiums
-                await compendiumService.CreateCompendiums();
+            // Process each private compendium
+            foreach (var comp in privateCompendiums)
+            {
+                await this.ProcessCompendium(comp, this.configurationService.GetPrivateDataDirectory());
             }
 
             this.logger.LogDebug("Stopping application : {application}.", nameof(DefaultApplication));
+        }
+
+        private async Task ProcessCompendium(ICompendium comp, string rootDataDirectory)
+        {
+            // Ensure that a service name has been provided for the compendium
+            if (string.IsNullOrWhiteSpace(comp.CompendiumService))
+            {
+                throw new Exception($"Compendium {comp.Title} does not have an associated service.");
+            }
+
+            // Split the CompendiumService string into class name and assembly name
+            var classNameParts = comp.CompendiumService.Split(",");
+
+            // Ensure that class and package have both been provided.
+            if (classNameParts.Length != 2)
+            {
+                throw new Exception($"Wrong number of elements specified for {nameof(comp.CompendiumService)} parameter.  Expecting \"class name, assembly name\".");
+            }
+
+            // Load the assembly containing the compendium service
+            var className = classNameParts[0].Trim();
+            var assemblyName = classNameParts[1].Trim();
+            Assembly assembly = Assembly.LoadFrom(assemblyName);
+
+            // Get the type of the compendium service
+            var serviceType = assembly.GetType(className)
+                ?? throw new Exception($"Unable to load class: {className}");
+
+            // Retrieve an instance of the compendium service from the service provider
+            ICompendiumService compendiumService = (ICompendiumService)this.serviceProvider.GetRequiredService(serviceType)
+                ?? throw new Exception($"Unable to retrieve service: {serviceType.FullName}");
+
+            // Create the compendiums
+            await compendiumService.CreateCompendiums(comp, rootDataDirectory);
         }
     }
 }

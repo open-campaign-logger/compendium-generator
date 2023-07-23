@@ -20,7 +20,7 @@ namespace CampaignKit.Compendium.Core.Configuration
     /// Represents the configuration of an open-source compendium within the application.
     /// These should be defined and shared in the appsettings.json file.
     /// </summary>
-    public class PublicCompendium
+    public class PublicCompendium : ICompendium
     {
         /// <summary>
         /// Gets or sets the name of the CompendiumService to use for processing this compendium.
