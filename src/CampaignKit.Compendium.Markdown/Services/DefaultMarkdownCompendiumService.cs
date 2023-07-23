@@ -20,6 +20,7 @@ namespace CampaignKit.Compendium.Markdown.Services
 
     using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Common;
+    using CampaignKit.Compendium.Core.Configuration;
     using CampaignKit.Compendium.Core.Services;
 
     using Microsoft.Extensions.Logging;
@@ -60,53 +61,40 @@ namespace CampaignKit.Compendium.Markdown.Services
         }
 
         /// <inheritdoc/>
-        public async Task CreateCompendiums()
+        public async Task CreateCompendiums(ICompendium compendium, string rootDataDirectory)
         {
-            this.logger.LogDebug("Processing compendiums for service: {service}.", typeof(IMarkdownCompendiumService).FullName);
-            var rootDataDirectory = this.configurationService.GetPublicDataDirectory();
-            var serviceName = typeof(IMarkdownCompendiumService).FullName
-                ?? throw new Exception($"Unable to determine service name for class: {typeof(IMarkdownCompendiumService).FullName}");
-            var compendiums = this.configurationService.GetPublicCompendiumsForService(serviceName);
-            if (compendiums == null || compendiums.Count == 0)
-            {
-                this.logger.LogInformation("No compendiums to process for service: {service}.", typeof(IMarkdownCompendiumService).FullName);
-                return;
-            }
 
             var gameComponentList = new List<IGameComponent>();
-            foreach (var compendium in compendiums)
+            this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
+
+            // Download data sets
+            foreach (var sourceDataSet in compendium.SourceDataSets)
             {
-                this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
-
-                // Download data sets
-                foreach (var sourceDataSet in compendium.SourceDataSets)
-                {
-                }
-
-                // Create CampaignLogger File
-                this.logger.LogInformation("Creating CampaignLogger file for compendium: {compendium}.", compendium.Title);
-                var campaignLoggerFile = new Campaign()
-                {
-                    Version = 2,
-                    Type = "campaign",
-                    Title = compendium.Title,
-                    Description = compendium.Description,
-                    CampaignEntries = new List<CampaignEntry>(),
-                    Logs = new List<Log>(),
-                    ImageUrl = string.Empty,
-                };
-
-                foreach (var creature in gameComponentList)
-                {
-                    campaignLoggerFile.CampaignEntries.Add(creature.ToCampaignEntry());
-                }
-
-                string campaignLoggerFileString = JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented);
-
-                File.WriteAllText(Path.Combine(rootDataDirectory, compendium.Title + ".json"), campaignLoggerFileString);
-
-                this.logger.LogInformation("Processing of compendium complete: {compendium}.", compendium.Title);
             }
+
+            // Create CampaignLogger File
+            this.logger.LogInformation("Creating CampaignLogger file for compendium: {compendium}.", compendium.Title);
+            var campaignLoggerFile = new Campaign()
+            {
+                Version = 2,
+                Type = "campaign",
+                Title = compendium.Title,
+                Description = compendium.Description,
+                CampaignEntries = new List<CampaignEntry>(),
+                Logs = new List<Log>(),
+                ImageUrl = string.Empty,
+            };
+
+            foreach (var creature in gameComponentList)
+            {
+                campaignLoggerFile.CampaignEntries.Add(creature.ToCampaignEntry());
+            }
+
+            string campaignLoggerFileString = JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented);
+
+            File.WriteAllText(Path.Combine(rootDataDirectory, compendium.Title + ".json"), campaignLoggerFileString);
+
+            this.logger.LogInformation("Processing of compendium complete: {compendium}.", compendium.Title);
         }
     }
 }

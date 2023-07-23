@@ -24,11 +24,11 @@ namespace CampaignKit.Compendium.Tests.Core
             sourceHelper.DerivePathAndFileNames(sourceDataUri, out string path, out string file);
 
             // Act
-            await sourceHelper.DownloadFile(sourceDataUri, overwrite);
+            await sourceHelper.DownloadFile(sourceDataUri, configurationService?.GetPrivateDataDirectory() ?? string.Empty, overwrite);
 
             // Assert
-            Assert.IsTrue(Directory.Exists(Path.Combine(GetConfigurationService().GetPublicDataDirectory(), path)));
-            Assert.IsTrue(File.Exists(Path.Combine(GetConfigurationService().GetPublicDataDirectory(), path, file)));
+            Assert.IsTrue(Directory.Exists(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path)));
+            Assert.IsTrue(File.Exists(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path, file)));
         }
 
         [TestMethod]
@@ -42,14 +42,14 @@ namespace CampaignKit.Compendium.Tests.Core
             sourceHelper.DerivePathAndFileNames(sourceDataUri, out string path, out string file);
 
             // Act
-            Directory.CreateDirectory(Path.Combine(GetConfigurationService().GetPublicDataDirectory(), path));
-            File.WriteAllText(Path.Combine(GetConfigurationService().GetPublicDataDirectory(), path, file), string.Empty);
-            await sourceHelper.DownloadFile(sourceDataUri, overwrite);
-            FileInfo fileInfoAfter = new(Path.Combine(GetConfigurationService().GetPublicDataDirectory(), path, file));
+            Directory.CreateDirectory(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path));
+            File.WriteAllText(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path, file), string.Empty);
+            await sourceHelper.DownloadFile(sourceDataUri, configurationService?.GetPrivateDataDirectory() ?? string.Empty, overwrite);
+            FileInfo fileInfoAfter = new(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path, file));
 
             // Assert
-            Assert.IsTrue(Directory.Exists(Path.Combine(GetConfigurationService().GetPublicDataDirectory(), path)));
-            Assert.IsTrue(File.Exists(Path.Combine(GetConfigurationService().GetPublicDataDirectory(), path, file)));
+            Assert.IsTrue(Directory.Exists(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path)));
+            Assert.IsTrue(File.Exists(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path, file)));
             Assert.AreNotEqual(0, fileInfoAfter.Length);
         }
 
@@ -64,14 +64,14 @@ namespace CampaignKit.Compendium.Tests.Core
             sourceHelper.DerivePathAndFileNames(sourceDataUri, out string path, out string file);
 
             // Act
-            Directory.CreateDirectory(Path.Combine(GetConfigurationService().GetPublicDataDirectory(), path));
-            File.WriteAllText(Path.Combine(GetConfigurationService().GetPublicDataDirectory(), path, file), string.Empty);
-            await sourceHelper.DownloadFile(sourceDataUri, overwrite);
-            FileInfo fileInfoAfter = new(Path.Combine(GetConfigurationService().GetPublicDataDirectory(), path, file));
+            Directory.CreateDirectory(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path));
+            File.WriteAllText(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path, file), string.Empty);
+            await sourceHelper.DownloadFile(sourceDataUri, configurationService?.GetPrivateDataDirectory() ?? string.Empty, overwrite);
+            FileInfo fileInfoAfter = new(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path, file));
 
             // Assert
-            Assert.IsTrue(Directory.Exists(Path.Combine(GetConfigurationService().GetPublicDataDirectory(), path)));
-            Assert.IsTrue(File.Exists(Path.Combine(GetConfigurationService().GetPublicDataDirectory(), path, file)));
+            Assert.IsTrue(Directory.Exists(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path)));
+            Assert.IsTrue(File.Exists(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path, file)));
             Assert.AreEqual(0, fileInfoAfter.Length);
 
         }
@@ -83,11 +83,11 @@ namespace CampaignKit.Compendium.Tests.Core
             configurationService ??= GetConfigurationService();
 
             // Check if the directory exists.
-            if (Directory.Exists(configurationService.GetPublicDataDirectory()))
+            if (Directory.Exists(configurationService.GetPrivateDataDirectory()))
             {
                 // If the directory exists, delete it. The 'true' parameter means 
                 // all files and subdirectories will also be deleted.
-                Directory.Delete(configurationService.GetPublicDataDirectory(), true);
+                Directory.Delete(configurationService.GetPrivateDataDirectory(), true);
             }
         }
 
@@ -95,11 +95,11 @@ namespace CampaignKit.Compendium.Tests.Core
         public void TestCleanup()
         {
             // Check if the directory exists.
-            if (Directory.Exists(GetConfigurationService().GetPublicDataDirectory()))
+            if (Directory.Exists(GetConfigurationService().GetPrivateDataDirectory()))
             {
                 // If the directory exists, delete it. The 'true' parameter means 
                 // all files and subdirectories will also be deleted.
-                Directory.Delete(GetConfigurationService().GetPublicDataDirectory(), true);
+                Directory.Delete(GetConfigurationService().GetPrivateDataDirectory(), true);
             }
         }
 

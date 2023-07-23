@@ -17,6 +17,7 @@
 namespace CampaignKit.Compendium.Core.Services
 {
     using System;
+    using System.Collections.Generic;
     using System.Threading.Tasks;
     using CampaignKit.Compendium.Core.Configuration;
     using Microsoft.Extensions.Configuration;
@@ -77,29 +78,19 @@ namespace CampaignKit.Compendium.Core.Services
         }
 
         /// <inheritdoc/>
-        public List<PublicCompendium> GetPublicCompendiumsForService(string serviceName)
+        public List<ICompendium> GetAllPublicCompendiums()
         {
-            var compendiums = this.configuration.GetSection("PublicCompendiums").Get<List<PublicCompendium>>() ?? new List<PublicCompendium>();
-            return compendiums.Where(c => c.CompendiumService.StartsWith(serviceName)).ToList();
+            var result = new List<ICompendium>();
+            result.AddRange(this.configuration.GetSection("PublicCompendiums").Get<List<PublicCompendium>>() ?? new List<PublicCompendium>());
+            return result;
         }
 
         /// <inheritdoc/>
-        public List<PublicCompendium> GetAllPublicCompendiums()
+        public List<ICompendium> GetAllPrivateCompendiums()
         {
-            return this.configuration.GetSection("PublicCompendiums").Get<List<PublicCompendium>>() ?? new List<PublicCompendium>();
-        }
-
-        /// <inheritdoc/>
-        public List<PublicCompendium> GetPrivateCompendiumsForService(string serviceName)
-        {
-            var compendiums = this.configuration.GetSection("PrivateCompendiums").Get<List<PublicCompendium>>() ?? new List<PublicCompendium>();
-            return compendiums.Where(c => c.CompendiumService.StartsWith(serviceName)).ToList();
-        }
-
-        /// <inheritdoc/>
-        public List<PublicCompendium> GetAllPrivateCompendiums()
-        {
-            return this.configuration.GetSection("PrivateCompendiums").Get<List<PublicCompendium>>() ?? new List<PublicCompendium>();
+            var result = new List<ICompendium>();
+            result.AddRange(this.configuration.GetSection("PrivateCompendiums").Get<List<PublicCompendium>>() ?? new List<PublicCompendium>());
+            return result;
         }
     }
 }
