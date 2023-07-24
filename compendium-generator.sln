@@ -7,6 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.Core
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7952A718-126D-4D9E-AD58-EB34FAC8939F}"
 	ProjectSection(SolutionItems) = preProject
+		CONTRIBUTING.md = CONTRIBUTING.md
 		LICENSE = LICENSE
 		doc\Logo.png = doc\Logo.png
 		README.md = README.md
@@ -20,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.Test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.OldSchoolEssentials", "src\CampaignKit.Compendium.OldSchoolEssentials\CampaignKit.Compendium.OldSchoolEssentials.csproj", "{87517D05-82AF-44C6-BEC3-620E501B0CB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampaignKit.Compendium.Markdown", "src\CampaignKit.Compendium.Markdown\CampaignKit.Compendium.Markdown.csproj", "{BA527A3E-F95D-41CB-9639-3A832D1CAB9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.Markdown", "src\CampaignKit.Compendium.Markdown\CampaignKit.Compendium.Markdown.csproj", "{BA527A3E-F95D-41CB-9639-3A832D1CAB9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
