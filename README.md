@@ -41,12 +41,19 @@ dotnet run --project CampaignKit.Compendium.Utility
 
 ## Configuration
 
-The application uses a standard .NET `appsettings.json` file for configuration. Notable settings include:
+The application uses a standard .NET `appsettings.json` file for configuration.
+Visual Studio's built-in support for user secrets can be used to override configuration during development
+and also to support private configurations that are not shared back to the code repository.
 
-* `PrivateDataFolder`: Directory for accessing and storing **private** compendium source data sets. If left blank, files are stored in the OS's default temporary directory.
+### Public Compendiums
+The following configuration elements are usually defined in `appsettings.json` and shared back to the repository.
 * `PublicDataFolder`: Directory for downloading and storing **public** compendium source data sets. If left blank, files are stored in the OS's default temporary directory.
+* `PublicCompendiums`: Compendiums that are built from open-source TTRPG rulesets into the `PublicDataFolder`.
 
-Visual Studio's built-in support for user secrets can be used to override configuration during development. This is particularly helpful for `PrivateCompendiums`, `PublicDataFolder`, and `PrivateDataFolder` settings, which may vary in each developer's environment and should not be pushed back to the repository.
+### Private Compendiums
+The following configuration elements are usually defined in `secrets.json` and excluded from the repository.
+* `PrivateDataFolder`: Directory for accessing and storing **private** compendium source data sets. If left blank, files are stored in the OS's default temporary directory.
+* `PrivateCompendiums`: Compendiums that are built from private rulesets into the `PrivateDataFolder`.
 
 ## Modules
 
