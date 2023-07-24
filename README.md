@@ -37,27 +37,8 @@ This will download the solution, install dependencies, perform a build, run auto
 
 ### General Configuration
 
+#### appsettings.json
 A standard .Net `appsettings.json` file is used to configure the application.
-
-
-Visual Studio has built in support for user secrets that you can use to provide configuration overrides during development.
-
-![User Secrets](doc/user-secrets.png)
-
-This is especially helpful for the `RootDataFolder` configuration element found in `appsettings.json` which will differ in each developer's environment.
-
-```json
-{
-  // List of public compendiums to process.
-  "PrivateCompendiums": [...]
-  // Location to be used by the program for storage of downloaded open-source
-  // TTRPG data files and for the generation of Campaign Logger compendium files.
-  "PublicDataFolder": "D:\\source\\compendium-generator\\public",
-  // Location to be used by the program for storage of private
-  // TTRPG data files and for the generation of Campaign Logger compendium files.
-  "PrivateDataFolder": "D:\\source\\compendium-generator\\private",
-}
-```
 
 The following configuration elements apply to all compendiums:
 
@@ -84,6 +65,28 @@ The following configuration elements apply to all compendiums:
   ....
 ```
 
+#### User Secrets
+Visual Studio has built in support for user secrets that you can use to provide configuration overrides during development.
+
+![User Secrets](doc/user-secrets.png)
+
+This is especially helpful for the `PrivateCompendiums`, `PublicDataFolder`, and `PrivateDataFolder` configuration elements which will differ in each developer's environment
+and should not be shared back to the repository.
+
+```json
+{
+  // List of private compendiums to process.
+  "PrivateCompendiums": [...]
+  // Location to be used by the program for storage of downloaded open-source
+  // TTRPG data files and for the generation of Campaign Logger compendium files.
+  "PublicDataFolder": "D:\\source\\compendium-generator\\public",
+  // Location to be used by the program for storage of private
+  // TTRPG data files and for the generation of Campaign Logger compendium files.
+  "PrivateDataFolder": "D:\\source\\compendium-generator\\private",
+}
+```
+
+
 ## Features
 
 The following compendiums are currently supported:
@@ -104,40 +107,34 @@ The application is currently configured to create two different compendiums from
 #### Configuration
 ```json
 {
-    // List of public compendiums to process.
-    "PublicCompendiums": [{
-            // DI service class to use for processing this compendium.
-            "CompendiumService": "CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e, CampaignKit.Compendium.DungeonsAndDragons.dll",
-            // Description of the compendium.
-            "Description": "Preformatted 5e monsters from the SRD and Kobold Press.",
-            // Image to use for the compendium.
-            "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
-            // List of source data sets to parse and compile into the compendium.
-            "SourceDataSets": [{
-                    // Limits number of items to parse from the source data set.
-                    // Generally this is only used for testing purposes when you only want a limited number of items to include in the compendium.
-                    "ExportLimit": 5,
-                    // Class to use for parsing license information.
-                    "LicenseDataParser": "CampaignKit.Compendium.DungeonsAndDragons.Common.License",
-                    // URI of license information.
-                    "LicenseDataURI": "https://raw.githubusercontent.com/open5e/open5e-api/main/data/WOTC_5e_SRD_v5.1/document.json",
-                    // Controls whether to always download source data files or to only download once.
-                    "OverwriteExisting": false,
-                    // Descriptive name of the source data set.
-                    "SourceDataSetName": "Dungeons & Dragons SRD - Monsters",
-                    // Class to use for parsing source data information.
-                    "SourceDataSetParser": "CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature",
-                    // URI of source data set.
-                    "SourceDataSetURI": "https://raw.githubusercontent.com/open5e/open5e-api/main/data/WOTC_5e_SRD_v5.1/monsters.json"
-                },
-                ...
-            ],
-            // Compendium title.
-            "Title": "5e Bestiary - Test"
+    // DI service class to use for processing this compendium.
+    "CompendiumService": "CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e, CampaignKit.Compendium.DungeonsAndDragons.dll",
+    // Description of the compendium.
+    "Description": "Preformatted 5e monsters from the SRD and Kobold Press.",
+    // Image to use for the compendium.
+    "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
+    // List of source data sets to parse and compile into the compendium.
+    "SourceDataSets": [{
+            // Limits number of items to parse from the source data set.
+            // Generally this is only used for testing purposes when you only want a limited number of items to include in the compendium.
+            "ExportLimit": 5,
+            // Class to use for parsing license information.
+            "LicenseDataParser": "CampaignKit.Compendium.DungeonsAndDragons.Common.License",
+            // URI of license information.
+            "LicenseDataURI": "https://raw.githubusercontent.com/open5e/open5e-api/main/data/WOTC_5e_SRD_v5.1/document.json",
+            // Controls whether to always download source data files or to only download once.
+            "OverwriteExisting": false,
+            // Descriptive name of the source data set.
+            "SourceDataSetName": "Dungeons & Dragons SRD - Monsters",
+            // Class to use for parsing source data information.
+            "SourceDataSetParser": "CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature",
+            // URI of source data set.
+            "SourceDataSetURI": "https://raw.githubusercontent.com/open5e/open5e-api/main/data/WOTC_5e_SRD_v5.1/monsters.json"
         },
         ...
     ],
-    ...
+    // Compendium title.
+    "Title": "5e Bestiary - Test"
 }
 
 ```
@@ -151,16 +148,16 @@ The application is currently configured to create one compendium from this data:
 #### Configuration
 At this time there is only one source data file for OSE.  It is embedded in the project itself so `SourceDataSets` configuration section is not required.
 ```json
-    {
-      // DI service class to use for processing this compendium.
-      "CompendiumService": "CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService, CampaignKit.Compendium.OldSchoolEssentials.dll",
-      // Description of the compendium.
-      "Description": "OSE monsters, spells and magic items from the SRD.",
-      // Image to use for the compendium.
-      "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
-      // Compendium title.
-      "Title": "OSE Compendium"
-    }
+{
+    // DI service class to use for processing this compendium.
+    "CompendiumService": "CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService, CampaignKit.Compendium.OldSchoolEssentials.dll",
+    // Description of the compendium.
+    "Description": "OSE monsters, spells and magic items from the SRD.",
+    // Image to use for the compendium.
+    "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
+    // Compendium title.
+    "Title": "OSE Compendium"
+}
 ```
 
 ### Markdown File Conversion
@@ -169,6 +166,30 @@ The module assumes that any line that starts all entries are denoted by a headin
 All subsequent markdown will be copied directly into the resulting Campaign Entry.
 
 #### Configuration
+Add the following to `PublicCompendiums` in `appsettings.json` or 'PrivateCompendiums` in "secrets.json".
+```json
+{
+    // DI service class to use for processing this compendium.
+    "CompendiumService": "CampaignKit.Compendium.Markdown.Services.IMarkdownCompendiumService, CampaignKit.Compendium.Markdown.dll",
+    // Description of the compendium.
+    "Description": "A collection of loot options for Dungeons and Dragons monsters.",
+    // Image to use for the compendium.
+    "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
+    // List of source data sets to parse and compile into the compendium.
+    "SourceDataSets": [
+    {
+        // Descriptive name of the source data set.
+        "SourceDataSetName": "Monster Loot - Monster Manual",
+        // Location of the file in the data directory
+        "SourceDataSetURI": "Monster Loot 1.md",
+        // Symbol to use for campaign entries derived from the source data.
+        "TagSymbol":  "~"
+    },
+    ...
+    ],
+    "Title": "5e Bestiary - Loot"
+}
+```
 
 ## Contributing
 

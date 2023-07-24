@@ -30,25 +30,16 @@ namespace CampaignKit.Compendium.Core.Services
         private readonly ILogger<DefaultDownloadService> logger;
 
         /// <summary>
-        /// Create a private readonly field to store an IConfigurationService instance.
-        /// </summary>
-        private readonly IConfigurationService configurationService;
-
-        /// <summary>
         /// Initializes a new instance of the <see cref="DefaultDownloadService"/> class.
         /// </summary>
         /// <param name="logger">The logger for the service.</param>
-        /// <param name="configurationService">Application configuration service.</param>
         /// <returns>
         /// A CompendiumSourceDownloader instance.
         /// </returns>
-        public DefaultDownloadService(ILogger<DefaultDownloadService> logger, IConfigurationService configurationService)
+        public DefaultDownloadService(ILogger<DefaultDownloadService> logger)
         {
             // Check if logger is null, if so throw an ArgumentNullException
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
-
-            // Check if configurationService is null, if so throw an ArgumentNullException
-            this.configurationService = configurationService ?? throw new ArgumentNullException(nameof(configurationService));
         }
 
         /// <summary>
