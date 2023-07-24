@@ -6,7 +6,7 @@ The following compendiums are currently supported by this module:
 A collection of open-sourced, 5e compatible monsters derived from the following [open5e-api ](https://github.com/open5e/open5e-api) data sets:
 * **Systems Reference Document** (Wizards of the Coast)
 * **Tome of Beasts**, (Kobold Press)
-* **Tome of Beasts2 2**, (Kobold Press)
+* **Tome of Beasts 2**, (Kobold Press)
 * **Tome of Beasts 3**, (Kobold Press)
 * **Creature Codex**, (Kobold Press)
 * **Monstrous Menagerie**, (Kobold Press)
