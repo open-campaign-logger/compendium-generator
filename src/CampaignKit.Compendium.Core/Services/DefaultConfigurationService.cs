@@ -92,5 +92,10 @@ namespace CampaignKit.Compendium.Core.Services
             result.AddRange(this.configuration.GetSection("PrivateCompendiums").Get<List<PublicCompendium>>() ?? new List<PublicCompendium>());
             return result;
         }
+
+        public Service GetService(string serviceName)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

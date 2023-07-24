@@ -49,5 +49,14 @@ namespace CampaignKit.Compendium.Core.Services
         /// </summary>
         /// <returns>A list of configured private compendiums.</returns>
         List<ICompendium> GetAllPrivateCompendiums();
+
+        /// <summary>
+        /// Gets the service configuration for the specified service name.
+        /// </summary>
+        /// <param name="serviceName">The name of the service to retrieve.</param>
+        /// <returns>
+        /// The service configuration for the specified service.
+        /// </returns>
+        Service GetService(string serviceName);
     }
 }
