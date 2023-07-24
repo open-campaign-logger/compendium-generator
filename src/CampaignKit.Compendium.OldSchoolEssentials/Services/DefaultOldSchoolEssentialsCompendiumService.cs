@@ -33,11 +33,6 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
     public class DefaultOldSchoolEssentialsCompendiumService : IOldSchoolEssentialsCompendiumService
     {
         /// <summary>
-        /// Create a private readonly field to store an IConfigurationService instance.
-        /// </summary>
-        private readonly IConfigurationService configurationService;
-
-        /// <summary>
         /// Create a private readonly field to store an ILogger instance
         /// with the type DungeonsAndDragonsService_5e.
         /// </summary>
@@ -47,23 +42,17 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
         /// Initializes a new instance of the <see cref="DefaultOldSchoolEssentialsCompendiumService"/> class.
         /// </summary>
         /// <param name="logger">The logger for the service.</param>
-        /// <param name="configurationService">Application configuration service.</param>
         /// <returns>
         /// A DefaultOldSchoolEssentialsCompendiumService instance.
         /// </returns>
-        public DefaultOldSchoolEssentialsCompendiumService(ILogger<DefaultOldSchoolEssentialsCompendiumService> logger, IConfigurationService configurationService)
+        public DefaultOldSchoolEssentialsCompendiumService(ILogger<DefaultOldSchoolEssentialsCompendiumService> logger)
         {
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            this.configurationService = configurationService ?? throw new ArgumentNullException(nameof(configurationService));
         }
 
         /// <inheritdoc/>
         public async Task CreateCompendiums(ICompendium compendium, string rootDataDirectory)
         {
-            this.logger.LogDebug("Processing compendiums for service: {service}.", typeof(IOldSchoolEssentialsCompendiumService).FullName);
-            var serviceName = typeof(IOldSchoolEssentialsCompendiumService).FullName
-                ?? throw new Exception($"Unable to determine service name for class: {typeof(IOldSchoolEssentialsCompendiumService).FullName}");
-
             this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
 
             // Create a campaign object to hold the new campaign entries.

@@ -16,6 +16,7 @@
 
 namespace CampaignKit.Compendium.Markdown.Services
 {
+    using System.Text;
     using System.Threading.Tasks;
 
     using CampaignKit.Compendium.Core.CampaignLogger;
@@ -63,13 +64,35 @@ namespace CampaignKit.Compendium.Markdown.Services
         /// <inheritdoc/>
         public async Task CreateCompendiums(ICompendium compendium, string rootDataDirectory)
         {
-
-            var gameComponentList = new List<IGameComponent>();
             this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
+
+            // Create local variables
+            var campaignEntries = new List<CampaignEntry>();
+            var stringBuilder = new StringBuilder();
+            var stringEntryName = string.Empty;
 
             // Download data sets
             foreach (var sourceDataSet in compendium.SourceDataSets)
             {
+                var lines = await File.ReadAllLinesAsync(Path.Combine(this.configurationService.GetPrivateDataDirectory(), sourceDataSet.SourceDataSetURI));
+                foreach (var line in lines)
+                {
+                    if (line.StartsWith("# "))
+                    {
+                        if (stringBuilder.Length > 0)
+                        {
+                            campaignEntries.Add(new CampaignEntry()
+                            {
+                                RawText = stringBuilder.ToString(),
+                                TagSymbol = sourceDataSet.TagSymbol,
+                                TagValue = stringEntryName,
+                            });
+                            stringBuilder.Clear();
+                        }
+                        stringEntryName = line[2..];
+                    }
+                    stringBuilder.AppendLine(line);
+                }
             }
 
             // Create CampaignLogger File
@@ -80,19 +103,16 @@ namespace CampaignKit.Compendium.Markdown.Services
                 Type = "campaign",
                 Title = compendium.Title,
                 Description = compendium.Description,
-                CampaignEntries = new List<CampaignEntry>(),
+                CampaignEntries = campaignEntries,
                 Logs = new List<Log>(),
                 ImageUrl = string.Empty,
             };
 
-            foreach (var creature in gameComponentList)
-            {
-                campaignLoggerFile.CampaignEntries.Add(creature.ToCampaignEntry());
-            }
-
             string campaignLoggerFileString = JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented);
 
-            File.WriteAllText(Path.Combine(rootDataDirectory, compendium.Title + ".json"), campaignLoggerFileString);
+            var fileName = Path.Combine(rootDataDirectory, compendium.Title + ".json");
+
+            File.WriteAllText(fileName, campaignLoggerFileString);
 
             this.logger.LogInformation("Processing of compendium complete: {compendium}.", compendium.Title);
         }
