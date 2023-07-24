@@ -166,7 +166,7 @@ Once a JSON deserialization class has been created perform the following steps t
 
 ## Licensing
 
-Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
+Copyright (c) 2017-2023 Jochen Linnemann, Cory Gill.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
