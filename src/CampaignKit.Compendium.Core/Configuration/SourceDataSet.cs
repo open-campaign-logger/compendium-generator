@@ -57,5 +57,10 @@ namespace CampaignKit.Compendium.Core.Configuration
         /// Gets or sets the Uniform Resource Identifier (URI) where the actual game source data is located.
         /// </summary>
         public string SourceDataSetURI { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Gets or sets the tag entry to use for campaign entries derived from this source.
+        /// </summary>
+        public string TagSymbol { get; set; } = string.Empty;
     }
 }

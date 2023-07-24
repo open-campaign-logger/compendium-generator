@@ -20,6 +20,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
 
     using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Common;
+    using CampaignKit.Compendium.Core.Configuration;
     using CampaignKit.Compendium.Core.Services;
     using CampaignKit.Compendium.DungeonsAndDragons.Common;
 
@@ -39,11 +40,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
         private readonly ILogger<DefaultDungeonsAndDragonsCompendiumService_5e> logger;
 
         /// <summary>
-        /// Create a private readonly field to store an IConfigurationService instance.
-        /// </summary>
-        private readonly IConfigurationService configurationService;
-
-        /// <summary>
         /// Crate a pricate readonly field to store an IDownloadService instance.
         /// </summary>
         private readonly IDownloadService downloadService;
@@ -53,122 +49,112 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
         /// </summary>
         /// <param name="downloadService">Source data download service.</param>
         /// <param name="logger">The logger for the service.</param>
-        /// <param name="configurationService">Application configuration service.</param>
         /// <returns>
         /// A DefaultDungeonsAndDragonsCompendiumService_5e instance.
         /// </returns>
         public DefaultDungeonsAndDragonsCompendiumService_5e(
             IDownloadService downloadService,
-            ILogger<DefaultDungeonsAndDragonsCompendiumService_5e> logger,
-            IConfigurationService configurationService)
+            ILogger<DefaultDungeonsAndDragonsCompendiumService_5e> logger)
         {
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            this.configurationService = configurationService ?? throw new ArgumentNullException(nameof(configurationService));
             this.downloadService = downloadService ?? throw new ArgumentNullException(nameof(downloadService));
         }
 
         /// <inheritdoc/>
-        public async Task CreateCompendiums()
+        public async Task CreateCompendiums(ICompendium compendium, string rootDataDirectory)
         {
             this.logger.LogDebug("Processing compendiums for service: {service}.", typeof(IDungeonsAndDragonsCompendiumService_5e).FullName);
-            var rootDataDirectory = this.configurationService.GetRootDataDirectory();
             var serviceName = typeof(IDungeonsAndDragonsCompendiumService_5e).FullName
                 ?? throw new Exception($"Unable to determine service name for class: {typeof(IDungeonsAndDragonsCompendiumService_5e).FullName}");
-            var compendiums = this.configurationService.GetCompendiumsForService(serviceName);
-            if (compendiums == null || compendiums.Count == 0)
-            {
-                this.logger.LogInformation("No compendiums to process for service: {service}.", typeof(IDungeonsAndDragonsCompendiumService_5e).FullName);
-                return;
-            }
 
             var creatureList = new List<IGameComponent>();
-            foreach (var compendium in compendiums)
+
+            this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
+
+            // Download data sets
+            foreach (var sourceDataSet in compendium.SourceDataSets)
             {
-                this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
+                // Download license file
+                this.downloadService.DerivePathAndFileNames(sourceDataSet.LicenseDataURI, out string licenseDirectory, out string licenseFile);
+                var licenseFilePath = Path.Combine(rootDataDirectory, licenseDirectory, licenseFile);
+                this.logger.LogInformation("Downloading license data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
+                await this.downloadService.DownloadFile(
+                    sourceDataSet.LicenseDataURI,
+                    rootDataDirectory,
+                    sourceDataSet.OverwriteExisting);
 
-                // Download data sets
-                foreach (var sourceDataSet in compendium.SourceDataSets)
+                // Parse license file
+                this.logger.LogInformation("Parsing local copy of license data from: {LicenseFilePath}.", licenseFilePath);
+                var licenseJSON = File.ReadAllText(Path.Combine(rootDataDirectory, licenseDirectory, licenseFile))
+                    ?? throw new Exception($"Unable to read license information from file: {licenseFilePath}.");
+                var licenseParserType = Type.GetType(sourceDataSet.LicenseDataParser)
+                    ?? throw new Exception($"Configuration parmater not defined: {nameof(sourceDataSet.LicenseDataParser)}.");
+                var licenseListType = typeof(List<>).MakeGenericType(licenseParserType);
+                var licenseParsed = JsonConvert.DeserializeObject(licenseJSON, licenseListType);
+
+                // Download SourceDataSet file
+                this.downloadService.DerivePathAndFileNames(sourceDataSet.SourceDataSetURI, out string sourceDataSetDirectory, out string sourceDataSetFile);
+                var sourceDataSetFilePath = Path.Combine(rootDataDirectory, sourceDataSetDirectory, sourceDataSetFile);
+                this.logger.LogInformation("Downloading SourceDataSet data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
+                await this.downloadService.DownloadFile(
+                    sourceDataSet.SourceDataSetURI,
+                    rootDataDirectory,
+                    sourceDataSet.OverwriteExisting);
+
+                // Parse SourceDataSet file
+                this.logger.LogInformation("Parsing local copy of SourceDataSet data from: {SourceDataSetFilePath}.", sourceDataSetFilePath);
+                var sourceDataSetJSON = File.ReadAllText(Path.Combine(rootDataDirectory, sourceDataSetDirectory, sourceDataSetFile))
+                    ?? throw new Exception($"Unable to read SourceDataSet information from file: {sourceDataSetFilePath}.");
+                var sourceDataSetParserType = Type.GetType(sourceDataSet.SourceDataSetParser)
+                    ?? throw new Exception($"Configuration parmater not defined: {nameof(sourceDataSet.SourceDataSetParser)}.");
+                var sourceDataSetListType = typeof(List<>).MakeGenericType(sourceDataSetParserType);
+                var sourceDataSetParsed = JsonConvert.DeserializeObject(sourceDataSetJSON, sourceDataSetListType);
+
+                // Convert each object to Common.Creature and add it to the collection if it doesn't already exist.
+                // Cast the deserialized list to the interface type
+                IEnumerable<IGameComponent> creatures = (IEnumerable<IGameComponent>)(sourceDataSetParsed ?? new List<IGameComponent>());
+
+                // Convert each creature to the standard format
+                foreach (IGameComponent creature in creatures.Take(sourceDataSet.ExportLimit ?? int.MaxValue))
                 {
-                    // Download license file
-                    this.downloadService.DerivePathAndFileNames(sourceDataSet.LicenseDataURI, out string licenseDirectory, out string licenseFile);
-                    var licenseFilePath = Path.Combine(rootDataDirectory, licenseDirectory, licenseFile);
-                    this.logger.LogInformation("Downloading license data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
-                    await this.downloadService.DownloadFile(
-                        sourceDataSet.LicenseDataURI,
-                        sourceDataSet.OverwriteExisting);
-
-                    // Parse license file
-                    this.logger.LogInformation("Parsing local copy of license data from: {LicenseFilePath}.", licenseFilePath);
-                    var licenseJSON = File.ReadAllText(Path.Combine(rootDataDirectory, licenseDirectory, licenseFile))
-                        ?? throw new Exception($"Unable to read license information from file: {licenseFilePath}.");
-                    var licenseParserType = Type.GetType(sourceDataSet.LicenseDataParser)
-                        ?? throw new Exception($"Configuration parmater not defined: {nameof(sourceDataSet.LicenseDataParser)}.");
-                    var licenseListType = typeof(List<>).MakeGenericType(licenseParserType);
-                    var licenseParsed = JsonConvert.DeserializeObject(licenseJSON, licenseListType);
-
-                    // Download SourceDataSet file
-                    this.downloadService.DerivePathAndFileNames(sourceDataSet.SourceDataSetURI, out string sourceDataSetDirectory, out string sourceDataSetFile);
-                    var sourceDataSetFilePath = Path.Combine(rootDataDirectory, sourceDataSetDirectory, sourceDataSetFile);
-                    this.logger.LogInformation("Downloading SourceDataSet data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
-                    await this.downloadService.DownloadFile(
-                        sourceDataSet.SourceDataSetURI,
-                        sourceDataSet.OverwriteExisting);
-
-                    // Parse SourceDataSet file
-                    this.logger.LogInformation("Parsing local copy of SourceDataSet data from: {SourceDataSetFilePath}.", sourceDataSetFilePath);
-                    var sourceDataSetJSON = File.ReadAllText(Path.Combine(rootDataDirectory, sourceDataSetDirectory, sourceDataSetFile))
-                        ?? throw new Exception($"Unable to read SourceDataSet information from file: {sourceDataSetFilePath}.");
-                    var sourceDataSetParserType = Type.GetType(sourceDataSet.SourceDataSetParser)
-                        ?? throw new Exception($"Configuration parmater not defined: {nameof(sourceDataSet.SourceDataSetParser)}.");
-                    var sourceDataSetListType = typeof(List<>).MakeGenericType(sourceDataSetParserType);
-                    var sourceDataSetParsed = JsonConvert.DeserializeObject(sourceDataSetJSON, sourceDataSetListType);
-
-                    // Convert each object to Common.Creature and add it to the collection if it doesn't already exist.
-                    // Cast the deserialized list to the interface type
-                    IEnumerable<IGameComponent> creatures = (IEnumerable<IGameComponent>)(sourceDataSetParsed ?? new List<IGameComponent>());
-
-                    // Convert each creature to the standard format
-                    foreach (IGameComponent creature in creatures.Take(sourceDataSet.ExportLimit ?? int.MaxValue))
+                    this.logger.LogDebug("Converting creature to standard format: {Name}.", creature.Name);
+                    if (licenseParsed != null && licenseParsed is List<License> list && list.Count > 0)
                     {
-                        this.logger.LogDebug("Converting creature to standard format: {Name}.", creature.Name);
-                        if (licenseParsed != null && licenseParsed is List<License> list && list.Count > 0)
-                        {
-                            creature.PublisherName = list[0].Organization;
-                            creature.LicenseURL = list[0].Url;
-                        }
+                        creature.PublisherName = list[0].Organization;
+                        creature.LicenseURL = list[0].Url;
+                    }
 
-                        if (!creatureList.Any(c => (c.Name is not null) && c.Name.Equals(creature.Name)))
-                        {
-                            this.logger.LogDebug("New creature found and added to compendium list: {creature}.", creature.Name);
-                            creatureList.Add(creature);
-                        }
+                    if (!creatureList.Any(c => (c.Name is not null) && c.Name.Equals(creature.Name)))
+                    {
+                        this.logger.LogDebug("New creature found and added to compendium list: {creature}.", creature.Name);
+                        creatureList.Add(creature);
                     }
                 }
-
-                // Create CampaignLogger File
-                this.logger.LogInformation("Creating CampaignLogger file for compendium: {compendium}.", compendium.Title);
-                var campaignLoggerFile = new Campaign()
-                {
-                    Version = 2,
-                    Type = "campaign",
-                    Title = compendium.Title,
-                    Description = compendium.Description,
-                    CampaignEntries = new List<CampaignEntry>(),
-                    Logs = new List<Log>(),
-                    ImageUrl = string.Empty,
-                };
-
-                foreach (var creature in creatureList)
-                {
-                    campaignLoggerFile.CampaignEntries.Add(creature.ToCampaignEntry());
-                }
-
-                string campaignLoggerFileString = JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented);
-
-                File.WriteAllText(Path.Combine(rootDataDirectory, compendium.Title + ".json"), campaignLoggerFileString);
-
-                this.logger.LogInformation("Processing of compendium complete: {compendium}.", compendium.Title);
             }
+
+            // Create CampaignLogger File
+            this.logger.LogInformation("Creating CampaignLogger file for compendium: {compendium}.", compendium.Title);
+            var campaignLoggerFile = new Campaign()
+            {
+                Version = 2,
+                Type = "campaign",
+                Title = compendium.Title,
+                Description = compendium.Description,
+                CampaignEntries = new List<CampaignEntry>(),
+                Logs = new List<Log>(),
+                ImageUrl = string.Empty,
+            };
+
+            foreach (var creature in creatureList)
+            {
+                campaignLoggerFile.CampaignEntries.Add(creature.ToCampaignEntry());
+            }
+
+            string campaignLoggerFileString = JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented);
+
+            File.WriteAllText(Path.Combine(rootDataDirectory, compendium.Title + ".json"), campaignLoggerFileString);
+
+            this.logger.LogInformation("Processing of compendium complete: {compendium}.", compendium.Title);
         }
     }
 }

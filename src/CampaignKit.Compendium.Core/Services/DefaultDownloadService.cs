@@ -30,41 +30,33 @@ namespace CampaignKit.Compendium.Core.Services
         private readonly ILogger<DefaultDownloadService> logger;
 
         /// <summary>
-        /// Create a private readonly field to store an IConfigurationService instance.
-        /// </summary>
-        private readonly IConfigurationService configurationService;
-
-        /// <summary>
         /// Initializes a new instance of the <see cref="DefaultDownloadService"/> class.
         /// </summary>
         /// <param name="logger">The logger for the service.</param>
-        /// <param name="configurationService">Application configuration service.</param>
         /// <returns>
         /// A CompendiumSourceDownloader instance.
         /// </returns>
-        public DefaultDownloadService(ILogger<DefaultDownloadService> logger, IConfigurationService configurationService)
+        public DefaultDownloadService(ILogger<DefaultDownloadService> logger)
         {
             // Check if logger is null, if so throw an ArgumentNullException
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
-
-            // Check if configurationService is null, if so throw an ArgumentNullException
-            this.configurationService = configurationService ?? throw new ArgumentNullException(nameof(configurationService));
         }
 
         /// <summary>
         /// Download the source data and source license.
         /// </summary>
         /// <param name="sourceDataUri">The URI of the source data to download.</param>
+        /// <param name="rootDataDirectory">Directory where files will be read and written from.</param>
         /// <param name="overwrite">Set to true to overwrite previously downloaded files.  Default: false.</param>
         /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
-        public virtual async Task DownloadFile(string sourceDataUri, bool overwrite = false)
+        public virtual async Task DownloadFile(string sourceDataUri, string rootDataDirectory, bool overwrite = false)
         {
             try
             {
                 this.DerivePathAndFileNames(sourceDataUri, out string path, out string page);
 
                 // If overwrite = false and the file already exists, return.
-                var localFolderPath = Path.Combine(this.configurationService.GetRootDataDirectory(), path);
+                var localFolderPath = Path.Combine(rootDataDirectory, path);
                 var localFilePath = Path.Combine(localFolderPath, page);
                 if (!overwrite && File.Exists(localFilePath))
                 {

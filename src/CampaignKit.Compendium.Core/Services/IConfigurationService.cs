@@ -25,23 +25,29 @@ namespace CampaignKit.Compendium.Core.Services
     public interface IConfigurationService
     {
         /// <summary>
-        /// This method returns the root data directory from the configuration or a default path if
-        /// it is not set.
+        /// This method returns the private data directory from the configuration
+        /// or a default path if it is not set.
         /// </summary>
         /// <returns>The root data directory.</returns>
-        string GetRootDataDirectory();
+        string GetPrivateDataDirectory();
 
         /// <summary>
-        /// Gets a list of compendiums configured for the specified service name.
+        /// This method returns the public data directory from the configuration
+        /// or a default path if it is not set.
         /// </summary>
-        /// <param name="serviceName">The name of the service.</param>
-        /// <returns>A list of Compendiums configured for the specified service name.</returns>
-        List<Compendium> GetCompendiumsForService(string serviceName);
+        /// <returns>The root data directory.</returns>
+        string GetPublicDataDirectory();
 
         /// <summary>
-        /// Gets a list of all configured compendiums.
+        /// Gets a list of all configured open source compendiums.
         /// </summary>
-        /// <returns>A list of configured compendiums.</returns>
-        List<Compendium> GetAllCompendiums();
+        /// <returns>A list of configured open source compendiums.</returns>
+        List<ICompendium> GetAllPublicCompendiums();
+
+        /// <summary>
+        /// Gets a list of all configured private compendiums.
+        /// </summary>
+        /// <returns>A list of configured private compendiums.</returns>
+        List<ICompendium> GetAllPrivateCompendiums();
     }
 }
