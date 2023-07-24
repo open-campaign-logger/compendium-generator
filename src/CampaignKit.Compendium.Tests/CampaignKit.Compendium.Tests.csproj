@@ -50,6 +50,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CampaignKit.Compendium.ChatGPT\CampaignKit.Compendium.ChatGPT.csproj" />
     <ProjectReference Include="..\CampaignKit.Compendium.Core\CampaignKit.Compendium.Core.csproj" />
     <ProjectReference Include="..\CampaignKit.Compendium.DungeonsAndDragons\CampaignKit.Compendium.DungeonsAndDragons.csproj" />
     <ProjectReference Include="..\CampaignKit.Compendium.Markdown\CampaignKit.Compendium.Markdown.csproj" />
@@ -64,6 +65,7 @@
 
   <ItemGroup>
     <Folder Include="Markdown\" />
+    <Folder Include="ChatGPT\" />
   </ItemGroup>
 
 </Project>
