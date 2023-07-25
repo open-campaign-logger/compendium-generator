@@ -25,6 +25,8 @@ Configure the module in `appsettings.json` or `secrets.json` as follows:
     "CompendiumService": "CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e, CampaignKit.Compendium.DungeonsAndDragons.dll",
     // Description of the compendium.
     "Description": "Preformatted 5e monsters from the SRD and Kobold Press.",
+    // Name of the game system.  This name will be used for organizing generated files.  Make sure it's a path safe string.  (avoid special characters)
+    "GameSystem": "Dungeons and Dragons 5e",
     // Image to use for the compendium.
     "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
     // List of source data sets to parse and compile into the compendium.

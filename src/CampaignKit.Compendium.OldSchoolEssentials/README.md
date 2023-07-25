@@ -13,6 +13,8 @@ Since there is only one source data file for OSE, which is embedded in the proje
     "CompendiumService": "CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService, CampaignKit.Compendium.OldSchoolEssentials.dll",
     // Description of the compendium.
     "Description": "OSE monsters, spells, and magic items from the SRD.",
+    // Name of the game system.  This name will be used for organizing generated files.  Make sure it's a path safe string.  (avoid special characters)
+    "GameSystem": "Dungeons and Dragons 5e",
     // Image to use for the compendium.
     "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
     // Compendium title.

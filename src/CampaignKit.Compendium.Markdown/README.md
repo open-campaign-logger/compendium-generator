@@ -10,6 +10,8 @@ To configure this module, add the following to `PublicCompendiums` in `appsettin
     "CompendiumService": "CampaignKit.Compendium.Markdown.Services.IMarkdownCompendiumService, CampaignKit.Compendium.Markdown.dll",
     // Description of the compendium.
     "Description": "A collection of loot options for Dungeons and Dragons monsters.",
+    // Name of the game system.  This name will be used for organizing generated files.  Make sure it's a path safe string.  (avoid special characters)
+    "GameSystem": "Dungeons and Dragons 5e",
     // Image to use for the compendium.
     "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
     // List of source data sets to parse and compile into the compendium.
