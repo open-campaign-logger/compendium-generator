@@ -20,15 +20,15 @@ namespace CampaignKit.Compendium.Tests.Core
             var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
             var overwrite = false;
             var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
-            var sourceHelper = new DefaultDownloadService(loggerMock.Object, GetConfigurationService());
+            var sourceHelper = new DefaultDownloadService(loggerMock.Object);
             sourceHelper.DerivePathAndFileNames(sourceDataUri, out string path, out string file);
 
             // Act
-            await sourceHelper.DownloadFile(sourceDataUri, overwrite);
+            await sourceHelper.DownloadFile(sourceDataUri, configurationService?.GetPrivateDataDirectory() ?? string.Empty, overwrite);
 
             // Assert
-            Assert.IsTrue(Directory.Exists(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path)));
-            Assert.IsTrue(File.Exists(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path, file)));
+            Assert.IsTrue(Directory.Exists(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path)));
+            Assert.IsTrue(File.Exists(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path, file)));
         }
 
         [TestMethod]
@@ -38,18 +38,18 @@ namespace CampaignKit.Compendium.Tests.Core
             var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
             var overwrite = true;
             var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
-            var sourceHelper = new DefaultDownloadService(loggerMock.Object, GetConfigurationService());
+            var sourceHelper = new DefaultDownloadService(loggerMock.Object);
             sourceHelper.DerivePathAndFileNames(sourceDataUri, out string path, out string file);
 
             // Act
-            Directory.CreateDirectory(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path));
-            File.WriteAllText(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path, file), string.Empty);
-            await sourceHelper.DownloadFile(sourceDataUri, overwrite);
-            FileInfo fileInfoAfter = new(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path, file));
+            Directory.CreateDirectory(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path));
+            File.WriteAllText(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path, file), string.Empty);
+            await sourceHelper.DownloadFile(sourceDataUri, configurationService?.GetPrivateDataDirectory() ?? string.Empty, overwrite);
+            FileInfo fileInfoAfter = new(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path, file));
 
             // Assert
-            Assert.IsTrue(Directory.Exists(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path)));
-            Assert.IsTrue(File.Exists(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path, file)));
+            Assert.IsTrue(Directory.Exists(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path)));
+            Assert.IsTrue(File.Exists(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path, file)));
             Assert.AreNotEqual(0, fileInfoAfter.Length);
         }
 
@@ -60,18 +60,18 @@ namespace CampaignKit.Compendium.Tests.Core
             var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
             var overwrite = false;
             var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
-            var sourceHelper = new DefaultDownloadService(loggerMock.Object, GetConfigurationService());
+            var sourceHelper = new DefaultDownloadService(loggerMock.Object);
             sourceHelper.DerivePathAndFileNames(sourceDataUri, out string path, out string file);
 
             // Act
-            Directory.CreateDirectory(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path));
-            File.WriteAllText(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path, file), string.Empty);
-            await sourceHelper.DownloadFile(sourceDataUri, overwrite);
-            FileInfo fileInfoAfter = new(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path, file));
+            Directory.CreateDirectory(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path));
+            File.WriteAllText(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path, file), string.Empty);
+            await sourceHelper.DownloadFile(sourceDataUri, configurationService?.GetPrivateDataDirectory() ?? string.Empty, overwrite);
+            FileInfo fileInfoAfter = new(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path, file));
 
             // Assert
-            Assert.IsTrue(Directory.Exists(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path)));
-            Assert.IsTrue(File.Exists(Path.Combine(GetConfigurationService().GetRootDataDirectory(), path, file)));
+            Assert.IsTrue(Directory.Exists(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path)));
+            Assert.IsTrue(File.Exists(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path, file)));
             Assert.AreEqual(0, fileInfoAfter.Length);
 
         }
@@ -83,11 +83,11 @@ namespace CampaignKit.Compendium.Tests.Core
             configurationService ??= GetConfigurationService();
 
             // Check if the directory exists.
-            if (Directory.Exists(configurationService.GetRootDataDirectory()))
+            if (Directory.Exists(configurationService.GetPrivateDataDirectory()))
             {
                 // If the directory exists, delete it. The 'true' parameter means 
                 // all files and subdirectories will also be deleted.
-                Directory.Delete(configurationService.GetRootDataDirectory(), true);
+                Directory.Delete(configurationService.GetPrivateDataDirectory(), true);
             }
         }
 
@@ -95,11 +95,11 @@ namespace CampaignKit.Compendium.Tests.Core
         public void TestCleanup()
         {
             // Check if the directory exists.
-            if (Directory.Exists(GetConfigurationService().GetRootDataDirectory()))
+            if (Directory.Exists(GetConfigurationService().GetPrivateDataDirectory()))
             {
                 // If the directory exists, delete it. The 'true' parameter means 
                 // all files and subdirectories will also be deleted.
-                Directory.Delete(GetConfigurationService().GetRootDataDirectory(), true);
+                Directory.Delete(GetConfigurationService().GetPrivateDataDirectory(), true);
             }
         }
 

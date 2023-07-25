@@ -1,5 +1,5 @@
 ﻿// <copyright file="DefaultConfigurationService.cs" company="Jochen Linnemann - IT-Service">
-// Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
+// Copyright (c) 2017-2023 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -17,6 +17,7 @@
 namespace CampaignKit.Compendium.Core.Services
 {
     using System;
+    using System.Collections.Generic;
     using System.Threading.Tasks;
     using CampaignKit.Compendium.Core.Configuration;
     using Microsoft.Extensions.Configuration;
@@ -45,32 +46,56 @@ namespace CampaignKit.Compendium.Core.Services
         }
 
         /// <summary>
-        /// This method returns the root data directory from the configuration or a default path if
-        /// it is not set.
+        /// This method returns the public data directory from the configuration
+        /// or a default path if it is not set.
         /// </summary>
-        /// <returns>The root data directory.</returns>
-        public string GetRootDataDirectory()
+        /// <returns>The public data directory.</returns>
+        public string GetPublicDataDirectory()
         {
-            var rootFolder = this.configuration.GetValue<string>("RootDataFolder");
+            var rootFolder = this.configuration.GetValue<string>("PublicDataFolder");
             if (string.IsNullOrEmpty(rootFolder))
             {
-                rootFolder = Path.Combine(Path.GetTempPath(), "CompendiumGenerator");
+                rootFolder = Path.Combine(Path.GetTempPath(), "CompendiumGenerator", "Public");
+            }
+
+            return rootFolder;
+        }
+
+        /// <summary>
+        /// This method returns the private data directory from the configuration
+        /// or a default path if it is not set.
+        /// </summary>
+        /// <returns>The private data directory.</returns>
+        public string GetPrivateDataDirectory()
+        {
+            var rootFolder = this.configuration.GetValue<string>("PrivateDataFolder");
+            if (string.IsNullOrEmpty(rootFolder))
+            {
+                rootFolder = Path.Combine(Path.GetTempPath(), "CompendiumGenerator", "Private");
             }
 
             return rootFolder;
         }
 
         /// <inheritdoc/>
-        public List<Compendium> GetCompendiumsForService(string serviceName)
+        public List<ICompendium> GetAllPublicCompendiums()
         {
-            var compendiums = this.configuration.GetSection("Compendiums").Get<List<Compendium>>() ?? new List<Compendium>();
-            return compendiums.Where(c => c.CompendiumService.StartsWith(serviceName)).ToList();
+            var result = new List<ICompendium>();
+            result.AddRange(this.configuration.GetSection("PublicCompendiums").Get<List<PublicCompendium>>() ?? new List<PublicCompendium>());
+            return result;
         }
 
         /// <inheritdoc/>
-        public List<Compendium> GetAllCompendiums()
+        public List<ICompendium> GetAllPrivateCompendiums()
         {
-            return this.configuration.GetSection("Compendiums").Get<List<Compendium>>() ?? new List<Compendium>();
+            var result = new List<ICompendium>();
+            result.AddRange(this.configuration.GetSection("PrivateCompendiums").Get<List<PublicCompendium>>() ?? new List<PublicCompendium>());
+            return result;
+        }
+
+        public Service GetService(string serviceName)
+        {
+            throw new NotImplementedException();
         }
     }
 }

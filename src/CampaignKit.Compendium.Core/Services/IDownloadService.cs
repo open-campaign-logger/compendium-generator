@@ -1,5 +1,5 @@
 ﻿// <copyright file="IDownloadService.cs" company="Jochen Linnemann - IT-Service">
-// Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
+// Copyright (c) 2017-2023 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -25,9 +25,10 @@ namespace CampaignKit.Compendium.Core.Services
         /// Download the source data and source license.
         /// </summary>
         /// <param name="sourceDataUri">The URI of the source data to download.</param>
+        /// <param name="rootDataDirectory">Directory where files will be read and written from.</param>
         /// <param name="overwrite">Set to true to overwrite previously downloaded files.  Default: false.</param>
         /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
-        Task DownloadFile(string sourceDataUri, bool overwrite = false);
+        Task DownloadFile(string sourceDataUri, string rootDataDirectory, bool overwrite = false);
 
         /// <summary>
         /// Separates the given source data URI into its path and file components.
