@@ -16,17 +16,16 @@
 
 namespace CampaignKit.Compendium.Markdown.Services
 {
-    using System.Text;
-    using System.Threading.Tasks;
-
     using CampaignKit.Compendium.Core.CampaignLogger;
-    using CampaignKit.Compendium.Core.Common;
     using CampaignKit.Compendium.Core.Configuration;
     using CampaignKit.Compendium.Core.Services;
 
     using Microsoft.Extensions.Logging;
 
     using Newtonsoft.Json;
+
+    using System.Text;
+    using System.Threading.Tasks;
 
     /// <summary>
     /// Default service for creating Dungeons &amp; Dragons 5e compendiums.
@@ -74,23 +73,47 @@ namespace CampaignKit.Compendium.Markdown.Services
             // Download data sets
             foreach (var sourceDataSet in compendium.SourceDataSets)
             {
+                // Keep track of how many items we import from this data source.
+                var importCount = 0;
+
+                // Read all lines from the file specified in the sourceDataSetURI
                 var lines = await File.ReadAllLinesAsync(Path.Combine(this.configurationService.GetPrivateDataDirectory(), sourceDataSet.SourceDataSetURI));
+
+                // Iterate through each line
                 foreach (var line in lines)
                 {
+                    // If the line starts with "# "
                     if (line.StartsWith("# "))
                     {
+                        // If the stringBuilder has content
                         if (stringBuilder.Length > 0)
                         {
+                            // Create a new CampaignEntry object and add it to the campaignEntries list
                             campaignEntries.Add(new CampaignEntry()
                             {
                                 RawText = stringBuilder.ToString(),
                                 TagSymbol = sourceDataSet.TagSymbol,
                                 TagValue = stringEntryName,
                             });
+                            // Clear the stringBuilder
                             stringBuilder.Clear();
+
+                            // Increment the import count
+                            importCount++;
+
+                            // Check if the import count is greater than or equal to the
+                            // ImportLimit, or if the ImportLimit is null, then check if it is
+                            // greater than or equal to the maximum integer value
+                            if (importCount >= (sourceDataSet.ImportLimit ?? int.MaxValue))
+                            {
+                                // If the condition is true, break out of the loop
+                                break;
+                            }
                         }
+                        // Set the stringEntryName to the line starting from the third character
                         stringEntryName = line[2..];
                     }
+                    // Append the line to the stringBuilder
                     stringBuilder.AppendLine(line);
                 }
             }
@@ -108,12 +131,16 @@ namespace CampaignKit.Compendium.Markdown.Services
                 ImageUrl = string.Empty,
             };
 
+            //Serialize the campaignLoggerFile object into a string using JsonConvert
             string campaignLoggerFileString = JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented);
 
+            //Combine the rootDataDirectory with the compendium title to create a file name
             var fileName = Path.Combine(rootDataDirectory, compendium.Title + ".json");
 
+            //Write the campaignLoggerFileString to the fileName
             File.WriteAllText(fileName, campaignLoggerFileString);
 
+            //Log a message to the logger that the processing of the compendium is complete
             this.logger.LogInformation("Processing of compendium complete: {compendium}.", compendium.Title);
         }
     }
