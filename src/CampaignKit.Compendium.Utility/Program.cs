@@ -1,5 +1,5 @@
 ﻿// <copyright file="Program.cs" company="Jochen Linnemann - IT-Service">
-// Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
+// Copyright (c) 2017-2023 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -16,6 +16,7 @@
 
 namespace CampaignKit.Compendium.Utility
 {
+    using CampaignKit.Compendium.ChatGPT.Services;
     using CampaignKit.Compendium.Core.Services;
     using CampaignKit.Compendium.DungeonsAndDragons.Services;
     using CampaignKit.Compendium.Markdown.Services;
@@ -130,6 +131,9 @@ namespace CampaignKit.Compendium.Utility
 
             // Add DefaultMarkdownCompendiumService to the service collection as an IMarkdownCompendiumService
             services.AddTransient<IMarkdownCompendiumService, DefaultMarkdownCompendiumService>();
+
+            // Add DefaultChatGPTCompendiumService to the service collection as an IChatGPTCompendiumService
+            services.AddTransient<IChatGPTCompendiumService, DefaultChatGPTCompendiumService>();
         }
 
         /// <summary>

@@ -1,5 +1,5 @@
 ﻿// <copyright file="IConfigurationService.cs" company="Jochen Linnemann - IT-Service">
-// Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
+// Copyright (c) 2017-2023 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -49,5 +49,14 @@ namespace CampaignKit.Compendium.Core.Services
         /// </summary>
         /// <returns>A list of configured private compendiums.</returns>
         List<ICompendium> GetAllPrivateCompendiums();
+
+        /// <summary>
+        /// Gets the service configuration for the specified service name.
+        /// </summary>
+        /// <param name="serviceName">The name of the service to retrieve.</param>
+        /// <returns>
+        /// The service configuration for the specified service.
+        /// </returns>
+        Service GetService(string serviceName);
     }
 }

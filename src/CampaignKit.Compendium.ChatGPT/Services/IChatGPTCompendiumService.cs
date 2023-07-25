@@ -1,4 +1,4 @@
-﻿// <copyright file="IDungeonsAndDragonsCompendiumService_5e.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="IChatGPTCompendiumService.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2023 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,14 +14,14 @@
 // limitations under the License.
 // </copyright>
 
-namespace CampaignKit.Compendium.DungeonsAndDragons.Services
+namespace CampaignKit.Compendium.ChatGPT.Services
 {
     using CampaignKit.Compendium.Core.Services;
 
     /// <summary>
-    /// Interface for services that create Dungeons &amp; Dragons 5e compendiums.
+    /// Interface for services that create compendiums using ChatGPT.
     /// </summary>
-    public interface IDungeonsAndDragonsCompendiumService_5e : ICompendiumService
+    public interface IChatGPTCompendiumService : ICompendiumService
     {
     }
 }

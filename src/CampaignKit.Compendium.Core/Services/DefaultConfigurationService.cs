@@ -1,5 +1,5 @@
 ﻿// <copyright file="DefaultConfigurationService.cs" company="Jochen Linnemann - IT-Service">
-// Copyright (c) 2017-2021 Jochen Linnemann, Cory Gill.
+// Copyright (c) 2017-2023 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -91,6 +91,11 @@ namespace CampaignKit.Compendium.Core.Services
             var result = new List<ICompendium>();
             result.AddRange(this.configuration.GetSection("PrivateCompendiums").Get<List<PublicCompendium>>() ?? new List<PublicCompendium>());
             return result;
+        }
+
+        public Service GetService(string serviceName)
+        {
+            throw new NotImplementedException();
         }
     }
 }
