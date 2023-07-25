@@ -32,10 +32,11 @@ namespace CampaignKit.Compendium.Core.Configuration
         public string LicenseDataURI { get; set; } = string.Empty;
 
         /// <summary>
-        /// Gets or sets the limit on the number of items to export to the compendium. Generally
-        /// this is only used for testing purposes to limit the size of the generated compendiums.
+        /// Gets or sets the limit on the number of items to import into the compendium
+        /// from the data source.  Generally this is only used for testing purposes
+        /// to limit the size of the generated compendiums.
         /// </summary>
-        public int? ExportLimit { get; set; } = int.MaxValue;
+        public int? ImportLimit { get; set; } = int.MaxValue;
 
         /// <summary>
         /// Gets or sets a value indicating whether new data should be downloaded to replace

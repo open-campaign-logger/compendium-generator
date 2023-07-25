@@ -74,6 +74,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
             // Download data sets
             foreach (var sourceDataSet in compendium.SourceDataSets)
             {
+                // Keep track of how many items we import from this data source.
+                var importCount = 0;
+
                 // Download license file
                 this.downloadService.DerivePathAndFileNames(sourceDataSet.LicenseDataURI, out string licenseDirectory, out string licenseFile);
                 var licenseFilePath = Path.Combine(rootDataDirectory, licenseDirectory, licenseFile);
@@ -115,7 +118,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                 IEnumerable<IGameComponent> creatures = (IEnumerable<IGameComponent>)(sourceDataSetParsed ?? new List<IGameComponent>());
 
                 // Convert each creature to the standard format
-                foreach (IGameComponent creature in creatures.Take(sourceDataSet.ExportLimit ?? int.MaxValue))
+                foreach (IGameComponent creature in creatures)
                 {
                     this.logger.LogDebug("Converting creature to standard format: {Name}.", creature.Name);
                     if (licenseParsed != null && licenseParsed is List<License> list && list.Count > 0)
@@ -128,6 +131,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                     {
                         this.logger.LogDebug("New creature found and added to compendium list: {creature}.", creature.Name);
                         creatureList.Add(creature);
+                        importCount++;
+                        if (importCount >= (sourceDataSet.ImportLimit ?? int.MaxValue))
+                        {
+                            break;
+                        }
                     }
                 }
             }

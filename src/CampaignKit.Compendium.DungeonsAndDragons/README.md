@@ -33,7 +33,7 @@ Configure the module in `appsettings.json` or `secrets.json` as follows:
     "SourceDataSets": [
     {
         // Limits number of items to parse from the source data set. Useful for testing purposes.
-        "ExportLimit": 5,
+        "ImportLimit": 5,
         // Class to use for parsing license information.
         "LicenseDataParser": "CampaignKit.Compendium.DungeonsAndDragons.Common.License",
         // URI of license information.
