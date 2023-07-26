@@ -1,5 +1,4 @@
-﻿using CampaignKit.Compendium.DungeonsAndDragons.Common;
-using CampaignKit.Compendium.DungeonsAndDragons.SRD;
+﻿using CampaignKit.Compendium.DungeonsAndDragons.SRD;
 using CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts2;
 
 using Newtonsoft.Json;

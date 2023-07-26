@@ -7,11 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Prompts\rolltable-d100.txt" />
     <None Remove="stylecop.json" />
   </ItemGroup>
 
   <ItemGroup>
     <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Prompts\rolltable-d100.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,10 +33,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CampaignKit.Compendium.Core\CampaignKit.Compendium.Core.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Prompts\" />
   </ItemGroup>
 
 </Project>

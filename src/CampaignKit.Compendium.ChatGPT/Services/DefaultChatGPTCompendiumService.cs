@@ -16,6 +16,7 @@
 
 namespace CampaignKit.Compendium.ChatGPT.Services
 {
+    using CampaignKit.Compendium.ChatGPT.Common;
     using CampaignKit.Compendium.Core.Configuration;
     using Microsoft.Extensions.Logging;
 
@@ -47,6 +48,16 @@ namespace CampaignKit.Compendium.ChatGPT.Services
         /// <inheritdoc/>
         public Task CreateCompendiums(ICompendium compendium, string rooDataDirectory)
         {
+            if (compendium is null)
+            {
+                throw new ArgumentNullException(nameof(compendium));
+            }
+
+            if (string.IsNullOrEmpty(rooDataDirectory))
+            {
+                throw new ArgumentException($"'{nameof(rooDataDirectory)}' cannot be null or empty.", nameof(rooDataDirectory));
+            }
+
             return Task.CompletedTask;
         }
     }

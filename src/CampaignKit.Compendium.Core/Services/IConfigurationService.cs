@@ -58,5 +58,13 @@ namespace CampaignKit.Compendium.Core.Services
         /// The service configuration for the specified service.
         /// </returns>
         Service GetService(string serviceName);
+
+        /// <summary>
+        /// Gets all of the service configurations.
+        /// </summary>
+        /// <returns>
+        /// A list of all service configurations.
+        /// </returns>
+        List<Service> GetAllServices();
     }
 }

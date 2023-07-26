@@ -22,6 +22,11 @@ namespace CampaignKit.Compendium.Core.Configuration
     public class Prompt
     {
         /// <summary>
+        /// Gets or sets the genre that the generated response should pertain to.
+        /// </summary>
+        public string Genre { get; set; } = string.Empty;
+
+        /// <summary>
         /// Gets or sets a list of default labels to apply to all entries created from this prompt.
         /// </summary>
         public List<string> Labels { get; set; } = new List<string>();
@@ -52,12 +57,12 @@ namespace CampaignKit.Compendium.Core.Configuration
 
         /// <summary>
         /// Gets or sets the sentiment to use for generating the response.
-        /// Value is a float from zero to one.
-        /// A value of `0` means that responses should be entirely serious.
-        /// A value of `1` means that responses should be entirely comedic.
-        /// Default value is: 0.5.
+        /// Value is an integer from 1 to 10.
+        /// A value of `1` means that responses should be entirely serious.
+        /// A value of `10` means that responses should be entirely whimsical.
+        /// Default value is: 5.
         /// </summary>
-        public float Sentiment { get; set; } = 0.5F;
+        public int Sentiment { get; set; } = 5;
 
         /// <summary>
         /// Gets or sets the name of the configured service to use for executing this prompt.

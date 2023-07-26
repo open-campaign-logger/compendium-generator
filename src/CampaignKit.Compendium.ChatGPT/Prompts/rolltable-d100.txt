@@ -1,0 +1,27 @@
+﻿A "roll table", also known as a random encounter table or loot table, in a tabletop role-playing game is a
+mechanic used to introduce unpredictability and randomness into the game. It is a pre-made list of outcomes
+that is typically indexed by the roll of one or more dice. For instance, the GM (Game Master) may ask a
+player to roll percentile dice (also known as d100), with the outcome determining what creature the players
+might meet, what loot they might find, or what event might happen based on what number the dice lands on in the table.
+
+Roll tables are often used in games like {GameSystem} and can be made for different situations, including
+random NPC encounters, finding treasure, determining events, and more. They can range from very simple to highly
+complex, depending on the needs of the game and the creativity of the GM. Overall, they are tools designed
+to enhance immersion and maintain surprise elements in the game.
+
+Create a d100 roll table with the following specifications:
+- Roll Table Name: {Name}
+- TTRPG Genre: {Genre}
+- TTRPG Game System: {GameSystem}
+- Overall Sentiment: {Sentiment}
+- Roll Table Subject: {PromptInput}
+
+Output should be in markdown table format with the following layout:
+- Header containing roll table name
+- Introductory paragraph describing the purpose of the roll table
+- A brief example dialogue between a player and a game master that demonstrates how the table will be used.
+- The roll table itself in markdown format.
+
+Do not include any other comments in the output.
+
+Do not truncate or abbreviate the table.  Please generate it in its entirety.
