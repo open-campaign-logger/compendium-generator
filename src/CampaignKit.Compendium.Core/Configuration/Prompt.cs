@@ -55,7 +55,7 @@ namespace CampaignKit.Compendium.Core.Configuration
         /// Value is a float from zero to one.
         /// A value of `0` means that responses should be entirely serious.
         /// A value of `1` means that responses should be entirely comedic.
-        /// Default value is: 0.5
+        /// Default value is: 0.5.
         /// </summary>
         public float Sentiment { get; set; } = 0.5F;
 

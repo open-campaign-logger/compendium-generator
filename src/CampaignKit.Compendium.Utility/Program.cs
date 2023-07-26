@@ -19,6 +19,7 @@ namespace CampaignKit.Compendium.Utility
     using CampaignKit.Compendium.ChatGPT.Services;
     using CampaignKit.Compendium.Core.Services;
     using CampaignKit.Compendium.DungeonsAndDragons.Services;
+    using CampaignKit.Compendium.Markdown.Services;
     using CampaignKit.Compendium.OldSchoolEssentials.Services;
     using CampaignKit.Compendium.Utility.Services;
 
@@ -128,8 +129,8 @@ namespace CampaignKit.Compendium.Utility
             // Add DefaultOldSchoolEssentialsCompendiumService to the service collection as an IOldSchoolEssentialsCompendiumService
             services.AddTransient<IOldSchoolEssentialsCompendiumService, DefaultOldSchoolEssentialsCompendiumService>();
 
-            // Add DefaultOldSchoolEssentialsCompendiumService to the service collection as an IOldSchoolEssentialsCompendiumService
-            services.AddTransient<IOldSchoolEssentialsCompendiumService, DefaultOldSchoolEssentialsCompendiumService>();
+            // Add DefaultMarkdownCompendiumService to the service collection as an IMarkdownCompendiumService
+            services.AddTransient<IMarkdownCompendiumService, DefaultMarkdownCompendiumService>();
 
             // Add DefaultChatGPTCompendiumService to the service collection as an IChatGPTCompendiumService
             services.AddTransient<IChatGPTCompendiumService, DefaultChatGPTCompendiumService>();

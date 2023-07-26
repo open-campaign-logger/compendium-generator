@@ -22,7 +22,6 @@ namespace CampaignKit.Compendium.Core.Configuration
     /// </summary>
     public class PublicCompendium : ICompendium
     {
-
         /// <inheritdoc/>
         public string CompendiumService { get; set; } = string.Empty;
 

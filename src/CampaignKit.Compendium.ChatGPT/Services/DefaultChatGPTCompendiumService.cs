@@ -47,7 +47,7 @@ namespace CampaignKit.Compendium.ChatGPT.Services
         /// <inheritdoc/>
         public Task CreateCompendiums(ICompendium compendium, string rooDataDirectory)
         {
-            throw new NotImplementedException();
+            return Task.CompletedTask;
         }
     }
 }
