@@ -89,6 +89,17 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
             // Iterate through each CampaignEntry in the Campaign
             if (campaign.CampaignEntries != null)
             {
+                // Keep track of how many items we import from this data source.
+                var monsterDataSourceConfig = compendium.SourceDataSets.FirstOrDefault(ds => ds.SourceDataSetName.Equals("Monsters"));
+                var monsterImportLimit = monsterDataSourceConfig?.ImportLimit ?? int.MaxValue;
+                var monsterImportCount = 0;
+                var spellDataSourceConfig = compendium.SourceDataSets.FirstOrDefault(ds => ds.SourceDataSetName.Equals("Spells"));
+                var spellImportLimit = spellDataSourceConfig?.ImportLimit ?? int.MaxValue;
+                var spellImportCount = 0;
+                var itemDataSourceConfig = compendium.SourceDataSets.FirstOrDefault(ds => ds.SourceDataSetName.Equals("Items"));
+                var itemImportLimit = itemDataSourceConfig?.ImportLimit ?? int.MaxValue;
+                var itemImportCount = 0;
+
                 foreach (var campaignEntry in campaign.CampaignEntries)
                 {
                     // Check if the CampaignEntry contains labels
@@ -102,6 +113,16 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
 
                             // Add the creature to the destination Campaign
                             destinationCampaign.CampaignEntries.Add(creature.ToCampaignEntry());
+
+                            // Increment the counter
+                            monsterImportCount++;
+
+                            // Check if the counter is greater than or equal to the import limit.
+                            if (monsterImportCount >= monsterImportLimit)
+                            {
+                                // Break out of the loop
+                                break;
+                            }
                         }
 
                         // Process spells
@@ -112,6 +133,16 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
 
                             // Add the spell to the destination Campaign
                             destinationCampaign.CampaignEntries.Add(creature.ToCampaignEntry());
+
+                            // Increment the counter
+                            spellImportCount++;
+
+                            // Check if the counter is greater than or equal to the import limit.
+                            if (spellImportCount >= spellImportLimit)
+                            {
+                                // Break out of the loop
+                                break;
+                            }
                         }
 
                         // Process magic items
@@ -122,6 +153,16 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
 
                             // Add the magic item to the destination Campaign
                             destinationCampaign.CampaignEntries.Add(magicItem.ToCampaignEntry());
+
+                            // Increment the counter
+                            itemImportCount++;
+
+                            // Check if the counter is greater than or equal to the import limit.
+                            if (itemImportCount >= itemImportLimit)
+                            {
+                                // Break out of the loop
+                                break;
+                            }
                         }
                     }
                 }

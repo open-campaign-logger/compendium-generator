@@ -1,0 +1,93 @@
+{
+  "version": 2,
+  "type": "campaign",
+  "original": null,
+  "title": "OSE Compendium - Test",
+  "description": "Preformatted monsters, items and spells from the Old School Essentials SRD.",
+  "imageUrl": "https://cdn.shopify.com/s/files/1/0592/6934/9566/files/OSE_Black_Box_480x480.png?v=1632224048",
+  "campaignEntries": [
+    {
+      "rawText": null,
+      "rawPublic": "## Infravision\n\n**Duration:** 1 day\n\n**Range:** The caster or a creature touched\n\nGrants infravision to 60’. \r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "labels": [
+        "Spell",
+        "OSE",
+        "Level 3",
+        "Magic User"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Spell of Infravision - MU3"
+    },
+    {
+      "rawText": null,
+      "rawPublic": "## Control Undead\n\n* **Affects**: Up to 3d6 Hit Dice of undead.\n* **When the potion’s effect ends**: Affected undead have a hostile reaction.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Potions"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Potion of Control Undead"
+    },
+    {
+      "rawText": null,
+      "rawPublic": "## Detect Magic (C)\n\n1st Level Cleric Spell\n\n**Duration:** 2 turns\n\n**Range:** 60’\n\nEnchanted objects, areas, or creatures are caused to glow. Both permanent and temporary enchantments are revealed.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "labels": [
+        "Spell",
+        "OSE",
+        "Level 1",
+        "Cleric"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Spell of Detect Magic (C) - CL1"
+    },
+    {
+      "rawText": null,
+      "rawPublic": "## Broom of Flying\n\nA broom that can be commanded to fly, carrying the owner aloft.\n\n* **Speed**: The broom flies at 240’ (80’).\n* **Passengers**: An additional passenger may be carried. When carrying two people, the broom’s speed is 180’ (60’).\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "labels": [
+        "OSE",
+        "Magic Items",
+        "Miscellaneous Items"
+      ],
+      "tagSymbol": "+",
+      "tagValue": "Broom of Flying"
+    },
+    {
+      "rawText": null,
+      "rawPublic": "## Purify Food and Water\n\n1st Level Cleric Spell\n\n**Duration:** Permanent\n\n**Range:** 10’\n\nPoisoned, rotten, spoiled, or contaminated food and water are purified. One of the following may be affected:\n\n**Drink:** 6 quarts.\n\n**Rations:** One ration (iron or standard).\n\n**Unpreserved food:** A quantity sufficient for 12 people.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "labels": [
+        "Spell",
+        "OSE",
+        "Level 1",
+        "Cleric"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Spell of Purify Food and Water - CL1"
+    },
+    {
+      "rawText": null,
+      "rawPublic": "## Resist Cold\n\n1st Level Cleric Spell\n\n**Duration:** 6 turns\n\n**Range:** 30’\n\nAll creatures within range are protected from cold, as follows:\n\n**Normal Cold:** Unharmed by non-magical freezing temperatures.\n\n**Save bonus:** Gain a +2 bonus to saving throws versus cold-based effects (e.g. magic or breath attacks).\n\n**Cold-based damage:** Is reduced by 1 point per damage die rolled. (Each die inflicts a minimum of 1 damage.)\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "labels": [
+        "Spell",
+        "OSE",
+        "Level 1",
+        "Cleric"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Spell of Resist Cold - CL1"
+    },
+    {
+      "rawText": null,
+      "rawPublic": "## Find Traps\n\n2nd Level Cleric Spell\n\n**Duration:** 2 turns\n\n**Range:** 30’\n\nTrapped areas are caused to magically glow with a faint blue light.\n\n**Magical and mechanical traps:** Are both revealed.\n\n**No knowledge:** About the nature of traps or how to deactivate them is gained.\r\n\r\nSource: [Necrotic Gnome](https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD)\r\n",
+      "labels": [
+        "Spell",
+        "OSE",
+        "Level 2",
+        "Cleric"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Spell of Find Traps - CL2"
+    }
+  ],
+  "logs": []
+}

@@ -117,23 +117,36 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                 // Cast the deserialized list to the interface type
                 IEnumerable<IGameComponent> creatures = (IEnumerable<IGameComponent>)(sourceDataSetParsed ?? new List<IGameComponent>());
 
-                // Convert each creature to the standard format
+                // Loop through each creature in the creatures list
                 foreach (IGameComponent creature in creatures)
                 {
+                    // Log the creature name
                     this.logger.LogDebug("Converting creature to standard format: {Name}.", creature.Name);
+
+                    // Check if licenseParsed is not null and is a list with more than 0 elements
                     if (licenseParsed != null && licenseParsed is List<License> list && list.Count > 0)
                     {
+                        // Set the creature's publisher name and license URL to the first element in the list
                         creature.PublisherName = list[0].Organization;
                         creature.LicenseURL = list[0].Url;
                     }
 
+                    // Check if the creatureList does not contain a creature with the same name
                     if (!creatureList.Any(c => (c.Name is not null) && c.Name.Equals(creature.Name)))
                     {
+                        // Log the creature name
                         this.logger.LogDebug("New creature found and added to compendium list: {creature}.", creature.Name);
+
+                        // Add the creature to the creatureList
                         creatureList.Add(creature);
+
+                        // Increment the importCount
                         importCount++;
+
+                        // Check if the importCount is greater than or equal to the ImportLimit or int.MaxValue
                         if (importCount >= (sourceDataSet.ImportLimit ?? int.MaxValue))
                         {
+                            // Break out of the loop
                             break;
                         }
                     }
