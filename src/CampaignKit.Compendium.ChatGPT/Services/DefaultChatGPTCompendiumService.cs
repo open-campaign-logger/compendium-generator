@@ -19,9 +19,13 @@ namespace CampaignKit.Compendium.ChatGPT.Services
     using CampaignKit.Compendium.Core.Configuration;
     using Microsoft.Extensions.Logging;
 
+    /// <summary>
+    /// DefaultChatGPTCompendiumService provides a set of methods for managing chat-based GPT
+    /// Compendiums. It allows users to create, edit, and delete Compendiums, as well as add and
+    /// remove entries from them.
+    /// </summary>
     public class DefaultChatGPTCompendiumService : IChatGPTCompendiumService
     {
-
         /// <summary>
         /// Create a private readonly field to store an ILogger instance
         /// with the type DefaultChatGPTCompendiumService.

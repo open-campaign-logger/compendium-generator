@@ -74,6 +74,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
             // Download data sets
             foreach (var sourceDataSet in compendium.SourceDataSets)
             {
+                // Keep track of how many items we import from this data source.
+                var importCount = 0;
+
                 // Download license file
                 this.downloadService.DerivePathAndFileNames(sourceDataSet.LicenseDataURI, out string licenseDirectory, out string licenseFile);
                 var licenseFilePath = Path.Combine(rootDataDirectory, licenseDirectory, licenseFile);
@@ -112,22 +115,58 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
 
                 // Convert each object to Common.Creature and add it to the collection if it doesn't already exist.
                 // Cast the deserialized list to the interface type
-                IEnumerable<IGameComponent> creatures = (IEnumerable<IGameComponent>)(sourceDataSetParsed ?? new List<IGameComponent>());
+                IEnumerable<IGameComponent> gameComponents = (IEnumerable<IGameComponent>)(sourceDataSetParsed ?? new List<IGameComponent>());
 
-                // Convert each creature to the standard format
-                foreach (IGameComponent creature in creatures.Take(sourceDataSet.ExportLimit ?? int.MaxValue))
+                // Loop through each gameComponent in the gameComponents list
+                foreach (IGameComponent gameComponent in gameComponents)
                 {
-                    this.logger.LogDebug("Converting creature to standard format: {Name}.", creature.Name);
+                    // Log the gameComponent name
+                    this.logger.LogDebug("Converting gameComponent to standard format: {Name}.", gameComponent.Name);
+
+                    // Check if licenseParsed is not null and is a list with more than 0 elements
                     if (licenseParsed != null && licenseParsed is List<License> list && list.Count > 0)
                     {
-                        creature.PublisherName = list[0].Organization;
-                        creature.LicenseURL = list[0].Url;
+                        // Set the gameComponent's publisher name and license URL to the first element in the list
+                        gameComponent.PublisherName = list[0].Organization;
+                        gameComponent.LicenseURL = list[0].Url;
                     }
 
-                    if (!creatureList.Any(c => (c.Name is not null) && c.Name.Equals(creature.Name)))
+                    // Apply TagSymbol if configured, otherwise use a default.
+                    if (string.IsNullOrEmpty(sourceDataSet.TagSymbol))
                     {
-                        this.logger.LogDebug("New creature found and added to compendium list: {creature}.", creature.Name);
-                        creatureList.Add(creature);
+                        gameComponent.TagSymbol = sourceDataSet.TagSymbol;
+                    }
+                    else
+                    {
+                        gameComponent.TagSymbol = "~";
+                    }
+
+                    // Apply labels if configured.
+                    if (sourceDataSet.Labels != null && sourceDataSet.Labels.Count > 0)
+                    {
+                        gameComponent.Labels ??= new List<string>();
+
+                        gameComponent.Labels.AddRange(sourceDataSet.Labels);
+                    }
+
+                    // Check if the creatureList does not contain a gameComponent with the same name
+                    if (!creatureList.Any(c => (c.Name is not null) && c.Name.Equals(gameComponent.Name)))
+                    {
+                        // Log the gameComponent name
+                        this.logger.LogDebug("New gameComponent found and added to compendium list: {gameComponent}.", gameComponent.Name);
+
+                        // Add the gameComponent to the creatureList
+                        creatureList.Add(gameComponent);
+
+                        // Increment the importCount
+                        importCount++;
+
+                        // Check if the importCount is greater than or equal to the ImportLimit or int.MaxValue
+                        if (importCount >= (sourceDataSet.ImportLimit ?? int.MaxValue))
+                        {
+                            // Break out of the loop
+                            break;
+                        }
                     }
                 }
             }

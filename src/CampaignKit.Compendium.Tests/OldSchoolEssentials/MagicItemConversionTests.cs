@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
 {
     [TestClass]
-    public class MagicItemConversionTests
+    public class OldSchoolEssentialsConversionTests
     {
 
         /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
@@ -25,14 +25,38 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
             Assert.IsNotNull(convertedCampaignEntry);
             Assert.IsNotNull(convertedCampaignEntry.Labels);
             Assert.AreEqual(convertedCampaignEntry.TagSymbol, "+");
-            Assert.IsTrue(convertedCampaignEntry.Labels.Count == 3);
+            Assert.IsTrue(convertedCampaignEntry.Labels.Count == 2);
             Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Magic Items"));
             Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Potions"));
-            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("OSE"));
 
         }
 
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
+        public void ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect()
+        {
+            // Arrange
+            var campaignEntry = GetCampaignEntry("Potion of Control Undead");
 
+            // Act
+            var magicItem = new SRDMagicItem(campaignEntry)
+            {
+                Labels = new List<string>() { "ABC", "123" },
+                TagSymbol = "!"
+            };
+            var convertedCampaignEntry = magicItem.ToCampaignEntry();
+
+            // Assert
+            Assert.IsNotNull(convertedCampaignEntry);
+            Assert.IsNotNull(convertedCampaignEntry.Labels);
+            Assert.AreEqual(convertedCampaignEntry.TagSymbol, "!");
+            Assert.IsTrue(convertedCampaignEntry.Labels.Count == 2);
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("ABC"));
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("123"));
+
+        }
         /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
         /// </summary>
         [TestMethod]

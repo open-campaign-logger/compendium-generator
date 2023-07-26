@@ -218,6 +218,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         public int? Investigation { get; set; } = int.MinValue;
 
         /// <summary>
+        /// Gets or sets the list of labels associated with the creature.
+        /// </summary>
+        public List<string>? Labels { get; set; } = new List<string>();
+
+        /// <summary>
         /// Gets or sets the languages that the creature can speak.
         /// </summary>
         [JsonProperty("languages")]
@@ -368,6 +373,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         /// </summary>
         [JsonProperty("survival")]
         public int? Survival { get; set; } = int.MinValue;
+
+        /// <summary>
+        /// Gets or sets the campaign tag symbol to use for this creature.
+        /// </summary>
+        public string? TagSymbol { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the type of the creature (e.g., beast, humanoid).
