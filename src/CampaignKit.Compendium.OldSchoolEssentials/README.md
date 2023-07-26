@@ -22,18 +22,46 @@ Use the following configuration guide below to setup the module.
       // Configurable parameters for each type of entity
       "SourceDataSets": [
         {
-          // Can be used to limit the number of entries of this type.
-          // Generally used for testing purposes.
+          // Limits number of items to parse from the source data set. Useful for testing purposes.
           "ImportLimit": 5,
-          "SourceDataSetName": "Monsters"  // Do not change this
+          // Default labels to apply to campaign entries derived from the source data.
+          "Labels": [
+            "OSE",
+            "Necrotic Gnome",
+            "Monster"
+          ],
+          // Do not change this
+          "SourceDataSetName": "Monsters"
+          // Symbol to use for campaign entries derived from the source data.
+          "TagSymbol":  "~"
         },
         {
+          // Limits number of items to parse from the source data set. Useful for testing purposes.
           "ImportLimit": 5,
-          "SourceDataSetName": "Spells"  // Do not change this
+          // Default labels to apply to campaign entries derived from the source data.
+          "Labels": [
+            "OSE",
+            "Necrotic Gnome",
+            "Spell"
+          ],
+          // Do not change this
+          "SourceDataSetName": "Spells"
+          // Symbol to use for campaign entries derived from the source data.
+          "TagSymbol":  "~"
         },
         {
+          // Limits number of items to parse from the source data set. Useful for testing purposes.
           "ImportLimit": 5,
-          "SourceDataSetName": "Items"  // Do not change this
+          // Default labels to apply to campaign entries derived from the source data.
+          "Labels": [
+            "OSE",
+            "Necrotic Gnome",
+            "Magic Item"
+          ],
+          // Do not change this
+          "SourceDataSetName": "Magic Items"
+          // Symbol to use for campaign entries derived from the source data.
+          "TagSymbol":  "+"
         }
       ],
       // Compendium title.

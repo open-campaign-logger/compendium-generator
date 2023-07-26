@@ -34,6 +34,13 @@ Configure the module in `appsettings.json` or `secrets.json` as follows:
     {
         // Limits number of items to parse from the source data set. Useful for testing purposes.
         "ImportLimit": 5,
+        // Default labels to apply to campaign entries derived from the source data.
+        "Labels": [
+            "D&D 5E",
+            "Monster",
+            "WOTC",
+            "SRD"
+        ],
         // Class to use for parsing license information.
         "LicenseDataParser": "CampaignKit.Compendium.DungeonsAndDragons.Common.License",
         // URI of license information.
@@ -45,7 +52,9 @@ Configure the module in `appsettings.json` or `secrets.json` as follows:
         // Class to use for parsing source data information.
         "SourceDataSetParser": "CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature",
         // URI of source data set.
-        "SourceDataSetURI": "https://raw.githubusercontent.com/open5e/open5e-api/main/data/WOTC_5e_SRD_v5.1/monsters.json"
+        "SourceDataSetURI": "https://raw.githubusercontent.com/open5e/open5e-api/main/data/WOTC_5e_SRD_v5.1/monsters.json",
+        // Symbol to use for campaign entries derived from the source data.
+        "TagSymbol":  "~"
     },
     // Other datasets...
     ],

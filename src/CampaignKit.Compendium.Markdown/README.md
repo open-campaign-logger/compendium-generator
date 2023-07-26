@@ -19,6 +19,13 @@ To configure this module, add the following to `PublicCompendiums` in `appsettin
     {
         // Limits number of items to parse from the source data set. Useful for testing purposes.
         "ImportLimit": 5,
+        // Default labels to apply to campaign entries derived from the source data.
+        "Labels": [
+            "D&D 5E",
+            "Monster",
+            "Anne Gregersen",
+            "Monster Manual"
+        ],
         // Descriptive name of the source data set.
         "SourceDataSetName": "Monster Loot - Monster Manual",
         // Location of the file in the data directory.
