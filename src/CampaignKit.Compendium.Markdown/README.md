@@ -17,6 +17,8 @@ To configure this module, add the following to `PublicCompendiums` in `appsettin
     // List of source data sets to parse and compile into the compendium.
     "SourceDataSets": [
     {
+        // Limits number of items to parse from the source data set. Useful for testing purposes.
+        "ImportLimit": 5,
         // Descriptive name of the source data set.
         "SourceDataSetName": "Monster Loot - Monster Manual",
         // Location of the file in the data directory.
