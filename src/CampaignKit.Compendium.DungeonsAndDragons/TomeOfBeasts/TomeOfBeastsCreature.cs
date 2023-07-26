@@ -212,6 +212,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts
         public int? Investigation { get; set; }
 
         /// <summary>
+        /// Gets or sets the list of labels associated with the creature.
+        /// </summary>
+        public List<string>? Labels { get; set; } = new List<string>();
+
+        /// <summary>
         /// Gets or sets the languages that the creature can speak.
         /// </summary>
         [JsonProperty("languages")]
@@ -228,9 +233,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts
         /// </summary>
         [JsonProperty("legendary_desc")]
         public string? LegendaryDesc { get; set; }
-
-        /// <inheritdoc/>
-        public string? PublisherName { get; set; }
 
         /// <inheritdoc/>
         public string? LicenseURL { get; set; }
@@ -273,6 +275,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts
         /// </summary>
         [JsonProperty("persuasion")]
         public int? Persuasion { get; set; }
+
+        /// <inheritdoc/>
+        public string? PublisherName { get; set; }
 
         /// <summary>
         /// Gets or sets the list of reactions that the creature can take in response to certain
@@ -356,6 +361,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts
         /// </summary>
         [JsonProperty("survival")]
         public int? Survival { get; set; }
+
+        /// <summary>
+        /// Gets or sets the campaign tag symbol to use for this creature.
+        /// </summary>
+        public string? TagSymbol { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the type of the creature (e.g., beast, humanoid).

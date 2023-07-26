@@ -19,7 +19,7 @@ namespace CampaignKit.Compendium.Markdown.Services
     using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Configuration;
     using CampaignKit.Compendium.Core.Services;
-
+    using CampaignKit.Compendium.Markdown.Common;
     using Microsoft.Extensions.Logging;
 
     using Newtonsoft.Json;
@@ -33,15 +33,15 @@ namespace CampaignKit.Compendium.Markdown.Services
     public class DefaultMarkdownCompendiumService : IMarkdownCompendiumService
     {
         /// <summary>
+        /// Create a private readonly field to store an IConfigurationService instance.
+        /// </summary>
+        private readonly IConfigurationService configurationService;
+
+        /// <summary>
         /// Create a private readonly field to store an ILogger instance
         /// with the type DungeonsAndDragonsService_5e.
         /// </summary>
         private readonly ILogger<DefaultMarkdownCompendiumService> logger;
-
-        /// <summary>
-        /// Create a private readonly field to store an IConfigurationService instance.
-        /// </summary>
-        private readonly IConfigurationService configurationService;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DefaultMarkdownCompendiumService"/> class.
@@ -67,55 +67,11 @@ namespace CampaignKit.Compendium.Markdown.Services
 
             // Create local variables
             var campaignEntries = new List<CampaignEntry>();
-            var stringBuilder = new StringBuilder();
-            var stringEntryName = string.Empty;
 
-            // Download data sets
+            // Parse data sets
             foreach (var sourceDataSet in compendium.SourceDataSets)
             {
-                // Keep track of how many items we import from this data source.
-                var importCount = 0;
-
-                // Read all lines from the file specified in the sourceDataSetURI
-                var lines = await File.ReadAllLinesAsync(Path.Combine(this.configurationService.GetPrivateDataDirectory(), sourceDataSet.SourceDataSetURI));
-
-                // Iterate through each line
-                foreach (var line in lines)
-                {
-                    // If the line starts with "# "
-                    if (line.StartsWith("# "))
-                    {
-                        // If the stringBuilder has content
-                        if (stringBuilder.Length > 0)
-                        {
-                            // Create a new CampaignEntry object and add it to the campaignEntries list
-                            campaignEntries.Add(new CampaignEntry()
-                            {
-                                RawText = stringBuilder.ToString(),
-                                TagSymbol = sourceDataSet.TagSymbol,
-                                TagValue = stringEntryName,
-                            });
-                            // Clear the stringBuilder
-                            stringBuilder.Clear();
-
-                            // Increment the import count
-                            importCount++;
-
-                            // Check if the import count is greater than or equal to the
-                            // ImportLimit, or if the ImportLimit is null, then check if it is
-                            // greater than or equal to the maximum integer value
-                            if (importCount >= (sourceDataSet.ImportLimit ?? int.MaxValue))
-                            {
-                                // If the condition is true, break out of the loop
-                                break;
-                            }
-                        }
-                        // Set the stringEntryName to the line starting from the third character
-                        stringEntryName = line[2..];
-                    }
-                    // Append the line to the stringBuilder
-                    stringBuilder.AppendLine(line);
-                }
+                campaignEntries.AddRange(await MarkdownHelper.ParseCampaignEntries(sourceDataSet, this.configurationService.GetPrivateDataDirectory()));
             }
 
             // Create CampaignLogger File

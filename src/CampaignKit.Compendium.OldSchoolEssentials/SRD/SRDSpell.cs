@@ -70,6 +70,11 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
         public string? CasterType { get; set; } = string.Empty;
 
         /// <summary>
+        /// Gets or sets the list of labels associated with the creature.
+        /// </summary>
+        public List<string>? Labels { get; set; } = new List<string>();
+
+        /// <summary>
         /// Gets or sets the level of this spell.
         /// </summary>
         public string? Level { get; set; } = string.Empty;
@@ -83,20 +88,27 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
         /// <inheritdoc/>
         public string? PublisherName { get; set; } = string.Empty;
 
+        /// <summary>
+        /// Gets or sets the campaign tag symbol to use for this creature.
+        /// </summary>
+        public string? TagSymbol { get; set; } = string.Empty;
+
         /// <inheritdoc/>
         public CampaignEntry ToCampaignEntry()
         {
             // Create a new CampaignEntry object.
             var campaignEntry = new CampaignEntry()
             {
-                TagSymbol = "~",
+                TagSymbol = this.TagSymbol,
                 TagValue = this.Name,
-                Labels = new List<string>()
-                {
-                    "Spell",
-                    "OSE",
-                },
+                Labels = new List<string>(),
             };
+
+            // Copy any predefined labels over to the new object.
+            if (this.Labels != null && this.Labels.Count > 0)
+            {
+                campaignEntry.Labels.AddRange(this.Labels);
+            }
 
             // If the Level is not empty, add it to the Labels list.
             if (!string.IsNullOrEmpty(this.Level))

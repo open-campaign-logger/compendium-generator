@@ -248,6 +248,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         public string? JSONStatBlock { get; set; } = string.Empty;
 
         /// <summary>
+        /// Gets or sets the campaign labels associated with this creature.
+        /// </summary>
+        public List<string>? Labels { get; set; } = new List<string>();
+
+        /// <summary>
         /// Gets or sets languages the creature is able to speak or understand.  Example Deep Speech, telepathy 120 ft.
         /// </summary>
         public string? Languages { get; set; } = string.Empty;
@@ -380,6 +385,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         public int? Swim { get; set; } = 0;
 
         /// <summary>
+        /// Gets or sets the campaign tag symbol to use for this creature.
+        /// </summary>
+        public string? TagSymbol { get; set; } = string.Empty;
+
+        /// <summary>
         /// Gets or sets creature data formatted in standard text format.
         /// </summary>
         [JsonIgnore]
@@ -458,8 +468,8 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             CampaignEntry campaignEntry = new ()
             {
                 RawText = this.ToCampaignLoggerStatBlock(),
-                Labels = new List<string>() { "Monster", $"CR {this.ChallengeRating}" },
-                TagSymbol = "~",
+                Labels = new List<string>() { $"CR {this.ChallengeRating}" },
+                TagSymbol = this.TagSymbol,
                 TagValue = this.Name,
             };
 
@@ -467,13 +477,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             {
                 campaignEntry.Labels.Add(this.Type);
             }
-
-            if (!string.IsNullOrEmpty(this.PublisherName))
-            {
-                campaignEntry.Labels.Add(this.PublisherName);
-            }
-
-            campaignEntry.Labels.Add("D&D 5E");
 
             return campaignEntry;
         }

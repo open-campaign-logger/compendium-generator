@@ -139,8 +139,10 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
             // Assert
             Assert.IsNotNull(convertedCampaignEntry);
             Assert.IsNotNull(convertedCampaignEntry.Labels);
-            Assert.IsTrue(convertedCampaignEntry.Labels.Where(l => l.StartsWith("OSE")).Count() == 1);
-            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("OSE"));
+            Assert.AreEqual(convertedCampaignEntry.Labels.Count,3);
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Treasure Type: E"));
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("Alignment: Chaotic"));
+            Assert.IsTrue(convertedCampaignEntry.Labels.Contains("HD: 8"));
 
         }
 

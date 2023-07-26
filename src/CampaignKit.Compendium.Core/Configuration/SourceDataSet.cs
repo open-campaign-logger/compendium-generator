@@ -39,6 +39,12 @@ namespace CampaignKit.Compendium.Core.Configuration
         public int? ImportLimit { get; set; } = int.MaxValue;
 
         /// <summary>
+        /// Gets or sets a list of default labels to apply to all entries imported
+        /// from this data source.
+        /// </summary>
+        public List<string> Labels { get; set; } = new List<string>();
+
+        /// <summary>
         /// Gets or sets a value indicating whether new data should be downloaded to replace
         /// existing data.
         /// </summary>

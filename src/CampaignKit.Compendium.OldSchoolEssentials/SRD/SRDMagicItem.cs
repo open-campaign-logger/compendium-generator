@@ -55,7 +55,22 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
 
             // Set the LicenseURL property of this object to the URL of the Open Game License
             this.LicenseURL = "https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD";
+
+            // Sets the tag symbol to use when rendering the stat block.
+            this.TagSymbol = campaignEntry.TagSymbol;
+
+            // Copy the original campaign entry for magic items as we can't derive
+            // these easily from the text.
+            if (campaignEntry.Labels != null && campaignEntry.Labels.Count > 0)
+            {
+                this.Labels.AddRange(campaignEntry.Labels);
+            }
         }
+
+        /// <summary>
+        /// Gets or sets the list of labels associated with the creature.
+        /// </summary>
+        public List<string>? Labels { get; set; } = new List<string>();
 
         /// <inheritdoc/>
         public string? LicenseURL { get; set; } = string.Empty;
@@ -66,27 +81,26 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
         /// <inheritdoc/>
         public string? PublisherName { get; set; } = string.Empty;
 
+        /// <summary>
+        /// Gets or sets the campaign tag symbol to use for this creature.
+        /// </summary>
+        public string? TagSymbol { get; set; } = string.Empty;
+
         /// <inheritdoc/>
         public CampaignEntry ToCampaignEntry()
         {
             // Create a new CampaignEntry object.
             var campaignEntry = new CampaignEntry()
             {
-                TagSymbol = "+",
+                TagSymbol = this.TagSymbol,
                 TagValue = this.Name,
-                Labels = new List<string>()
-                {
-                    "OSE",
-                },
+                Labels = new List<string>(),
             };
 
-            // Copy labels from the original campaign entry
-            if (this.campaignEntry.Labels != null)
+            // Copy any predefined labels over to the new object.
+            if (this.Labels != null && this.Labels.Count > 0)
             {
-                foreach (var label in this.campaignEntry.Labels)
-                {
-                    campaignEntry.Labels.Add(label);
-                }
+                campaignEntry.Labels.AddRange(this.Labels);
             }
 
             // Create a new StringBuilder object with the RawText of the CampaignEntry.

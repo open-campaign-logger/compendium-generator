@@ -109,7 +109,17 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
                         if (campaignEntry.Labels.Contains("Monster"))
                         {
                             // Create a new SRDCreature object from the CampaignEntry
-                            var creature = new SRDCreature(campaignEntry);
+                            var creature = new SRDCreature(campaignEntry)
+                            {
+                                TagSymbol = monsterDataSourceConfig?.TagSymbol ?? "~",
+                            };
+                            creature.Labels ??= new List<string>();
+                            if (monsterDataSourceConfig != null
+                                && monsterDataSourceConfig.Labels != null
+                                && monsterDataSourceConfig.Labels.Count > 0)
+                            {
+                                creature.Labels.AddRange(monsterDataSourceConfig.Labels);
+                            }
 
                             // Add the creature to the destination Campaign
                             destinationCampaign.CampaignEntries.Add(creature.ToCampaignEntry());
@@ -129,10 +139,20 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
                         if (campaignEntry.Labels.Contains("Spell"))
                         {
                             // Create a new SRDSpell object from the CampaignEntry
-                            var creature = new SRDSpell(campaignEntry);
+                            var spell = new SRDSpell(campaignEntry)
+                            {
+                                TagSymbol = monsterDataSourceConfig?.TagSymbol ?? "~",
+                            };
+                            spell.Labels ??= new List<string>();
+                            if (monsterDataSourceConfig != null
+                                && monsterDataSourceConfig.Labels != null
+                                && monsterDataSourceConfig.Labels.Count > 0)
+                            {
+                                spell.Labels.AddRange(monsterDataSourceConfig.Labels);
+                            }
 
                             // Add the spell to the destination Campaign
-                            destinationCampaign.CampaignEntries.Add(creature.ToCampaignEntry());
+                            destinationCampaign.CampaignEntries.Add(spell.ToCampaignEntry());
 
                             // Increment the counter
                             spellImportCount++;
@@ -148,10 +168,20 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
                         // Process magic items
                         if (campaignEntry.Labels.Contains("Magic Items"))
                         {
-                            // Create a new SRDMagicItem object from the CampaignEntry
-                            var magicItem = new SRDMagicItem(campaignEntry);
+                            // Create a new SRDItem object from the CampaignEntry
+                            var magicItem = new SRDMagicItem(campaignEntry)
+                            {
+                                TagSymbol = monsterDataSourceConfig?.TagSymbol ?? "+",
+                            };
+                            magicItem.Labels ??= new List<string>();
+                            if (monsterDataSourceConfig != null
+                                && monsterDataSourceConfig.Labels != null
+                                && monsterDataSourceConfig.Labels.Count > 0)
+                            {
+                                magicItem.Labels.AddRange(monsterDataSourceConfig.Labels);
+                            }
 
-                            // Add the magic item to the destination Campaign
+                            // Add the magic magicItem to the destination Campaign
                             destinationCampaign.CampaignEntries.Add(magicItem.ToCampaignEntry());
 
                             // Increment the counter

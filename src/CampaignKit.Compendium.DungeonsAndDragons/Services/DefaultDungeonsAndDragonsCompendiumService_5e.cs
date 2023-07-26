@@ -115,30 +115,48 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
 
                 // Convert each object to Common.Creature and add it to the collection if it doesn't already exist.
                 // Cast the deserialized list to the interface type
-                IEnumerable<IGameComponent> creatures = (IEnumerable<IGameComponent>)(sourceDataSetParsed ?? new List<IGameComponent>());
+                IEnumerable<IGameComponent> gameComponents = (IEnumerable<IGameComponent>)(sourceDataSetParsed ?? new List<IGameComponent>());
 
-                // Loop through each creature in the creatures list
-                foreach (IGameComponent creature in creatures)
+                // Loop through each gameComponent in the gameComponents list
+                foreach (IGameComponent gameComponent in gameComponents)
                 {
-                    // Log the creature name
-                    this.logger.LogDebug("Converting creature to standard format: {Name}.", creature.Name);
+                    // Log the gameComponent name
+                    this.logger.LogDebug("Converting gameComponent to standard format: {Name}.", gameComponent.Name);
 
                     // Check if licenseParsed is not null and is a list with more than 0 elements
                     if (licenseParsed != null && licenseParsed is List<License> list && list.Count > 0)
                     {
-                        // Set the creature's publisher name and license URL to the first element in the list
-                        creature.PublisherName = list[0].Organization;
-                        creature.LicenseURL = list[0].Url;
+                        // Set the gameComponent's publisher name and license URL to the first element in the list
+                        gameComponent.PublisherName = list[0].Organization;
+                        gameComponent.LicenseURL = list[0].Url;
                     }
 
-                    // Check if the creatureList does not contain a creature with the same name
-                    if (!creatureList.Any(c => (c.Name is not null) && c.Name.Equals(creature.Name)))
+                    // Apply TagSymbol if configured, otherwise use a default.
+                    if (string.IsNullOrEmpty(sourceDataSet.TagSymbol))
                     {
-                        // Log the creature name
-                        this.logger.LogDebug("New creature found and added to compendium list: {creature}.", creature.Name);
+                        gameComponent.TagSymbol = sourceDataSet.TagSymbol;
+                    }
+                    else
+                    {
+                        gameComponent.TagSymbol = "~";
+                    }
 
-                        // Add the creature to the creatureList
-                        creatureList.Add(creature);
+                    // Apply labels if configured.
+                    if (sourceDataSet.Labels != null && sourceDataSet.Labels.Count > 0)
+                    {
+                        gameComponent.Labels ??= new List<string>();
+
+                        gameComponent.Labels.AddRange(sourceDataSet.Labels);
+                    }
+
+                    // Check if the creatureList does not contain a gameComponent with the same name
+                    if (!creatureList.Any(c => (c.Name is not null) && c.Name.Equals(gameComponent.Name)))
+                    {
+                        // Log the gameComponent name
+                        this.logger.LogDebug("New gameComponent found and added to compendium list: {gameComponent}.", gameComponent.Name);
+
+                        // Add the gameComponent to the creatureList
+                        creatureList.Add(gameComponent);
 
                         // Increment the importCount
                         importCount++;
