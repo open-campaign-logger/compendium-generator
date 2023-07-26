@@ -16,17 +16,16 @@
 
 namespace CampaignKit.Compendium.Markdown.Services
 {
-    using System.Text;
-    using System.Threading.Tasks;
-
     using CampaignKit.Compendium.Core.CampaignLogger;
-    using CampaignKit.Compendium.Core.Common;
     using CampaignKit.Compendium.Core.Configuration;
     using CampaignKit.Compendium.Core.Services;
-
+    using CampaignKit.Compendium.Markdown.Common;
     using Microsoft.Extensions.Logging;
 
     using Newtonsoft.Json;
+
+    using System.Text;
+    using System.Threading.Tasks;
 
     /// <summary>
     /// Default service for creating Dungeons &amp; Dragons 5e compendiums.
@@ -34,15 +33,15 @@ namespace CampaignKit.Compendium.Markdown.Services
     public class DefaultMarkdownCompendiumService : IMarkdownCompendiumService
     {
         /// <summary>
+        /// Create a private readonly field to store an IConfigurationService instance.
+        /// </summary>
+        private readonly IConfigurationService configurationService;
+
+        /// <summary>
         /// Create a private readonly field to store an ILogger instance
         /// with the type DungeonsAndDragonsService_5e.
         /// </summary>
         private readonly ILogger<DefaultMarkdownCompendiumService> logger;
-
-        /// <summary>
-        /// Create a private readonly field to store an IConfigurationService instance.
-        /// </summary>
-        private readonly IConfigurationService configurationService;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DefaultMarkdownCompendiumService"/> class.
@@ -68,31 +67,11 @@ namespace CampaignKit.Compendium.Markdown.Services
 
             // Create local variables
             var campaignEntries = new List<CampaignEntry>();
-            var stringBuilder = new StringBuilder();
-            var stringEntryName = string.Empty;
 
-            // Download data sets
+            // Parse data sets
             foreach (var sourceDataSet in compendium.SourceDataSets)
             {
-                var lines = await File.ReadAllLinesAsync(Path.Combine(this.configurationService.GetPrivateDataDirectory(), sourceDataSet.SourceDataSetURI));
-                foreach (var line in lines)
-                {
-                    if (line.StartsWith("# "))
-                    {
-                        if (stringBuilder.Length > 0)
-                        {
-                            campaignEntries.Add(new CampaignEntry()
-                            {
-                                RawText = stringBuilder.ToString(),
-                                TagSymbol = sourceDataSet.TagSymbol,
-                                TagValue = stringEntryName,
-                            });
-                            stringBuilder.Clear();
-                        }
-                        stringEntryName = line[2..];
-                    }
-                    stringBuilder.AppendLine(line);
-                }
+                campaignEntries.AddRange(await MarkdownHelper.ParseCampaignEntries(sourceDataSet, this.configurationService.GetPrivateDataDirectory()));
             }
 
             // Create CampaignLogger File
@@ -108,12 +87,16 @@ namespace CampaignKit.Compendium.Markdown.Services
                 ImageUrl = string.Empty,
             };
 
+            //Serialize the campaignLoggerFile object into a string using JsonConvert
             string campaignLoggerFileString = JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented);
 
+            //Combine the rootDataDirectory with the compendium title to create a file name
             var fileName = Path.Combine(rootDataDirectory, compendium.Title + ".json");
 
+            //Write the campaignLoggerFileString to the fileName
             File.WriteAllText(fileName, campaignLoggerFileString);
 
+            //Log a message to the logger that the processing of the compendium is complete
             this.logger.LogInformation("Processing of compendium complete: {compendium}.", compendium.Title);
         }
     }

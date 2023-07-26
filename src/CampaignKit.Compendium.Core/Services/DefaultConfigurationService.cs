@@ -19,7 +19,9 @@ namespace CampaignKit.Compendium.Core.Services
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
+
     using CampaignKit.Compendium.Core.Configuration;
+
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.Logging;
     using Microsoft.Identity.Client;
@@ -93,6 +95,11 @@ namespace CampaignKit.Compendium.Core.Services
             return result;
         }
 
+        /// <summary>
+        /// Gets the service with the specified name.
+        /// </summary>
+        /// <param name="serviceName">Name of the service.</param>
+        /// <returns>The service with the specified name.</returns>
         public Service GetService(string serviceName)
         {
             throw new NotImplementedException();

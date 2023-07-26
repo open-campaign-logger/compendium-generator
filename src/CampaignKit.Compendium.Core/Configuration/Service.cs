@@ -21,7 +21,6 @@ namespace CampaignKit.Compendium.Core.Configuration
     /// </summary>
     public class Service
     {
-
         /// <summary>
         /// Gets or sets the name of the service.
         /// </summary>

@@ -11,6 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Markdown\TestFiles\test.md" />
     <None Remove="OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json" />
     <None Remove="DungeonsAndDragons\TestFiles\aboleth.json" />
     <None Remove="DungeonsAndDragons\TestFiles\backup_holler_spider.json" />
@@ -25,6 +26,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="DungeonsAndDragons\TestFiles\sulsha.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Markdown\TestFiles\test.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -64,7 +68,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Markdown\" />
     <Folder Include="ChatGPT\" />
   </ItemGroup>
 
