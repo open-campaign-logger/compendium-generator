@@ -17,7 +17,7 @@
 namespace CampaignKit.Compendium.Core.Configuration
 {
     /// <summary>
-    /// Represents a set of services for Tabletop Role-Playing Game (TTRPG) systems.
+    /// Configuration class for external services to be consumed by a module.
     /// </summary>
     public class Service
     {
@@ -34,7 +34,7 @@ namespace CampaignKit.Compendium.Core.Configuration
         /// <summary>
         /// Gets or sets the key of the service.
         /// </summary>
-        public string Key { get; set; } = string.Empty;
+        public string APIKey { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets a value indicating whether this service is active.

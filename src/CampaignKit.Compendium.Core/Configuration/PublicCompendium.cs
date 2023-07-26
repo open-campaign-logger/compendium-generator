@@ -22,40 +22,26 @@ namespace CampaignKit.Compendium.Core.Configuration
     /// </summary>
     public class PublicCompendium : ICompendium
     {
-        /// <summary>
-        /// Gets or sets the name of the CompendiumService to use for processing this compendium.
-        /// </summary>
+
+        /// <inheritdoc/>
         public string CompendiumService { get; set; } = string.Empty;
 
-        /// <summary>
-        /// Gets or sets the description of the Compendium.
-        /// This property is typically used to provide a brief explanation of the Compendium's content.
-        /// </summary>
+        /// <inheritdoc/>
         public string Description { get; set; } = string.Empty;
 
-        /// <summary>
-        /// Gets or sets the name of the TTRPG game system that this compendium belongs to.
-        /// This value will be used as a folder name for file generation.  Please make sure
-        /// that it's using folder safe characters.
-        /// </summary>
+        /// <inheritdoc/>
         public string GameSystem { get; set; } = string.Empty;
 
-        /// <summary>
-        /// Gets or sets the URL of the image associated with the Compendium.
-        /// This property is typically used to provide a visual representation of the Compendium's content.
-        /// </summary>
+        /// <inheritdoc/>
         public string ImageUrl { get; set; } = string.Empty;
 
-        /// <summary>
-        /// Gets or sets the list of source data sets associated with the Compendium.
-        /// Each item in this list represents a set of data that is used in the Compendium.
-        /// </summary>
+        /// <inheritdoc/>
         public List<SourceDataSet> SourceDataSets { get; set; } = new List<SourceDataSet>();
 
-        /// <summary>
-        /// Gets or sets the title of the Compendium.
-        /// This property is typically used to provide a succinct name for the Compendium.
-        /// </summary>
+        /// <inheritdoc/>
         public string Title { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
+        public List<Prompt> Prompts { get; set; } = new List<Prompt> { };
     }
 }

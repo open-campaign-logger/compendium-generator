@@ -53,6 +53,12 @@ namespace CampaignKit.Compendium.Core.Configuration
         List<SourceDataSet> SourceDataSets { get; set; }
 
         /// <summary>
+        /// Gets or sets the list of chat prompts to use for generating the Compendium.
+        /// Each item in this list represents a prompt that will be used to generate a campaign entry.
+        /// </summary>
+        List<Prompt> Prompts { get; set; }
+
+        /// <summary>
         /// Gets or sets the title of the Compendium.
         /// This property is typically used to provide a succinct name for the Compendium.
         /// </summary>

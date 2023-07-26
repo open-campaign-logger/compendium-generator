@@ -30,4 +30,8 @@
     <ProjectReference Include="..\CampaignKit.Compendium.Core\CampaignKit.Compendium.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Prompts\" />
+  </ItemGroup>
+
 </Project>
