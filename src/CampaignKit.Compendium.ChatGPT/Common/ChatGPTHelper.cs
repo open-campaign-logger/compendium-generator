@@ -24,6 +24,8 @@ namespace CampaignKit.Compendium.ChatGPT.Common
     using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Configuration;
 
+    using OpenAI_API.Chat;
+
     /// <summary>
     /// This static class provides helper methods for working with Markdown.
     /// </summary>
@@ -122,9 +124,21 @@ namespace CampaignKit.Compendium.ChatGPT.Common
             }
 
             var api = new OpenAI_API.OpenAIAPI(service.APIKey);
-            var chat = api.Chat.CreateConversation();
-            chat.AppendUserInput(promptTemplate);
-            var markdown = await chat.GetResponseFromChatbotAsync();
+            var chatMessages = new List<ChatMessage>();
+            var chatMessage = new ChatMessage()
+            {
+                Content = promptTemplate,
+                Role = ChatMessageRole.User,
+            };
+            chatMessages.Add(chatMessage);
+            var chatRequest = new OpenAI_API.Chat.ChatRequest()
+            {
+                MaxTokens = 8192 - promptTemplate.Length - 1,
+                Messages = chatMessages,
+                Model = "gpt-4",
+            };
+            var result = await api.Chat.CreateChatCompletionAsync(chatRequest);
+            var markdown = result.ToString();
 
             return new CampaignEntry();
         }
