@@ -1,4 +1,4 @@
-﻿// <copyright file="IMarkdownCompendiumService.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="IOldSchoolEssentialsCompendiumService.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2023 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");

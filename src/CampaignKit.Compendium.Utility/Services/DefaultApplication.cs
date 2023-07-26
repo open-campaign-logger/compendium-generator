@@ -109,7 +109,13 @@ namespace CampaignKit.Compendium.Utility.Services
             // Process each public compendium
             foreach (var comp in publicCompendiums)
             {
-                await this.ProcessCompendium(comp, this.configurationService.GetPublicDataDirectory());
+                var rootDirectory = Path.Combine(this.configurationService.GetPublicDataDirectory(), comp.GameSystem);
+                if (!Directory.Exists(rootDirectory))
+                {
+                    Directory.CreateDirectory(rootDirectory);
+                }
+
+                await this.ProcessCompendium(comp, rootDirectory);
             }
 
             // Retrieve all private compendiums from the configuration
@@ -118,7 +124,13 @@ namespace CampaignKit.Compendium.Utility.Services
             // Process each private compendium
             foreach (var comp in privateCompendiums)
             {
-                await this.ProcessCompendium(comp, this.configurationService.GetPrivateDataDirectory());
+                var rootDirectory = Path.Combine(this.configurationService.GetPrivateDataDirectory(), comp.GameSystem);
+                if (!Directory.Exists(rootDirectory))
+                {
+                    Directory.CreateDirectory(rootDirectory);
+                }
+
+                await this.ProcessCompendium(comp, rootDirectory);
             }
 
             this.logger.LogDebug("Stopping application : {application}.", nameof(DefaultApplication));

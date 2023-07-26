@@ -89,6 +89,17 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
             // Iterate through each CampaignEntry in the Campaign
             if (campaign.CampaignEntries != null)
             {
+                // Keep track of how many items we import from this data source.
+                var monsterDataSourceConfig = compendium.SourceDataSets.FirstOrDefault(ds => ds.SourceDataSetName.Equals("Monsters"));
+                var monsterImportLimit = monsterDataSourceConfig?.ImportLimit ?? int.MaxValue;
+                var monsterImportCount = 0;
+                var spellDataSourceConfig = compendium.SourceDataSets.FirstOrDefault(ds => ds.SourceDataSetName.Equals("Spells"));
+                var spellImportLimit = spellDataSourceConfig?.ImportLimit ?? int.MaxValue;
+                var spellImportCount = 0;
+                var itemDataSourceConfig = compendium.SourceDataSets.FirstOrDefault(ds => ds.SourceDataSetName.Equals("Items"));
+                var itemImportLimit = itemDataSourceConfig?.ImportLimit ?? int.MaxValue;
+                var itemImportCount = 0;
+
                 foreach (var campaignEntry in campaign.CampaignEntries)
                 {
                     // Check if the CampaignEntry contains labels
@@ -98,30 +109,90 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
                         if (campaignEntry.Labels.Contains("Monster"))
                         {
                             // Create a new SRDCreature object from the CampaignEntry
-                            var creature = new SRDCreature(campaignEntry);
+                            var creature = new SRDCreature(campaignEntry)
+                            {
+                                TagSymbol = monsterDataSourceConfig?.TagSymbol ?? "~",
+                            };
+                            creature.Labels ??= new List<string>();
+                            if (monsterDataSourceConfig != null
+                                && monsterDataSourceConfig.Labels != null
+                                && monsterDataSourceConfig.Labels.Count > 0)
+                            {
+                                creature.Labels.AddRange(monsterDataSourceConfig.Labels);
+                            }
 
                             // Add the creature to the destination Campaign
                             destinationCampaign.CampaignEntries.Add(creature.ToCampaignEntry());
+
+                            // Increment the counter
+                            monsterImportCount++;
+
+                            // Check if the counter is greater than or equal to the import limit.
+                            if (monsterImportCount >= monsterImportLimit)
+                            {
+                                // Break out of the loop
+                                break;
+                            }
                         }
 
                         // Process spells
                         if (campaignEntry.Labels.Contains("Spell"))
                         {
                             // Create a new SRDSpell object from the CampaignEntry
-                            var creature = new SRDSpell(campaignEntry);
+                            var spell = new SRDSpell(campaignEntry)
+                            {
+                                TagSymbol = monsterDataSourceConfig?.TagSymbol ?? "~",
+                            };
+                            spell.Labels ??= new List<string>();
+                            if (monsterDataSourceConfig != null
+                                && monsterDataSourceConfig.Labels != null
+                                && monsterDataSourceConfig.Labels.Count > 0)
+                            {
+                                spell.Labels.AddRange(monsterDataSourceConfig.Labels);
+                            }
 
                             // Add the spell to the destination Campaign
-                            destinationCampaign.CampaignEntries.Add(creature.ToCampaignEntry());
+                            destinationCampaign.CampaignEntries.Add(spell.ToCampaignEntry());
+
+                            // Increment the counter
+                            spellImportCount++;
+
+                            // Check if the counter is greater than or equal to the import limit.
+                            if (spellImportCount >= spellImportLimit)
+                            {
+                                // Break out of the loop
+                                break;
+                            }
                         }
 
                         // Process magic items
                         if (campaignEntry.Labels.Contains("Magic Items"))
                         {
-                            // Create a new SRDMagicItem object from the CampaignEntry
-                            var magicItem = new SRDMagicItem(campaignEntry);
+                            // Create a new SRDItem object from the CampaignEntry
+                            var magicItem = new SRDMagicItem(campaignEntry)
+                            {
+                                TagSymbol = monsterDataSourceConfig?.TagSymbol ?? "+",
+                            };
+                            magicItem.Labels ??= new List<string>();
+                            if (monsterDataSourceConfig != null
+                                && monsterDataSourceConfig.Labels != null
+                                && monsterDataSourceConfig.Labels.Count > 0)
+                            {
+                                magicItem.Labels.AddRange(monsterDataSourceConfig.Labels);
+                            }
 
-                            // Add the magic item to the destination Campaign
+                            // Add the magic magicItem to the destination Campaign
                             destinationCampaign.CampaignEntries.Add(magicItem.ToCampaignEntry());
+
+                            // Increment the counter
+                            itemImportCount++;
+
+                            // Check if the counter is greater than or equal to the import limit.
+                            if (itemImportCount >= itemImportLimit)
+                            {
+                                // Break out of the loop
+                                break;
+                            }
                         }
                     }
                 }

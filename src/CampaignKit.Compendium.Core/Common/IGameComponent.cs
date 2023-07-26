@@ -24,6 +24,11 @@ namespace CampaignKit.Compendium.Core.Common
     public interface IGameComponent
     {
         /// <summary>
+        /// Gets or sets the list of labels associated with this game component.
+        /// </summary>
+        public List<string>? Labels { get; set; }
+
+        /// <summary>
         /// Gets or sets the URL of the license for the game component's source data.
         /// </summary>
         public string? LicenseURL { get; set; }
@@ -37,6 +42,11 @@ namespace CampaignKit.Compendium.Core.Common
         /// Gets or sets the name of the publisher of the game component's source data.
         /// </summary>
         public string? PublisherName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the list of labels associated with this game component.
+        /// </summary>
+        public string? TagSymbol { get; set; }
 
         /// <summary>
         /// Generates a CampaignLogger Entry for this game component.

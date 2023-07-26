@@ -34,6 +34,13 @@ namespace CampaignKit.Compendium.Core.Configuration
         string Description { get; set; }
 
         /// <summary>
+        /// Gets or sets the name of the TTRPG game system that this compendium belongs to.
+        /// This value will be used as a folder name for file generation.  Please make sure
+        /// that it's using folder safe characters.
+        /// </summary>
+        string GameSystem { get; set; }
+
+        /// <summary>
         /// Gets or sets the URL of the image associated with the Compendium.
         /// This property is typically used to provide a visual representation of the Compendium's content.
         /// </summary>

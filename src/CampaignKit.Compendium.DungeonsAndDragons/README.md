@@ -25,13 +25,22 @@ Configure the module in `appsettings.json` or `secrets.json` as follows:
     "CompendiumService": "CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e, CampaignKit.Compendium.DungeonsAndDragons.dll",
     // Description of the compendium.
     "Description": "Preformatted 5e monsters from the SRD and Kobold Press.",
+    // Name of the game system.  This name will be used for organizing generated files.  Make sure it's a path safe string.  (avoid special characters)
+    "GameSystem": "Dungeons and Dragons 5e",
     // Image to use for the compendium.
     "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
     // List of source data sets to parse and compile into the compendium.
     "SourceDataSets": [
     {
         // Limits number of items to parse from the source data set. Useful for testing purposes.
-        "ExportLimit": 5,
+        "ImportLimit": 5,
+        // Default labels to apply to campaign entries derived from the source data.
+        "Labels": [
+            "D&D 5E",
+            "Monster",
+            "WOTC",
+            "SRD"
+        ],
         // Class to use for parsing license information.
         "LicenseDataParser": "CampaignKit.Compendium.DungeonsAndDragons.Common.License",
         // URI of license information.
@@ -43,7 +52,9 @@ Configure the module in `appsettings.json` or `secrets.json` as follows:
         // Class to use for parsing source data information.
         "SourceDataSetParser": "CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature",
         // URI of source data set.
-        "SourceDataSetURI": "https://raw.githubusercontent.com/open5e/open5e-api/main/data/WOTC_5e_SRD_v5.1/monsters.json"
+        "SourceDataSetURI": "https://raw.githubusercontent.com/open5e/open5e-api/main/data/WOTC_5e_SRD_v5.1/monsters.json",
+        // Symbol to use for campaign entries derived from the source data.
+        "TagSymbol":  "~"
     },
     // Other datasets...
     ],

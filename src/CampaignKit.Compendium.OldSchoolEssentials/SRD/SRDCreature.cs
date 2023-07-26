@@ -49,6 +49,9 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
 
             // Set the LicenseURL property of this object to the URL of the Open Game License
             this.LicenseURL = "https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD";
+
+            // Sets the tag symbol to use when rendering the stat block.
+            this.TagSymbol = campaignEntry.TagSymbol;
         }
 
         /// <inheritdoc/>
@@ -59,6 +62,16 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
 
         /// <inheritdoc/>
         public string? PublisherName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the list of labels associated with the creature.
+        /// </summary>
+        public List<string>? Labels { get; set; } = new List<string>();
+
+        /// <summary>
+        /// Gets or sets the campaign tag symbol to use for this creature.
+        /// </summary>
+        public string? TagSymbol { get; set; } = string.Empty;
 
         /// <inheritdoc/>
         public CampaignEntry ToCampaignEntry()
@@ -198,12 +211,14 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
 
             builder.AppendLine(string.Empty);
             campaignEntry.RawText = builder.ToString();
-            campaignEntry.TagSymbol = "~";
+            campaignEntry.TagSymbol = this.TagSymbol;
             campaignEntry.TagValue = this.Name;
-            campaignEntry.Labels = new List<string>
+            campaignEntry.Labels = new List<string>();
+
+            if (this.Labels != null && this.Labels.Count > 0)
             {
-                "Monster",
-            };
+                campaignEntry.Labels.AddRange(this.Labels);
+            }
 
             if (!string.IsNullOrEmpty(treasureType))
             {
@@ -257,8 +272,6 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
                     campaignEntry.Labels.Add($"HD: {hitdicelabel}");
                 }
             }
-
-            campaignEntry.Labels.Add("OSE");
 
             return campaignEntry;
         }
