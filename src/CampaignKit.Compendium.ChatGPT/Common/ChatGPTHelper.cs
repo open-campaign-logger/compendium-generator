@@ -25,7 +25,10 @@ namespace CampaignKit.Compendium.ChatGPT.Common
     using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Configuration;
 
+    using Microsoft.EntityFrameworkCore.Update;
+
     using OpenAI_API.Chat;
+    using OpenAI_API.Models;
 
     /// <summary>
     /// This static class provides helper methods for working with Markdown.
@@ -75,11 +78,7 @@ namespace CampaignKit.Compendium.ChatGPT.Common
             // Setup ChatGPT service
             var api = new OpenAI_API.OpenAIAPI(service.APIKey);
 
-            // Converse with ChatGPT
-            var chat = api.Chat.CreateConversation();
-            chat.AppendSystemMessage(prompt.Role);
-
-            // Iterate through the prompt messages and capture the responses.
+            // Create chat messages for each of the configured prompt messages.
             var stringBuilder = new StringBuilder();
             foreach (var promptMessage in prompt.PromptMessages)
             {
@@ -101,18 +100,44 @@ namespace CampaignKit.Compendium.ChatGPT.Common
                     continue; // If empty, continue to the next iteration
                 }
 
-                // Append the user input to the chatbot
-                chat.AppendUserInput(modifedPromptMessage);
-
-                // Get the response from the chatbot
-                var response = await chat.GetResponseFromChatbotAsync();
-
-                // Check if the response is not null and the prompt message heading is not "IGNORE"
-                if (response != null && !promptMessage.Heading.Equals("IGNORE", StringComparison.InvariantCultureIgnoreCase))
+                var chatMessages = new List<ChatMessage>()
                 {
-                    // Append the prompt message heading and the response to the string builder
-                    stringBuilder.AppendLine(promptMessage.Heading);
-                    stringBuilder.AppendLine(response);
+                    // Create a "System" message that will instruct the chatbot on how to behave.
+                    new ChatMessage()
+                    {
+                        Role = ChatMessageRole.System,
+                        Content = prompt.Role,
+                    },
+
+                    // Create a "User" message that will prompt the chatbot for a specific response.
+                    new ChatMessage()
+                    {
+                        Role = ChatMessageRole.User,
+                        Content = modifedPromptMessage,
+                    },
+                };
+
+                // Execute the chat conversation
+                var result = await api.Chat.CreateChatCompletionAsync(new ChatRequest()
+                {
+                    Model = Model.ChatGPTTurbo0301,
+                    Messages = chatMessages,
+                });
+
+                // Ensure that a result was received.
+                if (result is null || result.Choices is null || result.Choices.Count == 0)
+                {
+                    throw new Exception("No response received from chatbot.");
+                }
+
+                // Append the prompt message heading and the response to the string builder
+                stringBuilder.AppendLine(promptMessage.Heading);
+                stringBuilder.AppendLine(result.Choices[0].Message.Content);
+
+                // If the message creation terminated unexpectedly add a note.
+                if (!result.Choices[0].FinishReason.Equals("stop"))
+                {
+                    stringBuilder.AppendLine($"\nChatbot reponse terminated unexpectedly: : {result.Choices[0].FinishReason}");
                 }
             }
 
