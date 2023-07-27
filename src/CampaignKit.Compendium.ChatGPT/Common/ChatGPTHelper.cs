@@ -100,6 +100,7 @@ namespace CampaignKit.Compendium.ChatGPT.Common
                     continue; // If empty, continue to the next iteration
                 }
 
+                // Create a list of chat messages to pass to the chatbot.
                 var chatMessages = new List<ChatMessage>()
                 {
                     // Create a "System" message that will instruct the chatbot on how to behave.
