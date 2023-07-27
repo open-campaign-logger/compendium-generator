@@ -87,16 +87,16 @@ namespace CampaignKit.Compendium.Markdown.Services
                 ImageUrl = string.Empty,
             };
 
-            //Serialize the campaignLoggerFile object into a string using JsonConvert
+            // Serialize the campaignLoggerFile object into a string using JsonConvert
             string campaignLoggerFileString = JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented);
 
-            //Combine the rootDataDirectory with the compendium title to create a file name
+            // Combine the rootDataDirectory with the compendium title to create a file name
             var fileName = Path.Combine(rootDataDirectory, compendium.Title + ".json");
 
-            //Write the campaignLoggerFileString to the fileName
+            // Write the campaignLoggerFileString to the fileName
             File.WriteAllText(fileName, campaignLoggerFileString);
 
-            //Log a message to the logger that the processing of the compendium is complete
+            // Log a message to the logger that the processing of the compendium is complete
             this.logger.LogInformation("Processing of compendium complete: {compendium}.", compendium.Title);
         }
     }

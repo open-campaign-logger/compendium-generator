@@ -83,21 +83,34 @@ namespace CampaignKit.Compendium.ChatGPT.Common
             var stringBuilder = new StringBuilder();
             foreach (var promptMessage in prompt.PromptMessages)
             {
+                // Replace {Name} with the value of prompt.Name
                 var modifedPromptMessage = promptMessage.Message.Replace("{Name}", prompt.Name);
+
+                // Replace {GameSystem} with the value of gameSystem
                 modifedPromptMessage = modifedPromptMessage.Replace("{GameSystem}", gameSystem);
+
+                // Replace {Genre} with the value of prompt.Genre
                 modifedPromptMessage = modifedPromptMessage.Replace("{Genre}", prompt.Genre);
+
+                // Replace {Sentiment} with a sentiment rating of prompt.Sentiment
                 modifedPromptMessage = modifedPromptMessage.Replace("{Sentiment}", $"On a sentiment scale of 1 to 10, where 1 represents a very precise and serious reponse and 10 represents a whimsical reponse, please generate reponses with a sentiment rating of {prompt.Sentiment}");
 
+                // Check if the modified prompt message is empty or not
                 if (string.IsNullOrEmpty(modifedPromptMessage))
                 {
-                    continue;
+                    continue; // If empty, continue to the next iteration
                 }
 
+                // Append the user input to the chatbot
                 chat.AppendUserInput(modifedPromptMessage);
+
+                // Get the response from the chatbot
                 var response = await chat.GetResponseFromChatbotAsync();
 
+                // Check if the response is not null and the prompt message heading is not "IGNORE"
                 if (response != null && !promptMessage.Heading.Equals("IGNORE", StringComparison.InvariantCultureIgnoreCase))
                 {
+                    // Append the prompt message heading and the response to the string builder
                     stringBuilder.AppendLine(promptMessage.Heading);
                     stringBuilder.AppendLine(response);
                 }

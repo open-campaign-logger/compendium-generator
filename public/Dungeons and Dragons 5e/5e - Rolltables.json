@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "type": "campaign",
+  "original": null,
+  "title": "5e - Rolltables",
+  "description": "Prompt generated entities from ChatGPT.",
+  "imageUrl": "",
+  "campaignEntries": [
+    {
+      "rawText": "## Rolltable\r\n| Roll | Mishap |\n|------|--------|\n| 1    | Your weapon slips and you end up hitting yourself, dealing damage to yourself. |\n| 2    | Your attack misses completely and you stumble, falling prone. |\n| 3    | You swing wide, hitting a nearby object instead. Roll a d4 to determine the unintended target: 1. Ally, 2. Nearby piece of furniture, 3. Random creature in the area, 4. Decorative object. |\n| 4    | Your weapon gets lodged in the ground or a nearby surface, requiring a Strength check (DC 15) to remove it. |\n| 5    | You lose your footing during the swing, stumbling backward. Make a Dexterity saving throw (DC 12) or fall prone. |\n| 6    | Your attack connects, but your grip on your weapon loosens. Roll a dexterity saving throw (DC 14) to maintain your hold or drop the weapon. |\n| 7    | Your swing is too powerful, causing you to stumble forward and leaving you off-balance. Attackers have advantage on melee attacks against you until the start of your next turn. |\n| 8    | As you swing your weapon, it collides with a nearby object, causing a loud noise that echoes through the area. |\n| 9    | Your attack hits, but you lose your balance and are pushed 5 feet away from the target. |\n| 10   | Your weapon strikes a piece of armor, damaging it so that its AC is reduced by 2 until it is repaired. |\n| 11   | The force of your attack causes your weapon to become lodged in your target. You must make a Strength check (DC 15) on your next turn to remove it, or your turn is spent trying to dislodge it. |\n| 12   | You swing wildly and trip over your own feet, falling prone. |\n| 13   | Your weapon glances off the enemy, hitting a nearby ally instead. Roll a d4 to determine the unintended target: 1. Ally closest to you, 2. Second closest ally, 3. Random ally in the area, 4. Furthest ally from you. |\n| 14   | Your attack connects, but due to your poor grasp on your weapon, the damage is greatly reduced. Roll weapon damage as normal, but halve the total. |\n| 15   | You swing with all your might, but miss the target and hit a solid object, causing your weapon to become damaged. Its damage dice are reduced by one size (e.g., from d8 to d6) until it is repaired. |\n| 16   | Your attack breaks the enemy's defense, but your wild swing leaves an opening for an opportunistic enemy. An adjacent enemy gains advantage on their next attack against you. |\n| 17   | Your attack hits an armored enemy, but the force is so great that your weapon becomes stuck in their armor. You must make a Strength check (DC 17) to remove it, or your turn is spent trying to dislodge it. |\n| 18   | Your swing is too fierce, causing you to lose your balance and fall prone. |\n| 19   | Your attack connects, but you strain a muscle in the process. You have disadvantage on all attack rolls until you take a short rest. |\n| 20   | Your wild swing connects with great force, but the recoil sends your weapon flying out of your hand. Roll a dexterity saving throw (DC 16) to catch it, or your weapon lands 10 feet away in a random direction. |\r\n",
+      "rawPublic": "",
+      "labels": [
+        "Rolltable",
+        "Critical",
+        "D&D 5E",
+        "Melee"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Critical Fail - Melee"
+    }
+  ],
+  "logs": []
+}

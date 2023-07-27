@@ -17,8 +17,13 @@
 namespace CampaignKit.Compendium.ChatGPT.Services
 {
     using CampaignKit.Compendium.ChatGPT.Common;
+    using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Configuration;
+    using CampaignKit.Compendium.Core.Services;
+
     using Microsoft.Extensions.Logging;
+
+    using Newtonsoft.Json;
 
     /// <summary>
     /// DefaultChatGPTCompendiumService provides a set of methods for managing chat-based GPT
@@ -34,31 +39,73 @@ namespace CampaignKit.Compendium.ChatGPT.Services
         private readonly ILogger<DefaultChatGPTCompendiumService> logger;
 
         /// <summary>
+        /// Create a private readonly field to store an IConfigurationService instance.
+        /// </summary>
+        private readonly IConfigurationService configurationService;
+
+        /// <summary>
         /// Initializes a new instance of the <see cref="DefaultChatGPTCompendiumService"/> class.
         /// </summary>
         /// <param name="logger">The logger for the service.</param>
+        /// <param name="configurationService">Application configuration service.</param>
         /// <returns>
         /// A DefaultChatGPTCompendiumService instance.
         /// </returns>
-        public DefaultChatGPTCompendiumService(ILogger<DefaultChatGPTCompendiumService> logger)
+        public DefaultChatGPTCompendiumService(ILogger<DefaultChatGPTCompendiumService> logger, IConfigurationService configurationService)
         {
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            this.configurationService = configurationService ?? throw new ArgumentNullException(nameof(configurationService));
         }
 
         /// <inheritdoc/>
-        public Task CreateCompendiums(ICompendium compendium, string rooDataDirectory)
+        public async Task CreateCompendiums(ICompendium compendium, string rootDataDirectory)
         {
+            this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
             if (compendium is null)
             {
                 throw new ArgumentNullException(nameof(compendium));
             }
 
-            if (string.IsNullOrEmpty(rooDataDirectory))
+            if (string.IsNullOrEmpty(rootDataDirectory))
             {
-                throw new ArgumentException($"'{nameof(rooDataDirectory)}' cannot be null or empty.", nameof(rooDataDirectory));
+                throw new ArgumentException($"'{nameof(rootDataDirectory)}' cannot be null or empty.", nameof(rootDataDirectory));
             }
 
-            return Task.CompletedTask;
+            var campaignEntries = new List<CampaignEntry>();
+            foreach (var prompt in compendium.Prompts)
+            {
+                campaignEntries.Add(
+                    await ChatGPTHelper.ParseCampaignEntries(
+                        this.configurationService.GetService(prompt.Service),
+                        prompt,
+                        rootDataDirectory,
+                        compendium.GameSystem));
+            }
+
+            // Create CampaignLogger File
+            this.logger.LogInformation("Creating CampaignLogger file for compendium: {compendium}.", compendium.Title);
+            var campaignLoggerFile = new Campaign()
+            {
+                Version = 2,
+                Type = "campaign",
+                Title = compendium.Title,
+                Description = compendium.Description,
+                CampaignEntries = campaignEntries,
+                Logs = new List<Log>(),
+                ImageUrl = string.Empty,
+            };
+
+            // Serialize the campaignLoggerFile object into a string using JsonConvert
+            string campaignLoggerFileString = JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented);
+
+            // Combine the rootDataDirectory with the compendium title to create a file name
+            var fileName = Path.Combine(rootDataDirectory, compendium.Title + ".json");
+
+            // Write the campaignLoggerFileString to the fileName
+            File.WriteAllText(fileName, campaignLoggerFileString);
+
+            // Log a message to the logger that the processing of the compendium is complete
+            this.logger.LogInformation("Processing of compendium complete: {compendium}.", compendium.Title);
         }
     }
 }
