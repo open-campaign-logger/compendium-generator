@@ -19,6 +19,7 @@ namespace CampaignKit.Compendium.ChatGPT.Common
     using System;
     using System.Reflection;
     using System.Runtime.CompilerServices;
+    using System.Text;
     using System.Text.RegularExpressions;
 
     using CampaignKit.Compendium.Core.CampaignLogger;
@@ -71,76 +72,48 @@ namespace CampaignKit.Compendium.ChatGPT.Common
                 throw new Exception($"Service has been innactivated: {service.Name}");
             }
 
-            // Get the current assembly
-            Assembly assembly = Assembly.GetExecutingAssembly();
-
-            // The resource name is the default namespace of the project, followed by the file
-            // path within the project (with '.' instead of '/') If the file is in the
-            // 'Prompts' subfolder under the project root and the default namespace is
-            // 'MyNamespace', it would be "MyNamespace.Prompts.MyFile.txt"
-            string resourceName = $"CampaignKit.Compendium.ChatGPT.Prompts.{prompt.PromptTemplate ?? string.Empty}";
-            string promptTemplate;
-            using (Stream stream = assembly.GetManifestResourceStream(resourceName)
-                ?? throw new Exception($"Unable to load embedded resource: {resourceName}"))
-            {
-                using StreamReader reader = new (stream);
-                promptTemplate = await reader.ReadToEndAsync() ?? string.Empty;
-            }
-
-            // Check for an empty template
-            if (string.IsNullOrEmpty(promptTemplate))
-            {
-                throw new Exception($"Prompt template contains no data: {prompt.PromptTemplate}");
-            }
-
-            // Specify the name of the table
-            if (promptTemplate.Contains("{Name}") && !string.IsNullOrEmpty(prompt.Name))
-            {
-                promptTemplate = promptTemplate.Replace("{Name}", $"- Name: {prompt.Name ?? string.Empty}");
-            }
-
-            // Specify the prompt input.
-            if (promptTemplate.Contains("{PromptInput}") && !string.IsNullOrEmpty(prompt.PromptInput))
-            {
-                promptTemplate = promptTemplate.Replace("{PromptInput}", prompt.PromptInput ?? string.Empty);
-            }
-
-            // Specify the game system.
-            if (promptTemplate.Contains("{GameSystem}") && !string.IsNullOrEmpty(gameSystem))
-            {
-                promptTemplate = promptTemplate.Replace("{GameSystem}", gameSystem ?? string.Empty);
-            }
-
-            // Set the genre.
-            if (promptTemplate.Contains("{Genre}") && prompt.Genre != null && !string.IsNullOrEmpty(prompt.Genre))
-            {
-                promptTemplate = promptTemplate.Replace("{Genre}", prompt.Genre ?? string.Empty);
-            }
-
-            // Specify the sentiment.
-            if (promptTemplate.Contains("{Sentiment}"))
-            {
-                promptTemplate = promptTemplate.Replace("{Sentiment}", $"On a sentiment scale of 1 to 10, where 1 represents a very precise and serious reponse and 10 represents a whimsical reponse, please generate reponses with a sentiment rating of {prompt.Sentiment}");
-            }
-
+            // Setup ChatGPT service
             var api = new OpenAI_API.OpenAIAPI(service.APIKey);
-            var chatMessages = new List<ChatMessage>();
-            var chatMessage = new ChatMessage()
-            {
-                Content = promptTemplate,
-                Role = ChatMessageRole.User,
-            };
-            chatMessages.Add(chatMessage);
-            var chatRequest = new OpenAI_API.Chat.ChatRequest()
-            {
-                MaxTokens = 8192 - promptTemplate.Length - 1,
-                Messages = chatMessages,
-                Model = "gpt-4",
-            };
-            var result = await api.Chat.CreateChatCompletionAsync(chatRequest);
-            var markdown = result.ToString();
 
-            return new CampaignEntry();
+            // Converse with ChatGPT
+            var chat = api.Chat.CreateConversation();
+            chat.AppendSystemMessage(prompt.Role);
+
+            // Iterate through the prompt messages and capture the responses.
+            var stringBuilder = new StringBuilder();
+            foreach (var promptMessage in prompt.PromptMessages)
+            {
+                var modifedPromptMessage = promptMessage.Message.Replace("{Name}", prompt.Name);
+                modifedPromptMessage = modifedPromptMessage.Replace("{GameSystem}", gameSystem);
+                modifedPromptMessage = modifedPromptMessage.Replace("{Genre}", prompt.Genre);
+                modifedPromptMessage = modifedPromptMessage.Replace("{Sentiment}", $"On a sentiment scale of 1 to 10, where 1 represents a very precise and serious reponse and 10 represents a whimsical reponse, please generate reponses with a sentiment rating of {prompt.Sentiment}");
+
+                if (string.IsNullOrEmpty(modifedPromptMessage))
+                {
+                    continue;
+                }
+
+                chat.AppendUserInput(modifedPromptMessage);
+                var response = await chat.GetResponseFromChatbotAsync();
+
+                if (response != null && !promptMessage.Heading.Equals("IGNORE", StringComparison.InvariantCultureIgnoreCase))
+                {
+                    stringBuilder.AppendLine(promptMessage.Heading);
+                    stringBuilder.AppendLine(response);
+                }
+            }
+
+            // Create the CampaignEntry
+            var campaignEntry = new CampaignEntry()
+            {
+                Labels = prompt.Labels,
+                RawPublic = string.Empty,
+                RawText = stringBuilder.ToString(),
+                TagSymbol = prompt.TagSymbol,
+                TagValue = prompt.Name,
+            };
+
+            return campaignEntry;
         }
     }
 }

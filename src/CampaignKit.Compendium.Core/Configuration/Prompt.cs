@@ -46,14 +46,14 @@ namespace CampaignKit.Compendium.Core.Configuration
         public bool OverwriteExisting { get; set; } = false;
 
         /// <summary>
-        /// Gets or sets the prompt to use for generation.
+        /// Gets or sets the list of prompts to use for generating content.
         /// </summary>
-        public string PromptInput { get; set; } = string.Empty;
+        public List<PromptMessage> PromptMessages { get; set; } = new List<PromptMessage>();
 
         /// <summary>
-        /// Gets or sets the name of the prompt template to import from the Prompts folder.
+        /// Gets or sets the role that the service will play when generating content.
         /// </summary>
-        public string PromptTemplate { get; set; } = string.Empty;
+        public string Role { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the sentiment to use for generating the response.
