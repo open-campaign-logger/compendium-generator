@@ -22,6 +22,7 @@ namespace CampaignKit.Compendium.ChatGPT.Common
     using System.Text;
     using System.Text.RegularExpressions;
 
+    using CampaignKit.Compendium.ChatGPT.Services;
     using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Configuration;
 
@@ -77,7 +78,10 @@ namespace CampaignKit.Compendium.ChatGPT.Common
             }
 
             // Setup ChatGPT service
-            var api = new OpenAI_API.OpenAIAPI(service.APIKey);
+            var api = new OpenAI_API.OpenAIAPI(service.APIKey)
+            {
+                HttpClientFactory = new CustomHttpClientFactory(300),
+            };
 
             // Create chat messages for each of the configured prompt messages.
             var stringBuilder = new StringBuilder();
