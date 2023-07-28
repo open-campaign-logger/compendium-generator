@@ -55,6 +55,16 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
         {
             this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
 
+            // Combine the rootDataDirectory with the compendium title to create a file name
+            var filePath = Path.Combine(rootDataDirectory, compendium.Title + ".json");
+
+            // Determine if the operation should be skipped.
+            if (File.Exists(filePath) && !compendium.OverwriteExisting)
+            {
+                this.logger.LogWarning("Processing of compendium skipped due to OverwriteExisting flag: {OverwriteExisting}.", compendium.OverwriteExisting);
+                return;
+            }
+
             // Create a campaign object to hold the new campaign entries.
             var destinationCampaign = new Campaign()
             {
@@ -200,9 +210,6 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
 
             // Serialize the destinationCampaign object into a string
             string campaignLoggerFileString = JsonConvert.SerializeObject(destinationCampaign, Formatting.Indented);
-
-            // Combine the rootDataDirectory with the compendium title and add a .json extension
-            string filePath = Path.Combine(rootDataDirectory, compendium.Title + ".json");
 
             // Write the campaignLoggerFileString to the filePath
             File.WriteAllText(filePath, campaignLoggerFileString);

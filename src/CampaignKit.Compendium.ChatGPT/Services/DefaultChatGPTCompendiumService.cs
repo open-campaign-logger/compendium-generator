@@ -74,10 +74,10 @@ namespace CampaignKit.Compendium.ChatGPT.Services
             }
 
             // Combine the rootDataDirectory with the compendium title to create a file name
-            var fileName = Path.Combine(rootDataDirectory, compendium.Title + ".json");
+            var filePath = Path.Combine(rootDataDirectory, compendium.Title + ".json");
 
             // Determine if the operation should be skipped.
-            if (File.Exists(fileName) && !compendium.OverwriteExisting)
+            if (File.Exists(filePath) && !compendium.OverwriteExisting)
             {
                 this.logger.LogWarning("Processing of compendium skipped due to OverwriteExisting flag: {OverwriteExisting}.", compendium.OverwriteExisting);
                 return;
@@ -113,8 +113,8 @@ namespace CampaignKit.Compendium.ChatGPT.Services
             // Serialize the campaignLoggerFile object into a string using JsonConvert
             string campaignLoggerFileString = JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented);
 
-            // Write the campaignLoggerFileString to the fileName
-            File.WriteAllText(fileName, campaignLoggerFileString);
+            // Write the campaignLoggerFileString to the filePath
+            File.WriteAllText(filePath, campaignLoggerFileString);
 
             // Log a message to the logger that the processing of the compendium is complete
             this.logger.LogInformation("Processing of compendium complete: {compendium}.", compendium.Title);

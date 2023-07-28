@@ -25,7 +25,7 @@ namespace CampaignKit.Compendium.ChatGPT.Services
     /// </returns>
     internal class CustomHttpClientFactory : IHttpClientFactory
     {
-        private int timeSpan = 300;
+        private readonly int timeSpan = 300;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CustomHttpClientFactory"/> class.

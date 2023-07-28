@@ -35,12 +35,14 @@ namespace CampaignKit.Compendium.Tests.ChatGPT
         public void ChatGPT4Prompt_D100RollTable_ValidMarkdown()
         {
             // Arrange
-            var promptMessages = new List<PromptMessage>();
-            promptMessages.Add(new PromptMessage()
+            var promptMessages = new List<PromptMessage>
             {
-                Message = "Generate a d20 rolltable in markdown format for the following:\nTopic: Mishaps due to a fumble (natural 1) on a melee attack\nGenre: {Genre}\nGame System: {GameSystem}\nSentiment: {Sentiment}",
-                Heading = "Roll Table",
-            });
+                new PromptMessage()
+                {
+                    Message = "Generate a d20 rolltable in markdown format for the following:\nTopic: Mishaps due to a fumble (natural 1) on a melee attack\nGenre: {Genre}\nGame System: {GameSystem}\nSentiment: {Sentiment}",
+                    Heading = "Roll Table",
+                }
+            };
             var prompt = new Prompt()
             {
                 Genre = "Fantasy",

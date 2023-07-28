@@ -130,51 +130,23 @@ namespace CampaignKit.Compendium.ChatGPT.Common
                 var model = Model.DefaultModel;
                 if (!string.IsNullOrEmpty(service.Model))
                 {
-                    switch (service.Model)
+                    model = service.Model switch
                     {
-                        case "text-ada-001":
-                            model = Model.AdaText;
-                            break;
-                        case "text-embedding-ada-002":
-                            model = Model.AdaTextEmbedding;
-                            break;
-                        case "text-babbage-001":
-                            model = Model.BabbageText;
-                            break;
-                        case "gpt-3.5-turbo":
-                            model = Model.ChatGPTTurbo;
-                            break;
-                        case "gpt-3.5-turbo-0301":
-                            model = Model.ChatGPTTurbo0301;
-                            break;
-                        case "text-curie-001":
-                            model = Model.CurieText;
-                            break;
-                        case "code-cushman-001":
-                            model = Model.CushmanCode;
-                            break;
-                        case "code-davinci-002":
-                            model = Model.DefaultModel;
-                            break;
-                        case "text-davinci-003":
-                            model = Model.DavinciCode;
-                            break;
-                        case "gpt-4":
-                            model = Model.GPT4;
-                            break;
-                        case "gpt-4-32k":
-                            model = Model.GPT4_32k_Context;
-                            break;
-                        case "text-moderation-latest":
-                            model = Model.TextModerationLatest;
-                            break;
-                        case "text-moderation-stable":
-                            model = Model.TextModerationStable;
-                            break;
-                        default:
-                            model = Model.DefaultModel;
-                            break;
-                    }
+                        "text-ada-001" => Model.AdaText,
+                        "text-embedding-ada-002" => Model.AdaTextEmbedding,
+                        "text-babbage-001" => Model.BabbageText,
+                        "gpt-3.5-turbo" => Model.ChatGPTTurbo,
+                        "gpt-3.5-turbo-0301" => Model.ChatGPTTurbo0301,
+                        "text-curie-001" => Model.CurieText,
+                        "code-cushman-001" => Model.CushmanCode,
+                        "code-davinci-002" => Model.DefaultModel,
+                        "text-davinci-003" => Model.DavinciCode,
+                        "gpt-4" => Model.GPT4,
+                        "gpt-4-32k" => Model.GPT4_32k_Context,
+                        "text-moderation-latest" => Model.TextModerationLatest,
+                        "text-moderation-stable" => Model.TextModerationStable,
+                        _ => Model.DefaultModel,
+                    };
                 }
 
                 // Create a task for each API call and add it to the list
