@@ -55,7 +55,7 @@ namespace CampaignKit.Compendium.Tests.ChatGPT
                 PromptMessages = promptMessages,
                 Role = "You are a game master who helps other game masters develop rolltables to help them run their games.  When providing a response do not include introduction or closing text.  Responses should be limited to what was specifically asked for.",
                 Sentiment = 2,
-                Service = "ChatGPT 4",
+                Service = "ChatGPT",
                 TagSymbol = "~",
             };
             var service = GetConfigurationService().GetService(prompt.Service);

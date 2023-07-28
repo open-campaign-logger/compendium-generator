@@ -72,10 +72,14 @@ namespace CampaignKit.Compendium.ChatGPT.Common
                 throw new Exception($"API key not specified for service: {service.Name}");
             }
 
+            // If the service is innactive throw an error message.
             if (!service.IsActive)
             {
                 throw new Exception($"Service has been innactivated: {service.Name}");
             }
+
+            // Create a list to hold all the async tasks.
+            var tasks = new List<Task<string>>();
 
             // Setup ChatGPT service
             var api = new OpenAI_API.OpenAIAPI(service.APIKey)
@@ -84,7 +88,6 @@ namespace CampaignKit.Compendium.ChatGPT.Common
             };
 
             // Create chat messages for each of the configured prompt messages.
-            var stringBuilder = new StringBuilder();
             foreach (var promptMessage in prompt.PromptMessages)
             {
                 // Replace {Name} with the value of prompt.Name
@@ -122,9 +125,6 @@ namespace CampaignKit.Compendium.ChatGPT.Common
                         Content = modifedPromptMessage,
                     },
                 };
-
-                // Add the prompt heading to the output.
-                stringBuilder.AppendLine(promptMessage.Heading);
 
                 // Determine which model to use.
                 var model = Model.DefaultModel;
@@ -177,36 +177,60 @@ namespace CampaignKit.Compendium.ChatGPT.Common
                     }
                 }
 
-                // Execute the chat conversation
-                try
+                // Create a task for each API call and add it to the list
+                var task = Task.Run(async () =>
                 {
-                    var result = await api.Chat.CreateChatCompletionAsync(new ChatRequest()
+                    try
                     {
-                        Model = model,
-                        Messages = chatMessages,
-                    });
+                        // Call the API service.
+                        var result = await api.Chat.CreateChatCompletionAsync(new ChatRequest()
+                        {
+                            Model = model,
+                            Messages = chatMessages,
+                        });
 
-                    // Ensure that a result was received.
-                    if (result is null || result.Choices is null || result.Choices.Count == 0)
-                    {
-                        throw new Exception("No response received from chatbot.");
+                        // Ensure that a result was received.
+                        if (result is null || result.Choices is null || result.Choices.Count == 0)
+                        {
+                            throw new Exception("No response received from chatbot.");
+                        }
+
+                        // Create StringBuilder to build reponse.
+                        var stringBuilder = new StringBuilder();
+
+                        // Add the prompt heading to the output.
+                        stringBuilder.AppendLine(promptMessage.Heading);
+
+                        // Append the prompt response to the string builder
+                        stringBuilder.AppendLine(result.Choices[0].Message.Content);
+
+                        // If the message creation terminated unexpectedly add a note.
+                        if (!result.Choices[0].FinishReason.Equals("stop"))
+                        {
+                            stringBuilder.AppendLine($"\nChatbot reponse terminated unexpectedly: : {result.Choices[0].FinishReason}");
+                        }
+
+                        return stringBuilder.ToString();
                     }
-
-                    // Append the prompt response to the string builder
-                    stringBuilder.AppendLine(result.Choices[0].Message.Content);
-
-                    // If the message creation terminated unexpectedly add a note.
-                    if (!result.Choices[0].FinishReason.Equals("stop"))
+                    catch (Exception ex)
                     {
-                        stringBuilder.AppendLine($"\nChatbot reponse terminated unexpectedly: : {result.Choices[0].FinishReason}");
+                        // Handle the exception here, perhaps logging the error and then rethrowing
+                        Console.WriteLine($"Error: {ex.Message}");
+                        throw;
                     }
-                }
-                catch (TaskCanceledException tce)
-                {
-                    stringBuilder.AppendLine($"\nChatbot reponse terminated unexpectedly: : {tce.Message}");
-                    stringBuilder.AppendLine($"\nSystem message: : {prompt.Role}");
-                    stringBuilder.AppendLine($"\nUser message: : {modifedPromptMessage}");
-                }
+                });
+
+                tasks.Add(task);
+            }
+
+            // Wait for all tasks to complete.
+            var results = await Task.WhenAll(tasks);
+
+            // Process the results
+            var stringBuilder = new StringBuilder();
+            foreach (var result in results)
+            {
+                stringBuilder.Append(result);
             }
 
             // Create the CampaignEntry

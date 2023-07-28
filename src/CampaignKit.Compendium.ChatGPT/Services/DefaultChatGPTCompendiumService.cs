@@ -16,6 +16,8 @@
 
 namespace CampaignKit.Compendium.ChatGPT.Services
 {
+    using System.Threading.Tasks;
+
     using CampaignKit.Compendium.ChatGPT.Common;
     using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Configuration;
@@ -81,16 +83,19 @@ namespace CampaignKit.Compendium.ChatGPT.Services
                 return;
             }
 
-            var campaignEntries = new List<CampaignEntry>();
+            // Create a task list to keep track of asynchronously running operations.
+            var tasks = new List<Task<CampaignEntry>>();
             foreach (var prompt in compendium.Prompts)
             {
-                campaignEntries.Add(
-                    await ChatGPTHelper.ParseCampaignEntries(
+                tasks.Add(ChatGPTHelper.ParseCampaignEntries(
                         this.configurationService.GetService(prompt.Service),
                         prompt,
                         rootDataDirectory,
                         compendium.GameSystem));
             }
+
+            // Wait for all tasks to complete
+            var results = await Task.WhenAll(tasks);
 
             // Create CampaignLogger File
             this.logger.LogInformation("Creating CampaignLogger file for compendium: {compendium}.", compendium.Title);
@@ -100,7 +105,7 @@ namespace CampaignKit.Compendium.ChatGPT.Services
                 Type = "campaign",
                 Title = compendium.Title,
                 Description = compendium.Description,
-                CampaignEntries = campaignEntries,
+                CampaignEntries = results.ToList(),
                 Logs = new List<Log>(),
                 ImageUrl = string.Empty,
             };

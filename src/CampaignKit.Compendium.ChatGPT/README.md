@@ -15,7 +15,9 @@ You need to add the following value to user secrets for the `CampaignKit.Compend
       // Name of the OpenAI data model to use.  Supported models are shown below.
       "Model": "gpt-4",
       // This must always be the value shown.
-      "Name": "ChatGPT"
+      "Name": "ChatGPT",
+      // Maximum number of seconds to wait for a response from the chatbot service.
+      "Timeout": 300
     }
   ]
 ```
