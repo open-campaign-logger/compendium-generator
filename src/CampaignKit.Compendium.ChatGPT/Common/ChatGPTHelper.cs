@@ -126,12 +126,63 @@ namespace CampaignKit.Compendium.ChatGPT.Common
                 // Add the prompt heading to the output.
                 stringBuilder.AppendLine(promptMessage.Heading);
 
+                // Determine which model to use.
+                var model = Model.DefaultModel;
+                if (!string.IsNullOrEmpty(service.Model))
+                {
+                    switch (service.Model)
+                    {
+                        case "text-ada-001":
+                            model = Model.AdaText;
+                            break;
+                        case "text-embedding-ada-002":
+                            model = Model.AdaTextEmbedding;
+                            break;
+                        case "text-babbage-001":
+                            model = Model.BabbageText;
+                            break;
+                        case "gpt-3.5-turbo":
+                            model = Model.ChatGPTTurbo;
+                            break;
+                        case "gpt-3.5-turbo-0301":
+                            model = Model.ChatGPTTurbo0301;
+                            break;
+                        case "text-curie-001":
+                            model = Model.CurieText;
+                            break;
+                        case "code-cushman-001":
+                            model = Model.CushmanCode;
+                            break;
+                        case "code-davinci-002":
+                            model = Model.DefaultModel;
+                            break;
+                        case "text-davinci-003":
+                            model = Model.DavinciCode;
+                            break;
+                        case "gpt-4":
+                            model = Model.GPT4;
+                            break;
+                        case "gpt-4-32k":
+                            model = Model.GPT4_32k_Context;
+                            break;
+                        case "text-moderation-latest":
+                            model = Model.TextModerationLatest;
+                            break;
+                        case "text-moderation-stable":
+                            model = Model.TextModerationStable;
+                            break;
+                        default:
+                            model = Model.DefaultModel;
+                            break;
+                    }
+                }
+
                 // Execute the chat conversation
                 try
                 {
                     var result = await api.Chat.CreateChatCompletionAsync(new ChatRequest()
                     {
-                        Model = Model.ChatGPTTurbo0301,
+                        Model = model,
                         Messages = chatMessages,
                     });
 

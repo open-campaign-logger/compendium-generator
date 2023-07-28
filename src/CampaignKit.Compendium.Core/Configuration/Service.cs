@@ -22,9 +22,9 @@ namespace CampaignKit.Compendium.Core.Configuration
     public class Service
     {
         /// <summary>
-        /// Gets or sets the name of the service.
+        /// Gets or sets the key of the service.
         /// </summary>
-        public string Name { get; set; } = string.Empty;
+        public string APIKey { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the endpoint of the service.
@@ -32,14 +32,20 @@ namespace CampaignKit.Compendium.Core.Configuration
         public string Endpoint { get; set; } = string.Empty;
 
         /// <summary>
-        /// Gets or sets the key of the service.
-        /// </summary>
-        public string APIKey { get; set; } = string.Empty;
-
-        /// <summary>
         /// Gets or sets a value indicating whether this service is active.
         /// </summary>
         public bool IsActive { get; set; } = true;
+
+        /// <summary>
+        /// Gets or sets the name of the model that the service should use.
+        /// This is most applicable to 
+        /// </summary>
+        public string Model { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Gets or sets the name of the service.
+        /// </summary>
+        public string Name { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the default timeout value for the service.
