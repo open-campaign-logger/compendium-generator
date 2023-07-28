@@ -42,5 +42,8 @@ namespace CampaignKit.Compendium.Core.Configuration
 
         /// <inheritdoc/>
         public List<Prompt> Prompts { get; set; } = new List<Prompt> { };
+
+        /// <inheritdoc/>
+        public bool OverwriteExisting { get; set; } = false;
     }
 }

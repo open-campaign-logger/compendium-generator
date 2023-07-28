@@ -38,7 +38,7 @@ namespace CampaignKit.Compendium.Core.Configuration
 
         /// <summary>
         /// Gets or sets the name of the model that the service should use.
-        /// This is most applicable to 
+        /// This is most applicable to.
         /// </summary>
         public string Model { get; set; } = string.Empty;
 

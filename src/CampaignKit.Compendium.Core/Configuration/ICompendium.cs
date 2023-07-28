@@ -47,6 +47,11 @@ namespace CampaignKit.Compendium.Core.Configuration
         string ImageUrl { get; set; }
 
         /// <summary>
+        /// Gets or sets a value indicating whether a new compendium should be created if one already exists.
+        /// </summary>
+        bool OverwriteExisting { get; set; }
+
+        /// <summary>
         /// Gets or sets the list of source data sets associated with the Compendium.
         /// Each item in this list represents a set of data that is used in the Compendium.
         /// </summary>

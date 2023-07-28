@@ -71,6 +71,16 @@ namespace CampaignKit.Compendium.ChatGPT.Services
                 throw new ArgumentException($"'{nameof(rootDataDirectory)}' cannot be null or empty.", nameof(rootDataDirectory));
             }
 
+            // Combine the rootDataDirectory with the compendium title to create a file name
+            var fileName = Path.Combine(rootDataDirectory, compendium.Title + ".json");
+
+            // Determine if the operation should be skipped.
+            if (File.Exists(fileName) && !compendium.OverwriteExisting)
+            {
+                this.logger.LogWarning("Processing of compendium skipped due to OverwriteExisting flag: {OverwriteExisting}.", compendium.OverwriteExisting);
+                return;
+            }
+
             var campaignEntries = new List<CampaignEntry>();
             foreach (var prompt in compendium.Prompts)
             {
@@ -97,9 +107,6 @@ namespace CampaignKit.Compendium.ChatGPT.Services
 
             // Serialize the campaignLoggerFile object into a string using JsonConvert
             string campaignLoggerFileString = JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented);
-
-            // Combine the rootDataDirectory with the compendium title to create a file name
-            var fileName = Path.Combine(rootDataDirectory, compendium.Title + ".json");
 
             // Write the campaignLoggerFileString to the fileName
             File.WriteAllText(fileName, campaignLoggerFileString);

@@ -37,11 +37,6 @@ namespace CampaignKit.Compendium.Core.Configuration
         public string Name { get; set; } = string.Empty;
 
         /// <summary>
-        /// Gets or sets a value indicating whether new data should be downloaded to replace saved prompt responses.
-        /// </summary>
-        public bool OverwriteExisting { get; set; } = false;
-
-        /// <summary>
         /// Gets or sets the list of prompts to use for generating content.
         /// </summary>
         public List<PromptMessage> PromptMessages { get; set; } = new List<PromptMessage>();
