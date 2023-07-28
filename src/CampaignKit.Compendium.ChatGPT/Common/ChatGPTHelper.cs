@@ -80,7 +80,7 @@ namespace CampaignKit.Compendium.ChatGPT.Common
             // Setup ChatGPT service
             var api = new OpenAI_API.OpenAIAPI(service.APIKey)
             {
-                HttpClientFactory = new CustomHttpClientFactory(300),
+                HttpClientFactory = new CustomHttpClientFactory(service.Timeout),
             };
 
             // Create chat messages for each of the configured prompt messages.

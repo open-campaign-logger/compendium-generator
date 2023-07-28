@@ -40,5 +40,10 @@ namespace CampaignKit.Compendium.Core.Configuration
         /// Gets or sets a value indicating whether this service is active.
         /// </summary>
         public bool IsActive { get; set; } = true;
+
+        /// <summary>
+        /// Gets or sets the default timeout value for the service.
+        /// </summary>
+        public int Timeout { get; set; } = 60;
     }
 }
