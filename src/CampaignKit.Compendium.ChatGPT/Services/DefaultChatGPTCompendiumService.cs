@@ -87,7 +87,7 @@ namespace CampaignKit.Compendium.ChatGPT.Services
             var tasks = new List<Task<CampaignEntry>>();
             foreach (var prompt in compendium.Prompts)
             {
-                tasks.Add(ChatGPTHelper.ParseCampaignEntries(
+                tasks.Add(ChatGPTHelper.GenerateCampaignEntryFromPrompt(
                         this.configurationService.GetService(prompt.Service),
                         prompt,
                         rootDataDirectory,

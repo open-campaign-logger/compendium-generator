@@ -45,7 +45,7 @@ namespace CampaignKit.Compendium.ChatGPT.Common
         /// <param name="directory">Directory where the downloaded prompt response can be stored.</param>
         /// <param name="gameSystem">The name of the game system that the generated content should pertain to.  Default: "Generic".</param>
         /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
-        public static async Task<CampaignEntry> ParseCampaignEntries(Service service, Prompt prompt, string directory, string? gameSystem = "Generic")
+        public static async Task<CampaignEntry> GenerateCampaignEntryFromPrompt(Service service, Prompt prompt, string directory, string? gameSystem = "Generic")
         {
             // Check if the service, prompt, and directory are null
             if (service is null)

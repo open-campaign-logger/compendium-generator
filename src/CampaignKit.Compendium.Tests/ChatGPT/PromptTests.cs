@@ -67,7 +67,7 @@ namespace CampaignKit.Compendium.Tests.ChatGPT
             {
                 Assert.Fail("Service not defined, or is not active, in user secrets file: ChatGPT 4");
             }
-            var campaignEntry = ChatGPTHelper.ParseCampaignEntries(service, prompt, GetConfigurationService().GetPrivateDataDirectory(), "Dungeons and Dragons 5e").Result;
+            var campaignEntry = ChatGPTHelper.GenerateCampaignEntryFromPrompt(service, prompt, GetConfigurationService().GetPrivateDataDirectory(), "Dungeons and Dragons 5e").Result;
 
             // Assert
             Assert.IsNotNull(campaignEntry);
@@ -79,6 +79,50 @@ namespace CampaignKit.Compendium.Tests.ChatGPT
             Assert.IsTrue(campaignEntry.Labels.Contains("Fumble"));
             Assert.IsTrue(campaignEntry.Labels.Contains("D&D 5e"));
             Assert.IsTrue(campaignEntry.Labels.Contains("Melee"));
+        }
+
+        [TestMethod]
+        public void ChatGPT4Prompt_InactiveService_ThrowsException()
+        {
+            // Arrange
+            var promptMessages = new List<PromptMessage>
+            {
+                new PromptMessage()
+                {
+                    Message = "Generate a d20 rolltable in markdown format for the following:\nTopic: Mishaps due to a fumble (natural 1) on a melee attack\nGenre: {Genre}\nGame System: {GameSystem}\nSentiment: {Sentiment}",
+                    Heading = "Roll Table",
+                }
+            };
+            var prompt = new Prompt()
+            {
+                Genre = "Fantasy",
+                Labels = new List<string>()
+                {
+                    "Rolltable",
+                    "Fumble",
+                    "D&D 5e",
+                    "Melee"
+                },
+                Name = "Critical Fumble - Melee",
+                PromptMessages = promptMessages,
+                Role = "You are a game master who helps other game masters develop rolltables to help them run their games.  When providing a response do not include introduction or closing text.  Responses should be limited to what was specifically asked for.",
+                Sentiment = 2,
+                Service = "ChatGPT",
+                TagSymbol = "~",
+            };
+            var service = GetConfigurationService().GetService(prompt.Service);
+            service.IsActive = false;
+            service.Model = "text-davinci-003";
+
+            // Act
+            try
+            {
+                var campaignEntry = ChatGPTHelper.GenerateCampaignEntryFromPrompt(service, prompt, GetConfigurationService().GetPrivateDataDirectory(), "Dungeons and Dragons 5e").Result;
+                Assert.Fail("Exception not thrown");
+            }
+            catch
+            {
+            }
         }
     }
 }
