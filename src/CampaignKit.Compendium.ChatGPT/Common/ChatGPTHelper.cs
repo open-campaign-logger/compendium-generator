@@ -29,6 +29,7 @@ namespace CampaignKit.Compendium.ChatGPT.Common
 
     using OpenAI_API.Chat;
     using OpenAI_API.Models;
+    using OpenAI_API.Moderation;
 
     /// <summary>
     /// This static class provides helper methods for working with Markdown.
@@ -118,27 +119,38 @@ namespace CampaignKit.Compendium.ChatGPT.Common
                     },
                 };
 
-                // Execute the chat conversation
-                var result = await api.Chat.CreateChatCompletionAsync(new ChatRequest()
-                {
-                    Model = Model.ChatGPTTurbo0301,
-                    Messages = chatMessages,
-                });
-
-                // Ensure that a result was received.
-                if (result is null || result.Choices is null || result.Choices.Count == 0)
-                {
-                    throw new Exception("No response received from chatbot.");
-                }
-
-                // Append the prompt message heading and the response to the string builder
+                // Add the prompt heading to the output.
                 stringBuilder.AppendLine(promptMessage.Heading);
-                stringBuilder.AppendLine(result.Choices[0].Message.Content);
 
-                // If the message creation terminated unexpectedly add a note.
-                if (!result.Choices[0].FinishReason.Equals("stop"))
+                // Execute the chat conversation
+                try
                 {
-                    stringBuilder.AppendLine($"\nChatbot reponse terminated unexpectedly: : {result.Choices[0].FinishReason}");
+                    var result = await api.Chat.CreateChatCompletionAsync(new ChatRequest()
+                    {
+                        Model = Model.ChatGPTTurbo0301,
+                        Messages = chatMessages,
+                    });
+
+                    // Ensure that a result was received.
+                    if (result is null || result.Choices is null || result.Choices.Count == 0)
+                    {
+                        throw new Exception("No response received from chatbot.");
+                    }
+
+                    // Append the prompt response to the string builder
+                    stringBuilder.AppendLine(result.Choices[0].Message.Content);
+
+                    // If the message creation terminated unexpectedly add a note.
+                    if (!result.Choices[0].FinishReason.Equals("stop"))
+                    {
+                        stringBuilder.AppendLine($"\nChatbot reponse terminated unexpectedly: : {result.Choices[0].FinishReason}");
+                    }
+                }
+                catch (TaskCanceledException tce)
+                {
+                    stringBuilder.AppendLine($"\nChatbot reponse terminated unexpectedly: : {tce.Message}");
+                    stringBuilder.AppendLine($"\nSystem message: : {prompt.Role}");
+                    stringBuilder.AppendLine($"\nUser message: : {modifedPromptMessage}");
                 }
             }
 
