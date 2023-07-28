@@ -35,6 +35,8 @@ Here is an example of a prompt that will result in the creation of a compendium 
       "GameSystem": "Dungeons and Dragons 5e",
       // Image to use for the compendium.
       "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
+      // Specifies whether to skip generation if file already exists in output directory
+      "OverwriteExisting": false,
       // List of prompts to provide to the chatbot for the purposes of text generation.
       "Prompts": [
         {
