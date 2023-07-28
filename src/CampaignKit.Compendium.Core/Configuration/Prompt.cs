@@ -32,11 +32,7 @@ namespace CampaignKit.Compendium.Core.Configuration
         public List<string> Labels { get; set; } = new List<string>();
 
         /// <summary>
-        /// Gets or sets the name of the prompt. This will used for two purposes:
-        /// <list type="bullet">
-        /// <item>Naming the directory and file where the prompt response will be stored, and</item>
-        /// <item>Naming the campaign entry that's created from the prompt response.</item>
-        /// </list>
+        /// Gets or sets the name of the prompt. This will used for naming the campaign entry that's created from the prompt response.
         /// </summary>
         public string Name { get; set; } = string.Empty;
 
