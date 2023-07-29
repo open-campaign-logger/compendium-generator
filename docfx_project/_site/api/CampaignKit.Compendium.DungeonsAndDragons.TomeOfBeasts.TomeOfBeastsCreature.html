@@ -1,0 +1,2124 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TomeOfBeastsCreature
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TomeOfBeastsCreature
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/open-campaign-logger/compendium-generator/new/91-add-isactive-configuration-parameter-to-all-modules/apiSpec/new?filename=CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature.md&amp;value=---%0Auid%3A%20CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature">
+
+
+
+  <h1 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature" class="text-break">
+    Class TomeOfBeastsCreature
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CampaignKit.html">CampaignKit</a>.<a class="xref" href="CampaignKit.Compendium.html">Compendium</a>.<a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.html">DungeonsAndDragons</a>.<a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.html">TomeOfBeasts</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>CampaignKit.Compendium.DungeonsAndDragons.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Class representing a creature from the Dungeons &amp; Dragons materials published by Kobold Press.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TomeOfBeastsCreature : IGameComponent</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TomeOfBeastsCreature</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="CampaignKit.Compendium.Core.Common.IGameComponent.html">IGameComponent</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.CreatureCodex.CreatureCodexCreature.html">CreatureCodexCreature</a></div>
+      <div><a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts2.TomeOfBeasts2Creature.html">TomeOfBeasts2Creature</a></div>
+      <div><a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts3.TomeOfBeasts3Creature.html">TomeOfBeasts3Creature</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Acrobatics_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Acrobatics*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Acrobatics" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Acrobatics">
+  Acrobatics
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creature's Acrobatics skill, representing its ability to perform tasks
+requiring agility and balance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;acrobatics&quot;)]
+public int? Acrobatics { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Actions_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Actions*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Actions" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Actions">
+  Actions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the list of actions that the creature can take during a combat round.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;actions&quot;)]
+public List&lt;Action&gt;? Actions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.Common.Action.html">Action</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Alignment_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Alignment*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Alignment" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Alignment">
+  Alignment
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the alignment of the creature (e.g., chaotic evil, neutral).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;alignment&quot;)]
+public string? Alignment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_AnimalHandling_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.AnimalHandling*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_AnimalHandling" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.AnimalHandling">
+  AnimalHandling
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creature's Animal Handling skill, which is used for calming down,
+understanding, or controlling animals.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;handling&quot;)]
+public int? AnimalHandling { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Arcana_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Arcana*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Arcana" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Arcana">
+  Arcana
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creature's Arcana skill, representing knowledge about magical matters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;arcana&quot;)]
+public int? Arcana { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_ArmorClass_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.ArmorClass*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_ArmorClass" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.ArmorClass">
+  ArmorClass
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the Armor Class (AC) of the creature which is the difficulty to hit it with
+an attack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;armor_class&quot;)]
+public string? ArmorClass { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_ArmorDesc_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.ArmorDesc*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_ArmorDesc" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.ArmorDesc">
+  ArmorDesc
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the description of the creature's armor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;armor_desc&quot;)]
+public string? ArmorDesc { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Athletics_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Athletics*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Athletics" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Athletics">
+  Athletics
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creature's Athletics skill, which is used for physical activities like
+climbing, swimming, or jumping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;athletics&quot;)]
+public int? Athletics { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_ChallengeRating_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.ChallengeRating*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_ChallengeRating" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.ChallengeRating">
+  ChallengeRating
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the challenge rating of the creature, which is a measure of how dangerous
+it is.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;challenge_rating&quot;)]
+public string? ChallengeRating { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Charisma_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Charisma*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Charisma" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Charisma">
+  Charisma
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the charisma attribute of the creature. This might determine how it
+interacts with others.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;charisma&quot;)]
+public string? Charisma { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_CharismaSave_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.CharismaSave*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_CharismaSave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.CharismaSave">
+  CharismaSave
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the modifier for the creature's Charisma saving throws, which is used to
+resist certain effects that require a force of personality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;charisma_save&quot;)]
+public int? CharismaSave { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_ConditionImmunities_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.ConditionImmunities*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_ConditionImmunities" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.ConditionImmunities">
+  ConditionImmunities
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the conditions that the creature is immune to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;condition_immunities&quot;)]
+public string? ConditionImmunities { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Constitution_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Constitution*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Constitution" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Constitution">
+  Constitution
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the Constitution score of the creature, determining its health and stamina.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;constitution&quot;)]
+public string? Constitution { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_ConstitutionSave_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.ConstitutionSave*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_ConstitutionSave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.ConstitutionSave">
+  ConstitutionSave
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the Constitution saving throw modifier of the creature, which is used to
+resist effects like poison or disease.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;constitution_save&quot;)]
+public int? ConstitutionSave { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_DamageImmunities_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.DamageImmunities*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_DamageImmunities" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.DamageImmunities">
+  DamageImmunities
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the types of damage that the creature is immune to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;damage_immunities&quot;)]
+public string? DamageImmunities { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_DamageResistances_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.DamageResistances*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_DamageResistances" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.DamageResistances">
+  DamageResistances
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the types of damage that the creature is resistant to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;damage_resistances&quot;)]
+public string? DamageResistances { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_DamageVulnerabilities_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.DamageVulnerabilities*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_DamageVulnerabilities" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.DamageVulnerabilities">
+  DamageVulnerabilities
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the types of damage that the creature is vulnerable to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;damage_vulnerabilities&quot;)]
+public string? DamageVulnerabilities { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Deception_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Deception*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Deception" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Deception">
+  Deception
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creature's Deception skill, which is used to mislead others.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;deception&quot;)]
+public int? Deception { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Dexterity_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Dexterity*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Dexterity" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Dexterity">
+  Dexterity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the Dexterity score of the creature, determining its agility, reflexes, and balance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;dexterity&quot;)]
+public string? Dexterity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_DexteritySave_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.DexteritySave*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_DexteritySave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.DexteritySave">
+  DexteritySave
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the modifier for the creature's Dexterity saving throws, which is used to
+resist or avoid certain effects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;dexterity_save&quot;)]
+public int? DexteritySave { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_History_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.History*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_History" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.History">
+  History
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the History skill modifier of the creature, which is used for recalling
+lore or recognizing historical significance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;history&quot;)]
+public int? History { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_HitDice_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.HitDice*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_HitDice" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.HitDice">
+  HitDice
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the hit dice of the creature which determine its hit points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;hit_dice&quot;)]
+public string? HitDice { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_HitPoints_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.HitPoints*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_HitPoints" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.HitPoints">
+  HitPoints
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the hit points of the creature which indicate how much damage it can take
+before it drops to 0 health.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;hit_points&quot;)]
+public string? HitPoints { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Insight_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Insight*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Insight" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Insight">
+  Insight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creature's Insight skill, which is used to determine the true
+intentions of others.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;insight&quot;)]
+public int? Insight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Intelligence_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Intelligence*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Intelligence" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Intelligence">
+  Intelligence
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the Intelligence score of the creature, determining its mental acuity,
+information recall, and analytical skill.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;intelligence&quot;)]
+public string? Intelligence { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_IntelligenceSave_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.IntelligenceSave*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_IntelligenceSave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.IntelligenceSave">
+  IntelligenceSave
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the Intelligence saving throw modifier of the creature, which is used to
+resist effects like illusions or certain mental attacks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;intelligence_save&quot;)]
+public int? IntelligenceSave { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Intimidation_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Intimidation*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Intimidation" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Intimidation">
+  Intimidation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creature's Intimidation skill, representing its ability to instill fear
+in others through overt threats, hostile actions, and physical prowess.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;intimidation&quot;)]
+public int? Intimidation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Investigation_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Investigation*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Investigation" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Investigation">
+  Investigation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creature's Investigation skill, representing its ability to deduce
+information, piece together clues, or notice things that might be hidden or obscured.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;investigation&quot;)]
+public int? Investigation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Labels_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Labels*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Labels" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Labels">
+  Labels
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the list of labels associated with the creature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt;? Labels { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Languages_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Languages*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Languages" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Languages">
+  Languages
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the languages that the creature can speak.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;languages&quot;)]
+public string? Languages { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_LegendaryActions_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.LegendaryActions*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_LegendaryActions" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.LegendaryActions">
+  LegendaryActions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the list of legendary actions that the creature can take.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;legendary_actions&quot;)]
+public List&lt;Action&gt;? LegendaryActions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.Common.Action.html">Action</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_LegendaryDesc_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.LegendaryDesc*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_LegendaryDesc" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.LegendaryDesc">
+  LegendaryDesc
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the description of the creature's legendary actions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;legendary_desc&quot;)]
+public string? LegendaryDesc { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_LicenseURL_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.LicenseURL*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_LicenseURL" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.LicenseURL">
+  LicenseURL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the URL of the license for the game component's source data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? LicenseURL { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Medicine_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Medicine*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Medicine" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Medicine">
+  Medicine
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creature's Medicine skill, which might be used for healing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;medicine&quot;)]
+public int? Medicine { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Name_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Name*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Name" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Name">
+  Name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the name of the creature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;name&quot;)]
+public string? Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Nature_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Nature*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Nature" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Nature">
+  Nature
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creature's Nature skill, representing knowledge about natural
+environments, animals, plants, and weather patterns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;nature&quot;)]
+public int? Nature { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Perception_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Perception*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Perception" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Perception">
+  Perception
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the Perception skill modifier of the creature, which is used for detecting
+hidden objects or subtle occurrences.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;perception&quot;)]
+public int? Perception { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Performance_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Performance*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Performance" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Performance">
+  Performance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creature's Performance skill, which is used for entertaining others
+through dance, music, acting, storytelling, or other forms of expression.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;performance&quot;)]
+public int? Performance { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Persuasion_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Persuasion*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Persuasion" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Persuasion">
+  Persuasion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creature's Persuasion skill, which could be used in social situations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;persuasion&quot;)]
+public int? Persuasion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_PublisherName_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.PublisherName*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_PublisherName" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.PublisherName">
+  PublisherName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the name of the publisher of the game component's source data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? PublisherName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Reactions_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Reactions*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Reactions" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Reactions">
+  Reactions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the list of reactions that the creature can take in response to certain
+events or triggers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;reactions&quot;)]
+public List&lt;Action&gt;? Reactions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.Common.Action.html">Action</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Religion_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Religion*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Religion" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Religion">
+  Religion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creature's Religion skill, representing knowledge about deities and
+religious practices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;religion&quot;)]
+public int? Religion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Senses_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Senses*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Senses" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Senses">
+  Senses
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the types of senses the creature has and their range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;senses&quot;)]
+public string? Senses { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Size_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Size*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Size" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Size">
+  Size
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the size of the creature (e.g., Small, Medium, Large).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;size&quot;)]
+public string? Size { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_SleightOfHand_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.SleightOfHand*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_SleightOfHand" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.SleightOfHand">
+  SleightOfHand
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creature's Sleight of Hand skill, representing its ability to perform
+tasks requiring manual dexterity, such as pickpocketing and lock picking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;hand&quot;)]
+public int? SleightOfHand { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_SpecialAbilities_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.SpecialAbilities*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_SpecialAbilities" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.SpecialAbilities">
+  SpecialAbilities
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L318"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the list of special abilities the creature has.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;special_abilities&quot;)]
+public List&lt;Action&gt;? SpecialAbilities { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.Common.Action.html">Action</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Speed_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Speed*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Speed" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Speed">
+  Speed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the speed of the creature indicating how far it can move.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;speed&quot;)]
+public string? Speed { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_SpeedJson_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.SpeedJson*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_SpeedJson" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.SpeedJson">
+  SpeedJson
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the speed of the creature in different conditions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;speed_json&quot;)]
+public SpeedJson? SpeedJson { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.Common.SpeedJson.html">SpeedJson</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Stealth_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Stealth*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Stealth" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Stealth">
+  Stealth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creature's Stealth skill, which is used for avoiding detection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;stealth&quot;)]
+public int? Stealth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Strength_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Strength*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Strength" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Strength">
+  Strength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the Strength score of the creature, determining how physically powerful it is.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;strength&quot;)]
+public string? Strength { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_StrengthSave_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.StrengthSave*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_StrengthSave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.StrengthSave">
+  StrengthSave
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the modifier for the creature's Strength saving throws, which is used to
+resist or avoid certain physical effects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;strength_save&quot;)]
+public int? StrengthSave { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Subtype_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Subtype*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Subtype" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Subtype">
+  Subtype
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the subtype of the creature if any (e.g., elf, goblinoid).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;subtype&quot;)]
+public string? Subtype { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Survival_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Survival*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Survival" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Survival">
+  Survival
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creature's Survival skill, representing its ability to follow tracks,
+hunt wildlife, guide others through difficult terrain, and other wilderness tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;survival&quot;)]
+public int? Survival { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_TagSymbol_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.TagSymbol*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_TagSymbol" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.TagSymbol">
+  TagSymbol
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the campaign tag symbol to use for this creature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? TagSymbol { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Type_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Type*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Type" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Type">
+  Type
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the type of the creature (e.g., beast, humanoid).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;type&quot;)]
+public string? Type { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Wisdom_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Wisdom*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Wisdom" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Wisdom">
+  Wisdom
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the Wisdom score of the creature, determining its attunement to its
+surroundings and insight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;wisdom&quot;)]
+public string? Wisdom { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_WisdomSave_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.WisdomSave*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_WisdomSave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.WisdomSave">
+  WisdomSave
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L387"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the Wisdom saving throw modifier of the creature, which is used to resist
+effects like enchantments or certain mental attacks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;wisdom_save&quot;)]
+public int? WisdomSave { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_ToCampaignEntry_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.ToCampaignEntry*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_ToCampaignEntry" data-uid="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.ToCampaignEntry">
+  ToCampaignEntry()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a CampaignLogger Entry for this game component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CampaignEntry ToCampaignEntry()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CampaignKit.Compendium.Core.CampaignLogger.CampaignEntry.html">CampaignEntry</a></dt>
+    <dd><p>A CampaignLogger Entry for this game component.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/TomeOfBeasts/TomeOfBeastsCreature.cs/#L28" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

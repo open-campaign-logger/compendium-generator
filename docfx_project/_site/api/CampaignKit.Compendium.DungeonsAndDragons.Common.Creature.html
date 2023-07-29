@@ -1,0 +1,2644 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Creature
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Creature
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/open-campaign-logger/compendium-generator/new/91-add-isactive-configuration-parameter-to-all-modules/apiSpec/new?filename=CampaignKit_Compendium_DungeonsAndDragons_Common_Creature.md&amp;value=---%0Auid%3A%20CampaignKit.Compendium.DungeonsAndDragons.Common.Creature%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature">
+
+
+
+  <h1 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature" class="text-break">
+    Class Creature
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CampaignKit.html">CampaignKit</a>.<a class="xref" href="CampaignKit.Compendium.html">Compendium</a>.<a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.html">DungeonsAndDragons</a>.<a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.Common.html">Common</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>CampaignKit.Compendium.DungeonsAndDragons.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>This class is used to represent a creature.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Creature : IGameComponent</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Creature</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="CampaignKit.Compendium.Core.Common.IGameComponent.html">IGameComponent</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Acrobatics_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Acrobatics*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Acrobatics" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Acrobatics">
+  Acrobatics
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets acrobatics skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Acrobatics { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Actions_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Actions*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Actions" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Actions">
+  Actions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a collection of actions associated with the creature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Action&gt;? Actions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.Common.Action.html">Action</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Alignment_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Alignment*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Alignment" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Alignment">
+  Alignment
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets alignment of the creature.  Example: lawful evil.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Alignment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_AnimalHandling_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.AnimalHandling*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_AnimalHandling" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.AnimalHandling">
+  AnimalHandling
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets animal Handling skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? AnimalHandling { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Arcana_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Arcana*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Arcana" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Arcana">
+  Arcana
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets arcana skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Arcana { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ArmorClass_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ArmorClass*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ArmorClass" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ArmorClass">
+  ArmorClass
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets armor class of the creature.  Example: 17.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? ArmorClass { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ArmorDesc_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ArmorDesc*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ArmorDesc" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ArmorDesc">
+  ArmorDesc
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets type of armor worn by the creature.  Example: natural armor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ArmorDesc { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Athletics_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Athletics*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Athletics" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Athletics">
+  Athletics
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets athletics skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Athletics { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Attribution_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Attribution*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Attribution" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Attribution">
+  Attribution
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the SourceDataLicense object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Attribution { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The SourceDataLicense object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Blindsight_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Blindsight*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Blindsight" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Blindsight">
+  Blindsight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets distance in feet that the creature can see with blindsight.
+Leave 0 if not specified.
+Example 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Blindsight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Burrow_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Burrow*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Burrow" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Burrow">
+  Burrow
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets swimming speed of the creature in feet per round.  Example 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Burrow { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_CLStatBlock_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CLStatBlock*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_CLStatBlock" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CLStatBlock">
+  CLStatBlock
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets creature data formatted in standard CL format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public string? CLStatBlock { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ChallengeRating_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ChallengeRating*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ChallengeRating" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ChallengeRating">
+  ChallengeRating
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the challenge rating of th creature.  Fractional CRs should be expressed as a decimal.  Example: 10.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ChallengeRating { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Charisma_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Charisma*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Charisma" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Charisma">
+  Charisma
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets charisma of the creature.  Example: 18.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Charisma { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_CharismaSave_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CharismaSave*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_CharismaSave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CharismaSave">
+  CharismaSave
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets charisma saving throw of the creature.
+Leave zero if creature does not have the saving throw specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? CharismaSave { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Climb_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Climb*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Climb" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Climb">
+  Climb
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets swimming speed of the creature in feet per round.  Example 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Climb { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ConditionImmunities_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ConditionImmunities*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ConditionImmunities" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ConditionImmunities">
+  ConditionImmunities
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets condition immunities belonging to the creature.  Example: Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ConditionImmunities { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Constitution_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Constitution*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Constitution" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Constitution">
+  Constitution
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets constitution of the creature.  Example: 15.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Constitution { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ConstitutionSave_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ConstitutionSave*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ConstitutionSave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ConstitutionSave">
+  ConstitutionSave
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets constitution saving throw of the creature.
+Leave zero if creature does not have the saving throw specified.
+Example: 15.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? ConstitutionSave { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_DamageImmunities_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.DamageImmunities*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_DamageImmunities" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.DamageImmunities">
+  DamageImmunities
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets damage immunities belonging to the creature.  Example: Poison, Psychic; Bludgeoning, Piercing, and Slashing From Nonmagical Attacks That Aren't Adamantine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? DamageImmunities { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_DamageResistances_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.DamageResistances*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_DamageResistances" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.DamageResistances">
+  DamageResistances
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets damage resistances belonging to the creature.  Example: Fire.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? DamageResistances { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_DamageVulnerabilities_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.DamageVulnerabilities*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_DamageVulnerabilities" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.DamageVulnerabilities">
+  DamageVulnerabilities
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets damage vulnerabilities belonging to the creature.  Example: Thunder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? DamageVulnerabilities { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Darkvision_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Darkvision*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Darkvision" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Darkvision">
+  Darkvision
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets distance in feet that the creature can see with darkvision.
+Leave 0 if not specified.
+Example 120.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Darkvision { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Deception_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Deception*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Deception" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Deception">
+  Deception
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets deception skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Deception { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Dexterity_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Dexterity*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Dexterity" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Dexterity">
+  Dexterity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets dexterity of the creature.  Example: 9.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Dexterity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_DexteritySave_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.DexteritySave*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_DexteritySave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.DexteritySave">
+  DexteritySave
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets dexterity saving throw of the creature.
+Leave zero if creature does not have the saving throw specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? DexteritySave { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Fly_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Fly*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Fly" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Fly">
+  Fly
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets swimming speed of the creature in feet per round.  Example 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Fly { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_History_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.History*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_History" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.History">
+  History
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets history skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? History { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_HitDice_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.HitDice*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_HitDice" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.HitDice">
+  HitDice
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets hit dice calculation for the creature.  Example 18d10+36.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? HitDice { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_HitPoints_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.HitPoints*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_HitPoints" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.HitPoints">
+  HitPoints
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets average hit points of the creature.  Example 135.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? HitPoints { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Hover_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Hover*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Hover" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Hover">
+  Hover
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether ability of the creature to hover.  Example: false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? Hover { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Insight_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Insight*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Insight" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Insight">
+  Insight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets insight skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Insight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Intelligence_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Intelligence*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Intelligence" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Intelligence">
+  Intelligence
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets intelligence of the creature.  Example: 18.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Intelligence { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_IntelligenceSave_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.IntelligenceSave*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_IntelligenceSave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.IntelligenceSave">
+  IntelligenceSave
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets intelligence saving throw of the creature.
+Leave zero if creature does not have the saving throw specified.
+Example: 8.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? IntelligenceSave { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Intimidation_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Intimidation*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Intimidation" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Intimidation">
+  Intimidation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets intimidation skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Intimidation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Investigation_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Investigation*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Investigation" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Investigation">
+  Investigation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets investigation skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Investigation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_JSONStatBlock_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.JSONStatBlock*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_JSONStatBlock" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.JSONStatBlock">
+  JSONStatBlock
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets creature data formatted in JSON format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public string? JSONStatBlock { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Labels_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Labels*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Labels" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Labels">
+  Labels
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the campaign labels associated with this creature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt;? Labels { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Languages_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Languages*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Languages" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Languages">
+  Languages
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets languages the creature is able to speak or understand.  Example Deep Speech, telepathy 120 ft.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Languages { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_LegendaryActionDescription_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LegendaryActionDescription*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_LegendaryActionDescription" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LegendaryActionDescription">
+  LegendaryActionDescription
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets legendary action description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? LegendaryActionDescription { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_LegendaryActions_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LegendaryActions*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_LegendaryActions" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LegendaryActions">
+  LegendaryActions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a collection of legendary actions associated with the creature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Action&gt;? LegendaryActions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.Common.Action.html">Action</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_LicenseURL_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LicenseURL*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_LicenseURL" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LicenseURL">
+  LicenseURL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the URL of the license for the game component's source data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? LicenseURL { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_LightWalking_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LightWalking*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_LightWalking" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LightWalking">
+  LightWalking
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets light walking capability of the creature to hover.  Example: 80.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? LightWalking { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Medicine_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Medicine*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Medicine" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Medicine">
+  Medicine
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets medicine skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Medicine { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Name_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Name*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Name" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Name">
+  Name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets name of the creature.  Example: Aboleth.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Nature_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Nature*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Nature" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Nature">
+  Nature
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets nature skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Nature { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_PassivePerception_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.PassivePerception*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_PassivePerception" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.PassivePerception">
+  PassivePerception
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets passive perception is calculated as 10+all modifiers that would apply to a rolled
+perception check for that character (such as the wisdom modifier and proficiency bonus).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? PassivePerception { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Perception_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Perception*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Perception" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Perception">
+  Perception
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets perception skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Perception { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Performance_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Performance*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Performance" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Performance">
+  Performance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets performance skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Performance { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Persuasion_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Persuasion*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Persuasion" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Persuasion">
+  Persuasion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets persuasion skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Persuasion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_PublisherName_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.PublisherName*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_PublisherName" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.PublisherName">
+  PublisherName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the name of the publisher of the game component's source data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? PublisherName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Reactions_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Reactions*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Reactions" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Reactions">
+  Reactions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a collection of reactions associated with the creature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Action&gt;? Reactions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.Common.Action.html">Action</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Religion_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Religion*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Religion" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Religion">
+  Religion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets religion skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Religion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Size_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Size*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Size" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Size">
+  Size
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets size of the creature.  Example: Large.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Size { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_SleightOfHand_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SleightOfHand*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_SleightOfHand" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SleightOfHand">
+  SleightOfHand
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets sleight of hand skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? SleightOfHand { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_SpecialAbilities_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SpecialAbilities*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_SpecialAbilities" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SpecialAbilities">
+  SpecialAbilities
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a collection of special abilities associated with the creature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Action&gt;? SpecialAbilities { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.Common.Action.html">Action</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Stealth_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Stealth*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Stealth" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Stealth">
+  Stealth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets stealth skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Stealth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Strength_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Strength*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Strength" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Strength">
+  Strength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets strength of the creature.  Example: 21.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Strength { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_StrengthSave_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.StrengthSave*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_StrengthSave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.StrengthSave">
+  StrengthSave
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets strength saving throw of the creature.
+Leave zero if creature does not have the saving throw specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? StrengthSave { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Survival_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Survival*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Survival" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Survival">
+  Survival
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets survival skill bonus.
+Leave zero if creature does not have the skill specified.
+Example: 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Survival { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Swim_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Swim*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Swim" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Swim">
+  Swim
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets swimming speed of the creature in feet per round.  Example 40.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Swim { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_TagSymbol_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TagSymbol*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_TagSymbol" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TagSymbol">
+  TagSymbol
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L390"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the campaign tag symbol to use for this creature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? TagSymbol { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_TextStatBlock_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TextStatBlock*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_TextStatBlock" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TextStatBlock">
+  TextStatBlock
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets creature data formatted in standard text format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public string? TextStatBlock { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Tremorsense_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Tremorsense*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Tremorsense" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Tremorsense">
+  Tremorsense
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets distance in feet that the creature can feel with tremorsense.
+Leave 0 if not specified.
+Example 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Tremorsense { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Truesight_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Truesight*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Truesight" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Truesight">
+  Truesight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets distance in feet that the creature can see with truesight.
+Leave 0 if not specified.
+Example 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Truesight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Type_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Type*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Type" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Type">
+  Type
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets type of the creature.  Example: aberration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Type { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Walk_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Walk*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Walk" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Walk">
+  Walk
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L420"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets walking speed of the creature in feet per round.  Example 10.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Walk { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Wisdom_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Wisdom*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Wisdom" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Wisdom">
+  Wisdom
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets wisdom of the creature.  Example: 15.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Wisdom { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_WisdomSave_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.WisdomSave*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_WisdomSave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.WisdomSave">
+  WisdomSave
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L432"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets wisdom saving throw of the creature.
+Leave zero if creature does not have the saving throw specified.
+Example: 6.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? WisdomSave { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Equals_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Equals*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Equals_System_Object_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Equals(System.Object)">
+  Equals(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Implementation of Equals method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>creature object to compare this to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if objects are equal, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_GetHashCode_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.GetHashCode*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_GetHashCode" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L456"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Implementation of GetHashCode method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>int hashcode for this object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ToCampaignEntry_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ToCampaignEntry*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ToCampaignEntry" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ToCampaignEntry">
+  ToCampaignEntry()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a CampaignLogger Entry for this game component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CampaignEntry ToCampaignEntry()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CampaignKit.Compendium.Core.CampaignLogger.CampaignEntry.html">CampaignEntry</a></dt>
+    <dd><p>A CampaignLogger Entry for this game component.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ToCampaignLoggerStatBlock_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ToCampaignLoggerStatBlock*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ToCampaignLoggerStatBlock" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ToCampaignLoggerStatBlock">
+  ToCampaignLoggerStatBlock()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L489"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a Campaign-Logger statblock for the creature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToCampaignLoggerStatBlock()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Campaign-Logger statblock for the creature.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ToString_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ToString*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ToString" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L829"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Exports a simple textual description of this creature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>string representation of creature.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ToTextStatBlock_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ToTextStatBlock*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ToTextStatBlock" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ToTextStatBlock">
+  ToTextStatBlock()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L838"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a text statblock for the this creature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToTextStatBlock()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Standard text statblock for the this creature..</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L30" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

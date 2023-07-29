@@ -46,4 +46,8 @@
     </None>
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="docfx ..\..\docfx_project\docfx.json" />
+  </Target>
+
 </Project>
