@@ -47,10 +47,21 @@ namespace CampaignKit.Compendium.Core.Configuration
         string ImageUrl { get; set; }
 
         /// <summary>
+        /// Gets or sets a value indicating whether a new compendium should be created if one already exists.
+        /// </summary>
+        bool OverwriteExisting { get; set; }
+
+        /// <summary>
         /// Gets or sets the list of source data sets associated with the Compendium.
         /// Each item in this list represents a set of data that is used in the Compendium.
         /// </summary>
         List<SourceDataSet> SourceDataSets { get; set; }
+
+        /// <summary>
+        /// Gets or sets the list of chat prompts to use for generating the Compendium.
+        /// Each item in this list represents a prompt that will be used to generate a campaign entry.
+        /// </summary>
+        List<Prompt> Prompts { get; set; }
 
         /// <summary>
         /// Gets or sets the title of the Compendium.

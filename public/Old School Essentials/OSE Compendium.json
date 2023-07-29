@@ -12,6 +12,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Magic User"
       ],
@@ -25,7 +26,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Control Undead"
@@ -36,6 +38,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Cleric"
       ],
@@ -49,7 +52,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Broom of Flying"
@@ -60,6 +64,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Cleric"
       ],
@@ -72,6 +77,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Cleric"
       ],
@@ -84,6 +90,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Cleric"
       ],
@@ -96,6 +103,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Cleric"
       ],
@@ -108,6 +116,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Cleric"
       ],
@@ -120,6 +129,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Cleric"
       ],
@@ -132,6 +142,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Cleric"
       ],
@@ -144,6 +155,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Cleric"
       ],
@@ -156,6 +168,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Cleric"
       ],
@@ -168,6 +181,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Cleric"
       ],
@@ -180,6 +194,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Cleric"
       ],
@@ -192,6 +207,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Cleric"
       ],
@@ -204,6 +220,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Cleric"
       ],
@@ -216,6 +233,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Cleric"
       ],
@@ -228,6 +246,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Cleric"
       ],
@@ -240,6 +259,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Cleric"
       ],
@@ -252,6 +272,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Cleric"
       ],
@@ -264,6 +285,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Cleric"
       ],
@@ -277,7 +299,8 @@
         "Magic Items",
         "Rings",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Ring of Controlling Plants"
@@ -288,6 +311,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Cleric"
       ],
@@ -300,6 +324,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Cleric"
       ],
@@ -312,6 +337,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Cleric"
       ],
@@ -324,6 +350,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Cleric"
       ],
@@ -336,6 +363,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Cleric"
       ],
@@ -348,6 +376,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Cleric"
       ],
@@ -360,6 +389,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Cleric"
       ],
@@ -372,6 +402,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Cleric"
       ],
@@ -385,7 +416,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Control Plant"
@@ -396,6 +428,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Cleric"
       ],
@@ -408,6 +441,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Cleric"
       ],
@@ -420,6 +454,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Cleric"
       ],
@@ -432,6 +467,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Cleric"
       ],
@@ -444,6 +480,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Cleric"
       ],
@@ -456,6 +493,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Cleric"
       ],
@@ -468,6 +506,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Cleric"
       ],
@@ -481,7 +520,8 @@
         "Magic Items",
         "Rings",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Ring of Controlling Animals"
@@ -493,7 +533,8 @@
         "Magic Items",
         "Rings",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Ring of Controlling Humans"
@@ -505,7 +546,8 @@
         "Magic Items",
         "Rings",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Ring of Delusion"
@@ -517,7 +559,8 @@
         "Magic Items",
         "Rings",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Ring of Fire Resistance"
@@ -529,7 +572,8 @@
         "Magic Items",
         "Rings",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Ring of Protection"
@@ -541,7 +585,8 @@
         "Magic Items",
         "Rings",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Ring of Spell Storing"
@@ -553,7 +598,8 @@
         "Magic Items",
         "Rings",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Ring of Telekinesis"
@@ -565,7 +611,8 @@
         "Magic Items",
         "Rings",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Ring of Weakness"
@@ -577,7 +624,8 @@
         "Magic Items",
         "Rings",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Ring of X-Ray Vision"
@@ -589,7 +637,8 @@
         "Magic Items",
         "Wands",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Wand of Illusion"
@@ -601,7 +650,8 @@
         "Magic Items",
         "Wands",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Wand of Magic Detection"
@@ -613,7 +663,8 @@
         "Magic Items",
         "Rings",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Ring of Djinni Summoning"
@@ -625,7 +676,8 @@
         "Magic Items",
         "Rings",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Ring of Invisibility"
@@ -637,7 +689,8 @@
         "Magic Items",
         "Rings",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Ring of Regeneration"
@@ -649,7 +702,8 @@
         "Magic Items",
         "Rings",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Ring of Spell Turning"
@@ -661,7 +715,8 @@
         "Magic Items",
         "Rings",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Ring of Water Walking"
@@ -673,7 +728,8 @@
         "Magic Items",
         "Rings",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Ring of Wishes"
@@ -685,7 +741,8 @@
         "Magic Items",
         "Rods",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Rod of Cancellation"
@@ -697,7 +754,8 @@
         "Magic Items",
         "Staff",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Staff of Healing"
@@ -709,7 +767,8 @@
         "Magic Items",
         "Staff",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Staff of Snakes"
@@ -721,7 +780,8 @@
         "Magic Items",
         "Staff",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Staff of Withering"
@@ -733,7 +793,8 @@
         "Magic Items",
         "Wands",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Wand of Cold"
@@ -745,7 +806,8 @@
         "Magic Items",
         "Wands",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Wand of Fear"
@@ -757,7 +819,8 @@
         "Magic Items",
         "Staff",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Staff of Commanding"
@@ -769,7 +832,8 @@
         "Magic Items",
         "Staff",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Staff of Power"
@@ -781,7 +845,8 @@
         "Magic Items",
         "Staff",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Staff of Striking"
@@ -793,7 +858,8 @@
         "Magic Items",
         "Staff",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Staff of Wizardry"
@@ -805,7 +871,8 @@
         "Magic Items",
         "Wands",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Wand of Enemy Detection"
@@ -817,7 +884,8 @@
         "Magic Items",
         "Wands",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Wand of Fire Balls"
@@ -829,7 +897,8 @@
         "Magic Items",
         "Wands",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Wand of Lightning Bolts"
@@ -841,7 +910,8 @@
         "Magic Items",
         "Wands",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Wand of Metal Detection"
@@ -853,7 +923,8 @@
         "Magic Items",
         "Wands",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Wand of Negation"
@@ -865,7 +936,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Delusion"
@@ -877,7 +949,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of ESP"
@@ -889,7 +962,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Flying"
@@ -901,7 +975,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Giant Strength"
@@ -913,7 +988,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Healing"
@@ -925,7 +1001,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Invisibility"
@@ -937,7 +1014,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Levitation"
@@ -949,7 +1027,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Poison"
@@ -961,7 +1040,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Speed"
@@ -973,7 +1053,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Mixing Potions"
@@ -985,7 +1066,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Bag of Devouring"
@@ -997,7 +1079,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Boots of Levitation"
@@ -1009,7 +1092,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Diminution"
@@ -1021,7 +1105,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of  Fire Resistance"
@@ -1033,7 +1118,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Gaseous Form"
@@ -1045,7 +1131,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Growth"
@@ -1057,7 +1144,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Heroism"
@@ -1069,7 +1157,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Invulnerability"
@@ -1081,7 +1170,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Longevity"
@@ -1093,7 +1183,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Polymorph Self"
@@ -1105,7 +1196,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Treasure Finding"
@@ -1117,7 +1209,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Amulet of Protection Against Scrying"
@@ -1129,7 +1222,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Bag of Holding"
@@ -1141,7 +1235,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Boots of Speed"
@@ -1152,6 +1247,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Magic User"
       ],
@@ -1165,7 +1261,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Boots of Travelling and Leaping"
@@ -1177,7 +1274,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Crystal Ball"
@@ -1189,7 +1287,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Drums of Panic"
@@ -1201,7 +1300,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Elemental Summoning Device"
@@ -1213,7 +1313,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Flying Carpet"
@@ -1225,7 +1326,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Girdle of Giant Strength"
@@ -1237,7 +1339,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Helm of Reading Languages and Magic"
@@ -1249,7 +1352,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Helm of Teleportation"
@@ -1261,7 +1365,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Medallion of ESP 30’"
@@ -1273,7 +1378,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Displacer Cloak"
@@ -1285,7 +1391,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Efreeti Bottle"
@@ -1297,7 +1404,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Elven Cloak and Boots"
@@ -1309,7 +1417,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Gauntlets of Ogre Power"
@@ -1321,7 +1430,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Helm of Alignment Changing"
@@ -1333,7 +1443,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Helm of Telepathy"
@@ -1345,7 +1456,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Horn of Blasting"
@@ -1357,7 +1469,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Medallion of ESP 90’"
@@ -1369,7 +1482,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Rope of Climbing"
@@ -1381,7 +1495,8 @@
         "Potions",
         "Magic Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Clairaudience"
@@ -1393,7 +1508,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Control Animal"
@@ -1405,7 +1521,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Control Giant"
@@ -1417,7 +1534,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Mirror of Life Trapping"
@@ -1429,7 +1547,8 @@
         "Magic Items",
         "Miscellaneous Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Scarab of Protection"
@@ -1441,7 +1560,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Clairvoyance"
@@ -1453,7 +1573,8 @@
         "Potions",
         "Magic Items",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Control Dragon"
@@ -1465,7 +1586,8 @@
         "Magic Items",
         "Potions",
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Control Human"
@@ -1476,6 +1598,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Magic User"
       ],
@@ -1488,6 +1611,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Magic User"
       ],
@@ -1500,6 +1624,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Magic User"
       ],
@@ -1512,6 +1637,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Magic User"
       ],
@@ -1524,6 +1650,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Magic User"
       ],
@@ -1536,6 +1663,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Magic User"
       ],
@@ -1548,6 +1676,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Magic User"
       ],
@@ -1560,6 +1689,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Magic User"
       ],
@@ -1572,6 +1702,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Magic User"
       ],
@@ -1584,6 +1715,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Magic User"
       ],
@@ -1596,6 +1728,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Magic User"
       ],
@@ -1608,6 +1741,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Magic User"
       ],
@@ -1620,6 +1754,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Magic User"
       ],
@@ -1632,6 +1767,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Magic User"
       ],
@@ -1644,6 +1780,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Magic User"
       ],
@@ -1656,6 +1793,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Magic User"
       ],
@@ -1668,6 +1806,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 1",
         "Magic User"
       ],
@@ -1680,6 +1819,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Magic User"
       ],
@@ -1692,6 +1832,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Magic User"
       ],
@@ -1704,6 +1845,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Magic User"
       ],
@@ -1716,6 +1858,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Magic User"
       ],
@@ -1728,6 +1871,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Magic User"
       ],
@@ -1740,6 +1884,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Magic User"
       ],
@@ -1752,6 +1897,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Magic User"
       ],
@@ -1764,6 +1910,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Magic User"
       ],
@@ -1776,6 +1923,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 2",
         "Magic User"
       ],
@@ -1788,6 +1936,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Magic User"
       ],
@@ -1800,6 +1949,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Magic User"
       ],
       "tagSymbol": "~",
@@ -1811,6 +1961,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Magic User"
       ],
@@ -1823,6 +1974,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Magic User"
       ],
@@ -1835,6 +1987,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Magic User"
       ],
@@ -1847,6 +2000,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Magic User"
       ],
@@ -1859,6 +2013,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 6",
         "Magic User"
       ],
@@ -1871,6 +2026,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Magic User"
       ],
@@ -1883,6 +2039,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 3",
         "Magic User"
       ],
@@ -1895,6 +2052,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Magic User"
       ],
@@ -1907,6 +2065,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Magic User"
       ],
@@ -1919,6 +2078,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Magic User"
       ],
@@ -1931,6 +2091,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Magic User"
       ],
@@ -1943,6 +2104,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Magic User"
       ],
@@ -1955,6 +2117,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Magic User"
       ],
@@ -1967,6 +2130,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Magic User"
       ],
@@ -1979,6 +2143,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Magic User"
       ],
@@ -1991,6 +2156,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Magic User"
       ],
@@ -2003,6 +2169,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Magic User"
       ],
@@ -2015,6 +2182,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Magic User"
       ],
@@ -2027,6 +2195,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 4",
         "Magic User"
       ],
@@ -2039,6 +2208,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Magic User"
       ],
@@ -2051,6 +2221,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Magic User"
       ],
@@ -2063,6 +2234,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Magic User"
       ],
@@ -2075,6 +2247,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Magic User"
       ],
@@ -2087,6 +2260,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Magic User"
       ],
@@ -2099,6 +2273,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Magic User"
       ],
@@ -2111,6 +2286,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Magic User"
       ],
@@ -2123,6 +2299,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Magic User"
       ],
@@ -2135,6 +2312,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 6",
         "Magic User"
       ],
@@ -2147,6 +2325,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Magic User"
       ],
@@ -2159,6 +2338,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Magic User"
       ],
@@ -2171,6 +2351,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Magic User"
       ],
@@ -2183,6 +2364,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 5",
         "Magic User"
       ],
@@ -2195,6 +2377,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 6",
         "Magic User"
       ],
@@ -2207,6 +2390,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 6",
         "Magic User"
       ],
@@ -2219,6 +2403,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 6",
         "Magic User"
       ],
@@ -2231,6 +2416,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 6",
         "Magic User"
       ],
@@ -2243,6 +2429,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 6",
         "Magic User"
       ],
@@ -2255,6 +2442,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 6",
         "Magic User"
       ],
@@ -2267,6 +2455,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 6",
         "Magic User"
       ],
@@ -2279,6 +2468,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 6",
         "Magic User"
       ],
@@ -2291,6 +2481,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Any",
         "HD: 1"
@@ -2304,6 +2495,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Treasure Type: A",
         "Alignment: Chaotic",
@@ -2319,6 +2511,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 2"
@@ -2332,6 +2525,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 1"
@@ -2345,6 +2539,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 6",
         "Magic User"
       ],
@@ -2357,6 +2552,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Level 6",
         "Magic User"
       ],
@@ -2369,6 +2565,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 4"
@@ -2382,6 +2579,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: F",
         "Alignment: Neutral",
         "Special Abilities",
@@ -2396,6 +2594,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 2"
@@ -2409,6 +2608,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "HD: 4"
@@ -2422,6 +2622,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "HD: 5"
@@ -2435,6 +2636,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 1"
@@ -2448,6 +2650,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: V",
         "Alignment: Neutral",
         "HD: 7"
@@ -2461,6 +2664,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "HD: 6"
@@ -2474,6 +2678,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -2488,6 +2693,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: P",
         "Treasure Type: B",
         "Alignment: Neutral",
@@ -2503,6 +2709,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Lawful",
         "Special Abilities",
@@ -2517,6 +2724,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: A",
         "Alignment: Chaotic",
         "HD: 1"
@@ -2530,6 +2738,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: B",
         "Alignment: Chaotic",
         "HD: 3"
@@ -2543,6 +2752,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "HD: 3"
@@ -2556,6 +2766,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -2570,6 +2781,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 3"
@@ -2583,6 +2795,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: A",
         "Alignment: Neutral",
         "HD: 1"
@@ -2596,6 +2809,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: B",
         "Alignment: Neutral",
         "Special Abilities",
@@ -2610,6 +2824,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: B",
         "Alignment: Neutral",
         "Special Abilities",
@@ -2624,6 +2839,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "HD: 3"
@@ -2637,6 +2853,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 2"
@@ -2650,6 +2867,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "HD: 5"
@@ -2663,6 +2881,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "HD: 4"
@@ -2676,6 +2895,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: V",
         "Alignment: Neutral",
         "HD: 8"
@@ -2689,6 +2909,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "HD: 6"
@@ -2702,6 +2923,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 2"
@@ -2715,6 +2937,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: A",
         "Alignment: Neutral",
         "HD: 4"
@@ -2728,6 +2951,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities"
@@ -2741,6 +2965,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: F",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -2755,6 +2980,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 3"
@@ -2768,6 +2994,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 6"
@@ -2781,6 +3008,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -2795,6 +3023,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: H",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -2809,6 +3038,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: H",
         "Alignment: Lawful",
         "Special Abilities",
@@ -2823,6 +3053,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: D",
         "Alignment: Neutral",
         "Special Abilities",
@@ -2837,6 +3068,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 15"
@@ -2850,6 +3082,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 2"
@@ -2863,6 +3096,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: A",
         "Alignment: Lawful",
         "HD: 1"
@@ -2876,6 +3110,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: E",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -2890,6 +3125,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: H",
         "Alignment: Neutral",
         "Special Abilities",
@@ -2904,6 +3140,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: H",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -2918,6 +3155,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 8"
@@ -2931,6 +3169,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: H",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -2945,6 +3184,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: H",
         "Alignment: Neutral",
         "Special Abilities",
@@ -2959,6 +3199,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "Special Abilities",
@@ -2973,6 +3214,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: G",
         "Alignment: Lawful",
         "Alignment: Neutral",
@@ -2987,6 +3229,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3003,6 +3246,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3019,6 +3263,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: T",
         "Alignment: Neutral",
         "HD: 9"
@@ -3032,6 +3277,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3046,6 +3292,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: H",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3060,6 +3307,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: H",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -3074,6 +3322,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: D",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3088,6 +3337,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -3102,6 +3352,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3118,6 +3369,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3134,6 +3386,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: E",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3148,6 +3401,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 2"
@@ -3161,6 +3415,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 3"
@@ -3174,6 +3429,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3188,6 +3444,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: V",
         "Alignment: Neutral",
         "HD: 4"
@@ -3201,6 +3458,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3215,6 +3473,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: E",
         "Alignment: Chaotic",
         "HD: 10"
@@ -3228,6 +3487,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3242,6 +3502,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Chaotic",
         "HD: 4"
@@ -3255,6 +3516,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: B",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -3269,6 +3531,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Lawful",
         "Alignment: Neutral",
@@ -3283,6 +3546,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: E",
         "Alignment: Chaotic",
         "HD: 8"
@@ -3296,6 +3560,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: D",
         "Alignment: Chaotic",
         "HD: 2"
@@ -3309,6 +3574,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: R",
         "Treasure Type: C",
         "Alignment: Chaotic",
@@ -3323,6 +3589,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 8"
@@ -3336,6 +3603,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 2"
@@ -3349,6 +3617,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3363,6 +3632,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: E",
         "Alignment: Neutral",
         "HD: 7"
@@ -3376,6 +3646,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3390,6 +3661,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: E",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -3404,6 +3676,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3418,6 +3691,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: V",
         "Treasure Type: B",
         "Alignment: Lawful",
@@ -3432,6 +3706,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 3"
@@ -3445,6 +3720,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -3460,6 +3736,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 3"
@@ -3473,6 +3750,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "HD: 3"
@@ -3486,6 +3764,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -3500,6 +3779,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral"
       ],
@@ -3512,6 +3792,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 4"
@@ -3525,6 +3806,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 1",
@@ -3539,6 +3821,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: D",
         "Alignment: Chaotic",
         "HD: 1"
@@ -3552,6 +3835,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 2"
@@ -3565,6 +3849,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 2"
@@ -3578,6 +3863,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: V",
         "Alignment: Neutral",
         "HD: 6"
@@ -3591,6 +3877,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 3"
@@ -3604,6 +3891,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 3"
@@ -3617,6 +3905,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 3"
@@ -3630,6 +3919,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: B",
         "Alignment: Neutral",
         "HD: 5",
@@ -3644,6 +3934,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3658,6 +3949,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: P",
         "Treasure Type: J",
         "Alignment: Chaotic",
@@ -3672,6 +3964,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Lawful",
         "HD: 3"
@@ -3685,6 +3978,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -3699,6 +3993,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 2",
@@ -3713,6 +4008,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: H",
         "Alignment: Neutral",
         "Special Abilities"
@@ -3726,6 +4022,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 6"
@@ -3739,6 +4036,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 4"
@@ -3752,6 +4050,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "HD: 4"
@@ -3765,6 +4064,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3779,6 +4079,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: D",
         "Alignment: Neutral",
         "HD: 2"
@@ -3792,6 +4093,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3806,6 +4108,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -3820,6 +4123,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -3834,6 +4138,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: T",
         "Alignment: Neutral",
         "HD: 15"
@@ -3847,6 +4152,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: F",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -3861,6 +4167,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: A",
         "Alignment: Neutral",
         "HD: 1"
@@ -3874,6 +4181,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -3888,6 +4196,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3902,6 +4211,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Neutral",
         "Special Abilities",
@@ -3916,6 +4226,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: D",
         "Alignment: Chaotic",
         "HD: 6"
@@ -3929,6 +4240,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: V",
         "Alignment: Any",
         "Special Abilities",
@@ -3943,6 +4255,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: A",
         "Alignment: Neutral",
         "HD: 1"
@@ -3956,6 +4269,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Chaotic",
         "HD: 6"
@@ -3969,6 +4283,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 2"
@@ -3982,6 +4297,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Lawful",
         "HD: 2"
@@ -3995,6 +4311,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Lawful",
         "Alignment: Any"
@@ -4008,6 +4325,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 8"
@@ -4021,6 +4339,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: D",
         "Alignment: Chaotic",
         "HD: 1"
@@ -4034,6 +4353,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Lawful",
         "HD: 2"
@@ -4047,6 +4367,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: D",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -4061,6 +4382,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: B",
         "Alignment: Neutral",
         "HD: 1"
@@ -4074,6 +4396,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: A",
         "Alignment: Any",
         "HD: 1"
@@ -4087,6 +4410,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -4101,6 +4425,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Chaotic",
         "HD: 4"
@@ -4114,6 +4439,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Neutral",
         "HD: 5"
@@ -4127,6 +4453,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: A",
         "Alignment: Chaotic",
         "HD: 1"
@@ -4140,6 +4467,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: V",
         "Alignment: Neutral",
         "HD: 5"
@@ -4153,6 +4481,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: D",
         "Alignment: Neutral",
         "Special Abilities",
@@ -4167,6 +4496,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: L",
         "Alignment: Neutral",
         "HD: 1"
@@ -4180,6 +4510,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 6"
@@ -4193,6 +4524,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "HD: 2"
@@ -4206,6 +4538,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: I",
         "Alignment: Lawful",
         "HD: 12"
@@ -4219,6 +4552,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: R",
         "Treasure Type: S",
         "Alignment: Neutral",
@@ -4234,6 +4568,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 1"
@@ -4247,6 +4582,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Neutral"
       ],
@@ -4259,6 +4595,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "HD: 4"
@@ -4272,6 +4609,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 8"
@@ -4285,6 +4623,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: I",
         "Alignment: Lawful",
         "HD: 36"
@@ -4298,6 +4637,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: I",
         "Alignment: Lawful",
         "HD: 6"
@@ -4311,6 +4651,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 5"
@@ -4324,6 +4665,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "HD: 2"
@@ -4337,6 +4679,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: F",
         "Alignment: Neutral",
         "Special Abilities",
@@ -4351,6 +4694,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: V",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -4365,6 +4709,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: F",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -4379,6 +4724,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 8"
@@ -4392,6 +4738,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: E",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -4406,6 +4753,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 6"
@@ -4419,6 +4767,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 2"
@@ -4432,6 +4781,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 4"
@@ -4445,6 +4795,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 1"
@@ -4458,6 +4809,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 3"
@@ -4471,6 +4823,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Chaotic",
         "HD: 1"
@@ -4484,6 +4837,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "Special Abilities",
@@ -4498,6 +4852,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -4512,6 +4867,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "Special Abilities",
@@ -4526,6 +4882,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -4540,6 +4897,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -4554,6 +4912,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: E",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -4568,6 +4927,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "Special Abilities",
@@ -4582,6 +4942,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "Special Abilities",
@@ -4596,6 +4957,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Alignment: Neutral",
         "Special Abilities",
@@ -4610,6 +4972,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: S",
         "Alignment: Neutral",
         "Special Abilities"
@@ -4623,6 +4986,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: V",
         "Alignment: Neutral",
         "HD: 6"
@@ -4636,6 +5000,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 11"
@@ -4649,6 +5014,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: L",
         "Alignment: Neutral",
         "Special Abilities",
@@ -4663,6 +5029,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -4677,6 +5044,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 12"
@@ -4690,6 +5058,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 2"
@@ -4703,6 +5072,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: U",
         "Treasure Type: V",
         "Alignment: Any",
@@ -4717,6 +5087,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: C",
         "Alignment: Lawful",
         "HD: 8"
@@ -4730,6 +5101,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 11"
@@ -4743,6 +5115,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: A",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -4757,6 +5130,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: D",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -4771,6 +5145,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Lawful",
         "Special Abilities",
@@ -4785,6 +5160,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: F",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -4800,6 +5176,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: V",
         "Alignment: Any",
         "HD: 1",
@@ -4814,6 +5191,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: D",
         "Alignment: Neutral",
         "Special Abilities",
@@ -4828,6 +5206,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 2"
@@ -4841,6 +5220,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 4"
@@ -4854,6 +5234,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 1"
@@ -4867,6 +5248,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: V",
         "Alignment: Neutral",
         "HD: 4"
@@ -4880,6 +5262,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: V",
         "Alignment: Neutral",
         "HD: 6"
@@ -4893,6 +5276,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: H",
         "Alignment: Lawful",
         "HD: 12"
@@ -4906,6 +5290,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: V",
         "Alignment: Neutral",
         "HD: 36"
@@ -4919,6 +5304,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: B",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -4933,6 +5319,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 4"
@@ -4946,6 +5333,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "HD: 2"
@@ -4959,6 +5347,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: E",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -4973,6 +5362,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: E",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -4987,6 +5377,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Neutral",
         "Special Abilities",
@@ -5001,6 +5392,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: None",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -5014,7 +5406,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Cat, Great"
@@ -5024,7 +5417,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Bat"
@@ -5034,7 +5428,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Bear"
@@ -5044,7 +5439,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Beetle, Giant"
@@ -5054,7 +5450,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Crocodile"
@@ -5064,7 +5461,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Dragon"
@@ -5074,7 +5472,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Elemental"
@@ -5084,7 +5483,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Fish, Giant"
@@ -5094,7 +5494,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Golem"
@@ -5104,7 +5505,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Hawk"
@@ -5114,7 +5516,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Herd Animal"
@@ -5124,7 +5527,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Horse"
@@ -5134,7 +5538,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Living Statue"
@@ -5144,7 +5549,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Lizard, Giant"
@@ -5154,7 +5560,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Lycanthrope"
@@ -5164,7 +5571,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Pterosaur"
@@ -5174,7 +5582,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Rat"
@@ -5184,7 +5593,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Rhinoceros"
@@ -5194,7 +5604,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Roc"
@@ -5204,7 +5615,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Salamander"
@@ -5214,7 +5626,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Shark"
@@ -5224,7 +5637,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Snake"
@@ -5234,7 +5648,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Spider, Giant"
@@ -5244,7 +5659,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Water Termite"
@@ -5254,7 +5670,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Whale"
@@ -5264,7 +5681,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Wolf"
@@ -5275,6 +5693,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: V",
         "Alignment: Any",
         "HD: 3"
@@ -5288,6 +5707,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: V",
         "Alignment: Neutral",
         "HD: 20"
@@ -5301,6 +5721,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: E",
         "Alignment: Chaotic",
         "Special Abilities",
@@ -5315,6 +5736,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: E",
         "Alignment: Neutral",
         "HD: 12"
@@ -5328,6 +5750,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: E",
         "Alignment: Lawful",
         "HD: 15"
@@ -5341,6 +5764,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: E",
         "Alignment: Chaotic",
         "HD: 11"
@@ -5354,6 +5778,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
+        "Monster",
         "Treasure Type: E",
         "Alignment: Neutral",
         "HD: 9"
@@ -5366,7 +5791,8 @@
       "rawPublic": null,
       "labels": [
         "OSE",
-        "Necrotic Gnome"
+        "Necrotic Gnome",
+        "Monster"
       ],
       "tagSymbol": "~",
       "tagValue": "Giant"

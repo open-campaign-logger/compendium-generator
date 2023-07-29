@@ -212,6 +212,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts3
                 creature.LicenseURL = this.LicenseURL;
             }
 
+            // Populate Tag Information
+            creature.TagSymbol = this.TagSymbol;
+
             return creature;
         }
     }

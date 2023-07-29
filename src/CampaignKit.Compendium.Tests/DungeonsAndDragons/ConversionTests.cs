@@ -1,5 +1,4 @@
-﻿using CampaignKit.Compendium.DungeonsAndDragons.Common;
-using CampaignKit.Compendium.DungeonsAndDragons.SRD;
+﻿using CampaignKit.Compendium.DungeonsAndDragons.SRD;
 using CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts2;
 
 using Newtonsoft.Json;
@@ -31,6 +30,29 @@ namespace CampaignKit.Compendium.Tests.DungeonsAndDragons
             Assert.IsFalse(creatureStatBlockLines.Contains("- Armor Class: 12 ()"));
             Assert.IsTrue(creatureStatBlockLines.Contains("- Armor Class: 12"));
 
+        }
+
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"DungeonsAndDragons\TestFiles\backup_holler_spider.json")]
+        public void ConvertToCLStatBlock_HollerSpider_TagSymbolNotOmitted()
+        {
+            // Arrange
+            var creatureJSON = File.ReadAllText("backup_holler_spider.json");
+            Assert.IsNotNull(creatureJSON);
+
+            // Act
+            var creature = JsonConvert.DeserializeObject<TomeOfBeasts2Creature>(creatureJSON);
+            Assert.IsNotNull(creature);
+            creature.TagSymbol = "~"; // This value you is picked up from the SourceDataSet config and set by the service.
+            var creatureStatBlock = creature.ToCampaignEntry();
+
+            // Assert
+            Assert.IsNotNull(creatureStatBlock);
+            Assert.IsNotNull(creatureStatBlock.RawText);
+            Assert.AreEqual("~", creature.TagSymbol);
         }
 
         /// <summary>
