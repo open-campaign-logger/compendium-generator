@@ -47,11 +47,7 @@ namespace CampaignKit.Compendium.Core.Services
             this.configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
         }
 
-        /// <summary>
-        /// This method returns the public data directory from the configuration
-        /// or a default path if it is not set.
-        /// </summary>
-        /// <returns>The public data directory.</returns>
+        /// <inheritdoc/>
         public string GetPublicDataDirectory()
         {
             var rootFolder = this.configuration.GetValue<string>("PublicDataFolder");
@@ -63,11 +59,7 @@ namespace CampaignKit.Compendium.Core.Services
             return rootFolder;
         }
 
-        /// <summary>
-        /// This method returns the private data directory from the configuration
-        /// or a default path if it is not set.
-        /// </summary>
-        /// <returns>The private data directory.</returns>
+        /// <inheritdoc/>
         public string GetPrivateDataDirectory()
         {
             var rootFolder = this.configuration.GetValue<string>("PrivateDataFolder");
@@ -95,14 +87,16 @@ namespace CampaignKit.Compendium.Core.Services
             return result;
         }
 
-        /// <summary>
-        /// Gets the service with the specified name.
-        /// </summary>
-        /// <param name="serviceName">Name of the service.</param>
-        /// <returns>The service with the specified name.</returns>
+        /// <inheritdoc/>
         public Service GetService(string serviceName)
         {
-            throw new NotImplementedException();
+            return this.GetAllServices().FirstOrDefault(s => s.Name == serviceName) ?? new Service();
+        }
+
+        /// <inheritdoc/>
+        public List<Service> GetAllServices()
+        {
+            return this.configuration.GetSection("Services").Get<List<Service>>() ?? new List<Service>();
         }
     }
 }

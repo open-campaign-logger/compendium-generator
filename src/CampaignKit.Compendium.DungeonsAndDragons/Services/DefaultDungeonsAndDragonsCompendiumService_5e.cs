@@ -67,6 +67,16 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
             var serviceName = typeof(IDungeonsAndDragonsCompendiumService_5e).FullName
                 ?? throw new Exception($"Unable to determine service name for class: {typeof(IDungeonsAndDragonsCompendiumService_5e).FullName}");
 
+            // Combine the rootDataDirectory with the compendium title to create a file name
+            var filePath = Path.Combine(rootDataDirectory, compendium.Title + ".json");
+
+            // Determine if the operation should be skipped.
+            if (File.Exists(filePath) && !compendium.OverwriteExisting)
+            {
+                this.logger.LogWarning("Processing of compendium skipped due to OverwriteExisting flag: {OverwriteExisting}.", compendium.OverwriteExisting);
+                return;
+            }
+
             var creatureList = new List<IGameComponent>();
 
             this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
@@ -134,11 +144,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                     // Apply TagSymbol if configured, otherwise use a default.
                     if (string.IsNullOrEmpty(sourceDataSet.TagSymbol))
                     {
-                        gameComponent.TagSymbol = sourceDataSet.TagSymbol;
+                        gameComponent.TagSymbol = "~";
                     }
                     else
                     {
-                        gameComponent.TagSymbol = "~";
+                        gameComponent.TagSymbol = sourceDataSet.TagSymbol;
                     }
 
                     // Apply labels if configured.
@@ -191,7 +201,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
 
             string campaignLoggerFileString = JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented);
 
-            File.WriteAllText(Path.Combine(rootDataDirectory, compendium.Title + ".json"), campaignLoggerFileString);
+            File.WriteAllText(filePath, campaignLoggerFileString);
 
             this.logger.LogInformation("Processing of compendium complete: {compendium}.", compendium.Title);
         }
