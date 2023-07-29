@@ -27,6 +27,8 @@ Create a new project item to the [Campaign Compendium planning board](https://gi
     1. `Microsoft.Extensions.Logging`
     1. `Newtonsoft.Json`
     1. `StyleCop.Analyzers`
+1. In the project properties ensure that the following properties are set:
+    1. **Build > Output > Documentation File** - Check Generate a file containing API documentation.
 
 ## Create/Update Configuration Classes
 TBD
@@ -110,6 +112,8 @@ Users wishing to have these tests run can comment out this attribute and run the
 Every project must have a README.md file that explains the following:
 1. Purpose of the module.
 1. Basic configuration of the module.
+1. In the project properties ensure that the following properties are set:
+    1. **Package > General > README** - Select the README file you just created.
 
 ## Update Solution README.md
 After each project this file should be reviewed to see if any additional changes need to be made.
