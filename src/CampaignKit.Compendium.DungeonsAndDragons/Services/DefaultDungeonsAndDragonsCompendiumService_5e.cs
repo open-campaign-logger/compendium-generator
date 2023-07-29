@@ -144,11 +144,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                     // Apply TagSymbol if configured, otherwise use a default.
                     if (string.IsNullOrEmpty(sourceDataSet.TagSymbol))
                     {
-                        gameComponent.TagSymbol = sourceDataSet.TagSymbol;
+                        gameComponent.TagSymbol = "~";
                     }
                     else
                     {
-                        gameComponent.TagSymbol = "~";
+                        gameComponent.TagSymbol = sourceDataSet.TagSymbol;
                     }
 
                     // Apply labels if configured.

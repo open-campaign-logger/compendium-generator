@@ -59,7 +59,8 @@ The following configuration elements are usually defined in `secrets.json` and e
 
 * [Dungeons and Dragons 5th Edition](src/CampaignKit.Compendium.DungeonsAndDragons)
 * [Old School Essentials](src/CampaignKit.Compendium.OldSchoolEssentials)
-* [Markdown File Conversion Module](src/CampaignKit.Compendium.Markdown)
+* [Markdown File Conversion](src/CampaignKit.Compendium.Markdown)
+* [ChatGPT](src/CampaignKit.Compendium.ChatGPT)
 
 ## Contributing
 

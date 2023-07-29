@@ -520,6 +520,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
                 creature.LicenseURL = this.LicenseURL;
             }
 
+            // Populate Tag Information
+            creature.TagSymbol = this.TagSymbol;
+
             return creature;
         }
     }

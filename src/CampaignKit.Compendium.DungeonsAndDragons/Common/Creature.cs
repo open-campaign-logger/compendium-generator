@@ -468,6 +468,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             CampaignEntry campaignEntry = new ()
             {
                 RawText = this.ToCampaignLoggerStatBlock(),
+                RawPublic = string.Empty,
                 Labels = new List<string>() { $"CR {this.ChallengeRating}" },
                 TagSymbol = this.TagSymbol,
                 TagValue = this.Name,
