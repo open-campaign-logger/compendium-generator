@@ -133,19 +133,18 @@ namespace CampaignKit.Compendium.ChatGPT.Common
                     model = service.Model switch
                     {
                         "text-ada-001" => Model.AdaText,
-                        "text-embedding-ada-002" => Model.AdaTextEmbedding,
                         "text-babbage-001" => Model.BabbageText,
                         "gpt-3.5-turbo" => Model.ChatGPTTurbo,
                         "gpt-3.5-turbo-0301" => Model.ChatGPTTurbo0301,
                         "text-curie-001" => Model.CurieText,
                         "code-cushman-001" => Model.CushmanCode,
-                        "code-davinci-002" => Model.DefaultModel,
-                        "text-davinci-003" => Model.DavinciCode,
+                        "code-davinci-002" => Model.DavinciCode,
+                        "text-davinci-003" => Model.DavinciText,
                         "gpt-4" => Model.GPT4,
                         "gpt-4-32k" => Model.GPT4_32k_Context,
                         "text-moderation-latest" => Model.TextModerationLatest,
                         "text-moderation-stable" => Model.TextModerationStable,
-                        _ => Model.DefaultModel,
+                        _ => Model.ChatGPTTurbo,
                     };
                 }
 

@@ -105,16 +105,13 @@ Here is an example of a prompt that will result in the creation of a compendium 
 
 ## Supported Models
 
-* `text-ada-001`
-* `text-embedding-ada-002`
-* `text-babbage-001`
-* `gpt-3.5-turbo`
-* `gpt-3.5-turbo-0301`
-* `text-curie-001`
-* `code-cushman-001`
-* `code-davinci-002`
-* `text-davinci-003` <- Default
-* `gpt-4`
-* `gpt-4-32k`
-* `text-moderation-latest`
-* `text-moderation-stable`
+* `gpt-3.5-turbo` <- (Default) Most capable GPT-3.5 model and optimized for chat at 1/10th the cost of text-davinci-003. Will be updated with the latest model iteration.
+* `gpt-3.5-turbo-0301` <- Snapshot of gpt-3.5-turbo from March 1st 2023. Unlike gpt-3.5-turbo, this model will not receive updates, and will only be supported for a three month period ending on June 1st 2023.
+* `gpt-4` <- More capable than any GPT-3.5 model, able to do more complex tasks, and optimized for chat. Will be updated with the latest model iteration.  Currently in limited beta so your OpenAI account needs to be whitelisted to use this.
+* `gpt-4-32k` <- Same capabilities as the base gpt-4 mode but with 4x the context length. Will be updated with the latest model iteration.  Currently in limited beta so your OpenAI account needs to be whitelisted to use this.
+
+## Automated Unit Tests
+Automated unit tests for this module have the following attribute defined:
+`[Ignore("Skipping this automated test by default to avoid unwanted charges from chatbot service.  Remove this ignore attribute to enable this test for the next test run.")]`
+
+You will need to remove the `[Ignore]` attribute on tests you would like to execute.
