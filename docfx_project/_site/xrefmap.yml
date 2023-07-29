@@ -662,6 +662,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Core.Configuration.ICompendium.ImageUrl
   nameWithType: ICompendium.ImageUrl
+- uid: CampaignKit.Compendium.Core.Configuration.ICompendium.IsActive
+  name: IsActive
+  href: api/CampaignKit.Compendium.Core.Configuration.ICompendium.html#CampaignKit_Compendium_Core_Configuration_ICompendium_IsActive
+  commentId: P:CampaignKit.Compendium.Core.Configuration.ICompendium.IsActive
+  fullName: CampaignKit.Compendium.Core.Configuration.ICompendium.IsActive
+  nameWithType: ICompendium.IsActive
+- uid: CampaignKit.Compendium.Core.Configuration.ICompendium.IsActive*
+  name: IsActive
+  href: api/CampaignKit.Compendium.Core.Configuration.ICompendium.html#CampaignKit_Compendium_Core_Configuration_ICompendium_IsActive_
+  commentId: Overload:CampaignKit.Compendium.Core.Configuration.ICompendium.IsActive
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Core.Configuration.ICompendium.IsActive
+  nameWithType: ICompendium.IsActive
 - uid: CampaignKit.Compendium.Core.Configuration.ICompendium.OverwriteExisting
   name: OverwriteExisting
   href: api/CampaignKit.Compendium.Core.Configuration.ICompendium.html#CampaignKit_Compendium_Core_Configuration_ICompendium_OverwriteExisting
@@ -920,6 +933,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Core.Configuration.PublicCompendium.ImageUrl
   nameWithType: PublicCompendium.ImageUrl
+- uid: CampaignKit.Compendium.Core.Configuration.PublicCompendium.IsActive
+  name: IsActive
+  href: api/CampaignKit.Compendium.Core.Configuration.PublicCompendium.html#CampaignKit_Compendium_Core_Configuration_PublicCompendium_IsActive
+  commentId: P:CampaignKit.Compendium.Core.Configuration.PublicCompendium.IsActive
+  fullName: CampaignKit.Compendium.Core.Configuration.PublicCompendium.IsActive
+  nameWithType: PublicCompendium.IsActive
+- uid: CampaignKit.Compendium.Core.Configuration.PublicCompendium.IsActive*
+  name: IsActive
+  href: api/CampaignKit.Compendium.Core.Configuration.PublicCompendium.html#CampaignKit_Compendium_Core_Configuration_PublicCompendium_IsActive_
+  commentId: Overload:CampaignKit.Compendium.Core.Configuration.PublicCompendium.IsActive
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Core.Configuration.PublicCompendium.IsActive
+  nameWithType: PublicCompendium.IsActive
 - uid: CampaignKit.Compendium.Core.Configuration.PublicCompendium.OverwriteExisting
   name: OverwriteExisting
   href: api/CampaignKit.Compendium.Core.Configuration.PublicCompendium.html#CampaignKit_Compendium_Core_Configuration_PublicCompendium_OverwriteExisting

@@ -109,6 +109,12 @@ namespace CampaignKit.Compendium.Utility.Services
             // Process each public compendium
             foreach (var comp in publicCompendiums)
             {
+                if (!comp.IsActive)
+                {
+                    this.logger.LogWarning("Skipping inactive compendium: {compendium}.", comp.Title);
+                    continue;
+                }
+
                 var rootDirectory = Path.Combine(this.configurationService.GetPublicDataDirectory(), comp.GameSystem);
                 if (!Directory.Exists(rootDirectory))
                 {
