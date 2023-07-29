@@ -1,0 +1,446 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CreatureHelper
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CreatureHelper
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/open-campaign-logger/compendium-generator/new/91-add-isactive-configuration-parameter-to-all-modules/apiSpec/new?filename=CampaignKit_Compendium_DungeonsAndDragons_Common_CreatureHelper.md&amp;value=---%0Auid%3A%20CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper">
+
+
+
+  <h1 id="CampaignKit_Compendium_DungeonsAndDragons_Common_CreatureHelper" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper" class="text-break">
+    Class CreatureHelper
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/CreatureHelper.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CampaignKit.html">CampaignKit</a>.<a class="xref" href="CampaignKit.Compendium.html">Compendium</a>.<a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.html">DungeonsAndDragons</a>.<a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.Common.html">Common</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>CampaignKit.Compendium.DungeonsAndDragons.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Utility class for working with Dungeons &amp; Dragons creatures.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CreatureHelper</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CreatureHelper</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_CreatureHelper_CalculateAbilityBonus_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper.CalculateAbilityBonus*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_CreatureHelper_CalculateAbilityBonus_System_Nullable_System_Int32__" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper.CalculateAbilityBonus(System.Nullable{System.Int32})">
+  CalculateAbilityBonus(int?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/CreatureHelper.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate the ability score bonus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalculateAbilityBonus(int? abilityScore)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abilityScore</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>The relevant ability score. Example: 17.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Int representing ability bonus for the specified ability score. Example: 3.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_CreatureHelper_CalculateExperiencePoints_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper.CalculateExperiencePoints*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_CreatureHelper_CalculateExperiencePoints_System_Double_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper.CalculateExperiencePoints(System.Double)">
+  CalculateExperiencePoints(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/CreatureHelper.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate the XP of the creature based on its challenge rating.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalculateExperiencePoints(double challengeRating)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>challengeRating</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The double value of the creature's challenge rating.  Example: 0.25.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Int value of experience points for the specified challenge rating.  Example: 50.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_CreatureHelper_CalculateProficiencyBonus_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper.CalculateProficiencyBonus*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_CreatureHelper_CalculateProficiencyBonus_System_Double_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper.CalculateProficiencyBonus(System.Double)">
+  CalculateProficiencyBonus(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/CreatureHelper.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the proficiency bonus for the moster based on its challenge rating.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalculateProficiencyBonus(double challengeRating)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>challengeRating</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The double value of the creature's challenge rating.  Example: 0.25.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Int value of the challenge rating.  Example: 2.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_CreatureHelper_ConvertBonusToSignedString_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper.ConvertBonusToSignedString*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_CreatureHelper_ConvertBonusToSignedString_System_Int32_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper.ConvertBonusToSignedString(System.Int32)">
+  ConvertBonusToSignedString(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/CreatureHelper.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a &quot;+&quot; or &quot;-&quot; to the bonus value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ConvertBonusToSignedString(int bonus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bonus</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Bonus value.  e.g. 1.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Bonus value with &quot;+&quot; or &quot;-&quot; prepended to it.  e.g. &quot;+1&quot;.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_CreatureHelper_ConvertChallengeRatingToDouble_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper.ConvertChallengeRatingToDouble*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_CreatureHelper_ConvertChallengeRatingToDouble_System_String_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper.ConvertChallengeRatingToDouble(System.String)">
+  ConvertChallengeRatingToDouble(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/CreatureHelper.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts challenge ratings string to a double value.  Converts &quot;1/4&quot; to 0.25.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double? ConvertChallengeRatingToDouble(string challengeRating)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>challengeRating</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string value of the creature's challenge rating.  Example: &quot;1/4&quot;.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd><p>Double value of the challenge rating or null if it could not be converted.  Example: 0.25.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_CreatureHelper_ConvertChallengeRatingToString_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper.ConvertChallengeRatingToString*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_CreatureHelper_ConvertChallengeRatingToString_System_Double_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper.ConvertChallengeRatingToString(System.Double)">
+  ConvertChallengeRatingToString(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/CreatureHelper.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts challenge ratings double to a string value.  Converts 0.25 to &quot;1/4&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string? ConvertChallengeRatingToString(double challengeRating)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>challengeRating</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The double value of the creature's challenge rating.  Example: 0.25.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>String value of the challenge rating or null if it could not be converted.  Example: &quot;1/4&quot;.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_CreatureHelper_ParseAttributeValue_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper.ParseAttributeValue*"></a>
+
+  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_CreatureHelper_ParseAttributeValue_System_String_System_String_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper.ParseAttributeValue(System.String,System.String)">
+  ParseAttributeValue(string?, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/CreatureHelper.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Searches a CSV string for the integer value associated with the specified attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int? ParseAttributeValue(string? csv, string? attributeName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>csv</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A comma separated list of values to search.  Example: &quot;darkvision 120 ft., Passive Perception 20&quot;.</p>
+</dd>
+    <dt><code>attributeName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the attribute to search for.  Example: &quot;passive perception&quot; (case insensitive).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>Integer associated with the attribute or null if attribute is not found.  Example: 20.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/91-add-isactive-configuration-parameter-to-all-modules/src/CampaignKit.Compendium.DungeonsAndDragons/Common/CreatureHelper.cs/#L26" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
