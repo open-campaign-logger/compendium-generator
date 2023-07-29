@@ -31,6 +31,12 @@ git clone https://github.com/open-campaign-logger/compendium-generator.git
 cd ./compendium-generator
 ```
 
+Run the following command to ensure that you have [docfx](https://dotnet.github.io/docfx/) installed.  This tool is used during the build to generate API documentation from source code comments.
+
+```
+dotnet tool update -g docfx
+```
+
 Build, test, and run the project:
 
 ```shell

@@ -35,15 +35,18 @@ namespace CampaignKit.Compendium.Core.Configuration
         public string ImageUrl { get; set; } = string.Empty;
 
         /// <inheritdoc/>
-        public List<SourceDataSet> SourceDataSets { get; set; } = new List<SourceDataSet>();
+        public bool IsActive { get; set; } = true;
 
         /// <inheritdoc/>
-        public string Title { get; set; } = string.Empty;
+        public bool OverwriteExisting { get; set; } = false;
 
         /// <inheritdoc/>
         public List<Prompt> Prompts { get; set; } = new List<Prompt> { };
 
         /// <inheritdoc/>
-        public bool OverwriteExisting { get; set; } = false;
+        public List<SourceDataSet> SourceDataSets { get; set; } = new List<SourceDataSet>();
+
+        /// <inheritdoc/>
+        public string Title { get; set; } = string.Empty;
     }
 }

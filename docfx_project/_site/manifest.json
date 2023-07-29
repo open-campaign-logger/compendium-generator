@@ -1,0 +1,882 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/Source/compendium-generator/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.ChatGPT.Common.ChatGPTHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.ChatGPT.Common.ChatGPTHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.ChatGPT.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.ChatGPT.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.ChatGPT.Services.IChatGPTCompendiumService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.ChatGPT.Services.IChatGPTCompendiumService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.ChatGPT.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.ChatGPT.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.CampaignLogger.Campaign.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.CampaignLogger.Campaign.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.CampaignLogger.CampaignEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.CampaignLogger.CampaignEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.CampaignLogger.Log.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.CampaignLogger.Log.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.CampaignLogger.LogEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.CampaignLogger.LogEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.CampaignLogger.OriginalLogEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.CampaignLogger.OriginalLogEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.CampaignLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.CampaignLogger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Common.IGameComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Common.IGameComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Configuration.ICompendium.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Configuration.ICompendium.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Configuration.PrivateCompendium.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Configuration.PrivateCompendium.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Configuration.Prompt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Configuration.Prompt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Configuration.PromptMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Configuration.PromptMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Configuration.PublicCompendium.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Configuration.PublicCompendium.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Configuration.Service.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Configuration.Service.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Configuration.SourceDataSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Configuration.SourceDataSet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Services.DefaultConfigurationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Services.DefaultConfigurationService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Services.DefaultDownloadService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Services.DefaultDownloadService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Services.ICompendiumService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Services.ICompendiumService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Services.IConfigurationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Services.IConfigurationService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Services.IDownloadService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Services.IDownloadService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Common.Action.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Common.Action.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Common.CreatureHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Common.License.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Common.License.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Common.SpeedJson.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Common.SpeedJson.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.CreatureCodex.CreatureCodexCreature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.CreatureCodex.CreatureCodexCreature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.CreatureCodex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.CreatureCodex.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.MonstrousMenagerie.MonstrousMenagerieCreature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.MonstrousMenagerie.MonstrousMenagerieCreature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.MonstrousMenagerie.Speed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.MonstrousMenagerie.Speed.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.MonstrousMenagerie.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.MonstrousMenagerie.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts2.TomeOfBeasts2Creature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts2.TomeOfBeasts2Creature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts3.Skills.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts3.Skills.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts3.TomeOfBeasts3Creature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts3.TomeOfBeasts3Creature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Markdown.Common.MarkdownHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Markdown.Common.MarkdownHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Markdown.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Markdown.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Markdown.Services.IMarkdownCompendiumService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Markdown.Services.IMarkdownCompendiumService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Markdown.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Markdown.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.ChatGPT.PromptTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.ChatGPT.PromptTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.ChatGPT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.ChatGPT.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.Core.DownloadServiceTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.Core.DownloadServiceTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.Core.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.DungeonsAndDragons.ConversionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.DungeonsAndDragons.ConversionTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.DungeonsAndDragons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.DungeonsAndDragons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.Markdown.MarkdownConversionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.Markdown.MarkdownConversionTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.Markdown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.Markdown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MonsterConversionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MonsterConversionTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.OldSchoolEssentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.OldSchoolEssentials.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Utility.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Utility.Program.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Utility.Services.DefaultApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Utility.Services.DefaultApplication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Utility.Services.IApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Utility.Services.IApplication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Utility.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Utility.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Utility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Utility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
