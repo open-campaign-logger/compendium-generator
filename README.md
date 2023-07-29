@@ -1,92 +1,147 @@
-![CampaignGenerator](doc/Logo.png)
+# Adding a New Module
 
-# CompendiumGenerator
+## Standard Steps
+Create a new project item to the [Campaign Compendium planning board](https://github.com/orgs/open-campaign-logger/projects/5) with this high level task list.
+```
+# Module Overview
+..
 
-**CompendiumGenerator** enriches your gaming experience with [CampaignLogger](https://campaign-logger.com/) by producing importable rule set compendiums using open-source RPG datasets. It's not necessary to run this utility yourself as all generated compendiums are accessible in the project's [data directory]("https://github.com/open-campaign-logger/compendium-generator/tree/main/data").
+## Bugs
+* [ ] Bug 1
+* [ ] Bug 2
 
-## Requirements and Setup
+## To Do List
+# Task List
+ * [ ] Add New Project
+ * [ ] Create/Update Configuration Classes
+ * [ ] Create Service Interface and Default Service
+ * [ ] Register Service with Program
+ * [ ] Add Default Configuration
+ * [ ] Create POCO for Requests and Responses
+ * [ ] Create Unit Test for POCO
+ * [ ] Create Project README.md
+ * [ ] Update Solution README.md
+ * [ ] Update CONTRIBUTING.md
+ ```
 
-This application is developed using .NET 7 SDK and C#. Although Visual Studio Community Edition was used for development, you can build, test, and execute the application using the .NET CLI.
+ Items in this task list should each be turned into a GitHub issue when appropriate to be worked.
+ More information about GitHub project `Task Lists` and GitHub `Issues` can be found here: https://docs.github.com/en/issues/managing-your-tasks-with-tasklists/creating-a-tasklist
 
-### Required Software
+## Add New Project
 
-* [Git](https://git-scm.com/download/win) or [TortoiseGit](https://tortoisegit.org/)
-* [Microsoft .NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
+1. Add a new **Class Library** project to the solution.  Make sure that the project is stored in the `/src/` directory like the other modules.
+1. Add `CampaignKit.Compendium.Core` project reference (**right click project > Add > Project Reference...**)
+1. Copy the `stylecop.json` settings file from another project and place it in your project's root directory.
+1. Add the following NuGet packages (**right click project > Manage NuGet Packages...**)
+    1. `Microsoft.Extensions.Configuration`
+    1. `Microsoft.Extensions.Configuration.Binder`
+    1. `Microsoft.Extensions.Logging`
+    1. `Newtonsoft.Json`
+    1. `StyleCop.Analyzers`
 
-### Optional Software
+## Create/Update Configuration Classes
+TBD
 
-* [Microsoft Visual Studio Community 2022](https://visualstudio.microsoft.com/vs/community/)
-  * Ensure to install the ".NET Desktop Development" workload.
-  * Recommended Extensions:
-    * [CodeMaid](https://www.codemaid.net/)
-    * [MarkdownEditor2022](https://github.com/MadsKristensen/MarkdownEditor2022)
-    * [Visual chatGPT Studio](https://marketplace.visualstudio.com/items?itemName=jefferson-pires.VisualChatGPTStudio)
+## Create Service Interface and Default Service
+1. Create a folder called `Services` and add the following:
+    1. `I<YOUR SERVICE NAME>.cs` - interface inheriting from `ICompendiumService`.
+    1. `Default<YOUR SERVICE NAME>.cs` - default implementation of the service.
 
-### Workspace Setup
+## Register Service with Program
+1. Register your service in `CampaignKit.Compendium.Utility.Program`:
+1. 1. 1. Add a project reference to your new project to the following:
+    1. `CampaignKit.Compendium.Tests`
+    1. `CampaignKit.Compendium.Utility`
+```csharp
+        /// <summary>
+        /// Configures the services for the application.
+        /// </summary>
+        /// <param name="hostingContext">The hosting context.</param>
+        /// <param name="services">The services.</param>
+        private static void ConfigureServices(HostBuilderContext hostingContext, IServiceCollection services)
+        {
+            // Add transient services to the service collection
+            // Add DefaultDownloadService to the service collection as an IDownloadService
+            services.AddTransient<IDownloadService, DefaultDownloadService>();
 
-Clone the repository and navigate to the project directory:
+            // Add DefaultConfigurationService to the service collection as an IConfigurationService
+            services.AddTransient<IConfigurationService, DefaultConfigurationService>();
 
-```shell
-git clone https://github.com/open-campaign-logger/compendium-generator.git
-cd ./compendium-generator
+            // Add DefaultApplication to the service collection as an IApplication
+            services.AddTransient<IApplication, DefaultApplication>();
+
+            // Add DefaultDungeonsAndDragonsCompendiumService_5e to the service collection as an IDungeonsAndDragonsCompendiumService_5e
+            services.AddTransient<IDungeonsAndDragonsCompendiumService_5e, DefaultDungeonsAndDragonsCompendiumService_5e>();
+
+            // Add DefaultOldSchoolEssentialsCompendiumService to the service collection as an IOldSchoolEssentialsCompendiumService
+            services.AddTransient<IOldSchoolEssentialsCompendiumService, DefaultOldSchoolEssentialsCompendiumService>();
+
+            // YOUR SERVICE ADDED HERE
+        }
 ```
 
-Build, test, and run the project:
+## Add Default Configuration
+A default public compendium should be added to `appsettings.json` to demonstrate the basic use of the module.
 
-```shell
-dotnet build
-dotnet test
-dotnet run --project CampaignKit.Compendium.Utility
+## Create POCO for Requests and Responses
+Ideally business logic should be encapsulated within an object that is used by the service and can be independently tested with a unit test.  See: `MarkdownHelper` and 'ChatGPTHelper` for examples.
+
+## Create Unit Tests for POCO
+A handful of basic unit tests should be created to ensure baseline testing of the module can be performed in the CI/CD pipeline.
+Generally speaking, unit tests should be able to run in any setting without external dependencies.
+Resource files should be provided to the test directly instead of requiring downloading at runtime.
+
+This example shows how to make a data file in the `TestFiles` subfolder available to the test at runtime:
+```csharp
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"Markdown\TestFiles\test.md")]
+        public void ConvertToCampaign_TestFile_LabelsCorrect()
+        {
+            // Arrange
+            ...
+
+            // Act
+            var campaignEntries = MarkdownHelper.ParseCampaignEntries(sourceDataSet, @"Markdown\TestFiles").Result.ToList();
+
+            // Assert
+            ...
+        }
 ```
+Note: In the baove example you also need to set the properties of the test file to:
+* **Build Action**: Content
+* **Copy to Output Directory**: Copy if Newer
 
-## Configuration
+There are cases, like with the ChatGPT module, where these guidelines had to be broken.
+In those cases like this add an `[Ignore("REASON"]` property to the test to tell the test runner to skip the test by default.
+Users wishing to have these tests run can comment out this attribute and run the test.
 
-The application uses a standard .NET `appsettings.json` file for configuration.
-Visual Studio's built-in support for user secrets can be used to override configuration during development
-and also to support private configurations that are not shared back to the code repository.
+## Create Project README.md
+Every project must have a README.md file that explains the following:
+1. Purpose of the module.
+1. Basic configuration of the module.
 
-### Public Compendiums
-The following configuration elements are usually defined in `appsettings.json` and shared back to the repository.
-* `PublicDataFolder`: Directory for downloading and storing **public** compendium source data sets. If left blank, files are stored in the OS's default temporary directory.
-* `PublicCompendiums`: Compendiums that are built from open-source TTRPG rulesets into the `PublicDataFolder`.
+## Update Solution README.md
+After each project this file should be reviewed to see if any additional changes need to be made.
+At minimum the module should be added to the `## Modules` section.
 
-### Private Compendiums
-The following configuration elements are usually defined in `secrets.json` and excluded from the repository.
-* `PrivateDataFolder`: Directory for accessing and storing **private** compendium source data sets. If left blank, files are stored in the OS's default temporary directory.
-* `PrivateCompendiums`: Compendiums that are built from private rulesets into the `PrivateDataFolder`.
+## Update CONTRIBUTING.md
+After each project this file should be reviewed to see if any additional changes need to be made.
 
-## Modules
+# Other Information
+## Deserializing JSON Files
 
-* [Dungeons and Dragons 5th Edition](src/CampaignKit.Compendium.DungeonsAndDragons)
-* [Old School Essentials](src/CampaignKit.Compendium.OldSchoolEssentials)
-* [Markdown File Conversion](src/CampaignKit.Compendium.Markdown)
-* [ChatGPT](src/CampaignKit.Compendium.ChatGPT)
+[json2csharp](https://json2csharp.com/) can be used to create C# classes for deserializing JSON source data sets.
 
-## Contributing
+Recommended json2csharp settings:
+* Use Nullable Types
+* Add JsonProperty Attributes
+* Use Pascal Case
 
-We welcome contributions! Instructions for adding a new module or deserializing JSON files are included in the repository. Please follow the established patterns for project structure and coding standards.
-
-## Links
-
-* [Campaign Logger](https://campaign-logger.com/)
-* [Role Playing Tips](https://www.roleplayingtips.com/)
-* [Campaign Community](https://campaign-community.com/)
-* [Open5e API](https://github.com/open5e/open5e-api)
-
-## Licensing
-
-Copyright (c) 2017-2023 Jochen Linnemann, Cory Gill.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-
+Once a JSON deserialization class has been created perform the following steps to customize the code:
+* Add "?" nullable type operator for each property
+* set a default value for each property.  Examples:
+   * `public string? Alignment { get; set; } = string.Empty;`
+   * `public int? AnimalHandling { get; set; } = int.MinValue;`
+   * `public List<Action>? Actions { get; set; } = new List<Action>();`
