@@ -81,7 +81,7 @@ namespace CampaignKit.Compendium.Utility.Services
         /// Asynchronously runs the application. It retrieves all compendiums from the
         /// configuration, ensures that compendiums are available and each has an associated
         /// service. For each compendium, it loads the assembly containing the compendium service,
-        /// retrieves an instance of the compendium service, and then calls the CreateCompendiums
+        /// retrieves an instance of the compendium service, and then calls the CreateCompendium
         /// method on the compendium service.
         /// </summary>
         /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
@@ -173,7 +173,7 @@ namespace CampaignKit.Compendium.Utility.Services
                 ?? throw new Exception($"Unable to retrieve service: {serviceType.FullName}");
 
             // Create the compendiums
-            await compendiumService.CreateCompendiums(comp, rootDataDirectory);
+            await compendiumService.CreateCompendium(comp, rootDataDirectory);
         }
     }
 }

@@ -61,7 +61,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
         }
 
         /// <inheritdoc/>
-        public async Task CreateCompendiums(ICompendium compendium, string rootDataDirectory)
+        public async Task CreateCompendium(ICompendium compendium, string rootDataDirectory)
         {
             this.logger.LogDebug("Processing compendiums for service: {service}.", typeof(IDungeonsAndDragonsCompendiumService_5e).FullName);
             var serviceName = typeof(IDungeonsAndDragonsCompendiumService_5e).FullName
@@ -77,7 +77,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                 return;
             }
 
-            var creatureList = new List<IGameComponent>();
+            // Instantiate output variables
+            var licenseList = new List<CampaignEntry>();
+            var componentList = new List<IGameComponent>();
 
             this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
 
@@ -104,6 +106,18 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                     ?? throw new Exception($"Configuration parmater not defined: {nameof(sourceDataSet.LicenseDataParser)}.");
                 var licenseListType = typeof(List<>).MakeGenericType(licenseParserType);
                 var licenseParsed = JsonConvert.DeserializeObject(licenseJSON, licenseListType);
+
+                // Create a CampaignEntry for the license and add it to the list.
+                if (licenseParsed != null && licenseParsed is List<License> license)
+                {
+                    var licenseCampaignEntry = license[0].ToCampaignEntry();
+
+                    // Check to see if this license is already in the collection.  If it doesn't exist add it.
+                    if (!licenseList.Any(c => (c.TagValue is not null) && c.TagValue.Equals(license[0].Organization)))
+                    {
+                        licenseList.Add(license[0].ToCampaignEntry());
+                    }
+                }
 
                 // Download SourceDataSet file
                 this.downloadService.DerivePathAndFileNames(sourceDataSet.SourceDataSetURI, out string sourceDataSetDirectory, out string sourceDataSetFile);
@@ -159,14 +173,14 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                         gameComponent.Labels.AddRange(sourceDataSet.Labels);
                     }
 
-                    // Check if the creatureList does not contain a gameComponent with the same name
-                    if (!creatureList.Any(c => (c.Name is not null) && c.Name.Equals(gameComponent.Name)))
+                    // Check if the componentList does not contain a gameComponent with the same name
+                    if (!componentList.Any(c => (c.Name is not null) && c.Name.Equals(gameComponent.Name)))
                     {
                         // Log the gameComponent name
                         this.logger.LogDebug("New gameComponent found and added to compendium list: {gameComponent}.", gameComponent.Name);
 
-                        // Add the gameComponent to the creatureList
-                        creatureList.Add(gameComponent);
+                        // Add the gameComponent to the componentList
+                        componentList.Add(gameComponent);
 
                         // Increment the importCount
                         importCount++;
@@ -194,10 +208,14 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                 ImageUrl = string.Empty,
             };
 
-            foreach (var creature in creatureList)
+            // Convert and add each item to the list.
+            foreach (var creature in componentList)
             {
                 campaignLoggerFile.CampaignEntries.Add(creature.ToCampaignEntry());
             }
+
+            // Add any license entries.
+            campaignLoggerFile.CampaignEntries.AddRange(licenseList);
 
             string campaignLoggerFileString = JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented);
 

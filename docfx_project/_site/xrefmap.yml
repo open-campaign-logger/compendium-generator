@@ -60,22 +60,22 @@ references:
   fullName.vb: CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.New
   nameWithType: DefaultChatGPTCompendiumService.DefaultChatGPTCompendiumService
   nameWithType.vb: DefaultChatGPTCompendiumService.New
-- uid: CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
-  name: CreateCompendiums(ICompendium, string)
-  href: api/CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.html#CampaignKit_Compendium_ChatGPT_Services_DefaultChatGPTCompendiumService_CreateCompendiums_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_
-  commentId: M:CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
-  name.vb: CreateCompendiums(ICompendium, String)
-  fullName: CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium, string)
-  fullName.vb: CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium, String)
-  nameWithType: DefaultChatGPTCompendiumService.CreateCompendiums(ICompendium, string)
-  nameWithType.vb: DefaultChatGPTCompendiumService.CreateCompendiums(ICompendium, String)
-- uid: CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.CreateCompendiums*
-  name: CreateCompendiums
-  href: api/CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.html#CampaignKit_Compendium_ChatGPT_Services_DefaultChatGPTCompendiumService_CreateCompendiums_
-  commentId: Overload:CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.CreateCompendiums
+- uid: CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
+  name: CreateCompendium(ICompendium, string)
+  href: api/CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.html#CampaignKit_Compendium_ChatGPT_Services_DefaultChatGPTCompendiumService_CreateCompendium_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_
+  commentId: M:CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
+  name.vb: CreateCompendium(ICompendium, String)
+  fullName: CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, string)
+  fullName.vb: CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, String)
+  nameWithType: DefaultChatGPTCompendiumService.CreateCompendium(ICompendium, string)
+  nameWithType.vb: DefaultChatGPTCompendiumService.CreateCompendium(ICompendium, String)
+- uid: CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.CreateCompendium*
+  name: CreateCompendium
+  href: api/CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.html#CampaignKit_Compendium_ChatGPT_Services_DefaultChatGPTCompendiumService_CreateCompendium_
+  commentId: Overload:CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.CreateCompendium
   isSpec: "True"
-  fullName: CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.CreateCompendiums
-  nameWithType: DefaultChatGPTCompendiumService.CreateCompendiums
+  fullName: CampaignKit.Compendium.ChatGPT.Services.DefaultChatGPTCompendiumService.CreateCompendium
+  nameWithType: DefaultChatGPTCompendiumService.CreateCompendium
 - uid: CampaignKit.Compendium.ChatGPT.Services.IChatGPTCompendiumService
   name: IChatGPTCompendiumService
   href: api/CampaignKit.Compendium.ChatGPT.Services.IChatGPTCompendiumService.html
@@ -1380,22 +1380,22 @@ references:
   commentId: T:CampaignKit.Compendium.Core.Services.ICompendiumService
   fullName: CampaignKit.Compendium.Core.Services.ICompendiumService
   nameWithType: ICompendiumService
-- uid: CampaignKit.Compendium.Core.Services.ICompendiumService.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
-  name: CreateCompendiums(ICompendium, string)
-  href: api/CampaignKit.Compendium.Core.Services.ICompendiumService.html#CampaignKit_Compendium_Core_Services_ICompendiumService_CreateCompendiums_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_
-  commentId: M:CampaignKit.Compendium.Core.Services.ICompendiumService.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
-  name.vb: CreateCompendiums(ICompendium, String)
-  fullName: CampaignKit.Compendium.Core.Services.ICompendiumService.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium, string)
-  fullName.vb: CampaignKit.Compendium.Core.Services.ICompendiumService.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium, String)
-  nameWithType: ICompendiumService.CreateCompendiums(ICompendium, string)
-  nameWithType.vb: ICompendiumService.CreateCompendiums(ICompendium, String)
-- uid: CampaignKit.Compendium.Core.Services.ICompendiumService.CreateCompendiums*
-  name: CreateCompendiums
-  href: api/CampaignKit.Compendium.Core.Services.ICompendiumService.html#CampaignKit_Compendium_Core_Services_ICompendiumService_CreateCompendiums_
-  commentId: Overload:CampaignKit.Compendium.Core.Services.ICompendiumService.CreateCompendiums
+- uid: CampaignKit.Compendium.Core.Services.ICompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
+  name: CreateCompendium(ICompendium, string)
+  href: api/CampaignKit.Compendium.Core.Services.ICompendiumService.html#CampaignKit_Compendium_Core_Services_ICompendiumService_CreateCompendium_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_
+  commentId: M:CampaignKit.Compendium.Core.Services.ICompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
+  name.vb: CreateCompendium(ICompendium, String)
+  fullName: CampaignKit.Compendium.Core.Services.ICompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, string)
+  fullName.vb: CampaignKit.Compendium.Core.Services.ICompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, String)
+  nameWithType: ICompendiumService.CreateCompendium(ICompendium, string)
+  nameWithType.vb: ICompendiumService.CreateCompendium(ICompendium, String)
+- uid: CampaignKit.Compendium.Core.Services.ICompendiumService.CreateCompendium*
+  name: CreateCompendium
+  href: api/CampaignKit.Compendium.Core.Services.ICompendiumService.html#CampaignKit_Compendium_Core_Services_ICompendiumService_CreateCompendium_
+  commentId: Overload:CampaignKit.Compendium.Core.Services.ICompendiumService.CreateCompendium
   isSpec: "True"
-  fullName: CampaignKit.Compendium.Core.Services.ICompendiumService.CreateCompendiums
-  nameWithType: ICompendiumService.CreateCompendiums
+  fullName: CampaignKit.Compendium.Core.Services.ICompendiumService.CreateCompendium
+  nameWithType: ICompendiumService.CreateCompendium
 - uid: CampaignKit.Compendium.Core.Services.IConfigurationService
   name: IConfigurationService
   href: api/CampaignKit.Compendium.Core.Services.IConfigurationService.html
@@ -2839,6 +2839,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.License.Title
   nameWithType: License.Title
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.License.ToCampaignEntry
+  name: ToCampaignEntry()
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.License.html#CampaignKit_Compendium_DungeonsAndDragons_Common_License_ToCampaignEntry
+  commentId: M:CampaignKit.Compendium.DungeonsAndDragons.Common.License.ToCampaignEntry
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.License.ToCampaignEntry()
+  nameWithType: License.ToCampaignEntry()
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.License.ToCampaignEntry*
+  name: ToCampaignEntry
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.License.html#CampaignKit_Compendium_DungeonsAndDragons_Common_License_ToCampaignEntry_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Common.License.ToCampaignEntry
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.License.ToCampaignEntry
+  nameWithType: License.ToCampaignEntry
 - uid: CampaignKit.Compendium.DungeonsAndDragons.Common.License.Url
   name: Url
   href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.License.html#CampaignKit_Compendium_DungeonsAndDragons_Common_License_Url
@@ -3114,22 +3127,22 @@ references:
   fullName.vb: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.New
   nameWithType: DefaultDungeonsAndDragonsCompendiumService_5e.DefaultDungeonsAndDragonsCompendiumService_5e
   nameWithType.vb: DefaultDungeonsAndDragonsCompendiumService_5e.New
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
-  name: CreateCompendiums(ICompendium, string)
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.html#CampaignKit_Compendium_DungeonsAndDragons_Services_DefaultDungeonsAndDragonsCompendiumService_5e_CreateCompendiums_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_
-  commentId: M:CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
-  name.vb: CreateCompendiums(ICompendium, String)
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium, string)
-  fullName.vb: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium, String)
-  nameWithType: DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendiums(ICompendium, string)
-  nameWithType.vb: DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendiums(ICompendium, String)
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendiums*
-  name: CreateCompendiums
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.html#CampaignKit_Compendium_DungeonsAndDragons_Services_DefaultDungeonsAndDragonsCompendiumService_5e_CreateCompendiums_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendiums
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
+  name: CreateCompendium(ICompendium, string)
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.html#CampaignKit_Compendium_DungeonsAndDragons_Services_DefaultDungeonsAndDragonsCompendiumService_5e_CreateCompendium_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_
+  commentId: M:CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
+  name.vb: CreateCompendium(ICompendium, String)
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, string)
+  fullName.vb: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, String)
+  nameWithType: DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(ICompendium, string)
+  nameWithType.vb: DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(ICompendium, String)
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium*
+  name: CreateCompendium
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.html#CampaignKit_Compendium_DungeonsAndDragons_Services_DefaultDungeonsAndDragonsCompendiumService_5e_CreateCompendium_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium
   isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendiums
-  nameWithType: DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendiums
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium
+  nameWithType: DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium
 - uid: CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e
   name: IDungeonsAndDragonsCompendiumService_5e
   href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e.html
@@ -5134,22 +5147,22 @@ references:
   fullName.vb: CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.New
   nameWithType: DefaultMarkdownCompendiumService.DefaultMarkdownCompendiumService
   nameWithType.vb: DefaultMarkdownCompendiumService.New
-- uid: CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
-  name: CreateCompendiums(ICompendium, string)
-  href: api/CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.html#CampaignKit_Compendium_Markdown_Services_DefaultMarkdownCompendiumService_CreateCompendiums_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_
-  commentId: M:CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
-  name.vb: CreateCompendiums(ICompendium, String)
-  fullName: CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium, string)
-  fullName.vb: CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium, String)
-  nameWithType: DefaultMarkdownCompendiumService.CreateCompendiums(ICompendium, string)
-  nameWithType.vb: DefaultMarkdownCompendiumService.CreateCompendiums(ICompendium, String)
-- uid: CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.CreateCompendiums*
-  name: CreateCompendiums
-  href: api/CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.html#CampaignKit_Compendium_Markdown_Services_DefaultMarkdownCompendiumService_CreateCompendiums_
-  commentId: Overload:CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.CreateCompendiums
+- uid: CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
+  name: CreateCompendium(ICompendium, string)
+  href: api/CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.html#CampaignKit_Compendium_Markdown_Services_DefaultMarkdownCompendiumService_CreateCompendium_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_
+  commentId: M:CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
+  name.vb: CreateCompendium(ICompendium, String)
+  fullName: CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, string)
+  fullName.vb: CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, String)
+  nameWithType: DefaultMarkdownCompendiumService.CreateCompendium(ICompendium, string)
+  nameWithType.vb: DefaultMarkdownCompendiumService.CreateCompendium(ICompendium, String)
+- uid: CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.CreateCompendium*
+  name: CreateCompendium
+  href: api/CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.html#CampaignKit_Compendium_Markdown_Services_DefaultMarkdownCompendiumService_CreateCompendium_
+  commentId: Overload:CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.CreateCompendium
   isSpec: "True"
-  fullName: CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.CreateCompendiums
-  nameWithType: DefaultMarkdownCompendiumService.CreateCompendiums
+  fullName: CampaignKit.Compendium.Markdown.Services.DefaultMarkdownCompendiumService.CreateCompendium
+  nameWithType: DefaultMarkdownCompendiumService.CreateCompendium
 - uid: CampaignKit.Compendium.Markdown.Services.IMarkdownCompendiumService
   name: IMarkdownCompendiumService
   href: api/CampaignKit.Compendium.Markdown.Services.IMarkdownCompendiumService.html
@@ -5187,22 +5200,22 @@ references:
   fullName.vb: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.New
   nameWithType: DefaultOldSchoolEssentialsCompendiumService.DefaultOldSchoolEssentialsCompendiumService
   nameWithType.vb: DefaultOldSchoolEssentialsCompendiumService.New
-- uid: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
-  name: CreateCompendiums(ICompendium, string)
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.html#CampaignKit_Compendium_OldSchoolEssentials_Services_DefaultOldSchoolEssentialsCompendiumService_CreateCompendiums_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_
-  commentId: M:CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
-  name.vb: CreateCompendiums(ICompendium, String)
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium, string)
-  fullName.vb: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendiums(CampaignKit.Compendium.Core.Configuration.ICompendium, String)
-  nameWithType: DefaultOldSchoolEssentialsCompendiumService.CreateCompendiums(ICompendium, string)
-  nameWithType.vb: DefaultOldSchoolEssentialsCompendiumService.CreateCompendiums(ICompendium, String)
-- uid: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendiums*
-  name: CreateCompendiums
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.html#CampaignKit_Compendium_OldSchoolEssentials_Services_DefaultOldSchoolEssentialsCompendiumService_CreateCompendiums_
-  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendiums
+- uid: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
+  name: CreateCompendium(ICompendium, string)
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.html#CampaignKit_Compendium_OldSchoolEssentials_Services_DefaultOldSchoolEssentialsCompendiumService_CreateCompendium_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_
+  commentId: M:CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
+  name.vb: CreateCompendium(ICompendium, String)
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, string)
+  fullName.vb: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, String)
+  nameWithType: DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(ICompendium, string)
+  nameWithType.vb: DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(ICompendium, String)
+- uid: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium*
+  name: CreateCompendium
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.html#CampaignKit_Compendium_OldSchoolEssentials_Services_DefaultOldSchoolEssentialsCompendiumService_CreateCompendium_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium
   isSpec: "True"
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendiums
-  nameWithType: DefaultOldSchoolEssentialsCompendiumService.CreateCompendiums
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium
+  nameWithType: DefaultOldSchoolEssentialsCompendiumService.CreateCompendium
 - uid: CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService
   name: IOldSchoolEssentialsCompendiumService
   href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService.html

@@ -816,7 +816,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             if (!string.IsNullOrEmpty(this.PublisherName) && !string.IsNullOrEmpty(this.LicenseURL))
             {
                 builder.AppendLine();
-                builder.AppendLine($"Source: [{this.PublisherName}]({this.LicenseURL})");
+                builder.AppendLine($"License: ~\"{this.PublisherName}\"");
             }
 
             return builder.ToString().Replace("\t", "     ");

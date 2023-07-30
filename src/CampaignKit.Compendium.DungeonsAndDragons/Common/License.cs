@@ -16,6 +16,8 @@
 
 namespace CampaignKit.Compendium.DungeonsAndDragons.Common
 {
+    using CampaignKit.Compendium.Core.CampaignLogger;
+
     using Newtonsoft.Json;
 
     /// <summary>
@@ -83,5 +85,21 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// </summary>
         [JsonProperty("ogl-lines")]
         public List<string>? OGLLines { get; set; } = new List<string>();
+
+        /// <summary>
+        /// Converts this license configuration into a campaign entry.
+        /// </summary>
+        /// <returns>Campaign entry representing this license configuration.</returns>
+        public CampaignEntry ToCampaignEntry()
+        {
+            var result = new CampaignEntry()
+            {
+                TagSymbol = "~",
+                TagValue = this.Organization,
+                RawPublic = $"Source [{this.Organization}]({this.Url})",
+            };
+
+            return result;
+        }
     }
 }

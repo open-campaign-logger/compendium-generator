@@ -51,7 +51,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
         }
 
         /// <inheritdoc/>
-        public async Task CreateCompendiums(ICompendium compendium, string rootDataDirectory)
+        public async Task CreateCompendium(ICompendium compendium, string rootDataDirectory)
         {
             this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
 
