@@ -36,6 +36,6 @@ namespace CampaignKit.Compendium.Core.Services
         /// This operation is asynchronous. A task is returned so that the client code can execute
         /// other code while this function completes.
         /// </returns>
-        public Task CreateCompendiums(ICompendium compendium, string rooDataDirectory);
+        public Task CreateCompendium(ICompendium compendium, string rooDataDirectory);
     }
 }

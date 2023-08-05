@@ -46,7 +46,6 @@ namespace CampaignKit.Compendium.Core.Configuration
         /// </summary>
         string ImageUrl { get; set; }
 
-
         /// <summary>
         /// Gets or sets a value indicating whether the compendium configuration is active.
         /// Compendiums (public and private) that have this value set to `false` will get skipped during processing.

@@ -206,10 +206,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts3
             }
 
             // Populate License
-            if (!string.IsNullOrEmpty(this.PublisherName) && !string.IsNullOrEmpty(this.LicenseURL))
+            if (!string.IsNullOrEmpty(this.SourceTitle))
             {
-                creature.PublisherName = this.PublisherName;
-                creature.LicenseURL = this.LicenseURL;
+                creature.SourceTitle = this.SourceTitle;
             }
 
             // Populate Tag Information

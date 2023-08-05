@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="SourceDataSets\OSE-OGL.md" />
     <None Remove="SourceDataSets\OSE-SRD-v1.0.json" />
     <None Remove="stylecop.json" />
   </ItemGroup>
@@ -18,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="SourceDataSets\OSE-OGL.md" />
     <EmbeddedResource Include="SourceDataSets\OSE-SRD-v1.0.json" />
   </ItemGroup>
 
