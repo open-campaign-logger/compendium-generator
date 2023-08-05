@@ -19,10 +19,6 @@ namespace CampaignKit.Compendium.ChatGPT.Services
     /// <summary>
     /// Creates a new instance of the <see cref="CustomHttpClientFactory"/> class.
     /// </summary>
-    /// <param name="timeSpan">The timeout value for the <see cref="HttpClient"/>.</param>
-    /// <returns>
-    /// A new instance of the <see cref="CustomHttpClientFactory"/> class.
-    /// </returns>
     internal class CustomHttpClientFactory : IHttpClientFactory
     {
         private readonly int timeSpan = 300;

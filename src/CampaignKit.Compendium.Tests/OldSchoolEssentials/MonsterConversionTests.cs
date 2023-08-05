@@ -26,7 +26,7 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
             // Assert
             Assert.IsNotNull(convertedCampaignEntry);
             Assert.IsNotNull(convertedCampaignEntry.RawText);
-            Assert.IsTrue(convertedCampaignEntry.RawText.Contains($"Source: [{creature.SourceTitle}]({creature.LicenseURL})"));
+            Assert.IsTrue(convertedCampaignEntry.RawText.Contains($"Source: ~\"{creature.SourceTitle}\""));
 
         }
 

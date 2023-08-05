@@ -4330,19 +4330,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.LegendaryDesc
   nameWithType: TomeOfBeastsCreature.LegendaryDesc
-- uid: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.LicenseURL
-  name: LicenseURL
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html#CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_LicenseURL
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.LicenseURL
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.LicenseURL
-  nameWithType: TomeOfBeastsCreature.LicenseURL
-- uid: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.LicenseURL*
-  name: LicenseURL
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html#CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_LicenseURL_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.LicenseURL
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.LicenseURL
-  nameWithType: TomeOfBeastsCreature.LicenseURL
 - uid: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Medicine
   name: Medicine
   href: api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html#CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Medicine
