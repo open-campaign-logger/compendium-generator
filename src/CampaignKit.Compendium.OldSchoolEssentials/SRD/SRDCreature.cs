@@ -44,24 +44,18 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             // Set the Name property of this object to the value of the TagValue property of the campaignEntry object, or throw an ArgumentNullException if TagValue is null
             this.Name = this.campaignEntry.TagValue ?? throw new Exception($"CampaignEntry missing attribute: TagValue");
 
-            // Set the PublisherName property of this object to "Necrotic Gnome"
-            this.PublisherName = "Necrotic Gnome";
-
-            // Set the LicenseURL property of this object to the URL of the Open Game License
-            this.LicenseURL = "https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD";
+            // Set the SourceTitle property of this object to "Necrotic Gnome OGL"
+            this.SourceTitle = "Necrotic Gnome OGL";
 
             // Sets the tag symbol to use when rendering the stat block.
             this.TagSymbol = campaignEntry.TagSymbol;
         }
 
         /// <inheritdoc/>
-        public string? LicenseURL { get; set; }
-
-        /// <inheritdoc/>
         public string? Name { get; set; }
 
         /// <inheritdoc/>
-        public string? PublisherName { get; set; }
+        public string? SourceTitle { get; set; }
 
         /// <summary>
         /// Gets or sets the list of labels associated with the creature.
@@ -207,7 +201,12 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
                 builder.AppendLine();
             }
 
-            builder.AppendLine($"Source: [{this.PublisherName}]({this.LicenseURL})");
+            // Add Attribution
+            if (!string.IsNullOrEmpty(this.SourceTitle))
+            {
+                builder.AppendLine();
+                builder.AppendLine($"Source: ~\"{this.SourceTitle}\"");
+            }
 
             builder.AppendLine(string.Empty);
             campaignEntry.RawText = builder.ToString();
