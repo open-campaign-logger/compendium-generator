@@ -84,17 +84,27 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
             // path within the project (with '.' instead of '/') If the file is in the
             // 'SourceDataSets' subfolder under the project root and the default namespace is
             // 'MyNamespace', it would be "MyNamespace.SourceDataSets.MyFile.txt"
-            string resourceName = "CampaignKit.Compendium.OldSchoolEssentials.SourceDataSets.OSE-SRD-v1.0.json";
-            string campaignJSON;
-            using (Stream stream = assembly.GetManifestResourceStream(resourceName)
-                ?? throw new Exception($"Unable to load embedded resource: {resourceName}"))
+            string sourceDataResourceName = "CampaignKit.Compendium.OldSchoolEssentials.SourceDataSets.OSE-SRD-v1.0.json";
+            string sourceDataJSON;
+            using (Stream stream = assembly.GetManifestResourceStream(sourceDataResourceName)
+                ?? throw new Exception($"Unable to load embedded resource: {sourceDataResourceName}"))
             {
                 using StreamReader reader = new (stream);
-                campaignJSON = await reader.ReadToEndAsync();
+                sourceDataJSON = await reader.ReadToEndAsync();
+            }
+
+            // Read license information.
+            string licenseResourceName = "CampaignKit.Compendium.OldSchoolEssentials.SourceDataSets.OSE-OGL.md";
+            string licenseMarkdown;
+            using (Stream stream = assembly.GetManifestResourceStream(licenseResourceName)
+                ?? throw new Exception($"Unable to load embedded resource: {licenseResourceName}"))
+            {
+                using StreamReader reader = new (stream);
+                licenseMarkdown = await reader.ReadToEndAsync();
             }
 
             // Deserialize the JSON string into a Campaign object
-            var campaign = JsonConvert.DeserializeObject<Campaign>(campaignJSON) ?? throw new Exception($"Source data could not be parsed.");
+            var campaign = JsonConvert.DeserializeObject<Campaign>(sourceDataJSON) ?? throw new Exception($"Source data could not be parsed.");
 
             // Iterate through each CampaignEntry in the Campaign
             if (campaign.CampaignEntries != null)
@@ -207,6 +217,19 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
                     }
                 }
             }
+
+            // Create a new CampaignEntry object for the license information.
+            destinationCampaign.CampaignEntries.Add(new CampaignEntry()
+            {
+                // Set the TagSymbol property to "~"
+                TagSymbol = "~",
+
+                // Set the TagValue property to the Organization property
+                TagValue = SRDHelper.NECROTICGNOMEOGL,
+
+                // Set the RawPublic property to the licensenMarkdown;
+                RawPublic = licenseMarkdown ?? string.Empty,
+            });
 
             // Serialize the destinationCampaign object into a string
             string campaignLoggerFileString = JsonConvert.SerializeObject(destinationCampaign, Formatting.Indented);

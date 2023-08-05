@@ -267,9 +267,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// </summary>
         public List<Common.Action>? LegendaryActions { get; set; } = new List<Common.Action> { };
 
-        /// <inheritdoc/>
-        public string? LicenseURL { get; set; } = string.Empty;
-
         /// <summary>
         /// Gets or sets light walking capability of the creature to hover.  Example: 80.
         /// </summary>
@@ -322,7 +319,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         public int? Persuasion { get; set; } = 0;
 
         /// <inheritdoc/>
-        public string? PublisherName { get; set; } = string.Empty;
+        public string? SourceTitle { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets a collection of reactions associated with the creature.
@@ -813,10 +810,10 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             builder.AppendLine($"```");
 
             // Add Attribution
-            if (!string.IsNullOrEmpty(this.PublisherName) && !string.IsNullOrEmpty(this.LicenseURL))
+            if (!string.IsNullOrEmpty(this.SourceTitle))
             {
                 builder.AppendLine();
-                builder.AppendLine($"License: ~\"{this.PublisherName}\"");
+                builder.AppendLine($"Source: ~\"{this.SourceTitle}\"");
             }
 
             return builder.ToString().Replace("\t", "     ");
@@ -828,7 +825,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// <returns>string representation of creature.</returns>
         public override string ToString()
         {
-            return $"Name: {this.Name}, Size: {this.Size}, Type: {this.Type}";
+            return $"LicenseName: {this.Name}, Size: {this.Size}, Type: {this.Type}";
         }
 
         /// <summary>
@@ -1088,10 +1085,10 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             }
 
             // Add Attribution
-            if (!string.IsNullOrEmpty(this.PublisherName) && !string.IsNullOrEmpty(this.LicenseURL))
+            if (!string.IsNullOrEmpty(this.SourceTitle))
             {
                 builder.AppendLine();
-                builder.AppendLine($"Source: [{this.PublisherName}]({this.LicenseURL})");
+                builder.AppendLine($"Source: ~\"{this.SourceTitle}\"");
             }
 
             return builder.ToString();

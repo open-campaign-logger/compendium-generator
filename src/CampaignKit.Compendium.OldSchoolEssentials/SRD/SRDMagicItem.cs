@@ -50,11 +50,8 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
                 throw new Exception($"Required label not found in CampaignEntry: Magic Items");
             }
 
-            // Set the PublisherName property of this object to "Necrotic Gnome"
-            this.PublisherName = "Necrotic Gnome";
-
-            // Set the LicenseURL property of this object to the URL of the Open Game License
-            this.LicenseURL = "https://oldschoolessentials.necroticgnome.com/srd/index.php/%E2%A7%BCOpen_Game_License%E2%A7%BD";
+            // Set the SourceTitle property of this object to "Necrotic Gnome OGL"
+            this.SourceTitle = SRDHelper.NECROTICGNOMEOGL;
 
             // Sets the tag symbol to use when rendering the stat block.
             this.TagSymbol = campaignEntry.TagSymbol;
@@ -73,13 +70,10 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
         public List<string>? Labels { get; set; } = new List<string>();
 
         /// <inheritdoc/>
-        public string? LicenseURL { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
         public string? Name { get; set; } = string.Empty;
 
         /// <inheritdoc/>
-        public string? PublisherName { get; set; } = string.Empty;
+        public string? SourceTitle { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the campaign tag symbol to use for this creature.
@@ -106,12 +100,11 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             // Create a new StringBuilder object with the RawText of the CampaignEntry.
             var builder = new StringBuilder(string.IsNullOrEmpty(this.campaignEntry.RawText) ? this.campaignEntry.RawPublic ?? string.Empty : this.campaignEntry.RawText);
 
-            // If the PublisherName and LicenseURL are not empty, append them to the RawText.
-            if (!string.IsNullOrEmpty(this.PublisherName) && !string.IsNullOrEmpty(this.LicenseURL))
+            // Add Attribution
+            if (!string.IsNullOrEmpty(this.SourceTitle))
             {
                 builder.AppendLine();
-                builder.AppendLine();
-                builder.AppendLine($"Source: [{this.PublisherName}]({this.LicenseURL})");
+                builder.AppendLine($"Source: ~\"{this.SourceTitle}\"");
             }
 
             // Set the RawText of the CampaignEntry to the StringBuilder object.

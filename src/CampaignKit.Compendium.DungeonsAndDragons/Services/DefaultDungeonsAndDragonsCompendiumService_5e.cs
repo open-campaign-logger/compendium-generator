@@ -113,7 +113,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                     var licenseCampaignEntry = license[0].ToCampaignEntry();
 
                     // Check to see if this license is already in the collection.  If it doesn't exist add it.
-                    if (!licenseList.Any(c => (c.TagValue is not null) && c.TagValue.Equals(license[0].Organization)))
+                    if (!licenseList.Any(c => (c.TagValue is not null) && c.TagValue.Equals(license[0].SourceTitle)))
                     {
                         licenseList.Add(license[0].ToCampaignEntry());
                     }
@@ -145,14 +145,13 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                 foreach (IGameComponent gameComponent in gameComponents)
                 {
                     // Log the gameComponent name
-                    this.logger.LogDebug("Converting gameComponent to standard format: {Name}.", gameComponent.Name);
+                    this.logger.LogDebug("Converting gameComponent to standard format: {LicenseName}.", gameComponent.Name);
 
                     // Check if licenseParsed is not null and is a list with more than 0 elements
                     if (licenseParsed != null && licenseParsed is List<License> list && list.Count > 0)
                     {
                         // Set the gameComponent's publisher name and license URL to the first element in the list
-                        gameComponent.PublisherName = list[0].Organization;
-                        gameComponent.LicenseURL = list[0].Url;
+                        gameComponent.SourceTitle = list[0].SourceTitle;
                     }
 
                     // Apply TagSymbol if configured, otherwise use a default.

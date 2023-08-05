@@ -240,9 +240,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         [JsonProperty("legendary_desc")]
         public string? LegendaryDesc { get; set; } = string.Empty;
 
-        /// <inheritdoc/>
-        public string? LicenseURL { get; set; }
-
         /// <summary>
         /// Gets or sets the creature's Medicine skill, which might be used for healing.
         /// </summary>
@@ -283,7 +280,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         public int? Persuasion { get; set; } = int.MinValue;
 
         /// <inheritdoc/>
-        public string? PublisherName { get; set; }
+        public string? SourceTitle { get; set; }
 
         /// <summary>
         /// Gets or sets the list of reactions that the creature can take in response to certain
@@ -514,10 +511,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
             }
 
             // Populate License
-            if (!string.IsNullOrEmpty(this.PublisherName) && !string.IsNullOrEmpty(this.LicenseURL))
+            if (!string.IsNullOrEmpty(this.SourceTitle))
             {
-                creature.PublisherName = this.PublisherName;
-                creature.LicenseURL = this.LicenseURL;
+                creature.SourceTitle = this.SourceTitle;
             }
 
             // Populate Tag Information

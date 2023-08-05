@@ -29,19 +29,14 @@ namespace CampaignKit.Compendium.Core.Common
         public List<string>? Labels { get; set; }
 
         /// <summary>
-        /// Gets or sets the URL of the license for the game component's source data.
-        /// </summary>
-        public string? LicenseURL { get; set; }
-
-        /// <summary>
         /// Gets or sets the name of the game component.
         /// </summary>
         public string? Name { get; set; }
 
         /// <summary>
-        /// Gets or sets the name of the publisher of the game component's source data.
+        /// Gets or sets the title of the source of the game component's data.
         /// </summary>
-        public string? PublisherName { get; set; }
+        public string? SourceTitle { get; set; }
 
         /// <summary>
         /// Gets or sets the list of labels associated with this game component.

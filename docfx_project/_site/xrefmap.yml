@@ -533,19 +533,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Core.Common.IGameComponent.Labels
   nameWithType: IGameComponent.Labels
-- uid: CampaignKit.Compendium.Core.Common.IGameComponent.LicenseURL
-  name: LicenseURL
-  href: api/CampaignKit.Compendium.Core.Common.IGameComponent.html#CampaignKit_Compendium_Core_Common_IGameComponent_LicenseURL
-  commentId: P:CampaignKit.Compendium.Core.Common.IGameComponent.LicenseURL
-  fullName: CampaignKit.Compendium.Core.Common.IGameComponent.LicenseURL
-  nameWithType: IGameComponent.LicenseURL
-- uid: CampaignKit.Compendium.Core.Common.IGameComponent.LicenseURL*
-  name: LicenseURL
-  href: api/CampaignKit.Compendium.Core.Common.IGameComponent.html#CampaignKit_Compendium_Core_Common_IGameComponent_LicenseURL_
-  commentId: Overload:CampaignKit.Compendium.Core.Common.IGameComponent.LicenseURL
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.Core.Common.IGameComponent.LicenseURL
-  nameWithType: IGameComponent.LicenseURL
 - uid: CampaignKit.Compendium.Core.Common.IGameComponent.Name
   name: Name
   href: api/CampaignKit.Compendium.Core.Common.IGameComponent.html#CampaignKit_Compendium_Core_Common_IGameComponent_Name
@@ -559,19 +546,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Core.Common.IGameComponent.Name
   nameWithType: IGameComponent.Name
-- uid: CampaignKit.Compendium.Core.Common.IGameComponent.PublisherName
-  name: PublisherName
-  href: api/CampaignKit.Compendium.Core.Common.IGameComponent.html#CampaignKit_Compendium_Core_Common_IGameComponent_PublisherName
-  commentId: P:CampaignKit.Compendium.Core.Common.IGameComponent.PublisherName
-  fullName: CampaignKit.Compendium.Core.Common.IGameComponent.PublisherName
-  nameWithType: IGameComponent.PublisherName
-- uid: CampaignKit.Compendium.Core.Common.IGameComponent.PublisherName*
-  name: PublisherName
-  href: api/CampaignKit.Compendium.Core.Common.IGameComponent.html#CampaignKit_Compendium_Core_Common_IGameComponent_PublisherName_
-  commentId: Overload:CampaignKit.Compendium.Core.Common.IGameComponent.PublisherName
+- uid: CampaignKit.Compendium.Core.Common.IGameComponent.SourceTitle
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.Core.Common.IGameComponent.html#CampaignKit_Compendium_Core_Common_IGameComponent_SourceTitle
+  commentId: P:CampaignKit.Compendium.Core.Common.IGameComponent.SourceTitle
+  fullName: CampaignKit.Compendium.Core.Common.IGameComponent.SourceTitle
+  nameWithType: IGameComponent.SourceTitle
+- uid: CampaignKit.Compendium.Core.Common.IGameComponent.SourceTitle*
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.Core.Common.IGameComponent.html#CampaignKit_Compendium_Core_Common_IGameComponent_SourceTitle_
+  commentId: Overload:CampaignKit.Compendium.Core.Common.IGameComponent.SourceTitle
   isSpec: "True"
-  fullName: CampaignKit.Compendium.Core.Common.IGameComponent.PublisherName
-  nameWithType: IGameComponent.PublisherName
+  fullName: CampaignKit.Compendium.Core.Common.IGameComponent.SourceTitle
+  nameWithType: IGameComponent.SourceTitle
 - uid: CampaignKit.Compendium.Core.Common.IGameComponent.TagSymbol
   name: TagSymbol
   href: api/CampaignKit.Compendium.Core.Common.IGameComponent.html#CampaignKit_Compendium_Core_Common_IGameComponent_TagSymbol
@@ -2195,19 +2182,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LegendaryActions
   nameWithType: Creature.LegendaryActions
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LicenseURL
-  name: LicenseURL
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_LicenseURL
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LicenseURL
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LicenseURL
-  nameWithType: Creature.LicenseURL
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LicenseURL*
-  name: LicenseURL
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_LicenseURL_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LicenseURL
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LicenseURL
-  nameWithType: Creature.LicenseURL
 - uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LightWalking
   name: LightWalking
   href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_LightWalking
@@ -2312,19 +2286,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Persuasion
   nameWithType: Creature.Persuasion
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.PublisherName
-  name: PublisherName
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_PublisherName
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.PublisherName
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.PublisherName
-  nameWithType: Creature.PublisherName
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.PublisherName*
-  name: PublisherName
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_PublisherName_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.PublisherName
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.PublisherName
-  nameWithType: Creature.PublisherName
 - uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Reactions
   name: Reactions
   href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Reactions
@@ -2377,6 +2338,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SleightOfHand
   nameWithType: Creature.SleightOfHand
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SourceTitle
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_SourceTitle
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SourceTitle
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SourceTitle
+  nameWithType: Creature.SourceTitle
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SourceTitle*
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_SourceTitle_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SourceTitle
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SourceTitle
+  nameWithType: Creature.SourceTitle
 - uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SpecialAbilities
   name: SpecialAbilities
   href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_SpecialAbilities
@@ -2774,19 +2748,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.License.Desc
   nameWithType: License.Desc
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.License.Name
-  name: Name
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.License.html#CampaignKit_Compendium_DungeonsAndDragons_Common_License_Name
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.Common.License.Name
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.License.Name
-  nameWithType: License.Name
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.License.Name*
-  name: Name
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.License.html#CampaignKit_Compendium_DungeonsAndDragons_Common_License_Name_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Common.License.Name
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.License.LicenseName
+  name: LicenseName
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.License.html#CampaignKit_Compendium_DungeonsAndDragons_Common_License_LicenseName
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.Common.License.LicenseName
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.License.LicenseName
+  nameWithType: License.LicenseName
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.License.LicenseName*
+  name: LicenseName
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.License.html#CampaignKit_Compendium_DungeonsAndDragons_Common_License_LicenseName_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Common.License.LicenseName
   isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.License.Name
-  nameWithType: License.Name
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.License.LicenseName
+  nameWithType: License.LicenseName
 - uid: CampaignKit.Compendium.DungeonsAndDragons.Common.License.OGLLines
   name: OGLLines
   href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.License.html#CampaignKit_Compendium_DungeonsAndDragons_Common_License_OGLLines
@@ -2826,19 +2800,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.License.Slug
   nameWithType: License.Slug
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.License.Title
-  name: Title
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.License.html#CampaignKit_Compendium_DungeonsAndDragons_Common_License_Title
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.Common.License.Title
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.License.Title
-  nameWithType: License.Title
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.License.Title*
-  name: Title
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.License.html#CampaignKit_Compendium_DungeonsAndDragons_Common_License_Title_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Common.License.Title
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.License.SourceTitle
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.License.html#CampaignKit_Compendium_DungeonsAndDragons_Common_License_SourceTitle
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.Common.License.SourceTitle
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.License.SourceTitle
+  nameWithType: License.SourceTitle
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.License.SourceTitle*
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.License.html#CampaignKit_Compendium_DungeonsAndDragons_Common_License_SourceTitle_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Common.License.SourceTitle
   isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.License.Title
-  nameWithType: License.Title
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.License.SourceTitle
+  nameWithType: License.SourceTitle
 - uid: CampaignKit.Compendium.DungeonsAndDragons.Common.License.ToCampaignEntry
   name: ToCampaignEntry()
   href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.License.html#CampaignKit_Compendium_DungeonsAndDragons_Common_License_ToCampaignEntry
@@ -3590,19 +3564,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.LegendaryDesc
   nameWithType: SRDCreature.LegendaryDesc
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.LicenseURL
-  name: LicenseURL
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_LicenseURL
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.LicenseURL
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.LicenseURL
-  nameWithType: SRDCreature.LicenseURL
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.LicenseURL*
-  name: LicenseURL
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_LicenseURL_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.LicenseURL
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.LicenseURL
-  nameWithType: SRDCreature.LicenseURL
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Medicine
   name: Medicine
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_Medicine
@@ -3681,19 +3642,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Persuasion
   nameWithType: SRDCreature.Persuasion
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.PublisherName
-  name: PublisherName
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_PublisherName
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.PublisherName
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.PublisherName
-  nameWithType: SRDCreature.PublisherName
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.PublisherName*
-  name: PublisherName
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_PublisherName_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.PublisherName
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.PublisherName
-  nameWithType: SRDCreature.PublisherName
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Reactions
   name: Reactions
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_Reactions
@@ -3759,6 +3707,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.SleightOfHand
   nameWithType: SRDCreature.SleightOfHand
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.SourceTitle
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_SourceTitle
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.SourceTitle
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.SourceTitle
+  nameWithType: SRDCreature.SourceTitle
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.SourceTitle*
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_SourceTitle_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.SourceTitle
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.SourceTitle
+  nameWithType: SRDCreature.SourceTitle
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.SpecialAbilities
   name: SpecialAbilities
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_SpecialAbilities
@@ -4460,19 +4421,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Persuasion
   nameWithType: TomeOfBeastsCreature.Persuasion
-- uid: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.PublisherName
-  name: PublisherName
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html#CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_PublisherName
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.PublisherName
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.PublisherName
-  nameWithType: TomeOfBeastsCreature.PublisherName
-- uid: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.PublisherName*
-  name: PublisherName
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html#CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_PublisherName_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.PublisherName
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.PublisherName
-  nameWithType: TomeOfBeastsCreature.PublisherName
 - uid: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Reactions
   name: Reactions
   href: api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html#CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Reactions
@@ -4538,6 +4486,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.SleightOfHand
   nameWithType: TomeOfBeastsCreature.SleightOfHand
+- uid: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.SourceTitle
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html#CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_SourceTitle
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.SourceTitle
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.SourceTitle
+  nameWithType: TomeOfBeastsCreature.SourceTitle
+- uid: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.SourceTitle*
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html#CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_SourceTitle_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.SourceTitle
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.SourceTitle
+  nameWithType: TomeOfBeastsCreature.SourceTitle
 - uid: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.SpecialAbilities
   name: SpecialAbilities
   href: api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html#CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_SpecialAbilities
@@ -5266,19 +5227,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.Labels
   nameWithType: SRDCreature.Labels
-- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.LicenseURL
-  name: LicenseURL
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDCreature_LicenseURL
-  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.LicenseURL
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.LicenseURL
-  nameWithType: SRDCreature.LicenseURL
-- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.LicenseURL*
-  name: LicenseURL
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDCreature_LicenseURL_
-  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.LicenseURL
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.LicenseURL
-  nameWithType: SRDCreature.LicenseURL
 - uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.Name
   name: Name
   href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDCreature_Name
@@ -5292,19 +5240,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.Name
   nameWithType: SRDCreature.Name
-- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.PublisherName
-  name: PublisherName
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDCreature_PublisherName
-  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.PublisherName
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.PublisherName
-  nameWithType: SRDCreature.PublisherName
-- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.PublisherName*
-  name: PublisherName
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDCreature_PublisherName_
-  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.PublisherName
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.SourceTitle
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDCreature_SourceTitle
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.SourceTitle
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.SourceTitle
+  nameWithType: SRDCreature.SourceTitle
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.SourceTitle*
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDCreature_SourceTitle_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.SourceTitle
   isSpec: "True"
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.PublisherName
-  nameWithType: SRDCreature.PublisherName
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.SourceTitle
+  nameWithType: SRDCreature.SourceTitle
 - uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.TagSymbol
   name: TagSymbol
   href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDCreature_TagSymbol
@@ -5369,19 +5317,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.Labels
   nameWithType: SRDMagicItem.Labels
-- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.LicenseURL
-  name: LicenseURL
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_LicenseURL
-  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.LicenseURL
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.LicenseURL
-  nameWithType: SRDMagicItem.LicenseURL
-- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.LicenseURL*
-  name: LicenseURL
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_LicenseURL_
-  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.LicenseURL
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.LicenseURL
-  nameWithType: SRDMagicItem.LicenseURL
 - uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.Name
   name: Name
   href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_Name
@@ -5395,19 +5330,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.Name
   nameWithType: SRDMagicItem.Name
-- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.PublisherName
-  name: PublisherName
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_PublisherName
-  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.PublisherName
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.PublisherName
-  nameWithType: SRDMagicItem.PublisherName
-- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.PublisherName*
-  name: PublisherName
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_PublisherName_
-  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.PublisherName
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.SourceTitle
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_SourceTitle
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.SourceTitle
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.SourceTitle
+  nameWithType: SRDMagicItem.SourceTitle
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.SourceTitle*
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_SourceTitle_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.SourceTitle
   isSpec: "True"
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.PublisherName
-  nameWithType: SRDMagicItem.PublisherName
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.SourceTitle
+  nameWithType: SRDMagicItem.SourceTitle
 - uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.TagSymbol
   name: TagSymbol
   href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_TagSymbol
@@ -5498,19 +5433,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.Level
   nameWithType: SRDSpell.Level
-- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.LicenseURL
-  name: LicenseURL
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDSpell_LicenseURL
-  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.LicenseURL
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.LicenseURL
-  nameWithType: SRDSpell.LicenseURL
-- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.LicenseURL*
-  name: LicenseURL
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDSpell_LicenseURL_
-  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.LicenseURL
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.LicenseURL
-  nameWithType: SRDSpell.LicenseURL
 - uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.Name
   name: Name
   href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDSpell_Name
@@ -5524,19 +5446,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.Name
   nameWithType: SRDSpell.Name
-- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.PublisherName
-  name: PublisherName
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDSpell_PublisherName
-  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.PublisherName
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.PublisherName
-  nameWithType: SRDSpell.PublisherName
-- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.PublisherName*
-  name: PublisherName
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDSpell_PublisherName_
-  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.PublisherName
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.SourceTitle
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDSpell_SourceTitle
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.SourceTitle
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.SourceTitle
+  nameWithType: SRDSpell.SourceTitle
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.SourceTitle*
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDSpell_SourceTitle_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.SourceTitle
   isSpec: "True"
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.PublisherName
-  nameWithType: SRDSpell.PublisherName
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.SourceTitle
+  nameWithType: SRDSpell.SourceTitle
 - uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.TagSymbol
   name: TagSymbol
   href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDSpell_TagSymbol
