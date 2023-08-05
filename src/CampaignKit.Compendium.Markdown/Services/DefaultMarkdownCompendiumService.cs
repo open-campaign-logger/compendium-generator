@@ -46,7 +46,6 @@ namespace CampaignKit.Compendium.Markdown.Services
         /// <summary>
         /// Initializes a new instance of the <see cref="DefaultMarkdownCompendiumService"/> class.
         /// </summary>
-        /// <param name="downloadService">Source data download service.</param>
         /// <param name="logger">The logger for the service.</param>
         /// <param name="configurationService">Application configuration service.</param>
         /// <returns>
