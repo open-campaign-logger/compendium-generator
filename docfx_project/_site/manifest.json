@@ -385,10 +385,60 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.yml",
       "output": {
         ".html": {
           "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.html"
         }
       },
       "version": ""
@@ -555,10 +605,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.yml",
       "output": {
         ".html": {
           "relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.html"
         }
       },
       "version": ""
