@@ -128,8 +128,6 @@ After each project this file should be reviewed to see if any additional changes
 [json2csharp](https://json2csharp.com/) can be used to create C# classes for deserializing JSON source data sets.
 
 Recommended json2csharp settings:
-* Use Nullable Types
-* Add JsonProperty Attributes
 * Use Pascal Case
 
 Once a JSON deserialization class has been created perform the following steps to customize the code:
@@ -138,3 +136,17 @@ Once a JSON deserialization class has been created perform the following steps t
    * `public string? Alignment { get; set; } = string.Empty;`
    * `public int? AnimalHandling { get; set; } = int.MinValue;`
    * `public List<Action>? Actions { get; set; } = new List<Action>();`
+
+You can also use a ChatGPT prompt like the following to automate these steps:
+
+```
+Please make the following changes to the "Root" class:
+1. Convert each public field to a property by adding {get; set;}.
+2. Set a default value for each property.  string.empty for strings, empty lists for lists and int.MinValue for ints.
+3. Add XML summaries for each property.
+
+public class Root
+{
+...
+}
+```

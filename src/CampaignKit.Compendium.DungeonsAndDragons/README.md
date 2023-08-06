@@ -1,14 +1,15 @@
 ﻿
 # Dungeons and Dragons Module
 
-This module supports the generation of compendiums for Dungeons & Dragons 5th Edition Bestiary. It leverages open-source, 5e compatible monsters derived from the following [open5e-api ](https://github.com/open5e/open5e-api) data sets:
+This module supports the generation of compendiums for Dungeons & Dragons 5th Edition. It leverages open-source data from the following [open5e-api ](https://github.com/open5e/open5e-api) data sets:
 
 * **Systems Reference Document** (Wizards of the Coast)
-* **Tome of Beasts**, (Kobold Press)
-* **Tome of Beasts 2**, (Kobold Press)
-* **Tome of Beasts 3**, (Kobold Press)
-* **Creature Codex**, (Kobold Press)
-* **Monstrous Menagerie**, (Kobold Press)
+* **Tome of Beasts**, Kobold Press
+* **Tome of Beasts 2**, Kobold Press
+* **Tome of Beasts 3**, Kobold Press
+* **Creature Codex**, Kobold Press
+* **Monstrous Menagerie**, Kobold Press
+* **Advanced 5th Edition**, EN Publishing
 
 The application is configured to create two different compendiums from these data sets:
 
