@@ -395,6 +395,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.yml",
       "output": {
         ".html": {

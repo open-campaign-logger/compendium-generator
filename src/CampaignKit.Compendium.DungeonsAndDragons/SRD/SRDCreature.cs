@@ -279,9 +279,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         [JsonProperty("persuasion")]
         public int? Persuasion { get; set; } = int.MinValue;
 
-        /// <inheritdoc/>
-        public string? SourceTitle { get; set; }
-
         /// <summary>
         /// Gets or sets the list of reactions that the creature can take in response to certain
         /// events or triggers.
@@ -314,6 +311,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         /// </summary>
         [JsonProperty("sleight_of_hand")]
         public int? SleightOfHand { get; set; } = int.MinValue;
+
+        /// <inheritdoc/>
+        public string? SourceTitle { get; set; }
 
         /// <summary>
         /// Gets or sets the list of special abilities the creature has.
@@ -375,6 +375,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         /// Gets or sets the campaign tag symbol to use for this creature.
         /// </summary>
         public string? TagSymbol { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
+        public string? TagValuePrefix { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the type of the creature (e.g., beast, humanoid).

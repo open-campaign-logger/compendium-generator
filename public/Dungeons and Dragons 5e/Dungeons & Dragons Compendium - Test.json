@@ -3,7 +3,7 @@
   "type": "campaign",
   "original": null,
   "title": "Dungeons & Dragons Compendium - Test",
-  "description": "Preformatted monsters, items and spells from the D&D SRD and Kobold Press.",
+  "description": "A compendium of 5e compatible items, spells, monsters and more from the D&D SRD, Kobold Press and EN Publishing.",
   "imageUrl": "",
   "campaignEntries": [
     {
@@ -312,7 +312,8 @@
       "labels": [
         "D&D 5E",
         "Spell",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Acid Arrow"
@@ -323,7 +324,8 @@
       "labels": [
         "D&D 5E",
         "Spell",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Acid Splash"
@@ -334,7 +336,8 @@
       "labels": [
         "D&D 5E",
         "Spell",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Aid"
@@ -345,7 +348,8 @@
       "labels": [
         "D&D 5E",
         "Spell",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Alarm"
@@ -356,7 +360,8 @@
       "labels": [
         "D&D 5E",
         "Spell",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Alter Self"
@@ -367,7 +372,8 @@
       "labels": [
         "D&D 5E",
         "Weapon",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Club"
@@ -378,7 +384,8 @@
       "labels": [
         "D&D 5E",
         "Weapon",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Dagger"
@@ -389,7 +396,8 @@
       "labels": [
         "D&D 5E",
         "Weapon",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Greatclub"
@@ -400,7 +408,8 @@
       "labels": [
         "D&D 5E",
         "Weapon",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Handaxe"
@@ -411,7 +420,8 @@
       "labels": [
         "D&D 5E",
         "Weapon",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Javelin"
@@ -422,7 +432,8 @@
       "labels": [
         "D&D 5E",
         "Magic Item",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Adamantine Armor"
@@ -433,7 +444,8 @@
       "labels": [
         "D&D 5E",
         "Magic Item",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Amulet of Health"
@@ -444,7 +456,8 @@
       "labels": [
         "D&D 5E",
         "Magic Item",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Amulet of Proof against Detection and Location"
@@ -455,7 +468,8 @@
       "labels": [
         "D&D 5E",
         "Magic Item",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Amulet of the Planes"
@@ -466,7 +480,8 @@
       "labels": [
         "D&D 5E",
         "Magic Item",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Animated Shield"
@@ -477,7 +492,8 @@
       "labels": [
         "D&D 5E",
         "Gear",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Acid"
@@ -488,7 +504,8 @@
       "labels": [
         "D&D 5E",
         "Gear",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Alchemist's Fire"
@@ -499,7 +516,8 @@
       "labels": [
         "D&D 5E",
         "Gear",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Antitoxin"
@@ -510,7 +528,8 @@
       "labels": [
         "D&D 5E",
         "Gear",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Arcane Focus"
@@ -521,7 +540,8 @@
       "labels": [
         "D&D 5E",
         "Gear",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Ball Bearings"
@@ -532,7 +552,8 @@
       "labels": [
         "D&D 5E",
         "Armor",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Unarmored"
@@ -543,7 +564,8 @@
       "labels": [
         "D&D 5E",
         "Armor",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Padded"
@@ -554,7 +576,8 @@
       "labels": [
         "D&D 5E",
         "Armor",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Leather"
@@ -565,7 +588,8 @@
       "labels": [
         "D&D 5E",
         "Armor",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Studded Leather"
@@ -576,10 +600,143 @@
       "labels": [
         "D&D 5E",
         "Armor",
-        "WOTC"
+        "WOTC",
+        "SRD"
       ],
       "tagSymbol": "~",
       "tagValue": "Hide"
+    },
+    {
+      "rawText": "# Acolyte\r\nYou have spent your life in the service of a temple to a specific god or pantheon of gods. You act as an intermediary between the realm of the holy and the mortal world, performing sacred rites and offering sacrifices in order to conduct worshipers into the presence of the divine. You are not necessarily a cleric-performing sacred rites is not the same thing as channeling divine power.\n\nChoose a god, a pantheon of gods, or some other quasi-divine being from among those listed in \"Fantasy-Historical Pantheons\" or those specified by your GM, and work with your GM to detail the nature of your religious service. Were you a lesser functionary in a temple, raised from childhood to assist the priests in the sacred rites? Or were you a high priest who suddenly experienced a call to serve your god in a different way? Perhaps you were the leader of a small cult outside of any established temple structure, or even an occult group that served a fiendish master that you now deny.\r\n* Skill Profficiencies: Insight, Religion\r\n* Languages: Two of your choice\r\n* Equipment: A holy symbol (a gift to you when you entered the priesthood), a prayer book or prayer wheel, 5 sticks of incense, vestments, a set of common clothes, and a pouch containing 15 gp\r\n## Shelter of the Faithful\r\nAs an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.\n\nYou might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.\r\n## Suggested Characteristics\r\nAcolytes are shaped by their experience in temples or other religious communities. Their study of the history and tenets of their faith and their relationships to temples, shrines, or hierarchies affect their mannerisms and ideals. Their flaws might be some hidden hypocrisy or heretical idea, or an ideal or bond taken to an extreme.\n\n**Suggested Acolyte Characteristics (table)**\n\n| d8 | Personality Trait                                                                                                  |\n|----|--------------------------------------------------------------------------------------------------------------------|\n| 1  | I idolize a particular hero of my faith, and constantly refer to that person's deeds and example.                  |\n| 2  | I can find common ground between the fiercest enemies, empathizing with them and always working toward peace.      |\n| 3  | I see omens in every event and action. The gods try to speak to us, we just need to listen                         |\n| 4  | Nothing can shake my optimistic attitude.                                                                          |\n| 5  | I quote (or misquote) sacred texts and proverbs in almost every situation.                                         |\n| 6  | I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods.                  |\n| 7  | I've enjoyed fine food, drink, and high society among my temple's elite. Rough living grates on me.                |\n| 8  | I've spent so long in the temple that I have little practical experience dealing with people in the outside world. |\n\n| d6 | Ideal                                                                                                                  |\n|----|------------------------------------------------------------------------------------------------------------------------|\n| 1  | Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)                      |\n| 2  | Charity. I always try to help those in need, no matter what the personal cost. (Good)                                  |\n| 3  | Change. We must help bring about the changes the gods are constantly working in the world. (Chaotic)                   |\n| 4  | Power. I hope to one day rise to the top of my faith's religious hierarchy. (Lawful)                                   |\n| 5  | Faith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well. (Lawful)    |\n| 6  | Aspiration. I seek to prove myself worthy of my god's favor by matching my actions against his or her teachings. (Any) |\n\n| d6 | Bond                                                                                     |\n|----|------------------------------------------------------------------------------------------|\n| 1  | I would die to recover an ancient relic of my faith that was lost long ago.              |\n| 2  | I will someday get revenge on the corrupt temple hierarchy who branded me a heretic.     |\n| 3  | I owe my life to the priest who took me in when my parents died.                         |\n| 4  | Everything I do is for the common people.                                                |\n| 5  | I will do anything to protect the temple where I served.                                 |\n| 6  | I seek to preserve a sacred text that my enemies consider heretical and seek to destroy. |\n\n| d6 | Flaw                                                                                          |\n|----|-----------------------------------------------------------------------------------------------|\n| 1  | I judge others harshly, and myself even more severely.                                        |\n| 2  | I put too much trust in those who wield power within my temple's hierarchy.                   |\n| 3  | My piety sometimes leads me to blindly trust those that profess faith in my god.              |\n| 4  | I am inflexible in my thinking.                                                               |\n| 5  | I am suspicious of strangers and expect the worst of them.                                    |\n| 6  | Once I pick a goal, I become obsessed with it to the detriment of everything else in my life. |\r\n\r\nSource: ~\"5e Core Rules\"\r\n",
+      "rawPublic": "",
+      "labels": [
+        "D&D 5E",
+        "Background",
+        "WOTC",
+        "SRD"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Background - Acolyte"
+    },
+    {
+      "rawText": "# Criminal\r\nAs a career criminal you were acquainted with murderers, thieves, and those who hunt them. Your new career as an adventurer is, relatively speaking, an honest trade.\n\nWere you a pickpocket? An assassin? A back-alley mugger? Are you still?\r\n* Skill Profficiencies: Stealth, and either Deception or Intimidation.\r\n* Ability Score Increates: +1 to Dexterity and one other ability score.\r\n* Equipment: Common clothes, dark cloak, thieves' tools.\r\n## Thieves' Cant\r\nYou know thieves' cant: a set of slang, hand signals, and code terms used by professional criminals. A creature that knows thieves' cant can hide a short message within a seemingly innocent statement. A listener who knows thieves' cant understands the message.\r\n## Suggested Characteristics\r\n### **Criminal Mementos**\n\n1. A golden key to which you haven't discovered the lock.\n2. A brand that was burned into your shoulder as punishment for a crime.\n3. A scar for which you have sworn revenge.\n4. The distinctive mask that gives you your nickname (for instance, the Black Mask or the Red Fox).\n5. A gold coin which reappears in your possession a week after you've gotten rid of it.\n6. The stolen symbol of a sinister organization; not even your fence will take it off your hands.\n7. Documents that incriminate a dangerous noble or politician.\n8. The floor plan of a palace.\n9. The calling cards you leave after (or before) you strike.\n10. A manuscript written by your mentor: *Secret Exits of the World's Most Secure Prisons*.\r\n## Adventures and Advancement\r\nIf you pull off several successful jobs or heists, you may be promoted (or reinstated) as a leader in your gang. You may gain the free service of up to 8\r\n\r\nSource: ~\"Level Up Advanced 5e\"\r\n",
+      "rawPublic": "",
+      "labels": [
+        "D&D 5E",
+        "Background",
+        "EN Publishing",
+        "A5E"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Background - Criminal"
+    },
+    {
+      "rawText": "# Farmer\r\nYou were raised a farmer, an occupation where the money is short and the work days are long. You've become an adventurer, a career where the money is plentiful but your days—if you're not careful—may be all too short.\n\nWhy did you beat your plowshare into a sword? Do you seek adventure, excitement, or revenge? Do you leave behind a thriving farmstead or a smoking ruin?\r\n* Skill Profficiencies: Nature, and either Animal Handling or Survival.\r\n* Ability Score Increates: +1 to Wisdom and one other ability score.\r\n* Equipment: Common clothes, shovel, mule with saddlebags, 5 Supply.\r\n## Bit and Bridle\r\nYou know how to stow and transport food. You and one animal under your care can each carry additional\r\n## Suggested Characteristics\r\n### **Farmer Mementos**\n\n1. A strange item you dug up in a field: a key, a lump of unmeltable metal, a glass dagger.\n2. The bag of beans your mother warned you not to plant.\n3. The shovel, pickaxe, pitchfork, or other tool you used for labor. For you it's a one-handed simple melee weapon that deals 1d6 piercing, slashing, or bludgeoning damage.\n4. A debt you must pay.\n5. A mastiff.\n6. Your trusty fishing pole.\n7. A corncob pipe.\n8. A dried flower from your family garden.\n9. Half of a locket given to you by a missing sweetheart.\n10. A family weapon said to have magic powers, though it exhibits none at the moment.\r\n## Adventures and Advancement\r\nYou left the farm for a reason but you still have an eye for land. If you acquire farming property, estates, or domains, you can earn twice as much as you otherwise would from their harvests, or be supported by your lands at a lifestyle one level higher than you otherwise would be.\r\n\r\nSource: ~\"Level Up Advanced 5e\"\r\n",
+      "rawPublic": "",
+      "labels": [
+        "D&D 5E",
+        "Background",
+        "EN Publishing",
+        "A5E"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Background - Farmer"
+    },
+    {
+      "rawText": "# Outlander\r\nYou lived far from the farms and fields of civilization. You know the beauties and the dangers of the wilderness.\n\nWere you part of a nomadic tribe? A hunter or guide? A lone wanderer or explorer? A guardian of civilization against monsters, or of the old ways against civilization?\r\n* Skill Profficiencies: Survival, and either Athletics or Intimidation.\r\n* Ability Score Increates: +1 to Constitution and one other ability score.\r\n* Equipment: Traveler's clothes, waterskin, healer's kit, 7 days rations.\r\n## Trader\r\nIf you're in or near the wilderness and have a trading relationship with a tribe, settlement, or other nearby group, you can maintain a moderate lifestyle for yourself and your companions by trading the products of your hunting and gathering.\r\n## Suggested Characteristics\r\n### **Outlander Mementos**\n\n1. A trophy from the hunt of a mighty beast, such as an phase monster-horn helmet.\n2. A trophy from a battle against a fierce monster, such as a still-wriggling troll finger.\n3. A stone from a holy druidic shrine.\n4. Tools appropriate to your home terrain, such as pitons or snowshoes.\n5. Hand-crafted leather armor, hide armor, or clothing.\n6. The handaxe you made yourself.\n7. A gift from a dryad or faun.\n8. Trading goods worth 30 gold, such as furs or rare herbs.\n9. A tiny whistle given to you by a sprite.\n10. An incomplete map.\r\n## Adventures and Advancement\r\nDuring your travels, wilderness dwellers may come to you for help battling monsters and other dangers. If you succeed in several such adventures, you may earn the freely given aid of up to 8\r\n\r\nSource: ~\"Level Up Advanced 5e\"\r\n",
+      "rawPublic": "",
+      "labels": [
+        "D&D 5E",
+        "Background",
+        "EN Publishing",
+        "A5E"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Background - Outlander"
+    },
+    {
+      "rawText": "# Trader\r\nYou served your apprenticeship among merchants and traders. You've traveled dusty miles and haggled under distant skies.\n\nWhy are you living a life of adventure? Are you working off your debt to the company store? Are you escorting a caravan through dangerous wilds?\n\nAre you raising capital to start your own business, or trying to restore the fortunes of a ruined trading family? Or are you a smuggler, following secret trade routes unknown to the authorities?\r\n* Skill Profficiencies: Persuasion, and either Culture, Deception, or Insight.\r\n* Ability Score Increates: +1 to Charisma and one other ability score.\r\n* Equipment: Traveler's clothes, abacus, merchant's scale.\r\n## Supply and Demand\r\nWhen you buy a trade good and sell it elsewhere to a community in need of that good, you gain a 10% bonus to its sale price for every 100 miles between the buy and sell location (maximum of 50%).\r\n## Suggested Characteristics\r\n### **Trader Mementos**\n\n1. The first gold piece you earned.\n2. Thousands of shares in a failed venture.\n3. A letter of introduction to a rich merchant in a distant city.\n4. A sample of an improved version of a common tool.\n5. Scars from a wound sustained when you tried to collect a debt from a vicious noble.\n6. A love letter from the heir of a rival trading family.\n7. A signet ring bearing your family crest, which is famous in the mercantile world.\n8. A contract binding you to a particular trading company for the next few years.\n9. A letter from a friend imploring you to invest in an opportunity that can't miss.\n10. A trusted family member's travel journals that mix useful geographical knowledge with tall tales.\r\n## Adventures and Advancement\r\nBecause of your commercial contacts you may be offered money to lead or escort trade caravans. You'll receive a fee from each trader that reaches their destination safely.\r\n\r\nSource: ~\"Level Up Advanced 5e\"\r\n",
+      "rawPublic": "",
+      "labels": [
+        "D&D 5E",
+        "Background",
+        "EN Publishing",
+        "A5E"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Background - Trader"
+    },
+    {
+      "rawText": "# Artisan\r\nYou are skilled enough in a trade to make a comfortable living and to aspire to mastery of your art. Yet here you are, ready to slog through mud and blood and danger.\n\nWhy did you become an adventurer? Did you flee a cruel master? Were you bored? Or are you a member in good standing, looking for new materials and new markets?\r\n* Skill Profficiencies: Persuasion, and either Insight or History.\r\n* Ability Score Increates: +1 to Intelligence and one other ability score.\r\n* Equipment: One set of artisan's tools, traveler's clothes.\r\n## Trade Mark\r\n* When in a city or town, you have access to a fully-stocked workshop with everything you need to ply your trade. Furthermore, you can expect to earn full price when you sell items you have crafted (though there is no guarantee of a buyer).\r\n## Suggested Characteristics\r\n### **Artisan Mementos**\n\n1. *Jeweler:* A 10,000 gold commission for a ruby ring (now all you need is a ruby worth 5,000 gold).\n2. *Smith:* Your blacksmith's hammer (treat as a light hammer).\n3. *Cook:* A well-seasoned skillet (treat as a mace).\n4. *Alchemist:* A formula with exotic ingredients that will produce...something.\n5. *Leatherworker:* An exotic monster hide which could be turned into striking-looking leather armor.\n6. *Mason:* Your trusty sledgehammer (treat as a warhammer).\n7. *Potter:* Your secret technique for vivid colors which is sure to disrupt Big Pottery.\n8. *Weaver:* A set of fine clothes (your own work).\n9. *Woodcarver:* A longbow, shortbow, or crossbow (your own work).\n10. *Calligrapher:* Strange notes you copied from a rambling manifesto. Do they mean something?\r\n## Adventures and Advancement\r\nIf you participate in the creation of a magic item (a “master work”), you will gain the services of up to 8 commoner apprentices with the appropriate tool proficiency.\r\n\r\nSource: ~\"Level Up Advanced 5e\"\r\n",
+      "rawPublic": "",
+      "labels": [
+        "D&D 5E",
+        "Background",
+        "EN Publishing",
+        "A5E"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Background - Artisan"
+    },
+    {
+      "rawText": "# Court Servant\r\nEven though you are independent now, you were once a servant to a merchant, noble, regent, or other person of high station. You are an expert in complex social dynamics and knowledgeable in the history and customs of courtly life. Work with your GM to determine whom you served and why you are no longer a servant: did your master or masters retire and no longer require servants, did you resign from the service of a harsh master, did the court you served fall to a neighboring empire, or did something else happen?\r\n* Skill Profficiencies: History, Insight\r\n* Languages: One of your choice\r\n* Equipment: A set of artisan's tools of your choice, a unique piece of jewelry, a set of fine clothes, a handcrafted pipe, and a belt pouch containing 20 gp\r\n## Servant's Invisibility\r\nThe art of excellent service requires a balance struck between being always available and yet unobtrusive, and you've mastered it. If you don't perform a visible action, speak or be spoken to, or otherwise have attention drawn to you for at least 1 minute, creatures nearby have trouble remembering you are even in the room. Until you speak, perform a visible action, or have someone draw attention to you, creatures must succeed on a Wisdom (Perception) check (DC equal to 8 + your Charisma modifier + your proficiency bonus) to notice you. Otherwise, they conduct themselves as though you aren't present until either attention is drawn to you or one of their actions would take them into or within 5 feet of the space you occupy.\r\n## Suggested Characteristics\r\nCourt servants tend to be outwardly quiet and soft-spoken, but their insight into the nuances of conversation and societal happenings is unparalleled. When in crowds or around strangers, most court servants keep to themselves, quietly observing their surroundings and later sharing such observations with those they trust.\n\n        | d8 | Personality Trait                                                                                          |\n|----|------------------------------------------------------------------------------------------------------------|\n| 1  | Unless I must speak, I hold my breath while serving others.                                                |\n| 2  | It takes all my effort not to show the effusive emotions I feel when I help others. Best to quietly serve. |\n| 3  | It's getting harder to tolerate the prejudices of those I serve daily.                                     |\n| 4  | Though the old ways are hard to give up, I want to be my own boss. I'll decide my path.                    |\n        | 5  | Serving my family and friends is the only thing I truly care about.                                        |\n| 6  | City life is killing my soul. I long for the old courtly ways.                                             |\n| 7  | It's time for my fellows to wake up and be taken advantage of no longer.                                   |\n| 8  | It's the small things that make it all worthwhile. I try to be present in every moment.                    |\n\n| d6 | Ideal                                                                                                                     |\n|----|---------------------------------------------------------------------------------------------------------------------------|\n| 1  | **Family.** My family, whether the one I come from or the one I make, is the thing in this world most worth protecting. (Any) |\n| 2  | **Service.** I am most rewarded when I know I have performed a valuable service for another. (Good)                           |\n| 3  | **Sloth.** What's the point of helping anyone now that I've been discarded? (Chaotic)                                         |\n| 4  | **Compassion.** I can't resist helping anyone in need. (Good)                                                                 |\n| 5  | **Tradition.** Life under my master's rule was best, and things should be kept as close to their ideals as possible. (Lawful) |\n| 6  | **Joy.** The pursuit of happiness is the only thing worth serving anymore. (Neutral)                                          |\n\n| d6 | Bond                                                                                                                                                     |\n|----|----------------------------------------------------------------------------------------------------------------------------------------------------------|\n| 1  | My family needs me to provide for them. They mean everything to me, which means I'll do whatever it takes.                                               |\n| 2  | My kin have served this holding and its lords and ladies for generations. I serve them faithfully to make my lineage proud.                              |\n| 3  | I can't read the inscriptions on this odd ring, but it's all I have left of my family and our history of loyal service.                                  |\n| 4  | I'm with the best friends a person can ask for, so why do I feel so lonesome and homesick?                                                               |\n| 5  | I've found a profession where my skills are put to good use, and I won't let anyone bring me down.                                                       |\n| 6  | I found peace in a special garden filled with beautiful life, but I only have this flower to remind me. Someday I'll remember where to find that garden. |\n\n| d6 | Flaw                                                                                             |\n|----|--------------------------------------------------------------------------------------------------|\n        | 1  | I would rather serve darkness than serve no one.                                                 |\n| 2  | I'm afraid of taking risks that might be good for me.                                            |\n| 3  | I believe my master's people are superior to all others, and I'm not afraid to share that truth. |\n| 4  | I always do as I'm told, even though sometimes I don't think I should.                           |\n| 5  | I know what's best for everyone, and they'd all be better off if they'd follow my advice.        |\n| 6  | I can't stand seeing ugly or depressing things. I'd much rather think happy thoughts.            |\r\n\r\nSource: ~\"Tome of Heroes\"\r\n",
+      "rawPublic": "",
+      "labels": [
+        "D&D 5E",
+        "Background",
+        "Kobold Press",
+        "Tome of Heroes"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Background - Court Servant"
+    },
+    {
+      "rawText": "# Desert Runner\r\nYou grew up in the desert. As a nomad, you moved from place to place, following the caravan trails. Your upbringing makes you more than just accustomed to desert living—you thrive there. Your family has lived in the desert for centuries, and you know more about desert survival than life in the towns and cities.\r\n* Skill Profficiencies: Perception, Survival\r\n* Languages: One of your choice\r\n* Equipment: Traveler's clothes, herbalist kit, waterskin, pouch with 10 gp\r\n## Nomad\r\nLiving in the open desert has allowed your body to adapt to a range of environmental conditions. You can survive on 1 gallon of water in hot conditions (or 1/2 gallon in normal conditions) without being forced to make Constitution saving throws, and you are considered naturally adapted to hot climates. While in a desert, you can read the environment to predict natural weather patterns and temperatures for the next 24 hours, allowing you to cross dangerous terrain at the best times. The accuracy of your predictions is up to the GM, but they should be reliable unless affected by magic or unforeseeable events, such as distant earthquakes or volcanic eruptions.\r\n## Suggested Characteristics\r\nThose raised in the desert can be the friendliest of humanoids—knowing allies are better than enemies in that harsh environment—or territorial and warlike, believing that protecting food and water sources by force is the only way to survive.\n\n| d8 | Personality Trait |\n|----|--------------------------------------------------------------------------------------------|\n| 1  | I'm much happier sleeping under the stars than in a bed in a stuffy caravanserai.          |\n| 2  | It's always best to help a traveler in need; one day it might be you.                      |\n| 3  | I am slow to trust strangers, but I'm extremely loyal to my friends.                       |\n| 4  | If there's a camel race, I'm the first to saddle up!                                       |\n| 5  | I always have a tale or poem to share at the campfire.                                     |\n| 6  | I don't like sleeping in the same place more than two nights in a row.                     |\n| 7  | I've been troubled by dreams for the last month. I am determined to uncover their meaning. |\n| 8  | I feel lonelier in a crowded city than I do out on the empty desert sands.                 |\n\n| d6 | Ideal                                                                                                       |\n|----|-------------------------------------------------------------------------------------------------------------|\n| 1  | **Greater Good.** The needs of the whole tribe outweigh those of the individuals who are part of it. (Good)     |\n| 2  | **Nature.** I must do what I can to protect the beautiful wilderness from those who would do it harm. (Neutral) |\n| 3  | **Tradition.** I am duty-bound to follow my tribe's age-old route through the desert. (Lawful)                  |\n| 4  | **Change.** Things seldom stay the same and we must always be prepared to go with the flow. (Chaotic)           |\n| 5  | **Honor.** If I behave dishonorably, my actions will bring shame upon the entire tribe. (Lawful)                |\n| 6  | **Greed.** Seize what you want if no one gives it to you freely. (Evil)                                         |\n\n| d6 | Bond                                                                                                                       |\n|----|----------------------------------------------------------------------------------------------------------------------------|\n| 1  | I am the last living member of my tribe, and I cannot let their deaths go unavenged.                                       |\n| 2  | I follow the spiritual path of my tribe; it will bring me to the best afterlife when the time comes.                       |\n| 3  | My best friend has been sold into slavery to devils, and I need to rescue them before it is too late.                      |\n| 4  | A nature spirit saved my life when I was dying of thirst in the desert.                                                    |\n| 5  | My takoba sword is my most prized possession; for over two centuries, it's been handed down from generation to generation. |\n| 6  | I have sworn revenge on the sheikh who unjustly banished me from the tribe.                                                |\n\n| d6 | Flaw                                                                  |\n|----|-----------------------------------------------------------------------|\n| 1  | I enjoy the company of camels more than people.                       |\n| 2  | I can be loud and boorish after a few wineskins.                      |\n| 3  | If I feel insulted, I'll refuse to speak to anyone for several hours. |\n| 4  | I enjoy violence and mayhem a bit too much.                           |\n| 5  | You can't rely on me in a crisis.                                     |\n| 6  | I betrayed my brother to cultists to save my own skin.                |\r\n\r\nSource: ~\"Tome of Heroes\"\r\n",
+      "rawPublic": "",
+      "labels": [
+        "D&D 5E",
+        "Background",
+        "Kobold Press",
+        "Tome of Heroes"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Background - Desert Runner"
+    },
+    {
+      "rawText": "# Destined\r\nDuty is a complicated, tangled affair, be it filial, political, or civil. Sometimes, there's wealth and intrigue involved, but more often than not, there's also obligation and responsibility. You are a person with just such a responsibility. This could involve a noble title, an arranged marriage, a family business you're expected to administer, or an inherited civil office. You promised to fulfill this responsibility, you are desperately trying to avoid this duty, or you might even be seeking the person intended to be at your side. Regardless of the reason, you're on the road, heading toward or away from your destiny.\n\n***Destiny***\nYou're a person who's running from something or hurtling headfirst towards something, but just what is it? The responsibility or event might be happily anticipated or simply dreaded; either way, you're committed to the path. Choose a destiny or roll a d8 and consult the table below.\n\n| d8 | Destiny                                                                                                                  |\n|----|---------------------------------------------------------------------------------------------------------------------------|\n| 1  | You are running away from a marriage.                                                                                     |\n| 2  | You are seeking your runaway betrothed.                                                                                   |\n| 3  | You don't want to take over your famous family business.                                                                  |\n| 4  | You need to arrive at a religious site at a specific time to complete an event or prophecy.                               |\n| 5  | Your noble relative died, and you're required to take their vacant position.                                              |\n| 6  | You are the reincarnation of a famous figure, and you're expected to live in an isolated temple.                          |\n| 7  | You were supposed to serve an honorary but dangerous position in your people's military.                                  |\n| 8  | Members of your family have occupied a civil office (court scribe, sheriff, census official, or similar) for generations. |\r\n* Skill Profficiencies: History, Insight\r\n* Languages: One of your choice\r\n* Equipment: A dagger, quarterstaff, or spear, a set of traveler's clothes, a memento of your destiny (a keepsake from your betrothed, the seal of your destined office, your family signet ring, or similar), a belt pouch containing 15 gp\r\n## Reputation of Opportunity\r\nYour story precedes you, as does your quest to claim—or run away from—your destiny. Those in positions of power, such as nobles, bureaucrats, rich merchants, and even mercenaries and brigands, all look to either help or hinder you, based on what they think they may get out of it. They're always willing to meet with you briefly to see just how worthwhile such aid or interference might be. This might mean a traveler pays for your passage on a ferry, a generous benefactor covers your group's meals at a tavern, or a local governor invites your adventuring entourage to enjoy a night's stay in their guest quarters. However, the aid often includes an implied threat or request. Some might consider delaying you as long as politely possible, some might consider taking you prisoner for ransom or to do “what's best” for you, and others might decide to help you on your quest in exchange for some future assistance. You're never exactly sure of the associated “cost” of the person's aid until the moment arrives. In the meantime, the open road awaits.\r\n## Suggested Characteristics\r\nDestined characters might be running toward or away from destiny, but whatever the case, their destiny has shaped them. Think about the impact of your destiny on you and the kind of relationship you have with your destiny. Do you embrace it? Accept it as inevitable? Or do you fight it every step of the way?\n\n| d8 | Personality Trait                                                                                                                            |\n|----|----------------------------------------------------------------------------------------------------------------------------------------------|\n| 1  | I'm eager to find this destiny and move on with the next stage in my life.                                                                   |\n| 2  | I keep the fire of my hope burning bright. I'm sure this will work out for the best.                                                         |\n| 3  | Fate has a way of finding you no matter what you do. I'm resigned to whatever they have planned for me, but I'll enjoy my time on the way.   |\n| 4  | I owe it to myself or to those who helped establish this destiny. I'm determined to follow this through to the end.                          |\n| 5  | I don't know what this path means for me or my future. I'm more afraid of going back to that destiny than of seeing what's out in the world. |\n| 6  | I didn't ask for this, and I don't want it. I'm bitter that I must change my life for it.                                                    |\n| 7  | Few have been chosen to complete this lifepath, and I'm proud to be one of them.                                                             |\n| 8  | Who can say how this will work out? The world is an uncertain place, and I'll find my destiny when it finds me.                              |\n\n| d6 | Ideal                                                                                                          |\n|----|----------------------------------------------------------------------------------------------------------------|\n| 1  | **Inevitability.** What's coming can't be stopped, and I'm dedicated to making it happen. (Evil)               |\n| 2  | **Tradition.** I'm part of a cycle that has repeated for generations. I can't deny that. (Any)                 |\n| 3  | **Defiance.** No one can make me be something I don't want to be. (Any)                                        |\n| 4  | **Greater Good.** Completing my duty ensures the betterment of my family, community, or region. (Good)         |\n| 5  | **Power.** If I can take this role and be successful, I'll have opportunities to do whatever I want. (Chaotic) |\n| 6  | **Responsibility.** It doesn't matter if I want it or not; it's what I'm supposed to do. (Lawful)              |\n\n| d6 | Bond                                                                                                                  |\n|----|-----------------------------------------------------------------------------------------------------------------------|\n| 1  | The true gift of my destiny is the friendships I make along the way to it.                                            |\n| 2  | The benefits of completing this destiny will strengthen my family for years to come.                                  |\n| 3  | Trying to alter my decision regarding my destiny is an unthinkable affront to me.                                     |\n| 4  | How I reach my destiny is just as important as how I accomplish my destiny.                                           |\n| 5  | People expect me to complete this task. I don't know how I feel about succeeding or failing, but I'm committed to it. |\n| 6  | Without this role fulfilled, the people of my home region will suffer, and that's not acceptable.                     |\n\n| d6 | Flaw                                                                                          |\n|----|-----------------------------------------------------------------------------------------------|\n| 1  | If you don't have a destiny, are you really special?                                          |\n| 2  | But I am the “Chosen One.”                                                                    |\n| 3  | I fear commitment; that's what this boils down to in the end.                                 |\n| 4  | What if I follow through with this and I fail?                                                |\n| 5  | It doesn't matter what someone else sacrificed for this. I only care about my feelings.       |\n| 6  | Occasionally—ok, maybe “often”—I make poor decisions in life, like running from this destiny. |\r\n\r\nSource: ~\"Tome of Heroes\"\r\n",
+      "rawPublic": "",
+      "labels": [
+        "D&D 5E",
+        "Background",
+        "Kobold Press",
+        "Tome of Heroes"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Background - Destined"
+    },
+    {
+      "rawText": "# Diplomat\r\nYou have always found harmonious solutions to conflict. You might have started mediating family conflicts as a child. When you were old enough to recognize aggression, you sought to defuse it. You often resolved disputes among neighbors, arriving at a fair middle ground satisfactory to all parties.\r\n* Skill Profficiencies: Insight, Persuasion\r\n* Languages: Two of your choice\r\n* Equipment: A set of fine clothes, a letter of passage from a local minor authority or traveling papers that signify you as a traveling diplomat, and a belt pouch containing 20 gp\r\n## A Friend in Every Port\r\nYour reputation as a peacemaker precedes you, or people recognize your easy demeanor, typically allowing you to attain food and lodging at a discount. In addition, people are predisposed to warn you about dangers in a location, alert you when a threat approaches you, or seek out your help for resolving conflicts between locals.\r\n## Suggested Characteristics\r\nDiplomats always have kind words and encourage their companions to think positively when encountering upsetting situations or people. Diplomats have their limits, however, and are quick to discover when someone is negotiating in bad faith.\n\n| d8 | Personality Trait                                                                                             |\n|----|---------------------------------------------------------------------------------------------------------------|\n| 1  | I like to travel, meet new people, and learn about different customs.                                         |\n| 2  | I intercede in minor squabbles to find common ground on all sides.                                            |\n| 3  | I never disparage others, even when they might deserve such treatment.                                        |\n| 4  | I always try to make a new friend wherever I travel, and when I return to those areas, I seek out my friends. |\n| 5  | I have learned how to damn with faint praise, but I only use it when someone has irked me.                    |\n| 6  | I am not opposed to throwing a bit of coin around to ensure a good first impression.                          |\n| 7  | Even when words fail at the outset, I still try to calm tempers.                                              |\n| 8  | I treat everyone as an equal, and I encourage others to do likewise.                                          |\n\n| d6 | Ideal                                                                                                                              |\n|----|------------------------------------------------------------------------------------------------------------------------------------|\n| 1  | **Harmony.** I want everyone to get along. (Good)                                                                                      |\n| 2  | **Contractual.** When I resolve a conflict, I ensure all parties formally acknowledge the resolution. (Lawful)                         |\n| 3  | **Selfishness.** I use my way with words to benefit myself the most. (Evil) 4 Freedom. Tyranny is a roadblock to compromise. (Chaotic) |\n| 4  | **Freedom.** Tyranny is a roadblock to compromise. (Chaotic)                                                                           |\n| 5  | **Avoidance.** A kind word is preferable to the drawing of a sword. (Any)                                                              |\n| 6  | **Unity.** It is possible to achieve a world without borders and without conflict. (Any)                                               |\n\n| d6 | Bond |\n|----|------|\n| 1  | I want to engineer a treaty with far-reaching effects in the world. |\n| 2  | I am carrying out someone else's agenda and making favorable arrangements for my benefactor. |\n| 3  | A deal I brokered went sour, and I am trying to make amends for my mistake. |\n| 4  | My nation treats everyone equitably, and I'd like to bring that enlightenment to other nations. |\n| 5  | A traveling orator taught me the power of words, and I want to emulate that person. |\n| 6  | I fear a worldwide conflict is imminent, and I want to do all I can to stop it. |\n\n| d6 | Flaw |\n|----|------|\n| 1  | I always start by appealing to a better nature from those I face, regardless of their apparent hostility. |\n| 2  | I assume the best in everyone, even if I have been betrayed by that trust in the past. |\n| 3  | I will stand in the way of an ally to ensure conflicts don't start. |\n| 4  | I believe I can always talk my way out of a problem. |\n| 5  | I chastise those who are rude or use vulgar language. |\n| 6  | When I feel I am on the verge of a successful negotiation, I often push my luck to obtain further concessions. |\r\n\r\nSource: ~\"Tome of Heroes\"\r\n",
+      "rawPublic": "",
+      "labels": [
+        "D&D 5E",
+        "Background",
+        "Kobold Press",
+        "Tome of Heroes"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Background - Diplomat"
+    },
+    {
+      "rawText": "# Forest Dweller\r\nYou are a creature of the forest, born and reared under a canopy of green. You expected to live all your days in the forest, at one with the green things of the world, until an unforeseen occurrence, traumatic or transformative, drove you from your familiar home and into the larger world. Civilization is strange to you, the open sky unfamiliar, and the bizarre ways of the so-called civilized world run counter to the truths of the natural world.\r\n* Skill Profficiencies: Nature, Survival\r\n* Languages: Sylvan\r\n* Equipment: A set of common clothes, a hunting trap, a wood staff, a whetstone, an explorer's pack, and a pouch containing 5 gp\r\n## Forester\r\nYour experience living, hunting, and foraging in the woods gives you a wealth of experience to draw upon when you are traveling within a forest. If you spend 1 hour observing, examining, and exploring your surroundings while in a forest, you are able to identify a safe location to rest. The area is protected from all but the most extreme elements and from the nonmagical native beasts of the forest. In addition, you are able to find sufficient kindling for a small fire throughout the night.\n\n ***Life-Changing Event***\nYou have lived a simple life deep in the sheltering boughs of the forest, be it as a trapper, farmer, or villager eking out a simple existence in the forest. But something happened that set you on a different path and marked you for greater things. Choose or randomly determine a defining event that caused you to leave your home for the wider world. \n\n**Event Options (table)**\n\n| d8 | Event                                                                                                                                                                                                                                                       |\n|----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| 1  | You were living within the forest when cesspools of magical refuse from a nearby city expanded and drove away the game that sustained you. You had to move to avoid the prospect of a long, slow demise via starvation.                                    |\n| 2  | Your village was razed by a contingent of undead. For reasons of its own, the forest and its denizens protected and hid you from their raid.                                                                                                               |\n| 3  | A roving band of skeletons and zombies attacked your family while you were hunting.                                                                                                                                                                        |\n| 4  | You are an ardent believer in the preservation of the forest and the natural world. When the people of your village abandoned those beliefs, you were cast out and expelled into the forest.                                                               |\n| 5  | You wandered into the forest as a child and became lost. For inexplicable reasons, the forest took an interest in you. You have faint memories of a village and have had no contact with civilization in many years.                                       |\n| 6  | You were your village's premier hunter. They relied on you for game and without your contributions their survival in the winter was questionable. Upon returning from your last hunt, you found your village in ruins, as if decades had passed overnight. |\n| 7  | Your quiet, peaceful, and solitary existence has been interrupted with dreams of the forest's destruction, and the urge to leave your home compels you to seek answers.                                                                                    |\n| 8  | Once in a hidden glen, you danced with golden fey and forgotten gods. Nothing in your life since approaches that transcendent moment, cursing you with a wanderlust to seek something that could.                                                          |\r\n## Suggested Characteristics\r\nForest dwellers tend toward solitude, introspection, and self-sufficiency. You keep your own council, and you are more likely to watch from a distance than get involved in the affairs of others. You are wary, slow to trust, and cautious of depending on outsiders.\n\n| d8 | Personality Trait                                                                                                                                                                                 |\n|----|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| 1  | I will never forget being hungry in the winter. I field dress beasts that fall to blade or arrow so that I am never hungry again.                                                                 |\n| 2  | I may be alone in the forest, but I am only ever lonely in cities.                                                                                                                                |\n| 3  | Walking barefoot allows me to interact more intuitively with the natural world.                                                                                                                   |\n| 4  | The road is just another kind of wall. I make my own paths and go where I will.                                                                                                                   |\n| 5  | Others seek the gods in temples and shrines, but I know their will is only revealed in the natural world, not an edifice constructed by socalled worshippers. I pray in the woods, never indoors. |\n| 6  | What you call personal hygiene, I call an artificially imposed distraction from natural living.                                                                                                   |\n| 7  | No forged weapon can replace the sheer joy of a kill accomplished only with hands and teeth.                                                                                                      |\n| 8  | Time lived alone has made me accustomed to talking loudly to myself, something I still do even when others are present.                                                                           |\n\n| d6 | Ideal                                                                                                                                                                                          |\n|----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| 1  | Change. As the seasons shift, so too does the world around us. To resist is futile and anathema to the natural order. (Chaotic)                                                                |\n| 2  | Conservation. All life should be preserved and, if needed, protected. (Good)                                                                                                                   |\n| 3  | Acceptance. I am a part of my forest, no different from any other flora and fauna. To think otherwise is arrogance and folly. When I die, it will be as a leaf falling in the woods. (Neutral) |\n| 4  | Cull. The weak must be removed for the strong to thrive. (Evil)                                                                                                                                |\n| 5  | Candor. I am open, plain, and simple in life, word, and actions. (Any)                                                                                                                         |\n| 6  | Balance. The forest does not lie. The beasts do not create war. Equity in all things is the way of nature. (Neutral)                                                                           |\n\n| d6 | Bond                                                                                                   |\n|----|--------------------------------------------------------------------------------------------------------|\n| 1  | When I lose a trusted friend or companion, I plant a tree upon their grave.                            |\n| 2  | The voice of the forest guides me, comforts me, and protects me.                                       |\n| 3  | The hermit who raised me and taught me the ways of the forest is the most important person in my life. |\n| 4  | I have a wooden doll, a tiny wickerman, that I made as a child and carry with me at all times.         |\n| 5  | I know the ways of civilizations rise and fall. The forest and the Old Ways are eternal.               |\n| 6  | I am driven to protect the natural order from those that would disrupt it.                             |\n\n| d6 | Flaw                                                                                                                                                                   |\n|----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| 1  | I am accustomed to doing what I like when I like. I'm bad at compromising, and I must exert real effort to make even basic conversation with other people.             |\n| 2  | I won't harm a beast without just cause or provocation.                                                                                                                |\n| 3  | Years of isolated living has left me blind to the nuances of social interaction. It is a struggle not to view every new encounter through the lens of fight or flight. |\n| 4  | The decay after death is merely the loam from which new growth springs—and I enjoy nurturing new growth.                                                               |\n| 5  | An accident that I caused incurred great damage upon my forest, and, as penance, I have placed myself in self-imposed exile.                                           |\n| 6  | I distrust the undead and the unliving, and I refuse to work with them.                                                                                                |\r\n\r\nSource: ~\"Tome of Heroes\"\r\n",
+      "rawPublic": "",
+      "labels": [
+        "D&D 5E",
+        "Background",
+        "Kobold Press",
+        "Tome of Heroes"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Background - Forest Dweller"
     },
     {
       "rawText": null,
@@ -629,6 +786,20 @@
       "labels": null,
       "tagSymbol": "~",
       "tagValue": "5e Core Rules"
+    },
+    {
+      "rawText": null,
+      "rawPublic": "# Level Up Advanced 5e\r\n## Description\r\nAdvanced 5th Edition System Reference Document by EN Publishing\r\n## License\r\nCreative Commons Attribution 4.0 International License\r\n## Version\r\n1.0\r\n## Author(s)\r\nEN Publishing\r\n## Organization\r\nEN Publishing™\r\n## URL\r\nhttps://a5esrd.com/a5esrd\r\n## Copyright\r\nThis work includes material taken from the A5E System Reference Document (A5ESRD) by EN Publishing and available at A5ESRD.com, based on Level Up: Advanced 5th Edition, available at www.levelup5e.com. The A5ESRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.\r\n",
+      "labels": null,
+      "tagSymbol": "~",
+      "tagValue": "Level Up Advanced 5e"
+    },
+    {
+      "rawText": null,
+      "rawPublic": "# Tome of Heroes\r\n## Description\r\nTome of Heroes Open-Gaming License Content by Kobold Press\r\n## License\r\nOpen Gaming License\r\n## Version\r\n1.0\r\n## Author(s)\r\nKelly Pawlik, Ben Mcfarland, and Briand Suskind\r\n## Organization\r\nKobold Press™\r\n## URL\r\nhttps://koboldpress.com/kpstore/product/tome-of-heroes-for-5th-edition/\r\n## Copyright\r\nTome of Heroes. Copyright 2022, Open Design; Authors Kelly Pawlik, Ben Mcfarland, and Briand Suskind.\r\n",
+      "labels": null,
+      "tagSymbol": "~",
+      "tagValue": "Tome of Heroes"
     }
   ],
   "logs": []

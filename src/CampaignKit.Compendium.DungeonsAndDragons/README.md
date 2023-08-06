@@ -3,18 +3,22 @@
 
 This module supports the generation of compendiums for Dungeons & Dragons 5th Edition. It leverages open-source data from the following [open5e-api ](https://github.com/open5e/open5e-api) data sets:
 
-* **Systems Reference Document** (Wizards of the Coast)
-* **Tome of Beasts**, Kobold Press
+* **Advanced 5th Edition**, EN Publishing
+* **Creature Codex**, Kobold Press
+* **Deep Magic Extended**, Kobold Press
+* **Deep Magic**, Kobold Press
+* **Monstrous Menagerie**, Kobold Press
+* **Systems Reference Document**, Wizards of the Coast
 * **Tome of Beasts 2**, Kobold Press
 * **Tome of Beasts 3**, Kobold Press
-* **Creature Codex**, Kobold Press
-* **Monstrous Menagerie**, Kobold Press
-* **Advanced 5th Edition**, EN Publishing
+* **Tome of Beasts**, Kobold Press
+* **Vault of Magic**, Kobold Press
+* **Warlock Archives**, Kobold Press
 
 The application is configured to create two different compendiums from these data sets:
 
-* **5e Bestiary.json** - Full set of 2,136 monsters.
-* **5e Bestiary Test.json** - Subset of monsters from each set, used for quick testing and validation.
+* **Dungeons and Dragons Compendium.json** - Full compendium of items, spells, classes, races, feats, backgrounds, items, and monsters.
+* **Dungeons and Dragons Compendium - Test.json** - Subset of the above used for QA purposes.
 
 ## Configuration
 
@@ -55,7 +59,9 @@ Configure the module in `appsettings.json` or `secrets.json` as follows:
         // URI of source data set.
         "SourceDataSetURI": "https://raw.githubusercontent.com/open5e/open5e-api/main/data/WOTC_5e_SRD_v5.1/monsters.json",
         // Symbol to use for campaign entries derived from the source data.
-        "TagSymbol":  "~"
+        "TagSymbol":  "~",
+        // Optional prefix to append to the entry name.  This can be helpful for cases where name collisions occur between different items.  For example: an `Acolyte` is both a background and a monster.
+        "TagValuePrefix": "Spell - "
     },
     // Other datasets...
     ],

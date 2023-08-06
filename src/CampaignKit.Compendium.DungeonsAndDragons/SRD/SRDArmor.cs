@@ -35,10 +35,31 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         public int? BaseAc { get; set; } = int.MinValue;
 
         /// <summary>
+        /// Gets or sets the cateogry of the armor.
+        /// </summary>
+        [JsonProperty("category")]
+        public string? Category { get; set; } = string.Empty;
+
+        /// <summary>
         /// Gets or sets the cost of the armor.
         /// </summary>
         [JsonProperty("cost")]
         public string? Cost { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Gets or sets the description of the magic item.
+        /// </summary>
+        [JsonProperty("desc")]
+        public string? Desc { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
+        public List<string>? Labels { get; set; } = new List<string> { };
+
+        /// <summary>
+        /// Gets or sets the name of the magic item.
+        /// </summary>
+        [JsonProperty("name")]
+        public string? Name { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the whether this armor allows the character to add their constitution modifier
@@ -75,6 +96,15 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         public bool? PlusWisMod { get; set; } = false;
 
         /// <summary>
+        /// Gets or sets the rarity of the magic item.
+        /// </summary>
+        [JsonProperty("rarity")]
+        public string? Rarity { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
+        public string? SourceTitle { get; set; } = string.Empty;
+
+        /// <summary>
         /// Gets or sets whether the player has a stealth disadvantage while wearing this armor.
         /// </summary>
         [JsonProperty("stealth_disadvantage")]
@@ -86,44 +116,17 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         [JsonProperty("strength_requirement")]
         public int? StrengthRequirement { get; set; } = int.MinValue;
 
+        /// <inheritdoc/>
+        public string? TagSymbol { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
+        public string? TagValuePrefix { get; set; } = string.Empty;
+
         /// <summary>
         /// Gets or sets the weight of the armor.
         /// </summary>
         [JsonProperty("weight")]
         public string? Weight { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Gets or sets the cateogry of the armor.
-        /// </summary>
-        [JsonProperty("category")]
-        public string? Category { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Gets or sets the description of the magic item.
-        /// </summary>
-        [JsonProperty("desc")]
-        public string? Desc { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public List<string>? Labels { get; set; } = new List<string> { };
-
-        /// <summary>
-        /// Gets or sets the name of the magic item.
-        /// </summary>
-        [JsonProperty("name")]
-        public string? Name { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Gets or sets the rarity of the magic item.
-        /// </summary>
-        [JsonProperty("rarity")]
-        public string? Rarity { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public string? SourceTitle { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public string? TagSymbol { get; set; } = string.Empty;
 
         /// <inheritdoc/>
         public CampaignEntry ToCampaignEntry()
@@ -152,7 +155,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
             stringBuilder.AppendLine($"* Cost: {this.Cost}");
             stringBuilder.AppendLine($"* Weight: {this.Weight}");
 
-            if(this.StealthDisadvantage ?? false)
+            if (this.StealthDisadvantage ?? false)
             {
                 stringBuilder.AppendLine($"* Disadvantage on Stealth: Yes");
             }
@@ -175,7 +178,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
                 RawPublic = stringBuilder.ToString(),
                 Labels = this.Labels,
                 TagSymbol = this.TagSymbol,
-                TagValue = this.Name,
+                TagValue = $"{this.TagValuePrefix}{this.Name}",
             };
 
             return campaignEntry;

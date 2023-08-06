@@ -176,6 +176,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         public string? TagSymbol { get; set; } = string.Empty;
 
         /// <inheritdoc/>
+        public string? TagValuePrefix { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
         public CampaignEntry ToCampaignEntry()
         {
             // Create a markdown representation of the data.
@@ -216,7 +219,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
                 RawPublic = stringBuilder.ToString(),
                 Labels = this.Labels,
                 TagSymbol = this.TagSymbol,
-                TagValue = this.Name,
+                TagValue = $"{this.TagValuePrefix}{this.Name}",
             };
 
             return campaignEntry;

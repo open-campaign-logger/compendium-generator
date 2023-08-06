@@ -62,6 +62,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         /// <inheritdoc/>
         public string? TagSymbol { get; set; } = string.Empty;
 
+        /// <inheritdoc/>
+        public string? TagValuePrefix { get; set; } = string.Empty;
+
         /// <summary>
         /// Gets or sets the type of magic item.
         /// </summary>
@@ -92,7 +95,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
                 RawPublic = stringBuilder.ToString(),
                 Labels = this.Labels,
                 TagSymbol = this.TagSymbol,
-                TagValue = this.Name,
+                TagValue = $"{this.TagValuePrefix}{this.Name}",
             };
 
             return campaignEntry;

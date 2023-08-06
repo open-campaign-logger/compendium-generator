@@ -1,4 +1,4 @@
-﻿// <copyright file="SRDMagicItem.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="SRDHelper.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2023 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,8 +16,14 @@
 
 namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
 {
+    /// <summary>
+    /// Utility class to support conversion of SRD data.
+    /// </summary>
     internal static class SRDHelper
     {
+        /// <summary>
+        /// Default text for Necrotic Gnome OGL name.
+        /// </summary>
         public static readonly string NECROTICGNOMEOGL = "Necrotic Gnome OGL";
     }
 }
