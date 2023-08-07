@@ -11,7 +11,7 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
     {
 
         /// <summary>
-        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests
         /// </summary>
         [TestMethod]
         [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
@@ -33,7 +33,8 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
 
         }
 
-        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests
         /// </summary>
         [TestMethod]
         [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
@@ -63,7 +64,8 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
 
         }
 
-        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests
         /// </summary>
         [TestMethod]
         [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
@@ -83,7 +85,8 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
 
         }
 
-        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests
         /// </summary>
         [TestMethod]
         [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]

@@ -92,7 +92,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SRDWeapon : IGameComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public class SRDWeapon : SRDBase, IGameComponent</code></pre>
   </div>
 
 
@@ -102,6 +102,7 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html">SRDBase</a></div>
       <div><span class="xref">SRDWeapon</span></div>
     </dd>
   </dl>
@@ -117,6 +118,24 @@
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Desc">SRDBase.Desc</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Labels">SRDBase.Labels</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Name">SRDBase.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_SourceTitle">SRDBase.SourceTitle</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_TagSymbol">SRDBase.TagSymbol</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_TagValuePrefix">SRDBase.TagValuePrefix</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -281,76 +300,11 @@ public string? DamageType { get; set; }</code></pre>
 
 
 
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_Labels_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Labels*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_Labels" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Labels">
-  Labels
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDWeapon.cs/#L56"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the list of labels associated with this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;string&gt;? Labels { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_Name_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Name*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_Name" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Name">
-  Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDWeapon.cs/#L61"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the name of the weapon.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;name&quot;)]
-public string? Name { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_Properties_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Properties*"></a>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_Properties" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Properties">
   Properties
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDWeapon.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDWeapon.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the properties of the weapon.</p>
@@ -379,107 +333,11 @@ public List&lt;string&gt; Properties { get; set; }</code></pre>
 
 
 
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_SourceTitle_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.SourceTitle*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_SourceTitle" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.SourceTitle">
-  SourceTitle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDWeapon.cs/#L71"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the title of the source of the game component's data.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? SourceTitle { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_TagSymbol_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.TagSymbol*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_TagSymbol" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.TagSymbol">
-  TagSymbol
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDWeapon.cs/#L74"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the list of labels associated with this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? TagSymbol { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_TagValuePrefix_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.TagValuePrefix*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_TagValuePrefix" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.TagValuePrefix">
-  TagValuePrefix
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDWeapon.cs/#L77"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the tag value prefix for this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? TagValuePrefix { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_Weight_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Weight*"></a>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_Weight" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Weight">
   Weight
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDWeapon.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDWeapon.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the weight of the weapon.</p>
@@ -516,22 +374,22 @@ public string? Weight { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_ToCampaignEntry" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.ToCampaignEntry">
   ToCampaignEntry()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDWeapon.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDWeapon.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generates a CampaignLogger Entry for this game component.</p>
+  <div class="markdown level1 summary"><p>Generate a Campaign Entry that represents this object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CampaignEntry ToCampaignEntry()</code></pre>
+    <pre><code class="lang-csharp hljs">public override CampaignEntry ToCampaignEntry()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="CampaignKit.Compendium.Core.CampaignLogger.CampaignEntry.html">CampaignEntry</a></dt>
-    <dd><p>A CampaignLogger Entry for this game component.</p>
+    <dd><p>A Campaign Entry that represents this object.</p>
 </dd>
   </dl>
 

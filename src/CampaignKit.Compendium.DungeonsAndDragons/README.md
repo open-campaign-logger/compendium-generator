@@ -17,7 +17,7 @@ This module supports the generation of compendiums for Dungeons & Dragons 5th Ed
 
 The application is configured to create two different compendiums from these data sets:
 
-* **Dungeons and Dragons Compendium.json** - Full compendium of items, spells, classes, races, feats, backgrounds, items, and monsters.
+* **Dungeons and Dragons Compendium.json** - Full compendium of items, spells, classes, races, feats, backgrounds, conditions, items, and monsters.
 * **Dungeons and Dragons Compendium - Test.json** - Subset of the above used for QA purposes.
 
 ## Configuration
@@ -66,7 +66,7 @@ Configure the module in `appsettings.json` or `secrets.json` as follows:
     // Other datasets...
     ],
     // Compendium title.
-    "Title": "5e Bestiary - Test"
+    "Title": "Dungeons and Dragons Compendium - Test"
 }
 ```
 

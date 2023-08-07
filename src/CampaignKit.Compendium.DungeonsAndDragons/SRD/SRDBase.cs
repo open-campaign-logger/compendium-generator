@@ -1,4 +1,4 @@
-﻿// <copyright file="SRDGear.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="SRDBase.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2023 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,12 +24,12 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
     using Newtonsoft.Json;
 
     /// <summary>
-    /// Represents an item of gear in a Dungeons and Dragons game.
+    /// Represents a base class for all Dungeons and Dragons game components.
     /// </summary>
-    public class SRDGear : IGameComponent
+    public class SRDBase : IGameComponent
     {
         /// <summary>
-        /// Gets or sets the description of the magic item.
+        /// Gets or sets the description of the game component.
         /// </summary>
         [JsonProperty("desc")]
         public string? Desc { get; set; } = string.Empty;
@@ -38,7 +38,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         public List<string>? Labels { get; set; } = new List<string> { };
 
         /// <summary>
-        /// Gets or sets the name of the magic item.
+        /// Gets or sets the name of the game component.
         /// </summary>
         [JsonProperty("name")]
         public string? Name { get; set; } = string.Empty;
@@ -53,7 +53,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         public string? TagValuePrefix { get; set; } = string.Empty;
 
         /// <inheritdoc/>
-        public CampaignEntry ToCampaignEntry()
+        public virtual CampaignEntry ToCampaignEntry()
         {
             // Create a markdown representation of the data.
             var stringBuilder = new StringBuilder();

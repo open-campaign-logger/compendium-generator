@@ -26,7 +26,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
     /// <summary>
     /// Represents an item of gear in a Dungeons and Dragons game.
     /// </summary>
-    public class SRDArmor : IGameComponent
+    public class SRDArmor : SRDBase
     {
         /// <summary>
         /// Gets or sets the base AC for the armor.
@@ -45,21 +45,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         /// </summary>
         [JsonProperty("cost")]
         public string? Cost { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Gets or sets the description of the magic item.
-        /// </summary>
-        [JsonProperty("desc")]
-        public string? Desc { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public List<string>? Labels { get; set; } = new List<string> { };
-
-        /// <summary>
-        /// Gets or sets the name of the magic item.
-        /// </summary>
-        [JsonProperty("name")]
-        public string? Name { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the whether this armor allows the character to add their constitution modifier
@@ -101,9 +86,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         [JsonProperty("rarity")]
         public string? Rarity { get; set; } = string.Empty;
 
-        /// <inheritdoc/>
-        public string? SourceTitle { get; set; } = string.Empty;
-
         /// <summary>
         /// Gets or sets whether the player has a stealth disadvantage while wearing this armor.
         /// </summary>
@@ -116,53 +98,63 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         [JsonProperty("strength_requirement")]
         public int? StrengthRequirement { get; set; } = int.MinValue;
 
-        /// <inheritdoc/>
-        public string? TagSymbol { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public string? TagValuePrefix { get; set; } = string.Empty;
-
         /// <summary>
         /// Gets or sets the weight of the armor.
         /// </summary>
         [JsonProperty("weight")]
         public string? Weight { get; set; } = string.Empty;
 
-        /// <inheritdoc/>
-        public CampaignEntry ToCampaignEntry()
+        /// <summary>
+        /// Generate a Campaign Entry that represents this object.
+        /// </summary>
+        /// <returns>A Campaign Entry that represents this object.</returns>
+        public override CampaignEntry ToCampaignEntry()
         {
             // Create a markdown representation of the data.
             var stringBuilder = new StringBuilder();
             stringBuilder.AppendLine($"# {this.Name}");
-            stringBuilder.AppendLine($"* Category: {this.Category}");
-            stringBuilder.AppendLine($"* Rarity: {this.Rarity}");
-            stringBuilder.AppendLine($"* Base AC: {this.BaseAc}");
+            if (!string.IsNullOrEmpty(this.Desc))
+            {
+                stringBuilder.AppendLine($"{this.Desc}");
+            }
+
+            if (!string.IsNullOrEmpty(this.Category))
+            {
+                stringBuilder.AppendLine($"* {{b|Category}}: {this.Category}");
+            }
+
+            if (!string.IsNullOrEmpty(this.Rarity))
+            {
+                stringBuilder.AppendLine($"* {{b|Rarity}}: {this.Rarity}");
+            }
+
+            stringBuilder.AppendLine($"* {{b|Base AC}}: {this.BaseAc}");
             if (this.PlusDexMod ?? false)
             {
-                stringBuilder.AppendLine($"* Add Dexterity Modifier?: Yes");
+                stringBuilder.AppendLine($"* {{b|Add Dexterity Modifier?}}: Yes");
             }
 
             if (this.PlusConMod ?? false)
             {
-                stringBuilder.AppendLine($"* Add Constitution Modifier?: Yes");
+                stringBuilder.AppendLine($"* {{b|Add Constitution Modifier?}}: Yes");
             }
 
             if (this.PlusFlatMod != int.MinValue)
             {
-                stringBuilder.AppendLine($"* Flat AC Bonus: {this.PlusFlatMod}");
+                stringBuilder.AppendLine($"* {{b|Flat AC Bonus}}: {this.PlusFlatMod}");
             }
 
-            stringBuilder.AppendLine($"* Cost: {this.Cost}");
-            stringBuilder.AppendLine($"* Weight: {this.Weight}");
+            stringBuilder.AppendLine($"* {{b|Cost}}: {this.Cost}");
+            stringBuilder.AppendLine($"* {{b|Weight}}: {this.Weight}");
 
             if (this.StealthDisadvantage ?? false)
             {
-                stringBuilder.AppendLine($"* Disadvantage on Stealth: Yes");
+                stringBuilder.AppendLine($"* {{b|Disadvantage on Stealth}}: Yes");
             }
 
             if (this.StrengthRequirement != int.MinValue)
             {
-                stringBuilder.AppendLine($"* Strength Requirement: {this.StrengthRequirement}");
+                stringBuilder.AppendLine($"* {{b|Strength Requirement}}: {this.StrengthRequirement}");
             }
 
             // Add Attribution

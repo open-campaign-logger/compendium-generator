@@ -26,7 +26,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
     /// <summary>
     /// Represents a weapon in a Dungeons and Dragons game.
     /// </summary>
-    public class SRDWeapon : IGameComponent
+    public class SRDWeapon : SRDBase
     {
         /// <summary>
         /// Gets or sets the cateogry of the weapon.
@@ -52,29 +52,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         [JsonProperty("damage_type")]
         public string? DamageType { get; set; } = string.Empty;
 
-        /// <inheritdoc/>
-        public List<string>? Labels { get; set; } = new List<string> { };
-
-        /// <summary>
-        /// Gets or sets the name of the weapon.
-        /// </summary>
-        [JsonProperty("name")]
-        public string? Name { get; set; } = string.Empty;
-
         /// <summary>
         /// Gets or sets the properties of the weapon.
         /// </summary>
         [JsonProperty("properties")]
         public List<string> Properties { get; set; } = new List<string>();
-
-        /// <inheritdoc/>
-        public string? SourceTitle { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public string? TagSymbol { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public string? TagValuePrefix { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the weight of the weapon.
@@ -82,18 +64,26 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         [JsonProperty("weight")]
         public string? Weight { get; set; } = string.Empty;
 
-        /// <inheritdoc/>
-        public CampaignEntry ToCampaignEntry()
+        /// <summary>
+        /// Generate a Campaign Entry that represents this object.
+        /// </summary>
+        /// <returns>A Campaign Entry that represents this object.</returns>
+        public override CampaignEntry ToCampaignEntry()
         {
             // Create a markdown representation of the data.
             var stringBuilder = new StringBuilder();
             stringBuilder.AppendLine($"# {this.Name}");
-            stringBuilder.AppendLine($"* Category: {this.Category}");
-            stringBuilder.AppendLine($"* Cost: {this.Cost}");
-            stringBuilder.AppendLine($"* Damage Dice: {this.DamageDice}");
-            stringBuilder.AppendLine($"* Damage Type: {this.DamageType}");
-            stringBuilder.AppendLine($"* Weight: {this.Weight}");
-            stringBuilder.AppendLine($"* Properties: {string.Join(", ", this.Properties)}");
+            if (!string.IsNullOrEmpty(this.Desc))
+            {
+                stringBuilder.AppendLine($"{this.Desc}");
+            }
+
+            stringBuilder.AppendLine($"* {{b|Category}}: {this.Category}");
+            stringBuilder.AppendLine($"* {{b|Cost}}: {this.Cost}");
+            stringBuilder.AppendLine($"* {{b|Damage Dice}}: {this.DamageDice}");
+            stringBuilder.AppendLine($"* {{b|Damage Type}}: {this.DamageType}");
+            stringBuilder.AppendLine($"* {{b|Weight}}: {this.Weight}");
+            stringBuilder.AppendLine($"* {{b|Properties}}: {string.Join(", ", this.Properties)}");
 
             // Add Attribution
             if (!string.IsNullOrEmpty(this.SourceTitle))

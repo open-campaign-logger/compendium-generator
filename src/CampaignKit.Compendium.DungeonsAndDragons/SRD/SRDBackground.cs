@@ -26,7 +26,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
     /// <summary>
     /// Class representing a Dungeons &amp; Dragons class background.
     /// </summary>
-    public class SRDBackground : IGameComponent
+    public class SRDBackground : SRDBase
     {
         /// <summary>
         /// Gets or sets the ability score increases associated with the background.
@@ -39,12 +39,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         /// </summary>
         [JsonProperty("adventures-and-advancement")]
         public string? AdventuresAndAdvancement { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Gets or sets the description of the background.
-        /// </summary>
-        [JsonProperty("desc")]
-        public string? Desc { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the equipment associated with the background.
@@ -70,9 +64,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         [JsonProperty("feature-name")]
         public string? FeatureName { get; set; } = string.Empty;
 
-        /// <inheritdoc/>
-        public List<string>? Labels { get; set; } = new List<string> { };
-
         /// <summary>
         /// Gets or sets the languages associated with the background.
         /// </summary>
@@ -80,19 +71,10 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         public string? Languages { get; set; } = string.Empty;
 
         /// <summary>
-        /// Gets or sets the name of the background.
-        /// </summary>
-        [JsonProperty("name")]
-        public string? Name { get; set; } = string.Empty;
-
-        /// <summary>
         /// Gets or sets the skill proficiencies associated with the background.
         /// </summary>
         [JsonProperty("skill-proficiencies")]
         public string? SkillProficiencies { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public string? SourceTitle { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the suggested characteristics related to the background.
@@ -100,14 +82,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         [JsonProperty("suggested-characteristics")]
         public string? SuggestedCharacteristics { get; set; } = string.Empty;
 
-        /// <inheritdoc/>
-        public string? TagSymbol { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public string? TagValuePrefix { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public CampaignEntry ToCampaignEntry()
+        /// <summary>
+        /// Generate a Campaign Entry that represents this object.
+        /// </summary>
+        /// <returns>A Campaign Entry that represents this object.</returns>
+        public override CampaignEntry ToCampaignEntry()
         {
             // Create a markdown representation of the data.
             var stringBuilder = new StringBuilder();
@@ -115,22 +94,22 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
             stringBuilder.AppendLine(this.Desc);
             if (!string.IsNullOrEmpty(this.SkillProficiencies))
             {
-                stringBuilder.AppendLine($"* Skill Profficiencies: {this.SkillProficiencies}");
+                stringBuilder.AppendLine($"* {{b|Skill Profficiencies}}: {this.SkillProficiencies}");
             }
 
             if (!string.IsNullOrEmpty(this.AbilityScoreIncreases))
             {
-                stringBuilder.AppendLine($"* Ability Score Increates: {this.AbilityScoreIncreases}");
+                stringBuilder.AppendLine($"* {{b|Ability Score Increates}}: {this.AbilityScoreIncreases}");
             }
 
             if (!string.IsNullOrEmpty(this.Languages))
             {
-                stringBuilder.AppendLine($"* Languages: {this.Languages}");
+                stringBuilder.AppendLine($"* {{b|Languages}}: {this.Languages}");
             }
 
             if (!string.IsNullOrEmpty(this.Equipment))
             {
-                stringBuilder.AppendLine($"* Equipment: {this.Equipment}");
+                stringBuilder.AppendLine($"* {{b|Equipment}}: {this.Equipment}");
             }
 
             if (!string.IsNullOrEmpty(this.FeatureName))

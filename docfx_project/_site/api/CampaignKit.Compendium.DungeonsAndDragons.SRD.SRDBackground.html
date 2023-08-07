@@ -92,7 +92,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SRDBackground : IGameComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public class SRDBackground : SRDBase, IGameComponent</code></pre>
   </div>
 
 
@@ -102,6 +102,7 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html">SRDBase</a></div>
       <div><span class="xref">SRDBackground</span></div>
     </dd>
   </dl>
@@ -117,6 +118,24 @@
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Desc">SRDBase.Desc</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Labels">SRDBase.Labels</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Name">SRDBase.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_SourceTitle">SRDBase.SourceTitle</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_TagSymbol">SRDBase.TagSymbol</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_TagValuePrefix">SRDBase.TagValuePrefix</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -215,44 +234,11 @@ public string? AdventuresAndAdvancement { get; set; }</code></pre>
 
 
 
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_Desc_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Desc*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_Desc" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Desc">
-  Desc
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L46"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the description of the background.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;desc&quot;)]
-public string? Desc { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_Equipment_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Equipment*"></a>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_Equipment" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Equipment">
   Equipment
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the equipment associated with the background.</p>
@@ -285,7 +271,7 @@ public string? Equipment { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_FeatureDesc" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureDesc">
   FeatureDesc
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the description of the feature related to the background.</p>
@@ -318,7 +304,7 @@ public string? FeatureDesc { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_FeatureDescription" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureDescription">
   FeatureDescription
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the description of the feature related to the background.</p>
@@ -351,7 +337,7 @@ public string? FeatureDescription { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_FeatureName" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureName">
   FeatureName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the name of the feature related to the background.</p>
@@ -380,43 +366,11 @@ public string? FeatureName { get; set; }</code></pre>
 
 
 
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_Labels_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Labels*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_Labels" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Labels">
-  Labels
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L74"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the list of labels associated with this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;string&gt;? Labels { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_Languages_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Languages*"></a>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_Languages" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Languages">
   Languages
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the languages associated with the background.</p>
@@ -445,44 +399,11 @@ public string? Languages { get; set; }</code></pre>
 
 
 
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_Name_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Name*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_Name" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Name">
-  Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L85"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the name of the background.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;name&quot;)]
-public string? Name { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_SkillProficiencies_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SkillProficiencies*"></a>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_SkillProficiencies" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SkillProficiencies">
   SkillProficiencies
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the skill proficiencies associated with the background.</p>
@@ -511,43 +432,11 @@ public string? SkillProficiencies { get; set; }</code></pre>
 
 
 
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_SourceTitle_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SourceTitle*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_SourceTitle" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SourceTitle">
-  SourceTitle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L95"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the title of the source of the game component's data.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? SourceTitle { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_SuggestedCharacteristics_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SuggestedCharacteristics*"></a>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_SuggestedCharacteristics" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SuggestedCharacteristics">
   SuggestedCharacteristics
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the suggested characteristics related to the background.</p>
@@ -576,70 +465,6 @@ public string? SuggestedCharacteristics { get; set; }</code></pre>
 
 
 
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_TagSymbol_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.TagSymbol*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_TagSymbol" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.TagSymbol">
-  TagSymbol
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L104"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the list of labels associated with this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? TagSymbol { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_TagValuePrefix_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.TagValuePrefix*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_TagValuePrefix" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.TagValuePrefix">
-  TagValuePrefix
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L107"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the tag value prefix for this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? TagValuePrefix { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -648,22 +473,22 @@ public string? SuggestedCharacteristics { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_ToCampaignEntry" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.ToCampaignEntry">
   ToCampaignEntry()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBackground.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generates a CampaignLogger Entry for this game component.</p>
+  <div class="markdown level1 summary"><p>Generate a Campaign Entry that represents this object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CampaignEntry ToCampaignEntry()</code></pre>
+    <pre><code class="lang-csharp hljs">public override CampaignEntry ToCampaignEntry()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="CampaignKit.Compendium.Core.CampaignLogger.CampaignEntry.html">CampaignEntry</a></dt>
-    <dd><p>A CampaignLogger Entry for this game component.</p>
+    <dd><p>A Campaign Entry that represents this object.</p>
 </dd>
   </dl>
 

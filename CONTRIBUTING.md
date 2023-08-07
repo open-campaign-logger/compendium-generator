@@ -96,11 +96,12 @@ Once a JSON deserialization class has been created perform the following steps t
 You can also use a ChatGPT prompt like the following to automate these steps:
 
 ```
-Please make the following changes to the "Root" class:
-1. Convert each public field to a nullable property by adding {get; set;} and ensuring the property has the `?` nullable operator.
-2. Set a default value for each property.  string.empty for strings, empty lists for lists and int.MinValue for ints.
-3. Add XML summaries for each property.
+Please make the following changes to this class:
 
+1. Convert each public field to a nullable property by adding {get; set;} and ensuring the property has the ? nullable operator.
+2. Set a default value for each property. string.empty for strings, empty lists for lists and int.MinValue for ints.
+3. Add XML summaries for each property.
+4. Add XML summary to class.
 public class Root
 {
 ...
@@ -109,6 +110,20 @@ public class Root
 Inherit from `IGameComponent` and implement interface.  Generally this will involve the addition of the following:
 
 ```csharp
+    /// <summary>
+    /// Gets or sets the description of the game component.
+    /// </summary>
+    [JsonProperty("desc")] // This will be the field in the JSON that describes game component.
+    public string? Desc { get; set; } = string.Empty;
+
+    /// <inheritdoc/>
+    public List<string>? Labels { get; set; } = new List<string> { };
+
+    /// <summary>
+    /// Gets or sets the name of the game component.
+    /// </summary>
+    [JsonProperty("name")] // This will be the field in the JSON that describes name component.
+    public string? Name { get; set; } = string.Empty;
 
     /// <inheritdoc/>
     public string? SourceTitle { get; set; } = string.Empty;
