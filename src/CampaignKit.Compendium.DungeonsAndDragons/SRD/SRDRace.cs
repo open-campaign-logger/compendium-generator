@@ -16,13 +16,13 @@
 
 namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
 {
+    using System.Text;
+
     using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.DungeonsAndDragons.Common;
     using CampaignKit.Compendium.DungeonsAndDragons.MonstrousMenagerie;
 
     using Newtonsoft.Json;
-
-    using System.Text;
 
     /// <summary>
     /// Represents the SRD Race information including attributes like ASI description, size, speed, languages, vision, traits, and subtypes.
@@ -189,7 +189,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
                 stringBuilder.AppendLine($"Source: ~\"{this.SourceTitle}\"");
             }
 
-            CampaignEntry campaignEntry = new()
+            CampaignEntry campaignEntry = new ()
             {
                 RawText = string.Empty,
                 RawPublic = stringBuilder.ToString(),

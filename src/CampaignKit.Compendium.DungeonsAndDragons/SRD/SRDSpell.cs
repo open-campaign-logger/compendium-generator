@@ -20,6 +20,8 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
 
     using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Common;
+    using CampaignKit.Compendium.DungeonsAndDragons.Common;
+
     using Microsoft.IdentityModel.Tokens;
 
     using Newtonsoft.Json;
@@ -282,10 +284,35 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
             {
                 RawText = string.Empty,
                 RawPublic = stringBuilder.ToString(),
-                Labels = this.Labels,
+                Labels = this.Labels ?? new List<string>(),
                 TagSymbol = this.TagSymbol,
                 TagValue = $"{this.TagValuePrefix}{this.Name}",
             };
+
+            // Add level label.
+            if (this.LevelInt > int.MinValue)
+            {
+                campaignEntry.Labels.Add($"Level {this.LevelInt}");
+            }
+
+            // Add class label(s).
+            if (!string.IsNullOrEmpty(this.Class))
+            {
+                var classes = this.Class.Split(',');
+                foreach (var c in classes)
+                {
+                    if (!string.IsNullOrEmpty(c))
+                    {
+                        campaignEntry.Labels.Add($"{c.Trim()}");
+                    }
+                }
+            }
+
+            // Add school label.
+            if (!string.IsNullOrEmpty(this.School))
+            {
+                stringBuilder.AppendLine($"School - {string.Concat(this.School[..1].ToUpper(), this.School.AsSpan(1))}");
+            }
 
             return campaignEntry;
         }

@@ -44,6 +44,13 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             // Set the Name property of this object to the value of the TagValue property of the campaignEntry object, or throw an ArgumentNullException if TagValue is null
             this.Name = this.campaignEntry.TagValue ?? throw new Exception($"CampaignEntry missing attribute: TagValue");
 
+            // Check if the Labels property of campaignEntry is null or if it does not contain the label variable
+            if (this.campaignEntry.Labels == null || !this.campaignEntry.Labels.Contains("Monster"))
+            {
+                // If either of the conditions are true, throw an exception
+                throw new Exception($"Required label not found in CampaignEntry: Monster");
+            }
+
             // Set the SourceTitle property of this object to "Necrotic Gnome OGL"
             this.SourceTitle = "Necrotic Gnome OGL";
 
@@ -214,13 +221,8 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             builder.AppendLine(string.Empty);
             campaignEntry.RawText = builder.ToString();
             campaignEntry.TagSymbol = this.TagSymbol;
-            campaignEntry.TagValue = this.Name;
-            campaignEntry.Labels = new List<string>();
-
-            if (this.Labels != null && this.Labels.Count > 0)
-            {
-                campaignEntry.Labels.AddRange(this.Labels);
-            }
+            campaignEntry.TagValue = this.TagValuePrefix + this.Name;
+            campaignEntry.Labels = this.Labels ?? new List<string>();
 
             if (!string.IsNullOrEmpty(treasureType))
             {

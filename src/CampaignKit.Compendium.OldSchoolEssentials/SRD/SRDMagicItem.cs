@@ -62,6 +62,9 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             {
                 this.Labels.AddRange(campaignEntry.Labels);
             }
+
+            // Sets the tag symbol to use when rendering the stat block.
+            this.TagSymbol = campaignEntry.TagSymbol;
         }
 
         /// <summary>
