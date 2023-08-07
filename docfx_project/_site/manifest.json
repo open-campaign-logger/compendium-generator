@@ -385,6 +385,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.yml",
       "output": {
         ".html": {
@@ -395,10 +405,60 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.yml",
       "output": {
         ".html": {
           "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.html"
         }
       },
       "version": ""
@@ -419,6 +479,26 @@
       "output": {
         ".html": {
           "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.html"
         }
       },
       "version": ""
@@ -779,6 +859,16 @@
       "output": {
         ".html": {
           "relative_path": "api/CampaignKit.Compendium.Tests.Markdown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.html"
         }
       },
       "version": ""

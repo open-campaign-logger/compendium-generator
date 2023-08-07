@@ -364,6 +364,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts
         /// </summary>
         public string? TagSymbol { get; set; } = string.Empty;
 
+        /// <inheritdoc/>
+        public string? TagValuePrefix { get; set; } = string.Empty;
+
         /// <summary>
         /// Gets or sets the type of the creature (e.g., beast, humanoid).
         /// </summary>

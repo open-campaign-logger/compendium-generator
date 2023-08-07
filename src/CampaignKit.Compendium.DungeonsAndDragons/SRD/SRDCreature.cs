@@ -25,7 +25,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
     /// <summary>
     /// Class representing a creature from the Dungeons &amp; Dragons System Reference Document (SRD).
     /// </summary>
-    public class SRDCreature : IGameComponent
+    public class SRDCreature : SRDBase
     {
         /// <summary>
         /// Gets or sets the creature's Acrobatics skill, representing its ability to perform tasks
@@ -218,11 +218,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         public int? Investigation { get; set; } = int.MinValue;
 
         /// <summary>
-        /// Gets or sets the list of labels associated with the creature.
-        /// </summary>
-        public List<string>? Labels { get; set; } = new List<string>();
-
-        /// <summary>
         /// Gets or sets the languages that the creature can speak.
         /// </summary>
         [JsonProperty("languages")]
@@ -245,12 +240,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         /// </summary>
         [JsonProperty("medicine")]
         public int? Medicine { get; set; } = int.MinValue;
-
-        /// <summary>
-        /// Gets or sets the name of the creature.
-        /// </summary>
-        [JsonProperty("name")]
-        public string? Name { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the creature's Nature skill, representing knowledge about natural
@@ -278,9 +267,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         /// </summary>
         [JsonProperty("persuasion")]
         public int? Persuasion { get; set; } = int.MinValue;
-
-        /// <inheritdoc/>
-        public string? SourceTitle { get; set; }
 
         /// <summary>
         /// Gets or sets the list of reactions that the creature can take in response to certain
@@ -372,11 +358,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         public int? Survival { get; set; } = int.MinValue;
 
         /// <summary>
-        /// Gets or sets the campaign tag symbol to use for this creature.
-        /// </summary>
-        public string? TagSymbol { get; set; } = string.Empty;
-
-        /// <summary>
         /// Gets or sets the type of the creature (e.g., beast, humanoid).
         /// </summary>
         [JsonProperty("type")]
@@ -396,8 +377,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         [JsonProperty("wisdom_save")]
         public int? WisdomSave { get; set; } = int.MinValue;
 
-        /// <inheritdoc/>
-        public CampaignEntry ToCampaignEntry()
+        /// <summary>
+        /// Generate a Campaign Entry that represents this object.
+        /// </summary>
+        /// <returns>A Campaign Entry that represents this object.</returns>
+        public override CampaignEntry ToCampaignEntry()
         {
             return this.ToCreature().ToCampaignEntry();
         }

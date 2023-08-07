@@ -146,6 +146,7 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
 
         }
 
+        /// <summary>
         /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
         /// </summary>
         [TestMethod]
@@ -167,6 +168,7 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
 
         }
 
+        /// <summary>
         /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
         /// </summary>
         [TestMethod]
@@ -188,6 +190,7 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
 
         }
 
+        /// <summary>
         /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
         /// </summary>
         [TestMethod]
@@ -209,6 +212,7 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
 
         }
 
+        /// <summary>
         /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
         /// </summary>
         [TestMethod]
@@ -234,6 +238,7 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
 
         }
 
+        /// <summary>
         /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
         /// </summary>
         [TestMethod]

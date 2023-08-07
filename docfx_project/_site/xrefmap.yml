@@ -572,6 +572,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Core.Common.IGameComponent.TagSymbol
   nameWithType: IGameComponent.TagSymbol
+- uid: CampaignKit.Compendium.Core.Common.IGameComponent.TagValuePrefix
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.Core.Common.IGameComponent.html#CampaignKit_Compendium_Core_Common_IGameComponent_TagValuePrefix
+  commentId: P:CampaignKit.Compendium.Core.Common.IGameComponent.TagValuePrefix
+  fullName: CampaignKit.Compendium.Core.Common.IGameComponent.TagValuePrefix
+  nameWithType: IGameComponent.TagValuePrefix
+- uid: CampaignKit.Compendium.Core.Common.IGameComponent.TagValuePrefix*
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.Core.Common.IGameComponent.html#CampaignKit_Compendium_Core_Common_IGameComponent_TagValuePrefix_
+  commentId: Overload:CampaignKit.Compendium.Core.Common.IGameComponent.TagValuePrefix
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Core.Common.IGameComponent.TagValuePrefix
+  nameWithType: IGameComponent.TagValuePrefix
 - uid: CampaignKit.Compendium.Core.Common.IGameComponent.ToCampaignEntry
   name: ToCampaignEntry()
   href: api/CampaignKit.Compendium.Core.Common.IGameComponent.html#CampaignKit_Compendium_Core_Common_IGameComponent_ToCampaignEntry
@@ -1192,6 +1205,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Core.Configuration.SourceDataSet.TagSymbol
   nameWithType: SourceDataSet.TagSymbol
+- uid: CampaignKit.Compendium.Core.Configuration.SourceDataSet.TagValuePrefix
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.Core.Configuration.SourceDataSet.html#CampaignKit_Compendium_Core_Configuration_SourceDataSet_TagValuePrefix
+  commentId: P:CampaignKit.Compendium.Core.Configuration.SourceDataSet.TagValuePrefix
+  fullName: CampaignKit.Compendium.Core.Configuration.SourceDataSet.TagValuePrefix
+  nameWithType: SourceDataSet.TagValuePrefix
+- uid: CampaignKit.Compendium.Core.Configuration.SourceDataSet.TagValuePrefix*
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.Core.Configuration.SourceDataSet.html#CampaignKit_Compendium_Core_Configuration_SourceDataSet_TagValuePrefix_
+  commentId: Overload:CampaignKit.Compendium.Core.Configuration.SourceDataSet.TagValuePrefix
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Core.Configuration.SourceDataSet.TagValuePrefix
+  nameWithType: SourceDataSet.TagValuePrefix
 - uid: CampaignKit.Compendium.Core.Services
   name: CampaignKit.Compendium.Core.Services
   href: api/CampaignKit.Compendium.Core.Services.html
@@ -2442,6 +2468,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TagSymbol
   nameWithType: Creature.TagSymbol
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TagValuePrefix
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_TagValuePrefix
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TagValuePrefix
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TagValuePrefix
+  nameWithType: Creature.TagValuePrefix
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TagValuePrefix*
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_TagValuePrefix_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TagValuePrefix
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TagValuePrefix
+  nameWithType: Creature.TagValuePrefix
 - uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TextStatBlock
   name: TextStatBlock
   href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_TextStatBlock
@@ -3129,6 +3168,38 @@ references:
   commentId: N:CampaignKit.Compendium.DungeonsAndDragons.SRD
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD
   nameWithType: CampaignKit.Compendium.DungeonsAndDragons.SRD
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease
+  name: SRDAbilityScoreIncrease
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.html
+  commentId: T:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease
+  nameWithType: SRDAbilityScoreIncrease
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.Attributes
+  name: Attributes
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDAbilityScoreIncrease_Attributes
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.Attributes
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.Attributes
+  nameWithType: SRDAbilityScoreIncrease.Attributes
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.Attributes*
+  name: Attributes
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDAbilityScoreIncrease_Attributes_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.Attributes
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.Attributes
+  nameWithType: SRDAbilityScoreIncrease.Attributes
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.Value
+  name: Value
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDAbilityScoreIncrease_Value
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.Value
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.Value
+  nameWithType: SRDAbilityScoreIncrease.Value
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.Value*
+  name: Value
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDAbilityScoreIncrease_Value_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.Value
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDAbilityScoreIncrease.Value
+  nameWithType: SRDAbilityScoreIncrease.Value
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor
   name: SRDArmor
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.html
@@ -3174,45 +3245,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Cost
   nameWithType: SRDArmor.Cost
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Desc
-  name: Desc
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Desc
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Desc
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Desc
-  nameWithType: SRDArmor.Desc
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Desc*
-  name: Desc
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Desc_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Desc
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Desc
-  nameWithType: SRDArmor.Desc
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Labels
-  name: Labels
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Labels
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Labels
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Labels
-  nameWithType: SRDArmor.Labels
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Labels*
-  name: Labels
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Labels_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Labels
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Labels
-  nameWithType: SRDArmor.Labels
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Name
-  name: Name
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Name
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Name
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Name
-  nameWithType: SRDArmor.Name
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Name*
-  name: Name
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Name_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Name
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Name
-  nameWithType: SRDArmor.Name
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.PlusConMod
   name: PlusConMod
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_PlusConMod
@@ -3291,19 +3323,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Rarity
   nameWithType: SRDArmor.Rarity
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.SourceTitle
-  name: SourceTitle
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_SourceTitle
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.SourceTitle
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.SourceTitle
-  nameWithType: SRDArmor.SourceTitle
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.SourceTitle*
-  name: SourceTitle
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_SourceTitle_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.SourceTitle
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.SourceTitle
-  nameWithType: SRDArmor.SourceTitle
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.StealthDisadvantage
   name: StealthDisadvantage
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_StealthDisadvantage
@@ -3330,19 +3349,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.StrengthRequirement
   nameWithType: SRDArmor.StrengthRequirement
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.TagSymbol
-  name: TagSymbol
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_TagSymbol
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.TagSymbol
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.TagSymbol
-  nameWithType: SRDArmor.TagSymbol
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.TagSymbol*
-  name: TagSymbol
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_TagSymbol_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.TagSymbol
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.TagSymbol
-  nameWithType: SRDArmor.TagSymbol
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.ToCampaignEntry
   name: ToCampaignEntry()
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_ToCampaignEntry
@@ -3369,6 +3375,459 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Weight
   nameWithType: SRDArmor.Weight
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground
+  name: SRDBackground
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html
+  commentId: T:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground
+  nameWithType: SRDBackground
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.AbilityScoreIncreases
+  name: AbilityScoreIncreases
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_AbilityScoreIncreases
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.AbilityScoreIncreases
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.AbilityScoreIncreases
+  nameWithType: SRDBackground.AbilityScoreIncreases
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.AbilityScoreIncreases*
+  name: AbilityScoreIncreases
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_AbilityScoreIncreases_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.AbilityScoreIncreases
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.AbilityScoreIncreases
+  nameWithType: SRDBackground.AbilityScoreIncreases
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.AdventuresAndAdvancement
+  name: AdventuresAndAdvancement
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_AdventuresAndAdvancement
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.AdventuresAndAdvancement
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.AdventuresAndAdvancement
+  nameWithType: SRDBackground.AdventuresAndAdvancement
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.AdventuresAndAdvancement*
+  name: AdventuresAndAdvancement
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_AdventuresAndAdvancement_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.AdventuresAndAdvancement
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.AdventuresAndAdvancement
+  nameWithType: SRDBackground.AdventuresAndAdvancement
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Equipment
+  name: Equipment
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_Equipment
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Equipment
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Equipment
+  nameWithType: SRDBackground.Equipment
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Equipment*
+  name: Equipment
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_Equipment_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Equipment
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Equipment
+  nameWithType: SRDBackground.Equipment
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureDesc
+  name: FeatureDesc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_FeatureDesc
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureDesc
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureDesc
+  nameWithType: SRDBackground.FeatureDesc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureDesc*
+  name: FeatureDesc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_FeatureDesc_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureDesc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureDesc
+  nameWithType: SRDBackground.FeatureDesc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureDescription
+  name: FeatureDescription
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_FeatureDescription
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureDescription
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureDescription
+  nameWithType: SRDBackground.FeatureDescription
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureDescription*
+  name: FeatureDescription
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_FeatureDescription_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureDescription
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureDescription
+  nameWithType: SRDBackground.FeatureDescription
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureName
+  name: FeatureName
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_FeatureName
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureName
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureName
+  nameWithType: SRDBackground.FeatureName
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureName*
+  name: FeatureName
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_FeatureName_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureName
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.FeatureName
+  nameWithType: SRDBackground.FeatureName
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Languages
+  name: Languages
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_Languages
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Languages
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Languages
+  nameWithType: SRDBackground.Languages
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Languages*
+  name: Languages
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_Languages_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Languages
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.Languages
+  nameWithType: SRDBackground.Languages
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SkillProficiencies
+  name: SkillProficiencies
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_SkillProficiencies
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SkillProficiencies
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SkillProficiencies
+  nameWithType: SRDBackground.SkillProficiencies
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SkillProficiencies*
+  name: SkillProficiencies
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_SkillProficiencies_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SkillProficiencies
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SkillProficiencies
+  nameWithType: SRDBackground.SkillProficiencies
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SuggestedCharacteristics
+  name: SuggestedCharacteristics
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_SuggestedCharacteristics
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SuggestedCharacteristics
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SuggestedCharacteristics
+  nameWithType: SRDBackground.SuggestedCharacteristics
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SuggestedCharacteristics*
+  name: SuggestedCharacteristics
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_SuggestedCharacteristics_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SuggestedCharacteristics
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.SuggestedCharacteristics
+  nameWithType: SRDBackground.SuggestedCharacteristics
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.ToCampaignEntry
+  name: ToCampaignEntry()
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_ToCampaignEntry
+  commentId: M:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.ToCampaignEntry
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.ToCampaignEntry()
+  nameWithType: SRDBackground.ToCampaignEntry()
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.ToCampaignEntry*
+  name: ToCampaignEntry
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBackground_ToCampaignEntry_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.ToCampaignEntry
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBackground.ToCampaignEntry
+  nameWithType: SRDBackground.ToCampaignEntry
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase
+  name: SRDBase
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html
+  commentId: T:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase
+  nameWithType: SRDBase
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Desc
+  name: Desc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Desc
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Desc
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Desc
+  nameWithType: SRDBase.Desc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Desc*
+  name: Desc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Desc_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Desc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Desc
+  nameWithType: SRDBase.Desc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Labels
+  name: Labels
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Labels
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Labels
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Labels
+  nameWithType: SRDBase.Labels
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Labels*
+  name: Labels
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Labels_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Labels
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Labels
+  nameWithType: SRDBase.Labels
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Name
+  name: Name
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Name
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Name
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Name
+  nameWithType: SRDBase.Name
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Name*
+  name: Name
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Name_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Name
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Name
+  nameWithType: SRDBase.Name
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.SourceTitle
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_SourceTitle
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.SourceTitle
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.SourceTitle
+  nameWithType: SRDBase.SourceTitle
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.SourceTitle*
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_SourceTitle_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.SourceTitle
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.SourceTitle
+  nameWithType: SRDBase.SourceTitle
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.TagSymbol
+  name: TagSymbol
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_TagSymbol
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.TagSymbol
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.TagSymbol
+  nameWithType: SRDBase.TagSymbol
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.TagSymbol*
+  name: TagSymbol
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_TagSymbol_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.TagSymbol
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.TagSymbol
+  nameWithType: SRDBase.TagSymbol
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.TagValuePrefix
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_TagValuePrefix
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.TagValuePrefix
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.TagValuePrefix
+  nameWithType: SRDBase.TagValuePrefix
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.TagValuePrefix*
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_TagValuePrefix_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.TagValuePrefix
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.TagValuePrefix
+  nameWithType: SRDBase.TagValuePrefix
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.ToCampaignEntry
+  name: ToCampaignEntry()
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_ToCampaignEntry
+  commentId: M:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.ToCampaignEntry
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.ToCampaignEntry()
+  nameWithType: SRDBase.ToCampaignEntry()
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.ToCampaignEntry*
+  name: ToCampaignEntry
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_ToCampaignEntry_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.ToCampaignEntry
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.ToCampaignEntry
+  nameWithType: SRDBase.ToCampaignEntry
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass
+  name: SRDClass
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.html
+  commentId: T:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass
+  nameWithType: SRDClass
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.ClassFeatures
+  name: ClassFeatures
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClass_ClassFeatures
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.ClassFeatures
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.ClassFeatures
+  nameWithType: SRDClass.ClassFeatures
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.ClassFeatures*
+  name: ClassFeatures
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClass_ClassFeatures_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.ClassFeatures
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.ClassFeatures
+  nameWithType: SRDClass.ClassFeatures
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.Subtypes
+  name: Subtypes
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClass_Subtypes
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.Subtypes
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.Subtypes
+  nameWithType: SRDClass.Subtypes
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.Subtypes*
+  name: Subtypes
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClass_Subtypes_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.Subtypes
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.Subtypes
+  nameWithType: SRDClass.Subtypes
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.SubtypesName
+  name: SubtypesName
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClass_SubtypesName
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.SubtypesName
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.SubtypesName
+  nameWithType: SRDClass.SubtypesName
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.SubtypesName*
+  name: SubtypesName
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClass_SubtypesName_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.SubtypesName
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.SubtypesName
+  nameWithType: SRDClass.SubtypesName
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.ToCampaignEntry
+  name: ToCampaignEntry()
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClass_ToCampaignEntry
+  commentId: M:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.ToCampaignEntry
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.ToCampaignEntry()
+  nameWithType: SRDClass.ToCampaignEntry()
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.ToCampaignEntry*
+  name: ToCampaignEntry
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClass_ToCampaignEntry_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.ToCampaignEntry
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClass.ToCampaignEntry
+  nameWithType: SRDClass.ToCampaignEntry
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature
+  name: SRDClassFeature
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html
+  commentId: T:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature
+  nameWithType: SRDClassFeature
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Desc
+  name: Desc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_Desc
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Desc
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Desc
+  nameWithType: SRDClassFeature.Desc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Desc*
+  name: Desc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_Desc_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Desc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Desc
+  nameWithType: SRDClassFeature.Desc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Equipment
+  name: Equipment
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_Equipment
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Equipment
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Equipment
+  nameWithType: SRDClassFeature.Equipment
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Equipment*
+  name: Equipment
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_Equipment_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Equipment
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Equipment
+  nameWithType: SRDClassFeature.Equipment
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HitDice
+  name: HitDice
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_HitDice
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HitDice
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HitDice
+  nameWithType: SRDClassFeature.HitDice
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HitDice*
+  name: HitDice
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_HitDice_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HitDice
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HitDice
+  nameWithType: SRDClassFeature.HitDice
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HpAt1stLevel
+  name: HpAt1stLevel
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_HpAt1stLevel
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HpAt1stLevel
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HpAt1stLevel
+  nameWithType: SRDClassFeature.HpAt1stLevel
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HpAt1stLevel*
+  name: HpAt1stLevel
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_HpAt1stLevel_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HpAt1stLevel
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HpAt1stLevel
+  nameWithType: SRDClassFeature.HpAt1stLevel
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HpAtHigherLevels
+  name: HpAtHigherLevels
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_HpAtHigherLevels
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HpAtHigherLevels
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HpAtHigherLevels
+  nameWithType: SRDClassFeature.HpAtHigherLevels
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HpAtHigherLevels*
+  name: HpAtHigherLevels
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_HpAtHigherLevels_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HpAtHigherLevels
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.HpAtHigherLevels
+  nameWithType: SRDClassFeature.HpAtHigherLevels
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfArmor
+  name: ProfArmor
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_ProfArmor
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfArmor
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfArmor
+  nameWithType: SRDClassFeature.ProfArmor
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfArmor*
+  name: ProfArmor
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_ProfArmor_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfArmor
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfArmor
+  nameWithType: SRDClassFeature.ProfArmor
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfSavingThrows
+  name: ProfSavingThrows
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_ProfSavingThrows
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfSavingThrows
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfSavingThrows
+  nameWithType: SRDClassFeature.ProfSavingThrows
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfSavingThrows*
+  name: ProfSavingThrows
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_ProfSavingThrows_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfSavingThrows
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfSavingThrows
+  nameWithType: SRDClassFeature.ProfSavingThrows
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfSkills
+  name: ProfSkills
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_ProfSkills
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfSkills
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfSkills
+  nameWithType: SRDClassFeature.ProfSkills
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfSkills*
+  name: ProfSkills
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_ProfSkills_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfSkills
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfSkills
+  nameWithType: SRDClassFeature.ProfSkills
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfTools
+  name: ProfTools
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_ProfTools
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfTools
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfTools
+  nameWithType: SRDClassFeature.ProfTools
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfTools*
+  name: ProfTools
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_ProfTools_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfTools
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfTools
+  nameWithType: SRDClassFeature.ProfTools
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfWeapons
+  name: ProfWeapons
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_ProfWeapons
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfWeapons
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfWeapons
+  nameWithType: SRDClassFeature.ProfWeapons
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfWeapons*
+  name: ProfWeapons
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_ProfWeapons_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfWeapons
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.ProfWeapons
+  nameWithType: SRDClassFeature.ProfWeapons
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.SpellcastingAbility
+  name: SpellcastingAbility
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_SpellcastingAbility
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.SpellcastingAbility
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.SpellcastingAbility
+  nameWithType: SRDClassFeature.SpellcastingAbility
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.SpellcastingAbility*
+  name: SpellcastingAbility
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_SpellcastingAbility_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.SpellcastingAbility
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.SpellcastingAbility
+  nameWithType: SRDClassFeature.SpellcastingAbility
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Table
+  name: Table
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_Table
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Table
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Table
+  nameWithType: SRDClassFeature.Table
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Table*
+  name: Table
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDClassFeature_Table_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Table
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDClassFeature.Table
+  nameWithType: SRDClassFeature.Table
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature
   name: SRDCreature
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html
@@ -3752,19 +4211,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Investigation
   nameWithType: SRDCreature.Investigation
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Labels
-  name: Labels
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_Labels
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Labels
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Labels
-  nameWithType: SRDCreature.Labels
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Labels*
-  name: Labels
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_Labels_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Labels
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Labels
-  nameWithType: SRDCreature.Labels
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Languages
   name: Languages
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_Languages
@@ -3817,19 +4263,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Medicine
   nameWithType: SRDCreature.Medicine
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Name
-  name: Name
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_Name
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Name
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Name
-  nameWithType: SRDCreature.Name
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Name*
-  name: Name
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_Name_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Name
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Name
-  nameWithType: SRDCreature.Name
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Nature
   name: Nature
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_Nature
@@ -3947,19 +4380,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.SleightOfHand
   nameWithType: SRDCreature.SleightOfHand
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.SourceTitle
-  name: SourceTitle
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_SourceTitle
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.SourceTitle
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.SourceTitle
-  nameWithType: SRDCreature.SourceTitle
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.SourceTitle*
-  name: SourceTitle
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_SourceTitle_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.SourceTitle
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.SourceTitle
-  nameWithType: SRDCreature.SourceTitle
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.SpecialAbilities
   name: SpecialAbilities
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_SpecialAbilities
@@ -4077,19 +4497,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.Survival
   nameWithType: SRDCreature.Survival
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.TagSymbol
-  name: TagSymbol
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_TagSymbol
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.TagSymbol
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.TagSymbol
-  nameWithType: SRDCreature.TagSymbol
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.TagSymbol*
-  name: TagSymbol
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_TagSymbol_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.TagSymbol
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.TagSymbol
-  nameWithType: SRDCreature.TagSymbol
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.ToCampaignEntry
   name: ToCampaignEntry()
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDCreature_ToCampaignEntry
@@ -4142,6 +4549,51 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDCreature.WisdomSave
   nameWithType: SRDCreature.WisdomSave
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat
+  name: SRDFeat
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.html
+  commentId: T:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat
+  nameWithType: SRDFeat
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.Effects
+  name: Effects
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDFeat_Effects
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.Effects
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.Effects
+  nameWithType: SRDFeat.Effects
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.Effects*
+  name: Effects
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDFeat_Effects_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.Effects
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.Effects
+  nameWithType: SRDFeat.Effects
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.Prerequisite
+  name: Prerequisite
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDFeat_Prerequisite
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.Prerequisite
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.Prerequisite
+  nameWithType: SRDFeat.Prerequisite
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.Prerequisite*
+  name: Prerequisite
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDFeat_Prerequisite_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.Prerequisite
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.Prerequisite
+  nameWithType: SRDFeat.Prerequisite
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.ToCampaignEntry
+  name: ToCampaignEntry()
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDFeat_ToCampaignEntry
+  commentId: M:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.ToCampaignEntry
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.ToCampaignEntry()
+  nameWithType: SRDFeat.ToCampaignEntry()
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.ToCampaignEntry*
+  name: ToCampaignEntry
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDFeat_ToCampaignEntry_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.ToCampaignEntry
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.ToCampaignEntry
+  nameWithType: SRDFeat.ToCampaignEntry
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear
   name: SRDGear
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html
@@ -4213,6 +4665,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagSymbol
   nameWithType: SRDGear.TagSymbol
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagValuePrefix
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_TagValuePrefix
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagValuePrefix
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagValuePrefix
+  nameWithType: SRDGear.TagValuePrefix
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagValuePrefix*
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_TagValuePrefix_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagValuePrefix
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagValuePrefix
+  nameWithType: SRDGear.TagValuePrefix
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.ToCampaignEntry
   name: ToCampaignEntry()
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_ToCampaignEntry
@@ -4232,45 +4697,6 @@ references:
   commentId: T:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem
   nameWithType: SRDMagicItem
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Desc
-  name: Desc
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDMagicItem_Desc
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Desc
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Desc
-  nameWithType: SRDMagicItem.Desc
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Desc*
-  name: Desc
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDMagicItem_Desc_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Desc
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Desc
-  nameWithType: SRDMagicItem.Desc
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Labels
-  name: Labels
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDMagicItem_Labels
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Labels
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Labels
-  nameWithType: SRDMagicItem.Labels
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Labels*
-  name: Labels
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDMagicItem_Labels_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Labels
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Labels
-  nameWithType: SRDMagicItem.Labels
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Name
-  name: Name
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDMagicItem_Name
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Name
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Name
-  nameWithType: SRDMagicItem.Name
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Name*
-  name: Name
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDMagicItem_Name_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Name
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Name
-  nameWithType: SRDMagicItem.Name
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Rarity
   name: Rarity
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDMagicItem_Rarity
@@ -4297,32 +4723,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.RequiresAttunement
   nameWithType: SRDMagicItem.RequiresAttunement
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.SourceTitle
-  name: SourceTitle
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDMagicItem_SourceTitle
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.SourceTitle
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.SourceTitle
-  nameWithType: SRDMagicItem.SourceTitle
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.SourceTitle*
-  name: SourceTitle
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDMagicItem_SourceTitle_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.SourceTitle
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.SourceTitle
-  nameWithType: SRDMagicItem.SourceTitle
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.TagSymbol
-  name: TagSymbol
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDMagicItem_TagSymbol
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.TagSymbol
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.TagSymbol
-  nameWithType: SRDMagicItem.TagSymbol
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.TagSymbol*
-  name: TagSymbol
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDMagicItem_TagSymbol_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.TagSymbol
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.TagSymbol
-  nameWithType: SRDMagicItem.TagSymbol
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.ToCampaignEntry
   name: ToCampaignEntry()
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDMagicItem_ToCampaignEntry
@@ -4349,12 +4749,271 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.Type
   nameWithType: SRDMagicItem.Type
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace
+  name: SRDRace
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html
+  commentId: T:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace
+  nameWithType: SRDRace
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Age
+  name: Age
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Age
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Age
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Age
+  nameWithType: SRDRace.Age
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Age*
+  name: Age
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Age_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Age
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Age
+  nameWithType: SRDRace.Age
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Alignment
+  name: Alignment
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Alignment
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Alignment
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Alignment
+  nameWithType: SRDRace.Alignment
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Alignment*
+  name: Alignment
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Alignment_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Alignment
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Alignment
+  nameWithType: SRDRace.Alignment
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Asi
+  name: Asi
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Asi
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Asi
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Asi
+  nameWithType: SRDRace.Asi
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Asi*
+  name: Asi
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Asi_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Asi
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Asi
+  nameWithType: SRDRace.Asi
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.AsiDesc
+  name: AsiDesc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_AsiDesc
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.AsiDesc
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.AsiDesc
+  nameWithType: SRDRace.AsiDesc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.AsiDesc*
+  name: AsiDesc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_AsiDesc_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.AsiDesc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.AsiDesc
+  nameWithType: SRDRace.AsiDesc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Languages
+  name: Languages
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Languages
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Languages
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Languages
+  nameWithType: SRDRace.Languages
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Languages*
+  name: Languages
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Languages_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Languages
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Languages
+  nameWithType: SRDRace.Languages
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Size
+  name: Size
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Size
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Size
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Size
+  nameWithType: SRDRace.Size
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Size*
+  name: Size
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Size_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Size
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Size
+  nameWithType: SRDRace.Size
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.SizeRaw
+  name: SizeRaw
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_SizeRaw
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.SizeRaw
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.SizeRaw
+  nameWithType: SRDRace.SizeRaw
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.SizeRaw*
+  name: SizeRaw
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_SizeRaw_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.SizeRaw
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.SizeRaw
+  nameWithType: SRDRace.SizeRaw
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Speed
+  name: Speed
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Speed
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Speed
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Speed
+  nameWithType: SRDRace.Speed
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Speed*
+  name: Speed
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Speed_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Speed
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Speed
+  nameWithType: SRDRace.Speed
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.SpeedDesc
+  name: SpeedDesc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_SpeedDesc
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.SpeedDesc
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.SpeedDesc
+  nameWithType: SRDRace.SpeedDesc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.SpeedDesc*
+  name: SpeedDesc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_SpeedDesc_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.SpeedDesc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.SpeedDesc
+  nameWithType: SRDRace.SpeedDesc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Subtypes
+  name: Subtypes
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Subtypes
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Subtypes
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Subtypes
+  nameWithType: SRDRace.Subtypes
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Subtypes*
+  name: Subtypes
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Subtypes_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Subtypes
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Subtypes
+  nameWithType: SRDRace.Subtypes
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.ToCampaignEntry
+  name: ToCampaignEntry()
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_ToCampaignEntry
+  commentId: M:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.ToCampaignEntry
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.ToCampaignEntry()
+  nameWithType: SRDRace.ToCampaignEntry()
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.ToCampaignEntry*
+  name: ToCampaignEntry
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_ToCampaignEntry_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.ToCampaignEntry
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.ToCampaignEntry
+  nameWithType: SRDRace.ToCampaignEntry
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Traits
+  name: Traits
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Traits
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Traits
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Traits
+  nameWithType: SRDRace.Traits
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Traits*
+  name: Traits
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Traits_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Traits
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Traits
+  nameWithType: SRDRace.Traits
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Vision
+  name: Vision
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Vision
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Vision
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Vision
+  nameWithType: SRDRace.Vision
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Vision*
+  name: Vision
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRace_Vision_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Vision
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.Vision
+  nameWithType: SRDRace.Vision
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType
+  name: SRDRaceSubType
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.html
+  commentId: T:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType
+  nameWithType: SRDRaceSubType
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Asi
+  name: Asi
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRaceSubType_Asi
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Asi
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Asi
+  nameWithType: SRDRaceSubType.Asi
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Asi*
+  name: Asi
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRaceSubType_Asi_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Asi
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Asi
+  nameWithType: SRDRaceSubType.Asi
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.AsiDesc
+  name: AsiDesc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRaceSubType_AsiDesc
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.AsiDesc
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.AsiDesc
+  nameWithType: SRDRaceSubType.AsiDesc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.AsiDesc*
+  name: AsiDesc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRaceSubType_AsiDesc_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.AsiDesc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.AsiDesc
+  nameWithType: SRDRaceSubType.AsiDesc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Desc
+  name: Desc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRaceSubType_Desc
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Desc
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Desc
+  nameWithType: SRDRaceSubType.Desc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Desc*
+  name: Desc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRaceSubType_Desc_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Desc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Desc
+  nameWithType: SRDRaceSubType.Desc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Name
+  name: Name
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRaceSubType_Name
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Name
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Name
+  nameWithType: SRDRaceSubType.Name
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Name*
+  name: Name
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRaceSubType_Name_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Name
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Name
+  nameWithType: SRDRaceSubType.Name
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Traits
+  name: Traits
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRaceSubType_Traits
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Traits
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Traits
+  nameWithType: SRDRaceSubType.Traits
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Traits*
+  name: Traits
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDRaceSubType_Traits_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Traits
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRaceSubType.Traits
+  nameWithType: SRDRaceSubType.Traits
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell
   name: SRDSpell
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html
   commentId: T:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell
   nameWithType: SRDSpell
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.A5ESchools
+  name: A5ESchools
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_A5ESchools
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.A5ESchools
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.A5ESchools
+  nameWithType: SRDSpell.A5ESchools
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.A5ESchools*
+  name: A5ESchools
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_A5ESchools_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.A5ESchools
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.A5ESchools
+  nameWithType: SRDSpell.A5ESchools
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Archetype
   name: Archetype
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_Archetype
@@ -4407,6 +5066,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Class
   nameWithType: SRDSpell.Class
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Classes
+  name: Classes
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_Classes
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Classes
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Classes
+  nameWithType: SRDSpell.Classes
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Classes*
+  name: Classes
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_Classes_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Classes
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Classes
+  nameWithType: SRDSpell.Classes
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Components
   name: Components
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_Components
@@ -4433,19 +5105,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Concentration
   nameWithType: SRDSpell.Concentration
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Desc
-  name: Desc
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_Desc
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Desc
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Desc
-  nameWithType: SRDSpell.Desc
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Desc*
-  name: Desc
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_Desc_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Desc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.DamageType
+  name: DamageType
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_DamageType
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.DamageType
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.DamageType
+  nameWithType: SRDSpell.DamageType
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.DamageType*
+  name: DamageType
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_DamageType_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.DamageType
   isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Desc
-  nameWithType: SRDSpell.Desc
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.DamageType
+  nameWithType: SRDSpell.DamageType
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Domains
   name: Domains
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_Domains
@@ -4485,19 +5157,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.HigherLevel
   nameWithType: SRDSpell.HigherLevel
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Labels
-  name: Labels
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_Labels
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Labels
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Labels
-  nameWithType: SRDSpell.Labels
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Labels*
-  name: Labels
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_Labels_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Labels
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Labels
-  nameWithType: SRDSpell.Labels
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Level
   name: Level
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_Level
@@ -4537,19 +5196,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Material
   nameWithType: SRDSpell.Material
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Name
-  name: Name
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_Name
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Name
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Name
-  nameWithType: SRDSpell.Name
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Name*
-  name: Name
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_Name_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Name
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Name
-  nameWithType: SRDSpell.Name
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Oaths
   name: Oaths
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_Oaths
@@ -4667,32 +5313,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.Shape
   nameWithType: SRDSpell.Shape
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.SourceTitle
-  name: SourceTitle
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_SourceTitle
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.SourceTitle
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.SourceTitle
-  nameWithType: SRDSpell.SourceTitle
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.SourceTitle*
-  name: SourceTitle
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_SourceTitle_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.SourceTitle
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.SourceTitle
-  nameWithType: SRDSpell.SourceTitle
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.TagSymbol
-  name: TagSymbol
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_TagSymbol
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.TagSymbol
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.TagSymbol
-  nameWithType: SRDSpell.TagSymbol
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.TagSymbol*
-  name: TagSymbol
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_TagSymbol_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.TagSymbol
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.TagSymbol
-  nameWithType: SRDSpell.TagSymbol
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.ToCampaignEntry
   name: ToCampaignEntry()
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDSpell_ToCampaignEntry
@@ -4764,32 +5384,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.DamageType
   nameWithType: SRDWeapon.DamageType
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Labels
-  name: Labels
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_Labels
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Labels
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Labels
-  nameWithType: SRDWeapon.Labels
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Labels*
-  name: Labels
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_Labels_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Labels
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Labels
-  nameWithType: SRDWeapon.Labels
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Name
-  name: Name
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_Name
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Name
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Name
-  nameWithType: SRDWeapon.Name
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Name*
-  name: Name
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_Name_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Name
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Name
-  nameWithType: SRDWeapon.Name
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Properties
   name: Properties
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_Properties
@@ -4803,32 +5397,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Properties
   nameWithType: SRDWeapon.Properties
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.SourceTitle
-  name: SourceTitle
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_SourceTitle
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.SourceTitle
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.SourceTitle
-  nameWithType: SRDWeapon.SourceTitle
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.SourceTitle*
-  name: SourceTitle
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_SourceTitle_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.SourceTitle
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.SourceTitle
-  nameWithType: SRDWeapon.SourceTitle
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.TagSymbol
-  name: TagSymbol
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_TagSymbol
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.TagSymbol
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.TagSymbol
-  nameWithType: SRDWeapon.TagSymbol
-- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.TagSymbol*
-  name: TagSymbol
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_TagSymbol_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.TagSymbol
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.TagSymbol
-  nameWithType: SRDWeapon.TagSymbol
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.ToCampaignEntry
   name: ToCampaignEntry()
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDWeapon_ToCampaignEntry
@@ -5556,6 +6124,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.TagSymbol
   nameWithType: TomeOfBeastsCreature.TagSymbol
+- uid: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.TagValuePrefix
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html#CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_TagValuePrefix
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.TagValuePrefix
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.TagValuePrefix
+  nameWithType: TomeOfBeastsCreature.TagValuePrefix
+- uid: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.TagValuePrefix*
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html#CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_TagValuePrefix_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.TagValuePrefix
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.TagValuePrefix
+  nameWithType: TomeOfBeastsCreature.TagValuePrefix
 - uid: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.ToCampaignEntry
   name: ToCampaignEntry()
   href: api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html#CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_ToCampaignEntry
@@ -6446,6 +7027,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.TagSymbol
   nameWithType: SRDCreature.TagSymbol
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.TagValuePrefix
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDCreature_TagValuePrefix
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.TagValuePrefix
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.TagValuePrefix
+  nameWithType: SRDCreature.TagValuePrefix
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.TagValuePrefix*
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDCreature_TagValuePrefix_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.TagValuePrefix
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.TagValuePrefix
+  nameWithType: SRDCreature.TagValuePrefix
 - uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.ToCampaignEntry
   name: ToCampaignEntry()
   href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDCreature_ToCampaignEntry
@@ -6620,6 +7214,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.TagSymbol
   nameWithType: SRDMagicItem.TagSymbol
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.TagValuePrefix
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_TagValuePrefix
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.TagValuePrefix
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.TagValuePrefix
+  nameWithType: SRDMagicItem.TagValuePrefix
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.TagValuePrefix*
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_TagValuePrefix_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.TagValuePrefix
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.TagValuePrefix
+  nameWithType: SRDMagicItem.TagValuePrefix
 - uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.ToCampaignEntry
   name: ToCampaignEntry()
   href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_ToCampaignEntry
@@ -6736,6 +7343,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.TagSymbol
   nameWithType: SRDSpell.TagSymbol
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.TagValuePrefix
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDSpell_TagValuePrefix
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.TagValuePrefix
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.TagValuePrefix
+  nameWithType: SRDSpell.TagValuePrefix
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.TagValuePrefix*
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDSpell_TagValuePrefix_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.TagValuePrefix
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.TagValuePrefix
+  nameWithType: SRDSpell.TagValuePrefix
 - uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.ToCampaignEntry
   name: ToCampaignEntry()
   href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDSpell_ToCampaignEntry
@@ -7836,6 +8456,51 @@ references:
   commentId: N:CampaignKit.Compendium.Tests.OldSchoolEssentials
   fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials
   nameWithType: CampaignKit.Compendium.Tests.OldSchoolEssentials
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests
+  name: MagicItemConversionTests
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.html
+  commentId: T:CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests
+  nameWithType: MagicItemConversionTests
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
+  name: ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect()
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_MagicItemConversionTests_ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
+  commentId: M:CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect()
+  nameWithType: MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect()
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect*
+  name: ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_MagicItemConversionTests_ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect_
+  commentId: Overload:CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
+  nameWithType: MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  name: ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect()
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_MagicItemConversionTests_ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  commentId: M:CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect()
+  nameWithType: MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect()
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect*
+  name: ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_MagicItemConversionTests_ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect_
+  commentId: Overload:CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  nameWithType: MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull
+  name: ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull()
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_MagicItemConversionTests_ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull
+  commentId: M:CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull()
+  nameWithType: MagicItemConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull()
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull*
+  name: ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_MagicItemConversionTests_ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull_
+  commentId: Overload:CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull
+  nameWithType: MagicItemConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull
 - uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.MonsterConversionTests
   name: MonsterConversionTests
   href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MonsterConversionTests.html
