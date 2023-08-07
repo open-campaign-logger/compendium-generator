@@ -12,7 +12,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
-        "Monster",
+        "Spell",
         "Level 3",
         "Magic User"
       ],
@@ -27,7 +27,7 @@
         "Potions",
         "OSE",
         "Necrotic Gnome",
-        "Monster"
+        "Magic Item"
       ],
       "tagSymbol": "~",
       "tagValue": "Potion of Control Undead"
@@ -38,7 +38,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
-        "Monster",
+        "Spell",
         "Level 1",
         "Cleric"
       ],
@@ -53,7 +53,7 @@
         "Miscellaneous Items",
         "OSE",
         "Necrotic Gnome",
-        "Monster"
+        "Magic Item"
       ],
       "tagSymbol": "~",
       "tagValue": "Broom of Flying"
@@ -64,7 +64,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
-        "Monster",
+        "Spell",
         "Level 1",
         "Cleric"
       ],
@@ -77,7 +77,7 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
-        "Monster",
+        "Spell",
         "Level 1",
         "Cleric"
       ],
@@ -90,12 +90,123 @@
       "labels": [
         "OSE",
         "Necrotic Gnome",
-        "Monster",
+        "Spell",
         "Level 2",
         "Cleric"
       ],
       "tagSymbol": "~",
       "tagValue": "Spell of Find Traps - CL2"
+    },
+    {
+      "rawText": null,
+      "rawPublic": "## Ring of Controlling Plants\n\nGrants the power to control plants.\n\n* **Affects**: All plants (including plant monsters) in a 10’ square area.\n* **Range**: The area may be up to 60’ distant.\n* **Commands**: Affected plants may be commanded to move around as the character wishes.\n* **Concentration**: The effect lasts as long as the wearer of the ring concentrates.\r\nSource: ~\"Necrotic Gnome OGL\"\r\n",
+      "labels": [
+        "Magic Items",
+        "Rings",
+        "OSE",
+        "Necrotic Gnome",
+        "Magic Item"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Ring of Controlling Plants"
+    },
+    {
+      "rawText": null,
+      "rawPublic": "## Control Plant\n\n* **Affects**: All plants (including plant monsters) in a 30’ square area up to 60’ distant.\n* **Commands**: Affected plants may be commanded to move around as the character wishes, and may be used to entangle creatures in the area.\r\nSource: ~\"Necrotic Gnome OGL\"\r\n",
+      "labels": [
+        "Magic Items",
+        "Potions",
+        "OSE",
+        "Necrotic Gnome",
+        "Magic Item"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Potion of Control Plant"
+    },
+    {
+      "rawText": null,
+      "rawPublic": "## Ring of Controlling Animals\n\nGrants the power to control the actions of animals.\n\n* **Affects**: 1d6 normal animals or 1 giant animal (not magical or intelligent animals).\n* **Resisting**: No saving throw is allowed.\n* **Visual range**: The character can only control animals that they can see.\n* **Concentration**: Control is broken if the user of the ring moves or attacks.\n* **When concentration ends**: The referee should make a reaction roll with a -1 penalty (see Encounters) to determine the animals’ behaviour.\n* **Usage frequency**: May be used up to once per turn.\r\nSource: ~\"Necrotic Gnome OGL\"\r\n",
+      "labels": [
+        "Magic Items",
+        "Rings",
+        "OSE",
+        "Necrotic Gnome",
+        "Magic Item"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Ring of Controlling Animals"
+    },
+    {
+      "rawText": "```clyt\r\ntemplate: stat-block.ose\r\ntitle: Acolyte\r\ndescription: 1st level clerics on a quest for their deity.\r\nstats:\r\n- Armor Class: 2 [17]\r\n- Hit Dice: 1 (4hp)\r\n- Attacks: 1 × mace (1d6)\r\n- THAC0: 19 [0]\r\n- Movement: 60' (20')\r\n- Saving Throws: D11 W12 P14 B16 S15 (Cleric 1)\r\n- Morale: 7\r\n- Alignment: Any\r\n- XP: 10\r\n- Number Appearing: 1d8 (1d20)\r\n- Treasure Type: U\r\ntraits:\r\n- Leader: Groups of 4+ are led by a higher level cleric (1d10: 1–4: 2nd level, 5–7: 3rd level, 8–9: 4th level, 10: 5th level). Choose or roll the leader’s spells.\r\n```\r\n\r\n\r\nSource: ~\"Necrotic Gnome OGL\"\r\n\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Necrotic Gnome",
+        "Monster",
+        "Treasure Type: U",
+        "Alignment: Any",
+        "HD: 1"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Acolyte"
+    },
+    {
+      "rawText": "```clyt\r\ntemplate: stat-block.ose\r\ntitle: Bandit\r\ndescription: NPC thieves who live by robbery.\r\nstats:\r\n- Armor Class: 6 [13]\r\n- Hit Dice: 1 (4hp)\r\n- Attacks: 1 × weapon (1d6 or by weapon)\r\n- THAC0: 19 [0]\r\n- Movement: 120’ (40’)\r\n- Saving Throws: D13 W14 P13 B16 S15 (Thief 1)\r\n- Morale: 8\r\n- Alignment: Neutral or Chaotic\r\n- XP: 10\r\n- Number Appearing: 1d8 (3d10)\r\n- Treasure Type: U (A)\r\ntraits:\r\n- Trickery: Use disguise or trickery to surprise victims.\r\n- Leader: May have a leader of 2nd level or higher (any human class).\r\n- Hoard: Only have treasure type A when encountered in their wilderness lair.\r\n```\r\n\r\n\r\nSource: ~\"Necrotic Gnome OGL\"\r\n\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Necrotic Gnome",
+        "Monster",
+        "Treasure Type: U",
+        "Treasure Type: A",
+        "Alignment: Chaotic",
+        "Alignment: Neutral",
+        "HD: 1"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Bandit"
+    },
+    {
+      "rawText": "```clyt\r\ntemplate: stat-block.ose\r\ntitle: Giant Bat\r\ndescription: Carnivorous bats that may attack adventurers, if hungry. 1-in-20 groups of giant bats are vampiric see (see Giant Vampire Bat).\r\nstats:\r\n- Armor Class: 6 [13]\r\n- Hit Dice: 2 (9hp)\r\n- Attacks: 1 × bite (1d4)\r\n- THAC0: 18 [+1]\r\n- Movement: 30’ (10’) / 180’ (60’) flying\r\n- Saving Throws: D12 W13 P14 B15 S16 (1)\r\n- Morale: 8\r\n- Alignment: Neutral\r\n- XP: 20\r\n- Number Appearing: 1d10 (1d10)\r\n- Treasure Type: None\r\ntraits:\r\n- Echolocation: See main entry.\r\n```\r\n~\"Bat\" Traits\r\n\r\nSource: ~\"Necrotic Gnome OGL\"\r\n\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Necrotic Gnome",
+        "Monster",
+        "Treasure Type: None",
+        "Alignment: Neutral",
+        "HD: 2"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Giant Bat"
+    },
+    {
+      "rawText": "```clyt\r\ntemplate: stat-block.ose\r\ntitle: Normal Bat\r\n\r\nstats:\r\n- Armor Class: 6 [13]\r\n- Hit Dice: 1hp\r\n- Attacks: 1 × swarm (confusion)\r\n- THAC0: 20 [-1]\r\n- Movement: 9’ (3’) / 120’ (40’) flying\r\n- Saving Throws: D14 W15 P16 B17 S18 (NH)\r\n- Morale: 7\r\n- Alignment: Neutral\r\n- XP: 5\r\n- Number Appearing: 1d100 (1d100)\r\n- Treasure Type: None\r\ntraits:\r\n- Echolocation: See main entry.\r\n- Swarm: 10 bats can swarm around a target’s head, causing confusion: -2 to attack rolls and saves; unable to cast spells.\r\n- Attacks: As normal human.\r\n- Flighty: Unless magically summoned or controlled, normal bats check morale every round.\r\n```\r\n~\"Bat\" Traits\r\n\r\nSource: ~\"Necrotic Gnome OGL\"\r\n\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Necrotic Gnome",
+        "Monster",
+        "Treasure Type: None",
+        "Alignment: Neutral",
+        "HD: 1"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Normal Bat"
+    },
+    {
+      "rawText": "```clyt\r\ntemplate: stat-block.ose\r\ntitle: Ape, White\r\ndescription: Albino, herbivorous, gorilla-like apes that live in caves and emerge at night to forage.\r\nstats:\r\n- Armor Class: 6 [13]\r\n- Hit Dice: 4 (18hp)\r\n- Attacks: 2 × claw (1d4) or 1 × thrown rock (1d6)\r\n- THAC0: 16 [+3]\r\n- Movement: 120’ (40’)\r\n- Saving Throws: D12 W13 P14 B15 S16 (2)\r\n- Morale: 7\r\n- Alignment: Neutral\r\n- XP: 75\r\n- Number Appearing: 1d6 (2d4)\r\n- Treasure Type: None\r\ntraits:\r\n- Territorial: Defend their lair with threats and, if this is ignored, violence.\r\n```\r\n\r\n\r\nSource: ~\"Necrotic Gnome OGL\"\r\n\r\n",
+      "rawPublic": null,
+      "labels": [
+        "OSE",
+        "Necrotic Gnome",
+        "Monster",
+        "Treasure Type: None",
+        "Alignment: Neutral",
+        "HD: 4"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Ape, White"
     },
     {
       "rawText": null,

@@ -500,8 +500,10 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
                 creature.SourceTitle = this.SourceTitle;
             }
 
-            // Populate Tag Information
+            // Populate Tag and Label Information
             creature.TagSymbol = this.TagSymbol;
+            creature.TagValuePrefix = this.TagValuePrefix;
+            creature.Labels = this.Labels;
 
             return creature;
         }

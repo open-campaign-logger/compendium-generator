@@ -36,7 +36,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         /// Gets or sets the subtypes associated with this class.
         /// </summary>
         [JsonProperty("subtypes")]
-        public List<SRDBase>? Subtypes { get; set; } = new();
+        public List<SRDBase>? Subtypes { get; set; } = new ();
 
         /// <summary>
         /// Gets or sets the subtypes name for this class.

@@ -469,7 +469,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
             {
                 RawText = this.ToCampaignLoggerStatBlock(),
                 RawPublic = string.Empty,
-                Labels = new List<string>() { $"CR {this.ChallengeRating}" },
+                Labels = this.Labels ?? new List<string>(),
                 TagSymbol = this.TagSymbol,
                 TagValue = $"{this.TagValuePrefix}{this.Name}",
             };

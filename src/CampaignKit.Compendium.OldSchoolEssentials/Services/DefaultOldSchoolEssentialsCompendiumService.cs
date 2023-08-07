@@ -116,7 +116,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
                 var spellDataSourceConfig = compendium.SourceDataSets.FirstOrDefault(ds => ds.SourceDataSetName.Equals("Spells"));
                 var spellImportLimit = spellDataSourceConfig?.ImportLimit ?? int.MaxValue;
                 var spellImportCount = 0;
-                var itemDataSourceConfig = compendium.SourceDataSets.FirstOrDefault(ds => ds.SourceDataSetName.Equals("Items"));
+                var itemDataSourceConfig = compendium.SourceDataSets.FirstOrDefault(ds => ds.SourceDataSetName.Equals("Magic Items"));
                 var itemImportLimit = itemDataSourceConfig?.ImportLimit ?? int.MaxValue;
                 var itemImportCount = 0;
 
@@ -128,10 +128,18 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
                         // Process monsters
                         if (campaignEntry.Labels.Contains("Monster"))
                         {
+                            // Check if the counter is greater than or equal to the import limit.
+                            if (monsterImportCount >= monsterImportLimit)
+                            {
+                                // Continue the loop.
+                                continue;
+                            }
+
                             // Create a new SRDCreature object from the CampaignEntry
                             var creature = new SRDCreature(campaignEntry)
                             {
                                 TagSymbol = monsterDataSourceConfig?.TagSymbol ?? "~",
+                                TagValuePrefix = monsterDataSourceConfig?.TagValuePrefix ?? string.Empty,
                             };
                             creature.Labels ??= new List<string>();
                             if (monsterDataSourceConfig != null
@@ -146,29 +154,31 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
 
                             // Increment the counter
                             monsterImportCount++;
-
-                            // Check if the counter is greater than or equal to the import limit.
-                            if (monsterImportCount >= monsterImportLimit)
-                            {
-                                // Break out of the loop
-                                break;
-                            }
                         }
 
                         // Process spells
                         if (campaignEntry.Labels.Contains("Spell"))
                         {
+                            // Check if the counter is greater than or equal to the import limit.
+                            if (spellImportCount >= spellImportLimit)
+                            {
+                                // Continue the loop.
+                                continue;
+                            }
+
                             // Create a new SRDSpell object from the CampaignEntry
                             var spell = new SRDSpell(campaignEntry)
                             {
                                 TagSymbol = monsterDataSourceConfig?.TagSymbol ?? "~",
+                                TagValuePrefix = monsterDataSourceConfig?.TagValuePrefix ?? string.Empty,
                             };
+
                             spell.Labels ??= new List<string>();
-                            if (monsterDataSourceConfig != null
-                                && monsterDataSourceConfig.Labels != null
-                                && monsterDataSourceConfig.Labels.Count > 0)
+                            if (spellDataSourceConfig != null
+                                && spellDataSourceConfig.Labels != null
+                                && spellDataSourceConfig.Labels.Count > 0)
                             {
-                                spell.Labels.AddRange(monsterDataSourceConfig.Labels);
+                                spell.Labels.AddRange(spellDataSourceConfig.Labels);
                             }
 
                             // Add the spell to the destination Campaign
@@ -176,29 +186,31 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
 
                             // Increment the counter
                             spellImportCount++;
-
-                            // Check if the counter is greater than or equal to the import limit.
-                            if (spellImportCount >= spellImportLimit)
-                            {
-                                // Break out of the loop
-                                break;
-                            }
                         }
 
                         // Process magic items
                         if (campaignEntry.Labels.Contains("Magic Items"))
                         {
+                            // Check if the counter is greater than or equal to the import limit.
+                            if (itemImportCount >= itemImportLimit)
+                            {
+                                // Continue the loop
+                                continue;
+                            }
+
                             // Create a new SRDItem object from the CampaignEntry
                             var magicItem = new SRDMagicItem(campaignEntry)
                             {
                                 TagSymbol = monsterDataSourceConfig?.TagSymbol ?? "+",
+                                TagValuePrefix = monsterDataSourceConfig?.TagValuePrefix ?? string.Empty,
                             };
+
                             magicItem.Labels ??= new List<string>();
-                            if (monsterDataSourceConfig != null
-                                && monsterDataSourceConfig.Labels != null
-                                && monsterDataSourceConfig.Labels.Count > 0)
+                            if (itemDataSourceConfig != null
+                                && itemDataSourceConfig.Labels != null
+                                && itemDataSourceConfig.Labels.Count > 0)
                             {
-                                magicItem.Labels.AddRange(monsterDataSourceConfig.Labels);
+                                magicItem.Labels.AddRange(itemDataSourceConfig.Labels);
                             }
 
                             // Add the magic magicItem to the destination Campaign
@@ -206,13 +218,6 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.Services
 
                             // Increment the counter
                             itemImportCount++;
-
-                            // Check if the counter is greater than or equal to the import limit.
-                            if (itemImportCount >= itemImportLimit)
-                            {
-                                // Break out of the loop
-                                break;
-                            }
                         }
                     }
                 }
