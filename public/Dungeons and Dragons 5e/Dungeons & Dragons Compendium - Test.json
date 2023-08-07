@@ -1395,7 +1395,7 @@
     },
     {
       "rawText": "",
-      "rawPublic": "# Brutal Attack\r\nAfter making a melee attack, you may reroll any weapon damage and choose the better result. This feat can be used no more than once per turn.\r\n## Effects\r\n\r\nSource: ~\"Level Up Advanced 5e\"\r\n",
+      "rawPublic": "# Brutal Attack\r\nAfter making a melee attack, you may reroll any weapon damage and choose the better result. This feat can be used no more than once per turn.\r\n\r\nSource: ~\"Level Up Advanced 5e\"\r\n",
       "labels": [
         "D&D 5E",
         "Feat",
