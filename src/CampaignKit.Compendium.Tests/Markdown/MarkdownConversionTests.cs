@@ -10,6 +10,7 @@ namespace CampaignKit.Compendium.Tests.Markdown
     public class MarkdownConversionTests
     {
 
+        /// <summary>
         /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
         /// </summary>
         [TestMethod]

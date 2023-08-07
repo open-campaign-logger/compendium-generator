@@ -81,6 +81,9 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
         public string? TagSymbol { get; set; } = string.Empty;
 
         /// <inheritdoc/>
+        public string? TagValuePrefix { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
         public CampaignEntry ToCampaignEntry()
         {
             // Create a new CampaignEntry object.

@@ -47,7 +47,9 @@ Use the following configuration guide below to setup the module.
           // Do not change this
           "SourceDataSetName": "Spells"
           // Symbol to use for campaign entries derived from the source data.
-          "TagSymbol":  "~"
+          "TagSymbol":  "~",
+          // Optional prefix to append to the entry name.  This can be helpful for cases where name collisions occur between different items.  For example: an `Acolyte` is both a background and a monster.
+          "TagValuePrefix": "Spell - "
         },
         {
           // Limits number of items to parse from the source data set. Useful for testing purposes.

@@ -27,23 +27,8 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
     /// <summary>
     /// Represents a magic item in a Dungeons and Dragons game.
     /// </summary>
-    public class SRDMagicItem : IGameComponent
+    public class SRDMagicItem : SRDBase
     {
-        /// <summary>
-        /// Gets or sets the description of the magic item.
-        /// </summary>
-        [JsonProperty("desc")]
-        public string? Desc { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public List<string>? Labels { get; set; } = new List<string> { };
-
-        /// <summary>
-        /// Gets or sets the name of the magic item.
-        /// </summary>
-        [JsonProperty("name")]
-        public string? Name { get; set; } = string.Empty;
-
         /// <summary>
         /// Gets or sets the rarity of the magic item.
         /// </summary>
@@ -56,28 +41,25 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         [JsonProperty("requires-attunement")]
         public string? RequiresAttunement { get; set; } = string.Empty;
 
-        /// <inheritdoc/>
-        public string? SourceTitle { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public string? TagSymbol { get; set; } = string.Empty;
-
         /// <summary>
         /// Gets or sets the type of magic item.
         /// </summary>
         [JsonProperty("type")]
         public string? Type { get; set; } = string.Empty;
 
-        /// <inheritdoc/>
-        public CampaignEntry ToCampaignEntry()
+        /// <summary>
+        /// Generate a Campaign Entry that represents this object.
+        /// </summary>
+        /// <returns>A Campaign Entry that represents this object.</returns>
+        public override CampaignEntry ToCampaignEntry()
         {
             // Create a markdown representation of the data.
             var stringBuilder = new StringBuilder();
             stringBuilder.AppendLine($"# {this.Name}");
             stringBuilder.AppendLine(this.Desc);
-            stringBuilder.AppendLine($"* Type: {this.Type}");
-            stringBuilder.AppendLine($"* Rarity: {this.Rarity}");
-            stringBuilder.AppendLine($"* Requires Attunement: {this.RequiresAttunement}");
+            stringBuilder.AppendLine($"* {{b|Type}}: {this.Type}");
+            stringBuilder.AppendLine($"* {{b|Rarity}}: {this.Rarity}");
+            stringBuilder.AppendLine($"* {{b|Requires Attunement}}: {this.RequiresAttunement}");
 
             // Add Attribution
             if (!string.IsNullOrEmpty(this.SourceTitle))
@@ -92,7 +74,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
                 RawPublic = stringBuilder.ToString(),
                 Labels = this.Labels,
                 TagSymbol = this.TagSymbol,
-                TagValue = this.Name,
+                TagValue = $"{this.TagValuePrefix}{this.Name}",
             };
 
             return campaignEntry;

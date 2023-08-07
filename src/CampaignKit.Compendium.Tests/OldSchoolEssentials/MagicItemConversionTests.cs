@@ -5,10 +5,11 @@ using Newtonsoft.Json;
 namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
 {
     [TestClass]
-    public class OldSchoolEssentialsConversionTests
+    public class MagicItemConversionTests
     {
 
-        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests
         /// </summary>
         [TestMethod]
         [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
@@ -31,7 +32,8 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
 
         }
 
-        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests
         /// </summary>
         [TestMethod]
         [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]
@@ -57,7 +59,9 @@ namespace CampaignKit.Compendium.Tests.OldSchoolEssentials
             Assert.IsTrue(convertedCampaignEntry.Labels.Contains("123"));
 
         }
-        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests
         /// </summary>
         [TestMethod]
         [DeploymentItem(@"OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json")]

@@ -20,14 +20,20 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
 
     using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Common;
+    using Microsoft.IdentityModel.Tokens;
 
     using Newtonsoft.Json;
 
     /// <summary>
     /// Represents a spell in a Dungeons and Dragons game.
     /// </summary>
-    public class SRDSpell : IGameComponent
+    public class SRDSpell : SRDBase
     {
+        /// <summary>
+        /// Gets or sets the Advanced 5th Edition schools that this spell belongs to.
+        /// </summary>
+        public List<string>? A5ESchools { get; set; } = new List<string>();
+
         /// <summary>
         /// Gets or sets the archetype of the spell.
         /// </summary>
@@ -53,6 +59,11 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         public string? Class { get; set; } = string.Empty;
 
         /// <summary>
+        /// Gets or sets the classes that this spell belongs to.
+        /// </summary>
+        public List<string>? Classes { get; set; } = new List<string>();
+
+        /// <summary>
         /// Gets or sets the components required to cast the spell.
         /// </summary>
         [JsonProperty("components")]
@@ -65,10 +76,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         public string? Concentration { get; set; } = string.Empty;
 
         /// <summary>
-        /// Gets or sets the description of this spell.
+        /// Gets or sets the dame types associated with this spell.
         /// </summary>
-        [JsonProperty("desc")]
-        public string? Desc { get; set; } = string.Empty;
+        public List<string>? DamageType { get; set; } = new List<string> { };
 
         /// <summary>
         /// Gets or sets the domains property of this spell.
@@ -88,9 +98,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         [JsonProperty("higher_level")]
         public string? HigherLevel { get; set; } = string.Empty;
 
-        /// <inheritdoc/>
-        public List<string>? Labels { get; set; } = new List<string> { };
-
         /// <summary>
         /// Gets or sets the level of the spell.
         /// </summary>
@@ -108,12 +115,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         /// </summary>
         [JsonProperty("material")]
         public string? Material { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Gets or sets the name of the spell.
-        /// </summary>
-        [JsonProperty("name")]
-        public string? Name { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the oaths property of the spell.
@@ -169,39 +170,106 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
         [JsonProperty("shape")]
         public string? Shape { get; set; } = string.Empty;
 
-        /// <inheritdoc/>
-        public string? SourceTitle { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public string? TagSymbol { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public CampaignEntry ToCampaignEntry()
+        /// <summary>
+        /// Generate a Campaign Entry that represents this object.
+        /// </summary>
+        /// <returns>A Campaign Entry that represents this object.</returns>
+        public override CampaignEntry ToCampaignEntry()
         {
             // Create a markdown representation of the data.
             var stringBuilder = new StringBuilder();
             stringBuilder.AppendLine($"# {this.Name}");
             stringBuilder.AppendLine(this.Desc);
-            stringBuilder.AppendLine($"* Higher Level Casting: {this.HigherLevel}");
-            stringBuilder.AppendLine($"* Page: {this.Page}");
-            stringBuilder.AppendLine($"* Range: {this.Range}");
-            stringBuilder.AppendLine($"* Components: {this.Components}");
-            stringBuilder.AppendLine($"* Material: {this.Material}");
-            stringBuilder.AppendLine($"* Ritual: {this.Ritual}");
-            stringBuilder.AppendLine($"* Duration: {this.Duration}");
-            stringBuilder.AppendLine($"* Concentration: {this.Concentration}");
-            stringBuilder.AppendLine($"* Casting Time: {this.CastingTime}");
-            stringBuilder.AppendLine($"* Level: {this.LevelInt}");
-            stringBuilder.AppendLine($"* School: {this.School}");
-            stringBuilder.AppendLine($"* Class: {this.Class}");
-            stringBuilder.AppendLine($"* Archetype: {this.Archetype}");
-            stringBuilder.AppendLine($"* Circles: {this.Circles}");
-            if (this.RollsAttack ?? false)
+
+            if (!string.IsNullOrEmpty(this.Page))
             {
-                stringBuilder.AppendLine($"* Roll Attack?: {this.RollsAttack}");
+                stringBuilder.AppendLine($"* {{b|Page}}: {this.Page}");
             }
 
-            stringBuilder.AppendLine($"* Saving Throws: {string.Join(", ", this.SavingThrowAbility ?? new List<string>())}");
+            if (!string.IsNullOrEmpty(this.Range))
+            {
+                stringBuilder.AppendLine($"* {{b|Range}}: {this.Range}");
+            }
+
+            if (!string.IsNullOrEmpty(this.Components))
+            {
+                stringBuilder.AppendLine($"* {{b|Components}}: {this.Components}");
+            }
+
+            if (!string.IsNullOrEmpty(this.Material))
+            {
+                stringBuilder.AppendLine($"* {{b|Material}}: {this.Material}");
+            }
+
+            if (!string.IsNullOrEmpty(this.Ritual))
+            {
+                stringBuilder.AppendLine($"* {{b|Ritual}}: {this.Ritual}");
+            }
+
+            if (!string.IsNullOrEmpty(this.Duration))
+            {
+                stringBuilder.AppendLine($"* {{b|Duration}}: {this.Duration}");
+            }
+
+            if (!string.IsNullOrEmpty(this.Concentration))
+            {
+                stringBuilder.AppendLine($"* {{b|Concentration}}: {this.Concentration}");
+            }
+
+            if (!string.IsNullOrEmpty(this.CastingTime))
+            {
+                stringBuilder.AppendLine($"* {{b|Casting Time}}: {this.CastingTime}");
+            }
+
+            if (this.LevelInt != int.MinValue)
+            {
+                stringBuilder.AppendLine($"* {{b|Level Int}}: {this.LevelInt}");
+            }
+
+            if (!string.IsNullOrEmpty(this.HigherLevel))
+            {
+                stringBuilder.AppendLine($"* {{b|HigherLevel}}: {this.HigherLevel}");
+            }
+
+            if (!string.IsNullOrEmpty(this.School))
+            {
+                stringBuilder.AppendLine($"* {{b|School}}: {this.School}");
+            }
+
+            if (!string.IsNullOrEmpty(this.Class))
+            {
+                stringBuilder.AppendLine($"* {{b|Class}}: {this.Class}");
+            }
+
+            if (!string.IsNullOrEmpty(this.Archetype))
+            {
+                stringBuilder.AppendLine($"* {{b|Archetype}}: {this.Archetype}");
+            }
+
+            if (!string.IsNullOrEmpty(this.Circles))
+            {
+                stringBuilder.AppendLine($"* {{b|Circles}}: {this.Circles}");
+            }
+
+            if (this.RollsAttack ?? false)
+            {
+                stringBuilder.AppendLine($"* {{b|Is Rolled Attack?}}: {this.RollsAttack}");
+            }
+
+            if (this.Classes != null && this.Classes.Count > 0)
+            {
+                stringBuilder.AppendLine($"* {{b|Classes}}: {string.Join(", ", this.Classes)}");
+            }
+
+            if (this.A5ESchools != null && this.A5ESchools.Count > 0)
+            {
+                stringBuilder.AppendLine($"* {{b|Advanced Fifth Edition Schools}}: {string.Join(", ", this.A5ESchools)}");
+            }
+
+            if (this.SavingThrowAbility != null && this.SavingThrowAbility.Count > 0)
+            {
+                stringBuilder.AppendLine($"* {{b|Saving Throws}}: {string.Join(", ", this.SavingThrowAbility ?? new List<string>())}");
+            }
 
             // Add Attribution
             if (!string.IsNullOrEmpty(this.SourceTitle))
@@ -216,7 +284,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
                 RawPublic = stringBuilder.ToString(),
                 Labels = this.Labels,
                 TagSymbol = this.TagSymbol,
-                TagValue = this.Name,
+                TagValue = $"{this.TagValuePrefix}{this.Name}",
             };
 
             return campaignEntry;

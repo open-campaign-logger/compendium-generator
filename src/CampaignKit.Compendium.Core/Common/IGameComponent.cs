@@ -44,6 +44,11 @@ namespace CampaignKit.Compendium.Core.Common
         public string? TagSymbol { get; set; }
 
         /// <summary>
+        /// Gets or sets the tag value prefix for this game component.
+        /// </summary>
+        public string? TagValuePrefix { get; set; }
+
+        /// <summary>
         /// Generates a CampaignLogger Entry for this game component.
         /// </summary>
         /// <returns>A CampaignLogger Entry for this game component.</returns>

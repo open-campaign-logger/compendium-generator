@@ -164,6 +164,16 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                         gameComponent.TagSymbol = sourceDataSet.TagSymbol;
                     }
 
+                    // Apply TagValuePrefix if configured.
+                    if (!string.IsNullOrEmpty(sourceDataSet.TagValuePrefix))
+                    {
+                        gameComponent.TagValuePrefix = sourceDataSet.TagValuePrefix;
+                    }
+                    else
+                    {
+                        gameComponent.TagValuePrefix = string.Empty;
+                    }
+
                     // Apply labels if configured.
                     if (sourceDataSet.Labels != null && sourceDataSet.Labels.Count > 0)
                     {
@@ -173,7 +183,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                     }
 
                     // Check if the componentList does not contain a gameComponent with the same name
-                    if (!componentList.Any(c => (c.Name is not null) && c.Name.Equals(gameComponent.Name)))
+                    if (!componentList.Any(c => (c.Name is not null) && c.Name.Equals(sourceDataSet.TagValuePrefix + gameComponent.Name)))
                     {
                         // Log the gameComponent name
                         this.logger.LogDebug("New gameComponent found and added to compendium list: {gameComponent}.", gameComponent.Name);

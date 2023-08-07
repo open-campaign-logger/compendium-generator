@@ -318,9 +318,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// </summary>
         public int? Persuasion { get; set; } = 0;
 
-        /// <inheritdoc/>
-        public string? SourceTitle { get; set; } = string.Empty;
-
         /// <summary>
         /// Gets or sets a collection of reactions associated with the creature.
         /// </summary>
@@ -344,6 +341,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// Example: 0.
         /// </summary>
         public int? SleightOfHand { get; set; } = 0;
+
+        /// <inheritdoc/>
+        public string? SourceTitle { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets a collection of special abilities associated with the creature.
@@ -385,6 +385,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// Gets or sets the campaign tag symbol to use for this creature.
         /// </summary>
         public string? TagSymbol { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
+        public string? TagValuePrefix { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets creature data formatted in standard text format.
@@ -468,7 +471,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
                 RawPublic = string.Empty,
                 Labels = new List<string>() { $"CR {this.ChallengeRating}" },
                 TagSymbol = this.TagSymbol,
-                TagValue = this.Name,
+                TagValue = $"{this.TagValuePrefix}{this.Name}",
             };
 
             if (this.Type != null)

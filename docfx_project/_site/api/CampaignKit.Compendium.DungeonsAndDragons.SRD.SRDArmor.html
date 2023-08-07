@@ -17,7 +17,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/open-campaign-logger/compendium-generator/new/93-add-magic-items-and-spells/apiSpec/new?filename=CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor.md&amp;value=---%0Auid%3A%20CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/open-campaign-logger/compendium-generator/new/114-add-other-non-srd-items-armor-and-spells-to-dd-module/apiSpec/new?filename=CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor.md&amp;value=---%0Auid%3A%20CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
   </head>
 
   <script type="module">
@@ -79,7 +79,7 @@
 
   <h1 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor" class="text-break">
     Class SRDArmor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -92,7 +92,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SRDArmor : IGameComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public class SRDArmor : SRDBase, IGameComponent</code></pre>
   </div>
 
 
@@ -102,6 +102,7 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html">SRDBase</a></div>
       <div><span class="xref">SRDArmor</span></div>
     </dd>
   </dl>
@@ -117,6 +118,24 @@
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Desc">SRDBase.Desc</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Labels">SRDBase.Labels</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Name">SRDBase.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_SourceTitle">SRDBase.SourceTitle</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_TagSymbol">SRDBase.TagSymbol</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_TagValuePrefix">SRDBase.TagValuePrefix</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -153,7 +172,7 @@
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_BaseAc" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.BaseAc">
   BaseAc
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the base AC for the armor.</p>
@@ -186,7 +205,7 @@ public int? BaseAc { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Category" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Category">
   Category
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the cateogry of the armor.</p>
@@ -219,7 +238,7 @@ public string? Category { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Cost" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Cost">
   Cost
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the cost of the armor.</p>
@@ -248,109 +267,11 @@ public string? Cost { get; set; }</code></pre>
 
 
 
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Desc_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Desc*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Desc" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Desc">
-  Desc
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L104"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the description of the magic item.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;desc&quot;)]
-public string? Desc { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Labels_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Labels*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Labels" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Labels">
-  Labels
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L108"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the list of labels associated with this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;string&gt;? Labels { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Name_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Name*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Name" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Name">
-  Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L113"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the name of the magic item.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;name&quot;)]
-public string? Name { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_PlusConMod_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.PlusConMod*"></a>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_PlusConMod" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.PlusConMod">
   PlusConMod
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the whether this armor allows the character to add their constitution modifier
@@ -384,7 +305,7 @@ public bool? PlusConMod { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_PlusDexMod" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.PlusDexMod">
   PlusDexMod
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the whether this armor allows the character to add their dexterity modifier
@@ -418,7 +339,7 @@ public bool? PlusDexMod { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_PlusFlatMod" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.PlusFlatMod">
   PlusFlatMod
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the the flat modified to add to the character's current AC.</p>
@@ -451,7 +372,7 @@ public int? PlusFlatMod { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_PlusMax" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.PlusMax">
   PlusMax
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the maximum dexterity bonus which is the maximum amount of additional Armor
@@ -485,7 +406,7 @@ public int? PlusMax { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_PlusWisMod" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.PlusWisMod">
   PlusWisMod
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the whether this armor allows the character to add their wisdom modifier
@@ -519,7 +440,7 @@ public bool? PlusWisMod { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Rarity" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Rarity">
   Rarity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the rarity of the magic item.</p>
@@ -548,43 +469,11 @@ public string? Rarity { get; set; }</code></pre>
 
 
 
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_SourceTitle_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.SourceTitle*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_SourceTitle" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.SourceTitle">
-  SourceTitle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L123"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the title of the source of the game component's data.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? SourceTitle { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_StealthDisadvantage_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.StealthDisadvantage*"></a>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_StealthDisadvantage" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.StealthDisadvantage">
   StealthDisadvantage
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets whether the player has a stealth disadvantage while wearing this armor.</p>
@@ -617,7 +506,7 @@ public bool? StealthDisadvantage { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_StrengthRequirement" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.StrengthRequirement">
   StrengthRequirement
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the strength requirement to wear this armor.</p>
@@ -646,43 +535,11 @@ public int? StrengthRequirement { get; set; }</code></pre>
 
 
 
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_TagSymbol_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.TagSymbol*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_TagSymbol" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.TagSymbol">
-  TagSymbol
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L126"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the list of labels associated with this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? TagSymbol { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Weight_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Weight*"></a>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_Weight" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.Weight">
   Weight
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the weight of the armor.</p>
@@ -719,22 +576,22 @@ public string? Weight { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDArmor_ToCampaignEntry" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDArmor.ToCampaignEntry">
   ToCampaignEntry()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generates a CampaignLogger Entry for this game component.</p>
+  <div class="markdown level1 summary"><p>Generate a Campaign Entry that represents this object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CampaignEntry ToCampaignEntry()</code></pre>
+    <pre><code class="lang-csharp hljs">public override CampaignEntry ToCampaignEntry()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="CampaignKit.Compendium.Core.CampaignLogger.CampaignEntry.html">CampaignEntry</a></dt>
-    <dd><p>A CampaignLogger Entry for this game component.</p>
+    <dd><p>A Campaign Entry that represents this object.</p>
 </dd>
   </dl>
 
@@ -752,7 +609,7 @@ public string? Weight { get; set; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/93-add-magic-items-and-spells/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L29" class="edit-link">Edit this page</a>
+          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/114-add-other-non-srd-items-armor-and-spells-to-dd-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDArmor.cs/#L29" class="edit-link">Edit this page</a>
         </div>
 
         
