@@ -8860,3 +8860,15 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Utility.Services.IApplication.RunAsync
   nameWithType: IApplication.RunAsync
+- uid: CampaignKit.Compendium.WebScraper
+  name: CampaignKit.Compendium.WebScraper
+  href: api/CampaignKit.Compendium.WebScraper.html
+  commentId: N:CampaignKit.Compendium.WebScraper
+  fullName: CampaignKit.Compendium.WebScraper
+  nameWithType: CampaignKit.Compendium.WebScraper
+- uid: CampaignKit.Compendium.WebScraper.Class1
+  name: Class1
+  href: api/CampaignKit.Compendium.WebScraper.Class1.html
+  commentId: T:CampaignKit.Compendium.WebScraper.Class1
+  fullName: CampaignKit.Compendium.WebScraper.Class1
+  nameWithType: Class1

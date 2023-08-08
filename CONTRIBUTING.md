@@ -1,9 +1,10 @@
 # Adding a New Module
 
-## Work Management
+## Work Setup
 
-### Create Work Item
-Create a new project item to the [Campaign Compendium planning board](https://github.com/orgs/open-campaign-logger/projects/5) with this high level task list.
+### Create Project Item
+Create a new project item in the [Campaign Compendium planning board](https://github.com/orgs/open-campaign-logger/projects/5) with this high level task list.
+
 ```
 # Task List
  * [ ] Add New Project
@@ -16,17 +17,30 @@ Create a new project item to the [Campaign Compendium planning board](https://gi
  * [ ] Create Project README.md
  * [ ] Update Solution README.md
  * [ ] Update CONTRIBUTING.md
- ```
+```
+ 
+### Convert Project Item to Issue
+1. Click `Convert to Issue` on the Project Item to convert it into a GitHub Issue.
+ 
+### Create Code Branch
+1. Click the `Create a branch` link in the `Development` section of the issue.  
+1. Click the `Change branch source` link on the popup that's displayed and change the branch source from `main` to `develop`.
+ 
+### Convert Task List Items to Issues
+Each item in the Task List can now be converted into an issue by hovering over the issue and clicking the `Convert to Issue` icon that pops up in the far right.
 
- ### Create Code Branch
- All new features should be added as a branch off of the the `develop` branch.
+More information about GitHub tasks lists can be found [here](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists)
 
-## Service Setup
+## Module Setup
+
+### Switch Code Branch
+1. In VisualStudio perform a `Sync` operation in the `Git Changes` window to pick up on the newly created repository branch.
+1. Checkout the new branch by clicking on `Remotes > NEW BRANCH NAME` in the `Git Changes` dropdown.
 
 ### Add New Project to Solution
 
 1. Add a new **Class Library** project to the solution.  Make sure that the project is stored in the `/src/` directory like the other modules.
-1. Add `CampaignKit.Compendium.Core` project reference (**right click project > Add > Project Reference...**)
+1. Add `CampaignKit.Compendium.Core` project reference (`right click project > Add > Project Reference...`)
 1. Copy the `stylecop.json` settings file from another project and place it in your project's root directory.
 1. Add the following NuGet packages (**right click project > Manage NuGet Packages...**)
     1. `Microsoft.Extensions.Configuration`
@@ -35,7 +49,7 @@ Create a new project item to the [Campaign Compendium planning board](https://gi
     1. `Newtonsoft.Json`
     1. `StyleCop.Analyzers`
 1. In the project properties ensure that the following properties are set:
-    1. **Build > Output > Documentation File** - Check Generate a file containing API documentation.
+    1. `Build > Output > Documentation File` - Check Generate a file containing API documentation.
 
 ### Create Service Interface and Default Service
 1. Create a folder called `Services` and add the following:
@@ -91,9 +105,7 @@ Once a JSON deserialization class has been created perform the following steps t
    * `public int? AnimalHandling { get; set; } = int.MinValue;`
    * `public List<Action>? Actions { get; set; } = new List<Action>();`
 
-```
-
-You can also use a ChatGPT prompt like the following to automate these steps:
+You can also use the following ChatGPT prompt like the following to automate these steps:
 
 ```
 Please make the following changes to this class:
@@ -101,11 +113,13 @@ Please make the following changes to this class:
 1. Convert each public field to a nullable property by adding {get; set;} and ensuring the property has the ? nullable operator.
 2. Set a default value for each property. string.empty for strings, empty lists for lists and int.MinValue for ints.
 3. Add XML summaries for each property.
-4. Add XML summary to class.
+4. Add XML summary to the class.
+
 public class Root
 {
 ...
 }
+```
 
 Inherit from `IGameComponent` and implement interface.  Generally this will involve the addition of the following:
 
