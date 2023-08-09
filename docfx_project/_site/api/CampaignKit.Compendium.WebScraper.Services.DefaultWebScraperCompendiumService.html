@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Program
+      <title>Class DefaultWebScraperCompendiumService
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Program
+      <meta name="title" content="Class DefaultWebScraperCompendiumService
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -17,7 +17,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/open-campaign-logger/compendium-generator/new/121-web-scraper-module/apiSpec/new?filename=CampaignKit_Compendium_Utility_Program.md&amp;value=---%0Auid%3A%20CampaignKit.Compendium.Utility.Program%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/open-campaign-logger/compendium-generator/new/121-web-scraper-module/apiSpec/new?filename=CampaignKit_Compendium_WebScraper_Services_DefaultWebScraperCompendiumService.md&amp;value=---%0Auid%3A%20CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
   </head>
 
   <script type="module">
@@ -73,27 +73,26 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="CampaignKit.Compendium.Utility.Program">
+        <article data-uid="CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService">
 
 
 
-  <h1 id="CampaignKit_Compendium_Utility_Program" data-uid="CampaignKit.Compendium.Utility.Program" class="text-break">
-    Class Program
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.Utility/Program.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <h1 id="CampaignKit_Compendium_WebScraper_Services_DefaultWebScraperCompendiumService" data-uid="CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService" class="text-break">
+    Class DefaultWebScraperCompendiumService
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Services/DefaultWebScraperCompendiumService.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="CampaignKit.html">CampaignKit</a>.<a class="xref" href="CampaignKit.Compendium.html">Compendium</a>.<a class="xref" href="CampaignKit.Compendium.Utility.html">Utility</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>CampaignKit.Compendium.Utility.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CampaignKit.html">CampaignKit</a>.<a class="xref" href="CampaignKit.Compendium.html">Compendium</a>.<a class="xref" href="CampaignKit.Compendium.WebScraper.html">WebScraper</a>.<a class="xref" href="CampaignKit.Compendium.WebScraper.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>CampaignKit.Compendium.WebScraper.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Creates a host with default configuration, adds required services, configures logging,
-gets the SourceHelper service from the host, and uses the downloader.</p>
+  <div class="markdown summary"><p>Default service for creating compendiums via web page scraping.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Program</code></pre>
+    <pre><code class="lang-csharp hljs">public class DefaultWebScraperCompendiumService : IWebScraperCompendiumService, ICompendiumService</code></pre>
   </div>
 
 
@@ -103,10 +102,17 @@ gets the SourceHelper service from the host, and uses the downloader.</p>
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">Program</span></div>
+      <div><span class="xref">DefaultWebScraperCompendiumService</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="CampaignKit.Compendium.WebScraper.Services.IWebScraperCompendiumService.html">IWebScraperCompendiumService</a></div>
+      <div><a class="xref" href="CampaignKit.Compendium.Core.Services.ICompendiumService.html">ICompendiumService</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist derived">
@@ -144,72 +150,42 @@ gets the SourceHelper service from the host, and uses the downloader.</p>
 </h2>
 
 
-  <a id="CampaignKit_Compendium_Utility_Program_CreateHostBuilder_" data-uid="CampaignKit.Compendium.Utility.Program.CreateHostBuilder*"></a>
+  <a id="CampaignKit_Compendium_WebScraper_Services_DefaultWebScraperCompendiumService_CreateCompendium_" data-uid="CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.CreateCompendium*"></a>
 
-  <h3 id="CampaignKit_Compendium_Utility_Program_CreateHostBuilder_System_String___" data-uid="CampaignKit.Compendium.Utility.Program.CreateHostBuilder(System.String[])">
-  CreateHostBuilder(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.Utility/Program.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <h3 id="CampaignKit_Compendium_WebScraper_Services_DefaultWebScraperCompendiumService_CreateCompendium_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_" data-uid="CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)">
+  CreateCompendium(ICompendium, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Services/DefaultWebScraperCompendiumService.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates a host builder with default configuration, app configuration, services
-configuration, logging configuration and console lifetime.</p>
+  <div class="markdown level1 summary"><p>Each TTRPG compendium service should implement the following functionality:</p>
+<ol>
+<li>Access the source material.</li>
+<li>Parse the source material.</li>
+<li>Convert the source material into standard IGameComponent objects.</li>
+<li>Generate a compendium file that can be imported into the CampaignLogger application.</li>
+</ol>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IHostBuilder CreateHostBuilder(string[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task CreateCompendium(ICompendium compendium, string rooDataDirectory)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p>Arguments to pass to the host builder.</p>
+    <dt><code>compendium</code> <a class="xref" href="CampaignKit.Compendium.Core.Configuration.ICompendium.html">ICompendium</a></dt>
+    <dd><p>The compendium configuration to use.</p>
 </dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
-    <dd><p>The created host builder.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_Utility_Program_Main_" data-uid="CampaignKit.Compendium.Utility.Program.Main*"></a>
-
-  <h3 id="CampaignKit_Compendium_Utility_Program_Main_System_String___" data-uid="CampaignKit.Compendium.Utility.Program.Main(System.String[])">
-  Main(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.Utility/Program.cs/#L43"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Creates a host builder and runs the application.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task Main(string[] args)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p>The command line arguments.</p>
+    <dt><code>rooDataDirectory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Directory where files will be read from and written to.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd><p>A task that represents the asynchronous operation.</p>
+    <dd><p>This operation is asynchronous. A task is returned so that the client code can execute
+other code while this function completes.</p>
 </dd>
   </dl>
 
@@ -227,7 +203,7 @@ configuration, logging configuration and console lifetime.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.Utility/Program.cs/#L36" class="edit-link">Edit this page</a>
+          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Services/DefaultWebScraperCompendiumService.cs/#L24" class="edit-link">Edit this page</a>
         </div>
 
         
