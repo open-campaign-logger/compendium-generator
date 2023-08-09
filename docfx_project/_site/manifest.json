@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/Source/compendium-generator/docfx_project",
+  "source_base_path": "C:/source/compendium-generator/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -465,16 +465,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.yml",
       "output": {
         ".html": {
@@ -685,30 +675,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.yml",
       "output": {
         ".html": {
           "relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.html"
         }
       },
       "version": ""
@@ -879,16 +849,6 @@
       "output": {
         ".html": {
           "relative_path": "api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MonsterConversionTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.html"
         }
       },
       "version": ""

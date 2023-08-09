@@ -1,29 +1,52 @@
-# Adding a New Module
+# Adding a# Contributing to Campaign Compendium
 
-## Work Management
+Thank you for your interest in contributing to the Campaign Compendium project! This guide outlines how to add new features and modules to the project, and we encourage collaboration from developers of all skill levels. Your contributions are vital to the ongoing success and development of this open-source project.
 
-### Create Work Item
-Create a new project item to the [Campaign Compendium planning board](https://github.com/orgs/open-campaign-logger/projects/5) with this high level task list.
-```
+## Adding a New Module
+
+### Work Management
+
+#### Create a Work Item
+
+1. **Create a Project Item:** Start by creating a new project item on the [Campaign Compendium planning board](https://github.com/orgs/open-campaign-logger/projects/5) with the following high-level task list:
+
+```markdown
 # Task List
- * [ ] Add New Project
- * [ ] Create/Update Configuration Classes
- * [ ] Create Service Interface and Default Service
- * [ ] Register Service with Program
- * [ ] Add Default Configuration
- * [ ] Create POCO for Requests and Responses
- * [ ] Create Unit Test for POCO
- * [ ] Create Project README.md
- * [ ] Update Solution README.md
- * [ ] Update CONTRIBUTING.md
- ```
+* [ ] Add New Project
+* [ ] Create/Update Configuration Classes
+* [ ] Create Service Interface and Default Service
+* [ ] Register Service with Program
+* [ ] Add Default Configuration
+* [ ] Create POCO for Requests and Responses
+* [ ] Create Unit Tests
+```
 
- ### Create Code Branch
- All new features should be added as a branch off of the the `develop` branch.
+#### Additional Guidelines
 
-## Service Setup
+- **Code Style:** Please adhere to the project's coding standards and guidelines. If in doubt, refer to existing code within the project.
+- **Testing:** Include unit tests for new features and modules, ensuring that they pass before submitting a pull request.
+- **Documentation:** Update the documentation as necessary to reflect changes and new additions. Include comments in the code to explain complex or non-intuitive parts.
+- **Communication:** Feel free to ask questions and communicate with the maintainers and other contributors via GitHub issues or other designated channels.
 
-### Add New Project to Solution
+### Submitting a Pull Request
+
+1. **Fork the Repository:** If you haven't already, fork the repository to your own GitHub account.
+2. **Create a Feature Branch:** Create a new branch for the specific feature or module you are working on.
+3. **Commit Your Changes:** Make regular, well-commented commits to your branch.
+4. **Submit a Pull Request:** Once your feature is complete and tested, submit a pull request for review. Be sure to reference any related issues and provide a description of the changes.
+
+## Community and Support
+
+We welcome contributions from everyone and encourage healthy discussion and collaboration. If you need help or have any questions, please reach out to the project maintainers or join our community channels.
+
+### Code of Conduct
+
+By participating in this project, you agree to abide by our [Code of Conduct](link-to-code-of-conduct). Please review it to understand our community standards and expectations.
+
+
+### Service Setup
+
+#### Add New Project to Solution
 
 1. Add a new **Class Library** project to the solution.  Make sure that the project is stored in the `/src/` directory like the other modules.
 1. Add `CampaignKit.Compendium.Core` project reference (**right click project > Add > Project Reference...**)
@@ -37,12 +60,12 @@ Create a new project item to the [Campaign Compendium planning board](https://gi
 1. In the project properties ensure that the following properties are set:
     1. **Build > Output > Documentation File** - Check Generate a file containing API documentation.
 
-### Create Service Interface and Default Service
+#### Create Service Interface and Default Service
 1. Create a folder called `Services` and add the following:
     1. `I<YOUR SERVICE NAME>.cs` - interface inheriting from `ICompendiumService`.
     1. `Default<YOUR SERVICE NAME>.cs` - default implementation of the service.
 
-### Register Service with Program
+#### Register Service with Program
 1. Register your service in `CampaignKit.Compendium.Utility.Program`:
 1. 1. 1. Add a project reference to your new project to the following:
     1. `CampaignKit.Compendium.Tests`
@@ -75,9 +98,9 @@ Create a new project item to the [Campaign Compendium planning board](https://gi
         }
 ```
 
-## Business Logic
+### Business Logic
 
-### Create a JSON Serialization/Deserialization Class
+#### Create a JSON Serialization/Deserialization Class
 
 [json2csharp](https://json2csharp.com/) can be used to create C# classes for deserializing JSON source data sets.
 
@@ -91,8 +114,6 @@ Once a JSON deserialization class has been created perform the following steps t
    * `public int? AnimalHandling { get; set; } = int.MinValue;`
    * `public List<Action>? Actions { get; set; } = new List<Action>();`
 
-```
-
 You can also use a ChatGPT prompt like the following to automate these steps:
 
 ```
@@ -102,10 +123,12 @@ Please make the following changes to this class:
 2. Set a default value for each property. string.empty for strings, empty lists for lists and int.MinValue for ints.
 3. Add XML summaries for each property.
 4. Add XML summary to class.
+
 public class Root
 {
 ...
 }
+```
 
 Inherit from `IGameComponent` and implement interface.  Generally this will involve the addition of the following:
 
@@ -164,16 +187,18 @@ Inherit from `IGameComponent` and implement interface.  Generally this will invo
     }
 ```
 
-### Encapsulate Business Logic
+#### Encapsulate Business Logic
 Ideally business logic should be encapsulated within an object that is used by the service and can be independently tested with a unit test.  
+
 In most cases this all of the logic can be encapsulated within the JSON serialization/deserialization class.  See: `CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear` for a simple example.
 For more complex business logic, a helper class should be created that can be called from either the compendium
 service or from the unit testing project.  See: `MarkdownHelper` and 'ChatGPTHelper` for examples.
 
-## Quality Assurance
+### Quality Assurance
 
 ### Create Unit Tests
 A handful of basic unit tests should be created to ensure baseline testing of the module can be performed in the CI/CD pipeline.
+
 Generally speaking, unit tests should be able to run in any setting without external dependencies.
 Resource files should be provided to the test directly instead of requiring downloading at runtime.
 
@@ -196,27 +221,27 @@ This example shows how to make a data file in the `TestFiles` subfolder availabl
         }
 ```
 Note: In the baove example you also need to set the properties of the test file to:
-* **Build Action**: Content
-* **Copy to Output Directory**: Copy if Newer
+* `Build Action`: Content
+* `Copy to Output Directory`: Copy if Newer
 
 There are cases, like with the ChatGPT module, where these guidelines had to be broken.
 In those cases like this add an `[Ignore("REASON"]` property to the test to tell the test runner to skip the test by default.
 Users wishing to have these tests run can comment out this attribute and run the test.
 
 
-### Add Default Configuration
+#### Add Default Configuration
 A default public compendium should be added to `appsettings.json` to demonstrate the basic use of the module.
 
-### Create Project README.md
+#### Create Project README.md
 Every project must have a README.md file that explains the following:
 1. Purpose of the module.
 1. Basic configuration of the module.
 1. In the project properties ensure that the following properties are set:
-    1. **Package > General > README** - Select the README file you just created.
+    1. `Package > General > README` - Select the README file you just created.
 
-### Update Solution README.md
+#### Update Solution README.md
 After each project this file should be reviewed to see if any additional changes need to be made.
 At minimum the module should be added to the `## Modules` section.
 
-## Update CONTRIBUTING.md
+#### Update CONTRIBUTING.md
 After each project this file should be reviewed to see if any additional changes need to be made.
