@@ -103,96 +103,11 @@ By participating in this project, you agree to abide by our [Code of Conduct](li
         }
 ```
 
-### Create a JSON Serialization/Deserialization Class
-
-[json2csharp](https://json2csharp.com/) can be used to create C# classes for deserializing JSON source data sets.
-
-Recommended json2csharp settings:
-* Use Pascal Case
-
-Once a JSON deserialization class has been created perform the following steps to customize the code:
-* Add "?" nullable type operator for each property
-* set a default value for each property.  Examples:
-   * `public string? Alignment { get; set; } = string.Empty;`
-   * `public int? AnimalHandling { get; set; } = int.MinValue;`
-   * `public List<Action>? Actions { get; set; } = new List<Action>();`
-
-You can also use the following ChatGPT prompt like the following to automate these steps:
-
-```
-Please make the following changes to this class:
-
-1. Convert each public field to a nullable property by adding {get; set;} and ensuring the property has the ? nullable operator.
-2. Set a default value for each property. string.empty for strings, empty lists for lists and int.MinValue for ints.
-3. Add XML summaries for each property.
-4. Add XML summary to the class.
-
-public class Root
-{
-...
-}
-```
-
-Inherit from `IGameComponent` and implement interface.  Generally this will involve the addition of the following:
-
-```csharp
-    /// <summary>
-    /// Gets or sets the description of the game component.
-    /// </summary>
-    [JsonProperty("desc")] // This will be the field in the JSON that describes game component.
-    public string? Desc { get; set; } = string.Empty;
-
-    /// <inheritdoc/>
-    public List<string>? Labels { get; set; } = new List<string> { };
-
-    /// <summary>
-    /// Gets or sets the name of the game component.
-    /// </summary>
-    [JsonProperty("name")] // This will be the field in the JSON that describes name component.
-    public string? Name { get; set; } = string.Empty;
-
-    /// <inheritdoc/>
-    public string? SourceTitle { get; set; } = string.Empty;
-
-    /// <inheritdoc/>
-    public string? TagSymbol { get; set; } = string.Empty;
-
-    /// <inheritdoc/>
-    public List<string>? Labels { get; set; } = new List<string> { };
-
-    /// <inheritdoc/>
-    public CampaignEntry ToCampaignEntry()
-    {
-        // Create a markdown representation of the data.
-        var stringBuilder = new StringBuilder();
-        stringBuilder.AppendLine($"# {this.Name}");
-        stringBuilder.AppendLine(this.Desc);
-
-        // Add other text generation steps here.
-
-        // Add Attribution
-        if (!string.IsNullOrEmpty(this.SourceTitle))
-        {
-            stringBuilder.AppendLine();
-            stringBuilder.AppendLine($"Source: ~\"{this.SourceTitle}\"");
-        }
-
-        CampaignEntry campaignEntry = new ()
-        {
-            RawText = string.Empty,
-            RawPublic = stringBuilder.ToString(),
-            Labels = this.Labels,
-            TagSymbol = this.TagSymbol,
-            TagValue = this.Name,
-        };
-
-        return campaignEntry;
-    }
-```
-
 ### Encapsulate Business Logic
-Ideally business logic should be encapsulated within an object that is used by the service and can be independently tested with a unit test.  
+Ideally business logic should be encapsulated within an object that is used by the service and can be independently tested with a unit test.  This class should inherit from `GameComponentBase`.
+
 In most cases this all of the logic can be encapsulated within the JSON serialization/deserialization class.  See: `CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear` for a simple example.
+
 For more complex business logic, a helper class should be created that can be called from either the compendium
 service or from the unit testing project.  See: `MarkdownHelper` and 'ChatGPTHelper` for examples.
 

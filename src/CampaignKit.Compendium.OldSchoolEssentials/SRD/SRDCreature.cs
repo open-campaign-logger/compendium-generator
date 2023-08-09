@@ -25,7 +25,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
     /// <summary>
     /// Class representing a creature from the Old School Essentials System Reference Document (SRD).
     /// </summary>
-    public partial class SRDCreature : IGameComponent
+    public partial class SRDCreature : GameComponentBase
     {
         /// <summary>
         /// Represents a read-only instance of a CampaignEntry object.
@@ -59,29 +59,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
         }
 
         /// <inheritdoc/>
-        public string? Desc { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Gets or sets the list of labels associated with the creature.
-        /// </summary>
-        public List<string>? Labels { get; set; } = new List<string>();
-
-        /// <inheritdoc/>
-        public string? Name { get; set; }
-
-        /// <inheritdoc/>
-        public string? SourceTitle { get; set; }
-
-        /// <summary>
-        /// Gets or sets the campaign tag symbol to use for this creature.
-        /// </summary>
-        public string? TagSymbol { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public string? TagValuePrefix { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public CampaignEntry ToCampaignEntry()
+        public override CampaignEntry ToCampaignEntry()
         {
             // Declare a label variable and set it to "Monster"
             var label = "Monster";

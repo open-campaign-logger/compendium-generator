@@ -1,4 +1,4 @@
-﻿// <copyright file="SRDWebPage.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="GameComponentBase.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2023 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,21 +14,37 @@
 // limitations under the License.
 // </copyright>
 
-namespace CampaignKit.Compendium.WebScraper.Common
+namespace CampaignKit.Compendium.Core.Common
 {
     using System.Text;
 
     using CampaignKit.Compendium.Core.CampaignLogger;
-    using CampaignKit.Compendium.Core.Common;
-
 
     /// <summary>
-    /// Represents an Systems Reference Document (SRD) web page containing TTRPG game components.
+    /// Default base class for game component implementations.
     /// </summary>
-    public class SRDWebPage : GameComponentBase
+    public class GameComponentBase : IGameComponent
     {
         /// <inheritdoc/>
-        public override CampaignEntry ToCampaignEntry()
+        public virtual string? Desc { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
+        public virtual List<string>? Labels { get; set; } = new List<string> { };
+
+        /// <inheritdoc/>
+        public virtual string? Name { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
+        public virtual string? SourceTitle { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
+        public virtual string? TagSymbol { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
+        public virtual string? TagValuePrefix { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
+        public virtual CampaignEntry ToCampaignEntry()
         {
             // Create a markdown representation of the data.
             var stringBuilder = new StringBuilder();

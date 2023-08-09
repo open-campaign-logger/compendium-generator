@@ -79,7 +79,7 @@
 
   <h1 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage" class="text-break">
     Class SRDWebPage
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -87,11 +87,12 @@
   <dl><dt>Assembly</dt><dd>CampaignKit.Compendium.WebScraper.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents an Systems Reference Document (SRD) web page containing TTRPG game components.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SRDWebPage : IGameComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public class SRDWebPage : GameComponentBase, IGameComponent</code></pre>
   </div>
 
 
@@ -101,6 +102,7 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html">GameComponentBase</a></div>
       <div><span class="xref">SRDWebPage</span></div>
     </dd>
   </dl>
@@ -116,6 +118,24 @@
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_Desc">GameComponentBase.Desc</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_Labels">GameComponentBase.Labels</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_Name">GameComponentBase.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_SourceTitle">GameComponentBase.SourceTitle</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_TagSymbol">GameComponentBase.TagSymbol</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_TagValuePrefix">GameComponentBase.TagValuePrefix</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -144,202 +164,6 @@
 
 
 
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
-  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Desc_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Desc*"></a>
-
-  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Desc" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Desc">
-  Desc
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L27"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the description of the game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Desc { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Labels_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Labels*"></a>
-
-  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Labels" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Labels">
-  Labels
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L30"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the list of labels associated with this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;string&gt;? Labels { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Name_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Name*"></a>
-
-  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Name" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Name">
-  Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L33"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the name of the game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Name { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_SourceTitle_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceTitle*"></a>
-
-  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_SourceTitle" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceTitle">
-  SourceTitle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L36"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the title of the source of the game component's data.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? SourceTitle { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_TagSymbol_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.TagSymbol*"></a>
-
-  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_TagSymbol" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.TagSymbol">
-  TagSymbol
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L39"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the list of labels associated with this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? TagSymbol { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_TagValuePrefix_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.TagValuePrefix*"></a>
-
-  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_TagValuePrefix" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.TagValuePrefix">
-  TagValuePrefix
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L42"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the tag value prefix for this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? TagValuePrefix { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -348,7 +172,7 @@
 
   <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_ToCampaignEntry" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToCampaignEntry">
   ToCampaignEntry()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generates a CampaignLogger Entry for this game component.</p>
@@ -356,7 +180,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual CampaignEntry ToCampaignEntry()</code></pre>
+    <pre><code class="lang-csharp hljs">public override CampaignEntry ToCampaignEntry()</code></pre>
   </div>
 
 
@@ -381,7 +205,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L24" class="edit-link">Edit this page</a>
+          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L28" class="edit-link">Edit this page</a>
         </div>
 
         

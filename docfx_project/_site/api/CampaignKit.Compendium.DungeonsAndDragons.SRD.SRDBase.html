@@ -92,7 +92,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SRDBase : IGameComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public class SRDBase : GameComponentBase, IGameComponent</code></pre>
   </div>
 
 
@@ -102,6 +102,7 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html">GameComponentBase</a></div>
       <div><span class="xref">SRDBase</span></div>
     </dd>
   </dl>
@@ -125,12 +126,28 @@
       <div><a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDRace.html">SRDRace</a></div>
       <div><a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDSpell.html">SRDSpell</a></div>
       <div><a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.html">SRDWeapon</a></div>
+      <div><a class="xref" href="CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html">TomeOfBeastsCreature</a></div>
     </dd>
   </dl>
 
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_Labels">GameComponentBase.Labels</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_SourceTitle">GameComponentBase.SourceTitle</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_TagSymbol">GameComponentBase.TagSymbol</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_TagValuePrefix">GameComponentBase.TagValuePrefix</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_ToCampaignEntry">GameComponentBase.ToCampaignEntry()</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -176,7 +193,7 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[JsonProperty(&quot;desc&quot;)]
-public string? Desc { get; set; }</code></pre>
+public override string? Desc { get; set; }</code></pre>
   </div>
 
 
@@ -186,38 +203,6 @@ public string? Desc { get; set; }</code></pre>
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Labels_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Labels*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Labels" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Labels">
-  Labels
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBase.cs/#L38"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the list of labels associated with this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;string&gt;? Labels { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -232,7 +217,7 @@ public string? Desc { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_Name" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.Name">
   Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBase.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBase.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the name of the game component.</p>
@@ -241,7 +226,7 @@ public string? Desc { get; set; }</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[JsonProperty(&quot;name&quot;)]
-public string? Name { get; set; }</code></pre>
+public override string? Name { get; set; }</code></pre>
   </div>
 
 
@@ -253,139 +238,6 @@ public string? Name { get; set; }</code></pre>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_SourceTitle_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.SourceTitle*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_SourceTitle" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.SourceTitle">
-  SourceTitle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBase.cs/#L47"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the title of the source of the game component's data.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? SourceTitle { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_TagSymbol_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.TagSymbol*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_TagSymbol" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.TagSymbol">
-  TagSymbol
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBase.cs/#L50"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the list of labels associated with this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? TagSymbol { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_TagValuePrefix_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.TagValuePrefix*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_TagValuePrefix" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.TagValuePrefix">
-  TagValuePrefix
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBase.cs/#L53"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the tag value prefix for this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? TagValuePrefix { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_ToCampaignEntry_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.ToCampaignEntry*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDBase_ToCampaignEntry" data-uid="CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDBase.ToCampaignEntry">
-  ToCampaignEntry()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/SRD/SRDBase.cs/#L56"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generates a CampaignLogger Entry for this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual CampaignEntry ToCampaignEntry()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="CampaignKit.Compendium.Core.CampaignLogger.CampaignEntry.html">CampaignEntry</a></dt>
-    <dd><p>A CampaignLogger Entry for this game component.</p>
-</dd>
-  </dl>
-
-
-
 
 
 

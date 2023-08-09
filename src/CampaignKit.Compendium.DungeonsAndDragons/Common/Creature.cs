@@ -27,7 +27,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
     /// <summary>
     /// This class is used to represent a creature.
     /// </summary>
-    public class Creature : IGameComponent
+    public class Creature : GameComponentBase
     {
         /// <summary>
         /// Gets or sets acrobatics skill bonus.
@@ -169,9 +169,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// </summary>
         public int? Deception { get; set; } = 0;
 
-        /// <inheritdoc/>
-        public string? Desc { get; set; } = string.Empty;
-
         /// <summary>
         /// Gets or sets dexterity of the creature.  Example: 9.
         /// </summary>
@@ -251,11 +248,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         public string? JSONStatBlock { get; set; } = string.Empty;
 
         /// <summary>
-        /// Gets or sets the campaign labels associated with this creature.
-        /// </summary>
-        public List<string>? Labels { get; set; } = new List<string>();
-
-        /// <summary>
         /// Gets or sets languages the creature is able to speak or understand.  Example Deep Speech, telepathy 120 ft.
         /// </summary>
         public string? Languages { get; set; } = string.Empty;
@@ -281,11 +273,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// Example: 0.
         /// </summary>
         public int? Medicine { get; set; } = 0;
-
-        /// <summary>
-        /// Gets or sets name of the creature.  Example: Aboleth.
-        /// </summary>
-        public string? Name { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets nature skill bonus.
@@ -345,9 +332,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// </summary>
         public int? SleightOfHand { get; set; } = 0;
 
-        /// <inheritdoc/>
-        public string? SourceTitle { get; set; } = string.Empty;
-
         /// <summary>
         /// Gets or sets a collection of special abilities associated with the creature.
         /// </summary>
@@ -383,14 +367,6 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// Gets or sets swimming speed of the creature in feet per round.  Example 40.
         /// </summary>
         public int? Swim { get; set; } = 0;
-
-        /// <summary>
-        /// Gets or sets the campaign tag symbol to use for this creature.
-        /// </summary>
-        public string? TagSymbol { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public string? TagValuePrefix { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets creature data formatted in standard text format.
@@ -466,7 +442,7 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         }
 
         /// <inheritdoc/>
-        public CampaignEntry ToCampaignEntry()
+        public override CampaignEntry ToCampaignEntry()
         {
             CampaignEntry campaignEntry = new ()
             {
