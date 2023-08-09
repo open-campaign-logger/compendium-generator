@@ -90,17 +90,15 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                 var importCount = 0;
 
                 // Download license file
-                this.downloadService.DerivePathAndFileNames(sourceDataSet.LicenseDataURI, out string licenseDirectory, out string licenseFile);
-                var licenseFilePath = Path.Combine(rootDataDirectory, licenseDirectory, licenseFile);
                 this.logger.LogInformation("Downloading license data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
-                await this.downloadService.DownloadFile(
+                var licenseFilePath = await this.downloadService.DownloadFile(
                     sourceDataSet.LicenseDataURI,
                     rootDataDirectory,
                     sourceDataSet.OverwriteExisting);
 
                 // Parse license file
                 this.logger.LogInformation("Parsing local copy of license data from: {LicenseFilePath}.", licenseFilePath);
-                var licenseJSON = File.ReadAllText(Path.Combine(rootDataDirectory, licenseDirectory, licenseFile))
+                var licenseJSON = File.ReadAllText(licenseFilePath)
                     ?? throw new Exception($"Unable to read license information from file: {licenseFilePath}.");
                 var licenseParserType = Type.GetType(sourceDataSet.LicenseDataParser)
                     ?? throw new Exception($"Configuration parmater not defined: {nameof(sourceDataSet.LicenseDataParser)}.");
@@ -120,17 +118,15 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
                 }
 
                 // Download SourceDataSet file
-                this.downloadService.DerivePathAndFileNames(sourceDataSet.SourceDataSetURI, out string sourceDataSetDirectory, out string sourceDataSetFile);
-                var sourceDataSetFilePath = Path.Combine(rootDataDirectory, sourceDataSetDirectory, sourceDataSetFile);
                 this.logger.LogInformation("Downloading SourceDataSet data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
-                await this.downloadService.DownloadFile(
+                var sourceDataSetFilePath = await this.downloadService.DownloadFile(
                     sourceDataSet.SourceDataSetURI,
                     rootDataDirectory,
                     sourceDataSet.OverwriteExisting);
 
                 // Parse SourceDataSet file
                 this.logger.LogInformation("Parsing local copy of SourceDataSet data from: {SourceDataSetFilePath}.", sourceDataSetFilePath);
-                var sourceDataSetJSON = File.ReadAllText(Path.Combine(rootDataDirectory, sourceDataSetDirectory, sourceDataSetFile))
+                var sourceDataSetJSON = File.ReadAllText(sourceDataSetFilePath)
                     ?? throw new Exception($"Unable to read SourceDataSet information from file: {sourceDataSetFilePath}.");
                 var sourceDataSetParserType = Type.GetType(sourceDataSet.SourceDataSetParser)
                     ?? throw new Exception($"Configuration parmater not defined: {nameof(sourceDataSet.SourceDataSetParser)}.");

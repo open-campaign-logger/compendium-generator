@@ -30,14 +30,5 @@ namespace CampaignKit.Compendium.Core.Services
         /// <param name="filenameOverride">Optional filename override for URIs that are difficult to derive a filename from.</param>
         /// <returns>Local path where the file is stored.</returns>
         Task<string> DownloadFile(string sourceDataUri, string rootDataDirectory, bool overwrite = false, string filenameOverride = "");
-
-        /// <summary>
-        /// Separates the given source data URI into its path and file components.
-        /// </summary>
-        /// <param name="sourceDataUri">The source data URI to separate.</param>
-        /// <param name="path">The path component of the URI.</param>
-        /// <param name="file">The file component of the URI.</param>
-        /// <param name="filenameOverride">Optional filename override for URIs that are difficult to derive a filename from.</param>
-        void DerivePathAndFileNames(string sourceDataUri, out string path, out string file, string filenameOverride = "");
     }
 }

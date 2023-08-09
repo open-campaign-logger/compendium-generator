@@ -1465,22 +1465,6 @@ references:
   fullName.vb: CampaignKit.Compendium.Core.Services.DefaultDownloadService.New
   nameWithType: DefaultDownloadService.DefaultDownloadService
   nameWithType.vb: DefaultDownloadService.New
-- uid: CampaignKit.Compendium.Core.Services.DefaultDownloadService.DerivePathAndFileNames(System.String,System.String@,System.String@,System.String)
-  name: DerivePathAndFileNames(string, out string, out string, string)
-  href: api/CampaignKit.Compendium.Core.Services.DefaultDownloadService.html#CampaignKit_Compendium_Core_Services_DefaultDownloadService_DerivePathAndFileNames_System_String_System_String__System_String__System_String_
-  commentId: M:CampaignKit.Compendium.Core.Services.DefaultDownloadService.DerivePathAndFileNames(System.String,System.String@,System.String@,System.String)
-  name.vb: DerivePathAndFileNames(String, String, String, String)
-  fullName: CampaignKit.Compendium.Core.Services.DefaultDownloadService.DerivePathAndFileNames(string, out string, out string, string)
-  fullName.vb: CampaignKit.Compendium.Core.Services.DefaultDownloadService.DerivePathAndFileNames(String, String, String, String)
-  nameWithType: DefaultDownloadService.DerivePathAndFileNames(string, out string, out string, string)
-  nameWithType.vb: DefaultDownloadService.DerivePathAndFileNames(String, String, String, String)
-- uid: CampaignKit.Compendium.Core.Services.DefaultDownloadService.DerivePathAndFileNames*
-  name: DerivePathAndFileNames
-  href: api/CampaignKit.Compendium.Core.Services.DefaultDownloadService.html#CampaignKit_Compendium_Core_Services_DefaultDownloadService_DerivePathAndFileNames_
-  commentId: Overload:CampaignKit.Compendium.Core.Services.DefaultDownloadService.DerivePathAndFileNames
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.Core.Services.DefaultDownloadService.DerivePathAndFileNames
-  nameWithType: DefaultDownloadService.DerivePathAndFileNames
 - uid: CampaignKit.Compendium.Core.Services.DefaultDownloadService.DownloadFile(System.String,System.String,System.Boolean,System.String)
   name: DownloadFile(string, string, bool, string)
   href: api/CampaignKit.Compendium.Core.Services.DefaultDownloadService.html#CampaignKit_Compendium_Core_Services_DefaultDownloadService_DownloadFile_System_String_System_String_System_Boolean_System_String_
@@ -1612,22 +1596,6 @@ references:
   commentId: T:CampaignKit.Compendium.Core.Services.IDownloadService
   fullName: CampaignKit.Compendium.Core.Services.IDownloadService
   nameWithType: IDownloadService
-- uid: CampaignKit.Compendium.Core.Services.IDownloadService.DerivePathAndFileNames(System.String,System.String@,System.String@,System.String)
-  name: DerivePathAndFileNames(string, out string, out string, string)
-  href: api/CampaignKit.Compendium.Core.Services.IDownloadService.html#CampaignKit_Compendium_Core_Services_IDownloadService_DerivePathAndFileNames_System_String_System_String__System_String__System_String_
-  commentId: M:CampaignKit.Compendium.Core.Services.IDownloadService.DerivePathAndFileNames(System.String,System.String@,System.String@,System.String)
-  name.vb: DerivePathAndFileNames(String, String, String, String)
-  fullName: CampaignKit.Compendium.Core.Services.IDownloadService.DerivePathAndFileNames(string, out string, out string, string)
-  fullName.vb: CampaignKit.Compendium.Core.Services.IDownloadService.DerivePathAndFileNames(String, String, String, String)
-  nameWithType: IDownloadService.DerivePathAndFileNames(string, out string, out string, string)
-  nameWithType.vb: IDownloadService.DerivePathAndFileNames(String, String, String, String)
-- uid: CampaignKit.Compendium.Core.Services.IDownloadService.DerivePathAndFileNames*
-  name: DerivePathAndFileNames
-  href: api/CampaignKit.Compendium.Core.Services.IDownloadService.html#CampaignKit_Compendium_Core_Services_IDownloadService_DerivePathAndFileNames_
-  commentId: Overload:CampaignKit.Compendium.Core.Services.IDownloadService.DerivePathAndFileNames
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.Core.Services.IDownloadService.DerivePathAndFileNames
-  nameWithType: IDownloadService.DerivePathAndFileNames
 - uid: CampaignKit.Compendium.Core.Services.IDownloadService.DownloadFile(System.String,System.String,System.Boolean,System.String)
   name: DownloadFile(string, string, bool, string)
   href: api/CampaignKit.Compendium.Core.Services.IDownloadService.html#CampaignKit_Compendium_Core_Services_IDownloadService_DownloadFile_System_String_System_String_System_Boolean_System_String_
@@ -7217,6 +7185,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Tests.Core.DownloadServiceTests.DownloadFile_Should_Not_Download_If_File_Exists_And_Overwrite_Is_False
   nameWithType: DownloadServiceTests.DownloadFile_Should_Not_Download_If_File_Exists_And_Overwrite_Is_False
+- uid: CampaignKit.Compendium.Tests.Core.DownloadServiceTests.DownloadFile_Should_Use_Overridename_If_Provided
+  name: DownloadFile_Should_Use_Overridename_If_Provided()
+  href: api/CampaignKit.Compendium.Tests.Core.DownloadServiceTests.html#CampaignKit_Compendium_Tests_Core_DownloadServiceTests_DownloadFile_Should_Use_Overridename_If_Provided
+  commentId: M:CampaignKit.Compendium.Tests.Core.DownloadServiceTests.DownloadFile_Should_Use_Overridename_If_Provided
+  fullName: CampaignKit.Compendium.Tests.Core.DownloadServiceTests.DownloadFile_Should_Use_Overridename_If_Provided()
+  nameWithType: DownloadServiceTests.DownloadFile_Should_Use_Overridename_If_Provided()
+- uid: CampaignKit.Compendium.Tests.Core.DownloadServiceTests.DownloadFile_Should_Use_Overridename_If_Provided*
+  name: DownloadFile_Should_Use_Overridename_If_Provided
+  href: api/CampaignKit.Compendium.Tests.Core.DownloadServiceTests.html#CampaignKit_Compendium_Tests_Core_DownloadServiceTests_DownloadFile_Should_Use_Overridename_If_Provided_
+  commentId: Overload:CampaignKit.Compendium.Tests.Core.DownloadServiceTests.DownloadFile_Should_Use_Overridename_If_Provided
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Tests.Core.DownloadServiceTests.DownloadFile_Should_Use_Overridename_If_Provided
+  nameWithType: DownloadServiceTests.DownloadFile_Should_Use_Overridename_If_Provided
 - uid: CampaignKit.Compendium.Tests.Core.DownloadServiceTests.Setup
   name: Setup()
   href: api/CampaignKit.Compendium.Tests.Core.DownloadServiceTests.html#CampaignKit_Compendium_Tests_Core_DownloadServiceTests_Setup

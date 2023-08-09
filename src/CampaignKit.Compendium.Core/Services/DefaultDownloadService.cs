@@ -18,6 +18,7 @@ namespace CampaignKit.Compendium.Core.Services
 {
     using System;
     using System.Threading.Tasks;
+
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.Logging;
 
@@ -95,8 +96,14 @@ namespace CampaignKit.Compendium.Core.Services
             }
         }
 
-        /// <inheritdoc/>
-        public void DerivePathAndFileNames(string sourceDataUri, out string path, out string file, string filenameOverride)
+        /// <summary>
+        /// Separates the given URI into components and assigns the path and file name to the out parameters.
+        /// </summary>
+        /// <param name="sourceDataUri">The URI to be separated.</param>
+        /// <param name="path">The path component of the URI.</param>
+        /// <param name="file">The file name component of the URI.</param>
+        /// <param name="filenameOverride">An optional override for the file name.</param>
+        private void DerivePathAndFileNames(string sourceDataUri, out string path, out string file, string filenameOverride)
         {
             // Separate the URI into components
             this.logger.LogDebug("Parsing components of URI: {sourceDataUri}.", sourceDataUri);
@@ -104,7 +111,7 @@ namespace CampaignKit.Compendium.Core.Services
             path = uri.AbsolutePath;
             file = Path.GetFileName(uri.AbsolutePath);
 
-            if (string.IsNullOrEmpty(file) && !string.IsNullOrEmpty(filenameOverride))
+            if (!string.IsNullOrEmpty(filenameOverride))
             {
                 file = filenameOverride;
             }

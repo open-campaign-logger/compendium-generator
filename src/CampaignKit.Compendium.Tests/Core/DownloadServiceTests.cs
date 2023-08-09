@@ -21,7 +21,7 @@ namespace CampaignKit.Compendium.Tests.Core
             var overwrite = false;
             var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
             var sourceHelper = new DefaultDownloadService(loggerMock.Object);
-            sourceHelper.DerivePathAndFileNames(sourceDataUri, out string path, out string file);
+            this.DerivePathAndFileNames(sourceDataUri, out string path, out string file, "");
 
             // Act
             await sourceHelper.DownloadFile(sourceDataUri, configurationService?.GetPrivateDataDirectory() ?? string.Empty, overwrite);
@@ -39,7 +39,7 @@ namespace CampaignKit.Compendium.Tests.Core
             var overwrite = true;
             var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
             var sourceHelper = new DefaultDownloadService(loggerMock.Object);
-            sourceHelper.DerivePathAndFileNames(sourceDataUri, out string path, out string file);
+            this.DerivePathAndFileNames(sourceDataUri, out string path, out string file, "");
 
             // Act
             Directory.CreateDirectory(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path));
@@ -61,7 +61,7 @@ namespace CampaignKit.Compendium.Tests.Core
             var overwrite = false;
             var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
             var sourceHelper = new DefaultDownloadService(loggerMock.Object);
-            sourceHelper.DerivePathAndFileNames(sourceDataUri, out string path, out string file);
+            this.DerivePathAndFileNames(sourceDataUri, out string path, out string file, "");
 
             // Act
             Directory.CreateDirectory(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path));
@@ -73,6 +73,28 @@ namespace CampaignKit.Compendium.Tests.Core
             Assert.IsTrue(Directory.Exists(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path)));
             Assert.IsTrue(File.Exists(Path.Combine(GetConfigurationService().GetPrivateDataDirectory(), path, file)));
             Assert.AreEqual(0, fileInfoAfter.Length);
+
+        }
+
+        [TestMethod]
+        public async Task DownloadFile_Should_Use_Overridename_If_Provided()
+        {
+            // Arrange
+            var sourceDataUri = "https://raw.githubusercontent.com/open5e/open5e-api/staging/data/WOTC_5e_SRD_v5.1/document.json";
+            var overwrite = false;
+            var loggerMock = new Mock<ILogger<DefaultDownloadService>>();
+            var sourceHelper = new DefaultDownloadService(loggerMock.Object);
+
+            // Act
+            var filePath = await sourceHelper.DownloadFile(
+                sourceDataUri, 
+                configurationService?.GetPrivateDataDirectory() ?? string.Empty,
+                overwrite,
+                "document.html");
+
+            // Assert
+            Assert.IsTrue(File.Exists(filePath));
+            Assert.IsTrue(filePath.EndsWith("document.html"));
 
         }
 
@@ -119,6 +141,40 @@ namespace CampaignKit.Compendium.Tests.Core
 
             return new DefaultConfigurationService(configuration);
 
+        }
+
+        /// <summary>
+        /// Separates the given URI into components and assigns the path and file name to the out parameters.
+        /// </summary>
+        /// <param name="sourceDataUri">The URI to be separated.</param>
+        /// <param name="path">The path component of the URI.</param>
+        /// <param name="file">The file name component of the URI.</param>
+        /// <param name="filenameOverride">An optional override for the file name.</param>
+        private void DerivePathAndFileNames(string sourceDataUri, out string path, out string file, string filenameOverride)
+        {
+            // Separate the URI into components
+            var uri = new Uri(sourceDataUri);
+            path = uri.AbsolutePath;
+            file = Path.GetFileName(uri.AbsolutePath);
+
+            if (string.IsNullOrEmpty(file) && !string.IsNullOrEmpty(filenameOverride))
+            {
+                file = filenameOverride;
+            }
+
+            if (string.IsNullOrEmpty(file))
+            {
+                throw new Exception($"Unable to derive filename from URI: {sourceDataUri}");
+            }
+
+            // Trim the leading slash off the uriPath.
+            if (path.StartsWith("/"))
+            {
+                path = path[1..];
+            }
+
+            // Remove the file name from the path.
+            path = Path.GetDirectoryName(path) ?? path;
         }
     }
 }
