@@ -27,8 +27,9 @@ namespace CampaignKit.Compendium.Core.Services
         /// <param name="sourceDataUri">The URI of the source data to download.</param>
         /// <param name="rootDataDirectory">Directory where files will be read and written from.</param>
         /// <param name="overwrite">Set to true to overwrite previously downloaded files.  Default: false.</param>
-        /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
-        Task DownloadFile(string sourceDataUri, string rootDataDirectory, bool overwrite = false);
+        /// <param name="filenameOverride">Optional filename override for URIs that are difficult to derive a filename from.</param>
+        /// <returns>Local path where the file is stored.</returns>
+        Task<string> DownloadFile(string sourceDataUri, string rootDataDirectory, bool overwrite = false, string filenameOverride = "");
 
         /// <summary>
         /// Separates the given source data URI into its path and file components.
@@ -36,6 +37,7 @@ namespace CampaignKit.Compendium.Core.Services
         /// <param name="sourceDataUri">The source data URI to separate.</param>
         /// <param name="path">The path component of the URI.</param>
         /// <param name="file">The file component of the URI.</param>
-        void DerivePathAndFileNames(string sourceDataUri, out string path, out string file);
+        /// <param name="filenameOverride">Optional filename override for URIs that are difficult to derive a filename from.</param>
+        void DerivePathAndFileNames(string sourceDataUri, out string path, out string file, string filenameOverride = "");
     }
 }

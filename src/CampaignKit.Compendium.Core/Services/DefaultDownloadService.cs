@@ -42,26 +42,20 @@ namespace CampaignKit.Compendium.Core.Services
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
-        /// <summary>
-        /// Download the source data and source license.
-        /// </summary>
-        /// <param name="sourceDataUri">The URI of the source data to download.</param>
-        /// <param name="rootDataDirectory">Directory where files will be read and written from.</param>
-        /// <param name="overwrite">Set to true to overwrite previously downloaded files.  Default: false.</param>
-        /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
-        public virtual async Task DownloadFile(string sourceDataUri, string rootDataDirectory, bool overwrite = false)
+        /// <inheritdoc/>
+        public virtual async Task<string> DownloadFile(string sourceDataUri, string rootDataDirectory, bool overwrite = false, string filenameOverride = "")
         {
             try
             {
-                this.DerivePathAndFileNames(sourceDataUri, out string path, out string page);
+                this.DerivePathAndFileNames(sourceDataUri, out string path, out string file, filenameOverride);
 
                 // If overwrite = false and the file already exists, return.
                 var localFolderPath = Path.Combine(rootDataDirectory, path);
-                var localFilePath = Path.Combine(localFolderPath, page);
+                var localFilePath = Path.Combine(localFolderPath, file);
                 if (!overwrite && File.Exists(localFilePath))
                 {
                     this.logger.LogInformation("Local file already exists: {localFilePath}.  Overwrite option set to false.  Skipping download.", localFilePath);
-                    return;
+                    return localFilePath;
                 }
 
                 // Create data folder if required.
@@ -89,6 +83,9 @@ namespace CampaignKit.Compendium.Core.Services
 
                 // Write the response stream to the file
                 await responseBody.CopyToAsync(fs);
+
+                // Return the file location.
+                return localFilePath;
             }
             catch (HttpRequestException e)
             {
@@ -98,13 +95,8 @@ namespace CampaignKit.Compendium.Core.Services
             }
         }
 
-        /// <summary>
-        /// Separates the given source data URI into its path and file components.
-        /// </summary>
-        /// <param name="sourceDataUri">The source data URI to separate.</param>
-        /// <param name="path">The path component of the URI.</param>
-        /// <param name="file">The file component of the URI.</param>
-        public void DerivePathAndFileNames(string sourceDataUri, out string path, out string file)
+        /// <inheritdoc/>
+        public void DerivePathAndFileNames(string sourceDataUri, out string path, out string file, string filenameOverride)
         {
             // Separate the URI into components
             this.logger.LogDebug("Parsing components of URI: {sourceDataUri}.", sourceDataUri);
@@ -112,16 +104,26 @@ namespace CampaignKit.Compendium.Core.Services
             path = uri.AbsolutePath;
             file = Path.GetFileName(uri.AbsolutePath);
 
+            if (string.IsNullOrEmpty(file) && !string.IsNullOrEmpty(filenameOverride))
+            {
+                file = filenameOverride;
+            }
+
+            if (string.IsNullOrEmpty(file))
+            {
+                throw new Exception($"Unable to derive filename from URI: {sourceDataUri}");
+            }
+
             // Trim the leading slash off the uriPath.
             if (path.StartsWith("/"))
             {
                 path = path[1..];
             }
 
-            // Remove the page name from the path.
+            // Remove the file name from the path.
             path = Path.GetDirectoryName(path) ?? path;
             this.logger.LogDebug("URI Path: {path}.", path);
-            this.logger.LogDebug("URI Page: {page}.", file);
+            this.logger.LogDebug("URI Page: {file}.", file);
         }
     }
 }

@@ -60,6 +60,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             // these easily from the text.
             if (campaignEntry.Labels != null && campaignEntry.Labels.Count > 0)
             {
+                this.Labels ??= new List<string>();
                 this.Labels.AddRange(campaignEntry.Labels);
             }
 

@@ -87,22 +87,20 @@ namespace CampaignKit.Compendium.WebScraper.Services
                 var importCount = 0;
 
                 // Download license file (if required)
-                this.downloadService.DerivePathAndFileNames(sourceDataSet.LicenseDataURI, out string licenseDirectory, out string licenseFile);
-                var licenseFilePath = Path.Combine(rootDataDirectory, licenseDirectory, licenseFile);
                 this.logger.LogInformation("Downloading license data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
-                await this.downloadService.DownloadFile(
+                var licenseFilePath = await this.downloadService.DownloadFile(
                     sourceDataSet.LicenseDataURI,
                     rootDataDirectory,
-                    sourceDataSet.OverwriteExisting);
+                    sourceDataSet.OverwriteExisting,
+                    "license");
 
                 // Download SourceDataSet file (if required)
-                this.downloadService.DerivePathAndFileNames(sourceDataSet.SourceDataSetURI, out string sourceDataSetDirectory, out string sourceDataSetFile);
-                var sourceDataSetFilePath = Path.Combine(rootDataDirectory, sourceDataSetDirectory, sourceDataSetFile);
                 this.logger.LogInformation("Downloading SourceDataSet data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
-                await this.downloadService.DownloadFile(
+                var sourceDataSetFilePath = await this.downloadService.DownloadFile(
                     sourceDataSet.SourceDataSetURI,
                     rootDataDirectory,
-                    sourceDataSet.OverwriteExisting);
+                    sourceDataSet.OverwriteExisting,
+                    sourceDataSet.SourceDataSetName);
             }
 
             // Create CampaignLogger File
