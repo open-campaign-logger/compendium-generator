@@ -38,6 +38,7 @@
     <ProjectReference Include="..\CampaignKit.Compendium.DungeonsAndDragons\CampaignKit.Compendium.DungeonsAndDragons.csproj" />
     <ProjectReference Include="..\CampaignKit.Compendium.Markdown\CampaignKit.Compendium.Markdown.csproj" />
     <ProjectReference Include="..\CampaignKit.Compendium.OldSchoolEssentials\CampaignKit.Compendium.OldSchoolEssentials.csproj" />
+    <ProjectReference Include="..\CampaignKit.Compendium.WebScraper\CampaignKit.Compendium.WebScraper.csproj" />
   </ItemGroup>
 
   <ItemGroup>

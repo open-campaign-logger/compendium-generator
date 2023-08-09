@@ -22,6 +22,7 @@ namespace CampaignKit.Compendium.Utility
     using CampaignKit.Compendium.Markdown.Services;
     using CampaignKit.Compendium.OldSchoolEssentials.Services;
     using CampaignKit.Compendium.Utility.Services;
+    using CampaignKit.Compendium.WebScraper.Services;
 
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
@@ -134,6 +135,9 @@ namespace CampaignKit.Compendium.Utility
 
             // Add DefaultChatGPTCompendiumService to the service collection as an IChatGPTCompendiumService
             services.AddTransient<IChatGPTCompendiumService, DefaultChatGPTCompendiumService>();
+
+            // Add DefaultWebScraperCompendiumService to the service collection as an IWebScraperCompendiumService
+            services.AddTransient<IWebScraperCompendiumService, DefaultWebScraperCompendiumService>();
         }
 
         /// <summary>

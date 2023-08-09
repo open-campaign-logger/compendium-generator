@@ -8394,3 +8394,49 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Utility.Services.IApplication.RunAsync
   nameWithType: IApplication.RunAsync
+- uid: CampaignKit.Compendium.WebScraper
+  name: CampaignKit.Compendium.WebScraper
+  href: api/CampaignKit.Compendium.WebScraper.html
+  commentId: N:CampaignKit.Compendium.WebScraper
+  fullName: CampaignKit.Compendium.WebScraper
+  nameWithType: CampaignKit.Compendium.WebScraper
+- uid: CampaignKit.Compendium.WebScraper.Class1
+  name: Class1
+  href: api/CampaignKit.Compendium.WebScraper.Class1.html
+  commentId: T:CampaignKit.Compendium.WebScraper.Class1
+  fullName: CampaignKit.Compendium.WebScraper.Class1
+  nameWithType: Class1
+- uid: CampaignKit.Compendium.WebScraper.Services
+  name: CampaignKit.Compendium.WebScraper.Services
+  href: api/CampaignKit.Compendium.WebScraper.Services.html
+  commentId: N:CampaignKit.Compendium.WebScraper.Services
+  fullName: CampaignKit.Compendium.WebScraper.Services
+  nameWithType: CampaignKit.Compendium.WebScraper.Services
+- uid: CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService
+  name: DefaultWebScraperCompendiumService
+  href: api/CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.html
+  commentId: T:CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService
+  fullName: CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService
+  nameWithType: DefaultWebScraperCompendiumService
+- uid: CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
+  name: CreateCompendium(ICompendium, string)
+  href: api/CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.html#CampaignKit_Compendium_WebScraper_Services_DefaultWebScraperCompendiumService_CreateCompendium_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_
+  commentId: M:CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
+  name.vb: CreateCompendium(ICompendium, String)
+  fullName: CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, string)
+  fullName.vb: CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, String)
+  nameWithType: DefaultWebScraperCompendiumService.CreateCompendium(ICompendium, string)
+  nameWithType.vb: DefaultWebScraperCompendiumService.CreateCompendium(ICompendium, String)
+- uid: CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.CreateCompendium*
+  name: CreateCompendium
+  href: api/CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.html#CampaignKit_Compendium_WebScraper_Services_DefaultWebScraperCompendiumService_CreateCompendium_
+  commentId: Overload:CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.CreateCompendium
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.CreateCompendium
+  nameWithType: DefaultWebScraperCompendiumService.CreateCompendium
+- uid: CampaignKit.Compendium.WebScraper.Services.IWebScraperCompendiumService
+  name: IWebScraperCompendiumService
+  href: api/CampaignKit.Compendium.WebScraper.Services.IWebScraperCompendiumService.html
+  commentId: T:CampaignKit.Compendium.WebScraper.Services.IWebScraperCompendiumService
+  fullName: CampaignKit.Compendium.WebScraper.Services.IWebScraperCompendiumService
+  nameWithType: IWebScraperCompendiumService
