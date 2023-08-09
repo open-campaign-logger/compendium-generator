@@ -59,15 +59,18 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
         }
 
         /// <inheritdoc/>
-        public string? Name { get; set; }
-
-        /// <inheritdoc/>
-        public string? SourceTitle { get; set; }
+        public string? Desc { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the list of labels associated with the creature.
         /// </summary>
         public List<string>? Labels { get; set; } = new List<string>();
+
+        /// <inheritdoc/>
+        public string? Name { get; set; }
+
+        /// <inheritdoc/>
+        public string? SourceTitle { get; set; }
 
         /// <summary>
         /// Gets or sets the campaign tag symbol to use for this creature.
@@ -283,11 +286,11 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
         [GeneratedRegex("(\\d+)")]
         private static partial Regex HitDiceRegEx();
 
-        [GeneratedRegex("\\(?([A-Z])\\)?")]
-        private static partial Regex TreasureTypeRegEx();
-
         [GeneratedRegex("^(.*?):(.*)$")]
         private static partial Regex OSEStatBlockRegEx();
+
+        [GeneratedRegex("\\(?([A-Z])\\)?")]
+        private static partial Regex TreasureTypeRegEx();
 
         /// <summary>
         /// Parses a string for hit dice values before the opening parenthesis.

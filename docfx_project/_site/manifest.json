@@ -925,6 +925,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.WebScraper.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.WebScraper.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.yml",
       "output": {
         ".html": {

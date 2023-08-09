@@ -67,6 +67,9 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             this.TagSymbol = campaignEntry.TagSymbol;
         }
 
+        /// <inheritdoc/>
+        public string? Desc { get; set; } = string.Empty;
+
         /// <summary>
         /// Gets or sets the list of labels associated with the creature.
         /// </summary>

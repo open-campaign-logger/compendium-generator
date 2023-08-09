@@ -143,6 +143,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts
         [JsonProperty("deception")]
         public int? Deception { get; set; }
 
+        /// <inheritdoc/>
+        public string? Desc { get; set; } = string.Empty;
+
         /// <summary>
         /// Gets or sets the Dexterity score of the creature, determining its agility, reflexes, and balance.
         /// </summary>

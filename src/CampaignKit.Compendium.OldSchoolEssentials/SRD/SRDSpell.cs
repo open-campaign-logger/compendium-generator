@@ -66,6 +66,9 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
         /// </summary>
         public string? CasterType { get; set; } = string.Empty;
 
+        /// <inheritdoc/>
+        public string? Desc { get; set; } = string.Empty;
+
         /// <summary>
         /// Gets or sets the list of labels associated with the creature.
         /// </summary>

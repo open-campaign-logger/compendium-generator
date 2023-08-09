@@ -520,6 +520,19 @@ references:
   commentId: T:CampaignKit.Compendium.Core.Common.IGameComponent
   fullName: CampaignKit.Compendium.Core.Common.IGameComponent
   nameWithType: IGameComponent
+- uid: CampaignKit.Compendium.Core.Common.IGameComponent.Desc
+  name: Desc
+  href: api/CampaignKit.Compendium.Core.Common.IGameComponent.html#CampaignKit_Compendium_Core_Common_IGameComponent_Desc
+  commentId: P:CampaignKit.Compendium.Core.Common.IGameComponent.Desc
+  fullName: CampaignKit.Compendium.Core.Common.IGameComponent.Desc
+  nameWithType: IGameComponent.Desc
+- uid: CampaignKit.Compendium.Core.Common.IGameComponent.Desc*
+  name: Desc
+  href: api/CampaignKit.Compendium.Core.Common.IGameComponent.html#CampaignKit_Compendium_Core_Common_IGameComponent_Desc_
+  commentId: Overload:CampaignKit.Compendium.Core.Common.IGameComponent.Desc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Core.Common.IGameComponent.Desc
+  nameWithType: IGameComponent.Desc
 - uid: CampaignKit.Compendium.Core.Common.IGameComponent.Labels
   name: Labels
   href: api/CampaignKit.Compendium.Core.Common.IGameComponent.html#CampaignKit_Compendium_Core_Common_IGameComponent_Labels
@@ -1958,6 +1971,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Deception
   nameWithType: Creature.Deception
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Desc
+  name: Desc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Desc
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Desc
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Desc
+  nameWithType: Creature.Desc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Desc*
+  name: Desc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Desc_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Desc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Desc
+  nameWithType: Creature.Desc
 - uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Dexterity
   name: Dexterity
   href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Dexterity
@@ -5572,6 +5598,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Deception
   nameWithType: TomeOfBeastsCreature.Deception
+- uid: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Desc
+  name: Desc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html#CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Desc
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Desc
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Desc
+  nameWithType: TomeOfBeastsCreature.Desc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Desc*
+  name: Desc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html#CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Desc_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Desc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Desc
+  nameWithType: TomeOfBeastsCreature.Desc
 - uid: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.Dexterity
   name: Dexterity
   href: api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.TomeOfBeastsCreature.html#CampaignKit_Compendium_DungeonsAndDragons_TomeOfBeasts_TomeOfBeastsCreature_Dexterity
@@ -6585,6 +6624,19 @@ references:
   fullName.vb: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.New
   nameWithType: SRDCreature.SRDCreature
   nameWithType.vb: SRDCreature.New
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.Desc
+  name: Desc
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDCreature_Desc
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.Desc
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.Desc
+  nameWithType: SRDCreature.Desc
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.Desc*
+  name: Desc
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDCreature_Desc_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.Desc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.Desc
+  nameWithType: SRDCreature.Desc
 - uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.Labels
   name: Labels
   href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDCreature_Labels
@@ -6688,6 +6740,19 @@ references:
   fullName.vb: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.New
   nameWithType: SRDMagicItem.SRDMagicItem
   nameWithType.vb: SRDMagicItem.New
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.Desc
+  name: Desc
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_Desc
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.Desc
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.Desc
+  nameWithType: SRDMagicItem.Desc
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.Desc*
+  name: Desc
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_Desc_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.Desc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.Desc
+  nameWithType: SRDMagicItem.Desc
 - uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.Labels
   name: Labels
   href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_Labels
@@ -6804,6 +6869,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.CasterType
   nameWithType: SRDSpell.CasterType
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.Desc
+  name: Desc
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDSpell_Desc
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.Desc
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.Desc
+  nameWithType: SRDSpell.Desc
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.Desc*
+  name: Desc
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDSpell_Desc_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.Desc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.Desc
+  nameWithType: SRDSpell.Desc
 - uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.Labels
   name: Labels
   href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDSpell_Labels
@@ -8394,6 +8472,109 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Utility.Services.IApplication.RunAsync
   nameWithType: IApplication.RunAsync
+- uid: CampaignKit.Compendium.WebScraper.Common
+  name: CampaignKit.Compendium.WebScraper.Common
+  href: api/CampaignKit.Compendium.WebScraper.Common.html
+  commentId: N:CampaignKit.Compendium.WebScraper.Common
+  fullName: CampaignKit.Compendium.WebScraper.Common
+  nameWithType: CampaignKit.Compendium.WebScraper.Common
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage
+  name: SRDWebPage
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html
+  commentId: T:CampaignKit.Compendium.WebScraper.Common.SRDWebPage
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage
+  nameWithType: SRDWebPage
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Desc
+  name: Desc
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Desc
+  commentId: P:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Desc
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Desc
+  nameWithType: SRDWebPage.Desc
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Desc*
+  name: Desc
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Desc_
+  commentId: Overload:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Desc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Desc
+  nameWithType: SRDWebPage.Desc
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Labels
+  name: Labels
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Labels
+  commentId: P:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Labels
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Labels
+  nameWithType: SRDWebPage.Labels
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Labels*
+  name: Labels
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Labels_
+  commentId: Overload:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Labels
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Labels
+  nameWithType: SRDWebPage.Labels
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Name
+  name: Name
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Name
+  commentId: P:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Name
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Name
+  nameWithType: SRDWebPage.Name
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Name*
+  name: Name
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Name_
+  commentId: Overload:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Name
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Name
+  nameWithType: SRDWebPage.Name
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceTitle
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_SourceTitle
+  commentId: P:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceTitle
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceTitle
+  nameWithType: SRDWebPage.SourceTitle
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceTitle*
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_SourceTitle_
+  commentId: Overload:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceTitle
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceTitle
+  nameWithType: SRDWebPage.SourceTitle
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.TagSymbol
+  name: TagSymbol
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_TagSymbol
+  commentId: P:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.TagSymbol
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.TagSymbol
+  nameWithType: SRDWebPage.TagSymbol
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.TagSymbol*
+  name: TagSymbol
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_TagSymbol_
+  commentId: Overload:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.TagSymbol
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.TagSymbol
+  nameWithType: SRDWebPage.TagSymbol
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.TagValuePrefix
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_TagValuePrefix
+  commentId: P:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.TagValuePrefix
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.TagValuePrefix
+  nameWithType: SRDWebPage.TagValuePrefix
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.TagValuePrefix*
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_TagValuePrefix_
+  commentId: Overload:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.TagValuePrefix
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.TagValuePrefix
+  nameWithType: SRDWebPage.TagValuePrefix
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToCampaignEntry
+  name: ToCampaignEntry()
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_ToCampaignEntry
+  commentId: M:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToCampaignEntry
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToCampaignEntry()
+  nameWithType: SRDWebPage.ToCampaignEntry()
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToCampaignEntry*
+  name: ToCampaignEntry
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_ToCampaignEntry_
+  commentId: Overload:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToCampaignEntry
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToCampaignEntry
+  nameWithType: SRDWebPage.ToCampaignEntry
 - uid: CampaignKit.Compendium.WebScraper.Services
   name: CampaignKit.Compendium.WebScraper.Services
   href: api/CampaignKit.Compendium.WebScraper.Services.html

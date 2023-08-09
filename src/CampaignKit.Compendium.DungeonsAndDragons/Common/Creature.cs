@@ -169,6 +169,9 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Common
         /// </summary>
         public int? Deception { get; set; } = 0;
 
+        /// <inheritdoc/>
+        public string? Desc { get; set; } = string.Empty;
+
         /// <summary>
         /// Gets or sets dexterity of the creature.  Example: 9.
         /// </summary>
