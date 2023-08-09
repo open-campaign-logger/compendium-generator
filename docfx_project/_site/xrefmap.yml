@@ -8151,6 +8151,25 @@ references:
   commentId: T:CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService
   fullName: CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService
   nameWithType: DefaultWebScraperCompendiumService
+- uid: CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.#ctor(CampaignKit.Compendium.Core.Services.IDownloadService,Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService})
+  name: DefaultWebScraperCompendiumService(IDownloadService, ILogger<DefaultWebScraperCompendiumService>)
+  href: api/CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.html#CampaignKit_Compendium_WebScraper_Services_DefaultWebScraperCompendiumService__ctor_CampaignKit_Compendium_Core_Services_IDownloadService_Microsoft_Extensions_Logging_ILogger_CampaignKit_Compendium_WebScraper_Services_DefaultWebScraperCompendiumService__
+  commentId: M:CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.#ctor(CampaignKit.Compendium.Core.Services.IDownloadService,Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService})
+  name.vb: New(IDownloadService, ILogger(Of DefaultWebScraperCompendiumService))
+  fullName: CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.DefaultWebScraperCompendiumService(CampaignKit.Compendium.Core.Services.IDownloadService, Microsoft.Extensions.Logging.ILogger<CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService>)
+  fullName.vb: CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.New(CampaignKit.Compendium.Core.Services.IDownloadService, Microsoft.Extensions.Logging.ILogger(Of CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService))
+  nameWithType: DefaultWebScraperCompendiumService.DefaultWebScraperCompendiumService(IDownloadService, ILogger<DefaultWebScraperCompendiumService>)
+  nameWithType.vb: DefaultWebScraperCompendiumService.New(IDownloadService, ILogger(Of DefaultWebScraperCompendiumService))
+- uid: CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.#ctor*
+  name: DefaultWebScraperCompendiumService
+  href: api/CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.html#CampaignKit_Compendium_WebScraper_Services_DefaultWebScraperCompendiumService__ctor_
+  commentId: Overload:CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.DefaultWebScraperCompendiumService
+  fullName.vb: CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.New
+  nameWithType: DefaultWebScraperCompendiumService.DefaultWebScraperCompendiumService
+  nameWithType.vb: DefaultWebScraperCompendiumService.New
 - uid: CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
   name: CreateCompendium(ICompendium, string)
   href: api/CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.html#CampaignKit_Compendium_WebScraper_Services_DefaultWebScraperCompendiumService_CreateCompendium_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_

@@ -104,7 +104,7 @@ By participating in this project, you agree to abide by our [Code of Conduct](li
 ```
 
 ### Add Default Configuration
-A default public compendium should be added to `module_YOURMODULENMAE.json` to demonstrate the basic use of the module.
+A default compendium should be added to `module_YOURMODULENAME.json` to demonstrate the basic use of the module.
 
 `Program.cs` needs to be updated to read the module configuration at runtime.
 

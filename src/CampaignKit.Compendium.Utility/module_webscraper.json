@@ -1,3 +1,30 @@
 ﻿{
-  "WebScraperPublicCompendiums": []
+  "WebScraperPublicCompendiums": [
+    {
+      "CompendiumService": "CampaignKit.Compendium.WebScraper.Services.IWebScraperCompendiumService, CampaignKit.Compendium.WebScraper.dll",
+      "Description": "What's Old is new Again (WOIN) SRD material.'.",
+      "GameSystem": "WOIN",
+      "IsActive": true,
+      "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
+      "OverwriteExisting": true,
+      "SourceDataSets": [
+        {
+          "ImportLimit": 5,
+          "Labels": [
+            "WOIN",
+            "EN Publishing"
+          ],
+          "LicenseDataParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage",
+          "LicenseDataURI": "https://www.woinrules.com/",
+          "OverwriteExisting": false,
+          "SourceDataSetName": "Home",
+          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage",
+          "SourceDataSetURI": "https://www.woinrules.com/home",
+          "TagSymbol": "~",
+          "TagValuePrefix": ""
+        }
+      ],
+      "Title": "WOIN - Test"
+    }
+  ]
 }
