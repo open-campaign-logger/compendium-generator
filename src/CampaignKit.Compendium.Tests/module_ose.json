@@ -1,0 +1,88 @@
+﻿{
+  "OSE:PublicCompendiums": [
+    {
+      "CompendiumService": "CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService, CampaignKit.Compendium.OldSchoolEssentials.dll",
+      "Description": "Preformatted monsters, items and spells from the Old School Essentials SRD.",
+      "GameSystem": "Old School Essentials",
+      "IsActive": true,
+      "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
+      "OverwriteExisting": true,
+      "SourceDataSets": [
+        {
+          "ImportLimit": 5,
+          "Labels": [
+            "OSE",
+            "Necrotic Gnome",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monsters",
+          "TagSymbol": "~",
+          "TagValuePrefix": ""
+        },
+        {
+          "ImportLimit": 5,
+          "Labels": [
+            "OSE",
+            "Necrotic Gnome",
+            "Spell"
+          ],
+          "SourceDataSetName": "Spells",
+          "TagSymbol": "~",
+          "TagValuePrefix": ""
+        },
+        {
+          "ImportLimit": 5,
+          "Labels": [
+            "OSE",
+            "Necrotic Gnome",
+            "Magic Item"
+          ],
+          "SourceDataSetName": "Magic Items",
+          "TagSymbol": "+",
+          "TagValuePrefix": ""
+        }
+      ],
+      "Title": "OSE Compendium - Test"
+    },
+    {
+      "CompendiumService": "CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService, CampaignKit.Compendium.OldSchoolEssentials.dll",
+      "Description": "Preformatted monsters, items and spells from the Old School Essentials SRD.",
+      "GameSystem": "Old School Essentials",
+      "IsActive": true,
+      "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
+      "OverwriteExisting": true,
+      "SourceDataSets": [
+        {
+          "Labels": [
+            "OSE",
+            "Necrotic Gnome",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monsters",
+          "TagSymbol": "~",
+          "TagValuePrefix": ""
+        },
+        {
+          "Labels": [
+            "OSE",
+            "Necrotic Gnome",
+            "Spell"
+          ],
+          "SourceDataSetName": "Spells",
+          "TagSymbol": "~",
+          "TagValuePrefix": ""
+        },
+        {
+          "Labels": [
+            "OSE",
+            "Necrotic Gnome",
+            "Magic Item"
+          ],
+          "SourceDataSetName": "Magic Items",
+          "TagSymbol": "+"
+        }
+      ],
+      "Title": "OSE Compendium"
+    }
+  ]
+}

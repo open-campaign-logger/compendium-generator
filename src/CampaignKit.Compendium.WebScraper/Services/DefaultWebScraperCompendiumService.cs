@@ -14,10 +14,10 @@
 // limitations under the License.
 // </copyright>
 
-using CampaignKit.Compendium.Core.Configuration;
-
 namespace CampaignKit.Compendium.WebScraper.Services
 {
+    using CampaignKit.Compendium.Core.Configuration;
+
     /// <summary>
     /// Default service for creating compendiums via web page scraping.
     /// </summary>

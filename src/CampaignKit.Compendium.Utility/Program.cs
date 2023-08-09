@@ -17,6 +17,7 @@
 namespace CampaignKit.Compendium.Utility
 {
     using CampaignKit.Compendium.ChatGPT.Services;
+    using CampaignKit.Compendium.Core.Configuration;
     using CampaignKit.Compendium.Core.Services;
     using CampaignKit.Compendium.DungeonsAndDragons.Services;
     using CampaignKit.Compendium.Markdown.Services;
@@ -28,6 +29,9 @@ namespace CampaignKit.Compendium.Utility
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Microsoft.Extensions.Logging;
+    using Newtonsoft.Json.Linq;
+
+    using ReverseMarkdown;
 
     /// <summary>
     /// Creates a host with default configuration, adds required services, configures logging,
@@ -98,7 +102,14 @@ namespace CampaignKit.Compendium.Utility
             configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
             // Add the appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json file to the configuration, making it optional
-            configuration.AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", optional: true);
+            configuration.AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", optional: true, reloadOnChange: true);
+
+            // Add module configurations
+            string[] jsonFiles = { "module_chatgpt.json", "module_dnd.json", "module_ose.json", "module_markdown.json", "module_webscraper.json" };
+            foreach (var jsonFile in jsonFiles)
+            {
+                configuration.AddJsonFile(jsonFile, optional: true, reloadOnChange: true);
+            }
 
             // Add environment variables to the configuration
             configuration.AddEnvironmentVariables();
