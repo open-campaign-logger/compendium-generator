@@ -23,7 +23,7 @@ You need to add the following value to user secrets for the `CampaignKit.Compend
 ```
 
 ## Prompt Configuration
-A number of examples of how to configure the creation of compendiums using this module are included in the default application (`appsettings.json`) configuration. 
+A number of examples of how to configure the creation of compendiums using this module are included in the default application (`module_chatgpt.json`) configuration. 
 
 Here is an example of a prompt that will result in the creation of a compendium of rolltables for a Dungeons and Dragons 5e game.
 

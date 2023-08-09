@@ -2,7 +2,7 @@
 The Markdown File Conversion module facilitates the conversion of documents in [Markdown](https://www.markdownguide.org/) format into compendiums importable into the Campaign Logger application. This module assumes that entries are introduced by a heading level 1 tag `# YOUR ENTRY TITLE`. All subsequent markdown text will be copied directly into the resulting Campaign Entry.
 
 ## Configuration
-To configure this module, add the following to `PublicCompendiums` in `appsettings.json` or `PrivateCompendiums` in "secrets.json":
+A number of examples of how to configure the creation of compendiums using this module are included in the default application (`module_markdown.json`) configuration. 
 
 ```json
 {

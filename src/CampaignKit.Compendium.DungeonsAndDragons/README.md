@@ -22,7 +22,7 @@ The application is configured to create two different compendiums from these dat
 
 ## Configuration
 
-Configure the module in `appsettings.json` or `secrets.json` as follows:
+A number of examples of how to configure the creation of compendiums using this module are included in the default application (`module_dnd.json`) configuration. 
 
 ```json
 {

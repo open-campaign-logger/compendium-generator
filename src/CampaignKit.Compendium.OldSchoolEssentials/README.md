@@ -7,7 +7,7 @@ This module contains a collection of monsters, spells, and magic items from the 
 
 An OSE SRD text file is embedded within this module.  At runtime the module reads this embedded file into memory and process its contents.
 
-Use the following configuration guide below to setup the module.
+A number of examples of how to configure the creation of compendiums using this module are included in the default application (`module_ose.json`) configuration. 
 
 ```json
     {

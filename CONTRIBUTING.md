@@ -103,6 +103,20 @@ By participating in this project, you agree to abide by our [Code of Conduct](li
         }
 ```
 
+### Add Default Configuration
+A default public compendium should be added to `module_YOURMODULENMAE.json` to demonstrate the basic use of the module.
+
+`Program.cs` needs to be updated to read the module configuration at runtime.
+
+```csharp
+    // Add module configurations
+    string[] jsonFiles = { "module_chatgpt.json", "module_dnd.json", "module_ose.json", "module_markdown.json", "module_webscraper.json", "module_YOURMODULENAME.json" };
+    foreach (var jsonFile in jsonFiles)
+    {
+        configuration.AddJsonFile(jsonFile, optional: true, reloadOnChange: true);
+    }
+```
+
 ### Encapsulate Business Logic
 Ideally business logic should be encapsulated within an object that is used by the service and can be independently tested with a unit test.  This class should inherit from `GameComponentBase`.
 
@@ -113,7 +127,9 @@ service or from the unit testing project.  See: `MarkdownHelper` and 'ChatGPTHel
 
 ### Create Unit Tests
 A handful of basic unit tests should be created to ensure baseline testing of the module can be performed in the CI/CD pipeline.
+
 Generally speaking, unit tests should be able to run in any setting without external dependencies.
+
 Resource files should be provided to the test directly instead of requiring downloading at runtime.
 
 This example shows how to make a data file in the `TestFiles` subfolder available to the test at runtime:
@@ -141,9 +157,6 @@ Note: In the baove example you also need to set the properties of the test file 
 There are cases, like with the ChatGPT module, where these guidelines had to be broken.
 In those cases like this add an `[Ignore("REASON"]` property to the test to tell the test runner to skip the test by default.
 Users wishing to have these tests run can comment out this attribute and run the test.
-
-### Add Default Configuration
-A default public compendium should be added to `appsettings.json` to demonstrate the basic use of the module.
 
 ### Create Project README.md
 Every project must have a README.md file that explains the following:
