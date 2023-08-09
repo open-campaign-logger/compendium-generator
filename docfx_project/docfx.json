@@ -36,6 +36,9 @@
         ]
       }
     ],
+    "exclude": [
+      "src/CampaignKit.Compendium.Tests/**"
+    ],
     "resource": [
       {
         "files": [

@@ -1,41 +1,55 @@
-# Adding a New Module
+# Contributing to Campaign Compendium
 
-## Work Setup
+Thank you for your interest in contributing to the Campaign Compendium project! This utility compiles tabletop roleplaying game compendiums from various online open-source game rules, and we appreciate your support in making it better. Here's how you can contribute:
 
-### Create Project Item
-Create a new project item in the [Campaign Compendium planning board](https://github.com/orgs/open-campaign-logger/projects/5) with this high level task list.
+## General Guidelines
 
-```
+### Submitting a Pull Request
+
+1. **Fork the Repository:** Fork the repository to your own GitHub account.
+2. **Create a Feature Branch:** Create a branch for the specific feature or module you are working on.
+3. **Commit Your Changes:** Make regular, well-commented commits to your branch.
+4. **Submit a Pull Request:** Once your feature is complete and tested, submit a pull request for review, referencing any related issues and providing a description of the changes.
+
+### Additional Guidelines
+
+- **Code Style:** Please follow the coding standards and guidelines of the project.
+- **Testing:** Include unit tests for new features and modules, ensuring that they pass before submitting a pull request.
+- **Documentation:** Update the documentation to reflect changes and new additions.
+- **Communication:** Feel free to ask questions or communicate with the maintainers and other contributors via GitHub issues or other designated channels.
+
+### Community and Support
+
+We welcome contributions from everyone and encourage healthy discussion and collaboration. If you need help or have any questions, please reach out to the project maintainers or join our community channels:
+
+* [Campaign Community](https://campaign-community.com/)
+
+### Code of Conduct
+
+By participating in this project, you agree to abide by our [Code of Conduct](link-to-code-of-conduct). Familiarize yourself with it to understand our community standards and expectations.
+
+## Adding a New Module
+
+### Create a Project Item
+
+1. **Create a Project Item:** Start by creating a new project item in the [Campaign Compendium planning board](https://github.com/orgs/open-campaign-logger/projects/5) project plan with the following high-level task list:
+
+```markdown
 # Task List
- * [ ] Add New Project
- * [ ] Create/Update Configuration Classes
- * [ ] Create Service Interface and Default Service
- * [ ] Register Service with Program
- * [ ] Add Default Configuration
- * [ ] Create POCO for Requests and Responses
- * [ ] Create Unit Test for POCO
- * [ ] Create Project README.md
- * [ ] Update Solution README.md
- * [ ] Update CONTRIBUTING.md
+* [ ] Add New Project
+* [ ] Create/Update Configuration Classes
+* [ ] Create Service Interface and Default Service
+* [ ] Register Service with Program
+* [ ] Add Default Configuration
+* [ ] Create POCO for Requests and Responses
+* [ ] Create Unit Tests
+* [ ] Create Project README.md
+* [ ] Update Solution README.md
+* [ ] Update Solution CONTRIBUTING.md
 ```
- 
-### Convert Project Item to Issue
-1. Click `Convert to Issue` on the Project Item to convert it into a GitHub Issue.
- 
-### Create Code Branch
-1. Click the `Create a branch` link in the `Development` section of the issue.  
-1. Click the `Change branch source` link on the popup that's displayed and change the branch source from `main` to `develop`.
- 
-### Convert Task List Items to Issues
-Each item in the Task List can now be converted into an issue by hovering over the issue and clicking the `Convert to Issue` icon that pops up in the far right.
 
-More information about GitHub tasks lists can be found [here](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists)
-
-## Module Setup
-
-### Switch Code Branch
-1. In VisualStudio perform a `Sync` operation in the `Git Changes` window to pick up on the newly created repository branch.
-1. Checkout the new branch by clicking on `Remotes > NEW BRANCH NAME` in the `Git Changes` dropdown.
+2. Once the project item is created convert it into an Issue by using the `Convert to Issue` function in the project item's context menu.
+3. Create a new repository branch for issue by clicking the `Create a branch` link in the `Development` section of the issue. Make sure that the branch is based off of the `develop` brnach not the default `main`.
 
 ### Add New Project to Solution
 
@@ -88,8 +102,6 @@ More information about GitHub tasks lists can be found [here](https://docs.githu
             // YOUR SERVICE ADDED HERE
         }
 ```
-
-## Business Logic
 
 ### Create a JSON Serialization/Deserialization Class
 
@@ -184,8 +196,6 @@ In most cases this all of the logic can be encapsulated within the JSON serializ
 For more complex business logic, a helper class should be created that can be called from either the compendium
 service or from the unit testing project.  See: `MarkdownHelper` and 'ChatGPTHelper` for examples.
 
-## Quality Assurance
-
 ### Create Unit Tests
 A handful of basic unit tests should be created to ensure baseline testing of the module can be performed in the CI/CD pipeline.
 Generally speaking, unit tests should be able to run in any setting without external dependencies.
@@ -217,7 +227,6 @@ There are cases, like with the ChatGPT module, where these guidelines had to be 
 In those cases like this add an `[Ignore("REASON"]` property to the test to tell the test runner to skip the test by default.
 Users wishing to have these tests run can comment out this attribute and run the test.
 
-
 ### Add Default Configuration
 A default public compendium should be added to `appsettings.json` to demonstrate the basic use of the module.
 
@@ -226,7 +235,7 @@ Every project must have a README.md file that explains the following:
 1. Purpose of the module.
 1. Basic configuration of the module.
 1. In the project properties ensure that the following properties are set:
-    1. **Package > General > README** - Select the README file you just created.
+    1. `Package > General > README` - Select the README file you just created.
 
 ### Update Solution README.md
 After each project this file should be reviewed to see if any additional changes need to be made.

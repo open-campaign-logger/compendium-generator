@@ -925,16 +925,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CampaignKit.Compendium.WebScraper.Class1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CampaignKit.Compendium.WebScraper.Class1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.yml",
       "output": {
         ".html": {
@@ -959,16 +949,6 @@
       "output": {
         ".html": {
           "relative_path": "api/CampaignKit.Compendium.WebScraper.Services.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CampaignKit.Compendium.WebScraper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CampaignKit.Compendium.WebScraper.html"
         }
       },
       "version": ""
