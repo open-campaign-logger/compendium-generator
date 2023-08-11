@@ -27,8 +27,14 @@ namespace CampaignKit.Compendium.Core.Services
         /// <param name="sourceDataUri">The URI of the source data to download.</param>
         /// <param name="rootDataDirectory">Directory where files will be read and written from.</param>
         /// <param name="overwrite">Set to true to overwrite previously downloaded files.  Default: false.</param>
-        /// <param name="filenameOverride">Optional filename override for URIs that are difficult to derive a filename from.</param>
+        /// <param name="filenameOverride">Optional filename override for URIs from which deriving a filename is difficult.</param>
+        /// <param name="filenameOverrideOption">The behaviour to use when deciding how (or if) to override the filename.</param>
         /// <returns>Local path where the file is stored.</returns>
-        Task<string> DownloadFile(string sourceDataUri, string rootDataDirectory, bool overwrite = false, string filenameOverride = "");
+        Task<string> DownloadFile(
+            string sourceDataUri,
+            string rootDataDirectory,
+            bool overwrite = false,
+            string filenameOverride = "default",
+            FilenameOverrideOptions filenameOverrideOption = FilenameOverrideOptions.ReplaceIfBlank);
     }
 }

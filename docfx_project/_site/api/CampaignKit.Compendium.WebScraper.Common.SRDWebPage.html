@@ -79,7 +79,7 @@
 
   <h1 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage" class="text-break">
     Class SRDWebPage
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -92,7 +92,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SRDWebPage : GameComponentBase, IGameComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public class SRDWebPage : GameComponentBase, IGameComponent, IComparable&lt;SRDWebPage&gt;</code></pre>
   </div>
 
 
@@ -111,6 +111,7 @@
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="CampaignKit.Compendium.Core.Common.IGameComponent.html">IGameComponent</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html">SRDWebPage</a>&gt;</div>
     </dd>
   </dl>
 
@@ -137,13 +138,7 @@
       <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_TagValuePrefix">GameComponentBase.TagValuePrefix</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
@@ -154,10 +149,203 @@
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
-    </div>
   </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Children_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Children*"></a>
+
+  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Children" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Children">
+  Children
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the list of child pages referenced by this page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SRDWebPage&gt; Children { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html">SRDWebPage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_LocalPath_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.LocalPath*"></a>
+
+  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_LocalPath" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.LocalPath">
+  LocalPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the local file path to the downloaded web page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LocalPath { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Markdown_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Markdown*"></a>
+
+  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Markdown" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Markdown">
+  Markdown
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the markdown conversion of this page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Markdown { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_OverwriteExisting_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.OverwriteExisting*"></a>
+
+  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_OverwriteExisting" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.OverwriteExisting">
+  OverwriteExisting
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether to overwrite previously downloaded files.  Default: false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OverwriteExisting { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_RootDataDirectory_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.RootDataDirectory*"></a>
+
+  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_RootDataDirectory" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.RootDataDirectory">
+  RootDataDirectory
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the local directory where this page will be downloaded to and read from.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RootDataDirectory { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_SourceDataURI_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceDataURI*"></a>
+
+  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_SourceDataURI" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceDataURI">
+  SourceDataURI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the URI of the source data to download.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SourceDataURI { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
 
 
 
@@ -168,11 +356,168 @@
 </h2>
 
 
+  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_CompareTo_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.CompareTo*"></a>
+
+  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_CompareTo_CampaignKit_Compendium_WebScraper_Common_SRDWebPage_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.CompareTo(CampaignKit.Compendium.WebScraper.Common.SRDWebPage)">
+  CompareTo(SRDWebPage?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(SRDWebPage? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html">SRDWebPage</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A value that indicates the relative order of the objects being compared. The return value has these meanings:</p>
+ <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Equals_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Equals*"></a>
+
+  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Equals_System_Object_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Equals(System.Object)">
+  Equals(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_GetCampaignEntitiesAsync_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.GetCampaignEntitiesAsync*"></a>
+
+  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_GetCampaignEntitiesAsync_CampaignKit_Compendium_Core_Services_IDownloadService_System_String_CampaignKit_Compendium_Core_Services_FilenameOverrideOptions_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.GetCampaignEntitiesAsync(CampaignKit.Compendium.Core.Services.IDownloadService,System.String,CampaignKit.Compendium.Core.Services.FilenameOverrideOptions)">
+  GetCampaignEntitiesAsync(IDownloadService, string, FilenameOverrideOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Downloads a file from the given URI and returns a list of SRDWebPage objects containing
+this web page and its child pages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;CampaignEntry&gt;&gt; GetCampaignEntitiesAsync(IDownloadService downloadService, string filenameOverride, FilenameOverrideOptions filenameOverrideOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>downloadService</code> <a class="xref" href="CampaignKit.Compendium.Core.Services.IDownloadService.html">IDownloadService</a></dt>
+    <dd><p>The download service to use.</p>
+</dd>
+    <dt><code>filenameOverride</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional filename override for URIs that are difficult to derive a filename from.</p>
+</dd>
+    <dt><code>filenameOverrideOption</code> <a class="xref" href="CampaignKit.Compendium.Core.Services.FilenameOverrideOptions.html">FilenameOverrideOptions</a></dt>
+    <dd><p>The filename override options to use when downloading the source file.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CampaignKit.Compendium.Core.CampaignLogger.CampaignEntry.html">CampaignEntry</a>&gt;&gt;</dt>
+    <dd><p>A list of SRDWebPage objects.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_GetHashCode_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.GetHashCode*"></a>
+
+  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_GetHashCode" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_ToCampaignEntry_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToCampaignEntry*"></a>
 
   <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_ToCampaignEntry" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToCampaignEntry">
   ToCampaignEntry()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generates a CampaignLogger Entry for this game component.</p>
@@ -201,11 +546,44 @@
 
 
 
+  <a id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_ToString_" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToString*"></a>
+
+  <h3 id="CampaignKit_Compendium_WebScraper_Common_SRDWebPage_ToString" data-uid="CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that represents the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L28" class="edit-link">Edit this page</a>
+          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WebScraper/Common/SRDWebPage.cs/#L30" class="edit-link">Edit this page</a>
         </div>
 
         

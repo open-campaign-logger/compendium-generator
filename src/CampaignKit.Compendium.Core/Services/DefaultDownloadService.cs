@@ -44,11 +44,16 @@ namespace CampaignKit.Compendium.Core.Services
         }
 
         /// <inheritdoc/>
-        public virtual async Task<string> DownloadFile(string sourceDataUri, string rootDataDirectory, bool overwrite = false, string filenameOverride = "")
+        public virtual async Task<string> DownloadFile(
+            string sourceDataUri,
+            string rootDataDirectory,
+            bool overwrite = false,
+            string filenameOverride = "default",
+            FilenameOverrideOptions filenameOverrideOption = FilenameOverrideOptions.ReplaceIfBlank)
         {
             try
             {
-                this.DerivePathAndFileNames(sourceDataUri, out string path, out string file, filenameOverride);
+                this.DerivePathAndFileNames(sourceDataUri, out string path, out string file, filenameOverride, filenameOverrideOption);
 
                 // If overwrite = false and the file already exists, return.
                 var localFolderPath = Path.Combine(rootDataDirectory, path);
@@ -102,8 +107,14 @@ namespace CampaignKit.Compendium.Core.Services
         /// <param name="sourceDataUri">The URI to be separated.</param>
         /// <param name="path">The path component of the URI.</param>
         /// <param name="file">The file name component of the URI.</param>
-        /// <param name="filenameOverride">An optional override for the file name.</param>
-        private void DerivePathAndFileNames(string sourceDataUri, out string path, out string file, string filenameOverride)
+        /// <param name="filenameOverride">Optional filename override for URIs from which deriving a filename is difficult.</param>
+        /// <param name="filenameOverrideOption">The behaviour to use when deciding how (or if) to override the filename.</param>
+        private void DerivePathAndFileNames(
+            string sourceDataUri,
+            out string path,
+            out string file,
+            string filenameOverride,
+            FilenameOverrideOptions filenameOverrideOption)
         {
             // Separate the URI into components
             this.logger.LogDebug("Parsing components of URI: {sourceDataUri}.", sourceDataUri);
@@ -111,13 +122,24 @@ namespace CampaignKit.Compendium.Core.Services
             path = uri.AbsolutePath;
             file = Path.GetFileName(uri.AbsolutePath);
 
-            if (!string.IsNullOrEmpty(filenameOverride))
+            // Check if the filenameOverrideOption is set to ReplaceAlways
+            if (filenameOverrideOption == FilenameOverrideOptions.ReplaceAlways)
             {
+                // If so, set the file to the filenameOverride
                 file = filenameOverride;
             }
 
+            // Check if the file is empty and the filenameOverrideOption is set to ReplaceIfBlank
+            if (string.IsNullOrEmpty(file) && filenameOverrideOption == FilenameOverrideOptions.ReplaceIfBlank)
+            {
+                // If so, set the file to the filenameOverride
+                file = filenameOverride;
+            }
+
+            // Check if the file is still empty
             if (string.IsNullOrEmpty(file))
             {
+                // If so, throw an exception
                 throw new Exception($"Unable to derive filename from URI: {sourceDataUri}");
             }
 

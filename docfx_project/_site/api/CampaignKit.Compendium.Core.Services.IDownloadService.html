@@ -113,9 +113,9 @@
 
   <a id="CampaignKit_Compendium_Core_Services_IDownloadService_DownloadFile_" data-uid="CampaignKit.Compendium.Core.Services.IDownloadService.DownloadFile*"></a>
 
-  <h3 id="CampaignKit_Compendium_Core_Services_IDownloadService_DownloadFile_System_String_System_String_System_Boolean_System_String_" data-uid="CampaignKit.Compendium.Core.Services.IDownloadService.DownloadFile(System.String,System.String,System.Boolean,System.String)">
-  DownloadFile(string, string, bool, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.Core/Services/IDownloadService.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <h3 id="CampaignKit_Compendium_Core_Services_IDownloadService_DownloadFile_System_String_System_String_System_Boolean_System_String_CampaignKit_Compendium_Core_Services_FilenameOverrideOptions_" data-uid="CampaignKit.Compendium.Core.Services.IDownloadService.DownloadFile(System.String,System.String,System.Boolean,System.String,CampaignKit.Compendium.Core.Services.FilenameOverrideOptions)">
+  DownloadFile(string, string, bool, string, FilenameOverrideOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.Core/Services/IDownloadService.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Download the source data and source license.</p>
@@ -123,7 +123,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;string&gt; DownloadFile(string sourceDataUri, string rootDataDirectory, bool overwrite = false, string filenameOverride = &quot;&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;string&gt; DownloadFile(string sourceDataUri, string rootDataDirectory, bool overwrite = false, string filenameOverride = &quot;default&quot;, FilenameOverrideOptions filenameOverrideOption = FilenameOverrideOptions.ReplaceIfBlank)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -138,7 +138,10 @@
     <dd><p>Set to true to overwrite previously downloaded files.  Default: false.</p>
 </dd>
     <dt><code>filenameOverride</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Optional filename override for URIs that are difficult to derive a filename from.</p>
+    <dd><p>Optional filename override for URIs from which deriving a filename is difficult.</p>
+</dd>
+    <dt><code>filenameOverrideOption</code> <a class="xref" href="CampaignKit.Compendium.Core.Services.FilenameOverrideOptions.html">FilenameOverrideOptions</a></dt>
+    <dd><p>The behaviour to use when deciding how (or if) to override the filename.</p>
 </dd>
   </dl>
 

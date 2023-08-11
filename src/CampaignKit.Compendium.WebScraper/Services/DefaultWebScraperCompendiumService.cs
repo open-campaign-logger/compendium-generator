@@ -20,6 +20,7 @@ namespace CampaignKit.Compendium.WebScraper.Services
     using CampaignKit.Compendium.Core.Common;
     using CampaignKit.Compendium.Core.Configuration;
     using CampaignKit.Compendium.Core.Services;
+    using CampaignKit.Compendium.WebScraper.Common;
 
     using Microsoft.Extensions.Logging;
 
@@ -75,32 +76,26 @@ namespace CampaignKit.Compendium.WebScraper.Services
             }
 
             // Instantiate output variables
-            var licenseList = new List<CampaignEntry>();
-            var componentList = new List<IGameComponent>();
+            var campaignEntries = new List<CampaignEntry>();
 
             this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
 
             // Download data sets
             foreach (var sourceDataSet in compendium.SourceDataSets)
             {
-                // Keep track of how many items we import from this data source.
-                var importCount = 0;
-
-                // Download license file (if required)
-                this.logger.LogInformation("Downloading license data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
-                var licenseFilePath = await this.downloadService.DownloadFile(
-                    sourceDataSet.LicenseDataURI,
-                    rootDataDirectory,
-                    sourceDataSet.OverwriteExisting,
-                    "license");
-
                 // Download SourceDataSet file (if required)
                 this.logger.LogInformation("Downloading SourceDataSet data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
-                var sourceDataSetFilePath = await this.downloadService.DownloadFile(
-                    sourceDataSet.SourceDataSetURI,
-                    rootDataDirectory,
-                    sourceDataSet.OverwriteExisting,
-                    sourceDataSet.SourceDataSetName);
+                var webPage = new SRDWebPage()
+                {
+                    SourceDataURI = sourceDataSet.SourceDataSetURI,
+                    RootDataDirectory = rootDataDirectory,
+                    OverwriteExisting = sourceDataSet.OverwriteExisting,
+                };
+                var parentCampaignEntries = await webPage.GetCampaignEntitiesAsync(
+                    this.downloadService,
+                    "default.html",
+                    FilenameOverrideOptions.ReplaceIfBlank);
+                campaignEntries.AddRange(parentCampaignEntries);
             }
 
             // Create CampaignLogger File
@@ -111,19 +106,10 @@ namespace CampaignKit.Compendium.WebScraper.Services
                 Type = "campaign",
                 Title = compendium.Title,
                 Description = compendium.Description,
-                CampaignEntries = new List<CampaignEntry>(),
+                CampaignEntries = campaignEntries,
                 Logs = new List<Log>(),
                 ImageUrl = string.Empty,
             };
-
-            // Convert and add each item to the list.
-            foreach (var creature in componentList)
-            {
-                campaignLoggerFile.CampaignEntries.Add(creature.ToCampaignEntry());
-            }
-
-            // Add any license entries.
-            campaignLoggerFile.CampaignEntries.AddRange(licenseList);
 
             string campaignLoggerFileString = JsonConvert.SerializeObject(campaignLoggerFile, Formatting.Indented);
 

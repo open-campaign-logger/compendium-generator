@@ -16,7 +16,7 @@
           ],
           "LicenseDataParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage",
           "LicenseDataURI": "https://www.woinrules.com/",
-          "OverwriteExisting": false,
+          "OverwriteExisting": true,
           "SourceDataSetName": "Home",
           "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage",
           "SourceDataSetURI": "https://www.woinrules.com/home",
