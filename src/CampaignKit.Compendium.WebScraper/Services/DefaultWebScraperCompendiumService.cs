@@ -66,6 +66,13 @@ namespace CampaignKit.Compendium.WebScraper.Services
         {
             this.logger.LogDebug("Processing compendiums for service: {service}.", typeof(DefaultWebScraperCompendiumService).FullName);
 
+            // Skip processing if this compendium has been innactivated.
+            if (!compendium.IsActive)
+            {
+                this.logger.LogWarning("Processing of compendium skipped due to IsActive flag: {IsActive}", compendium.IsActive);
+                return;
+            }
+
             // Combine the rootDataDirectory with the compendium title to create a file name
             var filePath = Path.Combine(rootDataDirectory, compendium.Title + ".json");
 
@@ -107,10 +114,14 @@ namespace CampaignKit.Compendium.WebScraper.Services
                 ((SRDWebPage)parser).RootDataDirectory = rootDataDirectory;
                 ((SRDWebPage)parser).OverwriteExisting = sourceDataSet.OverwriteExisting;
                 ((SRDWebPage)parser).XPath = sourceDataSet.XPath ?? string.Empty;
+                ((SRDWebPage)parser).Name = sourceDataSet.SourceDataSetName ?? string.Empty;
+                ((SRDWebPage)parser).TagSymbol = sourceDataSet.TagSymbol ?? string.Empty;
+                ((SRDWebPage)parser).TagValuePrefix = sourceDataSet.TagValuePrefix ?? string.Empty;
+                ((SRDWebPage)parser).Labels = sourceDataSet.Labels ?? new List<string>();
 
                 campaignEntries.AddRange(await ((SRDWebPage)parser).GetCampaignEntitiesAsync(
                     this.downloadService,
-                    sourceDataSet.SourceDataSetName,
+                    sourceDataSet.SourceDataSetName ?? "DEFAULT",
                     FilenameOverrideOptions.ReplaceAlways));
             }
 

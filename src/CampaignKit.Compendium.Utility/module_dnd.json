@@ -6,7 +6,7 @@
       "GameSystem": "Dungeons and Dragons 5e",
       "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
       "IsActive": true,
-      "OverwriteExisting": true,
+      "OverwriteExisting": false,
       "SourceDataSets": [
         {
           "ImportLimit": 5,
@@ -561,7 +561,7 @@
       "GameSystem": "Dungeons and Dragons 5e",
       "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
       "IsActive": true,
-      "OverwriteExisting": true,
+      "OverwriteExisting": false,
       "SourceDataSets": [
         {
           "Labels": [

@@ -64,6 +64,28 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.Services
         public async Task CreateCompendium(ICompendium compendium, string rootDataDirectory)
         {
             this.logger.LogDebug("Processing compendiums for service: {service}.", typeof(IDungeonsAndDragonsCompendiumService_5e).FullName);
+
+            // Check if the compendium is null
+            if (compendium is null)
+            {
+                // Throw an ArgumentNullException if compendium is null
+                throw new ArgumentNullException(nameof(compendium));
+            }
+
+            // Check if the rootDataDirectory is null or empty
+            if (string.IsNullOrEmpty(rootDataDirectory))
+            {
+                // Throw an ArgumentException if rootDataDirectory is null or empty
+                throw new ArgumentException($"'{nameof(rootDataDirectory)}' cannot be null or empty.", nameof(rootDataDirectory));
+            }
+
+            // Skip processing if this compendium has been innactivated.
+            if (!compendium.IsActive)
+            {
+                this.logger.LogWarning("Processing of compendium skipped due to IsActive flag: {IsActive}", compendium.IsActive);
+                return;
+            }
+
             var serviceName = typeof(IDungeonsAndDragonsCompendiumService_5e).FullName
                 ?? throw new Exception($"Unable to determine service name for class: {typeof(IDungeonsAndDragonsCompendiumService_5e).FullName}");
 

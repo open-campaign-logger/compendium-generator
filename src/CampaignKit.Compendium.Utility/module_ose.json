@@ -6,7 +6,7 @@
       "GameSystem": "Old School Essentials",
       "IsActive": true,
       "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
-      "OverwriteExisting": true,
+      "OverwriteExisting": false,
       "SourceDataSets": [
         {
           "ImportLimit": 5,
@@ -50,7 +50,7 @@
       "GameSystem": "Old School Essentials",
       "IsActive": true,
       "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
-      "OverwriteExisting": true,
+      "OverwriteExisting": false,
       "SourceDataSets": [
         {
           "Labels": [

@@ -105,7 +105,7 @@ namespace CampaignKit.Compendium.Utility
             configuration.AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", optional: true, reloadOnChange: true);
 
             // Add module configurations
-            string[] jsonFiles = { "module_chatgpt.json", "module_dnd.json", "module_ose.json", "module_markdown.json", "module_webscraper.json" };
+            string[] jsonFiles = { "module_chatgpt.json", "module_dnd.json", "module_ose.json", "module_markdown.json", "module_woin.json" };
             foreach (var jsonFile in jsonFiles)
             {
                 configuration.AddJsonFile(jsonFile, optional: true, reloadOnChange: true);

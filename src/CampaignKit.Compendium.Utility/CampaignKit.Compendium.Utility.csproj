@@ -45,7 +45,7 @@
     <None Update="module_chatgpt.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="module_webscraper.json">
+    <None Update="module_woin.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="module_markdown.json">
