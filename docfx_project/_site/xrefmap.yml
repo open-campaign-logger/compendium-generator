@@ -1328,6 +1328,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Core.Configuration.SourceDataSet.TagValuePrefix
   nameWithType: SourceDataSet.TagValuePrefix
+- uid: CampaignKit.Compendium.Core.Configuration.SourceDataSet.XPath
+  name: XPath
+  href: api/CampaignKit.Compendium.Core.Configuration.SourceDataSet.html#CampaignKit_Compendium_Core_Configuration_SourceDataSet_XPath
+  commentId: P:CampaignKit.Compendium.Core.Configuration.SourceDataSet.XPath
+  fullName: CampaignKit.Compendium.Core.Configuration.SourceDataSet.XPath
+  nameWithType: SourceDataSet.XPath
+- uid: CampaignKit.Compendium.Core.Configuration.SourceDataSet.XPath*
+  name: XPath
+  href: api/CampaignKit.Compendium.Core.Configuration.SourceDataSet.html#CampaignKit_Compendium_Core_Configuration_SourceDataSet_XPath_
+  commentId: Overload:CampaignKit.Compendium.Core.Configuration.SourceDataSet.XPath
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Core.Configuration.SourceDataSet.XPath
+  nameWithType: SourceDataSet.XPath
 - uid: CampaignKit.Compendium.Core.Services
   name: CampaignKit.Compendium.Core.Services
   href: api/CampaignKit.Compendium.Core.Services.html
@@ -8125,19 +8138,6 @@ references:
   commentId: T:CampaignKit.Compendium.WebScraper.Common.SRDWebPage
   fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage
   nameWithType: SRDWebPage
-- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Children
-  name: Children
-  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Children
-  commentId: P:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Children
-  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Children
-  nameWithType: SRDWebPage.Children
-- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Children*
-  name: Children
-  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Children_
-  commentId: Overload:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Children
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Children
-  nameWithType: SRDWebPage.Children
 - uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.CompareTo(CampaignKit.Compendium.WebScraper.Common.SRDWebPage)
   name: CompareTo(SRDWebPage?)
   href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_CompareTo_CampaignKit_Compendium_WebScraper_Common_SRDWebPage_
@@ -8251,19 +8251,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.RootDataDirectory
   nameWithType: SRDWebPage.RootDataDirectory
-- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceDataURI
-  name: SourceDataURI
-  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_SourceDataURI
-  commentId: P:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceDataURI
-  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceDataURI
-  nameWithType: SRDWebPage.SourceDataURI
-- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceDataURI*
-  name: SourceDataURI
-  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_SourceDataURI_
-  commentId: Overload:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceDataURI
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceDataSetURI
+  name: SourceDataSetURI
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_SourceDataSetURI
+  commentId: P:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceDataSetURI
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceDataSetURI
+  nameWithType: SRDWebPage.SourceDataSetURI
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceDataSetURI*
+  name: SourceDataSetURI
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_SourceDataSetURI_
+  commentId: Overload:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceDataSetURI
   isSpec: "True"
-  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceDataURI
-  nameWithType: SRDWebPage.SourceDataURI
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceDataSetURI
+  nameWithType: SRDWebPage.SourceDataSetURI
 - uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToCampaignEntry
   name: ToCampaignEntry()
   href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_ToCampaignEntry
@@ -8277,19 +8277,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToCampaignEntry
   nameWithType: SRDWebPage.ToCampaignEntry
-- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToString
-  name: ToString()
-  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_ToString
-  commentId: M:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToString
-  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToString()
-  nameWithType: SRDWebPage.ToString()
-- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToString*
-  name: ToString
-  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_ToString_
-  commentId: Overload:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToString
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.XPath
+  name: XPath
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_XPath
+  commentId: P:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.XPath
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.XPath
+  nameWithType: SRDWebPage.XPath
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.XPath*
+  name: XPath
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_XPath_
+  commentId: Overload:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.XPath
   isSpec: "True"
-  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToString
-  nameWithType: SRDWebPage.ToString
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.XPath
+  nameWithType: SRDWebPage.XPath
 - uid: CampaignKit.Compendium.WebScraper.Services
   name: CampaignKit.Compendium.WebScraper.Services
   href: api/CampaignKit.Compendium.WebScraper.Services.html

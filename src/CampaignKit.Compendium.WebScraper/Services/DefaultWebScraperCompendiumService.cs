@@ -16,6 +16,9 @@
 
 namespace CampaignKit.Compendium.WebScraper.Services
 {
+    using System.Data.Common;
+    using System.Reflection;
+
     using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Common;
     using CampaignKit.Compendium.Core.Configuration;
@@ -62,8 +65,6 @@ namespace CampaignKit.Compendium.WebScraper.Services
         public async Task CreateCompendium(ICompendium compendium, string rootDataDirectory)
         {
             this.logger.LogDebug("Processing compendiums for service: {service}.", typeof(DefaultWebScraperCompendiumService).FullName);
-            var serviceName = typeof(DefaultWebScraperCompendiumService).FullName
-                ?? throw new Exception($"Unable to determine service name for class: {typeof(DefaultWebScraperCompendiumService).FullName}");
 
             // Combine the rootDataDirectory with the compendium title to create a file name
             var filePath = Path.Combine(rootDataDirectory, compendium.Title + ".json");
@@ -83,19 +84,34 @@ namespace CampaignKit.Compendium.WebScraper.Services
             // Download data sets
             foreach (var sourceDataSet in compendium.SourceDataSets)
             {
-                // Download SourceDataSet file (if required)
-                this.logger.LogInformation("Downloading SourceDataSet data for data set: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
-                var webPage = new SRDWebPage()
-                {
-                    SourceDataURI = sourceDataSet.SourceDataSetURI,
-                    RootDataDirectory = rootDataDirectory,
-                    OverwriteExisting = sourceDataSet.OverwriteExisting,
-                };
-                var parentCampaignEntries = await webPage.GetCampaignEntitiesAsync(
+                // Load data set configuration.
+                this.logger.LogInformation("Loading configuration for SourceDataSet: {SourceDataSetName}.", sourceDataSet.SourceDataSetName);
+
+                // Split the SourceDataSetParserType string into class name and assembly name
+                this.logger.LogInformation("Instantiating the required parser type: {SourceDataSetParser}.", sourceDataSet.SourceDataSetParser);
+                var sourceDataSetParserType = sourceDataSet.SourceDataSetParser.Split(",");
+
+                // Load the assembly containing the compendium service
+                var className = sourceDataSetParserType[0].Trim();
+                var assemblyName = sourceDataSetParserType[1].Trim();
+                Assembly assembly = Assembly.LoadFrom(assemblyName);
+
+                // Get the type of the parser service
+                var parserType = assembly.GetType(className)
+                    ?? throw new Exception($"Unable to load class: {className}");
+                var parser = Activator.CreateInstance(parserType)
+                    ?? throw new Exception($"Unable to instantiate the required parser type: {className}");
+
+                // Populate the class
+                ((SRDWebPage)parser).SourceDataSetURI = sourceDataSet.SourceDataSetURI;
+                ((SRDWebPage)parser).RootDataDirectory = rootDataDirectory;
+                ((SRDWebPage)parser).OverwriteExisting = sourceDataSet.OverwriteExisting;
+                ((SRDWebPage)parser).XPath = sourceDataSet.XPath ?? string.Empty;
+
+                campaignEntries.AddRange(await ((SRDWebPage)parser).GetCampaignEntitiesAsync(
                     this.downloadService,
-                    "default.html",
-                    FilenameOverrideOptions.ReplaceIfBlank);
-                campaignEntries.AddRange(parentCampaignEntries);
+                    sourceDataSet.SourceDataSetName,
+                    FilenameOverrideOptions.ReplaceAlways));
             }
 
             // Create CampaignLogger File

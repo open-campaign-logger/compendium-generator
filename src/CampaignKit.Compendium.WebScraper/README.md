@@ -6,3 +6,8 @@ This module supports the generation of compendiums based on collections of web p
 ## Configuration
 
 A number of examples of how to configure the creation of compendiums using this module are included in the default application (`module_webscraper.json`) configuration. 
+
+## Utilities
+
+https://www.prepostseo.com/link-extractor
+* Internal Links Only

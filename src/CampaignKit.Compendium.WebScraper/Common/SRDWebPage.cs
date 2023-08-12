@@ -16,11 +16,17 @@
 
 namespace CampaignKit.Compendium.WebScraper.Common
 {
+    using System;
+    using System.Data;
+    using System.IO;
+    using System.Reflection.Metadata.Ecma335;
     using System.Text;
 
     using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Common;
     using CampaignKit.Compendium.Core.Services;
+
+    using HtmlAgilityPack;
 
     using ReverseMarkdown;
 
@@ -29,11 +35,6 @@ namespace CampaignKit.Compendium.WebScraper.Common
     /// </summary>
     public class SRDWebPage : GameComponentBase, IComparable<SRDWebPage>
     {
-        /// <summary>
-        /// Gets or sets the list of child pages referenced by this page.
-        /// </summary>
-        public List<SRDWebPage> Children { get; set; } = new List<SRDWebPage>();
-
         /// <summary>
         /// Gets or sets the local file path to the downloaded web page.
         /// </summary>
@@ -57,7 +58,12 @@ namespace CampaignKit.Compendium.WebScraper.Common
         /// <summary>
         /// Gets or sets the URI of the source data to download.
         /// </summary>
-        public string SourceDataURI { get; set; } = string.Empty;
+        public string SourceDataSetURI { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Gets or sets the optional XPath to use to navigate to the web page content.
+        /// </summary>
+        public string XPath { get; set; } = string.Empty;
 
         /// <inheritdoc/>
         public int CompareTo(SRDWebPage? obj)
@@ -68,7 +74,7 @@ namespace CampaignKit.Compendium.WebScraper.Common
             }
             else
             {
-                return this.SourceDataURI.CompareTo(obj.SourceDataURI);
+                return this.SourceDataSetURI.CompareTo(obj.SourceDataSetURI);
             }
         }
 
@@ -80,8 +86,8 @@ namespace CampaignKit.Compendium.WebScraper.Common
                 return false;
             }
 
-            SRDWebPage person = (SRDWebPage)obj;
-            return this.SourceDataURI == person.SourceDataURI;
+            SRDWebPage webPage = (SRDWebPage)obj;
+            return this.SourceDataSetURI == webPage.SourceDataSetURI;
         }
 
         /// <summary>
@@ -90,19 +96,16 @@ namespace CampaignKit.Compendium.WebScraper.Common
         /// </summary>
         /// <param name="downloadService">The download service to use.</param>
         /// <param name="filenameOverride">Optional filename override for URIs that are difficult to derive a filename from.</param>
-        /// <param name="filenameOverrideOption">The filename override options to use when downloading the source file.</param>
+        /// <param name="filenameOverrideOption">The filename override options to use when downloading the source file.</param>ram>
         /// <returns>A list of SRDWebPage objects.</returns>
         public async Task<List<CampaignEntry>> GetCampaignEntitiesAsync(
             IDownloadService downloadService,
             string filenameOverride,
             FilenameOverrideOptions filenameOverrideOption)
         {
-            // Create a new list to store the results
-            var result = new List<CampaignEntry>();
-
             // Download the file from the given source
             this.LocalPath = await downloadService.DownloadFile(
-                this.SourceDataURI,
+                this.SourceDataSetURI,
                 this.RootDataDirectory,
                 this.OverwriteExisting,
                 filenameOverride,
@@ -111,11 +114,24 @@ namespace CampaignKit.Compendium.WebScraper.Common
             // Read the contents of the file
             var html = File.ReadAllText(this.LocalPath);
 
-            // Todo
-            // 1. Use config provided regex to navigate to starting node in HTML
-            // 2. this.Name = page title.
-            // 3. Extract links
-            // 4. Create child objects for each linked resource (if they are a sub-page)
+            // Create an HTML object for the data.
+            var doc = new HtmlDocument();
+            doc.LoadHtml(html);
+
+            // Navigate to the chosen HTML node if an XPath has been provided.
+            if (!string.IsNullOrEmpty(this.XPath))
+            {
+                var node = doc.DocumentNode.SelectSingleNode(this.XPath);
+                if (node != null)
+                {
+                    html = node.OuterHtml;
+                    doc.LoadHtml(html);
+                }
+                else
+                {
+                    throw new Exception($"Unable to find node corresponding to XPath: {this.XPath}");
+                }
+            }
 
             // Convert the HTML to Markdown
             var config = new ReverseMarkdown.Config
@@ -139,16 +155,16 @@ namespace CampaignKit.Compendium.WebScraper.Common
             this.Markdown = converter.Convert(html);
 
             // Add this web page to the return collection
-            result.Add(this.ToCampaignEntry());
-
-            // Return the result
-            return result;
+            return new List<CampaignEntry>()
+            {
+                this.ToCampaignEntry(),
+            };
         }
 
         /// <inheritdoc/>
         public override int GetHashCode()
         {
-            return HashCode.Combine(this.SourceDataURI);
+            return HashCode.Combine(this.SourceDataSetURI);
         }
 
         /// <inheritdoc/>
@@ -171,12 +187,6 @@ namespace CampaignKit.Compendium.WebScraper.Common
             };
 
             return campaignEntry;
-        }
-
-        /// <inheritdoc/>
-        public override string ToString()
-        {
-            return $"Name: {this.Name}, URI: {this.SourceDataURI}";
         }
     }
 }

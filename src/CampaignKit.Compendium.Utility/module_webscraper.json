@@ -14,14 +14,15 @@
             "WOIN",
             "EN Publishing"
           ],
-          "LicenseDataParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage",
+          "LicenseDataParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
           "LicenseDataURI": "https://www.woinrules.com/",
           "OverwriteExisting": true,
           "SourceDataSetName": "Home",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage",
+          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
           "SourceDataSetURI": "https://www.woinrules.com/home",
           "TagSymbol": "~",
-          "TagValuePrefix": ""
+          "TagValuePrefix": "",
+          "XPath": "//section[2]"
         }
       ],
       "Title": "WOIN - Test"
