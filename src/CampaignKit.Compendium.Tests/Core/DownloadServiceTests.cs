@@ -90,7 +90,8 @@ namespace CampaignKit.Compendium.Tests.Core
                 sourceDataUri, 
                 configurationService?.GetPrivateDataDirectory() ?? string.Empty,
                 overwrite,
-                "document.html");
+                "document.html",
+                FilenameOverrideOptions.ReplaceAlways);
 
             // Assert
             Assert.IsTrue(File.Exists(filePath));

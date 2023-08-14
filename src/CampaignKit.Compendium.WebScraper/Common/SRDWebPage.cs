@@ -21,6 +21,7 @@ namespace CampaignKit.Compendium.WebScraper.Common
     using System.IO;
     using System.Reflection.Metadata.Ecma335;
     using System.Text;
+    using System.Text.RegularExpressions;
 
     using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Common;
@@ -28,12 +29,14 @@ namespace CampaignKit.Compendium.WebScraper.Common
 
     using HtmlAgilityPack;
 
+    using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+
     using ReverseMarkdown;
 
     /// <summary>
     /// Represents an Systems Reference Document (SRD) web page containing TTRPG game components.
     /// </summary>
-    public class SRDWebPage : GameComponentBase, IComparable<SRDWebPage>
+    public partial class SRDWebPage : GameComponentBase, IComparable<SRDWebPage>
     {
         /// <summary>
         /// Gets or sets the local file path to the downloaded web page.
@@ -134,7 +137,7 @@ namespace CampaignKit.Compendium.WebScraper.Common
             }
 
             // Convert the HTML to Markdown
-            var config = new ReverseMarkdown.Config
+            var config = new Config
             {
                 // Include the unknown tag completely in the result (default as well)
                 UnknownTags = Config.UnknownTagsOption.Bypass,
@@ -149,10 +152,16 @@ namespace CampaignKit.Compendium.WebScraper.Common
                 SmartHrefHandling = true,
             };
 
-            // Create a converter to convert the HTML to Markdown
-            var converter = new ReverseMarkdown.Converter(config);
+            // Pre-process HTML (if required)
+            html = this.PreProcessHtml(html);
 
-            this.Markdown = converter.Convert(html);
+            // Create a converter to convert the HTML to Markdown
+            var converter = new Converter(config);
+            var markdown = converter.Convert(html);
+
+            // Post-process Markdown (if required)
+            markdown = this.PostProcessMarkdown(markdown);
+            this.Markdown = markdown;
 
             // Add this web page to the return collection
             return new List<CampaignEntry>()
@@ -167,6 +176,51 @@ namespace CampaignKit.Compendium.WebScraper.Common
             return HashCode.Combine(this.SourceDataSetURI);
         }
 
+        /// <summary>
+        /// Post-processes the Markdown before it is added to the campaign entry.
+        /// </summary>
+        /// <param name="markdown">A string of markdown text.</param>
+        /// <returns>The post-processed markdown.</returns>
+        public virtual string PostProcessMarkdown(string markdown)
+        {
+            // Regular expression pattern to match headers with text on a separate line
+            string pattern = @"(##)\s*\n\s*(\w.*)";
+
+            // Replacement pattern to move the header text to the same line as the markdown header
+            string replacement = "$1 $2";
+
+            // Perform the replacement using Regex.Replace
+            var result = Regex.Replace(markdown, pattern, replacement);
+
+            return result;
+        }
+
+        /// <summary>
+        /// Pre-processes the HTML before it is converted into markdown.
+        /// </summary>
+        /// <param name="html">The HTML to pre-process.</param>
+        /// <returns>The pre-processed HTML.</returns>
+        public virtual string PreProcessHtml(string html)
+        {
+            // Create an HTML object for the data.
+            var doc = new HtmlDocument();
+            doc.LoadHtml(html);
+
+            // Select all <img> elements
+            var images = doc.DocumentNode.SelectNodes("//img");
+
+            // If images were found, remove them
+            if (images != null)
+            {
+                foreach (var img in images)
+                {
+                    img.Remove();
+                }
+            }
+
+            return doc.DocumentNode.OuterHtml;
+        }
+
         /// <inheritdoc/>
         public override CampaignEntry ToCampaignEntry()
         {
@@ -176,6 +230,13 @@ namespace CampaignKit.Compendium.WebScraper.Common
 
             // Add Markdown
             stringBuilder.AppendLine(this.Markdown);
+
+            // Add an attribution line if this is not the license file
+            if (this.Name != null && !this.Name.Equals("License"))
+            {
+                stringBuilder.AppendLine();
+                stringBuilder.AppendLine($"Source: ~License");
+            }
 
             CampaignEntry campaignEntry = new ()
             {

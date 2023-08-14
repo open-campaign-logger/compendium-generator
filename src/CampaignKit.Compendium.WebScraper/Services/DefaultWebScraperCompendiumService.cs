@@ -109,7 +109,7 @@ namespace CampaignKit.Compendium.WebScraper.Services
                 var parser = Activator.CreateInstance(parserType)
                     ?? throw new Exception($"Unable to instantiate the required parser type: {className}");
 
-                // Populate the class
+                // Populate the SRDWebPage object
                 ((SRDWebPage)parser).SourceDataSetURI = sourceDataSet.SourceDataSetURI;
                 ((SRDWebPage)parser).RootDataDirectory = rootDataDirectory;
                 ((SRDWebPage)parser).OverwriteExisting = sourceDataSet.OverwriteExisting;
@@ -119,6 +119,7 @@ namespace CampaignKit.Compendium.WebScraper.Services
                 ((SRDWebPage)parser).TagValuePrefix = sourceDataSet.TagValuePrefix ?? string.Empty;
                 ((SRDWebPage)parser).Labels = sourceDataSet.Labels ?? new List<string>();
 
+                // Extract campaign entries from the SRDWebPage opbject.
                 campaignEntries.AddRange(await ((SRDWebPage)parser).GetCampaignEntitiesAsync(
                     this.downloadService,
                     sourceDataSet.SourceDataSetName ?? "DEFAULT",
