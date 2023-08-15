@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.Mark
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.ChatGPT", "src\CampaignKit.Compendium.ChatGPT\CampaignKit.Compendium.ChatGPT.csproj", "{AC21A4C5-7CF0-49FE-9304-A7AFA3496FF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampaignKit.Compendium.WebScraper", "src\CampaignKit.Compendium.WebScraper\CampaignKit.Compendium.WebScraper.csproj", "{43DFE9CA-C41A-4E7F-BA4A-4E964D12545A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.WebScraper", "src\CampaignKit.Compendium.WebScraper\CampaignKit.Compendium.WebScraper.csproj", "{43DFE9CA-C41A-4E7F-BA4A-4E964D12545A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampaignKit.Compendium.WOIN", "src\CampaignKit.Compendium.WOIN\CampaignKit.Compendium.WOIN.csproj", "{66A1151F-F158-4C52-9ECB-9E5EECACFB84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,10 @@ Global
 		{43DFE9CA-C41A-4E7F-BA4A-4E964D12545A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43DFE9CA-C41A-4E7F-BA4A-4E964D12545A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43DFE9CA-C41A-4E7F-BA4A-4E964D12545A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66A1151F-F158-4C52-9ECB-9E5EECACFB84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66A1151F-F158-4C52-9ECB-9E5EECACFB84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66A1151F-F158-4C52-9ECB-9E5EECACFB84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66A1151F-F158-4C52-9ECB-9E5EECACFB84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

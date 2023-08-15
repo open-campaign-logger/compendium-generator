@@ -39,6 +39,7 @@
     <ProjectReference Include="..\CampaignKit.Compendium.Markdown\CampaignKit.Compendium.Markdown.csproj" />
     <ProjectReference Include="..\CampaignKit.Compendium.OldSchoolEssentials\CampaignKit.Compendium.OldSchoolEssentials.csproj" />
     <ProjectReference Include="..\CampaignKit.Compendium.WebScraper\CampaignKit.Compendium.WebScraper.csproj" />
+    <ProjectReference Include="..\CampaignKit.Compendium.WOIN\CampaignKit.Compendium.WOIN.csproj" />
   </ItemGroup>
 
   <ItemGroup>

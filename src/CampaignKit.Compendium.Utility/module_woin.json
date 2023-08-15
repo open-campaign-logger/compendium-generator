@@ -14,7 +14,7 @@
             "License"
           ],
           "SourceDataSetName": "License",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/home",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]" 
@@ -25,7 +25,7 @@
             "Rule"
           ],
           "SourceDataSetName": "Rule - Eras of Play",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/eras-of-play",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -36,7 +36,7 @@
             "Rule"
           ],
           "SourceDataSetName": "Rule - Cinematic Mode",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/cinematic-mode",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -47,7 +47,7 @@
             "Rule"
           ],
           "SourceDataSetName": "Rule - The Game",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/the-game",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -58,7 +58,7 @@
             "Rule"
           ],
           "SourceDataSetName": "Rule - The Environment",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/the-world/environment",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -69,7 +69,7 @@
             "Rule"
           ],
           "SourceDataSetName": "Rule - Objects",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/the-world/objects",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -80,7 +80,7 @@
             "Rule"
           ],
           "SourceDataSetName": "Rule - Vehicle Combat",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/vehicle-combat",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -91,7 +91,7 @@
             "Rule"
           ],
           "SourceDataSetName": "Rule - Countdowns",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/countdowns",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -102,7 +102,7 @@
             "Rule"
           ],
           "SourceDataSetName": "Rule - Dice Pools",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/dice-pools",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -113,7 +113,7 @@
             "Rule"
           ],
           "SourceDataSetName": "Rule - Difficulty Benchmarks",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/difficulty-benchmarks",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -124,7 +124,7 @@
             "Rule"
           ],
           "SourceDataSetName": "Rule - Luck",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/luck",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -135,7 +135,7 @@
             "Rule"
           ],
           "SourceDataSetName": "Rule - Movement",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/movement",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -146,7 +146,7 @@
             "Skill"
           ],
           "SourceDataSetName": "Skill - Alchemy",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/alchemy",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -157,7 +157,7 @@
             "Skill"
           ],
           "SourceDataSetName": "Skill - Chases",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/chases",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -168,7 +168,7 @@
             "Skill"
           ],
           "SourceDataSetName": "Skill - Chemistry",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/chemistry",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -179,7 +179,7 @@
             "Skill"
           ],
           "SourceDataSetName": "Skill - Engineering",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/engineering",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -190,7 +190,7 @@
             "Skill"
           ],
           "SourceDataSetName": "Skill - Hacking Computing",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/hacking-computing",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -201,7 +201,7 @@
             "Skill"
           ],
           "SourceDataSetName": "Skill - Herbalism",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/herbalism",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -212,7 +212,7 @@
             "Skill"
           ],
           "SourceDataSetName": "Skill - Interrogations",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/interrogations",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -223,7 +223,7 @@
             "Skill"
           ],
           "SourceDataSetName": "Skill - Medicine",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/medicine",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -234,7 +234,7 @@
             "Skill"
           ],
           "SourceDataSetName": "Skill - Scanning",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/scanning",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -245,7 +245,7 @@
             "Skill"
           ],
           "SourceDataSetName": "Skill - Tailing",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/tailing",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
@@ -256,7 +256,7 @@
             "Rule"
           ],
           "SourceDataSetName": "Skill - Tracking",
-          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/tracking",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
