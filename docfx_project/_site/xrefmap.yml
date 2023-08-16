@@ -1898,19 +1898,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Burrow
   nameWithType: Creature.Burrow
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CLStatBlock
-  name: CLStatBlock
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_CLStatBlock
-  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CLStatBlock
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CLStatBlock
-  nameWithType: Creature.CLStatBlock
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CLStatBlock*
-  name: CLStatBlock
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_CLStatBlock_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CLStatBlock
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CLStatBlock
-  nameWithType: Creature.CLStatBlock
 - uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ChallengeRating
   name: ChallengeRating
   href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ChallengeRating
@@ -1963,6 +1950,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Climb
   nameWithType: Creature.Climb
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CLStatBlock
+  name: CLStatBlock
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_CLStatBlock
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CLStatBlock
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CLStatBlock
+  nameWithType: Creature.CLStatBlock
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CLStatBlock*
+  name: CLStatBlock
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_CLStatBlock_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CLStatBlock
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CLStatBlock
+  nameWithType: Creature.CLStatBlock
 - uid: CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ConditionImmunities
   name: ConditionImmunities
   href: api/CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.html#CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ConditionImmunities
@@ -3153,6 +3153,59 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.MonstrousMenagerie.Speed.Walk
   nameWithType: Speed.Walk
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Services
+  name: CampaignKit.Compendium.DungeonsAndDragons.Services
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.html
+  commentId: N:CampaignKit.Compendium.DungeonsAndDragons.Services
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services
+  nameWithType: CampaignKit.Compendium.DungeonsAndDragons.Services
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e
+  name: DefaultDungeonsAndDragonsCompendiumService_5e
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.html
+  commentId: T:CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e
+  nameWithType: DefaultDungeonsAndDragonsCompendiumService_5e
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.#ctor(CampaignKit.Compendium.Core.Services.IDownloadService,Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e})
+  name: DefaultDungeonsAndDragonsCompendiumService_5e(IDownloadService, ILogger<DefaultDungeonsAndDragonsCompendiumService_5e>)
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.html#CampaignKit_Compendium_DungeonsAndDragons_Services_DefaultDungeonsAndDragonsCompendiumService_5e__ctor_CampaignKit_Compendium_Core_Services_IDownloadService_Microsoft_Extensions_Logging_ILogger_CampaignKit_Compendium_DungeonsAndDragons_Services_DefaultDungeonsAndDragonsCompendiumService_5e__
+  commentId: M:CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.#ctor(CampaignKit.Compendium.Core.Services.IDownloadService,Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e})
+  name.vb: New(IDownloadService, ILogger(Of DefaultDungeonsAndDragonsCompendiumService_5e))
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.DefaultDungeonsAndDragonsCompendiumService_5e(CampaignKit.Compendium.Core.Services.IDownloadService, Microsoft.Extensions.Logging.ILogger<CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e>)
+  fullName.vb: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.New(CampaignKit.Compendium.Core.Services.IDownloadService, Microsoft.Extensions.Logging.ILogger(Of CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e))
+  nameWithType: DefaultDungeonsAndDragonsCompendiumService_5e.DefaultDungeonsAndDragonsCompendiumService_5e(IDownloadService, ILogger<DefaultDungeonsAndDragonsCompendiumService_5e>)
+  nameWithType.vb: DefaultDungeonsAndDragonsCompendiumService_5e.New(IDownloadService, ILogger(Of DefaultDungeonsAndDragonsCompendiumService_5e))
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.#ctor*
+  name: DefaultDungeonsAndDragonsCompendiumService_5e
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.html#CampaignKit_Compendium_DungeonsAndDragons_Services_DefaultDungeonsAndDragonsCompendiumService_5e__ctor_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.DefaultDungeonsAndDragonsCompendiumService_5e
+  fullName.vb: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.New
+  nameWithType: DefaultDungeonsAndDragonsCompendiumService_5e.DefaultDungeonsAndDragonsCompendiumService_5e
+  nameWithType.vb: DefaultDungeonsAndDragonsCompendiumService_5e.New
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
+  name: CreateCompendium(ICompendium, string)
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.html#CampaignKit_Compendium_DungeonsAndDragons_Services_DefaultDungeonsAndDragonsCompendiumService_5e_CreateCompendium_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_
+  commentId: M:CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
+  name.vb: CreateCompendium(ICompendium, String)
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, string)
+  fullName.vb: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, String)
+  nameWithType: DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(ICompendium, string)
+  nameWithType.vb: DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(ICompendium, String)
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium*
+  name: CreateCompendium
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.html#CampaignKit_Compendium_DungeonsAndDragons_Services_DefaultDungeonsAndDragonsCompendiumService_5e_CreateCompendium_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium
+  nameWithType: DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium
+- uid: CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e
+  name: IDungeonsAndDragonsCompendiumService_5e
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e.html
+  commentId: T:CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e
+  nameWithType: IDungeonsAndDragonsCompendiumService_5e
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD
   name: CampaignKit.Compendium.DungeonsAndDragons.SRD
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.html
@@ -4520,6 +4573,103 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDFeat.ToCampaignEntry
   nameWithType: SRDFeat.ToCampaignEntry
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear
+  name: SRDGear
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html
+  commentId: T:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear
+  nameWithType: SRDGear
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Desc
+  name: Desc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_Desc
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Desc
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Desc
+  nameWithType: SRDGear.Desc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Desc*
+  name: Desc
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_Desc_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Desc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Desc
+  nameWithType: SRDGear.Desc
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Labels
+  name: Labels
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_Labels
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Labels
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Labels
+  nameWithType: SRDGear.Labels
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Labels*
+  name: Labels
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_Labels_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Labels
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Labels
+  nameWithType: SRDGear.Labels
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Name
+  name: Name
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_Name
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Name
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Name
+  nameWithType: SRDGear.Name
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Name*
+  name: Name
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_Name_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Name
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.Name
+  nameWithType: SRDGear.Name
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.SourceTitle
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_SourceTitle
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.SourceTitle
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.SourceTitle
+  nameWithType: SRDGear.SourceTitle
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.SourceTitle*
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_SourceTitle_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.SourceTitle
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.SourceTitle
+  nameWithType: SRDGear.SourceTitle
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagSymbol
+  name: TagSymbol
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_TagSymbol
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagSymbol
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagSymbol
+  nameWithType: SRDGear.TagSymbol
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagSymbol*
+  name: TagSymbol
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_TagSymbol_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagSymbol
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagSymbol
+  nameWithType: SRDGear.TagSymbol
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagValuePrefix
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_TagValuePrefix
+  commentId: P:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagValuePrefix
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagValuePrefix
+  nameWithType: SRDGear.TagValuePrefix
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagValuePrefix*
+  name: TagValuePrefix
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_TagValuePrefix_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagValuePrefix
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.TagValuePrefix
+  nameWithType: SRDGear.TagValuePrefix
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.ToCampaignEntry
+  name: ToCampaignEntry()
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_ToCampaignEntry
+  commentId: M:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.ToCampaignEntry
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.ToCampaignEntry()
+  nameWithType: SRDGear.ToCampaignEntry()
+- uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.ToCampaignEntry*
+  name: ToCampaignEntry
+  href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.html#CampaignKit_Compendium_DungeonsAndDragons_SRD_SRDGear_ToCampaignEntry_
+  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.ToCampaignEntry
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDGear.ToCampaignEntry
+  nameWithType: SRDGear.ToCampaignEntry
 - uid: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem
   name: SRDMagicItem
   href: api/CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDMagicItem.html
@@ -5252,59 +5402,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.SRD.SRDWeapon.Weight
   nameWithType: SRDWeapon.Weight
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Services
-  name: CampaignKit.Compendium.DungeonsAndDragons.Services
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.html
-  commentId: N:CampaignKit.Compendium.DungeonsAndDragons.Services
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services
-  nameWithType: CampaignKit.Compendium.DungeonsAndDragons.Services
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e
-  name: DefaultDungeonsAndDragonsCompendiumService_5e
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.html
-  commentId: T:CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e
-  nameWithType: DefaultDungeonsAndDragonsCompendiumService_5e
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.#ctor(CampaignKit.Compendium.Core.Services.IDownloadService,Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e})
-  name: DefaultDungeonsAndDragonsCompendiumService_5e(IDownloadService, ILogger<DefaultDungeonsAndDragonsCompendiumService_5e>)
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.html#CampaignKit_Compendium_DungeonsAndDragons_Services_DefaultDungeonsAndDragonsCompendiumService_5e__ctor_CampaignKit_Compendium_Core_Services_IDownloadService_Microsoft_Extensions_Logging_ILogger_CampaignKit_Compendium_DungeonsAndDragons_Services_DefaultDungeonsAndDragonsCompendiumService_5e__
-  commentId: M:CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.#ctor(CampaignKit.Compendium.Core.Services.IDownloadService,Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e})
-  name.vb: New(IDownloadService, ILogger(Of DefaultDungeonsAndDragonsCompendiumService_5e))
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.DefaultDungeonsAndDragonsCompendiumService_5e(CampaignKit.Compendium.Core.Services.IDownloadService, Microsoft.Extensions.Logging.ILogger<CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e>)
-  fullName.vb: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.New(CampaignKit.Compendium.Core.Services.IDownloadService, Microsoft.Extensions.Logging.ILogger(Of CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e))
-  nameWithType: DefaultDungeonsAndDragonsCompendiumService_5e.DefaultDungeonsAndDragonsCompendiumService_5e(IDownloadService, ILogger<DefaultDungeonsAndDragonsCompendiumService_5e>)
-  nameWithType.vb: DefaultDungeonsAndDragonsCompendiumService_5e.New(IDownloadService, ILogger(Of DefaultDungeonsAndDragonsCompendiumService_5e))
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.#ctor*
-  name: DefaultDungeonsAndDragonsCompendiumService_5e
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.html#CampaignKit_Compendium_DungeonsAndDragons_Services_DefaultDungeonsAndDragonsCompendiumService_5e__ctor_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.DefaultDungeonsAndDragonsCompendiumService_5e
-  fullName.vb: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.New
-  nameWithType: DefaultDungeonsAndDragonsCompendiumService_5e.DefaultDungeonsAndDragonsCompendiumService_5e
-  nameWithType.vb: DefaultDungeonsAndDragonsCompendiumService_5e.New
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
-  name: CreateCompendium(ICompendium, string)
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.html#CampaignKit_Compendium_DungeonsAndDragons_Services_DefaultDungeonsAndDragonsCompendiumService_5e_CreateCompendium_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_
-  commentId: M:CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
-  name.vb: CreateCompendium(ICompendium, String)
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, string)
-  fullName.vb: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, String)
-  nameWithType: DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(ICompendium, string)
-  nameWithType.vb: DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium(ICompendium, String)
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium*
-  name: CreateCompendium
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.html#CampaignKit_Compendium_DungeonsAndDragons_Services_DefaultDungeonsAndDragonsCompendiumService_5e_CreateCompendium_
-  commentId: Overload:CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services.DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium
-  nameWithType: DefaultDungeonsAndDragonsCompendiumService_5e.CreateCompendium
-- uid: CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e
-  name: IDungeonsAndDragonsCompendiumService_5e
-  href: api/CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e.html
-  commentId: T:CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e
-  fullName: CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e
-  nameWithType: IDungeonsAndDragonsCompendiumService_5e
 - uid: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts
   name: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts
   href: api/CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts.html
@@ -6468,12 +6565,305 @@ references:
   commentId: T:CampaignKit.Compendium.Markdown.Services.IMarkdownCompendiumService
   fullName: CampaignKit.Compendium.Markdown.Services.IMarkdownCompendiumService
   nameWithType: IMarkdownCompendiumService
+- uid: CampaignKit.Compendium.OldSchoolEssentials.Services
+  name: CampaignKit.Compendium.OldSchoolEssentials.Services
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.html
+  commentId: N:CampaignKit.Compendium.OldSchoolEssentials.Services
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services
+  nameWithType: CampaignKit.Compendium.OldSchoolEssentials.Services
+- uid: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService
+  name: DefaultOldSchoolEssentialsCompendiumService
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.html
+  commentId: T:CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService
+  nameWithType: DefaultOldSchoolEssentialsCompendiumService
+- uid: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.#ctor(Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService})
+  name: DefaultOldSchoolEssentialsCompendiumService(ILogger<DefaultOldSchoolEssentialsCompendiumService>)
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.html#CampaignKit_Compendium_OldSchoolEssentials_Services_DefaultOldSchoolEssentialsCompendiumService__ctor_Microsoft_Extensions_Logging_ILogger_CampaignKit_Compendium_OldSchoolEssentials_Services_DefaultOldSchoolEssentialsCompendiumService__
+  commentId: M:CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.#ctor(Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService})
+  name.vb: New(ILogger(Of DefaultOldSchoolEssentialsCompendiumService))
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.DefaultOldSchoolEssentialsCompendiumService(Microsoft.Extensions.Logging.ILogger<CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService>)
+  fullName.vb: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.New(Microsoft.Extensions.Logging.ILogger(Of CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService))
+  nameWithType: DefaultOldSchoolEssentialsCompendiumService.DefaultOldSchoolEssentialsCompendiumService(ILogger<DefaultOldSchoolEssentialsCompendiumService>)
+  nameWithType.vb: DefaultOldSchoolEssentialsCompendiumService.New(ILogger(Of DefaultOldSchoolEssentialsCompendiumService))
+- uid: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.#ctor*
+  name: DefaultOldSchoolEssentialsCompendiumService
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.html#CampaignKit_Compendium_OldSchoolEssentials_Services_DefaultOldSchoolEssentialsCompendiumService__ctor_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.DefaultOldSchoolEssentialsCompendiumService
+  fullName.vb: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.New
+  nameWithType: DefaultOldSchoolEssentialsCompendiumService.DefaultOldSchoolEssentialsCompendiumService
+  nameWithType.vb: DefaultOldSchoolEssentialsCompendiumService.New
+- uid: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
+  name: CreateCompendium(ICompendium, string)
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.html#CampaignKit_Compendium_OldSchoolEssentials_Services_DefaultOldSchoolEssentialsCompendiumService_CreateCompendium_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_
+  commentId: M:CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
+  name.vb: CreateCompendium(ICompendium, String)
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, string)
+  fullName.vb: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, String)
+  nameWithType: DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(ICompendium, string)
+  nameWithType.vb: DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(ICompendium, String)
+- uid: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium*
+  name: CreateCompendium
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.html#CampaignKit_Compendium_OldSchoolEssentials_Services_DefaultOldSchoolEssentialsCompendiumService_CreateCompendium_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium
+  nameWithType: DefaultOldSchoolEssentialsCompendiumService.CreateCompendium
+- uid: CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService
+  name: IOldSchoolEssentialsCompendiumService
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService.html
+  commentId: T:CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService
+  nameWithType: IOldSchoolEssentialsCompendiumService
 - uid: CampaignKit.Compendium.OldSchoolEssentials.SRD
   name: CampaignKit.Compendium.OldSchoolEssentials.SRD
   href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.html
   commentId: N:CampaignKit.Compendium.OldSchoolEssentials.SRD
   fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD
   nameWithType: CampaignKit.Compendium.OldSchoolEssentials.SRD
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor
+  name: SRDArmor
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html
+  commentId: T:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor
+  nameWithType: SRDArmor
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.BaseAc
+  name: BaseAc
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_BaseAc
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.BaseAc
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.BaseAc
+  nameWithType: SRDArmor.BaseAc
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.BaseAc*
+  name: BaseAc
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_BaseAc_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.BaseAc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.BaseAc
+  nameWithType: SRDArmor.BaseAc
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Category
+  name: Category
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_Category
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Category
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Category
+  nameWithType: SRDArmor.Category
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Category*
+  name: Category
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_Category_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Category
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Category
+  nameWithType: SRDArmor.Category
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Cost
+  name: Cost
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_Cost
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Cost
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Cost
+  nameWithType: SRDArmor.Cost
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Cost*
+  name: Cost
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_Cost_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Cost
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Cost
+  nameWithType: SRDArmor.Cost
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Desc
+  name: Desc
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_Desc
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Desc
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Desc
+  nameWithType: SRDArmor.Desc
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Desc*
+  name: Desc
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_Desc_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Desc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Desc
+  nameWithType: SRDArmor.Desc
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Labels
+  name: Labels
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_Labels
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Labels
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Labels
+  nameWithType: SRDArmor.Labels
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Labels*
+  name: Labels
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_Labels_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Labels
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Labels
+  nameWithType: SRDArmor.Labels
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Name
+  name: Name
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_Name
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Name
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Name
+  nameWithType: SRDArmor.Name
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Name*
+  name: Name
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_Name_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Name
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Name
+  nameWithType: SRDArmor.Name
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusConMod
+  name: PlusConMod
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_PlusConMod
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusConMod
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusConMod
+  nameWithType: SRDArmor.PlusConMod
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusConMod*
+  name: PlusConMod
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_PlusConMod_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusConMod
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusConMod
+  nameWithType: SRDArmor.PlusConMod
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusDexMod
+  name: PlusDexMod
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_PlusDexMod
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusDexMod
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusDexMod
+  nameWithType: SRDArmor.PlusDexMod
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusDexMod*
+  name: PlusDexMod
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_PlusDexMod_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusDexMod
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusDexMod
+  nameWithType: SRDArmor.PlusDexMod
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusFlatMod
+  name: PlusFlatMod
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_PlusFlatMod
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusFlatMod
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusFlatMod
+  nameWithType: SRDArmor.PlusFlatMod
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusFlatMod*
+  name: PlusFlatMod
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_PlusFlatMod_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusFlatMod
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusFlatMod
+  nameWithType: SRDArmor.PlusFlatMod
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusMax
+  name: PlusMax
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_PlusMax
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusMax
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusMax
+  nameWithType: SRDArmor.PlusMax
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusMax*
+  name: PlusMax
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_PlusMax_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusMax
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusMax
+  nameWithType: SRDArmor.PlusMax
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusWisMod
+  name: PlusWisMod
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_PlusWisMod
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusWisMod
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusWisMod
+  nameWithType: SRDArmor.PlusWisMod
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusWisMod*
+  name: PlusWisMod
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_PlusWisMod_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusWisMod
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.PlusWisMod
+  nameWithType: SRDArmor.PlusWisMod
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Rarity
+  name: Rarity
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_Rarity
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Rarity
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Rarity
+  nameWithType: SRDArmor.Rarity
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Rarity*
+  name: Rarity
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_Rarity_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Rarity
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Rarity
+  nameWithType: SRDArmor.Rarity
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.SourceTitle
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_SourceTitle
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.SourceTitle
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.SourceTitle
+  nameWithType: SRDArmor.SourceTitle
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.SourceTitle*
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_SourceTitle_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.SourceTitle
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.SourceTitle
+  nameWithType: SRDArmor.SourceTitle
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.StealthDisadvantage
+  name: StealthDisadvantage
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_StealthDisadvantage
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.StealthDisadvantage
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.StealthDisadvantage
+  nameWithType: SRDArmor.StealthDisadvantage
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.StealthDisadvantage*
+  name: StealthDisadvantage
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_StealthDisadvantage_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.StealthDisadvantage
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.StealthDisadvantage
+  nameWithType: SRDArmor.StealthDisadvantage
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.StrengthRequirement
+  name: StrengthRequirement
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_StrengthRequirement
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.StrengthRequirement
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.StrengthRequirement
+  nameWithType: SRDArmor.StrengthRequirement
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.StrengthRequirement*
+  name: StrengthRequirement
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_StrengthRequirement_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.StrengthRequirement
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.StrengthRequirement
+  nameWithType: SRDArmor.StrengthRequirement
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.TagSymbol
+  name: TagSymbol
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_TagSymbol
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.TagSymbol
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.TagSymbol
+  nameWithType: SRDArmor.TagSymbol
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.TagSymbol*
+  name: TagSymbol
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_TagSymbol_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.TagSymbol
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.TagSymbol
+  nameWithType: SRDArmor.TagSymbol
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.ToCampaignEntry
+  name: ToCampaignEntry()
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_ToCampaignEntry
+  commentId: M:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.ToCampaignEntry
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.ToCampaignEntry()
+  nameWithType: SRDArmor.ToCampaignEntry()
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.ToCampaignEntry*
+  name: ToCampaignEntry
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_ToCampaignEntry_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.ToCampaignEntry
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.ToCampaignEntry
+  nameWithType: SRDArmor.ToCampaignEntry
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Weight
+  name: Weight
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_Weight
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Weight
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Weight
+  nameWithType: SRDArmor.Weight
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Weight*
+  name: Weight
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDArmor_Weight_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Weight
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDArmor.Weight
+  nameWithType: SRDArmor.Weight
 - uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature
   name: SRDCreature
   href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.html
@@ -6512,6 +6902,90 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDCreature.ToCampaignEntry
   nameWithType: SRDCreature.ToCampaignEntry
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear
+  name: SRDGear
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.html
+  commentId: T:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear
+  nameWithType: SRDGear
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Desc
+  name: Desc
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDGear_Desc
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Desc
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Desc
+  nameWithType: SRDGear.Desc
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Desc*
+  name: Desc
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDGear_Desc_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Desc
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Desc
+  nameWithType: SRDGear.Desc
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Labels
+  name: Labels
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDGear_Labels
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Labels
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Labels
+  nameWithType: SRDGear.Labels
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Labels*
+  name: Labels
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDGear_Labels_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Labels
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Labels
+  nameWithType: SRDGear.Labels
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Name
+  name: Name
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDGear_Name
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Name
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Name
+  nameWithType: SRDGear.Name
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Name*
+  name: Name
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDGear_Name_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Name
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.Name
+  nameWithType: SRDGear.Name
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.SourceTitle
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDGear_SourceTitle
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.SourceTitle
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.SourceTitle
+  nameWithType: SRDGear.SourceTitle
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.SourceTitle*
+  name: SourceTitle
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDGear_SourceTitle_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.SourceTitle
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.SourceTitle
+  nameWithType: SRDGear.SourceTitle
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.TagSymbol
+  name: TagSymbol
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDGear_TagSymbol
+  commentId: P:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.TagSymbol
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.TagSymbol
+  nameWithType: SRDGear.TagSymbol
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.TagSymbol*
+  name: TagSymbol
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDGear_TagSymbol_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.TagSymbol
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.TagSymbol
+  nameWithType: SRDGear.TagSymbol
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.ToCampaignEntry
+  name: ToCampaignEntry()
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDGear_ToCampaignEntry
+  commentId: M:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.ToCampaignEntry
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.ToCampaignEntry()
+  nameWithType: SRDGear.ToCampaignEntry()
+- uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.ToCampaignEntry*
+  name: ToCampaignEntry
+  href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.html#CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDGear_ToCampaignEntry_
+  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.ToCampaignEntry
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDGear.ToCampaignEntry
+  nameWithType: SRDGear.ToCampaignEntry
 - uid: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem
   name: SRDMagicItem
   href: api/CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html
@@ -6614,59 +7088,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDSpell.ToCampaignEntry
   nameWithType: SRDSpell.ToCampaignEntry
-- uid: CampaignKit.Compendium.OldSchoolEssentials.Services
-  name: CampaignKit.Compendium.OldSchoolEssentials.Services
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.html
-  commentId: N:CampaignKit.Compendium.OldSchoolEssentials.Services
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services
-  nameWithType: CampaignKit.Compendium.OldSchoolEssentials.Services
-- uid: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService
-  name: DefaultOldSchoolEssentialsCompendiumService
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.html
-  commentId: T:CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService
-  nameWithType: DefaultOldSchoolEssentialsCompendiumService
-- uid: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.#ctor(Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService})
-  name: DefaultOldSchoolEssentialsCompendiumService(ILogger<DefaultOldSchoolEssentialsCompendiumService>)
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.html#CampaignKit_Compendium_OldSchoolEssentials_Services_DefaultOldSchoolEssentialsCompendiumService__ctor_Microsoft_Extensions_Logging_ILogger_CampaignKit_Compendium_OldSchoolEssentials_Services_DefaultOldSchoolEssentialsCompendiumService__
-  commentId: M:CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.#ctor(Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService})
-  name.vb: New(ILogger(Of DefaultOldSchoolEssentialsCompendiumService))
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.DefaultOldSchoolEssentialsCompendiumService(Microsoft.Extensions.Logging.ILogger<CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService>)
-  fullName.vb: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.New(Microsoft.Extensions.Logging.ILogger(Of CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService))
-  nameWithType: DefaultOldSchoolEssentialsCompendiumService.DefaultOldSchoolEssentialsCompendiumService(ILogger<DefaultOldSchoolEssentialsCompendiumService>)
-  nameWithType.vb: DefaultOldSchoolEssentialsCompendiumService.New(ILogger(Of DefaultOldSchoolEssentialsCompendiumService))
-- uid: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.#ctor*
-  name: DefaultOldSchoolEssentialsCompendiumService
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.html#CampaignKit_Compendium_OldSchoolEssentials_Services_DefaultOldSchoolEssentialsCompendiumService__ctor_
-  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.DefaultOldSchoolEssentialsCompendiumService
-  fullName.vb: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.New
-  nameWithType: DefaultOldSchoolEssentialsCompendiumService.DefaultOldSchoolEssentialsCompendiumService
-  nameWithType.vb: DefaultOldSchoolEssentialsCompendiumService.New
-- uid: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
-  name: CreateCompendium(ICompendium, string)
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.html#CampaignKit_Compendium_OldSchoolEssentials_Services_DefaultOldSchoolEssentialsCompendiumService_CreateCompendium_CampaignKit_Compendium_Core_Configuration_ICompendium_System_String_
-  commentId: M:CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium,System.String)
-  name.vb: CreateCompendium(ICompendium, String)
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, string)
-  fullName.vb: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(CampaignKit.Compendium.Core.Configuration.ICompendium, String)
-  nameWithType: DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(ICompendium, string)
-  nameWithType.vb: DefaultOldSchoolEssentialsCompendiumService.CreateCompendium(ICompendium, String)
-- uid: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium*
-  name: CreateCompendium
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.html#CampaignKit_Compendium_OldSchoolEssentials_Services_DefaultOldSchoolEssentialsCompendiumService_CreateCompendium_
-  commentId: Overload:CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services.DefaultOldSchoolEssentialsCompendiumService.CreateCompendium
-  nameWithType: DefaultOldSchoolEssentialsCompendiumService.CreateCompendium
-- uid: CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService
-  name: IOldSchoolEssentialsCompendiumService
-  href: api/CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService.html
-  commentId: T:CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService
-  fullName: CampaignKit.Compendium.OldSchoolEssentials.Services.IOldSchoolEssentialsCompendiumService
-  nameWithType: IOldSchoolEssentialsCompendiumService
 - uid: CampaignKit.Compendium.Tests.ChatGPT
   name: CampaignKit.Compendium.Tests.ChatGPT
   href: api/CampaignKit.Compendium.Tests.ChatGPT.html
@@ -6692,19 +7113,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Tests.ChatGPT.PromptTests.ChatGPT4Prompt_D100RollTable_ValidMarkdown
   nameWithType: PromptTests.ChatGPT4Prompt_D100RollTable_ValidMarkdown
-- uid: CampaignKit.Compendium.Tests.ChatGPT.PromptTests.ChatGPT4Prompt_GPT35Turbo301_ReturnsResult
-  name: ChatGPT4Prompt_GPT35Turbo301_ReturnsResult()
-  href: api/CampaignKit.Compendium.Tests.ChatGPT.PromptTests.html#CampaignKit_Compendium_Tests_ChatGPT_PromptTests_ChatGPT4Prompt_GPT35Turbo301_ReturnsResult
-  commentId: M:CampaignKit.Compendium.Tests.ChatGPT.PromptTests.ChatGPT4Prompt_GPT35Turbo301_ReturnsResult
-  fullName: CampaignKit.Compendium.Tests.ChatGPT.PromptTests.ChatGPT4Prompt_GPT35Turbo301_ReturnsResult()
-  nameWithType: PromptTests.ChatGPT4Prompt_GPT35Turbo301_ReturnsResult()
-- uid: CampaignKit.Compendium.Tests.ChatGPT.PromptTests.ChatGPT4Prompt_GPT35Turbo301_ReturnsResult*
-  name: ChatGPT4Prompt_GPT35Turbo301_ReturnsResult
-  href: api/CampaignKit.Compendium.Tests.ChatGPT.PromptTests.html#CampaignKit_Compendium_Tests_ChatGPT_PromptTests_ChatGPT4Prompt_GPT35Turbo301_ReturnsResult_
-  commentId: Overload:CampaignKit.Compendium.Tests.ChatGPT.PromptTests.ChatGPT4Prompt_GPT35Turbo301_ReturnsResult
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.Tests.ChatGPT.PromptTests.ChatGPT4Prompt_GPT35Turbo301_ReturnsResult
-  nameWithType: PromptTests.ChatGPT4Prompt_GPT35Turbo301_ReturnsResult
 - uid: CampaignKit.Compendium.Tests.ChatGPT.PromptTests.ChatGPT4Prompt_GPT35Turbo_ReturnsResult
   name: ChatGPT4Prompt_GPT35Turbo_ReturnsResult()
   href: api/CampaignKit.Compendium.Tests.ChatGPT.PromptTests.html#CampaignKit_Compendium_Tests_ChatGPT_PromptTests_ChatGPT4Prompt_GPT35Turbo_ReturnsResult
@@ -6718,6 +7126,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Tests.ChatGPT.PromptTests.ChatGPT4Prompt_GPT35Turbo_ReturnsResult
   nameWithType: PromptTests.ChatGPT4Prompt_GPT35Turbo_ReturnsResult
+- uid: CampaignKit.Compendium.Tests.ChatGPT.PromptTests.ChatGPT4Prompt_GPT35Turbo301_ReturnsResult
+  name: ChatGPT4Prompt_GPT35Turbo301_ReturnsResult()
+  href: api/CampaignKit.Compendium.Tests.ChatGPT.PromptTests.html#CampaignKit_Compendium_Tests_ChatGPT_PromptTests_ChatGPT4Prompt_GPT35Turbo301_ReturnsResult
+  commentId: M:CampaignKit.Compendium.Tests.ChatGPT.PromptTests.ChatGPT4Prompt_GPT35Turbo301_ReturnsResult
+  fullName: CampaignKit.Compendium.Tests.ChatGPT.PromptTests.ChatGPT4Prompt_GPT35Turbo301_ReturnsResult()
+  nameWithType: PromptTests.ChatGPT4Prompt_GPT35Turbo301_ReturnsResult()
+- uid: CampaignKit.Compendium.Tests.ChatGPT.PromptTests.ChatGPT4Prompt_GPT35Turbo301_ReturnsResult*
+  name: ChatGPT4Prompt_GPT35Turbo301_ReturnsResult
+  href: api/CampaignKit.Compendium.Tests.ChatGPT.PromptTests.html#CampaignKit_Compendium_Tests_ChatGPT_PromptTests_ChatGPT4Prompt_GPT35Turbo301_ReturnsResult_
+  commentId: Overload:CampaignKit.Compendium.Tests.ChatGPT.PromptTests.ChatGPT4Prompt_GPT35Turbo301_ReturnsResult
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Tests.ChatGPT.PromptTests.ChatGPT4Prompt_GPT35Turbo301_ReturnsResult
+  nameWithType: PromptTests.ChatGPT4Prompt_GPT35Turbo301_ReturnsResult
 - uid: CampaignKit.Compendium.Tests.ChatGPT.PromptTests.ChatGPT4Prompt_GPT432k_ReturnsResult
   name: ChatGPT4Prompt_GPT432k_ReturnsResult()
   href: api/CampaignKit.Compendium.Tests.ChatGPT.PromptTests.html#CampaignKit_Compendium_Tests_ChatGPT_PromptTests_ChatGPT4Prompt_GPT432k_ReturnsResult
@@ -7346,6 +7767,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingTwelve_ReturnsEightThousandFourHundred
   nameWithType: ParsingTests.CalculateExperiencePoints_ChallengeRatingTwelve_ReturnsEightThousandFourHundred
+- uid: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand
+  name: CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand()
+  href: api/CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.html#CampaignKit_Compendium_Tests_DungeonsAndDragons_ParsingTests_CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand
+  commentId: M:CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand
+  fullName: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand()
+  nameWithType: ParsingTests.CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand()
+- uid: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand*
+  name: CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand
+  href: api/CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.html#CampaignKit_Compendium_Tests_DungeonsAndDragons_ParsingTests_CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand_
+  commentId: Overload:CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand
+  nameWithType: ParsingTests.CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand
 - uid: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingTwentyEight_ReturnsExpectedValue
   name: CalculateExperiencePoints_ChallengeRatingTwentyEight_ReturnsExpectedValue()
   href: api/CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.html#CampaignKit_Compendium_Tests_DungeonsAndDragons_ParsingTests_CalculateExperiencePoints_ChallengeRatingTwentyEight_ReturnsExpectedValue
@@ -7463,19 +7897,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingTwentyTwo_ReturnsExpectedValue
   nameWithType: ParsingTests.CalculateExperiencePoints_ChallengeRatingTwentyTwo_ReturnsExpectedValue
-- uid: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand
-  name: CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand()
-  href: api/CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.html#CampaignKit_Compendium_Tests_DungeonsAndDragons_ParsingTests_CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand
-  commentId: M:CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand
-  fullName: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand()
-  nameWithType: ParsingTests.CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand()
-- uid: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand*
-  name: CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand
-  href: api/CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.html#CampaignKit_Compendium_Tests_DungeonsAndDragons_ParsingTests_CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand_
-  commentId: Overload:CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand
-  nameWithType: ParsingTests.CalculateExperiencePoints_ChallengeRatingTwenty_ReturnsTwentyFiveThousand
 - uid: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingTwo_ReturnsFourHundredFifty
   name: CalculateExperiencePoints_ChallengeRatingTwo_ReturnsFourHundredFifty()
   href: api/CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.html#CampaignKit_Compendium_Tests_DungeonsAndDragons_ParsingTests_CalculateExperiencePoints_ChallengeRatingTwo_ReturnsFourHundredFifty
@@ -7502,6 +7923,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateExperiencePoints_ChallengeRatingZero_ReturnsTen
   nameWithType: ParsingTests.CalculateExperiencePoints_ChallengeRatingZero_ReturnsTen
+- uid: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateProficiencyBonus_ChallengeRating_1_Returns_2
+  name: CalculateProficiencyBonus_ChallengeRating_1_Returns_2()
+  href: api/CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.html#CampaignKit_Compendium_Tests_DungeonsAndDragons_ParsingTests_CalculateProficiencyBonus_ChallengeRating_1_Returns_2
+  commentId: M:CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateProficiencyBonus_ChallengeRating_1_Returns_2
+  fullName: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateProficiencyBonus_ChallengeRating_1_Returns_2()
+  nameWithType: ParsingTests.CalculateProficiencyBonus_ChallengeRating_1_Returns_2()
+- uid: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateProficiencyBonus_ChallengeRating_1_Returns_2*
+  name: CalculateProficiencyBonus_ChallengeRating_1_Returns_2
+  href: api/CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.html#CampaignKit_Compendium_Tests_DungeonsAndDragons_ParsingTests_CalculateProficiencyBonus_ChallengeRating_1_Returns_2_
+  commentId: Overload:CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateProficiencyBonus_ChallengeRating_1_Returns_2
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateProficiencyBonus_ChallengeRating_1_Returns_2
+  nameWithType: ParsingTests.CalculateProficiencyBonus_ChallengeRating_1_Returns_2
 - uid: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateProficiencyBonus_ChallengeRating_12_Returns_5
   name: CalculateProficiencyBonus_ChallengeRating_12_Returns_5()
   href: api/CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.html#CampaignKit_Compendium_Tests_DungeonsAndDragons_ParsingTests_CalculateProficiencyBonus_ChallengeRating_12_Returns_5
@@ -7528,19 +7962,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateProficiencyBonus_ChallengeRating_16_Returns_6
   nameWithType: ParsingTests.CalculateProficiencyBonus_ChallengeRating_16_Returns_6
-- uid: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateProficiencyBonus_ChallengeRating_1_Returns_2
-  name: CalculateProficiencyBonus_ChallengeRating_1_Returns_2()
-  href: api/CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.html#CampaignKit_Compendium_Tests_DungeonsAndDragons_ParsingTests_CalculateProficiencyBonus_ChallengeRating_1_Returns_2
-  commentId: M:CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateProficiencyBonus_ChallengeRating_1_Returns_2
-  fullName: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateProficiencyBonus_ChallengeRating_1_Returns_2()
-  nameWithType: ParsingTests.CalculateProficiencyBonus_ChallengeRating_1_Returns_2()
-- uid: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateProficiencyBonus_ChallengeRating_1_Returns_2*
-  name: CalculateProficiencyBonus_ChallengeRating_1_Returns_2
-  href: api/CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.html#CampaignKit_Compendium_Tests_DungeonsAndDragons_ParsingTests_CalculateProficiencyBonus_ChallengeRating_1_Returns_2_
-  commentId: Overload:CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateProficiencyBonus_ChallengeRating_1_Returns_2
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateProficiencyBonus_ChallengeRating_1_Returns_2
-  nameWithType: ParsingTests.CalculateProficiencyBonus_ChallengeRating_1_Returns_2
 - uid: CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.CalculateProficiencyBonus_ChallengeRating_20_Returns_7
   name: CalculateProficiencyBonus_ChallengeRating_20_Returns_7()
   href: api/CampaignKit.Compendium.Tests.DungeonsAndDragons.ParsingTests.html#CampaignKit_Compendium_Tests_DungeonsAndDragons_ParsingTests_CalculateProficiencyBonus_ChallengeRating_20_Returns_7
@@ -7773,19 +8194,6 @@ references:
   commentId: T:CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests
   fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests
   nameWithType: MagicItemConversionTests
-- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
-  name: ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect()
-  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_MagicItemConversionTests_ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
-  commentId: M:CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
-  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect()
-  nameWithType: MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect()
-- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect*
-  name: ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
-  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_MagicItemConversionTests_ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect_
-  commentId: Overload:CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
-  nameWithType: MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
 - uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
   name: ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect()
   href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_MagicItemConversionTests_ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
@@ -7799,6 +8207,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
   nameWithType: MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  name: ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect()
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_MagicItemConversionTests_ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  commentId: M:CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect()
+  nameWithType: MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect()
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect*
+  name: ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_MagicItemConversionTests_ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect_
+  commentId: Overload:CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  nameWithType: MagicItemConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
 - uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull
   name: ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull()
   href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.MagicItemConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_MagicItemConversionTests_ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull
@@ -7961,6 +8382,51 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.MonsterConversionTests.ConvertToCLStatBlock_LizardMan_HitDiceCorrect
   nameWithType: MonsterConversionTests.ConvertToCLStatBlock_LizardMan_HitDiceCorrect
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests
+  name: OldSchoolEssentialsConversionTests
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.html
+  commentId: T:CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests
+  nameWithType: OldSchoolEssentialsConversionTests
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
+  name: ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect()
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_OldSchoolEssentialsConversionTests_ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
+  commentId: M:CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect()
+  nameWithType: OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect()
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect*
+  name: ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_OldSchoolEssentialsConversionTests_ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect_
+  commentId: Overload:CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
+  nameWithType: OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_PotionOfControlUndead_LabelsCorrect
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  name: ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect()
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_OldSchoolEssentialsConversionTests_ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  commentId: M:CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect()
+  nameWithType: OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect()
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect*
+  name: ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_OldSchoolEssentialsConversionTests_ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect_
+  commentId: Overload:CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+  nameWithType: OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_PotionOfControlUndeadConfigOverride_LabelsCorrect
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull
+  name: ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull()
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_OldSchoolEssentialsConversionTests_ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull
+  commentId: M:CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull()
+  nameWithType: OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull()
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull*
+  name: ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_OldSchoolEssentialsConversionTests_ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull_
+  commentId: Overload:CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull
+  nameWithType: OldSchoolEssentialsConversionTests.ConvertToCLStatBlock_RingOfSpellTurning_PublicDescriptionNotNull
 - uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests
   name: SpellConversionTests
   href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.html
@@ -7993,19 +8459,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.ConvertToCLStatBlock_SpellOfFindTraps_TextIsNotBlank
   nameWithType: SpellConversionTests.ConvertToCLStatBlock_SpellOfFindTraps_TextIsNotBlank
-- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect
-  name: ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect()
-  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_SpellConversionTests_ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect
-  commentId: M:CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect
-  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect()
-  nameWithType: SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect()
-- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect*
-  name: ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect
-  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_SpellConversionTests_ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect_
-  commentId: Overload:CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect
-  nameWithType: SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect
 - uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravision_LabelsCorrect
   name: ConvertToCLStatBlock_SpellOfInfravision_LabelsCorrect()
   href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_SpellConversionTests_ConvertToCLStatBlock_SpellOfInfravision_LabelsCorrect
@@ -8019,6 +8472,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravision_LabelsCorrect
   nameWithType: SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravision_LabelsCorrect
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect
+  name: ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect()
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_SpellConversionTests_ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect
+  commentId: M:CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect()
+  nameWithType: SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect()
+- uid: CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect*
+  name: ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect
+  href: api/CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.html#CampaignKit_Compendium_Tests_OldSchoolEssentials_SpellConversionTests_ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect_
+  commentId: Overload:CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Tests.OldSchoolEssentials.SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect
+  nameWithType: SpellConversionTests.ConvertToCLStatBlock_SpellOfInfravisionConfigurationOverride_LabelsCorrect
 - uid: CampaignKit.Compendium.Utility
   name: CampaignKit.Compendium.Utility
   href: api/CampaignKit.Compendium.Utility.html
@@ -8126,50 +8592,18 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Utility.Services.IApplication.RunAsync
   nameWithType: IApplication.RunAsync
-- uid: CampaignKit.Compendium.WOIN.Common
-  name: CampaignKit.Compendium.WOIN.Common
-  href: api/CampaignKit.Compendium.WOIN.Common.html
-  commentId: N:CampaignKit.Compendium.WOIN.Common
-  fullName: CampaignKit.Compendium.WOIN.Common
-  nameWithType: CampaignKit.Compendium.WOIN.Common
-- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPage
-  name: WOINWebPage
-  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPage.html
-  commentId: T:CampaignKit.Compendium.WOIN.Common.WOINWebPage
-  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPage
-  nameWithType: WOINWebPage
-- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PostProcessMarkdown(System.String)
-  name: PostProcessMarkdown(string)
-  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPage.html#CampaignKit_Compendium_WOIN_Common_WOINWebPage_PostProcessMarkdown_System_String_
-  commentId: M:CampaignKit.Compendium.WOIN.Common.WOINWebPage.PostProcessMarkdown(System.String)
-  name.vb: PostProcessMarkdown(String)
-  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PostProcessMarkdown(string)
-  fullName.vb: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PostProcessMarkdown(String)
-  nameWithType: WOINWebPage.PostProcessMarkdown(string)
-  nameWithType.vb: WOINWebPage.PostProcessMarkdown(String)
-- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PostProcessMarkdown*
-  name: PostProcessMarkdown
-  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPage.html#CampaignKit_Compendium_WOIN_Common_WOINWebPage_PostProcessMarkdown_
-  commentId: Overload:CampaignKit.Compendium.WOIN.Common.WOINWebPage.PostProcessMarkdown
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PostProcessMarkdown
-  nameWithType: WOINWebPage.PostProcessMarkdown
-- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PreProcessHtml(System.String)
-  name: PreProcessHtml(string)
-  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPage.html#CampaignKit_Compendium_WOIN_Common_WOINWebPage_PreProcessHtml_System_String_
-  commentId: M:CampaignKit.Compendium.WOIN.Common.WOINWebPage.PreProcessHtml(System.String)
-  name.vb: PreProcessHtml(String)
-  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PreProcessHtml(string)
-  fullName.vb: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PreProcessHtml(String)
-  nameWithType: WOINWebPage.PreProcessHtml(string)
-  nameWithType.vb: WOINWebPage.PreProcessHtml(String)
-- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PreProcessHtml*
-  name: PreProcessHtml
-  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPage.html#CampaignKit_Compendium_WOIN_Common_WOINWebPage_PreProcessHtml_
-  commentId: Overload:CampaignKit.Compendium.WOIN.Common.WOINWebPage.PreProcessHtml
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PreProcessHtml
-  nameWithType: WOINWebPage.PreProcessHtml
+- uid: CampaignKit.Compendium.WebScraper
+  name: CampaignKit.Compendium.WebScraper
+  href: api/CampaignKit.Compendium.WebScraper.html
+  commentId: N:CampaignKit.Compendium.WebScraper
+  fullName: CampaignKit.Compendium.WebScraper
+  nameWithType: CampaignKit.Compendium.WebScraper
+- uid: CampaignKit.Compendium.WebScraper.Class1
+  name: Class1
+  href: api/CampaignKit.Compendium.WebScraper.Class1.html
+  commentId: T:CampaignKit.Compendium.WebScraper.Class1
+  fullName: CampaignKit.Compendium.WebScraper.Class1
+  nameWithType: Class1
 - uid: CampaignKit.Compendium.WebScraper.Common
   name: CampaignKit.Compendium.WebScraper.Common
   href: api/CampaignKit.Compendium.WebScraper.Common.html
@@ -8454,3 +8888,47 @@ references:
   commentId: T:CampaignKit.Compendium.WebScraper.Services.IWebScraperCompendiumService
   fullName: CampaignKit.Compendium.WebScraper.Services.IWebScraperCompendiumService
   nameWithType: IWebScraperCompendiumService
+- uid: CampaignKit.Compendium.WOIN.Common
+  name: CampaignKit.Compendium.WOIN.Common
+  href: api/CampaignKit.Compendium.WOIN.Common.html
+  commentId: N:CampaignKit.Compendium.WOIN.Common
+  fullName: CampaignKit.Compendium.WOIN.Common
+  nameWithType: CampaignKit.Compendium.WOIN.Common
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPage
+  name: WOINWebPage
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPage.html
+  commentId: T:CampaignKit.Compendium.WOIN.Common.WOINWebPage
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPage
+  nameWithType: WOINWebPage
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PostProcessMarkdown(System.String)
+  name: PostProcessMarkdown(string)
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPage.html#CampaignKit_Compendium_WOIN_Common_WOINWebPage_PostProcessMarkdown_System_String_
+  commentId: M:CampaignKit.Compendium.WOIN.Common.WOINWebPage.PostProcessMarkdown(System.String)
+  name.vb: PostProcessMarkdown(String)
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PostProcessMarkdown(string)
+  fullName.vb: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PostProcessMarkdown(String)
+  nameWithType: WOINWebPage.PostProcessMarkdown(string)
+  nameWithType.vb: WOINWebPage.PostProcessMarkdown(String)
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PostProcessMarkdown*
+  name: PostProcessMarkdown
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPage.html#CampaignKit_Compendium_WOIN_Common_WOINWebPage_PostProcessMarkdown_
+  commentId: Overload:CampaignKit.Compendium.WOIN.Common.WOINWebPage.PostProcessMarkdown
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PostProcessMarkdown
+  nameWithType: WOINWebPage.PostProcessMarkdown
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PreProcessHtml(System.String)
+  name: PreProcessHtml(string)
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPage.html#CampaignKit_Compendium_WOIN_Common_WOINWebPage_PreProcessHtml_System_String_
+  commentId: M:CampaignKit.Compendium.WOIN.Common.WOINWebPage.PreProcessHtml(System.String)
+  name.vb: PreProcessHtml(String)
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PreProcessHtml(string)
+  fullName.vb: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PreProcessHtml(String)
+  nameWithType: WOINWebPage.PreProcessHtml(string)
+  nameWithType.vb: WOINWebPage.PreProcessHtml(String)
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PreProcessHtml*
+  name: PreProcessHtml
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPage.html#CampaignKit_Compendium_WOIN_Common_WOINWebPage_PreProcessHtml_
+  commentId: Overload:CampaignKit.Compendium.WOIN.Common.WOINWebPage.PreProcessHtml
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPage.PreProcessHtml
+  nameWithType: WOINWebPage.PreProcessHtml
