@@ -245,54 +245,5 @@ namespace CampaignKit.Compendium.WebScraper.Common
 
             return campaignEntry;
         }
-
-        /// <summary>
-        /// This function will remove all "DIV" tags while keeping their child elements intact
-        /// and return the modified HTML.  Please note that this code handles nested "DIV" tags
-        /// as well, preserving the hierarchy of the child elements.
-        /// </summary>
-        /// <param name="html">HTML containing text to remove DIVs from.</param>
-        /// <returns>HTML with DIV tags removed.</returns>
-        protected string RemoveDivTagsKeepChildren(string html)
-        {
-            HtmlDocument document = new HtmlDocument();
-            document.LoadHtml(html);
-
-            // Locate all the "DIV" nodes
-            HtmlNodeCollection divNodes = document.DocumentNode.SelectNodes("//div");
-
-            if (divNodes != null)
-            {
-                // Iterate in reverse to avoid modifying the collection during iteration
-                for (int i = divNodes.Count - 1; i >= 0; i--)
-                {
-                    HtmlNode divNode = divNodes[i];
-
-                    // Create a temporary container for the child nodes
-                    HtmlNode tempContainer = HtmlNode.CreateNode("<div></div>");
-
-                    // Move the child nodes of the current "DIV" to the temporary container
-                    foreach (HtmlNode child in divNode.ChildNodes)
-                    {
-                        tempContainer.AppendChild(child);
-                    }
-
-                    // Replace the current "DIV" with its child nodes
-                    divNode.ParentNode.ReplaceChild(tempContainer, divNode);
-
-                    // Move the child nodes from the temporary container to the original parent
-                    foreach (HtmlNode child in tempContainer.ChildNodes)
-                    {
-                        divNode.ParentNode.InsertBefore(child, tempContainer);
-                    }
-
-                    // Remove the temporary container
-                    divNode.ParentNode.RemoveChild(tempContainer);
-                }
-            }
-
-            // Return the modified HTML
-            return document.DocumentNode.OuterHtml;
-        }
     }
 }

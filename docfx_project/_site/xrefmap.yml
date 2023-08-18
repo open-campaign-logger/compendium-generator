@@ -8783,22 +8783,6 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.PreProcessHtml
   nameWithType: SRDWebPage.PreProcessHtml
-- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.RemoveDivTagsKeepChildren(System.String)
-  name: RemoveDivTagsKeepChildren(string)
-  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_RemoveDivTagsKeepChildren_System_String_
-  commentId: M:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.RemoveDivTagsKeepChildren(System.String)
-  name.vb: RemoveDivTagsKeepChildren(String)
-  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.RemoveDivTagsKeepChildren(string)
-  fullName.vb: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.RemoveDivTagsKeepChildren(String)
-  nameWithType: SRDWebPage.RemoveDivTagsKeepChildren(string)
-  nameWithType.vb: SRDWebPage.RemoveDivTagsKeepChildren(String)
-- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.RemoveDivTagsKeepChildren*
-  name: RemoveDivTagsKeepChildren
-  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_RemoveDivTagsKeepChildren_
-  commentId: Overload:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.RemoveDivTagsKeepChildren
-  isSpec: "True"
-  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.RemoveDivTagsKeepChildren
-  nameWithType: SRDWebPage.RemoveDivTagsKeepChildren
 - uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.RootDataDirectory
   name: RootDataDirectory
   href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_RootDataDirectory

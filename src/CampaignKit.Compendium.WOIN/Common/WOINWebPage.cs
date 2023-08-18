@@ -67,7 +67,26 @@ namespace CampaignKit.Compendium.WOIN.Common
             var sectionNodes = doc.DocumentNode.SelectNodes("//div[@role='main']/section");
             foreach (var sectionNode in sectionNodes)
             {
-                var modifiedHTML = this.RemoveDivTagsKeepChildren(sectionNode.OuterHtml);
+                // Select all content elements.
+                var contentNodes = sectionNode.SelectNodes(".//p | .//h1 | .//h2 | .//h3 | .//h4 | .//h5 | .//h6");
+
+                // If contentNodes is null, skip it.
+                if (contentNodes == null)
+                {
+                    continue;
+                }
+
+                // Create a new node to hold the extracted content.
+                var newSectionNode = HtmlNode.CreateNode("<div></div>");
+
+                // Add each content item to the new node.
+                foreach (var contentNode in contentNodes)
+                {
+                    newSectionNode.AppendChild(contentNode);
+                }
+
+                // Replace the old section node with the new section node.
+                sectionNode.ParentNode.ReplaceChild(newSectionNode, sectionNode);
             }
 
             return doc.DocumentNode.OuterHtml;
