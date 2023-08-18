@@ -63,8 +63,12 @@ namespace CampaignKit.Compendium.WOIN.Common
                 }
             }
 
-            // Convert all tables from div/span to standard table/tr/th/td
-            doc.LoadHtml(WOINWebPage.ConvertTables(doc.DocumentNode.OuterHtml));
+            // Process each section
+            var sectionNodes = doc.DocumentNode.SelectNodes("//div[@role='main']/section");
+            foreach (var sectionNode in sectionNodes)
+            {
+                var modifiedHTML = this.RemoveDivTagsKeepChildren(sectionNode.OuterHtml);
+            }
 
             return doc.DocumentNode.OuterHtml;
         }
@@ -107,6 +111,8 @@ namespace CampaignKit.Compendium.WOIN.Common
                 // Instantiate local variables
                 var builder = new StringBuilder();
                 var isHeaderRow = true;
+
+                // Iterate through the 
 
                 // See if there's a header row
                 // This code is used to select all header nodes from a table node and append them to a builder.
