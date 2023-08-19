@@ -1,12 +1,12 @@
 ﻿{
-  "DnD:PublicCompendiums": [
+  "DnDPublicCompendiums": [
     {
       "CompendiumService": "CampaignKit.Compendium.DungeonsAndDragons.Services.IDungeonsAndDragonsCompendiumService_5e, CampaignKit.Compendium.DungeonsAndDragons.dll",
       "Description": "A compendium of 5e compatible items, spells, monsters and more from the D&D SRD, Kobold Press and EN Publishing.",
       "GameSystem": "Dungeons and Dragons 5e",
       "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
       "IsActive": true,
-      "OverwriteExisting": true,
+      "OverwriteExisting": false,
       "SourceDataSets": [
         {
           "ImportLimit": 5,
@@ -561,7 +561,7 @@
       "GameSystem": "Dungeons and Dragons 5e",
       "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
       "IsActive": true,
-      "OverwriteExisting": true,
+      "OverwriteExisting": false,
       "SourceDataSets": [
         {
           "Labels": [

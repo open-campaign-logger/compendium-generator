@@ -16,9 +16,7 @@
 
 namespace CampaignKit.Compendium.WOIN.Common
 {
-    using System.Text;
     using System.Text.RegularExpressions;
-    using System.Transactions;
 
     using CampaignKit.Compendium.WebScraper.Common;
 
@@ -68,21 +66,45 @@ namespace CampaignKit.Compendium.WOIN.Common
             foreach (var sectionNode in sectionNodes)
             {
                 // Select all content elements.
-                var contentNodes = sectionNode.SelectNodes(".//p | .//h1 | .//h2 | .//h3 | .//h4 | .//h5 | .//h6");
+                var contentNodes = sectionNode.SelectNodes(".//h1 | .//h2 | .//h3 | .//h4 | .//h5 | .//h6 | .//ul | .//ol | .//p");
 
-                // If contentNodes is null, skip it.
+                // If contentNodes is null, skip this section.
                 if (contentNodes == null)
                 {
                     continue;
                 }
 
-                // Create a new node to hold the extracted content.
+                // Create a new node to hold content extracted from the section.
                 var newSectionNode = HtmlNode.CreateNode("<div></div>");
+
+                // Create table node for holding parsed table data.
+                var table = HtmlNode.CreateNode("<table></table>");
 
                 // Add each content item to the new node.
                 foreach (var contentNode in contentNodes)
                 {
-                    newSectionNode.AppendChild(contentNode);
+                    if (table != null && WOINHelper.ContainsTableData(contentNode))
+                    {
+                        WOINHelper.AddRowToTable(table, contentNode);
+                    }
+                    else
+                    {
+                        // Is there table data that needs to be copied?
+                        if (table != null && table.ChildNodes.Count > 0)
+                        {
+                            newSectionNode.AppendChild(table);
+                            table = HtmlNode.CreateNode("<table></table>");
+                        }
+
+                        // Copy the node as-is
+                        newSectionNode.AppendChild(contentNode);
+                    }
+                }
+
+                // Is there table data that needs to be copied?
+                if (table != null && table.ChildNodes.Count > 0)
+                {
+                    newSectionNode.AppendChild(table);
                 }
 
                 // Replace the old section node with the new section node.
@@ -90,107 +112,6 @@ namespace CampaignKit.Compendium.WOIN.Common
             }
 
             return doc.DocumentNode.OuterHtml;
-        }
-
-        /// <summary>
-        /// Converts WOIN div/span tables in the source material to standard HTML table.
-        /// </summary>
-        /// <param name="html">HTML with table elements to be converted.</param>
-        /// <returns>HTML containing updated table elements.</returns>
-        private static string ConvertTables(string html)
-        {
-            HtmlDocument document = new ();
-            document.LoadHtml(html);
-
-            // The following XPath will retrieve all table row nodes from the document.
-            var tableRowNodes = document.DocumentNode.SelectNodes("//p[count(span[@class='C9DxTc ']) > 1 and not(parent::li) and count(span/span[@class='Apple-tab-span ']) > 1]");
-            var tableNodes = new List<HtmlNode>();
-
-            // Retrieve parent nodes for the retrieved table rows.
-            // (We have to derive this because table rows don't have a clear parent that can be selected via XPath.)
-            if (tableRowNodes != null)
-            {
-                // This loop iterates through each table row node in the tableRowNodes list and
-                // adds the parent node of the table row node to the tableNodes list if it is
-                // not already present in the list. The HtmlNodeXPathComparer class is used to
-                // compare the nodes in the list.
-                foreach (var tableRow in tableRowNodes)
-                {
-                    var tableNode = tableRow.ParentNode as HtmlNode;
-                    if (!tableNodes.Contains(tableNode, new HtmlNodeXPathComparer()))
-                    {
-                        tableNodes.Add(tableNode);
-                    }
-                }
-            }
-
-            // Replace table nodes
-            foreach (var tableNode in tableNodes)
-            {
-                // Instantiate local variables
-                var builder = new StringBuilder();
-                var isHeaderRow = true;
-
-                // Iterate through the 
-
-                // See if there's a header row
-                // This code is used to select all header nodes from a table node and append them to a builder.
-                // It then parses the header level from the header node name and appends it to the builder with the inner text of the header node.
-                var headerNodes = tableNode.SelectNodes(".//h1 | .//h2 | .//h3 | .//h4 | .//h5 | .//h6");
-
-                // Check if header nodes exist and if there is more than one
-                if (headerNodes != null && headerNodes.Count > 0)
-                {
-                    // Loop through each header node
-                    foreach (var header in headerNodes)
-                    {
-                        // Append the header.
-                        builder.AppendLine(header.OuterHtml);
-                    }
-                }
-
-                // Select all <p> elements with more than one <span> element with class 'C9DxTc '
-                var rowNodes = tableNode.SelectNodes(".//p[count(span[@class='C9DxTc ']) > 1]");
-
-                // Start building the table
-                builder.AppendLine("<table>");
-
-                // Iterate through each row
-                foreach (var row in rowNodes)
-                {
-                    // Set the cell tag to either 'th' or 'td' depending on if it is the header row
-                    var cellTag = isHeaderRow ? "th" : "td";
-
-                    // Start the row
-                    builder.AppendLine("<tr>");
-
-                    // Select all <span> elements within the row
-                    var cellNodes = row.SelectNodes(".//span[@class='C9DxTc ' and not(.//span[@class='Apple-tab-span '])]");
-
-                    // Iterate through each cell
-                    foreach (var cell in cellNodes)
-                    {
-                        // Append the cell tag with the inner text of the cell
-                        builder.AppendLine($"<{cellTag}>{cell.InnerText}</{cellTag}>");
-                    }
-
-                    // End the row
-                    builder.AppendLine("</tr>");
-
-                    // Set the isHeaderRow flag to false
-                    isHeaderRow = false;
-                }
-
-                // End the table
-                builder.AppendLine("</table>");
-
-                // Substitute the new HTML for the old.
-                var newTableDoc = new HtmlDocument();
-                newTableDoc.LoadHtml(builder.ToString());
-                tableNode.ParentNode.ReplaceChild(newTableDoc.DocumentNode, tableNode);
-            }
-
-            return document.DocumentNode.OuterHtml;
         }
     }
 }

@@ -16,6 +16,7 @@
     <None Remove="DungeonsAndDragons\TestFiles\aboleth.json" />
     <None Remove="DungeonsAndDragons\TestFiles\backup_holler_spider.json" />
     <None Remove="DungeonsAndDragons\TestFiles\sulsha.json" />
+    <None Remove="WOIN\TestFiles\vehicle-combat.html" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,6 +36,9 @@
 
   <ItemGroup>
     <Content Include="OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WOIN\TestFiles\vehicle-combat.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -79,7 +83,7 @@
     <None Update="module_ose.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="module_webscraper.json">
+    <None Update="module_woin.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

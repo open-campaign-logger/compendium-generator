@@ -113,24 +113,8 @@ namespace CampaignKit.Compendium.WebScraper.Common
             // Read the contents of the file
             var html = File.ReadAllText(this.LocalPath);
 
-            // Create an HTML object for the data.
-            var doc = new HtmlDocument();
-            doc.LoadHtml(html);
-
-            // Navigate to the chosen HTML node if an XPath has been provided.
-            if (!string.IsNullOrEmpty(this.XPath))
-            {
-                var node = doc.DocumentNode.SelectSingleNode(this.XPath);
-                if (node != null)
-                {
-                    html = node.OuterHtml;
-                    doc.LoadHtml(html);
-                }
-                else
-                {
-                    throw new Exception($"Unable to find node corresponding to XPath: {this.XPath}");
-                }
-            }
+            // Load the HTML and, optionally, navigate to the content location.
+            var doc = SRDWebPageHelper.LoadHtmlDocument(html, this.XPath);
 
             // Convert the HTML to Markdown
             var config = new Config
@@ -149,7 +133,7 @@ namespace CampaignKit.Compendium.WebScraper.Common
             };
 
             // Pre-process HTML (if required)
-            html = this.PreProcessHtml(html);
+            html = this.PreProcessHtml(doc.DocumentNode.OuterHtml);
 
             // Create a converter to convert the HTML to Markdown
             var converter = new Converter(config);
@@ -234,7 +218,7 @@ namespace CampaignKit.Compendium.WebScraper.Common
                 stringBuilder.AppendLine($"Source: ~License");
             }
 
-            CampaignEntry campaignEntry = new()
+            CampaignEntry campaignEntry = new ()
             {
                 RawText = string.Empty,
                 RawPublic = stringBuilder.ToString(),
