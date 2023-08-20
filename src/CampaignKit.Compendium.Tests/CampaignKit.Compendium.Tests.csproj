@@ -17,6 +17,8 @@
     <None Remove="DungeonsAndDragons\TestFiles\backup_holler_spider.json" />
     <None Remove="DungeonsAndDragons\TestFiles\sulsha.json" />
     <None Remove="WebScraper\TestFiles\vehicle-combat.html" />
+    <None Remove="WOIN\TestFiles\countdowns.html" />
+    <None Remove="WOIN\TestFiles\tracking.html" />
     <None Remove="WOIN\TestFiles\vehicle-combat.html" />
   </ItemGroup>
 
@@ -40,6 +42,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="WebScraper\TestFiles\vehicle-combat.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WOIN\TestFiles\countdowns.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WOIN\TestFiles\tracking.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="WOIN\TestFiles\vehicle-combat.html">

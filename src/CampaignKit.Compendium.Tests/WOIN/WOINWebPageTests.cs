@@ -78,5 +78,54 @@ namespace CampaignKit.Compendium.Tests.WOIN
             Assert.AreEqual("ul", list.Name);
             Assert.AreEqual(4, list.SelectNodes(".//li").Count);
         }
+
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"WOIN\TestFiles\countdowns.html")]
+        public void WOINWebPageHelper_LoadHtmlDocumentSectionWithUnorderedList_BoldedCorrectly()
+        {
+            // Arrange
+            var html = File.ReadAllText("countdowns.html");
+
+            // Act
+            var document = SRDWebPageHelper.LoadHtmlDocument(html, "//*[@id=\"h.6589faa7c235f063_1042\"]");
+            var sectionNode = WOINWebPageHelper.ParseSectionContent(document.DocumentNode);
+            var list = sectionNode.SelectSingleNode(".//ul");
+
+            // Assert
+            Assert.IsNotNull(document);
+            Assert.IsNotNull(list);
+            Assert.AreEqual(5, list.ChildNodes.Count);
+            Assert.AreEqual("ul", list.Name);
+            Assert.AreEqual(5, list.SelectNodes(".//li").Count);
+            Assert.AreEqual(5, list.SelectNodes(".//b").Count);
+        }
+
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"WOIN\TestFiles\countdowns.html")]
+        public void WOINWebPageHelper_LoadHtmlDocumentSectionWithTableWithLineBreak_HeaderRowShowsOnTwoLines()
+        {
+            // Arrange
+            var html = File.ReadAllText("countdowns.html");
+
+            // Act
+            var document = SRDWebPageHelper.LoadHtmlDocument(html, "//*[@id=\"h.5661394040d4f06b_494\"]");
+            var sectionNode = WOINWebPageHelper.ParseSectionContent(document.DocumentNode);
+            var table = sectionNode.SelectSingleNode(".//table");
+
+            // Assert
+            Assert.IsNotNull(document);
+            Assert.IsNotNull(table);
+            Assert.AreEqual(12, table.ChildNodes.Count);
+            Assert.AreEqual("table", table.Name);
+            Assert.AreEqual(12, table.SelectNodes(".//tr").Count);
+            Assert.AreEqual(4, table.SelectNodes(".//th").Count);
+            Assert.AreEqual(44, table.SelectNodes(".//td").Count);
+        }
     }
 }

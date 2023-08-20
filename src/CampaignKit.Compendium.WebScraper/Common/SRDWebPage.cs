@@ -206,7 +206,6 @@ namespace CampaignKit.Compendium.WebScraper.Common
         {
             // Create a markdown representation of the data.
             var stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine($"# {this.Name}");
 
             // Add Markdown
             stringBuilder.AppendLine(this.Markdown);

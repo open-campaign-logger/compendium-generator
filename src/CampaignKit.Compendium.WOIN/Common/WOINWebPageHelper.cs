@@ -50,7 +50,7 @@ namespace CampaignKit.Compendium.WOIN.Common
                 throw new ArgumentNullException(nameof(rowNode));
             }
 
-            // Create a new HTML node for the cell
+            // Create a new HTML node for the row
             var newRow = HtmlNode.CreateNode("<tr></tr>");
 
             // Select all <span> elements within the rowNode
@@ -59,12 +59,23 @@ namespace CampaignKit.Compendium.WOIN.Common
             // Determine if this is a header rowNode, if so use the 'th' tag
             // for the content.  If not, use 'td'.
             var isHeaderRow = tableNode.ChildNodes.Count == 0;
-            var tagSymbol = isHeaderRow ? "th" : "td";
 
             // Iterate through each cell in the cellNodes collection
             foreach (var cellNode in cellNodes)
             {
+                // Determine if a new line has been found
+                if (cellNode.FirstChild.Name.Equals("br", StringComparison.InvariantCultureIgnoreCase))
+                {
+                    // Add the rowNode to the tableNode
+                    tableNode.AppendChild(newRow);
+
+                    // Create a new HTML node for the row
+                    newRow = HtmlNode.CreateNode("<tr></tr>");
+                    isHeaderRow = false;
+                }
+
                 // Create a new HTML node for the cell
+                var tagSymbol = isHeaderRow ? "th" : "td";
                 var newCellNode = HtmlNode.CreateNode($"<{tagSymbol}>{cellNode.InnerText}</{tagSymbol}>");
 
                 // Append the cell node to the rowNode
@@ -148,17 +159,16 @@ namespace CampaignKit.Compendium.WOIN.Common
                 // Select all span nodes from the list item node
                 var spanNodes = listItemNode.SelectNodes(".//span");
 
-                // Set a boolean to determine if the first span item should be bolded
-                var boldItem = spanNodes.Count > 1;
-
                 // Loop through each span node
                 foreach (var spanNode in spanNodes)
                 {
                     // If the item should be bold, create a bold node with the inner text of the span node
+                    var styleAttribute = spanNode.GetAttributeValue("style", string.Empty);
+                    var boldItem = styleAttribute.Contains("font-weight: 700");
                     if (boldItem)
                     {
                         newListItemNode.AppendChild(HtmlNode.CreateNode($"<b>{spanNode.InnerText}</b>"));
-                        boldItem = false;
+                        newListItemNode.AppendChild(HtmlNode.CreateNode($"<span>&nbsp;</span>"));
                     }
 
                     // Otherwise, just append the span node
@@ -209,7 +219,7 @@ namespace CampaignKit.Compendium.WOIN.Common
             if (contentNodes != null)
             {
                 // Create tableNode node for holding parsed tableNode data.
-                var table = HtmlNode.CreateNode("<tableNode></tableNode>");
+                var table = HtmlNode.CreateNode("<table></table>");
 
                 // Add each content item to the new node.
                 foreach (var contentNode in contentNodes)
@@ -228,7 +238,7 @@ namespace CampaignKit.Compendium.WOIN.Common
                         if (table != null && table.ChildNodes.Count > 0)
                         {
                             newSectionNode.AppendChild(table);
-                            table = HtmlNode.CreateNode("<tableNode></tableNode>");
+                            table = HtmlNode.CreateNode("<table></table>");
                         }
 
                         // Copy the node as-is
