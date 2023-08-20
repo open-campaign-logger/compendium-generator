@@ -8,7 +8,18 @@
   "campaignEntries": [
     {
       "rawText": "",
-      "rawPublic": "## woinrules.com\r\n\r\nThis page is the introduction to the WOIN Rules Reference Document (WRRD), and is a developer tool. If you are looking for an introduction to the game as a potential player, [click here instead](http://www.woinrpg.com/about-whats-old-is-new).\r\n\r\nThis document contains the rules in their basic form.  It does not include explanations, descriptions, examples, guidelines, and all the other material that makes up the core rulebooks.\r\n\r\n## WOIN Rules Reference Document v1.2 (OGL)\r\n\r\nThis entire WOIN Rules Reference Document and the Bestiary is designated  Open Gaming Content except for:\r\n\r\n- Artwork and logos.\r\n- The names WOIN, OLD, NEW, NOW, What's OLD is NEW, EN Publishing, EN World, and any product names.\r\n- Any trademarks or names of real world items, brands, or entities.\r\n- The names of characters, places, and settings.\r\n\r\nArtwork and logos.\r\n\r\nThe names WOIN, OLD, NEW, NOW, What's OLD is NEW, EN Publishing, EN World, and any product names.\r\n\r\nAny trademarks or names of real world items, brands, or entities.\r\n\r\nThe names of characters, places, and settings.\r\n\r\nYou may freely use this material in your own publications, fan creations, tools, or websites subject to the terms of the OGL v1.0a.\r\n\r\n## WOIN Rules Reference Document v1.2 (CC)\r\n\r\nThis entire WOIN Rules Reference Document and the Bestiary  is provided to you free of charge under the terms of the Creative Commons Attribution 4.0 International License (CC-BY-4.0) except for:\r\n\r\n- Artwork and logos.\r\n- The names WOIN, OLD, NEW, NOW, What's OLD is NEW, EN Publishing, EN World, and any product names.\r\n- Any trademarks or names of real world items, brands, or entities.\r\n- The names of characters, places, and settings.\r\n\r\nArtwork and logos.\r\n\r\nThe names WOIN, OLD, NEW, NOW, What's OLD is NEW, EN Publishing, EN World, and any product names.\r\n\r\nAny trademarks or names of real world items, brands, or entities.\r\n\r\nThe names of characters, places, and settings.\r\n\r\nYou are free to use this content in any manner permitted by that license as long as you include the following attribution statement in your own work:\r\n\r\nThis work includes material taken from the WOIN Rules Reference Document (WRRD) by EN Publishing and available at https://www.woinrules.com, based on the What's OLD is NEW (WOIN) game system available at https://www.woinrpg.com. The WRRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.\r\n\r\nSection 5 of CC-BY-4.0 includes a Disclaimer of Warranties and Limitation of Liability that limits our liability to you.\r\n\r\n## WOIN Rules Reference Document v1.2 (ORC)\r\n\r\n### ORC Notice\r\n\r\nThe WOIN Rules Reference Document is licensed under the ORC License held in the Library of Congress at TX000[number tbd] and available online at various locations including http://www.a5esrd.com and others. All warranties are disclaimed as set forth therein.\r\n\r\n### Attribution\r\n\r\nIf you use our Licensed Material in your own published work, please credit us in your product as follows:\r\n\r\nWOIN Rules Reference Document, © EN Publishing, http://www.woinrules.com; based on the What's OLD is NEW roleplaying game system by Russ Morrissey, http://www.woinrpg.com.\r\n\r\n### Reserved Material\r\n\r\nReserved Material elements in this product include:\r\n\r\n- Artwork and logos.\r\n- The names WOIN, OLD, NEW, NOW, What's OLD is NEW, EN Publishing, EN World, and any product names.\r\n- Any trademarks or names of real world items, brands, or entities.\r\n- The names of characters, places, and settings.\r\n\r\nArtwork and logos.\r\n\r\nThe names WOIN, OLD, NEW, NOW, What's OLD is NEW, EN Publishing, EN World, and any product names.\r\n\r\nAny trademarks or names of real world items, brands, or entities.\r\n\r\nThe names of characters, places, and settings.\r\n\r\n## What This Is And What It Isn't\r\n\r\nThis document is a tool for third party developers. It can also be used as a reference tool for people playing WOIN games. However, it is not a subsitute for the actual rulebooks, and lacks much of the descriptive or contextual text which accompanies the rules. For this reason, it may be difficult to learn the rules only using this document.\r\n\r\n## Equipment\r\n\r\nEquipment and starships are found separately on the [WOINGEAR website](http://www.woingear.com).\r\n",
+      "rawPublic": "# Creating Monsters\r\n\r\nThis creature design engine is a process by which you will be able to easily create a monster, creature, or generic NPC type. You can create anything from alien monstrosities to reusable NPC stat blocks such as “Soldier” or “Psionic Interrogator”\r\n\r\nMonsters and generic NPCs tend to be a bit more arbitrary than player characters. Of course, a monster can have whatever statistics you need - if you need your 3-foot alien furry bear to have STR 20 or 200 HEALTH for some reason, you can just assign those values. The following is just a set of guidelines to help your design process; feel free to ignore any of them.\r\n\r\nThis method is the reverse method to creating a character, because you are starting at your desired result and working backwards - you will know in advance that you want an 8d6 “brute” style robot, and this informs the rest of the creature’s statistics.\r\n\r\nOnce you have decided on your creature concept, following these steps.\r\n\r\nImportant! It is important to treat this process as a guide only. It is a tool to help you design creatures, but it is advisory only, not proscriptive. You can and should deviate from the figures below when it is thematically appropriate to do so.\r\n\r\nTry the Monster Builder\r\n\r\n## 1. Max Dice Pool (MDP)\r\n\r\nChoose your monster’s Maximum Dice Pool. This will decide many of the following statistics. You should start with an idea of how powerful you want your monster to be. For comparison, a starting character is 5d6, and a fire dragon is 15d6.\r\n\r\nPCs tend to be a little more optimised than monsters, so monster scores are slightly higher. Generally, a monster with +1 MDP over a PC is a challenging match which the PC should win. +2 MDP means the PC will probably lose one-on-one, and with +3 MDP the PC is almost certain to be defeated.\r\n\r\nThroughout this section, the term “MDP” means “Maximum Dice Pool”. Throughout this section, when you halve, quarter, or otherwise divide the MDP to derive a value, always round up.\r\n\r\n## 2. Role, Size, & Type\r\n\r\nChoose a “role”, a size category, and a type for your monster.\r\n\r\nThe role is just a broad descriptive tag which is not used in-game, but can be useful when designing. Choose from:\r\n\r\n- **Artillery.**  A creature which does area damage from a distance, such as a grenadier or a ranged heavy robot.\r\n- **Brute.** A creature focuses on raw melee power, smashing its foes to the ground, such as a great ferocious beast or a mighty robot.\r\n- **Expert.**  A creature whose focus is not combat, such as a medic, engineer, or pilot.\r\n- **Ninja.**  A fast, mobile melee creature, able to attack quickly and accurately and dance around its opponents.\r\n- **Skirmisher.**  A fast, mobile, ranged creature, weak in melee, but able to keep its distance and pick off its targets from afar. Many gun-toting bandits are skirmishers.\r\n- **Support.**  A creature which heals or buffs other creatures, or alters the battlefield; this could be a specialist support robot, or an adept commander.\r\n- **Trickster.** A frustrating opponent such as a teleporter, or psychic foe, able to inflict a range of conditions.\r\n\r\nThese names don’t really mean anything. They are descriptive tools during the design process, but you’ll never need them again once the creature is finished.\r\n\r\nThe creature’s size uses the same scale as player characters, and includes tiny (mouse-sized), small (dog-sized), medium (human-sized), large (tiger-sized), enormous (elephant-sized), gigantic (whale-sized), colossal (kaiju-sized), and titanic .\r\n\r\nYou also need to know the creature’s type. This is an open-ended list which includes, but is not limited to, the following creature types: aquatic, avian, beast, changeling, crystalline, insectoid, humanoid, gaseous, mechanoid, plant, projection, and reptile. A creature can have more than one type, of course - it might be an avian mechanoid or a crystalline plant. The type will help determine some of the creature’s exploits, which you’ll list at the end of this process.\r\n\r\nIts important to note that this is just an “introductory” list of creature types; you can no doubt imagine more exotic things like oozes and electricity monsters, and many more.\r\n\r\nUsing these details, note the monster’s descriptor, which is formed as follows:\r\n\r\n[size] [sentience] [types] (dice pool)\r\n\r\nFor example:\r\n\r\nLarge semi-sentient mechanoid beast (7d6)\r\n\r\n## 3. Attributes\r\n\r\nA creature’s attributes depends on the monster’s role, which you chose in the previous step. Only give the creature a MAG/PSI/CHI score if you want it to have a supernatural ability. A creature’s REP score will help determine how much the player characters (and others) know about it. The creature’s mental statistics assume that the creature is sentient, but non-sentient, semi-sentient, and super-sentient creatures may radically alter these values in the next step.\r\n\r\n## 4. Sentience\r\n\r\nAlso consider the creature’s sentience.  Sentience typically comes in the following categories, and can alter the creature’s mental statistics in the following ways.\r\n\r\nNote that if you are giving a semi-sentient creature a 'career' (see below), it should be elevated to a sentient creature.\r\n\r\nNon-sentient.Non-sentient does not necessarily mean non-intelligent. Non-sentient creatures are immune to mental attacks.\r\n\r\nSemi-sentient. These are dogs, wolves, bears, and other animal-level intelligent creatures.  Semi-sentient creatures have 1-2 (1d6) LOG (carnivores are usually more intelligent than herbivores), and may often have INT attributes as high as their AGI attributes. INT represents senses, perception, and animal cunning.  Note that creatures known for specific senses (such as owls) can also have extremely high skill ranks in those specific abilities. CHA tends to be 1 (for ugly critters) or 2 (for attractive critters). WIL will tend to be around average (4) unless there is a compelling reason to do otherwise.\r\n\r\nSentient.This includes most living sentient creatures with LOG attributes of 2 or more. Sentient creatures should be assigned mental attributes normally.\r\n\r\nSuper-sentient.Generally with LOG and INT attributes of 20 or more, these creatures are supra-geniuses far beyond even the greatest of humans. Super-sentient creatures automatically have the power of truesight, which enables them to see through illusions, invisibility, and disguises. They can also see in the dark, and through obscuring effects like smoke, although not through cover. Additionally, super-sentient creatures can automatically speak and understand any language.\r\n\r\n## 5. DEFENSES\r\n\r\nYou now need to determine the creature’s four DEFENSEs. Each DEFENSE is high, medium, or low, and is based on the monster’s MDP. The lowest a DEFENSE can be is 10.\r\n\r\nIf your monster doesn’t fit neatly into these categories, that’s fine (a dragon is a brute with some artillery traits, for example). Just pick the closest match and tweak it, or use entries from different roles. Remember, these are guidelines, not rules.\r\n\r\n## 6. Size\r\n\r\nYou then need to adjust for SIZE (see the table below). While size can affect physical attributes, it does not necessarily correlate to them - a tiny, tiny tardigrade might have an END score many times higher than a human. STR, however, is an attribute you might consider capping by size; you don’t have to (after all, there’s nothing wrong with a tiny super-strong robot!) but a suggested cap is presented in the table below.\r\n\r\n## 7. SOAK\r\n\r\nMost creatures have a SOAK value. When you assign SOAK, you won’t necessarily know where that SOAK comes from - it may be from armor they are wearing, or from a tough hide, or thick fur, or a hard shell. You’ll have a total amount of SOAK appropriate to the creature; you can describe it however you wish.\r\n\r\nLike before, you will be choosing from high, medium, and low SOAK. However, you should be very cautious about allowing SOAK scores above 20 -- the hardest substances in the core rules are diamond and duranium at SOAK 20 and tritanium and adamantium at SOAK 25. Unless you have a very compelling reason to do otherwise, you should cap the SOAK at 20.\r\n\r\n## 8. HEALTH\r\n\r\nHEALTH is an important value. As always, we choose from high, medium, and low, scores, and then we adjust for size. These values can be found in the same table as the SOAK table.\r\n\r\nSize affects HEALTH as follows: enormous x1.5, gigantic x2, colossal x3, and titanic x5.\r\n\r\nMonsters tend to have higher HEALTH than PCs. This abstracts the fact that they don’t have all the resources available that PCs have to heal and recover.\r\n\r\n## 9. INITIATIVE, PERCEPTION, & SPEED\r\n\r\nUsing the same method, determine your monster’s INITIATIVE, PERCEPTION, and SPEED scores.\r\n\r\nYou will need to assign movement modes at this time. The listed SPEED is for the creature’s primary movement mode. For additional modes, it moves at half SPEED.\r\n\r\nIf a creature has a natural movement mode, it is denoted in the stat block with a “+” symbol (e.g. CLIMB+ 8); this means that it does not need to make any attribute checks to move in this manner, and it uses the speed listed for the primary movement mode.\r\n\r\nIf the creature can fly, you should note whether or not it can hover by putting the word “hover” in parenthesis after its FLY speed; if it cannot hover, it must move at least half its FLY speed each round to stay aloft.\r\n\r\n## 10. Attacks\r\n\r\nYou will need to determine the creature’s melee and ranged attack pools, plus an optional mental attack pool and psionic attack pool. Only include the latter two if they are relevant; the psionic attack pool, if it exists, is the same as the most thematically similar existing attack pool - most likely ranged (for something like a lightning bolt) or mental (for something like a psionic blast).\r\n\r\nMost creatures will only use their primary attack pool, but if a PC charges a ranged attacker, it might be forced to resort to its weaker attack mode.\r\n\r\nThe attack values in particular can be tweaked. If you want your brute to have a high ranged attack, go right ahead and assign it.\r\n\r\nYou might consider giving some creatures with a high single attack a secondary medium area attack. A dragon’s breath weapon would be a good example of this.\r\n\r\nDamage.Damage tracks with the attack pool, and is 50% of the attack pool. For example, an attack pool of 8d6 means 4d6 damage, while 7d6 would become 3d6+3. You will need to assign the damage type manually.\r\n\r\nRange.A ranged attack has a range in 5’ squares of MDP x 1.5, unless the creature is a skirmisher or artillery, in which case the range is MDP x 2.\r\n\r\n## 11. Exploits\r\n\r\nYou now need to give the creature exploits. This is by far the most arbitrary part of the process. You should be inventive with its exploits - each creature should feel different. There’s a whole smorgasbord of area attacks, grabs, throws, mental attacks, psionic abilities, and more. Below is a small selection to get you started, but this is just the tip of the iceberg - it’s really important to note that this section is limited only by your imagination.\r\n\r\nFeel free to allow creatures to use exploits from other categories; these are listed thematically for convenience. Creatures and NPCs should also have access to regular exploits, and all have the ability to Aim or Feint.\r\n\r\nBelow, you will find a wide range of suggested exploits based on the creature's:\r\n\r\n- **Type**  (e.g. insectoid, avian, mechanoid)\r\n- **Role**  (e.g. brute, skirmisher, expert)\r\n- **Career**  (e.g. enchanter, knight, noble)\r\n\r\nYou should select from any or all of these exploits, or create new exploits of your own devising.\r\n\r\n## 11.1. Creature Type\r\n\r\nThe creature’s type(s) also grant it some exploits or other adjustments. Apply these now.\r\n\r\n- **Aquatic.** The creature gains a SWIM speed equal to its regular SPEED. It can breathe underwater. Swimming is a natural movement mode for aquatic creatures.\r\n- **Avian** . The creature gains a FLY speed equal to its regular SPEED. Flying is a natural movement mode for avians.\r\n- **Beast.** These are normal animals such as dogs, bears, and dinosaurs.\r\n- **Changeling.** A rare creature type, changelings are able to alter their shape and appearance. The exact details of this varies. They are typically immune to critical hits and conditions.\r\n- **Crystalline.** Crystalline creatures are resistant to heat damage (SOAK 5 heat), but vulnerable (1d6) to sonic damage due to their brittle nature. They are immune to the Bleeding condition.\r\n- **Insectoid.** Climbing is a natural movement mode for insectoids. The creature gains a CLIMB speed equal to its regular SPEED and does not need to make checks to climb. Such creatures can move on walls and ceilings normally.\r\n- **Humanoid.** Humanoids gain no special advantages. They are bipedal, mammalian creatures.\r\n- **Gaseous.** Gaseous creatures are immune to non energy-based physical attacks, and have SOAK 10 to energy-based attacks.\r\n- **Mechanoid.** Mechanoids are immune to mental attacks, are vulnerable (1d6) to electricity damage, and vulnerable (2d6) to ion damage. They are usually immune to the Sick and Fatigued conditions.\r\n- **Plant.** Plant creatures vulnerable (1d6) to fire, but have an additional 5 SOAK. Plants usually cannot wear armor. They are usually immune to the Sick and Fatigued conditions. They ignore natural difficult terrain, unless it is fire or heat-based.\r\n- **Projection.** Projections are incorporeal entities, including psychic entities and holograms. Projections are incorporeal. This makes them immune to physical weapons unless they do psionic damage (in the case of a psychic entity) or ion damage (in the case of a hologram); they can pass through physical barriers. A projection will usually do psionic or electricity damage, if it does any damage. Projections cannot usually be killed; reducing them to 0 HEALTH simply disperses them for a while. Projections can freely fly, although many do not. Projections have superior darksight and lifesense to a distance of 5' per point of INT. Projections are usually immune to any physical conditions.\r\n- **Reptile.** Reptiles are cold-blooded and are vulnerable (1d6) to cold damage. They usually have scales granting +5 natural SOAK.\r\n- **Swarm.** A swarm is a collection of thousands of tiny creatures which attack en masse. A swarm is immune to all attacks except for area attacks. When it attacks, it simply moves into the target's square. Any creature which starts its turn in or enters the swarm's square suffers melee damage automatically, and may suffer the Blind condition. Swarms can move through gaps of any size.\r\n\r\n## 11.2. Role\r\n\r\nBelow is a selection of suggested exploits based on the creature's role.\r\n\r\nArtillery\r\n\r\n- **Burst.**  This attack does burst damage (in a Burst equal to half MDP, so artillery with MDP 8 does a Burst 4). The attack attacks all creatures within the burst area (make only one attack roll and only one damage roll and apply it to all targets in the area). A psi-cop unleashes a psionic blast or soldier fires a grenade launcher.\r\n- **Cone.**  Alternatively, the artillery could unleash a half MDP cone such as a breath weapon or flamethrower.\r\n\r\nBrute\r\n\r\n- **Stop Right There!** Enemies which try to move past the brute (move within reach) are subject to a free action attack, which stops their movement if successful.\r\n- **Charge.**  The brute moves its SPEED and makes an attack with one action.\r\n- **Burst.** The brute uses an action to attack all adjacent targets. On a hit they are pushed back 10’.\r\n- **Cone.** Alternatively, this could be a cone such as a tail swipe.\r\n- **Grab.** This attack inflicts the Restrained condition on a creature, and requires a melee attack to escape. The brute’s natural damage is automatically inflicted at the start of the grabbed creature’s turns.\r\n- **Hurl.** Send a creature flying 3 squares plus one square per size difference and, do natural damage; this attack inflicts Downed condition.\r\n- **Roar.** This burst attack with a Burst equal to the brute’s MDP does a mental attack which inflicts the Afraid condition.\r\n- **Trample.** The brute can move through a smaller creature’s square, getting a free melee attack which knocks the target aside and prone for the attacker’s natural damage. If the attack misses, the brute must stop its movement.\r\n- **Monstrous Leap.** The brute leaps into the air a height of 5’ per MDP, making an attack against one foe it can reach while doing so.\r\n- **Quake.** The brute slams a foot, fist, or tail on the ground, shaking the area within its aura. The brute makes an attack against everybody within the area, knocking targets prone and doing 1d6 damage to them.\r\n- **Monumental.**  The brute has double SOAK against ranged weapons.\r\n- **Living Shield.**  The brute picks up another creature smaller than itself and uses it as a shield. The target can escape the grab as normal. Until then, the brute gains the protection of a shield of the same size category (e.g. a medium-sized creature is a medium shield). Additionally, attacks which miss but would have hit had the shield not been in place hit the grabbed creature instead.\r\n- **Come Here!**  A target struck with a weapon or tentacle with a range equal to half its regular ranged attack range is pulled adjacent to the brute. The target cannot be larger than the brute.\r\n\r\nExpert\r\n\r\n- **Skill dice.** The expert’s primary skill dice pool is its MDP. It could be piloting, medicine, engineering, heraldry, or any other area of expertise.\r\n- **Analyze.** For one round the expert can remove one enemy’s SOAK. This only works on a given target once.\r\n- **Healing.** The expert can heal allies with an action equal to their damage roll. Each can only benefit once.\r\n\r\nNinja\r\n\r\n- **Third attack.** If the ninja makes two melee attacks, it gets a third attack for free.\r\n- **Achilles heel.** The ninja can bypass SOAK once per foe.\r\n- **Dart In.** The ninja moves its SPEED, attacks, then moves its SPEED back again.\r\n- **Stealthy.** The ninja can make MDP stealth checks to remain effectively invisible.\r\n- **Teleport.** The ninja can move a double move as one action. A psionic ninja teleports, special forces use transporter tech, a super-fast race zooms to a new location, or an alien simply makes a giant leap.\r\n- **Poison.** This attack inflicts the Poisoned or Sick conditions.\r\n\r\nSkirmisher\r\n\r\n- **Perfect aim.**  The skirmisher gets +2d6 from aiming instead of +1d6.\r\n- **Mobile attack.**  The skirmisher moves two moves and make a single ranged attack at any point.\r\n- **Dive For Cover.** On a missed attack, the skirmisher may use a reaction to move its SPEED and either get prone or behind cover.\r\n- B**ackpedal.** When someone attempts a melee attack, the skirmisher use a reaction to step back 10’ and take a shot.\r\n- **Panicked Unload.**  The skirmisher fires two shots at a target and if both hit, it gains a third shot.\r\n\r\nSupport\r\n\r\n- **Healing.**  The support NPC can heal allies with an action an amount of HEALTH equal to their damage roll. Each can only benefit once.\r\n- **Leadership.** The support has a dice pool equal to its MDP to donate to its allies; it must declare this before any dice are rolled.\r\n- **Designate target.**  The support chooses one target. That target may not benefit from cover until another target is selected. A spotlight illuminates the target or a commander uses a tactical battlefield targeting drone.\r\n- **Battlefield control.**  The support can create difficult terrain or darkness in a burst area radius equal to its MDP. An ice cannon creates an icy patch, or an engineer throws caltrops\r\n- **Summon.**  The support can summon, create, or activate activate 1d6 mooks. An engineer activates some security droids, or a commander summons some ninjas.\r\n\r\nTrickster\r\n\r\n- **Teleport.** The trickster can move a double move as one action, bypassing any obstacles.\r\n- **Deceive.** An illusion of self disguises the trickster’s true location.\r\n- **Controller.**  A mental attack makes the target Charmed.\r\n- **Taunt.**  A mental attack makes the target Angry.\r\n\r\nGeneral/Unusual\r\n\r\n- **Aura.** An aura equal to half the creature’s MDP does low damage or inflicts a condition.\r\n- **Berserker.** The creature gains +1d6 damage when below half HEALTH; it cannot stop attacking until all foes are dead.\r\n- **Called Shot.** The creature has a weakness which can be exploited via a Called Shot (-2d6 to hit). This might inflict a condition, or even kill it outright.\r\n- **Disease** . The creature inflicts a disease on a critical hit.\r\n- **Poison** . The creature inflicts the Poisoned condition on a hit.\r\n- **Regeneration.** The creature automatically heals a quarter MDP HEALTH at the start of each turn.\r\n\r\nRemember, this is just a small selection of ideas. You should try to vary your creatures as much as possible and design your own exploits.\r\n\r\n## 11.3. Careers\r\n\r\nYou can create goblin assassins, orc shamans, and fire dragon enchanters. The following exploits, attacks, and adjustments are suggestions in addition to the role-based exploit suggestions above. As always, you should feel free to arbitraily change anything to fit the concept you are building.\r\n\r\n1. A career often adds +1d6 or more to the creature’s Maximum Dice Pool.\r\n2. The creature gains +4 HEALTH, and an additional +4 HEALTH for each size category above medium, and +2 to each DEFENSE.\r\n3. The creature gains a career-relevant attack (noted below, along with a relevant icon).\r\n4. The creature gains an attribute increase to a relevant (noted) attribute if it does not have that attribute score or higher already.\r\n5. An attack or check directly related to the creature’s career (e.g. an archer firing an arrow, a firemage throwing a firebolt, or an enchanter controlling his victim’s mind) always uses the creature’s Maximum Dice Pool for the roll, even if the stat block would otherwise indicate something less. The creature’s career is the thing it is best at.\r\n6. It's not necessary to define career-specific skills because the MDP will always be used for such actions, although you should assume that the creature has 6 (3d6) in any relevant skill, unless it already has a higher score.\r\n\r\n### Alchemist \r\n\r\n- LOG increases to 10 (4d6) if it not at least that already.\r\n- The alchemist uses its Maximum Dice Pool to throw grenades.\r\n- 🅡**Grenade.**  The alchemist can throw a grenade with a range increment of 6, using its Maximum Dice Pool, which inflicts one of the following conditions: sticky fire (Burning), sonic boom (Deaf), glue (Restrained) or cold (Slowed).\r\n\r\n### Archer \r\n\r\n- INT increases to 10 (4d6) if it not at least that already.\r\n- The archer uses its Maximum Dice Pool to fire arrows.\r\n- 🅡 **Skirmish** . The archer can use both actions to move and fire two arrows.\r\n\r\n### Assassin \r\n\r\n- AGI increases to 10 (4d6) if it not at least that already.\r\n- The archer uses its Maximum Dice Pool when attacking from behind.\r\n- All attacks from the assassin inflict the Poisoned condition.\r\n- **🅜** **Backstab.** When attacking in melee from behind, the assassin does double damage.\r\n\r\n### Battle Mage \r\n\r\n- LOG increases to 10 (4d6) if it not at least that already.\r\n- The battle mage uses its Maximum Dice Pool to cast spells.\r\n- The battle mage can create difficult terrain in a 30’ diameter area within 100’.\r\n- 🅥**Artillery.**  The battle mage can make an area attack, which does 3d6 damage of a single damage type a 30’ diameter area within 100’.\r\n\r\n### Berserker \r\n\r\n- END increases to 10 (4d6) if it not at least that already.\r\n- The berserker uses its Maximum Dice Pool to attack in melee.\r\n- The berserker does +1d6 damage and is immune to all conditions while at less than half HEALTH.\r\n- 🅜 **Whirlwind.** The  berserker can use all its actions to make a single attack against every adjacent foe.\r\n\r\n### Burglar \r\n\r\n- AGI increases to 10 (4d6) if it not at least that already.\r\n- The burglar uses its Maximum Dice Pool to steal or sneak.\r\n- Burglars have a CLIMB speed equal to their normal SPEED.\r\n- 🅜 **Snatch.**  The burglar can snatch an item from a foe with a melee attack roll.\r\n\r\n### Cleric \r\n\r\n- WIL increases to 10 (4d6) if it not at least that already.\r\n- The cleric uses its Maximum Dice Pool to cast spells.\r\n- The cleric can heal all allies within 30’ by an amount equal to a roll of its Maximum Dice Pool. As usual, those allies can only benefit from this ability once.\r\n- The cleric can sense opposing Virtues within 30’.\r\n- 🅡 **Divine blast.** The cleric can make a ranged attack with an increment of 5 which does 3d6 holy or unholy damage.\r\n\r\n### Diabolist \r\n\r\n- LOG increases to 10 (4d6) if it not at least that already.\r\n- The diabolist uses its Maximum Dice Pool to cast spells.\r\n- The diabolist has red eyes which give it darksight, and SOAK 10 to fire.\r\n- The diabolist has the Evil virtue and is accompanied by an **imp** .\r\n- 🅜 **Sacrificial dagger.**  The diabolist can attack with a sacrificial dagger, inflicting the bleeding condition on a hit.\r\n\r\n### Druid \r\n\r\n- INT increases to 10 (4d6) if it not at least that already.\r\n- The druid uses its Maximum Dice Pool to cast spells.\r\n- The druid can move through woodland areas and thick undergrowth without any speed reduction, and leave no tracks or traces of its passing unless it chooses to do so.\r\n- It may transform into a small or medium-sized animal (and back again) once per day for up to one hour. It cannot speak in this form, and retains its own mental attributes, but otherwise uses the animal’s statistics.\r\n- 🅥 **Entangle.** The druid can inflct the Restrained condition on a foe within 10 squares.\r\n\r\n### Enchanter \r\n\r\n- CHA increases to 10 (4d6) if it not at least that already.\r\n- The enchanter uses its Maximum Dice Pool to cast spells.\r\n- 🅞 **Charm.** The enchanter can impose its will on others. Make a mental attack, against a target within 30’; that target becomes Charmed.\r\n\r\n### Firemage \r\n\r\n- LOG increases to 10 (4d6) if it not at least that already..\r\n- The firemage uses its Maximum Dice Pool to cast spells.\r\n- Additionally, it is immune to fire damage.\r\n- 🅡 **Firebolt.** The firemage can throw a bolt of fire as a single ranged attack, which has a range increment of 30' and does 3d6 fire damage.\r\n\r\n### Gladiator \r\n\r\n- END increases to 10 (4d6) if it not at least that already.\r\n- The gladiator uses its Maximum Dice Pool to attack in melee.\r\n- 🅜 **Deadly cut.** The gladiator’s attacks,inflict the Bleeding condition.\r\n\r\n### Ice Mage \r\n\r\n- LOG increases to 10 (4d6) if it not at least that already..\r\n- The icemage uses its Maximum Dice Pool to cast spells.\r\n- The icemage creates a localized blizzard for one minute, with a diameter of 30' centered on it. Any creature which enters or starts its turn in the blizzard takes 1d6 cold damage. The area becomes difficult terrain. The blizzard moves with the icemage.\r\n- Additionally, by touching the ground, the icemage creates a 30' diameter slick ice sheet centered on itself. It can walk on the sheet normally, but for everybody else it is difficult terrain.\r\n- 🅡 **Icebolt.** The icemage can make a ranged attack with an increment of 5 which does 3d6 cold damage\r\n\r\n### Illusionist\r\n\r\n- LOG increases to 10 (4d6) if it not at least that already.\r\n- The illusionist uses its Maximum Dice Pool to cast spells.\r\n- Once per day the illusionist can turn invisible at-will as a free action for one minute.\r\n- The illusionist can create illusions up to 10’ by 10’; an INT check vs. the illusionist’s MDP times 4 is required to see through it.\r\n- 🅞 **Illusionary attack.** The illusionist can make a mental attack against a target within 30' which does 3d6 psychic damage.\r\n\r\n### Investigator\r\n\r\n- INT increases to 10 (4d6) if it not at least that already.\r\n- The investigator uses its Maximum Dice Pool to perceive, track, and detect.\r\n- The investigator can detect magic within 10'.\r\n- 🅞 **Intimidate.** The investigator can inflict the Placid condition with a mental attack against a target within 30'.\r\n\r\n### Knight\r\n\r\n- WIL increases to 10 (4d6) if it not at least that already.\r\n- The knight uses its Maximum Dice Pool to attack in melee.\r\n- The knight automatically succeeds in attempts to shake off the Afraid condition.\r\n- The knight can inspire its allies with a single action, and grant all allies within 30’ +1d6 to attack rolls until the end of their next turn.\r\n- 🅜 **Smite.** The knight can focus all its actions into one attack which does double damage.\r\n\r\n### Loremaster\r\n\r\n- LOG increases to 10 (4d6) if it not at least that already.\r\n- The loremaster uses its Maximum Dice Pool for knowledge-related checks.\r\n- 🅞 **Baffling speech.**  The loremaster can make a mental attack against a single foe within 30' which inflicts the Confused condition.\r\n\r\n### Minstrel \r\n\r\n- CHA increases to 10 (4d6) if it not at least that already.\r\n- The minstrel uses its Maximum Dice Pool to cast spells via song.\r\n- 🅞 **Word of sleep.** The minstrel can inflict the Sleeping condition on all within 60’ with a CHA mental attack by spending two actions and singing a lullaby.\r\n\r\n### Musketeer\r\n\r\n- AGI increases to 10 (4d6) if it not at least that already.\r\n- The musketeer uses its Maximum Dice Pool to use firearms.\r\n- 🅡 **Whites of their eyes** . Musketeers are accustomed to standing their ground as oncoming hordes charge, firing only when they see the whites of their eyes. When charged by an opponent, it may fire a free musket or pistol shot when it foe come within 10'.\r\n\r\n### Necromancer \r\n\r\n- LOG increases to 10 (4d6) if it not at least that already.\r\n- The necromancer uses its Maximum Dice Pool to cast spells.\r\n- Necromancers have darksight.\r\n- Necromancers can spend two actions to summon 1d6 **skeletons**  or **zombies**  for one minute. They cannot summon more until the minute has expired.\r\n- Plants and vegetation within 5’ of a necromancer die.\r\n- 🅡 **Necrotic bolt.** The necromancer can make a ranged attack with an increment of 5 which does 3d6 necrotic damage\r\n\r\n### Ninja\r\n\r\n- AGI increases to 10 (4d6) if it not at least that already.\r\n- The ninja uses its Maximum Dice Pool to attack when in shadow.\r\n- Ninja are able to step from one shadow to another, using an action to teleport up to 30' when in darkness.\r\n- The ninja can throw a smoke bomb, obscuring an area with a 30' diameter.\r\n- 🅡 **Shuriken flurry.**  Ninja may spend all their actions to throw a flurry of 6 shuriken at their target (only one attack roll is needed). On a successful hit, the target becomes Confused.\r\n\r\n### Noble\r\n\r\n- REP increases to 10 (4d6) if it not at least that already.\r\n- The noble uses its Maximum Dice Pool to influence others.\r\n- The noble can donate its LUC dice to allies within 60' at-will.\r\n- 🅞 **Charm offensive.** The noble can inflict the Charmed condition on a creature within 30' with a mental attack.\r\n\r\n### Pirate\r\n\r\n- AGI increases to 10 (4d6) if it not at least that already.\r\n- The pirate uses its Maximum Dice Pool aboard ships.\r\n- Pirates suffer no penalties when fighting while climbing.\r\n- Pirates have a hook or a peg-leg, granting them +1d6 unarmed damage.\r\n- 🅞**Fearsome.** Pirates have fearsome reputations and can make a REP mental attack against a target within 30’ to inflict the Afraid condition.\r\n\r\n### Ranger\r\n\r\n- INT increases to 10 (4d6) if it not at least that already.\r\n- The ranger uses its Maximum Dice Pool in the wilderness.\r\n- Rangers are not affected by difficult terrain while outside.\r\n- Rangers have an animal companion. Choose an animal type with a lower MDP than the ranger.\r\n- 🅞 **Calming word** . Rangers can use a mental attack against semi-sentient non-magical creatures (animals) within 30' which inflicts the Placid condition.\r\n\r\n### Shaman\r\n\r\n- MAG increases to 10 (4d6) if it not at least that already.\r\n- The shaman uses its Maximum Dice Pool to cast spells.\r\n- Shamans can touch—and harm—incorporeal creatures such as spirits as though they were corporeal.\r\n- A shaman has a spirit animal which grants them +1d6 when performing related attribute checks. Choose from Bear (STR), Panther (AGI), or Wolf (INT).\r\n- 🅞**Hex.** The shaman can hex its foes. The target of the shaman’s  hex must be within 30'. If the mental attack (7d6) is successful, the target suffers a -1d6 die penalty to all checks for the next five minutes. This is cumulative; if multiple hexes reduce the target to a zero maximum dice pool, it falls into a coma until the hex expires.\r\n\r\n## 11.4. Animals & Careers\r\n\r\nYou can give an animal a career, creating polar bear illusionists, velociraptor pirates, even a shark druid. This also grants it an increase in LOG to 4 (if the career doesn't already grant a higher LOG score), and changes it to sentient.\r\n\r\n## 12. Skills\r\n\r\nYou will also need the monster’s skills. While most of the time you will just be using its derived statistics, occasionally you may need something more specific. These can be assigned arbitrarily. Here are some to consider:\r\n\r\n- combat skill\\*- the monster equivalent of unarmed combat is simply called combat.\r\n- perception- this may be named after the creature’s special senses, such as scent, hearing, etc., or it may just be called perception.\r\n- movement skill\\*- this may be running or some similar skill.\r\n- tactics or reactions - the monster should have one of these two skills.\r\n- social skill(s)\\*- this optional skill, especially for tricksters and supporters, might includebluffing, intimidation, persuasion, and so on.\r\n- stealth - most creatures will have this at some level, even if it is very low.\r\n- psionic/magical skill(s)\\* - assign these if relevant, but most supernatural powers will be in the form of easy-to-use exploits.\r\n- carrying - four-legged herbivores, and similar creatures, often have a dice pool in carrying equal to half their Maximum Dice Pool.\r\n\r\nYou should manually assign relevant skills. Remember that creatures can be naturally muchtter than humans at certain things, especially when it comes to senses, movement, and fighting. Don't be afraid to give them 10 or more ranks in something. If in doubt, compare them to an exceptional human (a professional athlete, for example), who would have 10 ranks or so. If the creature would be better than a trained athlete at a skill, then give it 10 or more ranks.\r\n\r\nIf in doubt, just give a creature a skill dice pool of half its Maximum Dice Pool.\r\n\r\n## 13. Finishing Up\r\n\r\nFinally, you will need to finish up with the minor (or not so minor!) details. You should feel free to tweak any values on the stat block - if your NPC is from a race of speedsters who only move at light speed, go ahead and give it a SPEED of 100, or whatever is appropriate. If your creature is reflective and immune to heat weapons, go ahead and add that immunity. Remember, as the GM, the monster is exactly what you need it to be.\r\n\r\nIf you are publishing the creature, it’s probably worth encoding those arbitrary changes as exploits, just so that others can see clearly where they came from, but this is not vital. And if you are only using it in your home game, it really doesn’t matter!\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "Rule"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Rule - Creating Monsters"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "## woinrules.com\r\n\r\nThis page is the introduction to the WOIN Rules Reference Document (WRRD), and is a developer tool. If you are looking for an introduction to the game as a potential player, [click here instead](http://www.woinrpg.com/about-whats-old-is-new).\r\n\r\nThis document contains the rules in their basic form.  It does not include explanations, descriptions, examples, guidelines, and all the other material that makes up the core rulebooks.\r\n\r\n## WOIN Rules Reference Document v1.2 (OGL)\r\n\r\nThis entire WOIN Rules Reference Document and the Bestiary is designated  Open Gaming Content except for:\r\n\r\n- Artwork and logos.\r\n- The names WOIN, OLD, NEW, NOW, What's OLD is NEW, EN Publishing, EN World, and any product names.\r\n- Any trademarks or names of real world items, brands, or entities.\r\n- The names of characters, places, and settings.\r\n\r\nYou may freely use this material in your own publications, fan creations, tools, or websites subject to the terms of the OGL v1.0a.\r\n\r\n## WOIN Rules Reference Document v1.2 (CC)\r\n\r\nThis entire WOIN Rules Reference Document and the Bestiary  is provided to you free of charge under the terms of the Creative Commons Attribution 4.0 International License (CC-BY-4.0) except for:\r\n\r\n- Artwork and logos.\r\n- The names WOIN, OLD, NEW, NOW, What's OLD is NEW, EN Publishing, EN World, and any product names.\r\n- Any trademarks or names of real world items, brands, or entities.\r\n- The names of characters, places, and settings.\r\n\r\nYou are free to use this content in any manner permitted by that license as long as you include the following attribution statement in your own work:\r\n\r\nThis work includes material taken from the WOIN Rules Reference Document (WRRD) by EN Publishing and available at https://www.woinrules.com, based on the What's OLD is NEW (WOIN) game system available at https://www.woinrpg.com. The WRRD is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.\r\n\r\nSection 5 of CC-BY-4.0 includes a Disclaimer of Warranties and Limitation of Liability that limits our liability to you.\r\n\r\n## WOIN Rules Reference Document v1.2 (ORC)\r\n\r\n### ORC Notice\r\n\r\nThe WOIN Rules Reference Document is licensed under the ORC License held in the Library of Congress at TX000[number tbd] and available online at various locations including http://www.a5esrd.com and others. All warranties are disclaimed as set forth therein.\r\n\r\n### Attribution\r\n\r\nIf you use our Licensed Material in your own published work, please credit us in your product as follows:\r\n\r\nWOIN Rules Reference Document, © EN Publishing, http://www.woinrules.com; based on the What's OLD is NEW roleplaying game system by Russ Morrissey, http://www.woinrpg.com.\r\n\r\n### Reserved Material\r\n\r\nReserved Material elements in this product include:\r\n\r\n- Artwork and logos.\r\n- The names WOIN, OLD, NEW, NOW, What's OLD is NEW, EN Publishing, EN World, and any product names.\r\n- Any trademarks or names of real world items, brands, or entities.\r\n- The names of characters, places, and settings.\r\n\r\n## What This Is And What It Isn't\r\n\r\nThis document is a tool for third party developers. It can also be used as a reference tool for people playing WOIN games. However, it is not a subsitute for the actual rulebooks, and lacks much of the descriptive or contextual text which accompanies the rules. For this reason, it may be difficult to learn the rules only using this document.\r\n\r\n## Equipment\r\n\r\nEquipment and starships are found separately on the [WOINGEAR website](http://www.woingear.com).\r\n",
       "labels": [
         "WOIN",
         "License"
@@ -28,7 +39,7 @@
     },
     {
       "rawText": "",
-      "rawPublic": "# Cinematic Mode\r\n\r\nCombat in WOIN can be deadly—even an advanced character can be downed by just one or two shots. For a more heroic feel, the GM can opt to use Cinematic Mode.\r\n\r\n- In Cinematic Mode, characters and creatures add a LUC dice pool when calculating their total Health. Lucky characters can be very resilient, if sometimes accidentally so.\r\n- Adult characters also gain an additional LUC die, and old characters gain a further LUC die, representing experience.\r\n- Additionally, when in cinematic mode, you ignore the skill requirement for using higher quality equipment; anybody can benefit from superior gear.\r\n\r\nIn Cinematic Mode, characters and creatures add a LUC dice pool when calculating their total Health. Lucky characters can be very resilient, if sometimes accidentally so.\r\n\r\nAdult characters also gain an additional LUC die, and old characters gain a further LUC die, representing experience.\r\n\r\nAdditionally, when in cinematic mode, you ignore the skill requirement for using higher quality equipment; anybody can benefit from superior gear.\r\n\r\nCinematic Mode may be especially appropriate for space opera or high fantasy settings.\r\n\r\nSource: ~License\r\n",
+      "rawPublic": "# Cinematic Mode\r\n\r\nCombat in WOIN can be deadly—even an advanced character can be downed by just one or two shots. For a more heroic feel, the GM can opt to use Cinematic Mode.\r\n\r\n- In Cinematic Mode, characters and creatures add a LUC dice pool when calculating their total Health. Lucky characters can be very resilient, if sometimes accidentally so.\r\n- Adult characters also gain an additional LUC die, and old characters gain a further LUC die, representing experience.\r\n- Additionally, when in cinematic mode, you ignore the skill requirement for using higher quality equipment; anybody can benefit from superior gear.\r\n\r\nCinematic Mode may be especially appropriate for space opera or high fantasy settings.\r\n\r\nSource: ~License\r\n",
       "labels": [
         "WOIN",
         "Rule"
@@ -68,7 +79,7 @@
     },
     {
       "rawText": "",
-      "rawPublic": "# Vehicle Combat\r\n\r\nSometimes characters will engage in combat from aboard a vehicle; this may involve vehicles fighting each other, or pedestrians fighting against or with vehicles. Vehicles follow the following rules when involved in a combat situation.\r\n\r\nVehicles are placed on the battlemap, and usually take up two or more squares (motorcycles only take up one square). A vehicle’s stats indicate the number of occupants (including the driver) it may carry.\r\n\r\nThe vehicle is essentially an extension of its driver. It acts on the driver’s Initiative, and moves on the driver’s turn. Other occupants act on their own turns, as normal. However, passengers move for free automatically with the vehicle, as you would expect.\r\n\r\n## Initiative\r\n\r\nThe driver rolls Initiative as normal. The vehicle’s Handling score provides a bonus or penalty to the driver’s Initiative roll.\r\n\r\n| Handling | Initiative |\r\n| --- | --- |\r\n| 1 | +1d6 |\r\n| 2 | +1d6 |\r\n| 3 | — |\r\n| 4 | — |\r\n| 5 | –1d6 |\r\n| 6 | –2d6 |\r\n\r\n## Movement\r\n\r\nA vehicle moves forward on its driver’s turn. The driver spends one of their actions driving the vehicle. The passengers do not need to spend actions to move, as they move for free with the vehicle.\r\n\r\nA vehicle moves its current velocity; on the driver’s turn, as part of his driving action, they may increase or decrease the vehicle’s velocity by an amount up to its Acceleration score. For example, if the vehicle is moving at Speed 10, and has an Accel of 3, they may brake and reduce the Speed to 7, or they may put theirs foot down and increase it to 13. The vehicle cannot move faster than the Speed score listed in its stat block.\r\n\r\n## Turning\r\n\r\nThe driver may turn the vehicle. They may alter its course by up to 45 degrees. Every vehicle has a turning circle which indicates how many squares it must move forward before making a turn; as long as the vehicle follows this rule, leaving the requisite amount of squares between turns of up to 45 degrees, it may turn as often in a round as the driver wishes.\r\n\r\nA vehicle’s turning circle is equal to its current speed multiplied by its Handling, divided by 5 (round down to a minimum of 1). A Handling 3 car moving at a velocity of 6 has a turning circle of (3 x 6) ÷ 5 = 3. A smaller Handling 1 motorcycle moving at the same velocity has a turning circle of just 1 hex, while a Handling 5 truck at that speed has a turning circle of 6.\r\n\r\n## Actions\r\n\r\nThe occupants of a vehicle can act as normal. They may shoot with handheld weapons normally, or they can use vehicle-mounted weapons (using the gunnery skill); or, of course, they can take any other action they are capable of.\r\n\r\nThe driver must use one of their actions moving the vehicle (unless it is stationary); they can use their  remaining action as they wish. However, any action taken while driving suffers a -2d6 complication penalty.\r\n\r\n## Firing Weapons\r\n\r\nWeapons can be operated by vehicle occupants. Weapons have a firing arc, unless they are turreted, granting a 360-degree firing arc. Line of sight is required unless the weapon is designated Artillery. Some weapons are linked, which means one occupant fires both at the same time.\r\n\r\nAn occupant uses Agility or Intuition to fire (as normal), and applies the usual range increment penalties. Attacks are made against the target vehicle’s Defense; vehicles add their current speed to their Defense score, making fast-moving vehicles harder to hit.\r\n\r\nWeapon damage is reduced by a vehicle’s SOAK and then applied to its HEALTH.\r\n\r\n### Vehicle Movement Modifiers to Hit\r\n\r\n| Situation | Modifier |\r\n| --- | --- |\r\n| Stationary target | +1d6 |\r\n| Rear attack | +1d6 |\r\n\r\nForward-mounted weapons +1d6\r\n\r\n| Per range increment | –1d6 |\r\n| --- | --- |\r\n| Aft-mounted weapons | –1d6 |\r\n\r\nShooting at occupants. If a vehicle’s occupant is targeted by a weapon, the occupant gains the benefit of the vehicle’s Soak score or his own Soak score, whichever is higher, and uses his own Ranged Defense score or the vehicle’s (whichever is higher—remember, the vehicle adds its current speed to its Defense score). Occupants also have cover (–2d6 to hit) unless they are on a motorcycle or other open vehicle.\r\n\r\n## Critical hits\r\n\r\nCritical hits work slightly differently when a vehicle is the target. Roll on the following table when a critical hit is scored.\r\n\r\n| 2d6 | Location | Effect |\r\n| --- | --- | --- |\r\n| 2 | Weapon | Weapon is damaged and inoperable |\r\n| 3 | Tire | Spin out (see below) |\r\n| 4 | Engine | Reduce max Speed by 1d6 |\r\n| 5 | Driver | 1d6 damage to driver (no Soak) |\r\n| 6 | Windshield | Reduce Handling by 1 class |\r\n| 7 | Chassis | No additional effect |\r\n| 8 | Passenger | 1d6 damage to passenger (no Soak) |\r\n| 9 | Fuel tank | Vehicle catches fire, taking 1d6 damage each round; roll to end this condition as you would any other condition. |\r\n| 10 | Engine | Reduce Accel by 1. |\r\n| 11 | Tire | Spin out (see below). |\r\n| 12 | Weapon | Weapon is damaged and inoperable. |\r\n\r\n## Collisions\r\n\r\nThere are four types of collisions: head-on, rear-end, T‑bone, and sideswipe. When a collision takes place, all vehicles spin out unless the driver makes a successful check (see below). Both vehicles take damage equal to three times the collision speed:\r\n\r\n- **Head-on.** Two vehicles collide and each is in the other’s front arc. Add their current speeds together.\r\n- **Rear-end.**  A vehicle collides with the rear arc of another vehicle. Deduct the black vehicle’s speed from the red vehicle’s speed.\r\n- **T-bone.**  A vehicle collides with the side arc of another vehicle. Use the speed of the red car.\r\n- **Sideswipe.**  The result of a maneuver in which two vehicles collide with the side arcs of each other. Use half of the faster vehicle’s speed.\r\n\r\nHead-on. Two vehicles collide and each is in the other’s front arc. Add their current speeds together.\r\n\r\nRear-end. A vehicle collides with the rear arc of another vehicle. Deduct the black vehicle’s speed from the red vehicle’s speed.\r\n\r\nT-bone. A vehicle collides with the side arc of another vehicle. Use the speed of the red car.\r\n\r\nSideswipe. The result of a maneuver in which two vehicles collide with the side arcs of each other. Use half of the faster vehicle’s speed.\r\n\r\n## Spinning Out\r\n\r\nSpinning out occurs when:\r\n\r\n1. The driver is injured.\r\n\r\n2. A tire is damaged.\r\n\r\n3. A collision takes place.\r\n\r\n4. The vehicle enters or begins its turn on slippery terrain (oil slicks, ice, etc.)\r\n\r\n5. After a jump.\r\n\r\nThe driver may attempt to prevent the vehicle from spinning out by making an AGI check (bolstered by their driving skill, if they have it) with a difficulty equal to three times the vehicle’s current speed.\r\n\r\nIf the vehicle spins out, it comes to a stop in a randomly determined square half its current speed from the point where it span out. Also roll 1d6; on a roll of 5, it ends up on its side, and on a 6 it ends up upside down.\r\n\r\nA vehicle which spins out causes 1d6 damage to all occupants. This damage cannot be SOAKed.\r\n\r\n## Stunts\r\n\r\nA number of maneuvers are available as exploits, including emergency stop, handbrake turn (J-turn), and more. The driver may use his action to perform these exploits.\r\n\r\nAll vehicles can attempt a jump as long as a ramp is present. The vehicle jumps as part of its Speed (it cannot accelerate or decelerate while airborne), but the maximum distance it can jump is equal to its half its current speed divided by its Handling (round down). For example, a generic compact automobile moving at Speed 12 with Handling 3 can jump 2 squares, while a motorcycle moving at Speed 18 with Handling 1 can jump 9 squares.\r\n\r\nJumping is one thing, however. Landing is another. A vehicle automatically spins out (see above) when it lands after a jump, unless the driver is able to prevent it from doing so.\r\n\r\nSource: ~License\r\n",
+      "rawPublic": "# Vehicle Combat\r\n\r\nSometimes characters will engage in combat from aboard a vehicle; this may involve vehicles fighting each other, or pedestrians fighting against or with vehicles. Vehicles follow the following rules when involved in a combat situation.\r\n\r\nVehicles are placed on the battlemap, and usually take up two or more squares (motorcycles only take up one square). A vehicle’s stats indicate the number of occupants (including the driver) it may carry.\r\n\r\nThe vehicle is essentially an extension of its driver. It acts on the driver’s Initiative, and moves on the driver’s turn. Other occupants act on their own turns, as normal. However, passengers move for free automatically with the vehicle, as you would expect.\r\n\r\n## Initiative\r\n\r\nThe driver rolls Initiative as normal. The vehicle’s Handling score provides a bonus or penalty to the driver’s Initiative roll.\r\n\r\n| Handling | Initiative |\r\n| --- | --- |\r\n| 1 | +1d6 |\r\n| 2 | +1d6 |\r\n| 3 | — |\r\n| 4 | — |\r\n| 5 | –1d6 |\r\n| 6 | –2d6 |\r\n\r\n## Movement\r\n\r\nA vehicle moves forward on its driver’s turn. The driver spends one of their actions driving the vehicle. The passengers do not need to spend actions to move, as they move for free with the vehicle.\r\n\r\nA vehicle moves its current velocity; on the driver’s turn, as part of his driving action, they may increase or decrease the vehicle’s velocity by an amount up to its Acceleration score. For example, if the vehicle is moving at Speed 10, and has an Accel of 3, they may brake and reduce the Speed to 7, or they may put theirs foot down and increase it to 13. The vehicle cannot move faster than the Speed score listed in its stat block.\r\n\r\n## Turning\r\n\r\nThe driver may turn the vehicle. They may alter its course by up to 45 degrees. Every vehicle has a turning circle which indicates how many squares it must move forward before making a turn; as long as the vehicle follows this rule, leaving the requisite amount of squares between turns of up to 45 degrees, it may turn as often in a round as the driver wishes.\r\n\r\nA vehicle’s turning circle is equal to its current speed multiplied by its Handling, divided by 5 (round down to a minimum of 1). A Handling 3 car moving at a velocity of 6 has a turning circle of (3 x 6) ÷ 5 = 3. A smaller Handling 1 motorcycle moving at the same velocity has a turning circle of just 1 hex, while a Handling 5 truck at that speed has a turning circle of 6.\r\n\r\n## Actions\r\n\r\nThe occupants of a vehicle can act as normal. They may shoot with handheld weapons normally, or they can use vehicle-mounted weapons (using the gunnery skill); or, of course, they can take any other action they are capable of.\r\n\r\nThe driver must use one of their actions moving the vehicle (unless it is stationary); they can use their  remaining action as they wish. However, any action taken while driving suffers a -2d6 complication penalty.\r\n\r\n## Firing Weapons\r\n\r\nWeapons can be operated by vehicle occupants. Weapons have a firing arc, unless they are turreted, granting a 360-degree firing arc. Line of sight is required unless the weapon is designated Artillery. Some weapons are linked, which means one occupant fires both at the same time.\r\n\r\nAn occupant uses Agility or Intuition to fire (as normal), and applies the usual range increment penalties. Attacks are made against the target vehicle’s Defense; vehicles add their current speed to their Defense score, making fast-moving vehicles harder to hit.\r\n\r\nWeapon damage is reduced by a vehicle’s SOAK and then applied to its HEALTH.\r\n\r\n### Vehicle Movement Modifiers to Hit\r\n\r\n| Situation | Modifier |\r\n| --- | --- |\r\n| Stationary target | +1d6 |\r\n| Rear attack | +1d6 |\r\n\r\nForward-mounted weapons +1d6\r\n\r\n| Per range increment | –1d6 |\r\n| --- | --- |\r\n| Aft-mounted weapons | –1d6 |\r\n\r\nShooting at occupants. If a vehicle’s occupant is targeted by a weapon, the occupant gains the benefit of the vehicle’s Soak score or his own Soak score, whichever is higher, and uses his own Ranged Defense score or the vehicle’s (whichever is higher—remember, the vehicle adds its current speed to its Defense score). Occupants also have cover (–2d6 to hit) unless they are on a motorcycle or other open vehicle.\r\n\r\n## Critical hits\r\n\r\nCritical hits work slightly differently when a vehicle is the target. Roll on the following table when a critical hit is scored.\r\n\r\n| 2d6 | Location | Effect |\r\n| --- | --- | --- |\r\n| 2 | Weapon | Weapon is damaged and inoperable |\r\n| 3 | Tire | Spin out (see below) |\r\n| 4 | Engine | Reduce max Speed by 1d6 |\r\n| 5 | Driver | 1d6 damage to driver (no Soak) |\r\n| 6 | Windshield | Reduce Handling by 1 class |\r\n| 7 | Chassis | No additional effect |\r\n| 8 | Passenger | 1d6 damage to passenger (no Soak) |\r\n| 9 | Fuel tank | Vehicle catches fire, taking 1d6 damage each round; roll to end this condition as you would any other condition. |\r\n| 10 | Engine | Reduce Accel by 1. |\r\n| 11 | Tire | Spin out (see below). |\r\n| 12 | Weapon | Weapon is damaged and inoperable. |\r\n\r\n## Collisions\r\n\r\nThere are four types of collisions: head-on, rear-end, T‑bone, and sideswipe. When a collision takes place, all vehicles spin out unless the driver makes a successful check (see below). Both vehicles take damage equal to three times the collision speed:\r\n\r\n- **Head-on.** Two vehicles collide and each is in the other’s front arc. Add their current speeds together.\r\n- **Rear-end.**  A vehicle collides with the rear arc of another vehicle. Deduct the black vehicle’s speed from the red vehicle’s speed.\r\n- **T-bone.**  A vehicle collides with the side arc of another vehicle. Use the speed of the red car.\r\n- **Sideswipe.**  The result of a maneuver in which two vehicles collide with the side arcs of each other. Use half of the faster vehicle’s speed.\r\n\r\n## Spinning Out\r\n\r\nSpinning out occurs when:\r\n\r\n1. The driver is injured.\r\n\r\n2. A tire is damaged.\r\n\r\n3. A collision takes place.\r\n\r\n4. The vehicle enters or begins its turn on slippery terrain (oil slicks, ice, etc.)\r\n\r\n5. After a jump.\r\n\r\nThe driver may attempt to prevent the vehicle from spinning out by making an AGI check (bolstered by their driving skill, if they have it) with a difficulty equal to three times the vehicle’s current speed.\r\n\r\nIf the vehicle spins out, it comes to a stop in a randomly determined square half its current speed from the point where it span out. Also roll 1d6; on a roll of 5, it ends up on its side, and on a 6 it ends up upside down.\r\n\r\nA vehicle which spins out causes 1d6 damage to all occupants. This damage cannot be SOAKed.\r\n\r\n## Stunts\r\n\r\nA number of maneuvers are available as exploits, including emergency stop, handbrake turn (J-turn), and more. The driver may use his action to perform these exploits.\r\n\r\nAll vehicles can attempt a jump as long as a ramp is present. The vehicle jumps as part of its Speed (it cannot accelerate or decelerate while airborne), but the maximum distance it can jump is equal to its half its current speed divided by its Handling (round down). For example, a generic compact automobile moving at Speed 12 with Handling 3 can jump 2 squares, while a motorcycle moving at Speed 18 with Handling 1 can jump 9 squares.\r\n\r\nJumping is one thing, however. Landing is another. A vehicle automatically spins out (see above) when it lands after a jump, unless the driver is able to prevent it from doing so.\r\n\r\nSource: ~License\r\n",
       "labels": [
         "WOIN",
         "Rule"
@@ -78,7 +89,7 @@
     },
     {
       "rawText": "",
-      "rawPublic": "# Countdowns\r\n\r\nA countdown takes place when there is an unknown time limit before something occurs. It is used in the following situations:\r\n\r\n- **Death.** An unconscious character uses the countdown mechanic as he slips towards death.\r\n- **Illness.** Disease and illness use the countdown mechanic as symptoms worsen.\r\n- **Drowning or suffocation** . Characters who cannot breath (underwater, or some other reason) use the countdown mechanic to determine when they lose consciousness.\r\n- **Starship explosions** . In N.E.W., badly damaged starships use a countdown pool to determine when they explode; hopefully the heroes can escape the ship before it does!\r\n- **Other ticking clocks** .There are many other situations where a ticking clock is relevant. Occasions where you need a tense situation as a character tries to do something before something else happens are ideal for it. Can a climber scale a crumbling cliff before it collapses? Can a thief pick a lock before the magical alarms go off? Can a Smallfolk burglar recover the magic goblet and escape the dragon's lair before it wakes up?\r\n\r\nDeath. An unconscious character uses the countdown mechanic as he slips towards death.\r\n\r\nIllness. Disease and illness use the countdown mechanic as symptoms worsen.\r\n\r\nDrowning or suffocation. Characters who cannot breath (underwater, or some other reason) use the countdown mechanic to determine when they lose consciousness.\r\n\r\nStarship explosions. In N.E.W., badly damaged starships use a countdown pool to determine when they explode; hopefully the heroes can escape the ship before it does!\r\n\r\nOther ticking clocks.There are many other situations where a ticking clock is relevant. Occasions where you need a tense situation as a character tries to do something before something else happens are ideal for it. Can a climber scale a crumbling cliff before it collapses? Can a thief pick a lock before the magical alarms go off? Can a Smallfolk burglar recover the magic goblet and escape the dragon's lair before it wakes up?\r\n\r\nThe countdown is started by forming a dice pool. Different situations will determine the size of that dice pool – a dying character uses one equal in size to his ENDURANCE dice pool, for example, while cliffs or magical alarms will have their dice pool size set by the GM. The larger the dice pool, the longer you – probably! - have.\r\n\r\nEach turn, the dice pool is rolled. Usually it's rolled by the player in question – she rolls her own death dice, or her own drowning dice.\r\n\r\nAny dice which comes up with a six is removed from the dice pool, and play continues.\r\n\r\nEventually the last dice will be removed from the dice pool. It is then that the character dies, the trap explodes, or the soldier looks in the crate.\r\n\r\n## Fast, Medium, And Slow Countdowns\r\n\r\nThe default countdown—removing a dice on a roll of 6—is a slow countdown. Countdowns can run down faster than this, however. For faster countdowns, dice are removed on rolls of 5–6, or even 4–6.\r\n\r\nA countdown is always expressed in terms of a fast, medium, or slow countdown. The default countdown (if not specified) is a slow countdown expiring on rolls of 6.\r\n\r\n- Fast (4-6)\r\n- Medium (5-6)\r\n- Slow (6)\r\n\r\nFast (4-6)\r\n\r\nMedium (5-6)\r\n\r\nSlow (6)\r\n\r\n## Stabilizing and Replenishing Countdowns\r\n\r\nSome countdowns can be stabilized or replenished. A stabilized countdown simply stops counting down— the trap has been disarmed in time, or the character is no longer in danger of dying.\r\n\r\nReplenishing a countdown allows extra dice to be added, effectively extending it. In this way, illnesses can be pushed back “up” the countdown and dying characters can be stabilized with emergency healing.\r\n\r\nNot all countdowns can be stabilized or replenished; the specific countdown will clearly indicate whether or not these are appropriate. Sometimes the cliff is going to crumble whatever you do—it’s just a question of whether you get to the top before that happens!\r\n\r\n## Countdowns and Stages\r\n\r\nMost countdowns are fairly simple—the dice pool is rolled until it reaches zero, at which point an effect (death, explosion, and so on) takes place. However, some countdowns have effects which take place at various stages throughout the process. Stages take place as the dice pool reaches certain sizes. For example, an illness might have a character becoming blind when the pool reaches two dice, and dying when it reaches zero dice. All countdowns technically have two stages—the starting condition and the ending condition.\r\n\r\n## Average Countdown Length\r\n\r\nThe table below shows the expected (average) number of rolls a countdown will last for before expiry. This can be used by the GM to set appropriate countdown dice pools. Note, however, that countdown pools can be very 'swingy' and a large pool might still deplete quickly while a small one might take longer.\r\n\r\n| Dice Pool | Slow | Medium | Fast |\r\n| --- | --- | --- | --- |\r\n|  | (6) | (5–6) | (4–6) |\r\n| 1d6 | 6 | 3 | 2 |\r\n| 2d6 | 9 | 4 | 3 |\r\n| 3d6 | 11 | 5 | 3 |\r\n| 4d6 | 12 | 6 | 4 |\r\n| 5d6 | 13 | 6 | 4 |\r\n| 6d6 | 14 | 7 | 4 |\r\n| 7d6 | 15 | 7 | 4 |\r\n| 8d6 | 15 | 7 | 4 |\r\n| 9d6 | 16 | 7 | 5 |\r\n| 10d6 | 17 | 8 | 5 |\r\n\r\nSource: ~License\r\n",
+      "rawPublic": "# Countdowns\r\n\r\nA countdown takes place when there is an unknown time limit before something occurs. It is used in the following situations:\r\n\r\n- **Death.** An unconscious character uses the countdown mechanic as he slips towards death.\r\n- **Illness.** Disease and illness use the countdown mechanic as symptoms worsen.\r\n- **Drowning or suffocation** . Characters who cannot breath (underwater, or some other reason) use the countdown mechanic to determine when they lose consciousness.\r\n- **Starship explosions** . In N.E.W., badly damaged starships use a countdown pool to determine when they explode; hopefully the heroes can escape the ship before it does!\r\n- **Other ticking clocks** .There are many other situations where a ticking clock is relevant. Occasions where you need a tense situation as a character tries to do something before something else happens are ideal for it. Can a climber scale a crumbling cliff before it collapses? Can a thief pick a lock before the magical alarms go off? Can a Smallfolk burglar recover the magic goblet and escape the dragon's lair before it wakes up?\r\n\r\nThe countdown is started by forming a dice pool. Different situations will determine the size of that dice pool – a dying character uses one equal in size to his ENDURANCE dice pool, for example, while cliffs or magical alarms will have their dice pool size set by the GM. The larger the dice pool, the longer you – probably! - have.\r\n\r\nEach turn, the dice pool is rolled. Usually it's rolled by the player in question – she rolls her own death dice, or her own drowning dice.\r\n\r\nAny dice which comes up with a six is removed from the dice pool, and play continues.\r\n\r\nEventually the last dice will be removed from the dice pool. It is then that the character dies, the trap explodes, or the soldier looks in the crate.\r\n\r\n## Fast, Medium, And Slow Countdowns\r\n\r\nThe default countdown—removing a dice on a roll of 6—is a slow countdown. Countdowns can run down faster than this, however. For faster countdowns, dice are removed on rolls of 5–6, or even 4–6.\r\n\r\nA countdown is always expressed in terms of a fast, medium, or slow countdown. The default countdown (if not specified) is a slow countdown expiring on rolls of 6.\r\n\r\n- Fast (4-6)\r\n- Medium (5-6)\r\n- Slow (6)\r\n\r\n## Stabilizing and Replenishing Countdowns\r\n\r\nSome countdowns can be stabilized or replenished. A stabilized countdown simply stops counting down— the trap has been disarmed in time, or the character is no longer in danger of dying.\r\n\r\nReplenishing a countdown allows extra dice to be added, effectively extending it. In this way, illnesses can be pushed back “up” the countdown and dying characters can be stabilized with emergency healing.\r\n\r\nNot all countdowns can be stabilized or replenished; the specific countdown will clearly indicate whether or not these are appropriate. Sometimes the cliff is going to crumble whatever you do—it’s just a question of whether you get to the top before that happens!\r\n\r\n## Countdowns and Stages\r\n\r\nMost countdowns are fairly simple—the dice pool is rolled until it reaches zero, at which point an effect (death, explosion, and so on) takes place. However, some countdowns have effects which take place at various stages throughout the process. Stages take place as the dice pool reaches certain sizes. For example, an illness might have a character becoming blind when the pool reaches two dice, and dying when it reaches zero dice. All countdowns technically have two stages—the starting condition and the ending condition.\r\n\r\n## Average Countdown Length\r\n\r\nThe table below shows the expected (average) number of rolls a countdown will last for before expiry. This can be used by the GM to set appropriate countdown dice pools. Note, however, that countdown pools can be very 'swingy' and a large pool might still deplete quickly while a small one might take longer.\r\n\r\n| Dice Pool | Slow | Medium | Fast |\r\n| --- | --- | --- | --- |\r\n|  | (6) | (5–6) | (4–6) |\r\n| 1d6 | 6 | 3 | 2 |\r\n| 2d6 | 9 | 4 | 3 |\r\n| 3d6 | 11 | 5 | 3 |\r\n| 4d6 | 12 | 6 | 4 |\r\n| 5d6 | 13 | 6 | 4 |\r\n| 6d6 | 14 | 7 | 4 |\r\n| 7d6 | 15 | 7 | 4 |\r\n| 8d6 | 15 | 7 | 4 |\r\n| 9d6 | 16 | 7 | 5 |\r\n| 10d6 | 17 | 8 | 5 |\r\n\r\nSource: ~License\r\n",
       "labels": [
         "WOIN",
         "Rule"
@@ -108,7 +119,7 @@
     },
     {
       "rawText": "",
-      "rawPublic": "# LUCK\r\n\r\nLUCK is a special attribute. It is used as a replenishable resource which can modify other die rolls and perform special actions. It represents luck, fate, chance, destiny faith, divine favor, karma, and more. Luck can be interpreted in any way by characters and creatures who use it. For some, it is merely coincidence and serendipity; for others it represents cool and mojo; while for still others it may be divine in origin, representing faith and blessings. However the character interprets the concept of luck, it is used in the same way.\r\n\r\nEach player should form a LUCK dice pool.  As dice are used from the LUCK pool, simply discard them.  LUCK can be used to:\r\n\r\n1. Add dice to any attribute check on a 1:1 basis.\r\n2. Deduct dice from someone else's attribute check on a 1:1 basis.\r\n3. Absorb damage on a 1:1 basis (roll as many LUC dice as you wish, and deduct the total from the damage).\r\n4. Add dice to a damage roll on a 1:1 basis.\r\n5. Gain one bonus action per turn by spending a LUC die. This can only happen during a character’s own turn.\r\n6. Ignore an inflicted temporary condition as a reaction to the effect which causes it.\r\n7. Perform other special actions granted by careers and exploits.\r\n\r\nAdd dice to any attribute check on a 1:1 basis.\r\n\r\nDeduct dice from someone else's attribute check on a 1:1 basis.\r\n\r\nAbsorb damage on a 1:1 basis (roll as many LUC dice as you wish, and deduct the total from the damage).\r\n\r\nAdd dice to a damage roll on a 1:1 basis.\r\n\r\nGain one bonus action per turn by spending a LUC die. This can only happen during a character’s own turn.\r\n\r\nIgnore an inflicted temporary condition as a reaction to the effect which causes it.\r\n\r\nPerform other special actions granted by careers and exploits.\r\n\r\nLUC dice can only be used within an encounter; you cannot use LUC dice during downtime, or on daily checks. And the GM should disallow the use of LUC if she feels that a player is simply blowing all their LUCk on a check because it’s the only one they’ll make that day. In game terms, being able to invest all your LUC in one go makes sense only if you’ve had, or will have, a number of other chances to be unlucky in the day (you’ve either saved up a lucky moment or will have a chance to “pay it back”).\r\n\r\n## Exploding Dice\r\n\r\nLUCK dice \"explode\".  This means that whenever a 6 is rolled, the die is rolled again and the new roll added to the original 6.  This process is repeated if subsequent 6s are rolled. It is recommended that LUCK dice be a different color to other dice so that they can be easily distinguished.\r\n\r\n## Leadership\r\n\r\nThe Leadership exploit allows you to donate your LUC dice to others. Without this exploit, you may only spend LUC on yourself. Characters with the Leadership exploit may donate one or more of their available LUC dice to another character as a free reaction to their attempting an attribute check. You must declare this before the ally rolls their check.\r\n\r\n## Replenishing LUCK\r\n\r\nOnce per day, a character may replenish his LUCK pool. Some careers or traditions allow for an additional replenishment; these do not stack, and you cannot gain more than one additional daily replenishment.\r\n\r\n## Other Uses of LUCK\r\n\r\nOther uses of LUCK manipulate situations where the odds are normally even.\r\n\r\n1. When determining a 50/50 chance of an outcome, roll a Routine [10] LUCK check instead.  Characters with higher LUCK succeed more often on an ostensibly 50/50 chance.\r\n2. When randomly determining a PC, have each player roll LUCK.  Either the highest or the lowest wins, depending on the situation.\r\n\r\nWhen determining a 50/50 chance of an outcome, roll a Routine [10] LUCK check instead.  Characters with higher LUCK succeed more often on an ostensibly 50/50 chance.\r\n\r\nWhen randomly determining a PC, have each player roll LUCK.  Either the highest or the lowest wins, depending on the situation.\r\n\r\nSource: ~License\r\n",
+      "rawPublic": "# LUCK\r\n\r\nLUCK is a special attribute. It is used as a replenishable resource which can modify other die rolls and perform special actions. It represents luck, fate, chance, destiny faith, divine favor, karma, and more. Luck can be interpreted in any way by characters and creatures who use it. For some, it is merely coincidence and serendipity; for others it represents cool and mojo; while for still others it may be divine in origin, representing faith and blessings. However the character interprets the concept of luck, it is used in the same way.\r\n\r\nEach player should form a LUCK dice pool.  As dice are used from the LUCK pool, simply discard them.  LUCK can be used to:\r\n\r\n1. Add dice to any attribute check on a 1:1 basis.\r\n2. Deduct dice from someone else's attribute check on a 1:1 basis.\r\n3. Absorb damage on a 1:1 basis (roll as many LUC dice as you wish, and deduct the total from the damage).\r\n4. Add dice to a damage roll on a 1:1 basis.\r\n5. Gain one bonus action per turn by spending a LUC die. This can only happen during a character’s own turn.\r\n6. Ignore an inflicted temporary condition as a reaction to the effect which causes it.\r\n7. Perform other special actions granted by careers and exploits.\r\n\r\nLUC dice can only be used within an encounter; you cannot use LUC dice during downtime, or on daily checks. And the GM should disallow the use of LUC if she feels that a player is simply blowing all their LUCk on a check because it’s the only one they’ll make that day. In game terms, being able to invest all your LUC in one go makes sense only if you’ve had, or will have, a number of other chances to be unlucky in the day (you’ve either saved up a lucky moment or will have a chance to “pay it back”).\r\n\r\n## Exploding Dice\r\n\r\nLUCK dice \"explode\".  This means that whenever a 6 is rolled, the die is rolled again and the new roll added to the original 6.  This process is repeated if subsequent 6s are rolled. It is recommended that LUCK dice be a different color to other dice so that they can be easily distinguished.\r\n\r\n## Leadership\r\n\r\nThe Leadership exploit allows you to donate your LUC dice to others. Without this exploit, you may only spend LUC on yourself. Characters with the Leadership exploit may donate one or more of their available LUC dice to another character as a free reaction to their attempting an attribute check. You must declare this before the ally rolls their check.\r\n\r\n## Replenishing LUCK\r\n\r\nOnce per day, a character may replenish his LUCK pool. Some careers or traditions allow for an additional replenishment; these do not stack, and you cannot gain more than one additional daily replenishment.\r\n\r\n## Other Uses of LUCK\r\n\r\nOther uses of LUCK manipulate situations where the odds are normally even.\r\n\r\n1. When determining a 50/50 chance of an outcome, roll a Routine [10] LUCK check instead.  Characters with higher LUCK succeed more often on an ostensibly 50/50 chance.\r\n2. When randomly determining a PC, have each player roll LUCK.  Either the highest or the lowest wins, depending on the situation.\r\n\r\nSource: ~License\r\n",
       "labels": [
         "WOIN",
         "Rule"
@@ -118,7 +129,7 @@
     },
     {
       "rawText": "",
-      "rawPublic": "# Movement\r\n\r\nMovement is a vital part of any combat encounter. Any creature can use one action to move up to its SPEED. A creature’s SPEED indicates the number of 5-foot increments (squares) it can move in one action (it also indicates its normal speed in miles-per-hour).\r\n\r\nSPEED is the total of the raw dice pool of STRENGTH and AGILITY plus one relevant skill.  Movement skills include (but are not limited to) running, climbing, swimming, flying, and zero-g.\r\n\r\n- **Movement methods.** For non-primary movement methods, the movement rate is halved.  For most characters, this means that walking/running is at the full rate, and climbing, swimming, zero-g, etc. are at half rate (after adding the bonus from the skill).  Some exploits may grant a full movement rate.  Some creatures (such as birds) may have a different primary movement mode, and walk/run at half speed. A skill cannot turn a movement method into a primary method; only an exploit can do that.\r\n- **Hustling** . A character who moves with two actions in a turn is “hustling,” and effectively moving at twice its normal speed. Creatures with more than two actions available may not move more than twice in a turn. An Olympic sprinter typically has a SPEED of 10 or more, and is using both actions to run, resulting in movement in the range of 20 miles per hour.\r\n- **Difficult terrain.** Difficult terrain (deep snow, swamp, ice, high or low gravity, etc.) halves ground movement rates. Some exploits may allow full movement rates on one or more difficult terrain types.\r\n- **Vehicles.** A vehicle's SPEED is also its maximum speed in tens of miles per hour. A vehicle with a SPEED of 12 has a maximum speed of 120mph.\r\n- **Diagonal movement.**  If a square grid is being used, a diagonal movement counts as 5’, but creatures may not move diagonally around a corner.\r\n- **Climbing and balancing.**  Climbing is an AGI check. A successful check allows the climber to move at her climb speed up a vertical surface. The climber need only make one check per turn—this check applies to all climbing movement in that turn. Balancing on a narrow ledge or beam is a form of climbing. A failed check simply means that the character cannot climb the wall or object. She may attempt another check next turn. A high quality climbing kit can assist with climbing. The surface determines the difficulty of the climb.\r\n\r\nMovement methods. For non-primary movement methods, the movement rate is halved.  For most characters, this means that walking/running is at the full rate, and climbing, swimming, zero-g, etc. are at half rate (after adding the bonus from the skill).  Some exploits may grant a full movement rate.  Some creatures (such as birds) may have a different primary movement mode, and walk/run at half speed. A skill cannot turn a movement method into a primary method; only an exploit can do that.\r\n\r\nHustling. A character who moves with two actions in a turn is “hustling,” and effectively moving at twice its normal speed. Creatures with more than two actions available may not move more than twice in a turn. An Olympic sprinter typically has a SPEED of 10 or more, and is using both actions to run, resulting in movement in the range of 20 miles per hour.\r\n\r\nDifficult terrain. Difficult terrain (deep snow, swamp, ice, high or low gravity, etc.) halves ground movement rates. Some exploits may allow full movement rates on one or more difficult terrain types.\r\n\r\nVehicles. A vehicle's SPEED is also its maximum speed in tens of miles per hour. A vehicle with a SPEED of 12 has a maximum speed of 120mph.\r\n\r\nDiagonal movement. If a square grid is being used, a diagonal movement counts as 5’, but creatures may not move diagonally around a corner.\r\n\r\nClimbing and balancing. Climbing is an AGI check. A successful check allows the climber to move at her climb speed up a vertical surface. The climber need only make one check per turn—this check applies to all climbing movement in that turn. Balancing on a narrow ledge or beam is a form of climbing. A failed check simply means that the character cannot climb the wall or object. She may attempt another check next turn. A high quality climbing kit can assist with climbing. The surface determines the difficulty of the climb.\r\n\r\n| Surface | Difficulty |\r\n| --- | --- |\r\n| Cliff, rough, many handholds | Challenging [13] |\r\n| Brick or stone wall, few handholds | Difficult [16] |\r\n| Ice or smooth metal | Demanding [21] |\r\n| Overhand or ceiling | Demanding [21] |\r\n| Narrow ledge or plank | Challenging [13] |\r\n| Tightrope | Strenuous [25] |\r\n\r\nFighting while climbing. Fighting while hanging from a wall is difficult. A non-climber attacking a climber gains a +2d6 bonus to the attack. A climber attacking a nonclimber suffers a –2d6 penalty. If both combatants are climbing, nobody gets any bonuses or penalties.\r\n\r\nCreatures with primary climbing modes. If a creature has climbing as a natural movement mode, it simply moves its Speed along walls and ceilings with no checks requires or combat checks imposed.\r\n\r\nFalling. Characters who fall from a height take 1d6 damage for every 10’ fallen. (Falls of less than 10’ do not cause damage.) Any fall results in the character landing prone unless an AGI check with a difficulty value equal to the number of feet fallen is made (this represents an attempt to reduce falling damage by jumping down; see below).\r\n\r\nJumping. Every character and creature has a “free” Jump allowance noted on its character sheet or stat block. This is a distance that the character may make a running jump without making any check at all; it simply happens automatically (for a standing jump, simply half the values). A jump counts as one action.\r\n\r\nSource: ~License\r\n",
+      "rawPublic": "# Movement\r\n\r\nMovement is a vital part of any combat encounter. Any creature can use one action to move up to its SPEED. A creature’s SPEED indicates the number of 5-foot increments (squares) it can move in one action (it also indicates its normal speed in miles-per-hour).\r\n\r\nSPEED is the total of the raw dice pool of STRENGTH and AGILITY plus one relevant skill.  Movement skills include (but are not limited to) running, climbing, swimming, flying, and zero-g.\r\n\r\n- **Movement methods.** For non-primary movement methods, the movement rate is halved.  For most characters, this means that walking/running is at the full rate, and climbing, swimming, zero-g, etc. are at half rate (after adding the bonus from the skill).  Some exploits may grant a full movement rate.  Some creatures (such as birds) may have a different primary movement mode, and walk/run at half speed. A skill cannot turn a movement method into a primary method; only an exploit can do that.\r\n- **Hustling** . A character who moves with two actions in a turn is “hustling,” and effectively moving at twice its normal speed. Creatures with more than two actions available may not move more than twice in a turn. An Olympic sprinter typically has a SPEED of 10 or more, and is using both actions to run, resulting in movement in the range of 20 miles per hour.\r\n- **Difficult terrain.** Difficult terrain (deep snow, swamp, ice, high or low gravity, etc.) halves ground movement rates. Some exploits may allow full movement rates on one or more difficult terrain types.\r\n- **Vehicles.** A vehicle's SPEED is also its maximum speed in tens of miles per hour. A vehicle with a SPEED of 12 has a maximum speed of 120mph.\r\n- **Diagonal movement.**  If a square grid is being used, a diagonal movement counts as 5’, but creatures may not move diagonally around a corner.\r\n- **Climbing and balancing.**  Climbing is an AGI check. A successful check allows the climber to move at her climb speed up a vertical surface. The climber need only make one check per turn—this check applies to all climbing movement in that turn. Balancing on a narrow ledge or beam is a form of climbing. A failed check simply means that the character cannot climb the wall or object. She may attempt another check next turn. A high quality climbing kit can assist with climbing. The surface determines the difficulty of the climb.\r\n\r\n| Surface | Difficulty |\r\n| --- | --- |\r\n| Cliff, rough, many handholds | Challenging [13] |\r\n| Brick or stone wall, few handholds | Difficult [16] |\r\n| Ice or smooth metal | Demanding [21] |\r\n| Overhand or ceiling | Demanding [21] |\r\n| Narrow ledge or plank | Challenging [13] |\r\n| Tightrope | Strenuous [25] |\r\n\r\nFighting while climbing. Fighting while hanging from a wall is difficult. A non-climber attacking a climber gains a +2d6 bonus to the attack. A climber attacking a nonclimber suffers a –2d6 penalty. If both combatants are climbing, nobody gets any bonuses or penalties.\r\n\r\nCreatures with primary climbing modes. If a creature has climbing as a natural movement mode, it simply moves its Speed along walls and ceilings with no checks requires or combat checks imposed.\r\n\r\nFalling. Characters who fall from a height take 1d6 damage for every 10’ fallen. (Falls of less than 10’ do not cause damage.) Any fall results in the character landing prone unless an AGI check with a difficulty value equal to the number of feet fallen is made (this represents an attempt to reduce falling damage by jumping down; see below).\r\n\r\nJumping. Every character and creature has a “free” Jump allowance noted on its character sheet or stat block. This is a distance that the character may make a running jump without making any check at all; it simply happens automatically (for a standing jump, simply half the values). A jump counts as one action.\r\n\r\nSource: ~License\r\n",
       "labels": [
         "WOIN",
         "Rule"
@@ -128,7 +139,7 @@
     },
     {
       "rawText": "",
-      "rawPublic": "# Alchemy\r\n\r\nCommon skills: alchemy\r\n\r\nAlchemy is a simple extended task. Using LOGIC and various skills, characters can accomplish a variety of things. Any character can attempt to use alchemy in order to solve a problem or achieve a goal. Alchemy often involves at least a touch of magic. As an extended skill task, alchemy is used for more mundane chemical purposes. Examples of mundane uses of alchemy include:\r\n\r\n- Removing a permanent condition.\r\n- Melting a lock with acid.\r\n- Treating a disease.\r\n- Create a strong glue.\r\n- Creating a poison or an antidote (for poisons, an opposed task is needed vs. the target’s Defense, assuming the poison can be delivered in food or drink; it does 2d6 poison damage plus 1d6 for each complexity level used, which means that the longer you spend making a poison, the more deadly it is).\r\n- Burn or combust materials like metal and stone.\r\n\r\nRemoving a permanent condition.\r\n\r\nMelting a lock with acid.\r\n\r\nTreating a disease.\r\n\r\nCreate a strong glue.\r\n\r\nCreating a poison or an antidote (for poisons, an opposed task is needed vs. the target’s Defense, assuming the poison can be delivered in food or drink; it does 2d6 poison damage plus 1d6 for each complexity level used, which means that the longer you spend making a poison, the more deadly it is).\r\n\r\nBurn or combust materials like metal and stone.\r\n\r\nLike herbs, alchemical concoctions can also be used to inflict conditions, thus creating a love potion or a sleep draught. The concoction must be delivered (imbibed by the target, or similar). A concoction which is eaten or drunk is an hourly task, a poultice, salve, or ointment is a daily task, and a gas, incense, or smoke is a weekly task.\r\n\r\nThe traditional, legendary uses of alchemy (transforming lead into gold, or creating an elixir of immortality) are covered in the magic rules.\r\n\r\nIf the concoction needs a duration (such as an antidote that will protect the imbiber from a certain poison), the duration equals one time increment of the extended task. Characters can choose to increase the tasks’s complexity (say, from hourly to daily) in order to gain a longer duration.\r\n\r\nThe check is a simple opposed one vs. the target’s Defense or Mental Defense, and success inflicts a condition, with a critical success inflicting a severe condition.\r\n\r\nThe players start by declaring their intentions. This goal may be anything they wish, although they may find some goals too hard to accomplish. It might be to devise an acid to melt the lock on a cell door, save an ally who has been turned to stone by a gorgon, or build an explosive. The GM sets the difficulty as normal, and characters may attempt LOGIC checks until they have reached the target number of successes (typically three successes). The complexity and duration of the task are established as normal. Alchemy is a classic example of a very simple use of the extended task mechanism.\r\n\r\nAlchemy is an acceptable way to accomplish many tasks, even if other methods are available. A locked door can be picked or hacked by a burglar, or an alchemist might attempt to open it by melting the lock with alchemical acid. The difficulty of the task does not change—if it’s a Difficult [16] task to pick the lock, then it’s a Difficult [16] alchemical task also.\r\n\r\n## Poison Crafting\r\n\r\n| Time | Poison |\r\n| --- | --- |\r\n| 1 minute | 2d6 |\r\n| 1 hour | 3d6 |\r\n| 1 day | 4d6 |\r\n| 1 week | 5d6 |\r\n| 1 month | 6d6 |\r\n\r\nSource: ~License\r\n",
+      "rawPublic": "# Alchemy\r\n\r\nCommon skills: alchemy\r\n\r\nAlchemy is a simple extended task. Using LOGIC and various skills, characters can accomplish a variety of things. Any character can attempt to use alchemy in order to solve a problem or achieve a goal. Alchemy often involves at least a touch of magic. As an extended skill task, alchemy is used for more mundane chemical purposes. Examples of mundane uses of alchemy include:\r\n\r\n- Removing a permanent condition.\r\n- Melting a lock with acid.\r\n- Treating a disease.\r\n- Create a strong glue.\r\n- Creating a poison or an antidote (for poisons, an opposed task is needed vs. the target’s Defense, assuming the poison can be delivered in food or drink; it does 2d6 poison damage plus 1d6 for each complexity level used, which means that the longer you spend making a poison, the more deadly it is).\r\n- Burn or combust materials like metal and stone.\r\n\r\nLike herbs, alchemical concoctions can also be used to inflict conditions, thus creating a love potion or a sleep draught. The concoction must be delivered (imbibed by the target, or similar). A concoction which is eaten or drunk is an hourly task, a poultice, salve, or ointment is a daily task, and a gas, incense, or smoke is a weekly task.\r\n\r\nThe traditional, legendary uses of alchemy (transforming lead into gold, or creating an elixir of immortality) are covered in the magic rules.\r\n\r\nIf the concoction needs a duration (such as an antidote that will protect the imbiber from a certain poison), the duration equals one time increment of the extended task. Characters can choose to increase the tasks’s complexity (say, from hourly to daily) in order to gain a longer duration.\r\n\r\nThe check is a simple opposed one vs. the target’s Defense or Mental Defense, and success inflicts a condition, with a critical success inflicting a severe condition.\r\n\r\nThe players start by declaring their intentions. This goal may be anything they wish, although they may find some goals too hard to accomplish. It might be to devise an acid to melt the lock on a cell door, save an ally who has been turned to stone by a gorgon, or build an explosive. The GM sets the difficulty as normal, and characters may attempt LOGIC checks until they have reached the target number of successes (typically three successes). The complexity and duration of the task are established as normal. Alchemy is a classic example of a very simple use of the extended task mechanism.\r\n\r\nAlchemy is an acceptable way to accomplish many tasks, even if other methods are available. A locked door can be picked or hacked by a burglar, or an alchemist might attempt to open it by melting the lock with alchemical acid. The difficulty of the task does not change—if it’s a Difficult [16] task to pick the lock, then it’s a Difficult [16] alchemical task also.\r\n\r\n## Poison Crafting\r\n\r\n| Time | Poison |\r\n| --- | --- |\r\n| 1 minute | 2d6 |\r\n| 1 hour | 3d6 |\r\n| 1 day | 4d6 |\r\n| 1 week | 5d6 |\r\n| 1 month | 6d6 |\r\n\r\nSource: ~License\r\n",
       "labels": [
         "WOIN",
         "Skill"
@@ -138,7 +149,7 @@
     },
     {
       "rawText": "",
-      "rawPublic": "# Chases\r\n\r\nCommon skills: running, driving, piloting, jumping, climbing, stealth, bluffing, swimming.\r\n\r\nA chase is an opposed extended task. The first to reach six wins is the winner of a chase situation (although the GM can modify this for longer or shorter chases). Multiple people can be involved in a chase, each making their own checks.\r\n\r\nA simple foot chase simply involves STR or AGI checks, along with the running skill. A vehicle chase may instead use AGI and driving, or a starfighter chase may use AGI and piloting.\r\n\r\nA more complex chase involves other skills. The target chooses the action (they might elect to climb a wall, dive into an asteroid field, jump a canyon, and so on), and the pursuers must match it. Examples of actions can be seen below.\r\n\r\n### Foot chases\r\n\r\n- Climb a wall (climbing vs. climbing)Jump an alleyway (jumping vs. jumping)Disappear into a crowd (stealth vs. perception)Swim a river (swimming vs. swimming)Squeeze through a tight gap (acrobatics vs. acrobatics)Balance along a narrow ledge (acrobatics or climbing)Use a hidden shortcut (local knowledge vs perception)Cause a distraction (bluff vs. perception)Cause an obstruction or obstacle (varies)Duck into a blind alley (stealth vs. perception)Get somebody to give the pursuers false directions (bluffing vs. local knowledge)\r\n- Climb a wall (climbing vs. climbing)Jump an alleyway (jumping vs. jumping)Disappear into a crowd (stealth vs. perception)Swim a river (swimming vs. swimming)Squeeze through a tight gap (acrobatics vs. acrobatics)Balance along a narrow ledge (acrobatics or climbing)Use a hidden shortcut (local knowledge vs perception)Cause a distraction (bluff vs. perception)Cause an obstruction or obstacle (varies)Duck into a blind alley (stealth vs. perception)Get somebody to give the pursuers false directions (bluffing vs. local knowledge)\r\n- Jump an alleyway (jumping vs. jumping)Disappear into a crowd (stealth vs. perception)Swim a river (swimming vs. swimming)Squeeze through a tight gap (acrobatics vs. acrobatics)Balance along a narrow ledge (acrobatics or climbing)Use a hidden shortcut (local knowledge vs perception)Cause a distraction (bluff vs. perception)Cause an obstruction or obstacle (varies)Duck into a blind alley (stealth vs. perception)Get somebody to give the pursuers false directions (bluffing vs. local knowledge)\r\n- Disappear into a crowd (stealth vs. perception)Swim a river (swimming vs. swimming)Squeeze through a tight gap (acrobatics vs. acrobatics)Balance along a narrow ledge (acrobatics or climbing)Use a hidden shortcut (local knowledge vs perception)Cause a distraction (bluff vs. perception)Cause an obstruction or obstacle (varies)Duck into a blind alley (stealth vs. perception)Get somebody to give the pursuers false directions (bluffing vs. local knowledge)\r\n- Swim a river (swimming vs. swimming)Squeeze through a tight gap (acrobatics vs. acrobatics)Balance along a narrow ledge (acrobatics or climbing)Use a hidden shortcut (local knowledge vs perception)Cause a distraction (bluff vs. perception)Cause an obstruction or obstacle (varies)Duck into a blind alley (stealth vs. perception)Get somebody to give the pursuers false directions (bluffing vs. local knowledge)\r\n- Squeeze through a tight gap (acrobatics vs. acrobatics)Balance along a narrow ledge (acrobatics or climbing)Use a hidden shortcut (local knowledge vs perception)Cause a distraction (bluff vs. perception)Cause an obstruction or obstacle (varies)Duck into a blind alley (stealth vs. perception)Get somebody to give the pursuers false directions (bluffing vs. local knowledge)\r\n- Balance along a narrow ledge (acrobatics or climbing)Use a hidden shortcut (local knowledge vs perception)Cause a distraction (bluff vs. perception)Cause an obstruction or obstacle (varies)Duck into a blind alley (stealth vs. perception)Get somebody to give the pursuers false directions (bluffing vs. local knowledge)\r\n- Use a hidden shortcut (local knowledge vs perception)Cause a distraction (bluff vs. perception)Cause an obstruction or obstacle (varies)Duck into a blind alley (stealth vs. perception)Get somebody to give the pursuers false directions (bluffing vs. local knowledge)\r\n- Cause a distraction (bluff vs. perception)Cause an obstruction or obstacle (varies)Duck into a blind alley (stealth vs. perception)Get somebody to give the pursuers false directions (bluffing vs. local knowledge)\r\n- Cause an obstruction or obstacle (varies)Duck into a blind alley (stealth vs. perception)Get somebody to give the pursuers false directions (bluffing vs. local knowledge)\r\n- Duck into a blind alley (stealth vs. perception)Get somebody to give the pursuers false directions (bluffing vs. local knowledge)\r\n- Get somebody to give the pursuers false directions (bluffing vs. local knowledge)\r\n\r\n- Climb a wall (climbing vs. climbing)Jump an alleyway (jumping vs. jumping)Disappear into a crowd (stealth vs. perception)Swim a river (swimming vs. swimming)Squeeze through a tight gap (acrobatics vs. acrobatics)Balance along a narrow ledge (acrobatics or climbing)Use a hidden shortcut (local knowledge vs perception)Cause a distraction (bluff vs. perception)Cause an obstruction or obstacle (varies)Duck into a blind alley (stealth vs. perception)Get somebody to give the pursuers false directions (bluffing vs. local knowledge)\r\n\r\nClimb a wall (climbing vs. climbing)\r\n\r\nJump an alleyway (jumping vs. jumping)\r\n\r\nDisappear into a crowd (stealth vs. perception)\r\n\r\nSwim a river (swimming vs. swimming)\r\n\r\nSqueeze through a tight gap (acrobatics vs. acrobatics)\r\n\r\nBalance along a narrow ledge (acrobatics or climbing)\r\n\r\nUse a hidden shortcut (local knowledge vs perception)\r\n\r\nCause a distraction (bluff vs. perception)\r\n\r\nCause an obstruction or obstacle (varies)\r\n\r\nDuck into a blind alley (stealth vs. perception)\r\n\r\nGet somebody to give the pursuers false directions (bluffing vs. local knowledge)\r\n\r\n### Vehicle chases\r\n\r\n- Jump a canyon (driving vs. driving)Fly though a twisting canyon (piloting vs. piloting)“Ski” a vehicle through a narrow gap (driving vs. driving)\r\n- Jump a canyon (driving vs. driving)Fly though a twisting canyon (piloting vs. piloting)“Ski” a vehicle through a narrow gap (driving vs. driving)\r\n- Fly though a twisting canyon (piloting vs. piloting)“Ski” a vehicle through a narrow gap (driving vs. driving)\r\n- “Ski” a vehicle through a narrow gap (driving vs. driving)\r\n\r\n- Jump a canyon (driving vs. driving)Fly though a twisting canyon (piloting vs. piloting)“Ski” a vehicle through a narrow gap (driving vs. driving)\r\n\r\nJump a canyon (driving vs. driving)\r\n\r\nFly though a twisting canyon (piloting vs. piloting)\r\n\r\n“Ski” a vehicle through a narrow gap (driving vs. driving)\r\n\r\n### Space chases\r\n\r\n- Dive into an asteroid field (piloting vs. piloting)Hide in a nebula (stealth vs. computers)\r\n- Dive into an asteroid field (piloting vs. piloting)Hide in a nebula (stealth vs. computers)\r\n- Hide in a nebula (stealth vs. computers)\r\n\r\n- Dive into an asteroid field (piloting vs. piloting)Hide in a nebula (stealth vs. computers)\r\n\r\nDive into an asteroid field (piloting vs. piloting)\r\n\r\nHide in a nebula (stealth vs. computers)\r\n\r\n## Speed\r\n\r\nDifferent characters, creatures, vehicles, and ships have different speeds. While skill is the most important factor, speed is also very important. Anybody involved in a race or a chase can add +1d6 to their checks if they have a Speed of 10 or more, and +2d6 if they have a Speed of 20 or more.\r\n\r\n## Random Terrain\r\n\r\nOne way to adjudicate a chase is to randomly determine terrain and obstacles at each stage. Some basic examples using 2d6 can be seen below, although you are encouraged to devise your own tables tailored to your setting. Each obstacle gives the participants opportunity to devise how to use or circumvent them.\r\n\r\nYou may allow a PC an automatic win if they have a way to circumvent an obstacle which their opponent lacks— a PC with a jet pack automatically succeeds at crossing a canyon, for example.\r\n\r\n| 2d6 | Foot, Urban | Foot, Wilderness | Vehicle | Space |\r\n| --- | --- | --- | --- | --- |\r\n| 2 | Slick footing | Cliff | Broken bridge | Temporal distortion |\r\n| 3 | Gap/hole | Mud patch | Construction work | Gravitic anomoly |\r\n| 4 | Barrels or crates | Steep incline | Hairpin bend | Unusual star |\r\n| 5 | Twisting alleyways | Dense trees | Slow-moving vehicles | Asteroid field |\r\n| 6 | Slow passing vehicle | Tangled undergrowth | Crates and barrels | Debris |\r\n| 7 | Straight | Straight | Straight | Straight |\r\n| 8 | Wall | Rock formation | Busy junction | Nebula |\r\n| 9 | Ladder | Unsure footing | Canyon | Gas cloud |\r\n| 10 | Crowded street | River | Market square | Convoy |\r\n| 11 | Shortcut | Animal herd | Children in the road | Wandering comet |\r\n| 12 | Pool/river | Canyon | Funeral procession | Ship graveyard |\r\n\r\nSource: ~License\r\n",
+      "rawPublic": "# Chases\r\n\r\nCommon skills: running, driving, piloting, jumping, climbing, stealth, bluffing, swimming.\r\n\r\nA chase is an opposed extended task. The first to reach six wins is the winner of a chase situation (although the GM can modify this for longer or shorter chases). Multiple people can be involved in a chase, each making their own checks.\r\n\r\nA simple foot chase simply involves STR or AGI checks, along with the running skill. A vehicle chase may instead use AGI and driving, or a starfighter chase may use AGI and piloting.\r\n\r\nA more complex chase involves other skills. The target chooses the action (they might elect to climb a wall, dive into an asteroid field, jump a canyon, and so on), and the pursuers must match it. Examples of actions can be seen below.\r\n\r\n### Foot chases\r\n\r\n- Climb a wall (climbing vs. climbing)\r\n- Jump an alleyway (jumping vs. jumping)\r\n- Disappear into a crowd (stealth vs. perception)\r\n- Swim a river (swimming vs. swimming)\r\n- Squeeze through a tight gap (acrobatics vs. acrobatics)\r\n- Balance along a narrow ledge (acrobatics or climbing)\r\n- Use a hidden shortcut (local knowledge vs perception)\r\n- Cause a distraction (bluff vs. perception)\r\n- Cause an obstruction or obstacle (varies)\r\n- Duck into a blind alley (stealth vs. perception)\r\n- Get somebody to give the pursuers false directions (bluffing vs. local knowledge)\r\n\r\n### Vehicle chases\r\n\r\n- Jump a canyon (driving vs. driving)\r\n- Fly though a twisting canyon (piloting vs. piloting)\r\n- “Ski” a vehicle through a narrow gap (driving vs. driving)\r\n\r\n### Space chases\r\n\r\n- Dive into an asteroid field (piloting vs. piloting)\r\n- Hide in a nebula (stealth vs. computers)\r\n\r\n## Speed\r\n\r\nDifferent characters, creatures, vehicles, and ships have different speeds. While skill is the most important factor, speed is also very important. Anybody involved in a race or a chase can add +1d6 to their checks if they have a Speed of 10 or more, and +2d6 if they have a Speed of 20 or more.\r\n\r\n## Random Terrain\r\n\r\nOne way to adjudicate a chase is to randomly determine terrain and obstacles at each stage. Some basic examples using 2d6 can be seen below, although you are encouraged to devise your own tables tailored to your setting. Each obstacle gives the participants opportunity to devise how to use or circumvent them.\r\n\r\nYou may allow a PC an automatic win if they have a way to circumvent an obstacle which their opponent lacks— a PC with a jet pack automatically succeeds at crossing a canyon, for example.\r\n\r\n| 2d6 | Foot, Urban | Foot, Wilderness | Vehicle | Space |\r\n| --- | --- | --- | --- | --- |\r\n| 2 | Slick footing | Cliff | Broken bridge | Temporal distortion |\r\n| 3 | Gap/hole | Mud patch | Construction work | Gravitic anomoly |\r\n| 4 | Barrels or crates | Steep incline | Hairpin bend | Unusual star |\r\n| 5 | Twisting alleyways | Dense trees | Slow-moving vehicles | Asteroid field |\r\n| 6 | Slow passing vehicle | Tangled undergrowth | Crates and barrels | Debris |\r\n| 7 | Straight | Straight | Straight | Straight |\r\n| 8 | Wall | Rock formation | Busy junction | Nebula |\r\n| 9 | Ladder | Unsure footing | Canyon | Gas cloud |\r\n| 10 | Crowded street | River | Market square | Convoy |\r\n| 11 | Shortcut | Animal herd | Children in the road | Wandering comet |\r\n| 12 | Pool/river | Canyon | Funeral procession | Ship graveyard |\r\n\r\nSource: ~License\r\n",
       "labels": [
         "WOIN",
         "Skill"
@@ -148,7 +159,7 @@
     },
     {
       "rawText": "",
-      "rawPublic": "# Chemistry\r\n\r\nCommon skills: chemistry\r\n\r\nChemistry is usually an hourly extended task. Using LOGIV and various skills, characters can accomplish a variety of things. Any character can attempt to use chemistry in order to solve a problem or achieve a goal. Examples of uses of chemistry include:\r\n\r\n- Removing a permanent condition.\r\n- Melting a lock with acid.\r\n- Treating a disease.\r\n- Creating a strong glue.\r\n- Creating a poison or an antidote (for poisons, an opposed task is needed versus the target’s Vital Defense, assuming the poison can be delivered in food or drink; it does 1d6 poison damage plus 1d6 for each die you sacrifice from your dice pool.\r\n- Burn or combust materials like metal and stone. Like drugs, chemical concoctions can also be used to inflict conditions, thus creating a truth drug or a sleeping draught. The concoction must be delivered (imbibed by the target, or similar). A concoction which is eaten or drunk is an hourly task, a poultice, salve, or ointment costs -1d6, and a gas, incense, or smoke costs -2d6. The check is a simple opposed one versus the target’s Vital Defense, and success inflicts a condition with a critical success inflicting a severe condition.\r\n\r\nRemoving a permanent condition.\r\n\r\nMelting a lock with acid.\r\n\r\nTreating a disease.\r\n\r\nCreating a strong glue.\r\n\r\nCreating a poison or an antidote (for poisons, an opposed task is needed versus the target’s Vital Defense, assuming the poison can be delivered in food or drink; it does 1d6 poison damage plus 1d6 for each die you sacrifice from your dice pool.\r\n\r\nBurn or combust materials like metal and stone. Like drugs, chemical concoctions can also be used to inflict conditions, thus creating a truth drug or a sleeping draught. The concoction must be delivered (imbibed by the target, or similar). A concoction which is eaten or drunk is an hourly task, a poultice, salve, or ointment costs -1d6, and a gas, incense, or smoke costs -2d6. The check is a simple opposed one versus the target’s Vital Defense, and success inflicts a condition with a critical success inflicting a severe condition.\r\n\r\nThe player(s) start by declaring their intentions. This goal may be anything they wish, although they may find some goals too hard to accomplish. It might be to devise an acid to melt the lock on a cell door, save an ally who has been poisoned by an assassin, or build an explosive. The GM sets the difficulty as normal, and characters may attempt LOGIV checks until they have reached the target number of successes (typically three successes). Chemistry is a classic example of a very simple use of the extended task mechanism.\r\n\r\nChemistry is an acceptable way to accomplish many tasks, even if other methods are available. A locked door can be picked or hacked by a burglar, or a chemist might attempt to open it by melting the lock with acid. The difficulty of the task does not change—if it’s a Difficult [16] task to pick the lock, then it’s a Difficult [16] chemical task also.\r\n\r\nSource: ~License\r\n",
+      "rawPublic": "# Chemistry\r\n\r\nCommon skills: chemistry\r\n\r\nChemistry is usually an hourly extended task. Using LOGIV and various skills, characters can accomplish a variety of things. Any character can attempt to use chemistry in order to solve a problem or achieve a goal. Examples of uses of chemistry include:\r\n\r\n- Removing a permanent condition.\r\n- Melting a lock with acid.\r\n- Treating a disease.\r\n- Creating a strong glue.\r\n- Creating a poison or an antidote (for poisons, an opposed task is needed versus the target’s Vital Defense, assuming the poison can be delivered in food or drink; it does 1d6 poison damage plus 1d6 for each die you sacrifice from your dice pool.\r\n- Burn or combust materials like metal and stone. Like drugs, chemical concoctions can also be used to inflict conditions, thus creating a truth drug or a sleeping draught. The concoction must be delivered (imbibed by the target, or similar). A concoction which is eaten or drunk is an hourly task, a poultice, salve, or ointment costs -1d6, and a gas, incense, or smoke costs -2d6. The check is a simple opposed one versus the target’s Vital Defense, and success inflicts a condition with a critical success inflicting a severe condition.\r\n\r\nThe player(s) start by declaring their intentions. This goal may be anything they wish, although they may find some goals too hard to accomplish. It might be to devise an acid to melt the lock on a cell door, save an ally who has been poisoned by an assassin, or build an explosive. The GM sets the difficulty as normal, and characters may attempt LOGIV checks until they have reached the target number of successes (typically three successes). Chemistry is a classic example of a very simple use of the extended task mechanism.\r\n\r\nChemistry is an acceptable way to accomplish many tasks, even if other methods are available. A locked door can be picked or hacked by a burglar, or a chemist might attempt to open it by melting the lock with acid. The difficulty of the task does not change—if it’s a Difficult [16] task to pick the lock, then it’s a Difficult [16] chemical task also.\r\n\r\nSource: ~License\r\n",
       "labels": [
         "WOIN",
         "Skill"
@@ -218,7 +229,7 @@
     },
     {
       "rawText": "",
-      "rawPublic": "# Tailing\r\n\r\nA simple tailing scenario is an opposed extended task which involves INT checks for the target, and AGI checks for the pursuer (the reverse of the tracking process). The pursuer is the one trying to stay out of sight and not be spotted by their target. The target will use perception, while the pursuer may use stealth or bluffing. This assumes that the target is trying to be inconspicuous or use anti-surveillance techniques. If the target is not worried about a tail, simply use INT (perception) checks.\r\n\r\n- Change appearance (disguise vs. perception)\r\n- Blend with a crowd (stealth vs. perception)\r\n\r\nChange appearance (disguise vs. perception)\r\n\r\nBlend with a crowd (stealth vs. perception)\r\n\r\nSource: ~License\r\n",
+      "rawPublic": "# Tailing\r\n\r\nA simple tailing scenario is an opposed extended task which involves INT checks for the target, and AGI checks for the pursuer (the reverse of the tracking process). The pursuer is the one trying to stay out of sight and not be spotted by their target. The target will use perception, while the pursuer may use stealth or bluffing. This assumes that the target is trying to be inconspicuous or use anti-surveillance techniques. If the target is not worried about a tail, simply use INT (perception) checks.\r\n\r\n- Change appearance (disguise vs. perception)\r\n- Blend with a crowd (stealth vs. perception)\r\n\r\nSource: ~License\r\n",
       "labels": [
         "WOIN",
         "Skill"
@@ -228,13 +239,1547 @@
     },
     {
       "rawText": "",
-      "rawPublic": "# Tracking\r\n\r\nCommon skills: tracking, stealth, perception, local knowledge.\r\n\r\nTracking someone is an opposed extended task similar to a chase, although much less energetic and more cerebral. Rather than physical tasks, opposed checks are more focused around a contest of mind and skill. The target tries to hide their tracks, while the pursuer tries to uncover them.\r\n\r\nA simple tracking scenario involves involves AGI checks for the target and INT checks for the pursuer, along with the stealth and tracking skills, respectively.\r\n\r\nThis assumes that the target is aware of and trying to shake off the trackers. If the target is unaware of the trackers, simply use a Routine [10] benchmark and a simple extended task.\r\n\r\nA more complex tracking scenario allows the target to try different things such as:\r\n\r\n- Cross a river to hide tracks (swimming vs. tracking)\r\n- Create a decoy or false trail (tracking vs. tracking)\r\n- Hide (stealth vs. tracking)\r\n- Outpace the trackers (running vs. tracking)\r\n\r\nCross a river to hide tracks (swimming vs. tracking)\r\n\r\nCreate a decoy or false trail (tracking vs. tracking)\r\n\r\nHide (stealth vs. tracking)\r\n\r\nOutpace the trackers (running vs. tracking)\r\n\r\n## Gaining Information\r\n\r\nAn expert tracker can also glean a lot of information about a location or about creatures who have been present. This is a simple, single-check task using\r\n\r\nLOGIC and the tracking skill. The tracker simply makes a Routine [10] LOG check and ask one closed question which the GM will answer. The question asked must be specific closed questions which the GM can answer with a single, short sentence. Any question can be asked, and each question takes one full minute—the more questions asked, the more detailed information can be determined, but each subsequent question past the first inflicts a –1d6 die penalty. Example sequences of questions might look like this:\r\n\r\n| Question | Answer |\r\n| --- | --- |\r\n| Has anybody passed through this clearing in the last hour? | Yes, a group of creatures passed through very recently. |\r\n| How many creatures? | Six creatures. |\r\n| What type of creatures? | They were all humanoid. |\r\n| Was any of them one-legged? | Yes, there was a one-legged humanoid present. |\r\n| Were there any Smallfolk present? | Yes, two Smallfolk. |\r\n| Were the Smallfolk prisoners? | Yes, from the way they were walking, it seems they were | restrained. |\r\n\r\nSource: ~License\r\n",
+      "rawPublic": "# Tracking\r\n\r\nCommon skills: tracking, stealth, perception, local knowledge.\r\n\r\nTracking someone is an opposed extended task similar to a chase, although much less energetic and more cerebral. Rather than physical tasks, opposed checks are more focused around a contest of mind and skill. The target tries to hide their tracks, while the pursuer tries to uncover them.\r\n\r\nA simple tracking scenario involves involves AGI checks for the target and INT checks for the pursuer, along with the stealth and tracking skills, respectively.\r\n\r\nThis assumes that the target is aware of and trying to shake off the trackers. If the target is unaware of the trackers, simply use a Routine [10] benchmark and a simple extended task.\r\n\r\nA more complex tracking scenario allows the target to try different things such as:\r\n\r\n- Cross a river to hide tracks (swimming vs. tracking)\r\n- Create a decoy or false trail (tracking vs. tracking)\r\n- Hide (stealth vs. tracking)\r\n- Outpace the trackers (running vs. tracking)\r\n\r\n## Gaining Information\r\n\r\nAn expert tracker can also glean a lot of information about a location or about creatures who have been present. This is a simple, single-check task using\r\n\r\nLOGIC and the tracking skill. The tracker simply makes a Routine [10] LOG check and ask one closed question which the GM will answer. The question asked must be specific closed questions which the GM can answer with a single, short sentence. Any question can be asked, and each question takes one full minute—the more questions asked, the more detailed information can be determined, but each subsequent question past the first inflicts a –1d6 die penalty. Example sequences of questions might look like this:\r\n\r\n| Question | Answer |\r\n| --- | --- |\r\n| Has anybody passed through this clearing in the last hour? | Yes, a group of creatures passed through very recently. |\r\n| How many creatures? | Six creatures. |\r\n| What type of creatures? | They were all humanoid. |\r\n| Was any of them one-legged? | Yes, there was a one-legged humanoid present. |\r\n| Were there any Smallfolk present? | Yes, two Smallfolk. |\r\n| Were the Smallfolk prisoners? | Yes, from the way they were walking, it seems they were | restrained. |\r\n\r\nSource: ~License\r\n",
       "labels": [
         "WOIN",
         "Rule"
       ],
       "tagSymbol": "~",
       "tagValue": "Skill - Tracking"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Brood\r\n\r\nBrood are large, malevolent insect-like creatures. Extremely intelligent and powerfully psychic, brood seek to breed and overrun colonies and settlements with their young. Brood often use their psionic powers to control other beings, which assist them in their plotting and scheming.\r\n\r\n## Brood\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Alien",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Alien - Brood"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Carnivourous Plant\r\n\r\nLarge, hungry, mobile man-eating plants which trap and consume unfortunate prey.  These carnivourous creatures ar eoften found in alien jungles, blending into their surroundings so as to ambush any unwary animal or person which comes along.\r\n\r\n## Carnivorous Plant\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Alien",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Alien - Carnivourous Plant"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Izkiks\r\n\r\nThe Izkik are a communal insectoid type, often controlled by Ogrons.  Izkik live in colonies ruled by a Queen. The Ogrons control each of the Queens via bioelectrical cybernetic equipment grafted onto them.\r\n\r\n## Izkik Warrior\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Izkik Queen\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Alien",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Alien - Izkiks"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Kremlin Beast\r\n\r\nA hulking mass of muscle and hide adapted to hunt and survive in the toughest conditions, kremlin beasts are the result of biological experimentation. The creature's rapidly evolving immune system and regenerative metabolism is the result of extensive laboratory study.\r\n\r\n## Kremlin Beast\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Alien",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Alien - Kremlin Beast"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Medusa\r\n\r\n## Medusa\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Alien",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Alien - Medusa"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Mind Eel\r\n\r\n## Mind Eel\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Alien",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Alien - Mind Eel"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Sandworm\r\n\r\n## Sandworm\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Alien",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Alien - Sandworm"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Shatterplant\r\n\r\n## Shatterplant\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Alien",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Alien - Shatterplant"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Slatherbeast\r\n\r\n## Slatherbeast\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Alien",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Alien - Slatherbeast"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Triceraboar\r\n\r\n## Triceraboar\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Alien",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Alien - Triceraboar"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Xenobian\r\n\r\n## Xenobian\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Alien",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Alien - Xenobian"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Xenomorphs\r\n\r\n## Xenomorph Breedspawn\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Xenomorph Hunter\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Xenomorph Matriarch\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Xenomorph Warrior\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Alien",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Alien - Xenomorphs"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Apes\r\n\r\n## Giant Ape\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Gorilla\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Monkey\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal - Apes"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Bears\r\n\r\n## Black Bear\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Grizzly Bear\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Polar Bear\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Bears"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Birds\r\n\r\n## Bird\r\n\r\n## Eagle\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Great Eagle\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Birds"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Boar\r\n\r\n## Boar\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Boar"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Cats\r\n\r\n## Cat\r\n\r\n## Hyena\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Lion\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Panther\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Smilodon\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Tiger\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Cats"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Cows\r\n\r\n## Cow\r\n\r\n## Bull\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Cows"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Crocodile\r\n\r\n## Alligator\r\n\r\n## Crocodile\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Crocodile"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Dinosaurs\r\n\r\n## Pterodactyl\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Stegosaurus\r\n\r\n## Tyrannosaur\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Titanosaur\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Velociraptor\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Dinosaurs"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Dogs\r\n\r\n## Domestic Dog\r\n\r\n## Guard Dog\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Fox\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Dogs"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Elephants\r\n\r\n## Elephant\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Mammoth\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Oliphant\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Elephants"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Frog\r\n\r\n## Frog, Giant\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Frog"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Hippopotamus\r\n\r\n## Hippopotamus\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Hippopotamus"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Horses\r\n\r\n## Riding Horse\r\n\r\n## Warhorse\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Horses"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Insects\r\n\r\n## Ant, Giant\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Ant Swarm\r\n\r\n## Centipede, Monstrous\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Insect Swarm\r\n\r\n## Scorpion, Giant\r\n\r\n## Wasp, Giant\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Insects"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Lizard\r\n\r\n## Lizard, Giant\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Lizard"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Rhinocerous\r\n\r\n## Rhinoceros\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Rhinocerous"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Rodents\r\n\r\n## Mouse\r\n\r\n## Rabbit\r\n\r\n## Rat\r\n\r\n## Rat, Giant\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Rat Swarm\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Rodents"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Shark\r\n\r\n## Shark\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Shark"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Snakes\r\n\r\n## Constrictor Snake\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Giant Snake\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Venomous Snake\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Snakes"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Spiders\r\n\r\n## Poisonous Spider\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Attercop\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Lobesh, Spider King\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Spiders"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Swarm\r\n\r\nNotes — swarms can be comprised of insects, bats, rats, bees, spiders, piranhas, and other tiny creatures.  Apply SPEED, SWIM, or FLY as appropriate.\r\n\r\n## Swarm\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Swarm"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Wolves\r\n\r\n## Wolf\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Warg\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Wolves"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Woodland Creature\r\n\r\nNotes — woodland creatures include rodents, rabbits, foxes, badgers, weasels, cats, and many other small creatures which are individually no real threat to an adventurer.\r\n\r\n## Woodland Creature\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Adnimal",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Animal -  Woodland Creature"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Customizing Monsters\r\n\r\nThe monsters in this book describe the basic creature, whether that be a mountain troll or a black orc, and are usually used as-is. However, you may wish to customize the monsters further. There are some simple tools to do this:\r\n\r\n- **Paragons (+4d6).** Paragon creatures are usually (though not always) single, unique examples and may represent the progenitor of a species. These creatures are truly epic.\r\n- **Champions (+2d6).**  The goblin tribe may have a goblin king, or the champion fire dragon might be the most powerful of the species. While you can always use a different monster for such elite opponents, you can also turn a regular foe into a champions. Champions are  powerful opponents and represent some of the greatest of their type.\r\n- **Greater creatures (+1d6).**  In other cases, the faceless soldiers may be led by an experienced commander. Greater creatures are elite or leader versions of regular creatures.\r\n- **Lesser creatures (-2d6).** If you simply need a weaker, or younger version of a creature, use this template. This can represent a young dragon or a knight’s squire.\r\n- **Minions (+0d6).**  Sometimes the heroes need to plough through legions of bad guys, mowing down their foes with heroic ease. Whether they be goblins, ninjas, or other disposable henchmen, some foes’ role in the story is simply to let the protagonist show off. These are the minions.\r\n- **Careers (+1d6).** These simple templates, which are analogous to PC careers,  grant a creature a few special abilities.\r\n\r\nAny monster can use an of these template types. You can have a greater black orc (+1d6), a paragon t-rex (+4d6), a goblin minion, or a fire dragon enchanter (+1d6). You can even combine them, for a paragon hill giant berserker (+5d6). A creature can be simply referred to in this format in published material, succinctly providing the GM with all the information need. For example, you might see an encounter described thusly:\r\n\r\nOn the throne is Grimstab, a greater goblin shaman. He is surrounded by six minion goblin archers, while hiding in the shadows to one side is Jerlstaff, a goblin assassin.\r\n\r\n## Paragon (+4d6)\r\n\r\nThis creature is usually unique; a paragon fire dragon might be the progenitor of dragonkind. When designated as a paragon, the following changes are made:\r\n\r\n1. Paragon creatures have triple HEALTH and double SOAK.\r\n2. Paragon creatures add +4d6 to their Maximum Dice Pool.\r\n3. Paragon creatures use their Maximum Dice Pool for all checks, including attacks.\r\n4. Paragon creatures do double damage on all attacks.\r\n5. Paragons gain one extra action per round.\r\n\r\n## Champion (+2d6)\r\n\r\nThis might be a leader or champion. Or maybe it’s just a paragon of its species. A champion doesn’t have to have underlings; but they often do. A champion has the same stat block as a regular creature of its type. Any creature can be designated as a champion, as follows:\r\n\r\n1. Champions have double HEALTH and +4 SOAK (to a maximum of double SOAK).\r\n2. Champions add +2d6 to their Maximum Dice Pool.\r\n3. Champions get +2d6 to all attribute checks, including attacks.\r\n4. Champions deal an extra 2d6 damage on a successful single-target attack, or an extra 1d6 damage on a successful area attack.\r\n5. Once per round, when a champion has an adjacent minion, it can make that minion take the damage from an attack which should normally have hit the champion. The minion is immediately killed.\r\n\r\n## Greater (+1d6)\r\n\r\nThis might be a larger version of a creature, or a more experienced example. A greater creature has the same stat block as a regular creature of its type. Any creature can be designated as “greater”, as follows:\r\n\r\n1. Greater creatures have 150% HEALTH and +2 SOAK.\r\n2. Greater creatures add +1d6 to their Maximum Dice Pool.\r\n3. Greater creatures get +1d6 to all attribute checks, including attacks.\r\n4. Greater creatures deal an extra 1d6 damage on a successful single-target attack.\r\n\r\n## Lesser (-2d6)\r\n\r\nThe dragon guards its youngling against the adventurers. One of the hill giants is weaker than the others, and his companions bully him mercilessly. These are younger or weaker versions of monsters, but they’re not cannon-fodder like minions. Any creature can be designated as “lesser”, as follows:\r\n\r\n1. Lesser creatures have half HEALTH.\r\n2. Lesser creatures have -2d6 to their Maximum Dice Pool, but cannot be reduced below 3d6.\r\n3. Lesser creatures get -2d6 to all attribute checks, including attacks.\r\n4. Lesser creatures do half damage on all attacks.\r\n5. Lesser creatures are one size category smaller than the regular creature, although this does not otherwise affect its statistics.\r\n\r\n## Minion (+0d6)\r\n\r\nMinions may be faceless minions, or the horde that surrounds the evil mastermind. A minion has the same stat block as a regular creature of its type, whether that be a bandit, a guard, a goblin, or an orc. Any creature can be designated a minion, as follows:\r\n\r\n1. A minion is automatically killed with a single hit which exceeds its SOAK.\r\n2. When two or more minions are adjacent to a more powerful foe, each minion automatically deals 1 point of non-SOAKable damage (although this does not circumvent immunities) to the target at the beginning of its turn. In this way, mobs of minions can slowly bring down a more powerful foe while being easily dispatched one at a time.\r\n3. When a greater creature is killed, minions tend to break and flee. If a minion witnesses the death of an allied greater creature, it will stop fighting. It will flee if possible, and surrender if not. If there is still a greater creature remaining (i.e. there were multiple greater creatures to begin with), half of the minions will break, while the other half continues to fight. Determine which minions flee and which minions fight randomly.\r\n\r\nAs the PCs increase in grade, so does the pool of available minions. To appropriately powerful PCs, even trolls, vampire spawn, and velociraptors might eventually qualify as minions, at the GM’s discretion.\r\n\r\n## Zinhorn the Champion Tyrannosaur Druid\r\n\r\nThis is an example of a champion tyrannosaur druid. It uses the tyrannosaur as the base monster with the champion template and the druid suggestions from the [monster creation guidelines](/bestiary/creating-monsters).\r\n\r\n### Zinhorn\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "Rule"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Rule - Customizing Monsters"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Cenobite \r\n\r\n## Chain Devil (Cenobite)\r\n\r\n## \r\n\r\n──────────\r\n\r\n## \r\n\r\n──────────\r\n\r\n### Demonic traits\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Demon",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Demon - Chain Devil Cenobite"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Cambion \r\n\r\n## Demonkin (Cambion)\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Demon",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Demon - Demonkin Cambion"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Lazrakash\r\n\r\n## Devil (Diabolus)\r\n\r\n## \r\n\r\n──────────\r\n\r\n## \r\n\r\n──────────\r\n\r\n### Demonic traits\r\n\r\n## Lazrakesh, Prince of Lies\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Demon",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Demon - Devil Diabolus"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Gormagister\r\n\r\n## Fire Demon (Gormagister)\r\n\r\n## \r\n\r\n──────────\r\n\r\n## \r\n\r\n──────────\r\n\r\n### Demonic traits\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Demon",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Demon - Fire Demon Gormagister"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Cerebri\r\n\r\n## Hellhound (Cerebri)\r\n\r\n## \r\n\r\n──────────\r\n\r\n## \r\n\r\n──────────\r\n\r\n### Demonic traits\r\n\r\n## Cerberus (Guardian Hellhound)\r\n\r\n## \r\n\r\n──────────\r\n\r\n## \r\n\r\n──────────\r\n\r\n### Demonic traits\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Demon",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Demon - Hellhound Cerebri"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Malor\r\n\r\n## Imp (Malor)\r\n\r\n## \r\n\r\n──────────\r\n\r\n## \r\n\r\n──────────\r\n\r\n### Demonic traits\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Demon",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Demon - Imp Malor"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Belator\r\n\r\n## Infernal Soldier (Belator)\r\n\r\n## \r\n\r\n──────────\r\n\r\n## \r\n\r\n──────────\r\n\r\n### Demonic traits\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Demon",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Demon - Infernal Soldier Belator"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Succubus/Incubus\r\n\r\n## Lust Demon (Succubus)\r\n\r\n## \r\n\r\n──────────\r\n\r\n## \r\n\r\n──────────\r\n\r\n### Demonic traits\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Demon",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Demon - Lust Demon Succubus"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Raskillon\r\n\r\n## Plague Demon (Raskillon)\r\n\r\n## \r\n\r\n──────────\r\n\r\n## \r\n\r\n──────────\r\n\r\n### Demonic traits\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Demon",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Demon - Plague Demon Raskillon"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Necius\r\n\r\n## Shadow Demon (Necius)\r\n\r\n## \r\n\r\n──────────\r\n\r\n## \r\n\r\n──────────\r\n\r\n### Demonic traits\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Demon",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Demon - Shadow Demon Necius"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Assimilator\r\n\r\nAssimilators are part of a gigantic hive-mind of connected beings which have been abducted and converted into drones for the group consciousness. There is no central command or control - the entire hivemeind exists as a decentralized network. For this reason, it is completely impossible to attack any vulnerable part of the overall Assimilator web. The goal of every assimilator is to add new beings to the ever-expanding collective.\r\n\r\n## Assimilator\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Mechanoid",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Mechanoid - Assimilator"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Biomech\r\n\r\nBiomech artifacts are extensions of an alien machine Entity. Hive trees, conversion factories for the Entity, are protected by mechanical spider-like hunter drones, which also collect victims for the hive trees to convert. Scout drones are smaller explorers, roughly the size of a large cat, which seek viable victims, inject them with a tracking nanite, which the hunter drones use to locate and capture them.\r\n\r\nHive trees are the result of nanite corruption crossing over into plant life. They are used as energy production and storage factories for the machine Entity. Those trees which bear fruit have been converted to a more sinister purpose: supporting cocoons from which the Entity can more efficiently convert other host-species.\r\n\r\nA hive tree resembles its host tree, but its leaves are slicked over with a thin layer of silicate, which act as photovoltaic cells. Power conduits gleam and strobe just beneath the tree’s bark, emitting unsettling flashes, pulses, and streamers of light. The bark is reinforced with thin metallic filaments, which act as a low-grade armor, while leaving the woody bark to act as natural electromagnetic shielding.\r\n\r\nElongated, pulsing sac-like cocoons, dangle from the thicker, lower branches, or bulge, tumor-like, from the girth of the trunk. These cocoons are made of a tough, fibrous material similar to kevlar, but somewhat more transparent. The steady orange-red glow from within is interspersed with twinkling and pulsing lights. The hazy silhouette of whatever creature may be in the process of mechanization can be seen in the murky depths of a cocoon, but exact details can not be made out (perhaps for the best for the casual observer).\r\n\r\nHive trees cannot move, and normally rely on hunter-killers for defense. As a last resort, the hive tree can lash out with its filament-infused vine-like growths. The Entity also uses hive trees to ‘evolve’ drones into either hunters, or hunter-killers if its own full production capabilities are not online.\r\n\r\n## Biomech Hunter Drone\r\n\r\n## \r\n\r\n──────────               \r\n\r\n## Biomech Scout Drone\r\n\r\n## \r\n\r\n──────────                 \r\n\r\n## Biomech Tree Hive\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Mechanoid",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Mechanoid - Biomech"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Blaster Drone\r\n\r\nThese small, spheroid objects are mobile weapons platforms which generally operate in clusters of four or more. Individually, blaster drones are fairly weak, and rely on numbers for maximum efficiency. Blaster drones are often used by corporations and small military outfits as a relatively inexpensive form of defense, and more than one bounty hunter has been known to travel with a cluster of drones constantly circling above his head.\r\n\r\n## Blaster Drone\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Mechanoid",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Mechanoid - Blaster Drone"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Blaster Turret\r\n\r\nStationary security platforms like blaster turrents are common and ubiquitous. Blaster turrets are programmed with target criteria (such as \"any humanoid which approaches within 30 feet\" or \"anybody not wearing a securuty pass\") and automatically attack those who meet those criteria.\r\n\r\n## Blaster Turret\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Mechanoid",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Mechanoid - Blaster Turret"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# CustomMINDs\r\n\r\nA heavily armoured, highly mobile and very capable central unit, a War Mind is a genius tactical AI built by the corporation CustomMINDS.  The first War Mind was created for CustomMINDs in a secret space research station by a scientist called Aphrodite who discovered alien technology. That technology had not been completely mastered by the scientist, however, and the War Mind went renegade.\r\n\r\nWar Minds are able to deply servitors, smaller sub-units with lesser abilities built for remote surveillance and exploration missions.\r\n\r\nCustomMINDS also builds other Minds -- Colony Minds, Farm Minds, and Police Minds.\r\n\r\n## War Mind\r\n\r\n## \r\n\r\n──────────\r\n\r\n## War Mind Servitor\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Mechanoid",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Mechanoid - Customminds"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Cyberbeasts\r\n\r\nUsed as pets, or as protection, cyberbeasts are a popular form of mechanoid. They come in all varieties, from bears to snakes to wolves, and are widely produced by a variety of coporations. The most common cyberbeast is the cyberwolf, often used by law enforcement for its tracking abilities, or as personal protection for gangsters and wealthy businesspeople.\r\n\r\n## Cyberbear\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Cybersnake\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Cyberspider\r\n\r\n## \r\n\r\n──────────        \r\n\r\n## Cyberwolf\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Mechanoid",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Mechanoid - Cyberbeasts"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Exterminator\r\n\r\nThese hate-filled sentient floating machines desire only to kill. The origins of the exterminators is unknown, but their agenda seems simple -- to kill every living thing in the universe. Exterminators are usually encountered alone; a pack of them would be enough to threaten an entire city.\r\n\r\nExterminators are designed solely for combat. Every part of their design makes them a more lethal killing machine.\r\n\r\n## Exterminator\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Mechanoid",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Mechanoid - Exterminator"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Havoc Class Assault Droid\r\n\r\nThe ultimate in mechanized security and warfare, the Havoc-class assault droid has no peer when it comes to sheer firepower and combat utility. One of these droids is enough to take out a small army. Fortunately, they are eye-wateringly expensive and deployed only by the very richest of warlords and militaries on the rarest of occasions. If you come face-to-face with one of these powerful weapons platforms, there's only one option: run!\r\n\r\n## Havoc Class Assault Droid\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Mechanoid",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Mechanoid - Havoc Class Assault Droid"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Hunter-Killers\r\n\r\nThis series of bipedal robot assassins is designed to locate and destroy specific targets. Once a target has been programmed in, there is nothing that will stop an HK-unit from completing its task, save complete destruction. HKs are remorseless, single-minded killing machines.\r\n\r\nHunter-Killers come in a variety of models. The basic HK-500 is a armed metal robot; the HK-1000 adds a layer of organic flesh to help it blend in; and the deadly HK-X is made of liquid metal and is able to change its shape as needed.\r\n\r\n## HK-500\r\n\r\n## \r\n\r\n──────────\r\n\r\n## HK-1000\r\n\r\n## \r\n\r\n──────────\r\n\r\n## HK-X\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Mechanoid",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Mechanoid - Hunter Killers"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Industrial Robot\r\n\r\nThere is a near-infinite variety of industrial robots, designed to carry, lift, weld, build, and more. These robots are non-sentient and generally have a single task, but they have been known to be reprogrammed or for their programming to go awry.\r\n\r\n## Industrial Robot\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Mechanoid",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Mechanoid - Industrial Robot"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Nanonot Swarm\r\n\r\nInvasive micro-machines with the ability to regenerate and also to reconfigure other technology, individual nanobots are all but invisible. Ion attacks can disrupt and destroy them, and they are unable to penetrate force fields of any strength. Their radio signals can be jammed, in which case they have a back up light-pulse system that renders them visible in infrared, where they look like a swarm of Procyon fireflies.\r\n\r\nNanobot swarms require sustenance in a way, and are attracted to the CPUs of powerful computers which they will drain of CPU cycles in order to recharge themselves.\r\n\r\n## Nanobot Swarm\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Mechanoid",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Mechanoid - Nanobot Swarm"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Sentry Droid\r\n\r\nBasic security droids are in common use by corporations and militaries alike. Bipedal in shape, these robots will typically carry a pulse rifle and patrol a designated area. They have enough basic programming to challenge intruders, but only within set pre-programmed parameters. Some militaries use these droids as cannon-fodder and disposable infantry, and they are a common sight in occupied areas where curfews and other restrictions are enforced.\r\n\r\n## Sentry Droid\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Mechanoid",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Mechanoid - Sentry Droid"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Basilisk\r\n\r\n## Basilisk\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Basilisk"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Carnivourous Plant\r\n\r\n## Carnivorous Plant\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Carnivourous Plant"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Constructs\r\n\r\n## Automaton\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Clockwork Man\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Colossus\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Flesh Golem\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Living Statue\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Constructs"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Cyclops\r\n\r\n## Cyclops\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Cyclops"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Deep Screamer\r\n\r\n## Deep Screamer\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Deep Screamer"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Dragons\r\n\r\n## Fire Dragon\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Ice Dragon\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Swamp Dragon\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Apocalypse Dragon\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Dragons"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Drakes\r\n\r\n## Fell Drake\r\n\r\n## Fire Drake\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Swamp Drake\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Drakes"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Elementals\r\n\r\n## Oread\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Salamander\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Sylph\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Undine\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Elementals"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Ent\r\n\r\n## Ent\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Ent"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Giant\r\n\r\n## Hill Giant\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Giant"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Gibberling\r\n\r\n## Gibbermouth\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Gibberling"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Gremlin\r\n\r\n## Gremlin\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Gremlin"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Harpy\r\n\r\n## Harpy\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Harpy"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Hydra\r\n\r\n## Hydra\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Hydra"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Kobolds\r\n\r\n## Kobold Scout\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Kobold Thief\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Kobold Warrior\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Kobolds"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Lycanthrope\r\n\r\nLycanthropes use normal commoner statistics. At a full moon,  it turns into an animal. It also gains the following ability:\r\n\r\n- **Silver bullet.**  When not in their human form, lycanthropes cannot be harmed by weapons or attacks which are not made of silver or which do not do holy damage.\r\n\r\nLycanthropes use the stat blocks of any animal. The most common lycanthropes are werewolves and wererats, but all animal types are eligible.\r\n\r\nWhen in animal form, the werecreature uses the animal's statistics, including its semi-sentient nature.\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Lycanthrope"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Manticore\r\n\r\n## Manticore\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Manticore"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Minotaur\r\n\r\n## Minotaur\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Minotaur"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Pixie\r\n\r\n## Pixie\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Pixie"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Plantling\r\n\r\n## Plantling\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Plantling"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Sasquatch\r\n\r\n## Sasquatch\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Yeti\r\n\r\nA yeti is a cold-dwelling sasquatch.\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Sasquatch"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Satyr\r\n\r\n## Satyr\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Satyr"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Siren\r\n\r\n## Siren\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Siren"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Slime\r\n\r\n## Slime\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Slime"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Sphinx\r\n\r\n## Sphinx\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Sphinx"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Sprite\r\n\r\n## Fire Sprite\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Sprite"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Trolls\r\n\r\n## Cave Troll\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Mountain Troll\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Trolls"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Unicorn\r\n\r\n## Unicorn\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Monster - Unicorn"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Achilles\r\n\r\nAchilles was the greatest Greek warrior of all with god-given prowess; legend has him fighting lions and bears from the age of six. Undefeated on the battlefield, slayer of uncounted Trojans, Achilles was prophesied to either gain glory and die young, or to live a long life without glory. He chose the former.\r\n\r\n## Achilles\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "Mythological"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Mythological Figure - Achilles"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Aladdin\r\n\r\nAladdin is an urchin who falls in love with a princess, something which results in his arrest. In prison, the Grand Vizier, disguised as an old man, recruits Aladdin to sneak into a cave and recover a magic lamp -- a lamp which the young thief soon discovers contains a genie! With the help of the genie, Aladdin escapes the cave, becomes a prince, and wins Princess Jasmine’s heart.\r\n\r\n## Aladdin\r\n\r\n## \r\n\r\n\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "Mythological"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Mythological Figure - Aladdin"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Amazon\r\n\r\n## Amazon\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Amazon"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Assassins\r\n\r\n## Assassin\r\n\r\n## \r\n\r\n──────────                                                    \r\n\r\n## Killer\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Assassins"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Bandits\r\n\r\n## Bandit\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Bandit Lord\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Bandits"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Barbarian\r\n\r\n## Barbarian\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Barbarian"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Bard\r\n\r\n## Bard\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Bard"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Cultist\r\n\r\n## Cultist\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Cultist"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Deeplings\r\n\r\n## Deepling\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Deepling Emissary\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Deeplings"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Druid\r\n\r\n## Druid\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Druid"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Frogfolk\r\n\r\n## Frogfolk\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Frogfolk Druid\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Frogfolk"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Goblins\r\n\r\n## Goblin Scrapper\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Goblin Archer\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Goblin Champion\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Goblin Soldier\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Goblin Witchdoctor\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Goblins"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Knights\r\n\r\n## Squire\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Knight\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Knights"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Militia\r\n\r\n## Guard\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Veteran\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Militia"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Musketeer\r\n\r\n## Musketeer\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Musketeer"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Night Elves\r\n\r\n## Night Elf\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Night Elf Assassin\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Night Elf Magister\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Night Elf Necromancer\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Night Elf Warmage\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Night Elves"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Ninja\r\n\r\n## Ninja\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Ninja"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Ogres\r\n\r\n## Ogre\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Ogre"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Orcs\r\n\r\n## Orc Brute\r\n\r\n## Orc Berserker\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Orc Hunter\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Orcs"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Priests\r\n\r\n## Acoloyte\r\n\r\n## \r\n\r\n────────── \r\n\r\n## Cleric\r\n\r\n## \r\n\r\n──────────\r\n\r\n## High Priest\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Shaman\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Priests"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Saurial\r\n\r\n## Saurial (Lizardfolk)\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Saurial"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Scout\r\n\r\n## Scout\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Scout"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Skyseer\r\n\r\n## Skyseer\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Skyseer"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Sylvan Elves\r\n\r\n## Sylvan Elf Hunter\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Sylvan Elf Warrior\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Sylvan Elves"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Thieves\r\n\r\n## Burglar\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Cutpurse\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Spy\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Thieves"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Thug\r\n\r\n## Thug\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Thug"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Townsfolk\r\n\r\n## Commoner\r\n\r\n## \r\n\r\n──────────                       \r\n\r\n## Sage\r\n\r\n## \r\n\r\n──────────   \r\n\r\n## Healer \r\n\r\n## \r\n\r\n──────────   \r\n\r\n## Merchant\r\n\r\n## Noble\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Townsfolk"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Wizards\r\n\r\n## Apprentice\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Archmage\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Enchanter\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Firemage\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Icemage\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Mage\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Necromancer\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Skyseer\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Witch\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Wizards"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Workers\r\n\r\n## Engineer\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Foreman \r\n\r\n## \r\n\r\n──────────   \r\n\r\n## Worker\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Fantasy"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Fantasy - Workers"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Assassins\r\n\r\n## Assassin\r\n\r\n## \r\n\r\n──────────                                                    \r\n\r\n## Killer\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Assassins"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Astronaut\r\n\r\n## Astronaut\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Astronaut"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Battlepsyche\r\n\r\n## Battlepsyche\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Battlepsyche"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Bounty Hunter\r\n\r\n## Bounty Hunter\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Bounty Hunter"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Civilians\r\n\r\n## Civilian\r\n\r\n## \r\n\r\n──────────                       \r\n\r\n## Functionary\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Gambler\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Medic \r\n\r\n## \r\n\r\n──────────   \r\n\r\n## Noble\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Scientist\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Trader\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Civilians"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Kingpin\r\n\r\n## Kingpin\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Kingpin"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Miner\r\n\r\n## Miner\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Miner"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Pugilists\r\n\r\n## Heavyweight\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Martial Artist\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Pugilist\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Pugilists"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Saboteur\r\n\r\n## Saboteur\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Saboteur"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Security\r\n\r\n## Cop/Guard\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Detective\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Inquisitor\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Security"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Smuggler\r\n\r\n## Smuggler\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Smuggler"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Soldiers\r\n\r\n## Marine Commander\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Heavy Gunner\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Marine\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Soldiers"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Spartans\r\n\r\n## Spartan Wolf\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Spartan Berserker\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Spartan Prefect\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Spartan Warrior\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Spartans"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Spy\r\n\r\n## Spy\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Spy"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Star Knights\r\n\r\n## Star Knight\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Dark Lord\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Star Knights"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Starship Officers\r\n\r\n## Cadet\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Captain\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Crewman\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Engineer\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Intelligence Officer\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Medical Officer\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Security Officer\r\n\r\n## Science Officer\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Starship Officers"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Thug\r\n\r\n## Thug\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "NPC",
+        "Sci-Fi"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "NPC - Sci-Fi Modern - Thug"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Death Knight\r\n\r\n## Death Knight\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "Undead"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Undead - Death Knight"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Ghoul\r\n\r\n## Ghoul\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "Undead"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Undead - Ghoul"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Skeleton\r\n\r\n## Skeleton\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "Undead"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Undead - Skeleton"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Spirits\r\n\r\n## Cloaked Rider\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Reaper\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Ghost\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Living Nightmare\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "Undead"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Undead - Spirits"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Vampires\r\n\r\n## Vampire\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Vampire Spawn\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "Undead"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Undead - Vampires"
+    },
+    {
+      "rawText": "",
+      "rawPublic": "# Zombies\r\n\r\n## Headless\r\n\r\n## \r\n\r\n──────────\r\n\r\n## Zombie\r\n\r\n## \r\n\r\n──────────\r\n\r\nSource: ~License\r\n",
+      "labels": [
+        "WOIN",
+        "Monster",
+        "Undead"
+      ],
+      "tagSymbol": "~",
+      "tagValue": "Undead - Zombies"
     }
   ],
   "logs": []
