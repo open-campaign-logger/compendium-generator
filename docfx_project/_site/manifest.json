@@ -955,10 +955,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CampaignKit.Compendium.Tests.WOIN.yml",
       "output": {
         ".html": {
           "relative_path": "api/CampaignKit.Compendium.Tests.WOIN.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.WebScraper.SRDWebPageTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.WebScraper.SRDWebPageTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.WebScraper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.WebScraper.html"
         }
       },
       "version": ""
@@ -1029,6 +1059,16 @@
       "output": {
         ".html": {
           "relative_path": "api/CampaignKit.Compendium.WOIN.Common.WOINWebPage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html"
         }
       },
       "version": ""

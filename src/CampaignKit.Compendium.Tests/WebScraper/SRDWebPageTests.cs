@@ -7,10 +7,10 @@ using CampaignKit.Compendium.WOIN.Common;
 
 using Newtonsoft.Json;
 
-namespace CampaignKit.Compendium.Tests.WOIN
+namespace CampaignKit.Compendium.Tests.WebScraper
 {
     [TestClass]
-    public class WOINConversionTests
+    public class SRDWebPageTests
     {
 
         /// <summary>
@@ -29,6 +29,24 @@ namespace CampaignKit.Compendium.Tests.WOIN
             // Assert
             Assert.IsNotNull(document);
             Assert.AreEqual(document.DocumentNode.SelectNodes("//head").Count, 1);
+        }
+
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"WOIN\TestFiles\vehicle-combat.html")]
+        public void SRDWebPageHelper_LoadHtmlDocumentStartingNode_NavigationSuccessful()
+        {
+            // Arrange
+            var html = File.ReadAllText("vehicle-combat.html");
+
+            // Act
+            var document = SRDWebPageHelper.LoadHtmlDocument(html, "//div[@role='main'][1]");
+
+            // Assert
+            Assert.IsNotNull(document);
+            Assert.AreEqual(document.DocumentNode.FirstChild.Name, "div");
         }
     }
 }

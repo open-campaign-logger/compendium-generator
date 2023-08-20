@@ -65,47 +65,8 @@ namespace CampaignKit.Compendium.WOIN.Common
             var sectionNodes = doc.DocumentNode.SelectNodes("//div[@role='main']/section");
             foreach (var sectionNode in sectionNodes)
             {
-                // Select all content elements.
-                var contentNodes = sectionNode.SelectNodes(".//h1 | .//h2 | .//h3 | .//h4 | .//h5 | .//h6 | .//ul | .//ol | .//p");
-
-                // If contentNodes is null, skip this section.
-                if (contentNodes == null)
-                {
-                    continue;
-                }
-
-                // Create a new node to hold content extracted from the section.
-                var newSectionNode = HtmlNode.CreateNode("<div></div>");
-
-                // Create table node for holding parsed table data.
-                var table = HtmlNode.CreateNode("<table></table>");
-
-                // Add each content item to the new node.
-                foreach (var contentNode in contentNodes)
-                {
-                    if (table != null && WOINHelper.ContainsTableData(contentNode))
-                    {
-                        WOINHelper.AddRowToTable(table, contentNode);
-                    }
-                    else
-                    {
-                        // Is there table data that needs to be copied?
-                        if (table != null && table.ChildNodes.Count > 0)
-                        {
-                            newSectionNode.AppendChild(table);
-                            table = HtmlNode.CreateNode("<table></table>");
-                        }
-
-                        // Copy the node as-is
-                        newSectionNode.AppendChild(contentNode);
-                    }
-                }
-
-                // Is there table data that needs to be copied?
-                if (table != null && table.ChildNodes.Count > 0)
-                {
-                    newSectionNode.AppendChild(table);
-                }
+                // Parse the section conent
+                var newSectionNode = WOINWebPageHelper.ParseSectionContent(sectionNode);
 
                 // Replace the old section node with the new section node.
                 sectionNode.ParentNode.ReplaceChild(newSectionNode, sectionNode);
