@@ -1302,6 +1302,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Core.Configuration.SourceDataSet.SourceDataSetURI
   nameWithType: SourceDataSet.SourceDataSetURI
+- uid: CampaignKit.Compendium.Core.Configuration.SourceDataSet.Substitutions
+  name: Substitutions
+  href: api/CampaignKit.Compendium.Core.Configuration.SourceDataSet.html#CampaignKit_Compendium_Core_Configuration_SourceDataSet_Substitutions
+  commentId: P:CampaignKit.Compendium.Core.Configuration.SourceDataSet.Substitutions
+  fullName: CampaignKit.Compendium.Core.Configuration.SourceDataSet.Substitutions
+  nameWithType: SourceDataSet.Substitutions
+- uid: CampaignKit.Compendium.Core.Configuration.SourceDataSet.Substitutions*
+  name: Substitutions
+  href: api/CampaignKit.Compendium.Core.Configuration.SourceDataSet.html#CampaignKit_Compendium_Core_Configuration_SourceDataSet_Substitutions_
+  commentId: Overload:CampaignKit.Compendium.Core.Configuration.SourceDataSet.Substitutions
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Core.Configuration.SourceDataSet.Substitutions
+  nameWithType: SourceDataSet.Substitutions
 - uid: CampaignKit.Compendium.Core.Configuration.SourceDataSet.TagSymbol
   name: TagSymbol
   href: api/CampaignKit.Compendium.Core.Configuration.SourceDataSet.html#CampaignKit_Compendium_Core_Configuration_SourceDataSet_TagSymbol
@@ -1341,6 +1354,38 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Core.Configuration.SourceDataSet.XPath
   nameWithType: SourceDataSet.XPath
+- uid: CampaignKit.Compendium.Core.Configuration.Substitution
+  name: Substitution
+  href: api/CampaignKit.Compendium.Core.Configuration.Substitution.html
+  commentId: T:CampaignKit.Compendium.Core.Configuration.Substitution
+  fullName: CampaignKit.Compendium.Core.Configuration.Substitution
+  nameWithType: Substitution
+- uid: CampaignKit.Compendium.Core.Configuration.Substitution.HTML
+  name: HTML
+  href: api/CampaignKit.Compendium.Core.Configuration.Substitution.html#CampaignKit_Compendium_Core_Configuration_Substitution_HTML
+  commentId: P:CampaignKit.Compendium.Core.Configuration.Substitution.HTML
+  fullName: CampaignKit.Compendium.Core.Configuration.Substitution.HTML
+  nameWithType: Substitution.HTML
+- uid: CampaignKit.Compendium.Core.Configuration.Substitution.HTML*
+  name: HTML
+  href: api/CampaignKit.Compendium.Core.Configuration.Substitution.html#CampaignKit_Compendium_Core_Configuration_Substitution_HTML_
+  commentId: Overload:CampaignKit.Compendium.Core.Configuration.Substitution.HTML
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Core.Configuration.Substitution.HTML
+  nameWithType: Substitution.HTML
+- uid: CampaignKit.Compendium.Core.Configuration.Substitution.XPath
+  name: XPath
+  href: api/CampaignKit.Compendium.Core.Configuration.Substitution.html#CampaignKit_Compendium_Core_Configuration_Substitution_XPath
+  commentId: P:CampaignKit.Compendium.Core.Configuration.Substitution.XPath
+  fullName: CampaignKit.Compendium.Core.Configuration.Substitution.XPath
+  nameWithType: Substitution.XPath
+- uid: CampaignKit.Compendium.Core.Configuration.Substitution.XPath*
+  name: XPath
+  href: api/CampaignKit.Compendium.Core.Configuration.Substitution.html#CampaignKit_Compendium_Core_Configuration_Substitution_XPath_
+  commentId: Overload:CampaignKit.Compendium.Core.Configuration.Substitution.XPath
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Core.Configuration.Substitution.XPath
+  nameWithType: Substitution.XPath
 - uid: CampaignKit.Compendium.Core.Services
   name: CampaignKit.Compendium.Core.Services
   href: api/CampaignKit.Compendium.Core.Services.html
@@ -8962,6 +9007,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.SourceDataSetURI
   nameWithType: SRDWebPage.SourceDataSetURI
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Substitutions
+  name: Substitutions
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Substitutions
+  commentId: P:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Substitutions
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Substitutions
+  nameWithType: SRDWebPage.Substitutions
+- uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Substitutions*
+  name: Substitutions
+  href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_Substitutions_
+  commentId: Overload:CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Substitutions
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.Substitutions
+  nameWithType: SRDWebPage.Substitutions
 - uid: CampaignKit.Compendium.WebScraper.Common.SRDWebPage.ToCampaignEntry
   name: ToCampaignEntry()
   href: api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html#CampaignKit_Compendium_WebScraper_Common_SRDWebPage_ToCampaignEntry

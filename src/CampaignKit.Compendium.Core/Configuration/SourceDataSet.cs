@@ -22,16 +22,6 @@ namespace CampaignKit.Compendium.Core.Configuration
     public class SourceDataSet
     {
         /// <summary>
-        /// Gets or sets the name of the parser to use for deserializing license data.
-        /// </summary>
-        public string LicenseDataParser { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Gets or sets the Uniform Resource Identifier (URI) where the license data for the game source data is located.
-        /// </summary>
-        public string LicenseDataURI { get; set; } = string.Empty;
-
-        /// <summary>
         /// Gets or sets the limit on the number of items to import into the compendium
         /// from the data source.  Generally this is only used for testing purposes
         /// to limit the size of the generated compendiums.
@@ -45,15 +35,20 @@ namespace CampaignKit.Compendium.Core.Configuration
         public List<string> Labels { get; set; } = new List<string>();
 
         /// <summary>
+        /// Gets or sets the name of the parser to use for deserializing license data.
+        /// </summary>
+        public string LicenseDataParser { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Gets or sets the Uniform Resource Identifier (URI) where the license data for the game source data is located.
+        /// </summary>
+        public string LicenseDataURI { get; set; } = string.Empty;
+
+        /// <summary>
         /// Gets or sets a value indicating whether new data should be downloaded to replace
         /// existing data.
         /// </summary>
         public bool OverwriteExisting { get; set; } = false;
-
-        /// <summary>
-        /// Gets or sets the name of the parser to use for deserializing source data.
-        /// </summary>
-        public string SourceDataSetParser { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the name of the source data set. This is primarily used for identification purposes.
@@ -61,9 +56,19 @@ namespace CampaignKit.Compendium.Core.Configuration
         public string SourceDataSetName { get; set; } = string.Empty;
 
         /// <summary>
+        /// Gets or sets the name of the parser to use for deserializing source data.
+        /// </summary>
+        public string SourceDataSetParser { get; set; } = string.Empty;
+
+        /// <summary>
         /// Gets or sets the Uniform Resource Identifier (URI) where the actual game source data is located.
         /// </summary>
         public string SourceDataSetURI { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Gets or sets the list of XPath/HTML susbstitutions to use with for this data source.
+        /// </summary>
+        public List<Substitution> Substitutions { get; set; } = new List<Substitution> { };
 
         /// <summary>
         /// Gets or sets the tag entry to use for campaign entries derived from this source.

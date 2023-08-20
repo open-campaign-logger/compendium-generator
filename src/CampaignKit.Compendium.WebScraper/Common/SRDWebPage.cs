@@ -23,6 +23,7 @@ namespace CampaignKit.Compendium.WebScraper.Common
 
     using CampaignKit.Compendium.Core.CampaignLogger;
     using CampaignKit.Compendium.Core.Common;
+    using CampaignKit.Compendium.Core.Configuration;
     using CampaignKit.Compendium.Core.Services;
 
     using HtmlAgilityPack;
@@ -58,6 +59,11 @@ namespace CampaignKit.Compendium.WebScraper.Common
         /// Gets or sets the URI of the source data to download.
         /// </summary>
         public string SourceDataSetURI { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Gets or sets the list of XPath/HTML susbstitutions to use with for this data source.
+        /// </summary>
+        public List<Substitution> Substitutions { get; set; } = new List<Substitution> { };
 
         /// <summary>
         /// Gets or sets the optional XPath to use to navigate to the web page content.
@@ -115,6 +121,26 @@ namespace CampaignKit.Compendium.WebScraper.Common
 
             // Load the HTML and, optionally, navigate to the content location.
             var doc = SRDWebPageHelper.LoadHtmlDocument(html, this.XPath);
+
+            // Perform substitutions if required
+            if (this.Substitutions != null && this.Substitutions.Count > 0)
+            {
+                foreach (var substitution in this.Substitutions)
+                {
+                    // Find the node
+                    var oldNode = doc.DocumentNode.SelectSingleNode(substitution.XPath);
+
+                    // Perform the substitution
+                    if (oldNode != null)
+                    {
+                        // Create a new node with the new HTML content
+                        HtmlNode newNode = HtmlNode.CreateNode(substitution.HTML);
+
+                        // Replace the old node with the new node
+                        oldNode.ParentNode.ReplaceChild(newNode, oldNode);
+                    }
+                }
+            }
 
             // Convert the HTML to Markdown
             var config = new Config

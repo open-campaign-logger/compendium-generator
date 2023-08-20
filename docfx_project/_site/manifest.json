@@ -215,6 +215,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Configuration.Substitution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Configuration.Substitution.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CampaignKit.Compendium.Core.Configuration.yml",
       "output": {
         ".html": {

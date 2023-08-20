@@ -118,6 +118,7 @@ namespace CampaignKit.Compendium.WebScraper.Services
                 ((SRDWebPage)parser).TagSymbol = sourceDataSet.TagSymbol ?? string.Empty;
                 ((SRDWebPage)parser).TagValuePrefix = sourceDataSet.TagValuePrefix ?? string.Empty;
                 ((SRDWebPage)parser).Labels = sourceDataSet.Labels ?? new List<string>();
+                ((SRDWebPage)parser).Substitutions = sourceDataSet.Substitutions ?? new List<Substitution>();
 
                 // Extract campaign entries from the SRDWebPage opbject.
                 campaignEntries.AddRange(await ((SRDWebPage)parser).GetCampaignEntitiesAsync(

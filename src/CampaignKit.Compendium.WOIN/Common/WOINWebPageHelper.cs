@@ -213,7 +213,7 @@ namespace CampaignKit.Compendium.WOIN.Common
             var newSectionNode = HtmlNode.CreateNode("<div></div>");
 
             // Select all content elements.
-            var contentNodes = node.SelectNodes(".//h1 | .//h2 | .//h3 | .//h4 | .//h5 | .//h6 | .//ul[not(.//ul)] | .//ol | .//p[not(ancestor::ul) and not(ancestor::ol)]");
+            var contentNodes = node.SelectNodes(".//h1 | .//h2 | .//h3 | .//h4 | .//h5 | .//h6 | .//ul[not(.//ul)] | .//ol | .//p[not(ancestor::ul) and not(ancestor::ol)] | .//table");
 
             // If contentNodes is not null, process its contents
             if (contentNodes != null)
