@@ -26,14 +26,14 @@ namespace CampaignKit.Compendium.WOIN.Common
     public class WOINWebPageHelper
     {
         /// <summary>
-        /// Adds a new rowNode to the specified HTML tableNode. The rowNode is created from the provided
-        /// HtmlNode, and cells are extracted based on specific criteria. If the rowNode is determined
-        /// to be a header rowNode, the cells will be created with the 'th' tag; otherwise, they will be
+        /// Adds a new stat to the specified HTML statblock. The stat is created from the provided
+        /// HtmlNode, and cells are extracted based on specific criteria. If the stat is determined
+        /// to be a header stat, the cells will be created with the 'th' tag; otherwise, they will be
         /// created with the 'td' tag.
         /// </summary>
-        /// <param name="tableNode">The HtmlNode representing the tableNode to which the rowNode will be added.</param>
+        /// <param name="tableNode">The HtmlNode representing the statblock to which the stat will be added.</param>
         /// <param name="rowNode">
-        /// The HtmlNode representing the rowNode that will be added to the tableNode. The rowNode should
+        /// The HtmlNode representing the stat that will be added to the statblock. The stat should
         /// contain span elements with class 'C9DxTc' and not contain nested span elements with
         /// class 'Apple-tab-span'.
         /// </param>
@@ -53,10 +53,10 @@ namespace CampaignKit.Compendium.WOIN.Common
             // Create a new HTML node for the row
             var newRow = HtmlNode.CreateNode("<tr></tr>");
 
-            // Select all <span> elements within the rowNode
+            // Select all <span> elements within the stat
             var cellNodes = rowNode.SelectNodes(".//span[@class='C9DxTc ' and not(.//span[@class='Apple-tab-span '])]");
 
-            // Determine if this is a header rowNode, if so use the 'th' tag
+            // Determine if this is a header stat, if so use the 'th' tag
             // for the content.  If not, use 'td'.
             var isHeaderRow = tableNode.ChildNodes.Count == 0;
 
@@ -66,7 +66,7 @@ namespace CampaignKit.Compendium.WOIN.Common
                 // Determine if a new line has been found
                 if (cellNode.FirstChild.Name.Equals("br", StringComparison.InvariantCultureIgnoreCase))
                 {
-                    // Add the rowNode to the tableNode
+                    // Add the stat to the statblock
                     tableNode.AppendChild(newRow);
 
                     // Create a new HTML node for the row
@@ -78,19 +78,45 @@ namespace CampaignKit.Compendium.WOIN.Common
                 var tagSymbol = isHeaderRow ? "th" : "td";
                 var newCellNode = HtmlNode.CreateNode($"<{tagSymbol}>{cellNode.InnerText}</{tagSymbol}>");
 
-                // Append the cell node to the rowNode
+                // Append the cell node to the stat
                 newRow.AppendChild(newCellNode);
             }
 
-            // Add the rowNode to the tableNode
+            // Add the stat to the statblock
             tableNode.AppendChild(newRow);
+        }
+
+        /// <summary>
+        /// Adds the provided stat to the provided statblock.
+        /// </summary>
+        /// <param name="statblock">The HtmlNode representing the statblock to which the stat will be added.</param>
+        /// <param name="stat">The HtmlNode representing the stat that will be added to the statblock.</param>
+        public static void AddRowToStatblock(HtmlNode statblock, HtmlNode stat)
+        {
+            // Validate method parametesr
+            if (statblock == null)
+            {
+                throw new ArgumentNullException(nameof(statblock));
+            }
+
+            if (stat == null)
+            {
+                throw new ArgumentNullException(nameof(stat));
+            }
+
+            // Add a line break.
+            statblock.AppendChild(HtmlNode.CreateNode("</br>"));
+
+            // Add the stat.
+            // Create a new HTML node for the row
+            statblock.AppendChild(stat);
         }
 
         /// <summary>
         /// Determines if the provided HtmlNode contains list data.
         /// </summary>
         /// <param name="node">The HtmlNode to inspect.</param>
-        /// <returns>True if the HtmlNod contains list data, false otherwise.</returns>
+        /// <returns>True if the HtmlNode contains list data, false otherwise.</returns>
         public static bool ContainsListData(HtmlNode node)
         {
             // Validate method parametesr
@@ -105,10 +131,27 @@ namespace CampaignKit.Compendium.WOIN.Common
         }
 
         /// <summary>
-        /// Determines if the provided HtmlNode contains tableNode data.
+        /// Determines if the provided HtmlNode contains statblock data.
         /// </summary>
         /// <param name="node">The HtmlNode to inspect.</param>
-        /// <returns>True if the HtmlNod contains tableNode data, false otherwise.</returns>
+        /// <returns>True if the HtmlNode contains statblock  data, false otherwise.</returns>
+        public static bool ContainsStatblockData(HtmlNode node)
+        {
+            // Validate method parametesr
+            if (node == null)
+            {
+                throw new ArgumentNullException(nameof(node));
+            }
+
+            // Evaluate parameter.
+            return node.Name.Equals("small", StringComparison.InvariantCultureIgnoreCase);
+        }
+
+        /// <summary>
+        /// Determines if the provided HtmlNode contains statblock data.
+        /// </summary>
+        /// <param name="node">The HtmlNode to inspect.</param>
+        /// <returns>True if the HtmlNod contains statblock data, false otherwise.</returns>
         public static bool ContainsTableData(HtmlNode node)
         {
             // Validate method parametesr
@@ -187,18 +230,34 @@ namespace CampaignKit.Compendium.WOIN.Common
         }
 
         /// <summary>
+        /// Gets the content nodes from the specified HTML node.
+        /// </summary>
+        /// <param name="node">The HTML node.</param>
+        /// <returns>A collection of HTML nodes.</returns>
+        public static HtmlNodeCollection GetContentNodes(HtmlNode node)
+        {
+            // Validate method parametesr
+            if (node == null)
+            {
+                throw new ArgumentNullException(nameof(node));
+            }
+
+            return node.SelectNodes(".//h1 | .//h2 | .//h3 | .//h4 | .//h5 | .//h6 | .//ul[not(.//ul)] | .//ol | .//p[not(ancestor::ul) and not(ancestor::ol)] | .//table | .//small");
+        }
+
+        /// <summary>
         /// Parses the content of a given HTML section node, extracting specific elements such as
-        /// headings, lists, and paragraphs. If the content contains tableNode data, it is organized
-        /// into a tableNode structure within the returned node.
+        /// headings, lists, and paragraphs. If the content contains statblock data, it is organized
+        /// into a statblock structure within the returned node.
         /// </summary>
         /// <param name="node">The HtmlNode representing the section to be parsed.</param>
         /// <returns>
         /// An HtmlNode containing the parsed content, organized into a 'div' element, with any
-        /// tableNode data structured into 'tableNode' elements.
+        /// statblock data structured into 'statblock' elements.
         /// </returns>
         /// <remarks>
         /// The method specifically looks for the following elements within the section: h1, h2, h3,
-        /// h4, h5, h6, ul, ol, and p. If tableNode data is detected, it is handled using the
+        /// h4, h5, h6, ul, ol, and p. If statblock data is detected, it is handled using the
         /// WOINWebPageHelper.ContainsTableData and WOINWebPageHelper.AddRowToTable methods.
         /// </remarks>
         public static HtmlNode ParseSectionContent(HtmlNode node)
@@ -213,13 +272,16 @@ namespace CampaignKit.Compendium.WOIN.Common
             var newSectionNode = HtmlNode.CreateNode("<div></div>");
 
             // Select all content elements.
-            var contentNodes = node.SelectNodes(".//h1 | .//h2 | .//h3 | .//h4 | .//h5 | .//h6 | .//ul[not(.//ul)] | .//ol | .//p[not(ancestor::ul) and not(ancestor::ol)] | .//table");
+            var contentNodes = WOINWebPageHelper.GetContentNodes(node);
 
             // If contentNodes is not null, process its contents
             if (contentNodes != null)
             {
-                // Create tableNode node for holding parsed tableNode data.
+                // Create node for holding parsed table data.
                 var table = HtmlNode.CreateNode("<table></table>");
+
+                // Create node for holding parsed stat block data.
+                var statblock = HtmlNode.CreateNode("<div></div>");
 
                 // Add each content item to the new node.
                 foreach (var contentNode in contentNodes)
@@ -232,13 +294,24 @@ namespace CampaignKit.Compendium.WOIN.Common
                     {
                         newSectionNode.AppendChild(WOINWebPageHelper.GetList(contentNode));
                     }
+                    else if (statblock != null && WOINWebPageHelper.ContainsStatblockData(contentNode))
+                    {
+                        WOINWebPageHelper.AddRowToStatblock(statblock, contentNode);
+                    }
                     else
                     {
-                        // Is there tableNode data that needs to be copied?
+                        // Is there table data that needs to be added to the DOM?
                         if (table != null && table.ChildNodes.Count > 0)
                         {
                             newSectionNode.AppendChild(table);
                             table = HtmlNode.CreateNode("<table></table>");
+                        }
+
+                        // Is there statblock data that needs to be added to the DOM?
+                        if (statblock != null && statblock.ChildNodes.Count > 0)
+                        {
+                            newSectionNode.AppendChild(statblock);
+                            statblock = HtmlNode.CreateNode("<div></div>");
                         }
 
                         // Copy the node as-is
@@ -246,8 +319,14 @@ namespace CampaignKit.Compendium.WOIN.Common
                     }
                 }
 
-                // Is there tableNode data that needs to be copied?
+                // Is there table data that needs to be copied?
                 if (table != null && table.ChildNodes.Count > 0)
+                {
+                    newSectionNode.AppendChild(table);
+                }
+
+                // Is there statblock data that needs to be copied?
+                if (statblock != null && statblock.ChildNodes.Count > 0)
                 {
                     newSectionNode.AppendChild(table);
                 }

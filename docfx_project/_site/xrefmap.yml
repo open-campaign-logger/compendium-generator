@@ -9203,6 +9203,19 @@ references:
   commentId: T:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper
   fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper
   nameWithType: WOINWebPageHelper
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.AddRowToStatblock(HtmlAgilityPack.HtmlNode,HtmlAgilityPack.HtmlNode)
+  name: AddRowToStatblock(HtmlNode, HtmlNode)
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_AddRowToStatblock_HtmlAgilityPack_HtmlNode_HtmlAgilityPack_HtmlNode_
+  commentId: M:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.AddRowToStatblock(HtmlAgilityPack.HtmlNode,HtmlAgilityPack.HtmlNode)
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.AddRowToStatblock(HtmlAgilityPack.HtmlNode, HtmlAgilityPack.HtmlNode)
+  nameWithType: WOINWebPageHelper.AddRowToStatblock(HtmlNode, HtmlNode)
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.AddRowToStatblock*
+  name: AddRowToStatblock
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_AddRowToStatblock_
+  commentId: Overload:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.AddRowToStatblock
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.AddRowToStatblock
+  nameWithType: WOINWebPageHelper.AddRowToStatblock
 - uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.AddRowToTable(HtmlAgilityPack.HtmlNode,HtmlAgilityPack.HtmlNode)
   name: AddRowToTable(HtmlNode, HtmlNode)
   href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_AddRowToTable_HtmlAgilityPack_HtmlNode_HtmlAgilityPack_HtmlNode_
@@ -9229,6 +9242,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ContainsListData
   nameWithType: WOINWebPageHelper.ContainsListData
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ContainsStatblockData(HtmlAgilityPack.HtmlNode)
+  name: ContainsStatblockData(HtmlNode)
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_ContainsStatblockData_HtmlAgilityPack_HtmlNode_
+  commentId: M:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ContainsStatblockData(HtmlAgilityPack.HtmlNode)
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ContainsStatblockData(HtmlAgilityPack.HtmlNode)
+  nameWithType: WOINWebPageHelper.ContainsStatblockData(HtmlNode)
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ContainsStatblockData*
+  name: ContainsStatblockData
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_ContainsStatblockData_
+  commentId: Overload:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ContainsStatblockData
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ContainsStatblockData
+  nameWithType: WOINWebPageHelper.ContainsStatblockData
 - uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ContainsTableData(HtmlAgilityPack.HtmlNode)
   name: ContainsTableData(HtmlNode)
   href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_ContainsTableData_HtmlAgilityPack_HtmlNode_
@@ -9242,6 +9268,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ContainsTableData
   nameWithType: WOINWebPageHelper.ContainsTableData
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.GetContentNodes(HtmlAgilityPack.HtmlNode)
+  name: GetContentNodes(HtmlNode)
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_GetContentNodes_HtmlAgilityPack_HtmlNode_
+  commentId: M:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.GetContentNodes(HtmlAgilityPack.HtmlNode)
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.GetContentNodes(HtmlAgilityPack.HtmlNode)
+  nameWithType: WOINWebPageHelper.GetContentNodes(HtmlNode)
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.GetContentNodes*
+  name: GetContentNodes
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_GetContentNodes_
+  commentId: Overload:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.GetContentNodes
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.GetContentNodes
+  nameWithType: WOINWebPageHelper.GetContentNodes
 - uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.GetList(HtmlAgilityPack.HtmlNode)
   name: GetList(HtmlNode)
   href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_GetList_HtmlAgilityPack_HtmlNode_
