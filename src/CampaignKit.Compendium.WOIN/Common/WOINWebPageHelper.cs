@@ -61,25 +61,30 @@ namespace CampaignKit.Compendium.WOIN.Common
             var isHeaderRow = tableNode.ChildNodes.Count == 0;
 
             // Iterate through each cell in the cellNodes collection
-            foreach (var cellNode in cellNodes)
+
+            // Shortcut the process if no nodes match the criteria.
+            if (cellNodes != null)
             {
-                // Determine if a new line has been found
-                if (cellNode.FirstChild.Name.Equals("br", StringComparison.InvariantCultureIgnoreCase))
+                foreach (var cellNode in cellNodes)
                 {
-                    // Add the stat to the statblock
-                    tableNode.AppendChild(newRow);
+                    // Determine if a new line has been found
+                    if (cellNode.FirstChild.Name.Equals("br", StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        // Add the stat to the statblock
+                        tableNode.AppendChild(newRow);
 
-                    // Create a new HTML node for the row
-                    newRow = HtmlNode.CreateNode("<tr></tr>");
-                    isHeaderRow = false;
+                        // Create a new HTML node for the row
+                        newRow = HtmlNode.CreateNode("<tr></tr>");
+                        isHeaderRow = false;
+                    }
+
+                    // Create a new HTML node for the cell
+                    var tagSymbol = isHeaderRow ? "th" : "td";
+                    var newCellNode = HtmlNode.CreateNode($"<{tagSymbol}>{cellNode.InnerText}</{tagSymbol}>");
+
+                    // Append the cell node to the stat
+                    newRow.AppendChild(newCellNode);
                 }
-
-                // Create a new HTML node for the cell
-                var tagSymbol = isHeaderRow ? "th" : "td";
-                var newCellNode = HtmlNode.CreateNode($"<{tagSymbol}>{cellNode.InnerText}</{tagSymbol}>");
-
-                // Append the cell node to the stat
-                newRow.AppendChild(newCellNode);
             }
 
             // Add the stat to the statblock
@@ -203,21 +208,25 @@ namespace CampaignKit.Compendium.WOIN.Common
                 var spanNodes = listItemNode.SelectNodes(".//span");
 
                 // Loop through each span node
-                foreach (var spanNode in spanNodes)
+                // Shortcut the process if no nodes match the criteria.
+                if (spanNodes != null)
                 {
-                    // If the item should be bold, create a bold node with the inner text of the span node
-                    var styleAttribute = spanNode.GetAttributeValue("style", string.Empty);
-                    var boldItem = styleAttribute.Contains("font-weight: 700");
-                    if (boldItem)
+                    foreach (var spanNode in spanNodes)
                     {
-                        newListItemNode.AppendChild(HtmlNode.CreateNode($"<b>{spanNode.InnerText}</b>"));
-                        newListItemNode.AppendChild(HtmlNode.CreateNode($"<span>&nbsp;</span>"));
-                    }
+                        // If the item should be bold, create a bold node with the inner text of the span node
+                        var styleAttribute = spanNode.GetAttributeValue("style", string.Empty);
+                        var boldItem = styleAttribute.Contains("font-weight: 700");
+                        if (boldItem)
+                        {
+                            newListItemNode.AppendChild(HtmlNode.CreateNode($"<b>{spanNode.InnerText}</b>"));
+                            newListItemNode.AppendChild(HtmlNode.CreateNode($"<span>&nbsp;</span>"));
+                        }
 
-                    // Otherwise, just append the span node
-                    else
-                    {
-                        newListItemNode.AppendChild(spanNode);
+                        // Otherwise, just append the span node
+                        else
+                        {
+                            newListItemNode.AppendChild(spanNode);
+                        }
                     }
                 }
 
