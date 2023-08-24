@@ -288,6 +288,21 @@ namespace CampaignKit.Compendium.WOIN.Common
                 {
                     if (table != null && WOINWebPageHelper.ContainsTableData(contentNode))
                     {
+
+                        // See if there are any non-table row components that need to be extracted
+                        var textNodes = contentNode.SelectNodes(".//span[not(*)]");
+
+                        // Extract the non-table components and remove them from the doc.
+                        foreach (var textNode in textNodes)
+                        {
+                            // Add the node to the new section
+                            newSectionNode.AppendChild(textNode);
+
+                            // Remove this node from the document
+                            textNode.ParentNode.RemoveChild(textNode);
+                        }
+
+                        // Add the result as a new row to the table.
                         WOINWebPageHelper.AddRowToTable(table, contentNode);
                     }
                     else if (WOINWebPageHelper.ContainsListData(contentNode))
@@ -328,7 +343,7 @@ namespace CampaignKit.Compendium.WOIN.Common
                 // Is there statblock data that needs to be copied?
                 if (statblock != null && statblock.ChildNodes.Count > 0)
                 {
-                    newSectionNode.AppendChild(table);
+                    newSectionNode.AppendChild(statblock);
                 }
             }
 
