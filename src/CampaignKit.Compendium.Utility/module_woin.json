@@ -9,6 +9,20 @@
       "OverwriteExisting": true,
       "SourceDataSets": [
         {
+          "Labels": [ "WOIN", "Rule", "Starship Combat" ],
+          "SourceDataSetName": "Space Travel - Combat",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/starship-combat",
+          "Substitutions": [
+            {
+              "HTML": "<ol><li><span>Make attribute checks to access the ambush turn, if appropriate. These will be opposed by ship sensors.</span></li><li><span>Roll INITIATIVE for each PC and each ship based on its crew dice pool. Larger ships inflict INITIATIVE penalties, noted in their stat blocks. For GM-controlled ships, simply roll once for the ship.</span></li><li><span>Each PC (and GM-controlled ship) takes a turn in INITIATIVE order, starting with whichever rolled the highest. Ships move on their own INITIATIVE.</span></li><li><span>At the end of the round, move on to the next round and repeat, re-rolling INITIATIVE every round.</span></li></ol>",
+              "XPath": "//*[@id='h.6589faa7c235f063_1204']/div/div/ul[1]"
+            }
+          ],
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
           "Labels": [ "WOIN", "Rule", "Character" ],
           "SourceDataSetName": "Characters - General",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
@@ -1042,14 +1056,6 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Starship Combat" ],
-          "SourceDataSetName": "Space Travel - Combat",
-          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
-          "SourceDataSetURI": "https://www.woinrules.com/starship-combat",
-          "TagSymbol": "~",
-          "XPath": "//div[@role='main'][1]"
-        },
-        {
-          "Labels": [ "WOIN", "Rule", "Starship Combat" ],
           "SourceDataSetName": "Space Travel - Advanced Starship Combat",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/starship-combat/advanced-starship-combat",
@@ -1083,7 +1089,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal - Apes",
@@ -1530,7 +1536,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Bears",
@@ -1542,7 +1548,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Birds",
@@ -1554,7 +1560,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Boar",
@@ -1566,7 +1572,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Cats",
@@ -1578,7 +1584,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Cows",
@@ -1590,7 +1596,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Crocodile",
@@ -1602,7 +1608,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Dinosaurs",
@@ -1614,7 +1620,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Dogs",
@@ -1626,7 +1632,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Elephants",
@@ -1638,7 +1644,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Frog",
@@ -1650,7 +1656,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Hippopotamus",
@@ -1662,7 +1668,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Horses",
@@ -1674,7 +1680,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Insects",
@@ -1686,7 +1692,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Lizard",
@@ -1698,7 +1704,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Rhinocerous",
@@ -1710,7 +1716,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Rodents",
@@ -1722,7 +1728,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Shark",
@@ -1734,7 +1740,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Snakes",
@@ -1746,7 +1752,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Spiders",
@@ -1758,7 +1764,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Swarm",
@@ -1770,7 +1776,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Wolves",
@@ -1782,7 +1788,7 @@
         {
           "Labels": [
             "WOIN",
-            "Adnimal",
+            "Animal",
             "Monster"
           ],
           "SourceDataSetName": "Animal -  Woodland Creature",
