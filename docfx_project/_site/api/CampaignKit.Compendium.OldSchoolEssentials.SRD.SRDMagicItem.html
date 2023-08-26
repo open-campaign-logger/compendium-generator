@@ -17,7 +17,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/open-campaign-logger/compendium-generator/new/117-add-monster-label-to-monsters/apiSpec/new?filename=CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem.md&amp;value=---%0Auid%3A%20CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/open-campaign-logger/compendium-generator/new/121-web-scraper-module/apiSpec/new?filename=CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem.md&amp;value=---%0Auid%3A%20CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
   </head>
 
   <script type="module">
@@ -79,7 +79,7 @@
 
   <h1 id="CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem" data-uid="CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem" class="text-break">
     Class SRDMagicItem
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.OldSchoolEssentials/SRD/SRDMagicItem.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.OldSchoolEssentials/SRD/SRDMagicItem.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -92,7 +92,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SRDMagicItem : IGameComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public class SRDMagicItem : GameComponentBase, IGameComponent</code></pre>
   </div>
 
 
@@ -102,6 +102,7 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html">GameComponentBase</a></div>
       <div><span class="xref">SRDMagicItem</span></div>
     </dd>
   </dl>
@@ -117,6 +118,24 @@
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_Desc">GameComponentBase.Desc</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_Labels">GameComponentBase.Labels</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_Name">GameComponentBase.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_SourceTitle">GameComponentBase.SourceTitle</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_TagSymbol">GameComponentBase.TagSymbol</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_TagValuePrefix">GameComponentBase.TagValuePrefix</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -153,7 +172,7 @@
 
   <h3 id="CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem__ctor_CampaignKit_Compendium_Core_CampaignLogger_CampaignEntry_" data-uid="CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.#ctor(CampaignKit.Compendium.Core.CampaignLogger.CampaignEntry)">
   SRDMagicItem(CampaignEntry)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.OldSchoolEssentials/SRD/SRDMagicItem.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.OldSchoolEssentials/SRD/SRDMagicItem.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.html">SRDMagicItem</a> class.</p>
@@ -182,170 +201,6 @@
 
 
 
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
-  <a id="CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_Labels_" data-uid="CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.Labels*"></a>
-
-  <h3 id="CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_Labels" data-uid="CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.Labels">
-  Labels
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.OldSchoolEssentials/SRD/SRDMagicItem.cs/#L73"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the list of labels associated with the creature.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;string&gt;? Labels { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_Name_" data-uid="CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.Name*"></a>
-
-  <h3 id="CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_Name" data-uid="CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.Name">
-  Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.OldSchoolEssentials/SRD/SRDMagicItem.cs/#L76"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the name of the game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Name { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_SourceTitle_" data-uid="CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.SourceTitle*"></a>
-
-  <h3 id="CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_SourceTitle" data-uid="CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.SourceTitle">
-  SourceTitle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.OldSchoolEssentials/SRD/SRDMagicItem.cs/#L79"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the title of the source of the game component's data.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? SourceTitle { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_TagSymbol_" data-uid="CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.TagSymbol*"></a>
-
-  <h3 id="CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_TagSymbol" data-uid="CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.TagSymbol">
-  TagSymbol
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.OldSchoolEssentials/SRD/SRDMagicItem.cs/#L84"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the campaign tag symbol to use for this creature.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? TagSymbol { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_TagValuePrefix_" data-uid="CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.TagValuePrefix*"></a>
-
-  <h3 id="CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_TagValuePrefix" data-uid="CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.TagValuePrefix">
-  TagValuePrefix
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.OldSchoolEssentials/SRD/SRDMagicItem.cs/#L87"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the tag value prefix for this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? TagValuePrefix { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -354,7 +209,7 @@
 
   <h3 id="CampaignKit_Compendium_OldSchoolEssentials_SRD_SRDMagicItem_ToCampaignEntry" data-uid="CampaignKit.Compendium.OldSchoolEssentials.SRD.SRDMagicItem.ToCampaignEntry">
   ToCampaignEntry()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.OldSchoolEssentials/SRD/SRDMagicItem.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.OldSchoolEssentials/SRD/SRDMagicItem.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generates a CampaignLogger Entry for this game component.</p>
@@ -362,7 +217,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CampaignEntry ToCampaignEntry()</code></pre>
+    <pre><code class="lang-csharp hljs">public override CampaignEntry ToCampaignEntry()</code></pre>
   </div>
 
 
@@ -387,7 +242,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.OldSchoolEssentials/SRD/SRDMagicItem.cs/#L27" class="edit-link">Edit this page</a>
+          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.OldSchoolEssentials/SRD/SRDMagicItem.cs/#L27" class="edit-link">Edit this page</a>
         </div>
 
         

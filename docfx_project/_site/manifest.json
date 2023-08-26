@@ -115,6 +115,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Common.GameComponentBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Common.GameComponentBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CampaignKit.Compendium.Core.Common.IGameComponent.yml",
       "output": {
         ".html": {
@@ -205,6 +215,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Configuration.Substitution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Configuration.Substitution.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CampaignKit.Compendium.Core.Configuration.yml",
       "output": {
         ".html": {
@@ -229,6 +249,16 @@
       "output": {
         ".html": {
           "relative_path": "api/CampaignKit.Compendium.Core.Services.DefaultDownloadService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Core.Services.FilenameOverrideOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Core.Services.FilenameOverrideOptions.html"
         }
       },
       "version": ""
@@ -855,6 +885,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.Markdown.WOINConversionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.Markdown.WOINConversionTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CampaignKit.Compendium.Tests.Markdown.yml",
       "output": {
         ".html": {
@@ -915,6 +955,56 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.WOIN.WOINConversionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.WOIN.WOINConversionTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.WOIN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.WOIN.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.WebScraper.SRDWebPageTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.WebScraper.SRDWebPageTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Tests.WebScraper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Tests.WebScraper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CampaignKit.Compendium.Utility.Program.yml",
       "output": {
         ".html": {
@@ -959,6 +1049,136 @@
       "output": {
         ".html": {
           "relative_path": "api/CampaignKit.Compendium.Utility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.WOIN.Common.WOINHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.WOIN.Common.WOINHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.WOIN.Common.WOINWebPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.WOIN.Common.WOINWebPage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.WOIN.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.WOIN.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.WebScraper.Class1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.WebScraper.Class1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.WebScraper.Common.HtmlNodeXPathComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.WebScraper.Common.HtmlNodeXPathComparer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.WebScraper.Common.SRDWebPage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.WebScraper.Common.SRDWebPageHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.WebScraper.Common.SRDWebPageHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.WebScraper.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.WebScraper.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.WebScraper.Services.DefaultWebScraperCompendiumService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.WebScraper.Services.IWebScraperCompendiumService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.WebScraper.Services.IWebScraperCompendiumService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.WebScraper.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.WebScraper.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.WebScraper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.WebScraper.html"
         }
       },
       "version": ""

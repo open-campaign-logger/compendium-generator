@@ -16,6 +16,11 @@
     <None Remove="DungeonsAndDragons\TestFiles\aboleth.json" />
     <None Remove="DungeonsAndDragons\TestFiles\backup_holler_spider.json" />
     <None Remove="DungeonsAndDragons\TestFiles\sulsha.json" />
+    <None Remove="WebScraper\TestFiles\fantasy-armor-customization.html" />
+    <None Remove="WebScraper\TestFiles\vehicle-combat.html" />
+    <None Remove="WOIN\TestFiles\countdowns.html" />
+    <None Remove="WOIN\TestFiles\tracking.html" />
+    <None Remove="WOIN\TestFiles\vehicle-combat.html" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,6 +40,21 @@
 
   <ItemGroup>
     <Content Include="OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WOIN\TestFiles\fantasy-armor-customization.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WebScraper\TestFiles\vehicle-combat.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WOIN\TestFiles\countdowns.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WOIN\TestFiles\tracking.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WOIN\TestFiles\vehicle-combat.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -59,10 +79,27 @@
     <ProjectReference Include="..\CampaignKit.Compendium.DungeonsAndDragons\CampaignKit.Compendium.DungeonsAndDragons.csproj" />
     <ProjectReference Include="..\CampaignKit.Compendium.Markdown\CampaignKit.Compendium.Markdown.csproj" />
     <ProjectReference Include="..\CampaignKit.Compendium.OldSchoolEssentials\CampaignKit.Compendium.OldSchoolEssentials.csproj" />
+    <ProjectReference Include="..\CampaignKit.Compendium.WebScraper\CampaignKit.Compendium.WebScraper.csproj" />
+    <ProjectReference Include="..\CampaignKit.Compendium.WOIN\CampaignKit.Compendium.WOIN.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="module_chatgpt.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="module_dnd.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="module_markdown.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="module_ose.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="module_woin.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

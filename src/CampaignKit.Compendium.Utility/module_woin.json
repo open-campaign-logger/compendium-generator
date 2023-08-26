@@ -1,0 +1,3050 @@
+﻿{
+  "WebScraperPublicCompendiums": [
+    {
+      "CompendiumService": "CampaignKit.Compendium.WebScraper.Services.IWebScraperCompendiumService, CampaignKit.Compendium.WebScraper.dll",
+      "Description": "What's Old is new Again (WOIN) SRD material.'.",
+      "GameSystem": "WOIN",
+      "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
+      "IsActive": true,
+      "OverwriteExisting": true,
+      "SourceDataSets": [
+        {
+          "Labels": [
+            "WOIN",
+            "Skill"
+          ],
+          "SourceDataSetName": "Skill - Engineering",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/engineering",
+          "Substitutions": [
+            {
+              "HTML": "<span><h2>Engineering Technobabble</h2><p>Roll d66 four times and read as &quot;alpha the beta gamma delta&#39; (e.g. “modify the quantum neutrino filter”).</p><table><thead><tr><th>d66</th><th>Alpha</th><th>Beta</th><th>Gamma</th><th>Delta</th></tr></thead><tbody><tr><td>11</td><td>increase</td><td>microscopic</td><td>quantum</td><td>relay</td></tr><tr><td>12</td><td>decrease</td><td>photonic</td><td>artificial</td><td>inversion</td></tr><tr><td>13</td><td>focus</td><td>linear</td><td>pulse</td><td>interference</td></tr><tr><td>14</td><td>amplify</td><td>sonic</td><td>flux</td><td>discriminator</td></tr><tr><td>15</td><td>reverse</td><td>auxiliary</td><td>gravimetric</td><td>signal</td></tr><tr><td>16</td><td>agitate</td><td>nucleonic</td><td>particle</td><td>capacitor</td></tr><tr><td>21</td><td>pacify</td><td>transwarp</td><td>system</td><td>configuration</td></tr><tr><td>22</td><td>invert</td><td>reciprocating</td><td>nadion</td><td>effect</td></tr><tr><td>23</td><td>boost</td><td>magnatomic</td><td>subspace</td><td>disturbance</td></tr><tr><td>24</td><td>nullify</td><td>quantum</td><td>frequency</td><td>field</td></tr><tr><td>25</td><td>energise</td><td>verteron</td><td>wavefront</td><td>phenomenon</td></tr><tr><td>26</td><td>intensify</td><td>ambient</td><td>spatial</td><td>array</td></tr><tr><td>31</td><td>electrify</td><td>anomalous</td><td>alternating</td><td>emission</td></tr><tr><td>32</td><td>eliminate</td><td>modulated</td><td>baryon</td><td>domain</td></tr><tr><td>33</td><td>oscillate</td><td>inverted</td><td>space-time</td><td>coupling</td></tr><tr><td>34</td><td>modulate</td><td>temporal</td><td>dampening</td><td>stream</td></tr><tr><td>35</td><td>monitor</td><td>asymmetrical</td><td>tetryon</td><td>variance</td></tr><tr><td>36</td><td>restrict</td><td>atmospheric</td><td>neutrino</td><td>distortion</td></tr><tr><td>41</td><td>connect</td><td>magnetic</td><td>plasma</td><td>controller</td></tr><tr><td>42</td><td>convert</td><td>phased</td><td>interface</td><td>actuator</td></tr><tr><td>43</td><td>modify</td><td>rapid</td><td>data</td><td>continuum</td></tr><tr><td>44</td><td>counteract</td><td>ionic</td><td>E-M</td><td>banks</td></tr><tr><td>45</td><td>balance</td><td>astrophysical</td><td>nano</td><td>harmonic</td></tr><tr><td>46</td><td>harmonise</td><td>nucleonic</td><td>polaron</td><td>mutation</td></tr><tr><td>51</td><td>reset</td><td>accelerated</td><td>positron</td><td>invariance</td></tr><tr><td>52</td><td>recalibrate</td><td>anterior</td><td>override</td><td>seal</td></tr><tr><td>53</td><td>reroute</td><td>primary</td><td>access</td><td>container</td></tr><tr><td>54</td><td>overload</td><td>secondary</td><td>load</td><td>generator</td></tr><tr><td>55</td><td>fluctuate</td><td>tertiary</td><td>tachyon</td><td>filter</td></tr><tr><td>56</td><td>concentrate</td><td>backup</td><td>charge</td><td>safeguard</td></tr><tr><td>61</td><td>extend</td><td>master</td><td>compression</td><td>manifold</td></tr><tr><td>62</td><td>redirect</td><td>emergency</td><td>diagnostic</td><td>buffer</td></tr><tr><td>63</td><td>correlate</td><td>warp</td><td>mass</td><td>accelerator</td></tr><tr><td>64</td><td>synchronise</td><td>trifold</td><td>nanite</td><td>booster</td></tr><tr><td>65</td><td>pressurise</td><td>psitronic</td><td>proton</td><td>transponder</td></tr><tr><td>66</td><td>recollimate</td><td>thermal</td><td>radiation</td><td>stabilizer</td></tr></tbody></table><span>",
+              "XPath": "//*[@id='h.18df475c58b939d3_11']/div[2]"
+            }
+          ],
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character" ],
+          "SourceDataSetName": "Characters Skills",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/skills",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Career" ],
+          "SourceDataSetName": "Future Careers",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/careers/future-careers",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character" ],
+          "SourceDataSetName": "Characters Universal-Exploits",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/universal-exploits",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Starship Combat" ],
+          "SourceDataSetName": "Space Travel - Combat",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/starship-combat",
+          "Substitutions": [
+            {
+              "HTML": "<ol><li><span>Make attribute checks to access the ambush turn, if appropriate. These will be opposed by ship sensors.</span></li><li><span>Roll INITIATIVE for each PC and each ship based on its crew dice pool. Larger ships inflict INITIATIVE penalties, noted in their stat blocks. For GM-controlled ships, simply roll once for the ship.</span></li><li><span>Each PC (and GM-controlled ship) takes a turn in INITIATIVE order, starting with whichever rolled the highest. Ships move on their own INITIATIVE.</span></li><li><span>At the end of the round, move on to the next round and repeat, re-rolling INITIATIVE every round.</span></li></ol>",
+              "XPath": "//*[@id='h.6589faa7c235f063_1204']/div/div/ul[1]"
+            }
+          ],
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character" ],
+          "SourceDataSetName": "Characters - General",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character" ],
+          "SourceDataSetName": "Characters - Advancement",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/advancement",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character" ],
+          "SourceDataSetName": "Characters - Age",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/age",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character" ],
+          "SourceDataSetName": "Characters - Attributes",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/attributes",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Career" ],
+          "SourceDataSetName": "Careers - General",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/careers",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Career" ],
+          "SourceDataSetName": "Fantasy Careers",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/careers/fantasy-careers",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Career" ],
+          "SourceDataSetName": "Martial Arts Careers",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/careers/martial-arts-careers",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Career" ],
+          "SourceDataSetName": "Modern Careers",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/careers/modern-careers",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character" ],
+          "SourceDataSetName": "Characters - Derived Statistics",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/derived-statistics",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character" ],
+          "SourceDataSetName": "Characters - Descriptor",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/descriptor",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character" ],
+          "SourceDataSetName": "Characters - Grade",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/grade",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage" ],
+          "SourceDataSetName": "Characters - Heritages",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Fantasy Heritage",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Clockfolk Heritage",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/clockfolk",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Goblin Heritage",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/goblin",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Grand-Elf Heritage",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/grand-elf",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Minotaur Heritage",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/minotaur",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Mountain-Dwarf Heritages",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/mountain-dwarf",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Ogre Heritages",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/ogre",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Orc Heritages",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/orc",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Smallfolk Heritages",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/smallfolk",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Sylvan-Elf Heritages",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/sylvan-elf",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Future" ],
+          "SourceDataSetName": "Future Heritage",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/future-heritages",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Future" ],
+          "SourceDataSetName": "Android Heritage",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/future-heritages/android",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Future" ],
+          "SourceDataSetName": "Borian Heritage",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/future-heritages/borian",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Future" ],
+          "SourceDataSetName": "Felan Heritage",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/future-heritages/felan",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Future" ],
+          "SourceDataSetName": "Ogron Heritage",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/future-heritages/ogron",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Future" ],
+          "SourceDataSetName": "Spartan Heritage",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/future-heritages/spartan",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Future" ],
+          "SourceDataSetName": "Vendalyrian Heritage",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/future-heritages/vendalyrian",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage" ],
+          "SourceDataSetName": "Human Heritage",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/human",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Modern" ],
+          "SourceDataSetName": "Modern Heritage",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/modern-heritages",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Modern" ],
+          "SourceDataSetName": "Augmented Heritages",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/modern-heritages/augmented",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Modern" ],
+          "SourceDataSetName": "Chosen Heritages",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/modern-heritages/chosen",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Modern" ],
+          "SourceDataSetName": "Mutant Heritages",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/modern-heritages/mutant",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Origin" ],
+          "SourceDataSetName": "Characters Origins",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/origins",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Origin", "Fantasy" ],
+          "SourceDataSetName": "Characters Origins Fantasy-Origins",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/origins/fantasy-origins",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Origin", "Future" ],
+          "SourceDataSetName": "Characters Origins Future-Origins",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/origins/future-origins",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Origin", "Modern" ],
+          "SourceDataSetName": "Characters Origins Modern-Origins",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/origins/modern-origins",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character" ],
+          "SourceDataSetName": "Characters Sample-Character",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/sample-character",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character" ],
+          "SourceDataSetName": "Characters Traits",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/traits",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character" ],
+          "SourceDataSetName": "Characters Walkthrough",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/walkthrough",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Combat" ],
+          "SourceDataSetName": "Combat - General",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/combat",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Combat" ],
+          "SourceDataSetName": "Combat Area-Of-Effect",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/combat/area-of-effect",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Combat" ],
+          "SourceDataSetName": "Combat Combat-Sequence",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/combat/combat-sequence",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN" ],
+          "SourceDataSetName": "Combat Critical-Hits",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/combat/critical-hits",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Combat" ],
+          "SourceDataSetName": "Combat Damage-Types",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/combat/damage-types",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Combat" ],
+          "SourceDataSetName": "Combat Dual-Wielding",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/combat/dual-wielding",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Combat" ],
+          "SourceDataSetName": "Combat Making-An-Attack",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/combat/making-an-attack",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Combat" ],
+          "SourceDataSetName": "Combat Other-Combat-Actions",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/combat/other-combat-actions",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Combat" ],
+          "SourceDataSetName": "Combat Positional-Effects",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/combat/positional-effects",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Combat" ],
+          "SourceDataSetName": "Combat Shields",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/combat/shields",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Equipment - General",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Equipment Customizing-Gear",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Fantasy Armor Customizations",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/fantasy-armor-customizations",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Fantasy Weapon Customizations",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/fantasy-weapon-customizations",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Future Armor Customizations",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/future-armor-customizations",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Future Weapon Customizations",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/future-weapon-customizations",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Gauntlet Customizations",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/gauntlet-customizations",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Helmet Customizations",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/helmet-customizations",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Modern Armor Customizations",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/modern-armor-customizations",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Modern Weapon Customizations",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/modern-weapon-customizations",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Shield Customizations",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/shield-customizations",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Equipment Cybernetics",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/cybernetics",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Equipment Drugs",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/drugs",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Equipment Skills And Quality",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/equipment-skills-quality",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Equipment Herbs",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/herbs",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Equipment Melee Weapons Size",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/melee-weapons-size",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Equipment Mounts",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/mounts",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Equipment Foodstuffs",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/services-foodstuffs",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Equipment Special Ammunition",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/special-ammunition",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Equipment Starting-Money",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/starting-money",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Equipment" ],
+          "SourceDataSetName": "Equipment Weapon-Traits",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/equipment/weapon-traits",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Injury" ],
+          "SourceDataSetName": "Injury and Death",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/injury-death",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Injury" ],
+          "SourceDataSetName": "Injury and Death - Conditions",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/injury-death/conditions",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Injury" ],
+          "SourceDataSetName": "Injury and Death - Diseases",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/injury-death/diseases",
+          "Substitutions": [
+            {
+              "HTML": "<span></span>",
+              "XPath": "//*[@id='h.p_0cOZNpY43oqb']/a"
+            }
+          ],
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Injury" ],
+          "SourceDataSetName": "Injury and Death - Health",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/injury-death/health",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Magic-Chi-Psionics - General",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Chi",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/chi",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Magic - General",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Casting A Spell",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/casting-a-spell",
+          "Substitutions": [
+            {
+              "HTML": "<table><tr><th>MP</th><th>Duration</th><th>Range</th><th>Target/Area (Diameter)</th><th>Casting Time (MP Reduction)</th></tr><tr><td>0</td><td>Instantaneous</td><td>touch (5&#39;) or self</td><td>5&#39; or one creature or object</td><td>1 action (default )</td></tr><tr><td>1</td><td>1 round</td><td>10&#39;</td><td>10&#39;</td><td>1 minute</td></tr><tr><td>2</td><td>concentration</td><td>30&#39;</td><td>20&#39;</td><td>1 hour</td></tr><tr><td>3</td><td>1 minute</td><td>50&#39;</td><td>30&#39;</td><td>8 hours</td></tr><tr><td>4</td><td>100&#39;</td><td>50&#39;</td><td>1 day</td><td></td></tr><tr><td>5</td><td>1 hour</td><td>150&#39;</td><td>75&#39;</td><td>1 week</td></tr><tr><td>6</td><td>200&#39;</td><td>100&#39;</td><td>1 month</td><td></td></tr><tr><td>7</td><td>8 hours</td><td>300&#39;</td><td>150&#39;</td><td></td></tr><tr><td>8</td><td>1 day</td><td>400&#39;</td><td>200&#39;</td><td></td></tr><tr><td>9</td><td>500&#39;</td><td>250&#39;</td><td></td><td></td></tr><tr><td>10</td><td>600&#39;</td><td>300&#39;</td><td></td><td></td></tr><tr><td>11</td><td>700&#39;</td><td>350&#39;</td><td></td><td></td></tr><tr><td>12</td><td>800&#39;</td><td>400&#39;</td><td></td><td></td></tr><tr><td>13</td><td>900&#39;</td><td>500&#39;</td><td></td><td></td></tr><tr><td>14</td><td>1 week</td><td>1,000&#39;</td><td>600&#39;</td><td></td></tr><tr><td>15</td><td>1,200&#39;</td><td>700&#39;</td><td></td><td></td></tr><tr><td>16</td><td>1,300&#39;(approx .1/4 mile )</td><td>800&#39;</td><td></td><td></td></tr><tr><td>17</td><td>1 month</td><td>1,500&#39;</td><td>900&#39;</td><td></td></tr><tr><td>18</td><td>2,000&#39;</td><td>1,000&#39;</td><td></td><td></td></tr><tr><td>19</td><td>2,500&#39;(approx .½ mile )</td><td>1,300&#39;(approx .1/4 mile )</td><td></td><td></td></tr><tr><td>20</td><td>3,000&#39;</td><td>1,600&#39;</td><td></td><td></td></tr><tr><td>21</td><td>3,500&#39;</td><td>2,000&#39;</td><td></td><td></td></tr><tr><td>22</td><td>1 year</td><td>4,000&#39;</td><td>2,500&#39;(approx .½ mile )</td><td></td></tr><tr><td>23</td><td>99 years</td><td>4.500&#39;</td><td>3,000&#39;</td><td></td></tr><tr><td>24</td><td>5,000&#39;(approx 1 mile )</td><td>3.500&#39;</td><td></td><td></td></tr><tr><td>25</td><td>permanent</td><td>6,000&#39;</td><td>4,000&#39;</td><td></td></tr><tr><td>26</td><td>7&#39;000&#39;</td><td>4.500&#39;</td><td></td><td></td></tr><tr><td>27</td><td>8,000&#39;</td><td>5,000(approx .1mile )</td><td></td><td></td></tr></table>",
+              "XPath": "//*[@id='h.5661394040d4f06b_884']/div/div/div/img"
+            }
+          ],
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Detecting and Identifying Magic",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/detecting-identifying-magic",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Magical Glossary",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/magical-glossary",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Magical Implements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/magical-implements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Simplified Magic",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/simplified-magic",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Spell Enhancement",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Abjuration Spell Enhancements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/abjuration-enhancements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Compulsion Spell Enhancements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/compulsion-enhancements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Creation Spell Enhancements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/creation-enhancements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Displacement Spell Enhancements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/displacement-enhancements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Divination Spell Enhancements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/divination-enhancements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Enchantment Spell Enhancements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/enchantment-enhancements                                                         ",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Evocation Spell Enhancements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/evocation-enhancements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "General Spell Enhancements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/general-enhancements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Healing Spell Enhancements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/healing-enhancements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Hex Enhancements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/hex-enhancements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Illusion Spell Enhancements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/illusion-enhancements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Infliction Spell Enhancements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/infliction-enhancements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Infusion Spell Enhancements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/infusion-enhancements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Movement Speel Enhancements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/movement-enhancements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Summoning Spell Enhancements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/summoning-enhancements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Transformation Spell Enhancements",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/transformation-enhancements",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Spellcasting Basics",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spellcasting-basics",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
+          "SourceDataSetName": "Psionics",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/psionics",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Space - General",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Space - Random Space Phenomena",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/random-space-phenomena",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Space - Sensors",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/sensors",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Space Travel",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/space-travel",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Space Travel - Travel and Arrival",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/space-travel/arrival",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Space Travel - Attribute Checks",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/space-travel/attribute-checks",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Space Travel - Distance Time FTL",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/space-travel/distance-time-ftl",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Space Travel - Distress Calls",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/space-travel/distress-calls",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Space Travel - Example Solar System",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/space-travel/example-solar-system",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Space Travel - Fuel",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/space-travel/fuel",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Space Travel - Fuel Operational Range",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/space-travel/fuel-operational-range",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Space Travel - Inner System Travel",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/space-travel/inner-system-travel",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Space Travel - Landing Docking",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/space-travel/landing-docking",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Space Travel - Types Of Ftl Travel",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/space-travel/types-of-ftl-travel",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Space Travel - Using Ftl Drives In A Star System",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/space-travel/using-ftl-drives-in-a-star-system",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Stellar Object",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/stellar-objects",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Stellar Anomalies",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/stellar-objects/anomalies",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Astroengineering",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/stellar-objects/astroengineering",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Black Holes",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/stellar-objects/black-holes",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Exotic Stars",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/stellar-objects/exotic-stars",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Nebulae",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/stellar-objects/nebulae",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Rogue-Planets",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/stellar-objects/rogue-planets",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Space" ],
+          "SourceDataSetName": "Stars",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/space/stellar-objects/stars",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Starship Combat" ],
+          "SourceDataSetName": "Advanced Starship Combat",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/starship-combat/advanced-starship-combat",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Mechanoid",
+            "Monster"
+          ],
+          "SourceDataSetName": "Mechanoid - Sentry Droid",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/mechanoids/sentry-droid",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Demon",
+            "Monster"
+          ],
+          "SourceDataSetName": "Demon - Chain Devil Cenobite",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/demons/chain-devil-cenobite",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal - Apes",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/apes",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "Rule"
+          ],
+          "SourceDataSetName": "Rule - Creating Monsters",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/creating-monsters",
+          "Substitutions": [
+            {
+              "XPath": "//*[@id=\"h.6589faa7c235f063_2510\"]/div/div/div/img",
+              "HTML": "<span><table><tr><th>Role</th><th>STR</th><th>AGI</th><th>END</th><th>INT</th><th>LOG</th><th>WIL</th><th>CHA</th><th>LUC</th><th>REP</th><th>SUP*</th></tr><tr><td>Artillery</td><td>MDP 0.3</td><td>MDP 0.5</td><td>MDP 0.3</td><td>MDP 0.6</td><td>MDP 0.5</td><td>MDP 0.5</td><td>MDP 0.5</td><td>MDP 0.2</td><td>MDP 0.5</td><td>MDP 0.5</td></tr><tr><td>Brute</td><td>MDP 0.6</td><td>MDP 0.3</td><td>MDP 0.6</td><td>MDP 0.3</td><td>MDP 0.3</td><td>MDP 0.5</td><td>MDP 0.3</td><td>MDP 0.2</td><td>MDP 0.5</td><td>MDP 0.3</td></tr><tr><td>Expert</td><td>MDP 0.3</td><td>MDP x 0.5</td><td>MDP 0.3</td><td>MDP 0.5</td><td>MDP 0.6</td><td>MDP 0.5</td><td>MDP 0.5</td><td>MDP 0.3</td><td>MDP 0.5</td><td>MDP 0.6</td></tr><tr><td>Ninja</td><td>MDP 0.5</td><td>MDP 0.6</td><td>MDP 0.5</td><td>MDP 0.5</td><td>MDP 0.5</td><td>MDP 0.5</td><td>MDP 0.5</td><td>MDP 0.2</td><td>MDP 0.5</td><td>MDP 0.4</td></tr><tr><td>Skirmisher</td><td>MDP 0.3</td><td>MDP x 0.5</td><td>MDP 0.3</td><td>MDP 0.6</td><td>MDP 0.5</td><td>MDP 0.3</td><td>MDP 0.5</td><td>MDP 0.2</td><td>MDP 0.5</td><td>MDP 0.4</td></tr><tr><td>Support</td><td>MDP 0.5</td><td>MDP 0.5</td><td>MDP 0.5</td><td>MDP 0.5</td><td>MDP 0.5</td><td>MDP 0.5</td><td>MDP 0.5</td><td>MDP 0.6</td><td>MDP 0.5</td><td>MDP 0.6</td></tr><tr><td>Trickster</td><td>MDP x 0.3</td><td>MDP 0.5</td><td>MDP 0.3</td><td>MDP 0.6</td><td>MDP 0.6</td><td>MDP 0.5</td><td>MDP 0.6</td><td>MDP x 0.3</td><td>MDP 0.5</td><td>MDP 0.8</td></tr></table><p>*SUP refers to one of the three supernatural attributes: MAG, PSI, or CHI</p></span>"
+            },
+            {
+              "XPath": "//*[@id=\"h.6589faa7c235f063_2522\"]/div/div/div/img",
+              "HTML": "<table class=\"table table-bordered table-hover table-condensed\"><thead><tr><th title=\"Field #1\">ROLE</th><th title=\"Field #2\">MELEE</th><th title=\"Field #3\">RANGED</th><th title=\"Field #4\">MENTAL</th><th title=\"Field #5\">VITAL</th></tr></thead><tbody><tr><td>Artillery </td><td>low </td><td>high </td><td>medium </td><td>low </td></tr><tr><td> </td><td>MDP x 2</td><td>MDP x 4</td><td>MDP x 3</td><td>MDP x 2</td></tr><tr><td>Brute </td><td>high </td><td>low </td><td>low </td><td>high </td></tr><tr><td> </td><td>MDP x 4</td><td>MDP x 2</td><td>MDP x 2</td><td>MDP x 4</td></tr><tr><td>Expert </td><td>low </td><td>medium </td><td>high </td><td>low MDP x 2</td></tr><tr><td> </td><td>MDP x 2</td><td>MDP x 3</td><td>MDP x 4</td><td> </td></tr><tr><td>Ninja </td><td>high </td><td>medium </td><td>low </td><td>medium </td></tr><tr><td> </td><td>MDP x 4</td><td>MDP x 3</td><td>MDP x 2</td><td>MDP x 3</td></tr><tr><td>Skirmisher </td><td>low </td><td>high </td><td>medium </td><td>medium </td></tr><tr><td> </td><td>MDP x 2</td><td>MDP x 4</td><td>MDP x 3</td><td>MDP x 3</td></tr><tr><td>Support </td><td>medium </td><td>medium </td><td>high </td><td>medium </td></tr><tr><td> </td><td>MDP x 3</td><td>MDP x 3</td><td>MDP x 4</td><td>MDP x 3</td></tr><tr><td>Trickster </td><td>low </td><td>medium </td><td>high </td><td>low </td></tr><tr><td> </td><td>MDP x 2</td><td>MDP x 3</td><td>MDP x 4</td><td>MDP x 2</td></tr></tbody></table>"
+            },
+            {
+              "XPath": "//*[@id=\"h.6589faa7c235f063_2530\"]/div/div/div/img",
+              "HTML": "<table class=\"table table-bordered table-hover table-condensed\"><thead><tr><th title=\"Field #1\">STATISTIC</th><th title=\"Field #2\">Tiny</th><th title=\"Field #3\">Small</th><th title=\"Field #4\">Medium</th><th title=\"Field #5\">Large</th><th title=\"Field #6\">Enormous</th><th title=\"Field #7\">Gigantic</th><th title=\"Field #8\">Colossal</th><th title=\"Field #9\">Titanic</th></tr></thead><tbody><tr><td>MELEE DEFENSE </td><td>+4</td><td>+2</td><td> </td><td>-2</td><td>-4</td><td>-8</td><td>-16</td><td>-16</td></tr><tr><td>RANGED DEFENSE </td><td>+4</td><td>+2</td><td> </td><td> </td><td>-8</td><td>-16</td><td>-32</td><td>-32</td></tr><tr><td>VITAL DEFENSE </td><td>-2</td><td>-2</td><td> </td><td>+2</td><td>+4</td><td>+6</td><td>+8</td><td>+16</td></tr><tr><td>ACTIONS </td><td>2</td><td>2</td><td>2</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>HEALTH </td><td>x1 </td><td>x1 </td><td>x1 </td><td>x1 </td><td>x1.5 </td><td>x2 </td><td>x3 </td><td>x5 </td></tr><tr><td>REACH </td><td>5&#39;</td><td>5&#39;</td><td>5&#39;</td><td>5&#39;</td><td>10&#39;</td><td>15&#39;</td><td>20&#39;</td><td>40&#39;</td></tr><tr><td>STR Cap </td><td>1(106)</td><td>3(206)</td><td>10(406)</td><td>15(5d6)</td><td>21(606)</td><td>45(906)</td><td>78(1206)</td><td>120+(15d6+)</td></tr></tbody></table>"
+            },
+            {
+              "XPath": "//*[@id=\"h.6589faa7c235f063_2538\"]/div/div/div/img",
+              "HTML": "<table><thead><tr><th>ROLE</th><th>SOAK</th><th>HEALTH</th></tr></thead><tbody><tr><td>Artillery</td><td>low</td><td>low</td></tr><tr><td/><td>MDP x 0.5</td><td>MDP x 3</td></tr><tr><td>Brute</td><td>high</td><td>high</td></tr><tr><td/><td>MDP x 2</td><td>MDP x 10</td></tr><tr><td>Expert</td><td>low</td><td>low</td></tr><tr><td/><td>MDP x 0.5</td><td>MDP x 3</td></tr><tr><td>Ninja</td><td>medium</td><td>medium</td></tr><tr><td/><td>MDP x 1</td><td>MDP x 6</td></tr><tr><td>Skirmisher</td><td>low</td><td>low</td></tr><tr><td/><td>MDP x 0.5</td><td>MDP x 3</td></tr><tr><td>Support</td><td>medium</td><td>medium</td></tr><tr><td/><td>MDP x 1</td><td>MDP x 6</td></tr><tr><td>Trickster</td><td>low</td><td>low</td></tr><tr><td/><td>MDP x 0.5</td><td>MDP x 3</td></tr></tbody></table>"
+            },
+            {
+              "XPath": "//*[@id=\"h.6589faa7c235f063_2550\"]/div/div/div/img",
+              "HTML": "<table class=\"table table-bordered table-hover table-condensed\"> <thead><tr><th title=\"Field #1\">Role</th> <th title=\"Field #2\">INITIATIVE</th> <th title=\"Field #3\">PERCEPTION</th> <th title=\"Field #4\">SPEED</th> </tr></thead> <tbody><tr> <td>Artillery </td> <td>medium </td> <td>high </td> <td>slow </td> </tr> <tr> <td> </td> <td>MDP x 0.75</td> <td>MDP x 1</td> <td>MDP x 0.5</td> </tr> <tr> <td>Brute </td> <td>low </td> <td>low </td> <td>slow </td> </tr> <tr> <td> </td> <td>MDP x 0.5</td> <td>MDP x 0.5</td> <td>MDP x 0.5</td> </tr> <tr> <td>Expert </td> <td>low </td> <td>medium </td> <td>medium </td> </tr> <tr> <td> </td> <td>MDP x 0.5</td> <td>MDP x 0.75</td> <td>MDP x 1</td> </tr> <tr> <td>Ninja </td> <td>high </td> <td>medium </td> <td>fast </td> </tr> <tr> <td> </td> <td>MDP x 1</td> <td>MDP x 0.75</td> <td>MDP x 1.5</td> </tr> <tr> <td>Skirmisher </td> <td>medium </td> <td>high </td> <td>fast </td> </tr> <tr> <td> </td> <td>MDP x 0.75</td> <td>MDP x 1</td> <td>MDP x 1.5</td> </tr> <tr> <td>Support </td> <td>medium </td> <td>medium </td> <td>medium </td> </tr> <tr> <td> </td> <td>MDP x 0.75</td> <td>MDP x 0.75</td> <td>MDP x 1</td> </tr> <tr> <td>Trickster </td> <td>high </td> <td>high </td> <td>fast </td> </tr> <tr> <td> </td> <td>MDP x 1</td> <td>MDP x 1</td> <td>MDP x 1.5</td> </tr> </tbody></table>"
+            },
+            {
+              "XPath": "//*[@id=\"h.6589faa7c235f063_2562\"]/div/div/div/img",
+              "HTML": "<table><thead><tr><th>ROLE</th><th>MELEE ATTACK</th><th>RANGED ATTACK</th><th>MENTAL ATTACK</th></tr></thead><tbody><tr><td>Artillery</td><td>low</td><td>high</td><td>low</td></tr><tr><td/><td>MDP x 0.5</td><td>MDP x 1</td><td>MDP x 0.5</td></tr><tr><td>Brute</td><td>high</td><td>medium</td><td>low</td></tr><tr><td/><td>MDP x 1</td><td>MDP X 0.75</td><td>MDP x 0.5</td></tr><tr><td>Expert</td><td>low</td><td>low</td><td>medium</td></tr><tr><td/><td>MDP x 0.5</td><td>MDP x 0.5</td><td>MDP x 0.75</td></tr><tr><td>Ninja</td><td>high</td><td>low</td><td>low</td></tr><tr><td/><td>MDP x 1</td><td>MDP x 0.5</td><td>MDP x 0.5</td></tr><tr><td>Skirmisher</td><td>low</td><td>high</td><td>low</td></tr><tr><td/><td>MDP x 0.5</td><td>MDP x 1</td><td>MDP x 0.5</td></tr><tr><td>Support</td><td>medium</td><td>medium</td><td>medium</td></tr><tr><td/><td>MDP x 0.75</td><td>MDP x 0.75</td><td>MDP x 0.75</td></tr><tr><td>Trickster</td><td>low</td><td>medium</td><td>high</td></tr><tr><td/><td>MDP x 0.5</td><td>MDP X 0.75</td><td>MDP x 1</td></tr></tbody></table>"
+            }
+          ],
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "License"
+          ],
+          "SourceDataSetName": "License",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/home",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Rule"
+          ],
+          "SourceDataSetName": "Rule - Eras of Play",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/eras-of-play",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Rule"
+          ],
+          "SourceDataSetName": "Rule - Cinematic Mode",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/cinematic-mode",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Rule"
+          ],
+          "SourceDataSetName": "Rule - The Game",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/the-game",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Rule"
+          ],
+          "SourceDataSetName": "Rule - The Environment",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/the-world/environment",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Rule"
+          ],
+          "SourceDataSetName": "Rule - Objects",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/the-world/objects",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Rule"
+          ],
+          "SourceDataSetName": "Rule - Vehicle Combat",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/vehicle-combat",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Rule"
+          ],
+          "SourceDataSetName": "Rule - Countdowns",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/countdowns",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Rule"
+          ],
+          "SourceDataSetName": "Rule - Dice Pools",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/dice-pools",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Rule"
+          ],
+          "SourceDataSetName": "Rule - Difficulty Benchmarks",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/difficulty-benchmarks",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Rule"
+          ],
+          "SourceDataSetName": "Rule - Luck",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/luck",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Rule"
+          ],
+          "SourceDataSetName": "Rule - Movement",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/movement",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Skill"
+          ],
+          "SourceDataSetName": "Skill - Alchemy",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/alchemy",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Skill"
+          ],
+          "SourceDataSetName": "Skill - Chases",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/chases",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Skill"
+          ],
+          "SourceDataSetName": "Skill - Chemistry",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/chemistry",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Skill"
+          ],
+          "SourceDataSetName": "Skill - Hacking Computing",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/hacking-computing",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Skill"
+          ],
+          "SourceDataSetName": "Skill - Herbalism",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/herbalism",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Skill"
+          ],
+          "SourceDataSetName": "Skill - Interrogations",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/interrogations",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Skill"
+          ],
+          "SourceDataSetName": "Skill - Medicine",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/medicine",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Skill"
+          ],
+          "SourceDataSetName": "Skill - Scanning",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/scanning",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Skill"
+          ],
+          "SourceDataSetName": "Skill - Tailing",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/tailing",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Rule"
+          ],
+          "SourceDataSetName": "Skill - Tracking",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/rules-of-the-game/skill-tasks/tracking",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Alien",
+            "Monster"
+          ],
+          "SourceDataSetName": "Alien - Brood",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/alien-monsters/brood",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Alien",
+            "Monster"
+          ],
+          "SourceDataSetName": "Alien - Carnivourous Plant",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/alien-monsters/carnivourous-plant",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Alien",
+            "Monster"
+          ],
+          "SourceDataSetName": "Alien - Izkiks",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/alien-monsters/izkiks",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Alien",
+            "Monster"
+          ],
+          "SourceDataSetName": "Alien - Kremlin Beast",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/alien-monsters/kremlin-beast",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Alien",
+            "Monster"
+          ],
+          "SourceDataSetName": "Alien - Medusa",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/alien-monsters/medusa",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Alien",
+            "Monster"
+          ],
+          "SourceDataSetName": "Alien - Mind Eel",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/alien-monsters/mind-eel",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Alien",
+            "Monster"
+          ],
+          "SourceDataSetName": "Alien - Sandworm",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/alien-monsters/sandworm",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Alien",
+            "Monster"
+          ],
+          "SourceDataSetName": "Alien - Shatterplant",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/alien-monsters/shatterplant",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Alien",
+            "Monster"
+          ],
+          "SourceDataSetName": "Alien - Slatherbeast",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/alien-monsters/slatherbeast",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Alien",
+            "Monster"
+          ],
+          "SourceDataSetName": "Alien - Triceraboar",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/alien-monsters/triceraboar",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Alien",
+            "Monster"
+          ],
+          "SourceDataSetName": "Alien - Xenobian",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/alien-monsters/xenobian",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Alien",
+            "Monster"
+          ],
+          "SourceDataSetName": "Alien - Xenomorphs",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/alien-monsters/xenomorphs",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Bears",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/bears",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Birds",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/birds",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Boar",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/boar",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Cats",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/cats",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Cows",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/cows",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Crocodile",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/crocodile",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Dinosaurs",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/dinosaurs",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Dogs",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/dogs",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Elephants",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/elephants",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Frog",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/frog",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Hippopotamus",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/hippopotamus",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Horses",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/horses",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Insects",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/insects",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Lizard",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/lizard",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Rhinocerous",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/rhinocerous",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Rodents",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/rodents",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Shark",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/shark",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Snakes",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/snakes",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Spiders",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/spiders",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Swarm",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/swarm",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Wolves",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/wolves",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Animal",
+            "Monster"
+          ],
+          "SourceDataSetName": "Animal -  Woodland Creature",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/animals/woodland-creature",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "Rule"
+          ],
+          "SourceDataSetName": "Rule - Customizing Monsters",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/customizing-monsters",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Demon",
+            "Monster"
+          ],
+          "SourceDataSetName": "Demon - Demonkin Cambion",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/demons/demonkin-cambion",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Demon",
+            "Monster"
+          ],
+          "SourceDataSetName": "Demon - Devil Diabolus",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/demons/devil-diabolus",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Demon",
+            "Monster"
+          ],
+          "SourceDataSetName": "Demon - Fire Demon Gormagister",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/demons/fire-demon-gormagister",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Demon",
+            "Monster"
+          ],
+          "SourceDataSetName": "Demon - Hellhound Cerebri",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/demons/hellhound-cerebri",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Demon",
+            "Monster"
+          ],
+          "SourceDataSetName": "Demon - Imp Malor",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/demons/imp-malor",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Demon",
+            "Monster"
+          ],
+          "SourceDataSetName": "Demon - Infernal Soldier Belator",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/demons/infernal-soldier-belator",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Demon",
+            "Monster"
+          ],
+          "SourceDataSetName": "Demon - Lust Demon Succubus",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/demons/lust-demon-succubus",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Demon",
+            "Monster"
+          ],
+          "SourceDataSetName": "Demon - Plague Demon Raskillon",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/demons/plague-demon-raskillon",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Demon",
+            "Monster"
+          ],
+          "SourceDataSetName": "Demon - Shadow Demon Necius",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/demons/shadow-demon-necius",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Mechanoid",
+            "Monster"
+          ],
+          "SourceDataSetName": "Mechanoid - Assimilator",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/mechanoids/assimilator",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Mechanoid",
+            "Monster"
+          ],
+          "SourceDataSetName": "Mechanoid - Biomech",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/mechanoids/biomech",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Mechanoid",
+            "Monster"
+          ],
+          "SourceDataSetName": "Mechanoid - Blaster Drone",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/mechanoids/blaster-drone",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Mechanoid",
+            "Monster"
+          ],
+          "SourceDataSetName": "Mechanoid - Blaster Turret",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/mechanoids/blaster-turret",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Mechanoid",
+            "Monster"
+          ],
+          "SourceDataSetName": "Mechanoid - Customminds",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/mechanoids/customminds",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Mechanoid",
+            "Monster"
+          ],
+          "SourceDataSetName": "Mechanoid - Cyberbeasts",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/mechanoids/cyberbeasts",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Mechanoid",
+            "Monster"
+          ],
+          "SourceDataSetName": "Mechanoid - Exterminator",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/mechanoids/exterminator",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Mechanoid",
+            "Monster"
+          ],
+          "SourceDataSetName": "Mechanoid - Havoc Class Assault Droid",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/mechanoids/havoc-class-assault-droid",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Mechanoid",
+            "Monster"
+          ],
+          "SourceDataSetName": "Mechanoid - Hunter Killers",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/mechanoids/hunter-killers",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Mechanoid",
+            "Monster"
+          ],
+          "SourceDataSetName": "Mechanoid - Industrial Robot",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/mechanoids/industrial-robot",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Mechanoid",
+            "Monster"
+          ],
+          "SourceDataSetName": "Mechanoid - Nanobot Swarm",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/mechanoids/nanobot-swarm",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Basilisk",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/basilisk",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Carnivourous Plant",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/carnivourous-plant",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Constructs",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/constructs",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Cyclops",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/cyclops",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Deep Screamer",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/deep-screamer",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Dragons",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/dragons",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Drakes",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/drakes",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Elementals",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/elementals",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Ent",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/ent",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Giant",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/giant",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Gibberling",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/gibberling",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Gremlin",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/gremlin",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Harpy",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/harpy",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Hydra",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/hydra",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Kobolds",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/kobolds",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Lycanthrope",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/lycanthrope",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Manticore",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/manticore",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Minotaur",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/minotaur",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Pixie",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/pixie",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Plantling",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/plantling",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Sasquatch",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/sasquatch",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Satyr",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/satyr",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Siren",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/siren",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Slime",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/slime",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Sphinx",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/sphinx",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Sprite",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/sprite",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Trolls",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/trolls",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster"
+          ],
+          "SourceDataSetName": "Monster - Unicorn",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/monsters/unicorn",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "Mythological"
+          ],
+          "SourceDataSetName": "Mythological Figure - Achilles",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/mythological-figures/achilles",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "Mythological"
+          ],
+          "SourceDataSetName": "Mythological Figure - Aladdin",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/mythological-figures/aladdin",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Amazon",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/amazon",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Assassins",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/assassins",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Bandits",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/bandits",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Barbarian",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/barbarian",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Bard",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/bard",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Cultist",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/cultist",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Deeplings",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/deeplings",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Druid",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/druid",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Frogfolk",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/frogfolk",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Goblins",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/goblins",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Knights",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/knights",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Militia",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/militia",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Musketeer",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/musketeer",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Night Elves",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/night-elves",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Ninja",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/ninja",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Ogre",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/ogre",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Orcs",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/orcs",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Priests",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/priests",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Saurial",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/saurial",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Scout",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/scout",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Skyseer",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/skyseer",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Sylvan Elves",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/sylvan-elves",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Thieves",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/thieves",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Thug",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/thug",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Townsfolk",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/townsfolk",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Wizards",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/wizards",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Fantasy"
+          ],
+          "SourceDataSetName": "NPC - Fantasy - Workers",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-fantasy/workers",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Assassins",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/assassins",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Astronaut",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/astronaut",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Battlepsyche",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/battlepsyche",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Bounty Hunter",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/bounty-hunter",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Civilians",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/civilians",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Kingpin",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/kingpin",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Miner",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/miner",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Pugilists",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/pugilists",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Saboteur",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/saboteur",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Security",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/security",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Smuggler",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/smuggler",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Soldiers",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/soldiers",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Spartans",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/spartans",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Spy",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/spy",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Star Knights",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/star-knights",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Starship Officers",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/starship-officers",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "NPC",
+            "Sci-Fi"
+          ],
+          "SourceDataSetName": "NPC - Sci-Fi Modern - Thug",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/npcs-sci-fi-modern/thug",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "Undead"
+          ],
+          "SourceDataSetName": "Undead - Death Knight",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/undead/death-knight",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "Undead"
+          ],
+          "SourceDataSetName": "Undead - Ghoul",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/undead/ghoul",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "Undead"
+          ],
+          "SourceDataSetName": "Undead - Skeleton",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/undead/skeleton",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "Undead"
+          ],
+          "SourceDataSetName": "Undead - Spirits",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/undead/spirits",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "Undead"
+          ],
+          "SourceDataSetName": "Undead - Vampires",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/undead/vampires",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [
+            "WOIN",
+            "Monster",
+            "Undead"
+          ],
+          "SourceDataSetName": "Undead - Zombies",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/bestiary/undead/zombies",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        }
+      ],
+      "Title": "WOIN - Test"
+    }
+  ]
+}

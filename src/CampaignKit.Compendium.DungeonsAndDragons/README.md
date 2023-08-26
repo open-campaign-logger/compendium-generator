@@ -22,7 +22,7 @@ The application is configured to create two different compendiums from these dat
 
 ## Configuration
 
-Configure the module in `appsettings.json` or `secrets.json` as follows:
+A number of examples of how to configure the creation of compendiums using this module are included in the default application (`module_dnd.json`) configuration. 
 
 ```json
 {
@@ -34,6 +34,10 @@ Configure the module in `appsettings.json` or `secrets.json` as follows:
     "GameSystem": "Dungeons and Dragons 5e",
     // Image to use for the compendium.
     "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
+    // If true, process this compendium.  If not, skip it.
+    "IsActive": true,
+    // If true, overwrite an existing compendium if it already exists.  If false, and compendium exists, skip processing.
+    "OverwriteExisting": true,
     // List of source data sets to parse and compile into the compendium.
     "SourceDataSets": [
     {

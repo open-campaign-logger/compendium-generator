@@ -24,7 +24,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
     /// <summary>
     /// Class representing a item from the Old School Essentials System Reference Document (SRD).
     /// </summary>
-    public class SRDMagicItem : IGameComponent
+    public class SRDMagicItem : GameComponentBase
     {
         /// <summary>
         /// Represents a read-only instance of a CampaignEntry object.
@@ -60,6 +60,7 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             // these easily from the text.
             if (campaignEntry.Labels != null && campaignEntry.Labels.Count > 0)
             {
+                this.Labels ??= new List<string>();
                 this.Labels.AddRange(campaignEntry.Labels);
             }
 
@@ -67,27 +68,8 @@ namespace CampaignKit.Compendium.OldSchoolEssentials.SRD
             this.TagSymbol = campaignEntry.TagSymbol;
         }
 
-        /// <summary>
-        /// Gets or sets the list of labels associated with the creature.
-        /// </summary>
-        public List<string>? Labels { get; set; } = new List<string>();
-
         /// <inheritdoc/>
-        public string? Name { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public string? SourceTitle { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Gets or sets the campaign tag symbol to use for this creature.
-        /// </summary>
-        public string? TagSymbol { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public string? TagValuePrefix { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public CampaignEntry ToCampaignEntry()
+        public override CampaignEntry ToCampaignEntry()
         {
             // Create a new CampaignEntry object.
             var campaignEntry = new CampaignEntry()

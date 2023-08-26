@@ -64,6 +64,27 @@ namespace CampaignKit.Compendium.Markdown.Services
         {
             this.logger.LogInformation("Processing of compendium starting: {compendium}.", compendium.Title);
 
+            // Check if the compendium is null
+            if (compendium is null)
+            {
+                // Throw an ArgumentNullException if compendium is null
+                throw new ArgumentNullException(nameof(compendium));
+            }
+
+            // Check if the rootDataDirectory is null or empty
+            if (string.IsNullOrEmpty(rootDataDirectory))
+            {
+                // Throw an ArgumentException if rootDataDirectory is null or empty
+                throw new ArgumentException($"'{nameof(rootDataDirectory)}' cannot be null or empty.", nameof(rootDataDirectory));
+            }
+
+            // Skip processing if this compendium has been innactivated.
+            if (!compendium.IsActive)
+            {
+                this.logger.LogWarning("Processing of compendium skipped due to IsActive flag: {IsActive}", compendium.IsActive);
+                return;
+            }
+
             // Combine the rootDataDirectory with the compendium title to create a file name
             var filePath = Path.Combine(rootDataDirectory, compendium.Title + ".json");
 

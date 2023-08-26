@@ -29,6 +29,11 @@ namespace CampaignKit.Compendium.Core.Common
         public List<string>? Labels { get; set; }
 
         /// <summary>
+        /// Gets or sets the description of the game component.
+        /// </summary>
+        public string? Desc { get; set; }
+
+        /// <summary>
         /// Gets or sets the name of the game component.
         /// </summary>
         public string? Name { get; set; }

@@ -9,7 +9,7 @@ namespace CampaignKit.Compendium.Tests.ChatGPT
     [TestClass]
     public class PromptTests
     {
-        private IConfigurationService? configurationService;
+        private readonly IConfigurationService? configurationService;
 
         private IConfigurationService GetConfigurationService()
         {

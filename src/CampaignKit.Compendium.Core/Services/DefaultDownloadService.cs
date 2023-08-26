@@ -18,6 +18,7 @@ namespace CampaignKit.Compendium.Core.Services
 {
     using System;
     using System.Threading.Tasks;
+
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.Logging;
 
@@ -42,26 +43,25 @@ namespace CampaignKit.Compendium.Core.Services
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
-        /// <summary>
-        /// Download the source data and source license.
-        /// </summary>
-        /// <param name="sourceDataUri">The URI of the source data to download.</param>
-        /// <param name="rootDataDirectory">Directory where files will be read and written from.</param>
-        /// <param name="overwrite">Set to true to overwrite previously downloaded files.  Default: false.</param>
-        /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
-        public virtual async Task DownloadFile(string sourceDataUri, string rootDataDirectory, bool overwrite = false)
+        /// <inheritdoc/>
+        public virtual async Task<string> DownloadFile(
+            string sourceDataUri,
+            string rootDataDirectory,
+            bool overwrite = false,
+            string filenameOverride = "default",
+            FilenameOverrideOptions filenameOverrideOption = FilenameOverrideOptions.ReplaceIfBlank)
         {
             try
             {
-                this.DerivePathAndFileNames(sourceDataUri, out string path, out string page);
+                this.DerivePathAndFileNames(sourceDataUri, out string path, out string file, filenameOverride, filenameOverrideOption);
 
                 // If overwrite = false and the file already exists, return.
                 var localFolderPath = Path.Combine(rootDataDirectory, path);
-                var localFilePath = Path.Combine(localFolderPath, page);
+                var localFilePath = Path.Combine(localFolderPath, file);
                 if (!overwrite && File.Exists(localFilePath))
                 {
                     this.logger.LogInformation("Local file already exists: {localFilePath}.  Overwrite option set to false.  Skipping download.", localFilePath);
-                    return;
+                    return localFilePath;
                 }
 
                 // Create data folder if required.
@@ -89,6 +89,9 @@ namespace CampaignKit.Compendium.Core.Services
 
                 // Write the response stream to the file
                 await responseBody.CopyToAsync(fs);
+
+                // Return the file location.
+                return localFilePath;
             }
             catch (HttpRequestException e)
             {
@@ -99,12 +102,19 @@ namespace CampaignKit.Compendium.Core.Services
         }
 
         /// <summary>
-        /// Separates the given source data URI into its path and file components.
+        /// Separates the given URI into components and assigns the path and file name to the out parameters.
         /// </summary>
-        /// <param name="sourceDataUri">The source data URI to separate.</param>
+        /// <param name="sourceDataUri">The URI to be separated.</param>
         /// <param name="path">The path component of the URI.</param>
-        /// <param name="file">The file component of the URI.</param>
-        public void DerivePathAndFileNames(string sourceDataUri, out string path, out string file)
+        /// <param name="file">The file name component of the URI.</param>
+        /// <param name="filenameOverride">Optional filename override for URIs from which deriving a filename is difficult.</param>
+        /// <param name="filenameOverrideOption">The behaviour to use when deciding how (or if) to override the filename.</param>
+        private void DerivePathAndFileNames(
+            string sourceDataUri,
+            out string path,
+            out string file,
+            string filenameOverride,
+            FilenameOverrideOptions filenameOverrideOption)
         {
             // Separate the URI into components
             this.logger.LogDebug("Parsing components of URI: {sourceDataUri}.", sourceDataUri);
@@ -112,16 +122,37 @@ namespace CampaignKit.Compendium.Core.Services
             path = uri.AbsolutePath;
             file = Path.GetFileName(uri.AbsolutePath);
 
+            // Check if the filenameOverrideOption is set to ReplaceAlways
+            if (filenameOverrideOption == FilenameOverrideOptions.ReplaceAlways)
+            {
+                // If so, set the file to the filenameOverride
+                file = filenameOverride;
+            }
+
+            // Check if the file is empty and the filenameOverrideOption is set to ReplaceIfBlank
+            if (string.IsNullOrEmpty(file) && filenameOverrideOption == FilenameOverrideOptions.ReplaceIfBlank)
+            {
+                // If so, set the file to the filenameOverride
+                file = filenameOverride;
+            }
+
+            // Check if the file is still empty
+            if (string.IsNullOrEmpty(file))
+            {
+                // If so, throw an exception
+                throw new Exception($"Unable to derive filename from URI: {sourceDataUri}");
+            }
+
             // Trim the leading slash off the uriPath.
             if (path.StartsWith("/"))
             {
                 path = path[1..];
             }
 
-            // Remove the page name from the path.
+            // Remove the file name from the path.
             path = Path.GetDirectoryName(path) ?? path;
             this.logger.LogDebug("URI Path: {path}.", path);
-            this.logger.LogDebug("URI Page: {page}.", file);
+            this.logger.LogDebug("URI Page: {file}.", file);
         }
     }
 }
