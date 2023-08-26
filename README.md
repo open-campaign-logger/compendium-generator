@@ -67,6 +67,8 @@ The following configuration elements are usually defined in `secrets.json` and e
 * [Old School Essentials](src/CampaignKit.Compendium.OldSchoolEssentials)
 * [Markdown File Conversion](src/CampaignKit.Compendium.Markdown)
 * [ChatGPT](src/CampaignKit.Compendium.ChatGPT)
+* [WebScraper](src/CampaignKit.Compendium.WebScraper)
+* [WOIN](src/CampaignKit.Compendium.WOIN)
 
 ## Contributing
 
