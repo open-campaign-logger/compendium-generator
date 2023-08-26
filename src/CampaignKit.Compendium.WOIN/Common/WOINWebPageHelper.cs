@@ -17,6 +17,7 @@
 namespace CampaignKit.Compendium.WOIN.Common
 {
     using System;
+    using System.Text.RegularExpressions;
 
     using HtmlAgilityPack;
 

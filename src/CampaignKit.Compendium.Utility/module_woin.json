@@ -9,6 +9,14 @@
       "OverwriteExisting": true,
       "SourceDataSets": [
         {
+          "Labels": [ "WOIN", "Rule", "Character" ],
+          "SourceDataSetName": "Characters Universal-Exploits",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/universal-exploits",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
           "Labels": [ "WOIN", "Rule", "Starship Combat" ],
           "SourceDataSetName": "Space Travel - Combat",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
@@ -271,7 +279,7 @@
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character", "Heritage","Modern" ],
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Modern" ],
           "SourceDataSetName": "Modern Heritage",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/modern-heritages",
@@ -303,7 +311,7 @@
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character", "Origin"],
+          "Labels": [ "WOIN", "Rule", "Character", "Origin" ],
           "SourceDataSetName": "Characters Origins",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/origins",
@@ -327,7 +335,7 @@
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character", "Origin" ,"Modern"],
+          "Labels": [ "WOIN", "Rule", "Character", "Origin", "Modern" ],
           "SourceDataSetName": "Characters Origins Modern-Origins",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/origins/modern-origins",
@@ -355,14 +363,6 @@
           "SourceDataSetName": "Characters Traits",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/traits",
-          "TagSymbol": "~",
-          "XPath": "//div[@role='main'][1]"
-        },
-        {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Universal-Exploits",
-          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
-          "SourceDataSetURI": "https://www.woinrules.com/characters/universal-exploits",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
@@ -646,7 +646,7 @@
           "Substitutions": [
             {
               "HTML": "<span></span>",
-              "Xpath": "//*[@id='h.p_0cOZNpY43oqb']/aIn"
+              "XPath": "//*[@id='h.p_0cOZNpY43oqb']/a"
             }
           ],
           "TagSymbol": "~",

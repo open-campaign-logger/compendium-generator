@@ -30,36 +30,21 @@ namespace CampaignKit.Compendium.WOIN.Common
         /// <inheritdoc/>
         public override string PostProcessMarkdown(string markdown)
         {
-            // Regular expression pattern to match headers with text on a separate line
-            string pattern = @"(##)\s*\n\s*(\w.*)";
+            // Execute base class functionality
+            markdown = base.PreProcessHtml(markdown);
 
-            // Replacement pattern to move the header text to the same line as the markdown header
-            string replacement = "$1 $2";
-
-            // Perform the replacement using Regex.Replace
-            var result = Regex.Replace(markdown, pattern, replacement);
-
-            return result;
+            return markdown;
         }
 
         /// <inheritdoc/>
         public override string PreProcessHtml(string html)
         {
+            // Execute base class functionality
+            html = base.PreProcessHtml(html);
+
             // Create an HTML object for the data.
             var doc = new HtmlDocument();
             doc.LoadHtml(html);
-
-            // Select all <img> elements
-            var images = doc.DocumentNode.SelectNodes("//img");
-
-            // If images were found, remove them
-            if (images != null)
-            {
-                foreach (var img in images)
-                {
-                    img.Remove();
-                }
-            }
 
             // Process each section
             var sectionNodes = doc.DocumentNode.SelectNodes("//div[@role='main']/section");

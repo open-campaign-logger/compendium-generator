@@ -196,9 +196,18 @@ namespace CampaignKit.Compendium.WebScraper.Common
             string replacement = "$1 $2";
 
             // Perform the replacement using Regex.Replace
-            var result = Regex.Replace(markdown, pattern, replacement);
+            markdown = Regex.Replace(markdown, pattern, replacement);
 
-            return result;
+            // Regular expression pattern to match bolded text.
+            pattern = @"\*\*(.*?)\*\*";
+
+            // Replacement expression to replace bold format with CL parser version
+            replacement = "{b|$1}";
+
+            // Perform the replacement using Regex.Replace
+            markdown = Regex.Replace(markdown, pattern, replacement);
+
+            return markdown;
         }
 
         /// <summary>
