@@ -32,7 +32,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Advancement",
+          "SourceDataSetName": "Characters - Advancement",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/advancement",
           "TagSymbol": "~",
@@ -40,7 +40,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Age",
+          "SourceDataSetName": "Characters - Age",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/age",
           "TagSymbol": "~",
@@ -48,47 +48,47 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Attributes",
+          "SourceDataSetName": "Characters - Attributes",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/attributes",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Careers",
+          "Labels": [ "WOIN", "Rule", "Character", "Career" ],
+          "SourceDataSetName": "Careers - General",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/careers",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Careers Fantasy-Careers",
+          "Labels": [ "WOIN", "Rule", "Character", "Career" ],
+          "SourceDataSetName": "Fantasy Careers",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/careers/fantasy-careers",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters careers Future-Careers",
+          "Labels": [ "WOIN", "Rule", "Character", "Career" ],
+          "SourceDataSetName": "Future Careers",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/careers/future-careers",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Careers Martial-Arts-Careers",
+          "Labels": [ "WOIN", "Rule", "Character", "Career" ],
+          "SourceDataSetName": "Martial Arts Careers",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/careers/martial-arts-careers",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Careers Modern-Careers",
+          "Labels": [ "WOIN", "Rule", "Character", "Career" ],
+          "SourceDataSetName": "Modern Careers",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/careers/modern-careers",
           "TagSymbol": "~",
@@ -96,7 +96,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Derived-Statistics",
+          "SourceDataSetName": "Characters - Derived Statistics",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/derived-statistics",
           "TagSymbol": "~",
@@ -104,7 +104,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Descriptor",
+          "SourceDataSetName": "Characters - Descriptor",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/descriptor",
           "TagSymbol": "~",
@@ -112,198 +112,198 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Grade",
+          "SourceDataSetName": "Characters - Grade",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/grade",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage" ],
+          "SourceDataSetName": "Characters - Heritages",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Fantasy-Heritages",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Fantasy Heritage",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Fantasy-Heritages Clockfolk",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Clockfolk Heritage",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/clockfolk",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Fantasy-Heritages Goblin",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Goblin Heritage",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/goblin",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Fantasy-Heritages Grand-Elf",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Grand-Elf Heritage",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/grand-elf",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Fantasy-Heritages Minotaur",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Minotaur Heritage",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/minotaur",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Fantasy-Heritages Mountain-Dwarf",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Mountain-Dwarf Heritages",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/mountain-dwarf",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Fantasy-Heritages Ogre",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Ogre Heritages",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/ogre",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Fantasy-Heritages Orc",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Orc Heritages",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/orc",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Fantasy-Heritages Smallfolk",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Smallfolk Heritages",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/smallfolk",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Fantasy-Heritages Sylvan-Elf",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Fantasy" ],
+          "SourceDataSetName": "Sylvan-Elf Heritages",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/fantasy-heritages/sylvan-elf",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Future-Heritages",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Future" ],
+          "SourceDataSetName": "Future Heritage",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/future-heritages",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Future-Heritages Android",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Future" ],
+          "SourceDataSetName": "Android Heritage",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/future-heritages/android",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Future-Heritages Borian",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Future" ],
+          "SourceDataSetName": "Borian Heritage",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/future-heritages/borian",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Future-Heritages Felan",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Future" ],
+          "SourceDataSetName": "Felan Heritage",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/future-heritages/felan",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Future-Heritages Ogron",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Future" ],
+          "SourceDataSetName": "Ogron Heritage",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/future-heritages/ogron",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Future-Heritages Spartan",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Future" ],
+          "SourceDataSetName": "Spartan Heritage",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/future-heritages/spartan",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Future-Heritages Vendalyrian",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Future" ],
+          "SourceDataSetName": "Vendalyrian Heritage",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/future-heritages/vendalyrian",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Human",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage" ],
+          "SourceDataSetName": "Human Heritage",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/human",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Modern-Heritages",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage","Modern" ],
+          "SourceDataSetName": "Modern Heritage",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/modern-heritages",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Modern-Heritages Augmented",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Modern" ],
+          "SourceDataSetName": "Augmented Heritages",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/modern-heritages/augmented",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Modern-Heritages Chosen",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Modern" ],
+          "SourceDataSetName": "Chosen Heritages",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/modern-heritages/chosen",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Heritages Modern-Heritages Mutant",
+          "Labels": [ "WOIN", "Rule", "Character", "Heritage", "Modern" ],
+          "SourceDataSetName": "Mutant Heritages",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/heritages/modern-heritages/mutant",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
+          "Labels": [ "WOIN", "Rule", "Character", "Origin"],
           "SourceDataSetName": "Characters Origins",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/origins",
@@ -311,7 +311,7 @@
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
+          "Labels": [ "WOIN", "Rule", "Character", "Origin", "Fantasy" ],
           "SourceDataSetName": "Characters Origins Fantasy-Origins",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/origins/fantasy-origins",
@@ -319,7 +319,7 @@
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
+          "Labels": [ "WOIN", "Rule", "Character", "Origin", "Future" ],
           "SourceDataSetName": "Characters Origins Future-Origins",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/origins/future-origins",
@@ -327,7 +327,7 @@
           "XPath": "//div[@role='main'][1]"
         },
         {
-          "Labels": [ "WOIN", "Rule", "Character" ],
+          "Labels": [ "WOIN", "Rule", "Character", "Origin" ,"Modern"],
           "SourceDataSetName": "Characters Origins Modern-Origins",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/origins/modern-origins",
@@ -472,7 +472,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Equipment" ],
-          "SourceDataSetName": "Equipment Customizing-Gear Fantasy-Armor-Customizations",
+          "SourceDataSetName": "Fantasy Armor Customizations",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/fantasy-armor-customizations",
           "TagSymbol": "~",
@@ -480,7 +480,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Equipment" ],
-          "SourceDataSetName": "Equipment Customizing-Gear Fantasy-Weapon-Customizations",
+          "SourceDataSetName": "Fantasy Weapon Customizations",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/fantasy-weapon-customizations",
           "TagSymbol": "~",
@@ -488,7 +488,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Equipment" ],
-          "SourceDataSetName": "Equipment Customizing-Gear Future-Armor-Customizations",
+          "SourceDataSetName": "Future Armor Customizations",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/future-armor-customizations",
           "TagSymbol": "~",
@@ -496,7 +496,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Equipment" ],
-          "SourceDataSetName": "Equipment Customizing-Gear Future-Weapon-Customizations",
+          "SourceDataSetName": "Future Weapon Customizations",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/future-weapon-customizations",
           "TagSymbol": "~",
@@ -504,7 +504,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Equipment" ],
-          "SourceDataSetName": "Equipment Customizing-Gear Gauntlet-Customizations",
+          "SourceDataSetName": "Gauntlet Customizations",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/gauntlet-customizations",
           "TagSymbol": "~",
@@ -512,7 +512,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Equipment" ],
-          "SourceDataSetName": "Equipment Customizing-Gear Helmet-Customizations",
+          "SourceDataSetName": "Helmet Customizations",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/helmet-customizations",
           "TagSymbol": "~",
@@ -520,7 +520,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Equipment" ],
-          "SourceDataSetName": "Equipment Customizing-Gear Modern-Armor-Customizations",
+          "SourceDataSetName": "Modern Armor Customizations",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/modern-armor-customizations",
           "TagSymbol": "~",
@@ -528,7 +528,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Equipment" ],
-          "SourceDataSetName": "Equipment Customizing-Gear Modern-Weapon-Customizations",
+          "SourceDataSetName": "Modern Weapon Customizations",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/modern-weapon-customizations",
           "TagSymbol": "~",
@@ -536,7 +536,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Equipment" ],
-          "SourceDataSetName": "Equipment Customizing-Gear Shield-Customizations",
+          "SourceDataSetName": "Shield Customizations",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/equipment/customizing-gear/shield-customizations",
           "TagSymbol": "~",
@@ -560,7 +560,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Equipment" ],
-          "SourceDataSetName": "Equipment Equipment-Skills-Quality",
+          "SourceDataSetName": "Equipment Skills And Quality",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/equipment/equipment-skills-quality",
           "TagSymbol": "~",
@@ -576,7 +576,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Equipment" ],
-          "SourceDataSetName": "Equipment Melee-Weapons-Size",
+          "SourceDataSetName": "Equipment Melee Weapons Size",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/equipment/melee-weapons-size",
           "TagSymbol": "~",
@@ -592,7 +592,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Equipment" ],
-          "SourceDataSetName": "Equipment Services-Foodstuffs",
+          "SourceDataSetName": "Equipment Foodstuffs",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/equipment/services-foodstuffs",
           "TagSymbol": "~",
@@ -600,7 +600,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Equipment" ],
-          "SourceDataSetName": "Equipment Special-Ammunition",
+          "SourceDataSetName": "Equipment Special Ammunition",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/equipment/special-ammunition",
           "TagSymbol": "~",
@@ -632,7 +632,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Injury" ],
-          "SourceDataSetName": "Injury and Death Conditions",
+          "SourceDataSetName": "Injury and Death - Conditions",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/injury-death/conditions",
           "TagSymbol": "~",
@@ -640,15 +640,21 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Injury" ],
-          "SourceDataSetName": "Injury and Death Diseases",
+          "SourceDataSetName": "Injury and Death - Diseases",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/injury-death/diseases",
+          "Substitutions": [
+            {
+              "HTML": "<span></span>",
+              "Xpath": "//*[@id='h.p_0cOZNpY43oqb']/aIn"
+            }
+          ],
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
         {
           "Labels": [ "WOIN", "Rule", "Injury" ],
-          "SourceDataSetName": "Injury and Death Health",
+          "SourceDataSetName": "Injury and Death - Health",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/injury-death/health",
           "TagSymbol": "~",
@@ -664,7 +670,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Chi",
+          "SourceDataSetName": "Chi",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/chi",
           "TagSymbol": "~",
@@ -672,7 +678,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic",
+          "SourceDataSetName": "Magic - General",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic",
           "TagSymbol": "~",
@@ -680,7 +686,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Casting-A-Spell",
+          "SourceDataSetName": "Casting A Spell",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/casting-a-spell",
           "TagSymbol": "~",
@@ -688,7 +694,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Detecting-Identifying-Magic",
+          "SourceDataSetName": "Detecting and Identifying Magic",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/detecting-identifying-magic",
           "TagSymbol": "~",
@@ -696,7 +702,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Magical-Glossary",
+          "SourceDataSetName": "Magical Glossary",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/magical-glossary",
           "TagSymbol": "~",
@@ -704,7 +710,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Magical-Implements",
+          "SourceDataSetName": "Magical Implements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/magical-implements",
           "TagSymbol": "~",
@@ -712,7 +718,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Simplified-Magic",
+          "SourceDataSetName": "Simplified Magic",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/simplified-magic",
           "TagSymbol": "~",
@@ -720,7 +726,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements",
+          "SourceDataSetName": "Spell Enhancement",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements",
           "TagSymbol": "~",
@@ -728,7 +734,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements Abjuration-Enhancements",
+          "SourceDataSetName": "Abjuration Spell Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/abjuration-enhancements",
           "TagSymbol": "~",
@@ -736,7 +742,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements Compulsion-Enhancements",
+          "SourceDataSetName": "Compulsion Spell Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/compulsion-enhancements",
           "TagSymbol": "~",
@@ -744,7 +750,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements Creation-Enhancements",
+          "SourceDataSetName": "Creation Spell Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/creation-enhancements",
           "TagSymbol": "~",
@@ -752,7 +758,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements Displacement-Enhancements",
+          "SourceDataSetName": "Displacement Spell Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/displacement-enhancements",
           "TagSymbol": "~",
@@ -760,7 +766,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements Divination-Enhancements",
+          "SourceDataSetName": "Divination Spell Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/divination-enhancements",
           "TagSymbol": "~",
@@ -768,7 +774,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements Enchantment-Enhancements",
+          "SourceDataSetName": "Enchantment Spell Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/enchantment-enhancements                                                         ",
           "TagSymbol": "~",
@@ -776,7 +782,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements Evocation-Enhancements",
+          "SourceDataSetName": "Evocation Spell Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/evocation-enhancements",
           "TagSymbol": "~",
@@ -784,7 +790,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements General-Enhancements",
+          "SourceDataSetName": "General Spell Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/general-enhancements",
           "TagSymbol": "~",
@@ -792,7 +798,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements Healing-Enhancements",
+          "SourceDataSetName": "Healing Spell Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/healing-enhancements",
           "TagSymbol": "~",
@@ -800,7 +806,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements Hex-Enhancements",
+          "SourceDataSetName": "Hex Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/hex-enhancements",
           "TagSymbol": "~",
@@ -808,7 +814,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements Illusion-Enhancements",
+          "SourceDataSetName": "Illusion Spell Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/illusion-enhancements",
           "TagSymbol": "~",
@@ -816,7 +822,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements Infliction-Enhancements",
+          "SourceDataSetName": "Infliction Spell Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/infliction-enhancements",
           "TagSymbol": "~",
@@ -824,7 +830,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements Infusion-Enhancements",
+          "SourceDataSetName": "Infusion Spell Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/infusion-enhancements",
           "TagSymbol": "~",
@@ -832,7 +838,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements Movement-Enhancements",
+          "SourceDataSetName": "Movement Speel Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/movement-enhancements",
           "TagSymbol": "~",
@@ -840,7 +846,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements Summoning-Enhancements",
+          "SourceDataSetName": "Summoning Spell Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/summoning-enhancements",
           "TagSymbol": "~",
@@ -848,7 +854,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spell-Enhancements Transformation-Enhancements",
+          "SourceDataSetName": "Transformation Spell Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/transformation-enhancements",
           "TagSymbol": "~",
@@ -856,7 +862,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Magic Spellcasting-Basics",
+          "SourceDataSetName": "Spellcasting Basics",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spellcasting-basics",
           "TagSymbol": "~",
@@ -864,7 +870,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Magic-Chi-Psionics Psionics",
+          "SourceDataSetName": "Psionics",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/psionics",
           "TagSymbol": "~",
@@ -880,7 +886,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Space" ],
-          "SourceDataSetName": "Space Random-Space-Phenomena",
+          "SourceDataSetName": "Space - Random Space Phenomena",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/space/random-space-phenomena",
           "TagSymbol": "~",
@@ -888,7 +894,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Space" ],
-          "SourceDataSetName": "Space Sensors",
+          "SourceDataSetName": "Space - Sensors",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/space/sensors",
           "TagSymbol": "~",
@@ -904,7 +910,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Space" ],
-          "SourceDataSetName": "Space Travel - Arrival",
+          "SourceDataSetName": "Space Travel - Travel and Arrival",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/space/space-travel/arrival",
           "TagSymbol": "~",
@@ -920,7 +926,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Space" ],
-          "SourceDataSetName": "Space Travel - Distance Time Ftl",
+          "SourceDataSetName": "Space Travel - Distance Time FTL",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/space/space-travel/distance-time-ftl",
           "TagSymbol": "~",
@@ -992,7 +998,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Space" ],
-          "SourceDataSetName": "Space - Stellar Objects",
+          "SourceDataSetName": "Stellar Object",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/space/stellar-objects",
           "TagSymbol": "~",
@@ -1000,7 +1006,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Space" ],
-          "SourceDataSetName": "Space - Stellar Objects Anomalies",
+          "SourceDataSetName": "Stellar Anomalies",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/space/stellar-objects/anomalies",
           "TagSymbol": "~",
@@ -1008,7 +1014,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Space" ],
-          "SourceDataSetName": "Space - Stellar Objects Astroengineering",
+          "SourceDataSetName": "Astroengineering",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/space/stellar-objects/astroengineering",
           "TagSymbol": "~",
@@ -1016,7 +1022,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Space" ],
-          "SourceDataSetName": "Space Travel - Objects Black Holes",
+          "SourceDataSetName": "Black Holes",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/space/stellar-objects/black-holes",
           "TagSymbol": "~",
@@ -1024,7 +1030,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Space" ],
-          "SourceDataSetName": "Space Travel - Objects Exotic Stars",
+          "SourceDataSetName": "Exotic Stars",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/space/stellar-objects/exotic-stars",
           "TagSymbol": "~",
@@ -1032,7 +1038,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Space" ],
-          "SourceDataSetName": "Space Travel - Objects Nebulae",
+          "SourceDataSetName": "Nebulae",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/space/stellar-objects/nebulae",
           "TagSymbol": "~",
@@ -1040,7 +1046,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Space" ],
-          "SourceDataSetName": "Space Travel - Objects Rogue-Planets",
+          "SourceDataSetName": "Rogue-Planets",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/space/stellar-objects/rogue-planets",
           "TagSymbol": "~",
@@ -1048,7 +1054,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Space" ],
-          "SourceDataSetName": "Space Travel - Objects Stars",
+          "SourceDataSetName": "Stars",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/space/stellar-objects/stars",
           "TagSymbol": "~",
@@ -1056,7 +1062,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Starship Combat" ],
-          "SourceDataSetName": "Space Travel - Advanced Starship Combat",
+          "SourceDataSetName": "Advanced Starship Combat",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/starship-combat/advanced-starship-combat",
           "TagSymbol": "~",

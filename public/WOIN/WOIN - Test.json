@@ -37,7 +37,7 @@
         "Character"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Advancement"
+      "tagValue": "Characters - Advancement"
     },
     {
       "rawText": "",
@@ -48,7 +48,7 @@
         "Character"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Age"
+      "tagValue": "Characters - Age"
     },
     {
       "rawText": "",
@@ -59,7 +59,7 @@
         "Character"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Attributes"
+      "tagValue": "Characters - Attributes"
     },
     {
       "rawText": "",
@@ -67,10 +67,11 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Career"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Careers"
+      "tagValue": "Careers - General"
     },
     {
       "rawText": "",
@@ -78,10 +79,11 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Career"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Careers Fantasy-Careers"
+      "tagValue": "Fantasy Careers"
     },
     {
       "rawText": "",
@@ -89,10 +91,11 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Career"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters careers Future-Careers"
+      "tagValue": "Future Careers"
     },
     {
       "rawText": "",
@@ -100,10 +103,11 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Career"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Careers Martial-Arts-Careers"
+      "tagValue": "Martial Arts Careers"
     },
     {
       "rawText": "",
@@ -111,10 +115,11 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Career"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Careers Modern-Careers"
+      "tagValue": "Modern Careers"
     },
     {
       "rawText": "",
@@ -125,7 +130,7 @@
         "Character"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Derived-Statistics"
+      "tagValue": "Characters - Derived Statistics"
     },
     {
       "rawText": "",
@@ -136,7 +141,7 @@
         "Character"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Descriptor"
+      "tagValue": "Characters - Descriptor"
     },
     {
       "rawText": "",
@@ -147,7 +152,7 @@
         "Character"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Grade"
+      "tagValue": "Characters - Grade"
     },
     {
       "rawText": "",
@@ -155,10 +160,11 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages"
+      "tagValue": "Characters - Heritages"
     },
     {
       "rawText": "",
@@ -166,10 +172,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Fantasy"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Fantasy-Heritages"
+      "tagValue": "Fantasy Heritage"
     },
     {
       "rawText": "",
@@ -177,10 +185,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Fantasy"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Fantasy-Heritages Clockfolk"
+      "tagValue": "Clockfolk Heritage"
     },
     {
       "rawText": "",
@@ -188,10 +198,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Fantasy"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Fantasy-Heritages Goblin"
+      "tagValue": "Goblin Heritage"
     },
     {
       "rawText": "",
@@ -199,10 +211,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Fantasy"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Fantasy-Heritages Grand-Elf"
+      "tagValue": "Grand-Elf Heritage"
     },
     {
       "rawText": "",
@@ -210,10 +224,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Fantasy"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Fantasy-Heritages Minotaur"
+      "tagValue": "Minotaur Heritage"
     },
     {
       "rawText": "",
@@ -221,10 +237,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Fantasy"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Fantasy-Heritages Mountain-Dwarf"
+      "tagValue": "Mountain-Dwarf Heritages"
     },
     {
       "rawText": "",
@@ -232,10 +250,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Fantasy"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Fantasy-Heritages Ogre"
+      "tagValue": "Ogre Heritages"
     },
     {
       "rawText": "",
@@ -243,10 +263,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Fantasy"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Fantasy-Heritages Orc"
+      "tagValue": "Orc Heritages"
     },
     {
       "rawText": "",
@@ -254,10 +276,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Fantasy"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Fantasy-Heritages Smallfolk"
+      "tagValue": "Smallfolk Heritages"
     },
     {
       "rawText": "",
@@ -265,10 +289,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Fantasy"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Fantasy-Heritages Sylvan-Elf"
+      "tagValue": "Sylvan-Elf Heritages"
     },
     {
       "rawText": "",
@@ -276,10 +302,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Future"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Future-Heritages"
+      "tagValue": "Future Heritage"
     },
     {
       "rawText": "",
@@ -287,10 +315,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Future"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Future-Heritages Android"
+      "tagValue": "Android Heritage"
     },
     {
       "rawText": "",
@@ -298,10 +328,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Future"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Future-Heritages Borian"
+      "tagValue": "Borian Heritage"
     },
     {
       "rawText": "",
@@ -309,10 +341,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Future"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Future-Heritages Felan"
+      "tagValue": "Felan Heritage"
     },
     {
       "rawText": "",
@@ -320,10 +354,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Future"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Future-Heritages Ogron"
+      "tagValue": "Ogron Heritage"
     },
     {
       "rawText": "",
@@ -331,10 +367,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Future"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Future-Heritages Spartan"
+      "tagValue": "Spartan Heritage"
     },
     {
       "rawText": "",
@@ -342,10 +380,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Future"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Future-Heritages Vendalyrian"
+      "tagValue": "Vendalyrian Heritage"
     },
     {
       "rawText": "",
@@ -353,10 +393,11 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Human"
+      "tagValue": "Human Heritage"
     },
     {
       "rawText": "",
@@ -364,10 +405,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Modern"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Modern-Heritages"
+      "tagValue": "Modern Heritage"
     },
     {
       "rawText": "",
@@ -375,10 +418,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Modern"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Modern-Heritages Augmented"
+      "tagValue": "Augmented Heritages"
     },
     {
       "rawText": "",
@@ -386,10 +431,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Modern"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Modern-Heritages Chosen"
+      "tagValue": "Chosen Heritages"
     },
     {
       "rawText": "",
@@ -397,10 +444,12 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Heritage",
+        "Modern"
       ],
       "tagSymbol": "~",
-      "tagValue": "Characters Heritages Modern-Heritages Mutant"
+      "tagValue": "Mutant Heritages"
     },
     {
       "rawText": "",
@@ -408,7 +457,8 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Origin"
       ],
       "tagSymbol": "~",
       "tagValue": "Characters Origins"
@@ -419,7 +469,9 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Origin",
+        "Fantasy"
       ],
       "tagSymbol": "~",
       "tagValue": "Characters Origins Fantasy-Origins"
@@ -430,7 +482,9 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Origin",
+        "Future"
       ],
       "tagSymbol": "~",
       "tagValue": "Characters Origins Future-Origins"
@@ -441,7 +495,9 @@
       "labels": [
         "WOIN",
         "Rule",
-        "Character"
+        "Character",
+        "Origin",
+        "Modern"
       ],
       "tagSymbol": "~",
       "tagValue": "Characters Origins Modern-Origins"
@@ -640,7 +696,7 @@
         "Equipment"
       ],
       "tagSymbol": "~",
-      "tagValue": "Equipment Customizing-Gear Fantasy-Armor-Customizations"
+      "tagValue": "Fantasy Armor Customizations"
     },
     {
       "rawText": "",
@@ -651,7 +707,7 @@
         "Equipment"
       ],
       "tagSymbol": "~",
-      "tagValue": "Equipment Customizing-Gear Fantasy-Weapon-Customizations"
+      "tagValue": "Fantasy Weapon Customizations"
     },
     {
       "rawText": "",
@@ -662,7 +718,7 @@
         "Equipment"
       ],
       "tagSymbol": "~",
-      "tagValue": "Equipment Customizing-Gear Future-Armor-Customizations"
+      "tagValue": "Future Armor Customizations"
     },
     {
       "rawText": "",
@@ -673,7 +729,7 @@
         "Equipment"
       ],
       "tagSymbol": "~",
-      "tagValue": "Equipment Customizing-Gear Future-Weapon-Customizations"
+      "tagValue": "Future Weapon Customizations"
     },
     {
       "rawText": "",
@@ -684,7 +740,7 @@
         "Equipment"
       ],
       "tagSymbol": "~",
-      "tagValue": "Equipment Customizing-Gear Gauntlet-Customizations"
+      "tagValue": "Gauntlet Customizations"
     },
     {
       "rawText": "",
@@ -695,7 +751,7 @@
         "Equipment"
       ],
       "tagSymbol": "~",
-      "tagValue": "Equipment Customizing-Gear Helmet-Customizations"
+      "tagValue": "Helmet Customizations"
     },
     {
       "rawText": "",
@@ -706,7 +762,7 @@
         "Equipment"
       ],
       "tagSymbol": "~",
-      "tagValue": "Equipment Customizing-Gear Modern-Armor-Customizations"
+      "tagValue": "Modern Armor Customizations"
     },
     {
       "rawText": "",
@@ -717,7 +773,7 @@
         "Equipment"
       ],
       "tagSymbol": "~",
-      "tagValue": "Equipment Customizing-Gear Modern-Weapon-Customizations"
+      "tagValue": "Modern Weapon Customizations"
     },
     {
       "rawText": "",
@@ -728,7 +784,7 @@
         "Equipment"
       ],
       "tagSymbol": "~",
-      "tagValue": "Equipment Customizing-Gear Shield-Customizations"
+      "tagValue": "Shield Customizations"
     },
     {
       "rawText": "",
@@ -761,7 +817,7 @@
         "Equipment"
       ],
       "tagSymbol": "~",
-      "tagValue": "Equipment Equipment-Skills-Quality"
+      "tagValue": "Equipment Skills And Quality"
     },
     {
       "rawText": "",
@@ -783,7 +839,7 @@
         "Equipment"
       ],
       "tagSymbol": "~",
-      "tagValue": "Equipment Melee-Weapons-Size"
+      "tagValue": "Equipment Melee Weapons Size"
     },
     {
       "rawText": "",
@@ -805,7 +861,7 @@
         "Equipment"
       ],
       "tagSymbol": "~",
-      "tagValue": "Equipment Services-Foodstuffs"
+      "tagValue": "Equipment Foodstuffs"
     },
     {
       "rawText": "",
@@ -816,7 +872,7 @@
         "Equipment"
       ],
       "tagSymbol": "~",
-      "tagValue": "Equipment Special-Ammunition"
+      "tagValue": "Equipment Special Ammunition"
     },
     {
       "rawText": "",
@@ -860,7 +916,7 @@
         "Injury"
       ],
       "tagSymbol": "~",
-      "tagValue": "Injury and Death Conditions"
+      "tagValue": "Injury and Death - Conditions"
     },
     {
       "rawText": "",
@@ -871,7 +927,7 @@
         "Injury"
       ],
       "tagSymbol": "~",
-      "tagValue": "Injury and Death Diseases"
+      "tagValue": "Injury and Death - Diseases"
     },
     {
       "rawText": "",
@@ -882,7 +938,7 @@
         "Injury"
       ],
       "tagSymbol": "~",
-      "tagValue": "Injury and Death Health"
+      "tagValue": "Injury and Death - Health"
     },
     {
       "rawText": "",
@@ -906,7 +962,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Chi"
+      "tagValue": "Chi"
     },
     {
       "rawText": "",
@@ -918,7 +974,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic"
+      "tagValue": "Magic - General"
     },
     {
       "rawText": "",
@@ -930,7 +986,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Casting-A-Spell"
+      "tagValue": "Casting A Spell"
     },
     {
       "rawText": "",
@@ -942,7 +998,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Detecting-Identifying-Magic"
+      "tagValue": "Detecting and Identifying Magic"
     },
     {
       "rawText": "",
@@ -954,7 +1010,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Magical-Glossary"
+      "tagValue": "Magical Glossary"
     },
     {
       "rawText": "",
@@ -966,7 +1022,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Magical-Implements"
+      "tagValue": "Magical Implements"
     },
     {
       "rawText": "",
@@ -978,7 +1034,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Simplified-Magic"
+      "tagValue": "Simplified Magic"
     },
     {
       "rawText": "",
@@ -990,7 +1046,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements"
+      "tagValue": "Spell Enhancement"
     },
     {
       "rawText": "",
@@ -1002,7 +1058,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements Abjuration-Enhancements"
+      "tagValue": "Abjuration Spell Enhancements"
     },
     {
       "rawText": "",
@@ -1014,7 +1070,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements Compulsion-Enhancements"
+      "tagValue": "Compulsion Spell Enhancements"
     },
     {
       "rawText": "",
@@ -1026,7 +1082,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements Creation-Enhancements"
+      "tagValue": "Creation Spell Enhancements"
     },
     {
       "rawText": "",
@@ -1038,7 +1094,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements Displacement-Enhancements"
+      "tagValue": "Displacement Spell Enhancements"
     },
     {
       "rawText": "",
@@ -1050,7 +1106,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements Divination-Enhancements"
+      "tagValue": "Divination Spell Enhancements"
     },
     {
       "rawText": "",
@@ -1062,7 +1118,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements Enchantment-Enhancements"
+      "tagValue": "Enchantment Spell Enhancements"
     },
     {
       "rawText": "",
@@ -1074,7 +1130,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements Evocation-Enhancements"
+      "tagValue": "Evocation Spell Enhancements"
     },
     {
       "rawText": "",
@@ -1086,7 +1142,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements General-Enhancements"
+      "tagValue": "General Spell Enhancements"
     },
     {
       "rawText": "",
@@ -1098,7 +1154,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements Healing-Enhancements"
+      "tagValue": "Healing Spell Enhancements"
     },
     {
       "rawText": "",
@@ -1110,7 +1166,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements Hex-Enhancements"
+      "tagValue": "Hex Enhancements"
     },
     {
       "rawText": "",
@@ -1122,7 +1178,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements Illusion-Enhancements"
+      "tagValue": "Illusion Spell Enhancements"
     },
     {
       "rawText": "",
@@ -1134,7 +1190,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements Infliction-Enhancements"
+      "tagValue": "Infliction Spell Enhancements"
     },
     {
       "rawText": "",
@@ -1146,7 +1202,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements Infusion-Enhancements"
+      "tagValue": "Infusion Spell Enhancements"
     },
     {
       "rawText": "",
@@ -1158,7 +1214,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements Movement-Enhancements"
+      "tagValue": "Movement Speel Enhancements"
     },
     {
       "rawText": "",
@@ -1170,7 +1226,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements Summoning-Enhancements"
+      "tagValue": "Summoning Spell Enhancements"
     },
     {
       "rawText": "",
@@ -1182,7 +1238,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spell-Enhancements Transformation-Enhancements"
+      "tagValue": "Transformation Spell Enhancements"
     },
     {
       "rawText": "",
@@ -1194,7 +1250,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Magic Spellcasting-Basics"
+      "tagValue": "Spellcasting Basics"
     },
     {
       "rawText": "",
@@ -1206,7 +1262,7 @@
         "Psionics"
       ],
       "tagSymbol": "~",
-      "tagValue": "Magic-Chi-Psionics Psionics"
+      "tagValue": "Psionics"
     },
     {
       "rawText": "",
@@ -1228,7 +1284,7 @@
         "Space"
       ],
       "tagSymbol": "~",
-      "tagValue": "Space Random-Space-Phenomena"
+      "tagValue": "Space - Random Space Phenomena"
     },
     {
       "rawText": "",
@@ -1239,7 +1295,7 @@
         "Space"
       ],
       "tagSymbol": "~",
-      "tagValue": "Space Sensors"
+      "tagValue": "Space - Sensors"
     },
     {
       "rawText": "",
@@ -1261,7 +1317,7 @@
         "Space"
       ],
       "tagSymbol": "~",
-      "tagValue": "Space Travel - Arrival"
+      "tagValue": "Space Travel - Travel and Arrival"
     },
     {
       "rawText": "",
@@ -1283,7 +1339,7 @@
         "Space"
       ],
       "tagSymbol": "~",
-      "tagValue": "Space Travel - Distance Time Ftl"
+      "tagValue": "Space Travel - Distance Time FTL"
     },
     {
       "rawText": "",
@@ -1382,7 +1438,7 @@
         "Space"
       ],
       "tagSymbol": "~",
-      "tagValue": "Space - Stellar Objects"
+      "tagValue": "Stellar Object"
     },
     {
       "rawText": "",
@@ -1393,7 +1449,7 @@
         "Space"
       ],
       "tagSymbol": "~",
-      "tagValue": "Space - Stellar Objects Anomalies"
+      "tagValue": "Stellar Anomalies"
     },
     {
       "rawText": "",
@@ -1404,7 +1460,7 @@
         "Space"
       ],
       "tagSymbol": "~",
-      "tagValue": "Space - Stellar Objects Astroengineering"
+      "tagValue": "Astroengineering"
     },
     {
       "rawText": "",
@@ -1415,7 +1471,7 @@
         "Space"
       ],
       "tagSymbol": "~",
-      "tagValue": "Space Travel - Objects Black Holes"
+      "tagValue": "Black Holes"
     },
     {
       "rawText": "",
@@ -1426,7 +1482,7 @@
         "Space"
       ],
       "tagSymbol": "~",
-      "tagValue": "Space Travel - Objects Exotic Stars"
+      "tagValue": "Exotic Stars"
     },
     {
       "rawText": "",
@@ -1437,7 +1493,7 @@
         "Space"
       ],
       "tagSymbol": "~",
-      "tagValue": "Space Travel - Objects Nebulae"
+      "tagValue": "Nebulae"
     },
     {
       "rawText": "",
@@ -1448,7 +1504,7 @@
         "Space"
       ],
       "tagSymbol": "~",
-      "tagValue": "Space Travel - Objects Rogue-Planets"
+      "tagValue": "Rogue-Planets"
     },
     {
       "rawText": "",
@@ -1459,7 +1515,7 @@
         "Space"
       ],
       "tagSymbol": "~",
-      "tagValue": "Space Travel - Objects Stars"
+      "tagValue": "Stars"
     },
     {
       "rawText": "",
@@ -1470,7 +1526,7 @@
         "Starship Combat"
       ],
       "tagSymbol": "~",
-      "tagValue": "Space Travel - Advanced Starship Combat"
+      "tagValue": "Advanced Starship Combat"
     },
     {
       "rawText": "",
