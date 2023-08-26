@@ -34,6 +34,10 @@ A number of examples of how to configure the creation of compendiums using this 
     "GameSystem": "Dungeons and Dragons 5e",
     // Image to use for the compendium.
     "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
+    // If true, process this compendium.  If not, skip it.
+    "IsActive": true,
+    // If true, overwrite an existing compendium if it already exists.  If false, and compendium exists, skip processing.
+    "OverwriteExisting": true,
     // List of source data sets to parse and compile into the compendium.
     "SourceDataSets": [
     {

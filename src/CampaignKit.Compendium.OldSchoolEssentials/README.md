@@ -19,6 +19,10 @@ A number of examples of how to configure the creation of compendiums using this 
       "GameSystem": "Old School Essentials",
       // Image to use for the compendium.
       "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
+      // If true, process this compendium.  If not, skip it.
+      "IsActive": true,
+      // If true, overwrite an existing compendium if it already exists.  If false, and compendium exists, skip processing.
+      "OverwriteExisting": true,
       // Configurable parameters for each type of entity
       "SourceDataSets": [
         {
