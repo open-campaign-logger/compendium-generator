@@ -8574,6 +8574,19 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Tests.WebScraper.SRDWebPageTests.SRDWebPage_PostProcessMarkdown_BoldSyntaxReplaced
   nameWithType: SRDWebPageTests.SRDWebPage_PostProcessMarkdown_BoldSyntaxReplaced
+- uid: CampaignKit.Compendium.Tests.WebScraper.SRDWebPageTests.SRDWebPage_PostProcessMarkdown_MisalignedHeaders
+  name: SRDWebPage_PostProcessMarkdown_MisalignedHeaders()
+  href: api/CampaignKit.Compendium.Tests.WebScraper.SRDWebPageTests.html#CampaignKit_Compendium_Tests_WebScraper_SRDWebPageTests_SRDWebPage_PostProcessMarkdown_MisalignedHeaders
+  commentId: M:CampaignKit.Compendium.Tests.WebScraper.SRDWebPageTests.SRDWebPage_PostProcessMarkdown_MisalignedHeaders
+  fullName: CampaignKit.Compendium.Tests.WebScraper.SRDWebPageTests.SRDWebPage_PostProcessMarkdown_MisalignedHeaders()
+  nameWithType: SRDWebPageTests.SRDWebPage_PostProcessMarkdown_MisalignedHeaders()
+- uid: CampaignKit.Compendium.Tests.WebScraper.SRDWebPageTests.SRDWebPage_PostProcessMarkdown_MisalignedHeaders*
+  name: SRDWebPage_PostProcessMarkdown_MisalignedHeaders
+  href: api/CampaignKit.Compendium.Tests.WebScraper.SRDWebPageTests.html#CampaignKit_Compendium_Tests_WebScraper_SRDWebPageTests_SRDWebPage_PostProcessMarkdown_MisalignedHeaders_
+  commentId: Overload:CampaignKit.Compendium.Tests.WebScraper.SRDWebPageTests.SRDWebPage_PostProcessMarkdown_MisalignedHeaders
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Tests.WebScraper.SRDWebPageTests.SRDWebPage_PostProcessMarkdown_MisalignedHeaders
+  nameWithType: SRDWebPageTests.SRDWebPage_PostProcessMarkdown_MisalignedHeaders
 - uid: CampaignKit.Compendium.Tests.WebScraper.SRDWebPageTests.SRDWebPage_PostProcessMarkdown_MisalignedListsFixed
   name: SRDWebPage_PostProcessMarkdown_MisalignedListsFixed()
   href: api/CampaignKit.Compendium.Tests.WebScraper.SRDWebPageTests.html#CampaignKit_Compendium_Tests_WebScraper_SRDWebPageTests_SRDWebPage_PostProcessMarkdown_MisalignedListsFixed
@@ -8644,19 +8657,19 @@ references:
   commentId: T:CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests
   fullName: CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests
   nameWithType: WOINWebPageTests
-- uid: CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.SRDWebPage_PreProcessHtml_BoldSyntaxAdded
-  name: SRDWebPage_PreProcessHtml_BoldSyntaxAdded()
-  href: api/CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.html#CampaignKit_Compendium_Tests_WOIN_WOINWebPageTests_SRDWebPage_PreProcessHtml_BoldSyntaxAdded
-  commentId: M:CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.SRDWebPage_PreProcessHtml_BoldSyntaxAdded
-  fullName: CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.SRDWebPage_PreProcessHtml_BoldSyntaxAdded()
-  nameWithType: WOINWebPageTests.SRDWebPage_PreProcessHtml_BoldSyntaxAdded()
-- uid: CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.SRDWebPage_PreProcessHtml_BoldSyntaxAdded*
-  name: SRDWebPage_PreProcessHtml_BoldSyntaxAdded
-  href: api/CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.html#CampaignKit_Compendium_Tests_WOIN_WOINWebPageTests_SRDWebPage_PreProcessHtml_BoldSyntaxAdded_
-  commentId: Overload:CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.SRDWebPage_PreProcessHtml_BoldSyntaxAdded
+- uid: CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.WOINWebPage_PreProcessHtml_BoldSyntaxAdded
+  name: WOINWebPage_PreProcessHtml_BoldSyntaxAdded()
+  href: api/CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.html#CampaignKit_Compendium_Tests_WOIN_WOINWebPageTests_WOINWebPage_PreProcessHtml_BoldSyntaxAdded
+  commentId: M:CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.WOINWebPage_PreProcessHtml_BoldSyntaxAdded
+  fullName: CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.WOINWebPage_PreProcessHtml_BoldSyntaxAdded()
+  nameWithType: WOINWebPageTests.WOINWebPage_PreProcessHtml_BoldSyntaxAdded()
+- uid: CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.WOINWebPage_PreProcessHtml_BoldSyntaxAdded*
+  name: WOINWebPage_PreProcessHtml_BoldSyntaxAdded
+  href: api/CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.html#CampaignKit_Compendium_Tests_WOIN_WOINWebPageTests_WOINWebPage_PreProcessHtml_BoldSyntaxAdded_
+  commentId: Overload:CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.WOINWebPage_PreProcessHtml_BoldSyntaxAdded
   isSpec: "True"
-  fullName: CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.SRDWebPage_PreProcessHtml_BoldSyntaxAdded
-  nameWithType: WOINWebPageTests.SRDWebPage_PreProcessHtml_BoldSyntaxAdded
+  fullName: CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.WOINWebPage_PreProcessHtml_BoldSyntaxAdded
+  nameWithType: WOINWebPageTests.WOINWebPage_PreProcessHtml_BoldSyntaxAdded
 - uid: CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.WOINWebPageHelper_LoadHtmlDocumentNoStartingNode_NavigationSuccessful
   name: WOINWebPageHelper_LoadHtmlDocumentNoStartingNode_NavigationSuccessful()
   href: api/CampaignKit.Compendium.Tests.WOIN.WOINWebPageTests.html#CampaignKit_Compendium_Tests_WOIN_WOINWebPageTests_WOINWebPageHelper_LoadHtmlDocumentNoStartingNode_NavigationSuccessful
@@ -9281,6 +9294,45 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.AddRowToTable
   nameWithType: WOINWebPageHelper.AddRowToTable
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseDefinitionList(HtmlAgilityPack.HtmlNode,HtmlAgilityPack.HtmlNode)
+  name: CloseDefinitionList(HtmlNode, HtmlNode)
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_CloseDefinitionList_HtmlAgilityPack_HtmlNode_HtmlAgilityPack_HtmlNode_
+  commentId: M:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseDefinitionList(HtmlAgilityPack.HtmlNode,HtmlAgilityPack.HtmlNode)
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseDefinitionList(HtmlAgilityPack.HtmlNode, HtmlAgilityPack.HtmlNode)
+  nameWithType: WOINWebPageHelper.CloseDefinitionList(HtmlNode, HtmlNode)
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseDefinitionList*
+  name: CloseDefinitionList
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_CloseDefinitionList_
+  commentId: Overload:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseDefinitionList
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseDefinitionList
+  nameWithType: WOINWebPageHelper.CloseDefinitionList
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseStatblock(HtmlAgilityPack.HtmlNode,HtmlAgilityPack.HtmlNode)
+  name: CloseStatblock(HtmlNode, HtmlNode)
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_CloseStatblock_HtmlAgilityPack_HtmlNode_HtmlAgilityPack_HtmlNode_
+  commentId: M:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseStatblock(HtmlAgilityPack.HtmlNode,HtmlAgilityPack.HtmlNode)
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseStatblock(HtmlAgilityPack.HtmlNode, HtmlAgilityPack.HtmlNode)
+  nameWithType: WOINWebPageHelper.CloseStatblock(HtmlNode, HtmlNode)
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseStatblock*
+  name: CloseStatblock
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_CloseStatblock_
+  commentId: Overload:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseStatblock
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseStatblock
+  nameWithType: WOINWebPageHelper.CloseStatblock
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseTable(HtmlAgilityPack.HtmlNode,HtmlAgilityPack.HtmlNode)
+  name: CloseTable(HtmlNode, HtmlNode)
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_CloseTable_HtmlAgilityPack_HtmlNode_HtmlAgilityPack_HtmlNode_
+  commentId: M:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseTable(HtmlAgilityPack.HtmlNode,HtmlAgilityPack.HtmlNode)
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseTable(HtmlAgilityPack.HtmlNode, HtmlAgilityPack.HtmlNode)
+  nameWithType: WOINWebPageHelper.CloseTable(HtmlNode, HtmlNode)
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseTable*
+  name: CloseTable
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_CloseTable_
+  commentId: Overload:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseTable
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.CloseTable
+  nameWithType: WOINWebPageHelper.CloseTable
 - uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ContainsDefinitionData(HtmlAgilityPack.HtmlNode)
   name: ContainsDefinitionData(HtmlNode)
   href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_ContainsDefinitionData_HtmlAgilityPack_HtmlNode_
@@ -9359,6 +9411,45 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.GetList
   nameWithType: WOINWebPageHelper.GetList
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenDefiintionList
+  name: OpenDefiintionList()
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_OpenDefiintionList
+  commentId: M:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenDefiintionList
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenDefiintionList()
+  nameWithType: WOINWebPageHelper.OpenDefiintionList()
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenDefiintionList*
+  name: OpenDefiintionList
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_OpenDefiintionList_
+  commentId: Overload:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenDefiintionList
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenDefiintionList
+  nameWithType: WOINWebPageHelper.OpenDefiintionList
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenStatBlock
+  name: OpenStatBlock()
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_OpenStatBlock
+  commentId: M:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenStatBlock
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenStatBlock()
+  nameWithType: WOINWebPageHelper.OpenStatBlock()
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenStatBlock*
+  name: OpenStatBlock
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_OpenStatBlock_
+  commentId: Overload:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenStatBlock
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenStatBlock
+  nameWithType: WOINWebPageHelper.OpenStatBlock
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenTable
+  name: OpenTable()
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_OpenTable
+  commentId: M:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenTable
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenTable()
+  nameWithType: WOINWebPageHelper.OpenTable()
+- uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenTable*
+  name: OpenTable
+  href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_OpenTable_
+  commentId: Overload:CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenTable
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.OpenTable
+  nameWithType: WOINWebPageHelper.OpenTable
 - uid: CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ParseSectionContent(HtmlAgilityPack.HtmlNode)
   name: ParseSectionContent(HtmlNode)
   href: api/CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.html#CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_ParseSectionContent_HtmlAgilityPack_HtmlNode_

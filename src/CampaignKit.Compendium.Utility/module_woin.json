@@ -10,6 +10,22 @@
       "SourceDataSets": [
         {
           "Labels": [ "WOIN", "Rule", "Character" ],
+          "SourceDataSetName": "Characters Skills",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/skills",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character", "Career" ],
+          "SourceDataSetName": "Future Careers",
+          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/careers/future-careers",
+          "TagSymbol": "~",
+          "XPath": "//div[@role='main'][1]"
+        },
+        {
+          "Labels": [ "WOIN", "Rule", "Character" ],
           "SourceDataSetName": "Characters Universal-Exploits",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/universal-exploits",
@@ -75,14 +91,6 @@
           "SourceDataSetName": "Fantasy Careers",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/careers/fantasy-careers",
-          "TagSymbol": "~",
-          "XPath": "//div[@role='main'][1]"
-        },
-        {
-          "Labels": [ "WOIN", "Rule", "Character", "Career" ],
-          "SourceDataSetName": "Future Careers",
-          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
-          "SourceDataSetURI": "https://www.woinrules.com/characters/careers/future-careers",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },
@@ -347,14 +355,6 @@
           "SourceDataSetName": "Characters Sample-Character",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/sample-character",
-          "TagSymbol": "~",
-          "XPath": "//div[@role='main'][1]"
-        },
-        {
-          "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Skills",
-          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
-          "SourceDataSetURI": "https://www.woinrules.com/characters/skills",
           "TagSymbol": "~",
           "XPath": "//div[@role='main'][1]"
         },

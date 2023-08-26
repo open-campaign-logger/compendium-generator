@@ -58,7 +58,7 @@ namespace CampaignKit.Compendium.Tests.WebScraper
             var markdown = "This is an **example of** text that has some of its elements **bold via markdown syntax**";
 
             // Act
-            var postProcessedMarkdown = (new WOINWebPage()).PostProcessMarkdown(markdown);
+            var postProcessedMarkdown = (new SRDWebPage()).PostProcessMarkdown(markdown);
 
             // Assert
             Assert.IsNotNull(postProcessedMarkdown);
@@ -72,11 +72,25 @@ namespace CampaignKit.Compendium.Tests.WebScraper
             var markdown = "- MAGIC (MAG)\n    - \n\nMagical power; its source can vary – it might be favours from a god, or a wellspring of internal arcane energy, but it is used to determine how powerful your spells are and which spells you are able to cast.";
 
             // Act
-            var postProcessedMarkdown = (new WOINWebPage()).PostProcessMarkdown(markdown);
+            var postProcessedMarkdown = (new SRDWebPage()).PostProcessMarkdown(markdown);
 
             // Assert
             Assert.IsNotNull(postProcessedMarkdown);
             Assert.AreEqual(postProcessedMarkdown, "- MAGIC (MAG)\n    - Magical power; its source can vary – it might be favours from a god, or a wellspring of internal arcane energy, but it is used to determine how powerful your spells are and which spells you are able to cast.");
+        }
+
+        [TestMethod]
+        public void SRDWebPage_PostProcessMarkdown_MisalignedHeaders()
+        {
+            // Arrange
+            var markdown = "# Future Careers\n\n## \n\nAcademy [3 years]";
+
+            // Act
+            var postProcessedMarkdown = (new SRDWebPage()).PostProcessMarkdown(markdown);
+
+            // Assert
+            Assert.IsNotNull(postProcessedMarkdown);
+            Assert.AreEqual(postProcessedMarkdown, "# Future Careers\n\n## Academy [3 years]");
         }
 
 

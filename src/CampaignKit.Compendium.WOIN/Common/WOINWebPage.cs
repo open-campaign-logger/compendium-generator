@@ -33,6 +33,15 @@ namespace CampaignKit.Compendium.WOIN.Common
             // Execute base class functionality
             markdown = base.PostProcessMarkdown(markdown);
 
+            // Regular expression pattern to bullet lists with text on a separate line
+            var pattern = @"^(#+ )─+";
+
+            // Replacement pattern to move the header text to the same line as the markdown header
+            var replacement = "#$1 Actions";
+
+            // Perform the replacement using Regex.Replace
+            markdown = Regex.Replace(markdown, pattern, replacement, RegexOptions.Multiline);
+
             return markdown;
         }
 

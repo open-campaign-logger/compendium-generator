@@ -22,6 +22,8 @@ namespace CampaignKit.Compendium.WOIN.Common
 
     using HtmlAgilityPack;
 
+    using Microsoft.EntityFrameworkCore.Update;
+
     /// <summary>
     /// Utility class for WOIN content conversions.
     /// </summary>
@@ -66,7 +68,7 @@ namespace CampaignKit.Compendium.WOIN.Common
                 }
 
                 // Create the definition term.
-                definitionList.AppendChild(HtmlNode.CreateNode($"<dt>{spanNodes[0].OuterHtml}</dt>"));
+                definitionList.AppendChild(HtmlNode.CreateNode($"<dt><b>{spanNodes[0].OuterHtml}</b></dt>"));
 
                 // Create the definition item
                 definitionList.AppendChild(HtmlNode.CreateNode($"<dd>{definitionBuilder.ToString()}</dd>"));
@@ -163,6 +165,84 @@ namespace CampaignKit.Compendium.WOIN.Common
 
             // Add the definition to the definitionList
             tableNode.AppendChild(newRow);
+        }
+
+        /// <summary>
+        /// Closes the given definitionList and appends it to the given destination node.
+        /// </summary>
+        /// <param name="destination">The node to append the definitionList to.</param>
+        /// <param name="definitionList">The definitionList to close.</param>
+        /// <returns>The newly opened definitionList.</returns>
+        public static HtmlNode CloseDefinitionList(HtmlNode destination, HtmlNode definitionList)
+        {
+            if (destination == null)
+            {
+                throw new ArgumentNullException(nameof(destination));
+            }
+
+            if (definitionList == null)
+            {
+                throw new ArgumentNullException(nameof(definitionList));
+            }
+
+            if (definitionList.ChildNodes != null && definitionList.ChildNodes.Count > 0)
+            {
+                destination.AppendChild(definitionList);
+            }
+
+            return WOINWebPageHelper.OpenDefiintionList();
+        }
+
+        /// <summary>
+        /// Closes the given statblock and appends it to the given destination node.
+        /// </summary>
+        /// <param name="destination">The node to append the statblock to.</param>
+        /// <param name="statblock">The statblock to close.</param>
+        /// <returns>The newly opened statblock.</returns>
+        public static HtmlNode CloseStatblock(HtmlNode destination, HtmlNode statblock)
+        {
+            if (destination == null)
+            {
+                throw new ArgumentNullException(nameof(destination));
+            }
+
+            if (statblock == null)
+            {
+                throw new ArgumentNullException(nameof(statblock));
+            }
+
+            if (statblock.ChildNodes != null && statblock.ChildNodes.Count > 0)
+            {
+                destination.AppendChild(statblock);
+            }
+
+            return WOINWebPageHelper.OpenStatBlock();
+        }
+
+        /// <summary>
+        /// Closes the given table and appends it to the given destination node.
+        /// </summary>
+        /// <param name="destination">The node to append the table to.</param>
+        /// <param name="table">The table to close.</param>
+        /// <returns>The newly opened table.</returns>
+        public static HtmlNode CloseTable(HtmlNode destination, HtmlNode table)
+        {
+            if (destination == null)
+            {
+                throw new ArgumentNullException(nameof(destination));
+            }
+
+            if (table == null)
+            {
+                throw new ArgumentNullException(nameof(table));
+            }
+
+            if (table.ChildNodes != null && table.ChildNodes.Count > 0)
+            {
+                destination.AppendChild(table);
+            }
+
+            return WOINWebPageHelper.OpenTable();
         }
 
         /// <summary>
@@ -340,6 +420,35 @@ namespace CampaignKit.Compendium.WOIN.Common
         }
 
         /// <summary>
+        /// Creates an HTML definition list node.
+        /// </summary>
+        /// <returns>An HTML definition list node.</returns>
+        public static HtmlNode OpenDefiintionList()
+        {
+            return HtmlNode.CreateNode("<dl></dl>");
+        }
+
+        /// <summary>
+        /// Creates an HTML node with a div tag.
+        /// </summary>
+        /// <returns>
+        /// An HTML node with a div tag.
+        /// </returns>
+        public static HtmlNode OpenStatBlock()
+        {
+            return HtmlNode.CreateNode("<div></div>");
+        }
+
+        /// <summary>
+        /// Creates an HTML table node.
+        /// </summary>
+        /// <returns>An HTML table node.</returns>
+        public static HtmlNode OpenTable()
+        {
+            return HtmlNode.CreateNode("<table></table>");
+        }
+
+        /// <summary>
         /// Parses the content of a given HTML section node, extracting specific elements such as
         /// headings, lists, and paragraphs. If the content contains definitionList data, it is organized
         /// into a definitionList structure within the returned node.
@@ -372,55 +481,71 @@ namespace CampaignKit.Compendium.WOIN.Common
             if (contentNodes != null)
             {
                 // Create node for holding parsed table data.
-                var table = HtmlNode.CreateNode("<table></table>");
+                var table = WOINWebPageHelper.OpenTable();
 
                 // Create node for holding parsed definition block data.
-                var statblock = HtmlNode.CreateNode("<div></div>");
+                var statblock = WOINWebPageHelper.OpenStatBlock();
 
                 // Create node for holding parsed definition data.
-                var definitionList = HtmlNode.CreateNode("<dl></dl>");
+                var definitionList = WOINWebPageHelper.OpenDefiintionList();
 
                 // Add each content item to the new node.
                 foreach (var contentNode in contentNodes)
                 {
-                    if (table != null && WOINWebPageHelper.ContainsTableData(contentNode))
+                    if (table != null
+                        && statblock != null
+                        && definitionList != null
+                        && WOINWebPageHelper.ContainsTableData(contentNode))
                     {
-                        // Add the result as a new row to the table.
+                        // Closeout any in-memory structures that have been started but not closed.
+                        statblock = WOINWebPageHelper.CloseStatblock(newSectionNode, statblock);
+                        definitionList = WOINWebPageHelper.CloseDefinitionList(newSectionNode, definitionList);
+
+                        // Add to current in-memory structure.
                         WOINWebPageHelper.AddRowToTable(table, contentNode);
                     }
-                    else if (WOINWebPageHelper.ContainsListData(contentNode))
+                    else if (table != null
+                        && statblock != null
+                        && definitionList != null
+                        && WOINWebPageHelper.ContainsListData(contentNode))
                     {
+                        // Closeout any in-memory structures that have been started but not closed.
+                        table = WOINWebPageHelper.CloseTable(newSectionNode, table);
+                        statblock = WOINWebPageHelper.CloseStatblock(newSectionNode, statblock);
+                        definitionList = WOINWebPageHelper.CloseDefinitionList(newSectionNode, definitionList);
+
+                        // Add to current in-memory structure.
                         newSectionNode.AppendChild(WOINWebPageHelper.GetList(contentNode));
                     }
-                    else if (statblock != null && WOINWebPageHelper.ContainsStatblockData(contentNode))
+                    else if (table != null
+                        && statblock != null
+                        && definitionList != null
+                        && WOINWebPageHelper.ContainsStatblockData(contentNode))
                     {
+                        // Closeout any in-memory structures that have been started but not closed.
+                        table = WOINWebPageHelper.CloseTable(newSectionNode, table);
+                        definitionList = WOINWebPageHelper.CloseDefinitionList(newSectionNode, definitionList);
+
+                        // Add to current in-memory structure.
                         WOINWebPageHelper.AddRowToStatblock(statblock, contentNode);
                     }
-                    else if (definitionList != null && WOINWebPageHelper.ContainsDefinitionData(contentNode))
+                    else if (table != null && statblock != null && definitionList != null && WOINWebPageHelper.ContainsDefinitionData(contentNode))
                     {
+                        // Closeout any in-memory structures that have been started but not closed.
+                        table = WOINWebPageHelper.CloseTable(newSectionNode, table);
+                        statblock = WOINWebPageHelper.CloseStatblock(newSectionNode, statblock);
+
+                        // Add to current in-memory structure.
                         WOINWebPageHelper.AddRowToDefinitionList(definitionList, contentNode);
                     }
                     else
                     {
-                        // Is there table data that needs to be added to the DOM?
-                        if (table != null && table.ChildNodes.Count > 0)
+                        // Closeout any in-memory structures that have been started but not closed.
+                        if (table != null && statblock != null && definitionList != null)
                         {
-                            newSectionNode.AppendChild(table);
-                            table = HtmlNode.CreateNode("<table></table>");
-                        }
-
-                        // Is there definitionList data that needs to be added to the DOM?
-                        if (statblock != null && statblock.ChildNodes.Count > 0)
-                        {
-                            newSectionNode.AppendChild(statblock);
-                            statblock = HtmlNode.CreateNode("<div></div>");
-                        }
-
-                        // Is there defintion list data that needs to be added to the DOM?
-                        if (definitionList != null && definitionList.ChildNodes.Count > 0)
-                        {
-                            newSectionNode.AppendChild(definitionList);
-                            definitionList = HtmlNode.CreateNode("<dl></dl>");
+                            table = WOINWebPageHelper.CloseTable(newSectionNode, table);
+                            statblock = WOINWebPageHelper.CloseStatblock(newSectionNode, statblock);
+                            definitionList = WOINWebPageHelper.CloseDefinitionList(newSectionNode, definitionList);
                         }
 
                         // Copy the node as-is
