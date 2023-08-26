@@ -79,7 +79,7 @@
 
   <h1 id="CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper" data-uid="CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper" class="text-break">
     Class WOINWebPageHelper
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -143,14 +143,50 @@
 </h2>
 
 
+  <a id="CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_AddRowToDefinitionList_" data-uid="CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.AddRowToDefinitionList*"></a>
+
+  <h3 id="CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_AddRowToDefinitionList_HtmlAgilityPack_HtmlNode_HtmlAgilityPack_HtmlNode_" data-uid="CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.AddRowToDefinitionList(HtmlAgilityPack.HtmlNode,HtmlAgilityPack.HtmlNode)">
+  AddRowToDefinitionList(HtmlNode, HtmlNode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds the provided definition to the provided definitionList.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddRowToDefinitionList(HtmlNode definitionList, HtmlNode definition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>definitionList</code> <span class="xref">HtmlNode</span></dt>
+    <dd><p>The HtmlNode representing the definitionList to which the definition will be added.</p>
+</dd>
+    <dt><code>definition</code> <span class="xref">HtmlNode</span></dt>
+    <dd><p>The HtmlNode representing the definition that will be added to the definitionList.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_AddRowToStatblock_" data-uid="CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.AddRowToStatblock*"></a>
 
   <h3 id="CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_AddRowToStatblock_HtmlAgilityPack_HtmlNode_HtmlAgilityPack_HtmlNode_" data-uid="CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.AddRowToStatblock(HtmlAgilityPack.HtmlNode,HtmlAgilityPack.HtmlNode)">
   AddRowToStatblock(HtmlNode, HtmlNode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Adds the provided stat to the provided statblock.</p>
+  <div class="markdown level1 summary"><p>Adds the provided definition to the provided definitionList.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -161,10 +197,10 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>statblock</code> <span class="xref">HtmlNode</span></dt>
-    <dd><p>The HtmlNode representing the statblock to which the stat will be added.</p>
+    <dd><p>The HtmlNode representing the definitionList to which the definition will be added.</p>
 </dd>
     <dt><code>stat</code> <span class="xref">HtmlNode</span></dt>
-    <dd><p>The HtmlNode representing the stat that will be added to the statblock.</p>
+    <dd><p>The HtmlNode representing the definition that will be added to the definitionList.</p>
 </dd>
   </dl>
 
@@ -183,12 +219,12 @@
 
   <h3 id="CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_AddRowToTable_HtmlAgilityPack_HtmlNode_HtmlAgilityPack_HtmlNode_" data-uid="CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.AddRowToTable(HtmlAgilityPack.HtmlNode,HtmlAgilityPack.HtmlNode)">
   AddRowToTable(HtmlNode, HtmlNode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Adds a new stat to the specified HTML statblock. The stat is created from the provided
-HtmlNode, and cells are extracted based on specific criteria. If the stat is determined
-to be a header stat, the cells will be created with the 'th' tag; otherwise, they will be
+  <div class="markdown level1 summary"><p>Adds a new definition to the specified HTML definitionList. The definition is created from the provided
+HtmlNode, and cells are extracted based on specific criteria. If the definition is determined
+to be a header definition, the cells will be created with the 'th' tag; otherwise, they will be
 created with the 'td' tag.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -200,10 +236,10 @@ created with the 'td' tag.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tableNode</code> <span class="xref">HtmlNode</span></dt>
-    <dd><p>The HtmlNode representing the statblock to which the stat will be added.</p>
+    <dd><p>The HtmlNode representing the definitionList to which the definition will be added.</p>
 </dd>
     <dt><code>rowNode</code> <span class="xref">HtmlNode</span></dt>
-    <dd><p>The HtmlNode representing the stat that will be added to the statblock. The stat should
+    <dd><p>The HtmlNode representing the definition that will be added to the definitionList. The definition should
 contain span elements with class 'C9DxTc' and not contain nested span elements with
 class 'Apple-tab-span'.</p>
 </dd>
@@ -220,11 +256,50 @@ class 'Apple-tab-span'.</p>
 
 
 
+  <a id="CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_ContainsDefinitionData_" data-uid="CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ContainsDefinitionData*"></a>
+
+  <h3 id="CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_ContainsDefinitionData_HtmlAgilityPack_HtmlNode_" data-uid="CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ContainsDefinitionData(HtmlAgilityPack.HtmlNode)">
+  ContainsDefinitionData(HtmlNode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines if the provided HtmlNode contains definition data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ContainsDefinitionData(HtmlNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <span class="xref">HtmlNode</span></dt>
+    <dd><p>The HtmlNode to inspect.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the HtmlNode contains definition data, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_ContainsListData_" data-uid="CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ContainsListData*"></a>
 
   <h3 id="CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_ContainsListData_HtmlAgilityPack_HtmlNode_" data-uid="CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ContainsListData(HtmlAgilityPack.HtmlNode)">
   ContainsListData(HtmlNode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L200"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines if the provided HtmlNode contains list data.</p>
@@ -263,10 +338,10 @@ class 'Apple-tab-span'.</p>
 
   <h3 id="CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_ContainsStatblockData_HtmlAgilityPack_HtmlNode_" data-uid="CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ContainsStatblockData(HtmlAgilityPack.HtmlNode)">
   ContainsStatblockData(HtmlNode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Determines if the provided HtmlNode contains statblock data.</p>
+  <div class="markdown level1 summary"><p>Determines if the provided HtmlNode contains definitionList data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -284,7 +359,7 @@ class 'Apple-tab-span'.</p>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True if the HtmlNode contains statblock  data, false otherwise.</p>
+    <dd><p>True if the HtmlNode contains definitionList  data, false otherwise.</p>
 </dd>
   </dl>
 
@@ -302,10 +377,10 @@ class 'Apple-tab-span'.</p>
 
   <h3 id="CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_ContainsTableData_HtmlAgilityPack_HtmlNode_" data-uid="CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ContainsTableData(HtmlAgilityPack.HtmlNode)">
   ContainsTableData(HtmlNode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Determines if the provided HtmlNode contains statblock data.</p>
+  <div class="markdown level1 summary"><p>Determines if the provided HtmlNode contains definitionList data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -323,7 +398,7 @@ class 'Apple-tab-span'.</p>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True if the HtmlNod contains statblock data, false otherwise.</p>
+    <dd><p>True if the HtmlNod contains definitionList data, false otherwise.</p>
 </dd>
   </dl>
 
@@ -341,7 +416,7 @@ class 'Apple-tab-span'.</p>
 
   <h3 id="CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_GetContentNodes_HtmlAgilityPack_HtmlNode_" data-uid="CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.GetContentNodes(HtmlAgilityPack.HtmlNode)">
   GetContentNodes(HtmlNode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L258"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the content nodes from the specified HTML node.</p>
@@ -380,7 +455,7 @@ class 'Apple-tab-span'.</p>
 
   <h3 id="CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_GetList_HtmlAgilityPack_HtmlNode_" data-uid="CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.GetList(HtmlAgilityPack.HtmlNode)">
   GetList(HtmlNode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L285"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a new HTML list node by extracting list items from the provided node. If a list
@@ -435,12 +510,12 @@ bold ('b') tag. The resulting list structure is returned as an HtmlNode.</p>
 
   <h3 id="CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_ParseSectionContent_HtmlAgilityPack_HtmlNode_" data-uid="CampaignKit.Compendium.WOIN.Common.WOINWebPageHelper.ParseSectionContent(HtmlAgilityPack.HtmlNode)">
   ParseSectionContent(HtmlNode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L357"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Parses the content of a given HTML section node, extracting specific elements such as
-headings, lists, and paragraphs. If the content contains statblock data, it is organized
-into a statblock structure within the returned node.</p>
+headings, lists, and paragraphs. If the content contains definitionList data, it is organized
+into a definitionList structure within the returned node.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -459,7 +534,7 @@ into a statblock structure within the returned node.</p>
   <dl class="parameters">
     <dt><span class="xref">HtmlNode</span></dt>
     <dd><p>An HtmlNode containing the parsed content, organized into a 'div' element, with any
-statblock data structured into 'statblock' elements.</p>
+definitionList data structured into 'definitionList' elements.</p>
 </dd>
   </dl>
 
@@ -471,7 +546,7 @@ statblock data structured into 'statblock' elements.</p>
 
   <h4 class="section" id="CampaignKit_Compendium_WOIN_Common_WOINWebPageHelper_ParseSectionContent_HtmlAgilityPack_HtmlNode__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>The method specifically looks for the following elements within the section: h1, h2, h3,
-h4, h5, h6, ul, ol, and p. If statblock data is detected, it is handled using the
+h4, h5, h6, ul, ol, and p. If definitionList data is detected, it is handled using the
 WOINWebPageHelper.ContainsTableData and WOINWebPageHelper.AddRowToTable methods.</p>
 </div>
 
@@ -482,7 +557,7 @@ WOINWebPageHelper.ContainsTableData and WOINWebPageHelper.AddRowToTable methods.
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L27" class="edit-link">Edit this page</a>
+          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.WOIN/Common/WOINWebPageHelper.cs/#L28" class="edit-link">Edit this page</a>
         </div>
 
         

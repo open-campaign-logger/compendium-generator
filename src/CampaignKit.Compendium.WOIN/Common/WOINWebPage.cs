@@ -31,7 +31,7 @@ namespace CampaignKit.Compendium.WOIN.Common
         public override string PostProcessMarkdown(string markdown)
         {
             // Execute base class functionality
-            markdown = base.PreProcessHtml(markdown);
+            markdown = base.PostProcessMarkdown(markdown);
 
             return markdown;
         }

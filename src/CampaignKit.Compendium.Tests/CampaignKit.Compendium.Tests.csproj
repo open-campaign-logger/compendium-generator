@@ -16,6 +16,7 @@
     <None Remove="DungeonsAndDragons\TestFiles\aboleth.json" />
     <None Remove="DungeonsAndDragons\TestFiles\backup_holler_spider.json" />
     <None Remove="DungeonsAndDragons\TestFiles\sulsha.json" />
+    <None Remove="WebScraper\TestFiles\fantasy-armor-customization.html" />
     <None Remove="WebScraper\TestFiles\vehicle-combat.html" />
     <None Remove="WOIN\TestFiles\countdowns.html" />
     <None Remove="WOIN\TestFiles\tracking.html" />
@@ -39,6 +40,9 @@
 
   <ItemGroup>
     <Content Include="OldSchoolEssentials\TestFiles\OSE-SRD-v1.0.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WOIN\TestFiles\fantasy-armor-customization.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="WebScraper\TestFiles\vehicle-combat.html">

@@ -17,6 +17,7 @@
 namespace CampaignKit.Compendium.WOIN.Common
 {
     using System;
+    using System.Text;
     using System.Text.RegularExpressions;
 
     using HtmlAgilityPack;
@@ -27,10 +28,56 @@ namespace CampaignKit.Compendium.WOIN.Common
     public class WOINWebPageHelper
     {
         /// <summary>
-        /// Adds the provided stat to the provided statblock.
+        /// Adds the provided definition to the provided definitionList.
         /// </summary>
-        /// <param name="statblock">The HtmlNode representing the statblock to which the stat will be added.</param>
-        /// <param name="stat">The HtmlNode representing the stat that will be added to the statblock.</param>
+        /// <param name="definitionList">The HtmlNode representing the definitionList to which the definition will be added.</param>
+        /// <param name="definition">The HtmlNode representing the definition that will be added to the definitionList.</param>
+        public static void AddRowToDefinitionList(HtmlNode definitionList, HtmlNode definition)
+        {
+            // Validate method parametesr
+            if (definitionList == null)
+            {
+                throw new ArgumentNullException(nameof(definitionList));
+            }
+
+            if (definition == null)
+            {
+                throw new ArgumentNullException(nameof(definition));
+            }
+
+            // Select the span nodes
+            var spanNodes = definition.SelectNodes(".//span");
+
+            if (spanNodes != null)
+            {
+                // Create the definition
+                var definitionBuilder = new StringBuilder();
+
+                var firstRun = true;
+                foreach (var span in spanNodes)
+                {
+                    if (firstRun)
+                    {
+                        firstRun = false;
+                        continue;
+                    }
+
+                    definitionBuilder.Append(span.OuterHtml);
+                }
+
+                // Create the definition term.
+                definitionList.AppendChild(HtmlNode.CreateNode($"<dt>{spanNodes[0].OuterHtml}</dt>"));
+
+                // Create the definition item
+                definitionList.AppendChild(HtmlNode.CreateNode($"<dd>{definitionBuilder.ToString()}</dd>"));
+            }
+        }
+
+        /// <summary>
+        /// Adds the provided definition to the provided definitionList.
+        /// </summary>
+        /// <param name="statblock">The HtmlNode representing the definitionList to which the definition will be added.</param>
+        /// <param name="stat">The HtmlNode representing the definition that will be added to the definitionList.</param>
         public static void AddRowToStatblock(HtmlNode statblock, HtmlNode stat)
         {
             // Validate method parametesr
@@ -47,20 +94,20 @@ namespace CampaignKit.Compendium.WOIN.Common
             // Add a line break.
             statblock.AppendChild(HtmlNode.CreateNode("</br>"));
 
-            // Add the stat.
+            // Add the definition.
             // Create a new HTML node for the row
             statblock.AppendChild(stat);
         }
 
         /// <summary>
-        /// Adds a new stat to the specified HTML statblock. The stat is created from the provided
-        /// HtmlNode, and cells are extracted based on specific criteria. If the stat is determined
-        /// to be a header stat, the cells will be created with the 'th' tag; otherwise, they will be
+        /// Adds a new definition to the specified HTML definitionList. The definition is created from the provided
+        /// HtmlNode, and cells are extracted based on specific criteria. If the definition is determined
+        /// to be a header definition, the cells will be created with the 'th' tag; otherwise, they will be
         /// created with the 'td' tag.
         /// </summary>
-        /// <param name="tableNode">The HtmlNode representing the statblock to which the stat will be added.</param>
+        /// <param name="tableNode">The HtmlNode representing the definitionList to which the definition will be added.</param>
         /// <param name="rowNode">
-        /// The HtmlNode representing the stat that will be added to the statblock. The stat should
+        /// The HtmlNode representing the definition that will be added to the definitionList. The definition should
         /// contain span elements with class 'C9DxTc' and not contain nested span elements with
         /// class 'Apple-tab-span'.
         /// </param>
@@ -80,10 +127,10 @@ namespace CampaignKit.Compendium.WOIN.Common
             // Create a new HTML node for the row
             var newRow = HtmlNode.CreateNode("<tr></tr>");
 
-            // Select all <span> elements within the stat
+            // Select all <span> elements within the definition
             var cellNodes = rowNode.SelectNodes(".//span[@class='C9DxTc ' and not(.//span[@class='Apple-tab-span '])]");
 
-            // Determine if this is a header stat, if so use the 'th' tag
+            // Determine if this is a header definition, if so use the 'th' tag
             // for the content.  If not, use 'td'.
             var isHeaderRow = tableNode.ChildNodes.Count == 0;
 
@@ -97,7 +144,7 @@ namespace CampaignKit.Compendium.WOIN.Common
                     // Determine if a new line has been found
                     if (cellNode.FirstChild.Name.Equals("br", StringComparison.InvariantCultureIgnoreCase))
                     {
-                        // Add the stat to the statblock
+                        // Add the definition to the definitionList
                         tableNode.AppendChild(newRow);
 
                         // Create a new HTML node for the row
@@ -109,13 +156,40 @@ namespace CampaignKit.Compendium.WOIN.Common
                     var tagSymbol = isHeaderRow ? "th" : "td";
                     var newCellNode = HtmlNode.CreateNode($"<{tagSymbol}>{cellNode.InnerText}</{tagSymbol}>");
 
-                    // Append the cell node to the stat
+                    // Append the cell node to the definition
                     newRow.AppendChild(newCellNode);
                 }
             }
 
-            // Add the stat to the statblock
+            // Add the definition to the definitionList
             tableNode.AppendChild(newRow);
+        }
+
+        /// <summary>
+        /// Determines if the provided HtmlNode contains definition data.
+        /// </summary>
+        /// <param name="node">The HtmlNode to inspect.</param>
+        /// <returns>True if the HtmlNode contains definition data, false otherwise.</returns>
+        public static bool ContainsDefinitionData(HtmlNode node)
+        {
+            // Validate method parametesr
+            if (node == null)
+            {
+                throw new ArgumentNullException(nameof(node));
+            }
+
+            // Look for paragraphs masquerading as a list item.
+            if (node.Name.Equals("p", StringComparison.InvariantCultureIgnoreCase))
+            {
+                var spanNodes = node.SelectNodes(".//span");
+                if (spanNodes != null && spanNodes[0].GetAttributeValue("style", string.Empty).Contains("font-weight: 700"))
+                {
+                    return true;
+                }
+            }
+
+            // If all conditions fail, return false;
+            return false;
         }
 
         /// <summary>
@@ -131,16 +205,22 @@ namespace CampaignKit.Compendium.WOIN.Common
                 throw new ArgumentNullException(nameof(node));
             }
 
-            // Evaluate parameter.
-            return node.Name.Equals("ol", StringComparison.InvariantCultureIgnoreCase)
-                || node.Name.Equals("ul", StringComparison.InvariantCultureIgnoreCase);
+            // Look for actual lists
+            if (node.Name.Equals("ol", StringComparison.InvariantCultureIgnoreCase)
+                || node.Name.Equals("ul", StringComparison.InvariantCultureIgnoreCase))
+            {
+                return true;
+            }
+
+            // If all conditions fail, return false;
+            return false;
         }
 
         /// <summary>
-        /// Determines if the provided HtmlNode contains statblock data.
+        /// Determines if the provided HtmlNode contains definitionList data.
         /// </summary>
         /// <param name="node">The HtmlNode to inspect.</param>
-        /// <returns>True if the HtmlNode contains statblock  data, false otherwise.</returns>
+        /// <returns>True if the HtmlNode contains definitionList  data, false otherwise.</returns>
         public static bool ContainsStatblockData(HtmlNode node)
         {
             // Validate method parametesr
@@ -154,10 +234,10 @@ namespace CampaignKit.Compendium.WOIN.Common
         }
 
         /// <summary>
-        /// Determines if the provided HtmlNode contains statblock data.
+        /// Determines if the provided HtmlNode contains definitionList data.
         /// </summary>
         /// <param name="node">The HtmlNode to inspect.</param>
-        /// <returns>True if the HtmlNod contains statblock data, false otherwise.</returns>
+        /// <returns>True if the HtmlNod contains definitionList data, false otherwise.</returns>
         public static bool ContainsTableData(HtmlNode node)
         {
             // Validate method parametesr
@@ -261,17 +341,17 @@ namespace CampaignKit.Compendium.WOIN.Common
 
         /// <summary>
         /// Parses the content of a given HTML section node, extracting specific elements such as
-        /// headings, lists, and paragraphs. If the content contains statblock data, it is organized
-        /// into a statblock structure within the returned node.
+        /// headings, lists, and paragraphs. If the content contains definitionList data, it is organized
+        /// into a definitionList structure within the returned node.
         /// </summary>
         /// <param name="node">The HtmlNode representing the section to be parsed.</param>
         /// <returns>
         /// An HtmlNode containing the parsed content, organized into a 'div' element, with any
-        /// statblock data structured into 'statblock' elements.
+        /// definitionList data structured into 'definitionList' elements.
         /// </returns>
         /// <remarks>
         /// The method specifically looks for the following elements within the section: h1, h2, h3,
-        /// h4, h5, h6, ul, ol, and p. If statblock data is detected, it is handled using the
+        /// h4, h5, h6, ul, ol, and p. If definitionList data is detected, it is handled using the
         /// WOINWebPageHelper.ContainsTableData and WOINWebPageHelper.AddRowToTable methods.
         /// </remarks>
         public static HtmlNode ParseSectionContent(HtmlNode node)
@@ -294,8 +374,11 @@ namespace CampaignKit.Compendium.WOIN.Common
                 // Create node for holding parsed table data.
                 var table = HtmlNode.CreateNode("<table></table>");
 
-                // Create node for holding parsed stat block data.
+                // Create node for holding parsed definition block data.
                 var statblock = HtmlNode.CreateNode("<div></div>");
+
+                // Create node for holding parsed definition data.
+                var definitionList = HtmlNode.CreateNode("<dl></dl>");
 
                 // Add each content item to the new node.
                 foreach (var contentNode in contentNodes)
@@ -313,6 +396,10 @@ namespace CampaignKit.Compendium.WOIN.Common
                     {
                         WOINWebPageHelper.AddRowToStatblock(statblock, contentNode);
                     }
+                    else if (definitionList != null && WOINWebPageHelper.ContainsDefinitionData(contentNode))
+                    {
+                        WOINWebPageHelper.AddRowToDefinitionList(definitionList, contentNode);
+                    }
                     else
                     {
                         // Is there table data that needs to be added to the DOM?
@@ -322,11 +409,18 @@ namespace CampaignKit.Compendium.WOIN.Common
                             table = HtmlNode.CreateNode("<table></table>");
                         }
 
-                        // Is there statblock data that needs to be added to the DOM?
+                        // Is there definitionList data that needs to be added to the DOM?
                         if (statblock != null && statblock.ChildNodes.Count > 0)
                         {
                             newSectionNode.AppendChild(statblock);
                             statblock = HtmlNode.CreateNode("<div></div>");
+                        }
+
+                        // Is there defintion list data that needs to be added to the DOM?
+                        if (definitionList != null && definitionList.ChildNodes.Count > 0)
+                        {
+                            newSectionNode.AppendChild(definitionList);
+                            definitionList = HtmlNode.CreateNode("<dl></dl>");
                         }
 
                         // Copy the node as-is
@@ -340,10 +434,16 @@ namespace CampaignKit.Compendium.WOIN.Common
                     newSectionNode.AppendChild(table);
                 }
 
-                // Is there statblock data that needs to be copied?
+                // Is there stat block data that needs to be copied?
                 if (statblock != null && statblock.ChildNodes.Count > 0)
                 {
                     newSectionNode.AppendChild(statblock);
+                }
+
+                // Is there definitionList data that needs to be copied?
+                if (definitionList != null && definitionList.ChildNodes.Count > 0)
+                {
+                    newSectionNode.AppendChild(definitionList);
                 }
             }
 

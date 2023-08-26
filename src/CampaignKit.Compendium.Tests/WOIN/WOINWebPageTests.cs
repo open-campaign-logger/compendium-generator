@@ -7,6 +7,8 @@ using CampaignKit.Compendium.WOIN.Common;
 
 using Newtonsoft.Json;
 
+using System.Reflection;
+
 namespace CampaignKit.Compendium.Tests.WOIN
 {
     [TestClass]
@@ -54,6 +56,27 @@ namespace CampaignKit.Compendium.Tests.WOIN
             Assert.AreEqual(7, sectionNode.SelectNodes(".//tr").Count);
             Assert.AreEqual(2, sectionNode.SelectNodes(".//th").Count);
             Assert.AreEqual(12, sectionNode.SelectNodes(".//td").Count);
+        }
+
+        /// <summary>
+        /// See: https://community.dataminer.services/unit-testing-using-files-in-unit-tests/
+        /// </summary>
+        [TestMethod]
+        [DeploymentItem(@"WOIN\TestFiles\fantasy-armor-customization.html")]
+        public void SRDWebPage_PreProcessHtml_BoldSyntaxAdded()
+        {
+            // Arrange
+            var html = File.ReadAllText("fantasy-armor-customization.html");
+
+            // Act
+            var document = SRDWebPageHelper.LoadHtmlDocument(html, "//div[@role='main'][1]");
+            var sectionNode = WOINWebPageHelper.ParseSectionContent(document.DocumentNode);
+            var definitionNodes = sectionNode.SelectNodes(".//dt");
+
+            // Assert
+            Assert.IsNotNull(document);
+            Assert.IsNotNull(definitionNodes);
+            Assert.AreEqual(17, definitionNodes.Count);;
         }
 
         /// <summary>

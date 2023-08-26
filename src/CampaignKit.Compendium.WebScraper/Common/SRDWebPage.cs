@@ -190,13 +190,22 @@ namespace CampaignKit.Compendium.WebScraper.Common
         public virtual string PostProcessMarkdown(string markdown)
         {
             // Regular expression pattern to match headers with text on a separate line
-            string pattern = @"(##)\s*\n\s*(\w.*)";
+            string pattern = @"(##)\s*\n+\s*(\w.*)";
 
             // Replacement pattern to move the header text to the same line as the markdown header
             string replacement = "$1 $2";
 
             // Perform the replacement using Regex.Replace
             markdown = Regex.Replace(markdown, pattern, replacement);
+
+            // Regular expression pattern to bullet lists with text on a separate line
+            pattern = @"(^[ \t]*-[ \t])[\s]+";
+
+            // Replacement pattern to move the header text to the same line as the markdown header
+            replacement = "$1";
+
+            // Perform the replacement using Regex.Replace
+            markdown = Regex.Replace(markdown, pattern, replacement, RegexOptions.Multiline);
 
             // Regular expression pattern to match bolded text.
             pattern = @"\*\*(.*?)\*\*";
