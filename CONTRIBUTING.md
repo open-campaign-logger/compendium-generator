@@ -99,6 +99,15 @@ By participating in this project, you agree to abide by our [Code of Conduct](li
             // Add DefaultOldSchoolEssentialsCompendiumService to the service collection as an IOldSchoolEssentialsCompendiumService
             services.AddTransient<IOldSchoolEssentialsCompendiumService, DefaultOldSchoolEssentialsCompendiumService>();
 
+            // Add DefaultMarkdownCompendiumService to the service collection as an IMarkdownCompendiumService
+            services.AddTransient<IMarkdownCompendiumService, DefaultMarkdownCompendiumService>();
+
+            // Add DefaultChatGPTCompendiumService to the service collection as an IChatGPTCompendiumService
+            services.AddTransient<IChatGPTCompendiumService, DefaultChatGPTCompendiumService>();
+
+            // Add DefaultWebScraperCompendiumService to the service collection as an IWebScraperCompendiumService
+            services.AddTransient<IWebScraperCompendiumService, DefaultWebScraperCompendiumService>();
+
             // YOUR SERVICE ADDED HERE
         }
 ```
@@ -110,7 +119,7 @@ A default compendium should be added to `module_YOURMODULENAME.json` to demonstr
 
 ```csharp
     // Add module configurations
-    string[] jsonFiles = { "module_chatgpt.json", "module_dnd.json", "module_ose.json", "module_markdown.json", "module_webscraper.json", "module_YOURMODULENAME.json" };
+    string[] jsonFiles = { "module_chatgpt.json", "module_dnd.json", "module_ose.json", "module_markdown.json", "module_woin.json", "module_YOURMODULENAME.json" };
     foreach (var jsonFile in jsonFiles)
     {
         configuration.AddJsonFile(jsonFile, optional: true, reloadOnChange: true);

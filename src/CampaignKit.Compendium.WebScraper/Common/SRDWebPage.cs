@@ -211,7 +211,7 @@ namespace CampaignKit.Compendium.WebScraper.Common
             pattern = @"\*\*(.*?)\*\*";
 
             // Replacement expression to replace bold format with CL parser version
-            replacement = "{b|$1}";
+            replacement = " {b|$1} ";
 
             // Perform the replacement using Regex.Replace
             markdown = Regex.Replace(markdown, pattern, replacement, RegexOptions.Multiline);
