@@ -17,16 +17,21 @@
 namespace CampaignKit.Compendium.Utility
 {
     using CampaignKit.Compendium.ChatGPT.Services;
+    using CampaignKit.Compendium.Core.Configuration;
     using CampaignKit.Compendium.Core.Services;
     using CampaignKit.Compendium.DungeonsAndDragons.Services;
     using CampaignKit.Compendium.Markdown.Services;
     using CampaignKit.Compendium.OldSchoolEssentials.Services;
     using CampaignKit.Compendium.Utility.Services;
+    using CampaignKit.Compendium.WebScraper.Services;
 
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Microsoft.Extensions.Logging;
+    using Newtonsoft.Json.Linq;
+
+    using ReverseMarkdown;
 
     /// <summary>
     /// Creates a host with default configuration, adds required services, configures logging,
@@ -97,7 +102,14 @@ namespace CampaignKit.Compendium.Utility
             configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
             // Add the appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json file to the configuration, making it optional
-            configuration.AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", optional: true);
+            configuration.AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", optional: true, reloadOnChange: true);
+
+            // Add module configurations
+            string[] jsonFiles = { "module_chatgpt.json", "module_dnd.json", "module_ose.json", "module_markdown.json", "module_woin.json" };
+            foreach (var jsonFile in jsonFiles)
+            {
+                configuration.AddJsonFile(jsonFile, optional: true, reloadOnChange: true);
+            }
 
             // Add environment variables to the configuration
             configuration.AddEnvironmentVariables();
@@ -134,6 +146,9 @@ namespace CampaignKit.Compendium.Utility
 
             // Add DefaultChatGPTCompendiumService to the service collection as an IChatGPTCompendiumService
             services.AddTransient<IChatGPTCompendiumService, DefaultChatGPTCompendiumService>();
+
+            // Add DefaultWebScraperCompendiumService to the service collection as an IWebScraperCompendiumService
+            services.AddTransient<IWebScraperCompendiumService, DefaultWebScraperCompendiumService>();
         }
 
         /// <summary>

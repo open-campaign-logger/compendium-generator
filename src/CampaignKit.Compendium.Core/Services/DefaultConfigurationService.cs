@@ -75,7 +75,17 @@ namespace CampaignKit.Compendium.Core.Services
         public List<ICompendium> GetAllPublicCompendiums()
         {
             var result = new List<ICompendium>();
-            result.AddRange(this.configuration.GetSection("PublicCompendiums").Get<List<PublicCompendium>>() ?? new List<PublicCompendium>());
+
+            // Iterate through all the sections in the configuration
+            foreach (var section in this.configuration.GetChildren())
+            {
+                // Check if the section key ends with "Compendium"
+                if (section.Key.EndsWith("PublicCompendiums"))
+                {
+                    result.AddRange(section.Get<List<PublicCompendium>>() ?? new List<PublicCompendium>());
+                }
+            }
+
             return result;
         }
 

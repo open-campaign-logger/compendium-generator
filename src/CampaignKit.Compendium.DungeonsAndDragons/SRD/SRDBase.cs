@@ -26,57 +26,18 @@ namespace CampaignKit.Compendium.DungeonsAndDragons.SRD
     /// <summary>
     /// Represents a base class for all Dungeons and Dragons game components.
     /// </summary>
-    public class SRDBase : IGameComponent
+    public class SRDBase : GameComponentBase
     {
         /// <summary>
         /// Gets or sets the description of the game component.
         /// </summary>
         [JsonProperty("desc")]
-        public string? Desc { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public List<string>? Labels { get; set; } = new List<string> { };
+        public override string? Desc { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the name of the game component.
         /// </summary>
         [JsonProperty("name")]
-        public string? Name { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public string? SourceTitle { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public string? TagSymbol { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public string? TagValuePrefix { get; set; } = string.Empty;
-
-        /// <inheritdoc/>
-        public virtual CampaignEntry ToCampaignEntry()
-        {
-            // Create a markdown representation of the data.
-            var stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine($"# {this.Name}");
-            stringBuilder.AppendLine(this.Desc);
-
-            // Add Attribution
-            if (!string.IsNullOrEmpty(this.SourceTitle))
-            {
-                stringBuilder.AppendLine();
-                stringBuilder.AppendLine($"Source: ~\"{this.SourceTitle}\"");
-            }
-
-            CampaignEntry campaignEntry = new ()
-            {
-                RawText = string.Empty,
-                RawPublic = stringBuilder.ToString(),
-                Labels = this.Labels,
-                TagSymbol = this.TagSymbol,
-                TagValue = $"{this.TagValuePrefix}{this.Name}",
-            };
-
-            return campaignEntry;
-        }
+        public override string? Name { get; set; } = string.Empty;
     }
 }

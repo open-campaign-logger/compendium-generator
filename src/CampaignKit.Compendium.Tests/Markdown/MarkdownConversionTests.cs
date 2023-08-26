@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 namespace CampaignKit.Compendium.Tests.Markdown
 {
     [TestClass]
-    public class MarkdownConversionTests
+    public class WOINConversionTests
     {
 
         /// <summary>

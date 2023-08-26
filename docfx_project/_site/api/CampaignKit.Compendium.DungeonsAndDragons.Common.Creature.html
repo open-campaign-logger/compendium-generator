@@ -17,7 +17,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/open-campaign-logger/compendium-generator/new/117-add-monster-label-to-monsters/apiSpec/new?filename=CampaignKit_Compendium_DungeonsAndDragons_Common_Creature.md&amp;value=---%0Auid%3A%20CampaignKit.Compendium.DungeonsAndDragons.Common.Creature%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/open-campaign-logger/compendium-generator/new/121-web-scraper-module/apiSpec/new?filename=CampaignKit_Compendium_DungeonsAndDragons_Common_Creature.md&amp;value=---%0Auid%3A%20CampaignKit.Compendium.DungeonsAndDragons.Common.Creature%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
   </head>
 
   <script type="module">
@@ -79,7 +79,7 @@
 
   <h1 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature" class="text-break">
     Class Creature
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -92,7 +92,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Creature : IGameComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public class Creature : GameComponentBase, IGameComponent</code></pre>
   </div>
 
 
@@ -102,6 +102,7 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html">GameComponentBase</a></div>
       <div><span class="xref">Creature</span></div>
     </dd>
   </dl>
@@ -117,6 +118,24 @@
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_Desc">GameComponentBase.Desc</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_Labels">GameComponentBase.Labels</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_Name">GameComponentBase.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_SourceTitle">GameComponentBase.SourceTitle</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_TagSymbol">GameComponentBase.TagSymbol</a>
+    </div>
+    <div>
+      <a class="xref" href="CampaignKit.Compendium.Core.Common.GameComponentBase.html#CampaignKit_Compendium_Core_Common_GameComponentBase_TagValuePrefix">GameComponentBase.TagValuePrefix</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
@@ -144,7 +163,7 @@
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Acrobatics" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Acrobatics">
   Acrobatics
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets acrobatics skill bonus.
@@ -178,7 +197,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Actions" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Actions">
   Actions
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a collection of actions associated with the creature.</p>
@@ -210,7 +229,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Alignment" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Alignment">
   Alignment
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets alignment of the creature.  Example: lawful evil.</p>
@@ -242,7 +261,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_AnimalHandling" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.AnimalHandling">
   AnimalHandling
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets animal Handling skill bonus.
@@ -276,7 +295,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Arcana" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Arcana">
   Arcana
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets arcana skill bonus.
@@ -310,7 +329,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ArmorClass" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ArmorClass">
   ArmorClass
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets armor class of the creature.  Example: 17.</p>
@@ -342,7 +361,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ArmorDesc" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ArmorDesc">
   ArmorDesc
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets type of armor worn by the creature.  Example: natural armor.</p>
@@ -374,7 +393,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Athletics" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Athletics">
   Athletics
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets athletics skill bonus.
@@ -408,7 +427,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Attribution" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Attribution">
   Attribution
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the SourceDataLicense object.</p>
@@ -441,7 +460,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Blindsight" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Blindsight">
   Blindsight
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets distance in feet that the creature can see with blindsight.
@@ -475,7 +494,7 @@ Example 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Burrow" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Burrow">
   Burrow
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets swimming speed of the creature in feet per round.  Example 0.</p>
@@ -507,7 +526,7 @@ Example 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_CLStatBlock" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CLStatBlock">
   CLStatBlock
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L123"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets creature data formatted in standard CL format.</p>
@@ -540,7 +559,7 @@ public string? CLStatBlock { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ChallengeRating" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ChallengeRating">
   ChallengeRating
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the challenge rating of th creature.  Fractional CRs should be expressed as a decimal.  Example: 10.</p>
@@ -572,7 +591,7 @@ public string? CLStatBlock { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Charisma" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Charisma">
   Charisma
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets charisma of the creature.  Example: 18.</p>
@@ -604,7 +623,7 @@ public string? CLStatBlock { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_CharismaSave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.CharismaSave">
   CharismaSave
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets charisma saving throw of the creature.
@@ -638,7 +657,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Climb" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Climb">
   Climb
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets swimming speed of the creature in feet per round.  Example 0.</p>
@@ -670,7 +689,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ConditionImmunities" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ConditionImmunities">
   ConditionImmunities
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets condition immunities belonging to the creature.  Example: Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned.</p>
@@ -702,7 +721,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Constitution" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Constitution">
   Constitution
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets constitution of the creature.  Example: 15.</p>
@@ -734,7 +753,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ConstitutionSave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ConstitutionSave">
   ConstitutionSave
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L141"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets constitution saving throw of the creature.
@@ -768,7 +787,7 @@ Example: 15.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_DamageImmunities" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.DamageImmunities">
   DamageImmunities
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets damage immunities belonging to the creature.  Example: Poison, Psychic; Bludgeoning, Piercing, and Slashing From Nonmagical Attacks That Aren't Adamantine.</p>
@@ -800,7 +819,7 @@ Example: 15.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_DamageResistances" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.DamageResistances">
   DamageResistances
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets damage resistances belonging to the creature.  Example: Fire.</p>
@@ -832,7 +851,7 @@ Example: 15.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_DamageVulnerabilities" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.DamageVulnerabilities">
   DamageVulnerabilities
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L156"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets damage vulnerabilities belonging to the creature.  Example: Thunder.</p>
@@ -864,7 +883,7 @@ Example: 15.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Darkvision" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Darkvision">
   Darkvision
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets distance in feet that the creature can see with darkvision.
@@ -898,7 +917,7 @@ Example 120.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Deception" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Deception">
   Deception
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets deception skill bonus.
@@ -932,7 +951,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Dexterity" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Dexterity">
   Dexterity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets dexterity of the creature.  Example: 9.</p>
@@ -964,7 +983,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_DexteritySave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.DexteritySave">
   DexteritySave
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets dexterity saving throw of the creature.
@@ -998,7 +1017,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Fly" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Fly">
   Fly
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets swimming speed of the creature in feet per round.  Example 0.</p>
@@ -1030,7 +1049,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_History" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.History">
   History
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L194"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets history skill bonus.
@@ -1064,7 +1083,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_HitDice" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.HitDice">
   HitDice
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L199"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets hit dice calculation for the creature.  Example 18d10+36.</p>
@@ -1096,7 +1115,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_HitPoints" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.HitPoints">
   HitPoints
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L204"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets average hit points of the creature.  Example 135.</p>
@@ -1128,7 +1147,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Hover" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Hover">
   Hover
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L209"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether ability of the creature to hover.  Example: false.</p>
@@ -1160,7 +1179,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Insight" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Insight">
   Insight
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L216"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets insight skill bonus.
@@ -1194,7 +1213,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Intelligence" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Intelligence">
   Intelligence
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L221"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets intelligence of the creature.  Example: 18.</p>
@@ -1226,7 +1245,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_IntelligenceSave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.IntelligenceSave">
   IntelligenceSave
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L228"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets intelligence saving throw of the creature.
@@ -1260,7 +1279,7 @@ Example: 8.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Intimidation" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Intimidation">
   Intimidation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L235"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets intimidation skill bonus.
@@ -1294,7 +1313,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Investigation" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Investigation">
   Investigation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L242"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets investigation skill bonus.
@@ -1328,7 +1347,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_JSONStatBlock" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.JSONStatBlock">
   JSONStatBlock
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets creature data formatted in JSON format.</p>
@@ -1357,43 +1376,11 @@ public string? JSONStatBlock { get; set; }</code></pre>
 
 
 
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Labels_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Labels*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Labels" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Labels">
-  Labels
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L253"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the campaign labels associated with this creature.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;string&gt;? Labels { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Languages_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Languages*"></a>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Languages" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Languages">
   Languages
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets languages the creature is able to speak or understand.  Example Deep Speech, telepathy 120 ft.</p>
@@ -1425,7 +1412,7 @@ public string? JSONStatBlock { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_LegendaryActionDescription" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LegendaryActionDescription">
   LegendaryActionDescription
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L258"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets legendary action description.</p>
@@ -1457,7 +1444,7 @@ public string? JSONStatBlock { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_LegendaryActions" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LegendaryActions">
   LegendaryActions
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L263"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a collection of legendary actions associated with the creature.</p>
@@ -1489,7 +1476,7 @@ public string? JSONStatBlock { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_LightWalking" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.LightWalking">
   LightWalking
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L268"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets light walking capability of the creature to hover.  Example: 80.</p>
@@ -1521,7 +1508,7 @@ public string? JSONStatBlock { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Medicine" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Medicine">
   Medicine
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L275"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets medicine skill bonus.
@@ -1551,43 +1538,11 @@ Example: 0.</p>
 
 
 
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Name_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Name*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Name" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Name">
-  Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L285"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets name of the creature.  Example: Aboleth.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? Name { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Nature_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Nature*"></a>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Nature" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Nature">
   Nature
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L282"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets nature skill bonus.
@@ -1621,7 +1576,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_PassivePerception" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.PassivePerception">
   PassivePerception
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L288"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets passive perception is calculated as 10+all modifiers that would apply to a rolled
@@ -1654,7 +1609,7 @@ perception check for that character (such as the wisdom modifier and proficiency
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Perception" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Perception">
   Perception
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L295"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets perception skill bonus.
@@ -1688,7 +1643,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Performance" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Performance">
   Performance
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L302"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets performance skill bonus.
@@ -1722,7 +1677,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Persuasion" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Persuasion">
   Persuasion
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L309"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets persuasion skill bonus.
@@ -1756,7 +1711,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Reactions" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Reactions">
   Reactions
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L314"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a collection of reactions associated with the creature.</p>
@@ -1788,7 +1743,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Religion" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Religion">
   Religion
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L321"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets religion skill bonus.
@@ -1822,7 +1777,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Size" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Size">
   Size
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L326"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets size of the creature.  Example: Large.</p>
@@ -1854,7 +1809,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_SleightOfHand" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SleightOfHand">
   SleightOfHand
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L333"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets sleight of hand skill bonus.
@@ -1884,43 +1839,11 @@ Example: 0.</p>
 
 
 
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_SourceTitle_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SourceTitle*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_SourceTitle" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SourceTitle">
-  SourceTitle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L346"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the title of the source of the game component's data.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? SourceTitle { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_SpecialAbilities_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SpecialAbilities*"></a>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_SpecialAbilities" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.SpecialAbilities">
   SpecialAbilities
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L338"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets a collection of special abilities associated with the creature.</p>
@@ -1952,7 +1875,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Stealth" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Stealth">
   Stealth
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L345"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets stealth skill bonus.
@@ -1986,7 +1909,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Strength" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Strength">
   Strength
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L350"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets strength of the creature.  Example: 21.</p>
@@ -2018,7 +1941,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_StrengthSave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.StrengthSave">
   StrengthSave
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L357"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets strength saving throw of the creature.
@@ -2052,7 +1975,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Survival" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Survival">
   Survival
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L364"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets survival skill bonus.
@@ -2086,7 +2009,7 @@ Example: 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Swim" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Swim">
   Swim
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L369"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets swimming speed of the creature in feet per round.  Example 40.</p>
@@ -2114,75 +2037,11 @@ Example: 0.</p>
 
 
 
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_TagSymbol_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TagSymbol*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_TagSymbol" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TagSymbol">
-  TagSymbol
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L387"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the campaign tag symbol to use for this creature.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? TagSymbol { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_TagValuePrefix_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TagValuePrefix*"></a>
-
-  <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_TagValuePrefix" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TagValuePrefix">
-  TagValuePrefix
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L390"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or sets the tag value prefix for this game component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? TagValuePrefix { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_TextStatBlock_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TextStatBlock*"></a>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_TextStatBlock" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.TextStatBlock">
   TextStatBlock
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L374"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets creature data formatted in standard text format.</p>
@@ -2215,7 +2074,7 @@ public string? TextStatBlock { get; set; }</code></pre>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Tremorsense" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Tremorsense">
   Tremorsense
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L382"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets distance in feet that the creature can feel with tremorsense.
@@ -2249,7 +2108,7 @@ Example 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Truesight" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Truesight">
   Truesight
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L389"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets distance in feet that the creature can see with truesight.
@@ -2283,7 +2142,7 @@ Example 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Type" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Type">
   Type
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L394"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets type of the creature.  Example: aberration.</p>
@@ -2315,7 +2174,7 @@ Example 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Walk" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Walk">
   Walk
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L420"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L399"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets walking speed of the creature in feet per round.  Example 10.</p>
@@ -2347,7 +2206,7 @@ Example 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Wisdom" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Wisdom">
   Wisdom
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L404"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets wisdom of the creature.  Example: 15.</p>
@@ -2379,7 +2238,7 @@ Example 0.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_WisdomSave" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.WisdomSave">
   WisdomSave
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L432"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L411"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets wisdom saving throw of the creature.
@@ -2417,7 +2276,7 @@ Example: 6.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_Equals_System_Object_" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.Equals(System.Object)">
   Equals(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L418"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Implementation of Equals method.</p>
@@ -2456,7 +2315,7 @@ Example: 6.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_GetHashCode" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L456"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L435"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Implementation of GetHashCode method.</p>
@@ -2489,7 +2348,7 @@ Example: 6.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ToCampaignEntry" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ToCampaignEntry">
   ToCampaignEntry()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L445"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generates a CampaignLogger Entry for this game component.</p>
@@ -2497,7 +2356,7 @@ Example: 6.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CampaignEntry ToCampaignEntry()</code></pre>
+    <pre><code class="lang-csharp hljs">public override CampaignEntry ToCampaignEntry()</code></pre>
   </div>
 
 
@@ -2522,7 +2381,7 @@ Example: 6.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ToCampaignLoggerStatBlock" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ToCampaignLoggerStatBlock">
   ToCampaignLoggerStatBlock()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L489"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L468"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a Campaign-Logger statblock for the creature.</p>
@@ -2555,7 +2414,7 @@ Example: 6.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ToString" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L829"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L808"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Exports a simple textual description of this creature.</p>
@@ -2588,7 +2447,7 @@ Example: 6.</p>
 
   <h3 id="CampaignKit_Compendium_DungeonsAndDragons_Common_Creature_ToTextStatBlock" data-uid="CampaignKit.Compendium.DungeonsAndDragons.Common.Creature.ToTextStatBlock">
   ToTextStatBlock()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L838"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L817"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a text statblock for the this creature.</p>
@@ -2621,7 +2480,7 @@ Example: 6.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/117-add-monster-label-to-monsters/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L30" class="edit-link">Edit this page</a>
+          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/121-web-scraper-module/src/CampaignKit.Compendium.DungeonsAndDragons/Common/Creature.cs/#L30" class="edit-link">Edit this page</a>
         </div>
 
         
