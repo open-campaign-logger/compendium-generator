@@ -1,5 +1,4 @@
-﻿
-# Web Scraper Module
+﻿# Web Scraper Module
 
 This module downloads compendium web pages and converts them into a format that is importable into the Campaign Logger application.
 
