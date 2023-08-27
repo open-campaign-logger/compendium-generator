@@ -2,12 +2,26 @@
   "WebScraperPublicCompendiums": [
     {
       "CompendiumService": "CampaignKit.Compendium.WebScraper.Services.IWebScraperCompendiumService, CampaignKit.Compendium.WebScraper.dll",
-      "Description": "What's Old is new Again (WOIN) SRD material.'.",
+      "Description": "What's Old is new Again (WOIN) SRD material.",
       "GameSystem": "WOIN",
       "ImageUrl": "https://campaign-logger.com/images/campaign-logger.png",
       "IsActive": true,
       "OverwriteExisting": true,
       "SourceDataSets": [
+        {
+          "Labels": [ "WOIN", "Rule", "Character" ],
+          "SourceDataSetName": "Characters Sample-Character",
+          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetURI": "https://www.woinrules.com/characters/sample-character",
+          "Substitutions": [
+            {
+              "HTML": "<body><h1 id=\"captain-agathe-drake\">Captain Agathe Drake</h1><h2 id=\"description\">Description</h2><p>Tall, slender, and stern, Captain Drake has a noble bearing; an officer in the Elven musketeers, she spent years fighting goblin hordes. Despite her serious demeanour, Agathe&#39;s commanding presence makes others want to be around her.</p><p><strong>Careers</strong>. Noble, Squire, Musketeer, Musketeer, Musketeer.  Age 205.</p><p>A commanding grand elf musketeer who reads poetry and ancient literature</p><p><em>Medium sentient fey humanoid (grade 5; max dice pool 5d6)</em></p><h2 id=\"atributes\">Atributes</h2><table><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>STR</strong> 3 (2d6)</td><td><strong>AGI</strong> 8 (3d6)</td><td><strong>END</strong> 3 (2d6)</td></tr><tr><td><strong>INT</strong> 6 (3d6)</td><td><strong>LOG</strong> 6 (3d6)</td><td><strong>WIL</strong> 3 (2d6)</td></tr><tr><td><strong>CHA</strong> 9 (3d6)</td><td><strong>LUC</strong> 6 (3d6)</td><td><strong>REP</strong> 2 (1d6)</td></tr><tr><td><strong>MAG</strong> 3 (2d6) light</td><td></td></tr></tbody></table><h2 id=\"defense\">Defense</h2><p><strong>HEALTH</strong> 28<strong>MELEE DEFENSE</strong> 18; <strong>RANGED DEFENSE</strong> 12; <strong>MENTAL DEFENSE</strong> 11; <strong>VITAL DEFENSE</strong> 10<strong>SOAK</strong> 6 (chainmail); <strong>VULN</strong> electricity (1d6)</p><h2 id=\"offense\">Offense</h2><p><strong>ACTIONS</strong> 2<strong>NATURAL DAMAGE</strong> 1d6+2<em>Rapier</em> 5d6 (1d6+2 piercing damage)<em>Musket</em> 5d6 (2d6+2 ballistic damage; range 8)</p><h2 id=\"speed\">Speed</h2><p><strong>INITIATIVE</strong> 3d6<strong>PERCEPTION</strong> 5d6<strong>SPEED</strong> 5; <strong>CLIMB</strong> 3; <strong>JUMP</strong> 16&#39;/3&#39;<strong>CARRY</strong> 60lb</p><h2 id=\"skills-and-gear\">Skills and Gear</h2><p><strong>Skills</strong> muskets 3 (2d6), swords 3 (2d6), linguistics 1 (1d6), riding 1 (1d6), heraldry 1 (1d6), perception 3 (2d6)<strong>Gear</strong> chainmail, musket, healing kit, 1000gc</p><h2 id=\"exploits\">Exploits</h2><ul><li><strong>Fey</strong>. Like all elves, Agathe has the Fey creature type.    </li><li><strong>Commanding</strong>. Agathe can spend two actions to give another creature who can hear her a free action.    </li><li><strong>Magic sense</strong>. As an elf, Agathe can sense the presence of magic within 10&#39; of her, although she cannot determine its exact location.    </li><li><strong>Meditation</strong>. Elves do not need to sleep.  Sometimes they choose to meditate instead, but this is not required.    </li><li><strong>Naturally magic</strong>. Grand Elves are naturally magical and gain one free magical secret; Agathe knows the secret of light.    </li><li><strong>Cultural weapon</strong>. Agathe gained a free musket.    </li><li><strong>Silver spoon</strong>. Born a noble, Agathe gained a bonus 1,000gc and a superior set of clothing.    </li><li><strong>Dress wounds</strong>.  Agathe can use her healing kit to restore 2d6 HEALTH to a creature she can touch. This takes two actions.  No creature can benefit from this healing more than once per day.    </li><li><strong>Cloak flourish</strong>. Agathe can deflect blows with a swirl of her cloak. Agathe is always considered to be using a small shield, even when she has no spare hands.    </li><li><strong>Musket charge</strong>. Agathe can fire a musket shot, move her SPEED, and then attack with her rapier all with one action. She can only do this once per turn.    </li><li><strong>Whites of their eyes</strong>. When she is charged by another creature, Agathe gets a free musket shot at them as a free action when they come within 10&#39;. She must be wielding her musket to do this.    </li><li><strong>Aim</strong>. Agathe can spend an action aiming, which gives her +1d6 to a ranged attack taken immediately afterwards in the same turn.</li><li><strong>Quickdraw</strong>. Agathe is always considered to be wielding her musket.</li></ul></body>",
+              "XPath": "//body"
+            }
+          ],
+          "TagSymbol": "~",
+          "XPath": ""
+        },
         {
           "Labels": [
             "WOIN",
@@ -350,7 +364,7 @@
             "Axes",
             "Fantasy"
           ],
-          "SourceDataSetName": "Battleaxe (Fantasy)",
+          "SourceDataSetName": "Axe Battleaxe",
           "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
           "SourceDataSetURI": "https://www.woingear.com/axes/battleaxe",
           "TagSymbol": "~",
@@ -4276,7 +4290,7 @@
             "Melee",
             "Fantasy"
           ],
-          "SourceDataSetName": "Battleaxe (Modern)",
+          "SourceDataSetName": "Battleaxe (Fantasy)",
           "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
           "SourceDataSetURI": "https://www.woingear.com/melee-1/battleaxe",
           "TagSymbol": "~",
@@ -9570,14 +9584,6 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Character" ],
-          "SourceDataSetName": "Characters Sample-Character",
-          "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
-          "SourceDataSetURI": "https://www.woinrules.com/characters/sample-character",
-          "TagSymbol": "~",
-          "XPath": "//div[@role='main'][1]"
-        },
-        {
-          "Labels": [ "WOIN", "Rule", "Character" ],
           "SourceDataSetName": "Characters Traits",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/characters/traits",
@@ -10062,7 +10068,7 @@
         },
         {
           "Labels": [ "WOIN", "Rule", "Magic", "Psionics" ],
-          "SourceDataSetName": "Movement Speel Enhancements",
+          "SourceDataSetName": "Movement Spell Enhancements",
           "SourceDataSetParser": "CampaignKit.Compendium.WOIN.Common.WOINWebPage, CampaignKit.Compendium.WOIN.dll",
           "SourceDataSetURI": "https://www.woinrules.com/magic-chi-psionics/magic/spell-enhancements/movement-enhancements",
           "TagSymbol": "~",
