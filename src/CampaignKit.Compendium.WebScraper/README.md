@@ -68,3 +68,31 @@ A number of examples of how to configure the creation of compendiums using this 
         },
         ...
 ```
+
+## Tips
+- Some pages are just too complicated to work with.  In those cases try the following:
+  1. Use a tool like https://urltomarkdown.com/ to convert the content of your page to simplified markdown.
+  2. Adjust the markdown as required.
+  3. Use a tool like https://markdowntohtml.com/ to convert the simplified content back to html
+  4. Escape all quotes in the resulting HTML with a "\"
+  5. Remove all new lines in the HTML.
+  6. Update your configuration as follows:
+  ```json
+          {
+          "Labels": ...
+          "SourceDataSetName": ...
+          // Use the standard web scraper module since your html is clean.
+          "SourceDataSetParser": "CampaignKit.Compendium.WebScraper.Common.SRDWebPage, CampaignKit.Compendium.WebScraper.dll",
+          "SourceDataSetURI": ...
+          // Substitute the entire body of the downloaded file with your HTML
+          "Substitutions": [
+            {
+              "HTML": "<body>YOUR HTML HERE</body>",
+              "XPath": "//body"
+            }
+          ],
+          "TagSymbol": "~",
+          // Leave this blank, we don't need to navigate to a starting node because we've updated the whole file.
+          "XPath": ""
+        }
+  ```
