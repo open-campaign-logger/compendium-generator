@@ -216,6 +216,15 @@ namespace CampaignKit.Compendium.WebScraper.Common
             // Perform the replacement using Regex.Replace
             markdown = Regex.Replace(markdown, pattern, replacement, RegexOptions.Multiline);
 
+            // Regular expression pattern to match italicized text.
+            pattern = @"\*(.*?)\*";
+
+            // Replacement expression to replace bold format with CL parser version
+            replacement = " {i|$1} ";
+
+            // Perform the replacement using Regex.Replace
+            markdown = Regex.Replace(markdown, pattern, replacement, RegexOptions.Multiline);
+
             return markdown;
         }
 
