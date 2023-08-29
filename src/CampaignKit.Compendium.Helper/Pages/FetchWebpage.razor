@@ -1,4 +1,4 @@
-﻿@inject HttpClient Http
+﻿@page "/fetchwebpage"
 
 <h3>FetchWebpage</h3>
 
@@ -28,13 +28,5 @@
 
     private async Task LoadWebPageContent()
     {
-        try
-        {
-            webPageContent = await Http.GetStringAsync(url);
-        }
-        catch (Exception ex)
-        {
-            webPageContent = $"Error: {ex.Message}";
-        }
     }
 }
