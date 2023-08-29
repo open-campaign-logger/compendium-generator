@@ -1,0 +1,40 @@
+﻿@inject HttpClient Http
+
+<h3>FetchWebpage</h3>
+
+<PageTitle>Weather forecast</PageTitle>
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+<div class="row">
+    <div class="col-md-12">
+        <input type="text" @bind="url" placeholder="Enter web page URL" class="form-control" />
+        <button @onclick="LoadWebPageContent" class="btn btn-primary mt-2">Load</button>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <textarea @bind="webPageContent" class="form-control" rows="20"></textarea>
+    </div>
+</div>
+
+@code {
+
+    private string url;
+    private string webPageContent;
+
+    private async Task LoadWebPageContent()
+    {
+        try
+        {
+            webPageContent = await Http.GetStringAsync(url);
+        }
+        catch (Exception ex)
+        {
+            webPageContent = $"Error: {ex.Message}";
+        }
+    }
+}

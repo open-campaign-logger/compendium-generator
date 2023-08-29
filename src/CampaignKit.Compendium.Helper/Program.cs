@@ -1,7 +1,6 @@
+using CampaignKit.Compendium.Core.Services;
 using CampaignKit.Compendium.Helper.Data;
-
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
+using CampaignKit.Compendium.WebScraper.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddSingleton<IDownloadService, DefaultDownloadService>();
+builder.Services.AddSingleton<IWebScraperCompendiumService, DefaultWebScraperCompendiumService>();
 
 var app = builder.Build();
 
