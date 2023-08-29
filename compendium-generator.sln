@@ -29,8 +29,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.WebS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.WOIN", "src\CampaignKit.Compendium.WOIN\CampaignKit.Compendium.WOIN.csproj", "{66A1151F-F158-4C52-9ECB-9E5EECACFB84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampaignKit.Compendium.WebScraperUtility", "src\CampaignKit.Compendium.WebScraperUtility\CampaignKit.Compendium.WebScraperUtility.csproj", "{E3F5F563-3DD2-4A85-8E97-C05711DE6CB7}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,12 +71,6 @@ Global
 		{66A1151F-F158-4C52-9ECB-9E5EECACFB84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66A1151F-F158-4C52-9ECB-9E5EECACFB84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66A1151F-F158-4C52-9ECB-9E5EECACFB84}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E3F5F563-3DD2-4A85-8E97-C05711DE6CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E3F5F563-3DD2-4A85-8E97-C05711DE6CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E3F5F563-3DD2-4A85-8E97-C05711DE6CB7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{E3F5F563-3DD2-4A85-8E97-C05711DE6CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E3F5F563-3DD2-4A85-8E97-C05711DE6CB7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E3F5F563-3DD2-4A85-8E97-C05711DE6CB7}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
