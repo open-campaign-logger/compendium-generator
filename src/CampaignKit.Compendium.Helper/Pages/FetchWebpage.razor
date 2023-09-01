@@ -1,10 +1,10 @@
 ﻿@page "/fetchwebpage"
+@using CampaignKit.Compendium.Helper.Data
+@inject CompendiumService compendiumService
 
-<h3>FetchWebpage</h3>
+<PageTitle>Compendium Helper</PageTitle>
 
-<PageTitle>Weather forecast</PageTitle>
-
-<h1>Weather forecast</h1>
+<h1>Compendium Helper</h1>
 
 <p>This component demonstrates fetching data from a service.</p>
 
@@ -22,11 +22,11 @@
 </div>
 
 @code {
-
-    private string url;
-    private string webPageContent;
+    private string url = "https://oldschoolessentials.necroticgnome.com/srd/index.php/Main_Page";
+    private string webPageContent = string.Empty;
 
     private async Task LoadWebPageContent()
     {
+        webPageContent = await compendiumService.GetWebPage(url);
     }
 }

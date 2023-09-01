@@ -71,7 +71,7 @@ namespace CampaignKit.Compendium.WOIN.Common
                 definitionList.AppendChild(HtmlNode.CreateNode($"<dt><b>{spanNodes[0].OuterHtml}</b></dt>"));
 
                 // Create the definition item
-                definitionList.AppendChild(HtmlNode.CreateNode($"<dd>{definitionBuilder.ToString()}</dd>"));
+                definitionList.AppendChild(HtmlNode.CreateNode($"<dd>{definitionBuilder}</dd>"));
             }
         }
 

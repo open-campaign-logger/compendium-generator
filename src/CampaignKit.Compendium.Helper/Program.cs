@@ -1,15 +1,11 @@
-using CampaignKit.Compendium.Core.Services;
 using CampaignKit.Compendium.Helper.Data;
-using CampaignKit.Compendium.WebScraper.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<WeatherForecastService>();
-builder.Services.AddSingleton<IDownloadService, DefaultDownloadService>();
-builder.Services.AddSingleton<IWebScraperCompendiumService, DefaultWebScraperCompendiumService>();
+builder.Services.AddSingleton<CompendiumService>();
 
 var app = builder.Build();
 

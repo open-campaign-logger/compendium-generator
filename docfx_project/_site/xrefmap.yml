@@ -6535,6 +6535,47 @@ references:
   commentId: N:CampaignKit.Compendium.Helper.Data
   fullName: CampaignKit.Compendium.Helper.Data
   nameWithType: CampaignKit.Compendium.Helper.Data
+- uid: CampaignKit.Compendium.Helper.Data.CompendiumService
+  name: CompendiumService
+  href: api/CampaignKit.Compendium.Helper.Data.CompendiumService.html
+  commentId: T:CampaignKit.Compendium.Helper.Data.CompendiumService
+  fullName: CampaignKit.Compendium.Helper.Data.CompendiumService
+  nameWithType: CompendiumService
+- uid: CampaignKit.Compendium.Helper.Data.CompendiumService.#ctor(Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.Helper.Data.CompendiumService})
+  name: CompendiumService(ILogger<CompendiumService>)
+  href: api/CampaignKit.Compendium.Helper.Data.CompendiumService.html#CampaignKit_Compendium_Helper_Data_CompendiumService__ctor_Microsoft_Extensions_Logging_ILogger_CampaignKit_Compendium_Helper_Data_CompendiumService__
+  commentId: M:CampaignKit.Compendium.Helper.Data.CompendiumService.#ctor(Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.Helper.Data.CompendiumService})
+  name.vb: New(ILogger(Of CompendiumService))
+  fullName: CampaignKit.Compendium.Helper.Data.CompendiumService.CompendiumService(Microsoft.Extensions.Logging.ILogger<CampaignKit.Compendium.Helper.Data.CompendiumService>)
+  fullName.vb: CampaignKit.Compendium.Helper.Data.CompendiumService.New(Microsoft.Extensions.Logging.ILogger(Of CampaignKit.Compendium.Helper.Data.CompendiumService))
+  nameWithType: CompendiumService.CompendiumService(ILogger<CompendiumService>)
+  nameWithType.vb: CompendiumService.New(ILogger(Of CompendiumService))
+- uid: CampaignKit.Compendium.Helper.Data.CompendiumService.#ctor*
+  name: CompendiumService
+  href: api/CampaignKit.Compendium.Helper.Data.CompendiumService.html#CampaignKit_Compendium_Helper_Data_CompendiumService__ctor_
+  commentId: Overload:CampaignKit.Compendium.Helper.Data.CompendiumService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: CampaignKit.Compendium.Helper.Data.CompendiumService.CompendiumService
+  fullName.vb: CampaignKit.Compendium.Helper.Data.CompendiumService.New
+  nameWithType: CompendiumService.CompendiumService
+  nameWithType.vb: CompendiumService.New
+- uid: CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage(System.String)
+  name: GetWebPage(string)
+  href: api/CampaignKit.Compendium.Helper.Data.CompendiumService.html#CampaignKit_Compendium_Helper_Data_CompendiumService_GetWebPage_System_String_
+  commentId: M:CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage(System.String)
+  name.vb: GetWebPage(String)
+  fullName: CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage(string)
+  fullName.vb: CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage(String)
+  nameWithType: CompendiumService.GetWebPage(string)
+  nameWithType.vb: CompendiumService.GetWebPage(String)
+- uid: CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage*
+  name: GetWebPage
+  href: api/CampaignKit.Compendium.Helper.Data.CompendiumService.html#CampaignKit_Compendium_Helper_Data_CompendiumService_GetWebPage_
+  commentId: Overload:CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage
+  nameWithType: CompendiumService.GetWebPage
 - uid: CampaignKit.Compendium.Helper.Data.WeatherForecast
   name: WeatherForecast
   href: api/CampaignKit.Compendium.Helper.Data.WeatherForecast.html
