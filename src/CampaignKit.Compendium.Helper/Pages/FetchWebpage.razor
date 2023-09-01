@@ -1,6 +1,6 @@
 ﻿@page "/fetchwebpage"
 @using CampaignKit.Compendium.Helper.Data
-@inject CompendiumService compendiumService
+@inject DownloadService downloadService
 
 <PageTitle>Compendium Helper</PageTitle>
 
@@ -17,16 +17,18 @@
 
 <div class="row mt-4">
     <div class="col-md-12">
-        <textarea @bind="webPageContent" class="form-control" rows="20"></textarea>
+        <textarea @bind="markdown" class="form-control" rows="20"></textarea>
     </div>
 </div>
 
 @code {
-    private string url = "https://oldschoolessentials.necroticgnome.com/srd/index.php/Main_Page";
-    private string webPageContent = string.Empty;
+    private string url = "https://www.woinrules.com/characters/derived-statistics";
+    private string markdown = string.Empty;
 
     private async Task LoadWebPageContent()
     {
-        webPageContent = await compendiumService.GetWebPage(url);
+        markdown = "Loading...";
+        var html = await downloadService.GetWebPage(url);
+        markdown = MarkdownService.ConvertHtmlToMarkdown(html);
     }
 }

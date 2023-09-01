@@ -19,19 +19,19 @@ namespace CampaignKit.Compendium.Helper.Data
     /// <summary>
     /// CompendiumService provides methods for retrieving and manipulating compendium data.
     /// </summary>
-    public class CompendiumService
+    public class DownloadService
     {
 
-        private readonly ILogger<CompendiumService> logger;
+        private readonly ILogger<DownloadService> logger;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="CompendiumService"/> class.
+        /// Initializes a new instance of the <see cref="DownloadService"/> class.
         /// </summary>
         /// <param name="logger">Logger object for logging.</param>
         /// <returns>
         /// CompendiumService object.
         /// </returns>
-        public CompendiumService(ILogger<CompendiumService> logger)
+        public DownloadService(ILogger<DownloadService> logger)
         {
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
