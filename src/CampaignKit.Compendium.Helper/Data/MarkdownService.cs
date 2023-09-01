@@ -30,7 +30,7 @@ namespace CampaignKit.Compendium.Helper.Data
         /// </summary>
         /// <param name="html">The HTML to convert.</param>
         /// <returns>The Markdown representation of the HTML.</returns>
-        public static string ConvertHtmlToMarkdown(string html)
+        public string ConvertHtmlToMarkdown(string html)
         {
             // Create a new HtmlDocument object
             var doc = new HtmlDocument();

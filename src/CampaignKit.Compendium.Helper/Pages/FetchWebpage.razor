@@ -1,6 +1,23 @@
 ﻿@page "/fetchwebpage"
 @using CampaignKit.Compendium.Helper.Data
 @inject DownloadService downloadService
+@inject MarkdownService markdownService
+@inject IJSRuntime jsRuntime
+
+<!-- Import SimpleMD -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+
+<!-- SimpleMDE interop functions -->
+<script>
+    window.simpleMDEInterop = {
+        setMarkdown: function (markdown) {
+            if (window.simplemde) {
+                window.simplemde.value(markdown);
+            }
+        }
+    };
+</script>
 
 <PageTitle>Compendium Helper</PageTitle>
 
@@ -17,18 +34,71 @@
 
 <div class="row mt-4">
     <div class="col-md-12">
-        <textarea @bind="markdown" class="form-control" rows="20"></textarea>
+        <textarea id="markdownEditor" class="form-control" rows="20"></textarea>
     </div>
 </div>
 
 @code {
     private string url = "https://www.woinrules.com/characters/derived-statistics";
-    private string markdown = string.Empty;
 
+    /// <summary>
+    /// Invokes the JavaScript runtime to create a new SimpleMDE instance on the first render.
+    /// </summary>
+    /// <param name="firstRender">A boolean value indicating whether this is the first render.</param>
+    /// <returns>A Task that represents the asynchronous operation.</returns>
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender) // Only run on the first render
+        {
+            await Task.Delay(500); // Delay for 500ms
+            await jsRuntime.InvokeVoidAsync("eval", "window.simplemde = new SimpleMDE({ element: document.getElementById('markdownEditor') });");
+        }
+    }
+
+    /// <summary>
+    /// Loads the content of a web page, converts it to markdown and sets it.
+    /// </summary>
+    /// <returns>
+    /// A task that represents the asynchronous operation.
+    /// </returns>
     private async Task LoadWebPageContent()
     {
-        markdown = "Loading...";
+        // Set the markdown to "Loading..."
+        await SetMarkdownAsync("# Loading...");
+
+        // Download the web page from the given URL
         var html = await downloadService.GetWebPage(url);
-        markdown = MarkdownService.ConvertHtmlToMarkdown(html);
+
+        // Set the markdown to "Converting..."
+        await SetMarkdownAsync("# Converting...");
+
+        // Convert the HTML to markdown
+        var markdown = markdownService.ConvertHtmlToMarkdown(html);
+
+        // Set the markdown to the converted markdown
+        await SetMarkdownAsync(markdown);
+    }
+
+    /// <summary>
+    /// Sets the markdown content of the SimpleMDE editor.
+    /// </summary>
+    /// <param name="markdown">The markdown content to set.</param>
+    /// <returns>
+    /// An asynchronous task that represents the operation.
+    /// </returns>
+    private async Task SetMarkdownAsync(string markdown)
+    {
+        await jsRuntime.InvokeVoidAsync("simpleMDEInterop.setMarkdown", markdown);
+    }
+
+    /// <summary>
+    /// Asynchronously invokes the JavaScript function to get the markdown from the SimpleMDE editor.
+    /// </summary>
+    /// <returns>
+    /// A task that represents the asynchronous operation.
+    /// </returns>
+    private async Task GetMarkdownAsync()
+    {
+        await jsRuntime.InvokeVoidAsync("simpleMDEInterop.getMarkdown");
     }
 }
