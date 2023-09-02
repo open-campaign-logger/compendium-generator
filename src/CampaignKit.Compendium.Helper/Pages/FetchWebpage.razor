@@ -24,11 +24,13 @@
         setMarkdown: function (markdown) {
             // Log the markdown value
             console.log("Setting markdown:", markdown.substring(0, 50) + (markdown.length > 50 ? "..." : ""));  // Log the first 50 characters of markdown value, add "..." if there's more
-            if (!window.simplemde){
+            if (!window.simplemde) {
                 // Create a new instance of the SimpleMDE library and assign it to the window.simplemde variable
                 // Get the element with the id of 'markdownEditor' and assign it to the SimpleMDE instance
                 window.simplemde = new SimpleMDE({
-                    element: document.getElementById('markdownEditor')
+                    element: document.getElementById('markdownEditor'),
+                    // Add a toolbar to this editor with all available toolbar icons except the preview, side-by-side and fullscreen.
+                    toolbar: ["bold", "italic", "heading-smaller", "heading-bigger", "code", "quote", "unordered-list", "ordered-list", "clean-block", "link", "image", "table", "horizontal-rule", "preview"]
                 });
             }
             // Set the value of window.simplemde to the markdown string
@@ -85,57 +87,16 @@
         <textarea id="markdownEditor" class="form-control" style="flex-grow: 1; overflow: auto; box-sizing: border-box;"></textarea>
     </div>
 
-    <!-- Preview Panel Controls -->
-    <div class="col-md-6">
-        <!-- Tab titles -->
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <button class="nav-link @(currentTab == originalTab ? "active" : "")" @onclick="(() => SwitchTab(originalTab))">Original</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link @(currentTab == previewTab ? "active" : "")" @onclick="(() => SwitchTab(previewTab))">Preview</button>
-            </li>
-        </ul>
-
-        <!-- Tab content -->
-        <div class="tab-content mt-3">
-            <div class="tab-pane @(currentTab == originalTab ? "active" : "")">
-                <iframe id="webPreview" style="width: 100%; height: 700px; overflow: auto; box-sizing: border-box;"></iframe>
-            </div>
-            <div class="tab-pane @(currentTab == previewTab ? "active" : "")">
-                <div id="markdownPreview" style="width: 100%; height: 700px; overflow: auto; box-sizing: border-box;"></div>
-            </div>
-        </div>
-
+    <!-- Web View -->
+    <div class="col-md-6" style="display: flex; flex-direction: column;">
+        <iframe id="webPreview" style="width: 100%; height: 700px; overflow: auto; box-sizing: border-box;"></iframe>
     </div>
 
 </div>
 
 @code {
+
     private string url = "https://www.woinrules.com/characters/derived-statistics";
-
-    private string originalTab = "OriginalTab";
-    private string previewTab = "PreviewTab";
-    private string currentTab = "OriginalTab";
-
-    private void SwitchTab(string tabName)
-    {
-        currentTab = tabName;
-    }
-
-    /// <summary>
-    /// Invokes the JavaScript runtime to create a new SimpleMDE instance on the first render.
-    /// </summary>
-    /// <param name="firstRender">A boolean value indicating whether this is the first render.</param>
-    /// <returns>A Task that represents the asynchronous operation.</returns>
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender) // Only run on the first render
-        {
-            await Task.Delay(500); // Delay for 500ms
-            // await jsRuntime.InvokeVoidAsync("eval", "window.simplemde = new SimpleMDE({ element: document.getElementById('markdownEditor') });");
-        }
-    }
 
     /// <summary>
     /// Loads the content of a web page, converts it to markdown and sets it.
