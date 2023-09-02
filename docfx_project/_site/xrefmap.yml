@@ -6576,6 +6576,69 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage
   nameWithType: CompendiumService.GetWebPage
+- uid: CampaignKit.Compendium.Helper.Data.DownloadService
+  name: DownloadService
+  href: api/CampaignKit.Compendium.Helper.Data.DownloadService.html
+  commentId: T:CampaignKit.Compendium.Helper.Data.DownloadService
+  fullName: CampaignKit.Compendium.Helper.Data.DownloadService
+  nameWithType: DownloadService
+- uid: CampaignKit.Compendium.Helper.Data.DownloadService.#ctor(Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.Helper.Data.DownloadService})
+  name: DownloadService(ILogger<DownloadService>)
+  href: api/CampaignKit.Compendium.Helper.Data.DownloadService.html#CampaignKit_Compendium_Helper_Data_DownloadService__ctor_Microsoft_Extensions_Logging_ILogger_CampaignKit_Compendium_Helper_Data_DownloadService__
+  commentId: M:CampaignKit.Compendium.Helper.Data.DownloadService.#ctor(Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.Helper.Data.DownloadService})
+  name.vb: New(ILogger(Of DownloadService))
+  fullName: CampaignKit.Compendium.Helper.Data.DownloadService.DownloadService(Microsoft.Extensions.Logging.ILogger<CampaignKit.Compendium.Helper.Data.DownloadService>)
+  fullName.vb: CampaignKit.Compendium.Helper.Data.DownloadService.New(Microsoft.Extensions.Logging.ILogger(Of CampaignKit.Compendium.Helper.Data.DownloadService))
+  nameWithType: DownloadService.DownloadService(ILogger<DownloadService>)
+  nameWithType.vb: DownloadService.New(ILogger(Of DownloadService))
+- uid: CampaignKit.Compendium.Helper.Data.DownloadService.#ctor*
+  name: DownloadService
+  href: api/CampaignKit.Compendium.Helper.Data.DownloadService.html#CampaignKit_Compendium_Helper_Data_DownloadService__ctor_
+  commentId: Overload:CampaignKit.Compendium.Helper.Data.DownloadService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: CampaignKit.Compendium.Helper.Data.DownloadService.DownloadService
+  fullName.vb: CampaignKit.Compendium.Helper.Data.DownloadService.New
+  nameWithType: DownloadService.DownloadService
+  nameWithType.vb: DownloadService.New
+- uid: CampaignKit.Compendium.Helper.Data.DownloadService.GetWebPage(System.String)
+  name: GetWebPage(string)
+  href: api/CampaignKit.Compendium.Helper.Data.DownloadService.html#CampaignKit_Compendium_Helper_Data_DownloadService_GetWebPage_System_String_
+  commentId: M:CampaignKit.Compendium.Helper.Data.DownloadService.GetWebPage(System.String)
+  name.vb: GetWebPage(String)
+  fullName: CampaignKit.Compendium.Helper.Data.DownloadService.GetWebPage(string)
+  fullName.vb: CampaignKit.Compendium.Helper.Data.DownloadService.GetWebPage(String)
+  nameWithType: DownloadService.GetWebPage(string)
+  nameWithType.vb: DownloadService.GetWebPage(String)
+- uid: CampaignKit.Compendium.Helper.Data.DownloadService.GetWebPage*
+  name: GetWebPage
+  href: api/CampaignKit.Compendium.Helper.Data.DownloadService.html#CampaignKit_Compendium_Helper_Data_DownloadService_GetWebPage_
+  commentId: Overload:CampaignKit.Compendium.Helper.Data.DownloadService.GetWebPage
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Helper.Data.DownloadService.GetWebPage
+  nameWithType: DownloadService.GetWebPage
+- uid: CampaignKit.Compendium.Helper.Data.MarkdownService
+  name: MarkdownService
+  href: api/CampaignKit.Compendium.Helper.Data.MarkdownService.html
+  commentId: T:CampaignKit.Compendium.Helper.Data.MarkdownService
+  fullName: CampaignKit.Compendium.Helper.Data.MarkdownService
+  nameWithType: MarkdownService
+- uid: CampaignKit.Compendium.Helper.Data.MarkdownService.ConvertHtmlToMarkdown(System.String)
+  name: ConvertHtmlToMarkdown(string)
+  href: api/CampaignKit.Compendium.Helper.Data.MarkdownService.html#CampaignKit_Compendium_Helper_Data_MarkdownService_ConvertHtmlToMarkdown_System_String_
+  commentId: M:CampaignKit.Compendium.Helper.Data.MarkdownService.ConvertHtmlToMarkdown(System.String)
+  name.vb: ConvertHtmlToMarkdown(String)
+  fullName: CampaignKit.Compendium.Helper.Data.MarkdownService.ConvertHtmlToMarkdown(string)
+  fullName.vb: CampaignKit.Compendium.Helper.Data.MarkdownService.ConvertHtmlToMarkdown(String)
+  nameWithType: MarkdownService.ConvertHtmlToMarkdown(string)
+  nameWithType.vb: MarkdownService.ConvertHtmlToMarkdown(String)
+- uid: CampaignKit.Compendium.Helper.Data.MarkdownService.ConvertHtmlToMarkdown*
+  name: ConvertHtmlToMarkdown
+  href: api/CampaignKit.Compendium.Helper.Data.MarkdownService.html#CampaignKit_Compendium_Helper_Data_MarkdownService_ConvertHtmlToMarkdown_
+  commentId: Overload:CampaignKit.Compendium.Helper.Data.MarkdownService.ConvertHtmlToMarkdown
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Helper.Data.MarkdownService.ConvertHtmlToMarkdown
+  nameWithType: MarkdownService.ConvertHtmlToMarkdown
 - uid: CampaignKit.Compendium.Helper.Data.WeatherForecast
   name: WeatherForecast
   href: api/CampaignKit.Compendium.Helper.Data.WeatherForecast.html
