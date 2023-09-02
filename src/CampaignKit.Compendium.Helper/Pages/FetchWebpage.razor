@@ -2,12 +2,18 @@
 @using CampaignKit.Compendium.Helper.Data
 @inject DownloadService downloadService
 @inject MarkdownService markdownService
+@inject HtmlService htmlService
 @inject IJSRuntime jsRuntime
 
 <!-- Import SimpleMD -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
 <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 
+<style>
+    .CodeMirror {
+        height: 700px;
+    }
+</style>
 
 <script>
 
@@ -18,25 +24,43 @@
         setMarkdown: function (markdown) {
             // Log the markdown value
             console.log("Setting markdown:", markdown.substring(0, 50) + (markdown.length > 50 ? "..." : ""));  // Log the first 50 characters of markdown value, add "..." if there's more
-            // Check if the window.simplemde object exists
-            if (window.simplemde) {
-                // Set the value of window.simplemde to the markdown string
-                window.simplemde.value(markdown);
+            if (!window.simplemde){
+                // Create a new instance of the SimpleMDE library and assign it to the window.simplemde variable
+                // Get the element with the id of 'markdownEditor' and assign it to the SimpleMDE instance
+                window.simplemde = new SimpleMDE({
+                    element: document.getElementById('markdownEditor')
+                });
             }
+            // Set the value of window.simplemde to the markdown string
+            window.simplemde.value(markdown);
         }
     };
 
     // Interop functions for the Web Browser control.
-    window.webBrowserInterop = {
+    window.webPreviewInterop = {
 
         // Sets the source of an iframe element to the given URL.
-        setIframeSource: function (id, html) {
-            // Log the URL
-            console.log("Setting html:", html.substring(0, 50) + (html.length > 50 ? "..." : ""));  // Log the first 50 characters of the html value, add "..." if there's more
+        setHtml: function (htmlContent) {
+            // Log the call
+            console.log("Setting html:", htmlContent.substring(0, 50) + (htmlContent.length > 50 ? "..." : ""));  // Log the first 50 characters of the html value, add "..." if there's more
             // Get the iframe element by its id
-            var iframe = document.getElementById(id);
+            var iframe = document.getElementById('webPreview');
             // Set the source of the iframe to the given url
-            iframe.setAttribute('srcdoc', html);
+            iframe.setAttribute('srcdoc', htmlContent);
+        }
+    };
+
+    // Sets the HTML content of the markdown preview element.
+    window.markdownPreviewInterop = {
+
+        //This function sets the HTML content of the element with the ID 'markdownPreview' to the given htmlContent parameter.
+        setMarkdown: function (markdownContent) {
+            // Log the call
+            console.log("Setting markdown:", markdownContent.substring(0, 50) + (markdownContent.length > 50 ? "..." : ""));  // Log the first 50 characters of the html value, add "..." if there's more
+            // Get the component element by its id
+            var markdownPreview = document.getElementById('markdownPreview');
+            // Set the source of the component with the provided content
+            markdownPreview.innerHTML = markdownContent;
         }
     };
 
@@ -58,17 +82,46 @@
 <div class="row mt-4" style="align-items: stretch;">
     <!-- Markdown Editor Column -->
     <div class="col-md-6" style="display: flex; flex-direction: column;">
-        <textarea id="markdownEditor" class="form-control" style="flex-grow: 1; height: 100%; overflow: auto; box-sizing: border-box;"></textarea>
+        <textarea id="markdownEditor" class="form-control" style="flex-grow: 1; overflow: auto; box-sizing: border-box;"></textarea>
     </div>
 
-    <!-- Web Browser Control Column -->
+    <!-- Preview Panel Controls -->
     <div class="col-md-6">
-        <iframe id="webBrowserControl" style="width: 100%; height: 100%; overflow: auto; box-sizing: border-box;"></iframe>
+        <!-- Tab titles -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <button class="nav-link @(currentTab == originalTab ? "active" : "")" @onclick="(() => SwitchTab(originalTab))">Original</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link @(currentTab == previewTab ? "active" : "")" @onclick="(() => SwitchTab(previewTab))">Preview</button>
+            </li>
+        </ul>
+
+        <!-- Tab content -->
+        <div class="tab-content mt-3">
+            <div class="tab-pane @(currentTab == originalTab ? "active" : "")">
+                <iframe id="webPreview" style="width: 100%; height: 700px; overflow: auto; box-sizing: border-box;"></iframe>
+            </div>
+            <div class="tab-pane @(currentTab == previewTab ? "active" : "")">
+                <div id="markdownPreview" style="width: 100%; height: 700px; overflow: auto; box-sizing: border-box;"></div>
+            </div>
+        </div>
+
     </div>
+
 </div>
 
 @code {
     private string url = "https://www.woinrules.com/characters/derived-statistics";
+
+    private string originalTab = "OriginalTab";
+    private string previewTab = "PreviewTab";
+    private string currentTab = "OriginalTab";
+
+    private void SwitchTab(string tabName)
+    {
+        currentTab = tabName;
+    }
 
     /// <summary>
     /// Invokes the JavaScript runtime to create a new SimpleMDE instance on the first render.
@@ -80,7 +133,7 @@
         if (firstRender) // Only run on the first render
         {
             await Task.Delay(500); // Delay for 500ms
-            await jsRuntime.InvokeVoidAsync("eval", "window.simplemde = new SimpleMDE({ element: document.getElementById('markdownEditor') });");
+            // await jsRuntime.InvokeVoidAsync("eval", "window.simplemde = new SimpleMDE({ element: document.getElementById('markdownEditor') });");
         }
     }
 
@@ -99,7 +152,7 @@
         var html = await downloadService.GetWebPage(url);
 
         // Update the iframe's source to the current URL
-        await SetHtmlAsync(html);
+        await SetWebPreviewAsync(html);
 
         // Set the markdown to "Converting..."
         await SetMarkdownAsync("# Converting...");
@@ -112,15 +165,27 @@
     }
 
     /// <summary>
+    /// Sets the markdown preview using the given markdown string.
+    /// </summary>
+    /// <param name="markdown">The markdown string to be used for the preview.</param>
+    /// <returns>
+    /// An asynchronous task that represents the operation.
+    /// </returns>
+    private async Task SetMarkdownPreviewAsync(string markdown)
+    {
+        await jsRuntime.InvokeVoidAsync("window.markdownPreviewInterop.setMarkdown", markdown);
+    }
+
+    /// <summary>
     /// Sets the HTML of the browser control.
     /// </summary>
     /// <param name="html">The HTML to set.</param>
     /// <returns>
     /// An asynchronous task that represents the operation.
     /// </returns>
-    private async Task SetHtmlAsync(string html)
+    private async Task SetWebPreviewAsync(string html)
     {
-        await jsRuntime.InvokeVoidAsync("window.webBrowserInterop.setIframeSource", "webBrowserControl", html);
+        await jsRuntime.InvokeVoidAsync("window.webPreviewInterop.setHtml", html);
     }
 
     /// <summary>

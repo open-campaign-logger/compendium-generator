@@ -1,4 +1,4 @@
-﻿// <copyright file="CompendiumService.cs" company="Jochen Linnemann - IT-Service">
+﻿// <copyright file="DownloadService.cs" company="Jochen Linnemann - IT-Service">
 // Copyright (c) 2017-2023 Jochen Linnemann, Cory Gill.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,6 @@ namespace CampaignKit.Compendium.Helper.Data
     /// </summary>
     public class DownloadService
     {
-
         private readonly ILogger<DownloadService> logger;
 
         /// <summary>

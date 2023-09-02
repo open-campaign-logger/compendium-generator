@@ -14,6 +14,7 @@
 // limitations under the License.
 // </copyright>
 
+using CampaignKit.Compendium.Core.Configuration;
 using CampaignKit.Compendium.Helper.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,6 +24,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<DownloadService>();
 builder.Services.AddSingleton<MarkdownService>();
+builder.Services.AddSingleton<HtmlService>();
 
 var app = builder.Build();
 
