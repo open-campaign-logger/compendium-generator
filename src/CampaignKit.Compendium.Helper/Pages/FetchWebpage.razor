@@ -91,6 +91,7 @@
     <!-- Compendium Tree View -->
     <div class="col-md-2" style="display: flex; flex-direction: column;">
         <RadzenUpload Accept=".json" Url="upload/single" Complete="@UploadComplete"></RadzenUpload>
+        <RadzenTree Data="@mainTree" TextProperty="Text"></RadzenTree>
     </div>
 
     <!-- Markdown Editor Column -->
@@ -106,14 +107,19 @@
 </div>
 
 @code {
-    private string url = "https://www.woinrules.com/characters/derived-statistics";
 
-    protected async System.Threading.Tasks.Task UploadComplete(Radzen.UploadCompleteEventArgs args)
+    private string url = "https://www.woinrules.com/characters/derived-statistics";
+    private PublicCompendium compendium = new PublicCompendium();
+    private List<TreeNode> mainTree = new List<TreeNode>();
+
+    protected async Task UploadComplete(Radzen.UploadCompleteEventArgs args)
     {
-        if (args.Cancelled)
-        {
-            // do nothing
-        }
+        // Convert the JSON to a compendium object
+        compendium = compendiumService.LoadCompendium(args.RawResponse);
+
+        // Create a tree from the compendium
+        mainTree.Clear();
+        mainTree.Add(compendiumService.CreateTreeFromCompendium(compendium));
     }
 
     /// <summary>

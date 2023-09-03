@@ -20,10 +20,16 @@ namespace CampaignKit.Compendium.Helper.Data
 
     using Newtonsoft.Json;
 
+    using System.Text.RegularExpressions;
+
+    using CampaignKit.Compendium.WebScraper.Common;
+    using Newtonsoft.Json.Linq;
+    using System.Net.Http.Json;
+
     /// <summary>
     /// CompendiumService provides methods for loading compendiums.
     /// </summary>
-    public class CompendiumService
+    public partial class CompendiumService
     {
         private readonly ILogger<CompendiumService> logger;
 
@@ -37,6 +43,37 @@ namespace CampaignKit.Compendium.Helper.Data
         public CompendiumService(ILogger<CompendiumService> logger)
         {
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        }
+
+        /// <summary>
+        /// Creates a TreeNode from a PublicCompendium object.
+        /// </summary>
+        /// <param name="compendium">The PublicCompendium object to create the TreeNode from.</param>
+        /// <returns>A TreeNode object created from the PublicCompendium object.</returns>
+        public TreeNode CreateTreeFromCompendium(PublicCompendium compendium)
+        {
+            var sourceDataSets = new List<TreeNode>();
+            foreach (var sds in compendium.SourceDataSets)
+            {
+                var substitutions = new List<TreeNode>();
+                foreach (var sub in sds.Substitutions)
+                {
+                    substitutions.Add(new TreeNode { Text = sub.XPath ?? string.Empty });
+                }
+
+                sourceDataSets.Add(new TreeNode { Text = sds.SourceDataSetName, Children = substitutions });
+            }
+
+            return new TreeNode
+            {
+                Text = compendium.Title,
+                Children = new List<TreeNode>()
+                {
+                    new TreeNode { Text = $"Description: {compendium.Description}" },
+                    new TreeNode { Text = $"GameSystem: {compendium.GameSystem}" },
+                    new TreeNode { Text = "SourceDataSets", Children = sourceDataSets },
+                },
+            };
         }
 
         /// <summary>
@@ -55,12 +92,26 @@ namespace CampaignKit.Compendium.Helper.Data
             // Log method entry.
             this.logger.LogInformation("LoadCompendium method called with JSON: {JSON}.", json[0..50]);
 
-            // Create a PublicCompendium object using Newtonsoft.Json
-            var compendium = JsonConvert.DeserializeObject<PublicCompendium>(json) 
-                ?? throw new Exception("Unable to deserialize JSON into PublicCompendium object.");
+            // Deserialize the JSON string into a Dictionary object using Newtonsoft.Json
+            var dictionary = JsonConvert.DeserializeObject<Dictionary<string, List<PublicCompendium>>>(json);
+
+            // Validate that the dictionary contains a "compendium" key.
+            if (dictionary == null || dictionary.Keys.Count != 1)
+            {
+                throw new Exception("Unable to deserialize JSON into PublicCompendium object.");
+            }
+
+            // Get the List of PublicCompendium objects from the dictionary.
+            List<PublicCompendium> compendiumList = dictionary.Values.FirstOrDefault(new List<PublicCompendium>());
+
+            // Validate that the List contains a PublicCompendium object.
+            if (compendiumList == null || compendiumList.Count != 1)
+            {
+                this.logger.LogError("Multiple compendium configurations detected.  Only the first will be used.");
+            }
 
             // Return the PublicCompendium object.
-            return compendium;
+            return compendiumList?[0] ?? new PublicCompendium();
         }
     }
 }
