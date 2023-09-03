@@ -17,7 +17,7 @@
 namespace CampaignKit.Compendium.Helper.Data
 {
     /// <summary>
-    /// CompendiumService provides methods for retrieving and manipulating compendium data.
+    /// DownloadService class provides methods for downloading data from the web.
     /// </summary>
     public class DownloadService
     {
@@ -28,7 +28,7 @@ namespace CampaignKit.Compendium.Helper.Data
         /// </summary>
         /// <param name="logger">Logger object for logging.</param>
         /// <returns>
-        /// CompendiumService object.
+        /// DownloadService object.
         /// </returns>
         public DownloadService(ILogger<DownloadService> logger)
         {
@@ -42,6 +42,15 @@ namespace CampaignKit.Compendium.Helper.Data
         /// <returns>The contents of the web page.</returns>
         public async Task<string> GetWebPage(string url)
         {
+            // Validate parameters
+            if (url == null)
+            {
+                throw new ArgumentNullException(nameof(url));
+            }
+
+            // Log method entry.
+            this.logger.LogInformation("GetWebPage method called with URL: {Url}", url[..50]);
+
             // Create an HTTP client
             using var client = new HttpClient();
 
@@ -64,7 +73,6 @@ namespace CampaignKit.Compendium.Helper.Data
             client.DefaultRequestHeaders.Add("Accept-Encoding", "identity");
 
             // Send a GET request to the URL
-            this.logger.LogDebug("Starting to download file: {sourceDataUri}.", url);
             var response = await client.GetAsync(url);
 
             // Ensure the request was successful
@@ -74,7 +82,7 @@ namespace CampaignKit.Compendium.Helper.Data
             var content = await response.Content.ReadAsStringAsync();
 
             // Log the response
-            this.logger.LogDebug("Downloaded file: {sourceDataUri}.", url);
+            this.logger.LogInformation("GetWebPage method completed with response: {Response}", content[..50]);
 
             // Return the response
             return content;

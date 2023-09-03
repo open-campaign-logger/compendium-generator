@@ -79,7 +79,7 @@
 
   <h1 id="CampaignKit_Compendium_Helper_Data_CompendiumService" data-uid="CampaignKit.Compendium.Helper.Data.CompendiumService" class="text-break">
     Class CompendiumService
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/182-web-scraper-utility/src/CampaignKit.Compendium.Helper/Data/CompendiumService.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/182-web-scraper-utility/src/CampaignKit.Compendium.Helper/Data/CompendiumService.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -87,7 +87,7 @@
   <dl><dt>Assembly</dt><dd>CampaignKit.Compendium.Helper.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>CompendiumService provides methods for retrieving and manipulating compendium data.</p>
+  <div class="markdown summary"><p>CompendiumService provides methods for loading compendiums.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -147,7 +147,7 @@
 
   <h3 id="CampaignKit_Compendium_Helper_Data_CompendiumService__ctor_Microsoft_Extensions_Logging_ILogger_CampaignKit_Compendium_Helper_Data_CompendiumService__" data-uid="CampaignKit.Compendium.Helper.Data.CompendiumService.#ctor(Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.Helper.Data.CompendiumService})">
   CompendiumService(ILogger&lt;CompendiumService&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/182-web-scraper-utility/src/CampaignKit.Compendium.Helper/Data/CompendiumService.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/182-web-scraper-utility/src/CampaignKit.Compendium.Helper/Data/CompendiumService.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="CampaignKit.Compendium.Helper.Data.CompendiumService.html">CompendiumService</a> class.</p>
@@ -180,32 +180,32 @@
 </h2>
 
 
-  <a id="CampaignKit_Compendium_Helper_Data_CompendiumService_GetWebPage_" data-uid="CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage*"></a>
+  <a id="CampaignKit_Compendium_Helper_Data_CompendiumService_LoadCompendium_" data-uid="CampaignKit.Compendium.Helper.Data.CompendiumService.LoadCompendium*"></a>
 
-  <h3 id="CampaignKit_Compendium_Helper_Data_CompendiumService_GetWebPage_System_String_" data-uid="CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage(System.String)">
-  GetWebPage(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/182-web-scraper-utility/src/CampaignKit.Compendium.Helper/Data/CompendiumService.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <h3 id="CampaignKit_Compendium_Helper_Data_CompendiumService_LoadCompendium_System_String_" data-uid="CampaignKit.Compendium.Helper.Data.CompendiumService.LoadCompendium(System.String)">
+  LoadCompendium(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/open-campaign-logger/compendium-generator/blob/182-web-scraper-utility/src/CampaignKit.Compendium.Helper/Data/CompendiumService.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Asynchronously retrieves the contents of a web page from the specified URL.</p>
+  <div class="markdown level1 summary"><p>Loads a PublicCompendium object from a JSON string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetWebPage(string url)</code></pre>
+    <pre><code class="lang-csharp hljs">public PublicCompendium LoadCompendium(string json)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The URL of the web page.</p>
+    <dt><code>json</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The JSON string to deserialize.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>The contents of the web page.</p>
+    <dt><a class="xref" href="CampaignKit.Compendium.Core.Configuration.PublicCompendium.html">PublicCompendium</a></dt>
+    <dd><p>A PublicCompendium object.</p>
 </dd>
   </dl>
 
@@ -223,7 +223,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/182-web-scraper-utility/src/CampaignKit.Compendium.Helper/Data/CompendiumService.cs/#L22" class="edit-link">Edit this page</a>
+          <a href="https://github.com/open-campaign-logger/compendium-generator/blob/182-web-scraper-utility/src/CampaignKit.Compendium.Helper/Data/CompendiumService.cs/#L26" class="edit-link">Edit this page</a>
         </div>
 
         

@@ -1,20 +1,32 @@
 ﻿@page "/fetchwebpage"
+
+@using CampaignKit.Compendium.Helper
+@using CampaignKit.Compendium.Helper.Pages
 @using CampaignKit.Compendium.Helper.Data
+@using CampaignKit.Compendium.Core.Configuration
+@using Radzen.Blazor
+@using Radzen
+
+<!-- Runtime Services -->
+@inject IJSRuntime jsRuntime
+
+<!-- DI Services -->
 @inject DownloadService downloadService
 @inject MarkdownService markdownService
 @inject HtmlService htmlService
-@inject IJSRuntime jsRuntime
+@inject CompendiumService compendiumService
+@inject ILogger<FetchWebpage> logger
 
-<!-- Import SimpleMD -->
+<!-- SimpleMDE Setup -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
 <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
-
 <style>
     .CodeMirror {
         height: 700px;
     }
 </style>
 
+<!-- JS/Blazor Interop Functions -->
 <script>
 
     // Interop functions for the SimpleMDE control.
@@ -72,31 +84,37 @@
 
 <h1>Compendium Helper</h1>
 
-<p>This component demonstrates fetching data from a service.</p>
-
-<div class="row">
-    <div class="col-md-12">
-        <input type="text" @bind="url" placeholder="Enter web page URL" class="form-control" />
-        <button @onclick="LoadWebPageContent" class="btn btn-primary mt-2">Load</button>
-    </div>
-</div>
+<p>Use this utility to preview and modify Campaign Compendium configuration files..</p>
 
 <div class="row mt-4" style="align-items: stretch;">
+
+    <!-- Compendium Tree View -->
+    <div class="col-md-2" style="display: flex; flex-direction: column;">
+        <RadzenUpload Accept=".json" Url="upload/single" Complete="@UploadComplete"></RadzenUpload>
+    </div>
+
     <!-- Markdown Editor Column -->
-    <div class="col-md-6" style="display: flex; flex-direction: column;">
+    <div class="col-md-5" style="display: flex; flex-direction: column;">
         <textarea id="markdownEditor" class="form-control" style="flex-grow: 1; overflow: auto; box-sizing: border-box;"></textarea>
     </div>
 
     <!-- Web View -->
-    <div class="col-md-6" style="display: flex; flex-direction: column;">
+    <div class="col-md-5" style="display: flex; flex-direction: column;">
         <iframe id="webPreview" style="width: 100%; height: 700px; overflow: auto; box-sizing: border-box;"></iframe>
     </div>
 
 </div>
 
 @code {
-
     private string url = "https://www.woinrules.com/characters/derived-statistics";
+
+    protected async System.Threading.Tasks.Task UploadComplete(Radzen.UploadCompleteEventArgs args)
+    {
+        if (args.Cancelled)
+        {
+            // do nothing
+        }
+    }
 
     /// <summary>
     /// Loads the content of a web page, converts it to markdown and sets it.

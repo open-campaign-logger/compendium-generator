@@ -20,11 +20,41 @@ namespace CampaignKit.Compendium.Helper.Data{    using Markdig;
     /// This class provides methods for manipulating HTML strings.
     /// </summary>
     public class HtmlService    {
+        private readonly ILogger<HtmlService> logger;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="HtmlService"/> class.
+        /// </summary>
+        /// <param name="logger">Logger object for logging.</param>
+        /// <returns>
+        /// HtmlService object.
+        /// </returns>
+        public HtmlService(ILogger<HtmlService> logger)
+        {
+            this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        }
+
         /// <summary>
         /// Converts a Markdown string to HTML using Markdig.
         /// </summary>
         /// <param name="markdown">The Markdown string to convert.</param>
         /// <returns>The HTML string.</returns>
         public string ConvertMarkdownToHtml(string markdown)        {
+            // Validate parameters
+            if (markdown == null)
+            {
+                throw new ArgumentNullException(nameof(markdown));
+            }
+
+            // Log method entry.
+            this.logger.LogInformation("ConvertMarkdownToHtml method called with markdown: {Markdown}", markdown[..50]);
+
             // Use Markdig to convert Markdown to HTML
-            var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();            return Markdown.ToHtml(markdown, pipeline);        }    }}
+            var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
+            var response = Markdown.ToHtml(markdown, pipeline);
+
+            // Log the response
+            this.logger.LogInformation("ConvertMarkdownToHtml method completed with response: {Response}", response[..50]);
+
+            // Return the response.
+            return response;        }    }}

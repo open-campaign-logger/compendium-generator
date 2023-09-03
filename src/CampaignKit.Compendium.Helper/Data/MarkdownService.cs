@@ -25,6 +25,20 @@ namespace CampaignKit.Compendium.Helper.Data
     /// </summary>
     public class MarkdownService
     {
+        private readonly ILogger<MarkdownService> logger;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MarkdownService"/> class.
+        /// </summary>
+        /// <param name="logger">Logger object for logging.</param>
+        /// <returns>
+        /// MarkdownService object.
+        /// </returns>
+        public MarkdownService(ILogger<MarkdownService> logger)
+        {
+            this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        }
+
         /// <summary>
         /// Converts HTML to Markdown using the Markdig library.
         /// </summary>
@@ -32,6 +46,15 @@ namespace CampaignKit.Compendium.Helper.Data
         /// <returns>The Markdown representation of the HTML.</returns>
         public string ConvertHtmlToMarkdown(string html)
         {
+            // Validate parameters
+            if (html == null)
+            {
+                throw new ArgumentNullException(nameof(html));
+            }
+
+            // Log method entry.
+            this.logger.LogInformation("ConvertHtmlToMarkdown method called with html: {Html}", html[..50]);
+
             // Create a new HtmlDocument object
             var doc = new HtmlDocument();
 
@@ -58,6 +81,10 @@ namespace CampaignKit.Compendium.Helper.Data
             var converter = new Converter(config);
             var markdown = converter.Convert(html);
 
+            // Log the response
+            this.logger.LogInformation("ConvertHtmlToMarkdown method completed with response: {Response}", markdown[..50]);
+
+            // Return the reponse.
             return markdown;
         }
     }

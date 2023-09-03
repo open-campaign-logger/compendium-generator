@@ -18,14 +18,10 @@ namespace CampaignKit.Compendium.Core.Services
 {
     using System;
     using System.Collections.Generic;
-    using System.Threading.Tasks;
 
     using CampaignKit.Compendium.Core.Configuration;
 
     using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.Logging;
-    using Microsoft.Identity.Client;
-    using Microsoft.IdentityModel.Tokens;
 
     /// <summary>
     /// DefaultConfigurationService provides a default implementation of the IConfigurationService interface.

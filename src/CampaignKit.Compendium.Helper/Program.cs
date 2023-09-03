@@ -14,36 +14,76 @@
 // limitations under the License.
 // </copyright>
 
-using CampaignKit.Compendium.Core.Configuration;
-using CampaignKit.Compendium.Helper.Data;
-
-var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-builder.Services.AddRazorPages();
-builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<DownloadService>();
-builder.Services.AddSingleton<MarkdownService>();
-builder.Services.AddSingleton<HtmlService>();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+namespace CampaignKit.Compendium.Helper
 {
-    app.UseExceptionHandler("/Error");
+    using CampaignKit.Compendium.Helper.Data;
 
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    using Radzen;
+
+    /// <summary>
+    /// Default Program class.
+    /// </summary>
+    public class Program
+    {
+        /// <summary>
+        /// Main method for the application, configures the HTTP request pipeline and adds services
+        /// to the container.
+        /// </summary>
+        /// <param name="args">The command line arguments.</param>
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+
+            // Add services to the builder
+            builder.Services.AddRazorPages();
+            builder.Services.AddServerSideBlazor();
+
+            builder.Services.AddServerSideBlazor().AddHubOptions(o =>
+            {
+                o.MaximumReceiveMessageSize = 10 * 1024 * 1024;
+            });
+            builder.Services.AddScoped<DialogService>();
+            builder.Services.AddScoped<NotificationService>();
+            builder.Services.AddScoped<TooltipService>();
+            builder.Services.AddScoped<ContextMenuService>();
+
+            // Add singleton services to the builder
+            builder.Services.AddSingleton<DownloadService>();
+            builder.Services.AddSingleton<MarkdownService>();
+            builder.Services.AddSingleton<HtmlService>();
+            builder.Services.AddSingleton<CompendiumService>();
+
+            var app = builder.Build();
+
+            // Configure the HTTP request pipeline.
+            if (!app.Environment.IsDevelopment())
+            {
+                app.UseExceptionHandler("/Error");
+
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
+            }
+
+            // Redirect all requests to HTTPS
+            app.UseHttpsRedirection();
+
+            // Serve static files from the wwwroot folder
+            app.UseStaticFiles();
+
+            // Set up routing
+            app.UseRouting();
+
+            // Add support for controllers
+            app.MapControllers();
+
+            // Map the Blazor Hub
+            app.MapBlazorHub();
+
+            // Map the fallback page to the _Host page
+            app.MapFallbackToPage("/_Host");
+
+            // Run the application
+            app.Run();
+        }
+    }
 }
-
-app.UseHttpsRedirection();
-
-app.UseStaticFiles();
-
-app.UseRouting();
-
-app.MapBlazorHub();
-app.MapFallbackToPage("/_Host");
-
-app.Run();

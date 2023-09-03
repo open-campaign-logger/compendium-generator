@@ -6529,6 +6529,37 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.DungeonsAndDragons.TomeOfBeasts3.TomeOfBeasts3Creature.ToCreature
   nameWithType: TomeOfBeasts3Creature.ToCreature
+- uid: CampaignKit.Compendium.Helper
+  name: CampaignKit.Compendium.Helper
+  href: api/CampaignKit.Compendium.Helper.html
+  commentId: N:CampaignKit.Compendium.Helper
+  fullName: CampaignKit.Compendium.Helper
+  nameWithType: CampaignKit.Compendium.Helper
+- uid: CampaignKit.Compendium.Helper.Controllers
+  name: CampaignKit.Compendium.Helper.Controllers
+  href: api/CampaignKit.Compendium.Helper.Controllers.html
+  commentId: N:CampaignKit.Compendium.Helper.Controllers
+  fullName: CampaignKit.Compendium.Helper.Controllers
+  nameWithType: CampaignKit.Compendium.Helper.Controllers
+- uid: CampaignKit.Compendium.Helper.Controllers.UploadController
+  name: UploadController
+  href: api/CampaignKit.Compendium.Helper.Controllers.UploadController.html
+  commentId: T:CampaignKit.Compendium.Helper.Controllers.UploadController
+  fullName: CampaignKit.Compendium.Helper.Controllers.UploadController
+  nameWithType: UploadController
+- uid: CampaignKit.Compendium.Helper.Controllers.UploadController.Index
+  name: Index()
+  href: api/CampaignKit.Compendium.Helper.Controllers.UploadController.html#CampaignKit_Compendium_Helper_Controllers_UploadController_Index
+  commentId: M:CampaignKit.Compendium.Helper.Controllers.UploadController.Index
+  fullName: CampaignKit.Compendium.Helper.Controllers.UploadController.Index()
+  nameWithType: UploadController.Index()
+- uid: CampaignKit.Compendium.Helper.Controllers.UploadController.Index*
+  name: Index
+  href: api/CampaignKit.Compendium.Helper.Controllers.UploadController.html#CampaignKit_Compendium_Helper_Controllers_UploadController_Index_
+  commentId: Overload:CampaignKit.Compendium.Helper.Controllers.UploadController.Index
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Helper.Controllers.UploadController.Index
+  nameWithType: UploadController.Index
 - uid: CampaignKit.Compendium.Helper.Data
   name: CampaignKit.Compendium.Helper.Data
   href: api/CampaignKit.Compendium.Helper.Data.html
@@ -6560,22 +6591,22 @@ references:
   fullName.vb: CampaignKit.Compendium.Helper.Data.CompendiumService.New
   nameWithType: CompendiumService.CompendiumService
   nameWithType.vb: CompendiumService.New
-- uid: CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage(System.String)
-  name: GetWebPage(string)
-  href: api/CampaignKit.Compendium.Helper.Data.CompendiumService.html#CampaignKit_Compendium_Helper_Data_CompendiumService_GetWebPage_System_String_
-  commentId: M:CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage(System.String)
-  name.vb: GetWebPage(String)
-  fullName: CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage(string)
-  fullName.vb: CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage(String)
-  nameWithType: CompendiumService.GetWebPage(string)
-  nameWithType.vb: CompendiumService.GetWebPage(String)
-- uid: CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage*
-  name: GetWebPage
-  href: api/CampaignKit.Compendium.Helper.Data.CompendiumService.html#CampaignKit_Compendium_Helper_Data_CompendiumService_GetWebPage_
-  commentId: Overload:CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage
+- uid: CampaignKit.Compendium.Helper.Data.CompendiumService.LoadCompendium(System.String)
+  name: LoadCompendium(string)
+  href: api/CampaignKit.Compendium.Helper.Data.CompendiumService.html#CampaignKit_Compendium_Helper_Data_CompendiumService_LoadCompendium_System_String_
+  commentId: M:CampaignKit.Compendium.Helper.Data.CompendiumService.LoadCompendium(System.String)
+  name.vb: LoadCompendium(String)
+  fullName: CampaignKit.Compendium.Helper.Data.CompendiumService.LoadCompendium(string)
+  fullName.vb: CampaignKit.Compendium.Helper.Data.CompendiumService.LoadCompendium(String)
+  nameWithType: CompendiumService.LoadCompendium(string)
+  nameWithType.vb: CompendiumService.LoadCompendium(String)
+- uid: CampaignKit.Compendium.Helper.Data.CompendiumService.LoadCompendium*
+  name: LoadCompendium
+  href: api/CampaignKit.Compendium.Helper.Data.CompendiumService.html#CampaignKit_Compendium_Helper_Data_CompendiumService_LoadCompendium_
+  commentId: Overload:CampaignKit.Compendium.Helper.Data.CompendiumService.LoadCompendium
   isSpec: "True"
-  fullName: CampaignKit.Compendium.Helper.Data.CompendiumService.GetWebPage
-  nameWithType: CompendiumService.GetWebPage
+  fullName: CampaignKit.Compendium.Helper.Data.CompendiumService.LoadCompendium
+  nameWithType: CompendiumService.LoadCompendium
 - uid: CampaignKit.Compendium.Helper.Data.DownloadService
   name: DownloadService
   href: api/CampaignKit.Compendium.Helper.Data.DownloadService.html
@@ -6617,12 +6648,72 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Helper.Data.DownloadService.GetWebPage
   nameWithType: DownloadService.GetWebPage
+- uid: CampaignKit.Compendium.Helper.Data.HtmlService
+  name: HtmlService
+  href: api/CampaignKit.Compendium.Helper.Data.HtmlService.html
+  commentId: T:CampaignKit.Compendium.Helper.Data.HtmlService
+  fullName: CampaignKit.Compendium.Helper.Data.HtmlService
+  nameWithType: HtmlService
+- uid: CampaignKit.Compendium.Helper.Data.HtmlService.#ctor(Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.Helper.Data.HtmlService})
+  name: HtmlService(ILogger<HtmlService>)
+  href: api/CampaignKit.Compendium.Helper.Data.HtmlService.html#CampaignKit_Compendium_Helper_Data_HtmlService__ctor_Microsoft_Extensions_Logging_ILogger_CampaignKit_Compendium_Helper_Data_HtmlService__
+  commentId: M:CampaignKit.Compendium.Helper.Data.HtmlService.#ctor(Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.Helper.Data.HtmlService})
+  name.vb: New(ILogger(Of HtmlService))
+  fullName: CampaignKit.Compendium.Helper.Data.HtmlService.HtmlService(Microsoft.Extensions.Logging.ILogger<CampaignKit.Compendium.Helper.Data.HtmlService>)
+  fullName.vb: CampaignKit.Compendium.Helper.Data.HtmlService.New(Microsoft.Extensions.Logging.ILogger(Of CampaignKit.Compendium.Helper.Data.HtmlService))
+  nameWithType: HtmlService.HtmlService(ILogger<HtmlService>)
+  nameWithType.vb: HtmlService.New(ILogger(Of HtmlService))
+- uid: CampaignKit.Compendium.Helper.Data.HtmlService.#ctor*
+  name: HtmlService
+  href: api/CampaignKit.Compendium.Helper.Data.HtmlService.html#CampaignKit_Compendium_Helper_Data_HtmlService__ctor_
+  commentId: Overload:CampaignKit.Compendium.Helper.Data.HtmlService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: CampaignKit.Compendium.Helper.Data.HtmlService.HtmlService
+  fullName.vb: CampaignKit.Compendium.Helper.Data.HtmlService.New
+  nameWithType: HtmlService.HtmlService
+  nameWithType.vb: HtmlService.New
+- uid: CampaignKit.Compendium.Helper.Data.HtmlService.ConvertMarkdownToHtml(System.String)
+  name: ConvertMarkdownToHtml(string)
+  href: api/CampaignKit.Compendium.Helper.Data.HtmlService.html#CampaignKit_Compendium_Helper_Data_HtmlService_ConvertMarkdownToHtml_System_String_
+  commentId: M:CampaignKit.Compendium.Helper.Data.HtmlService.ConvertMarkdownToHtml(System.String)
+  name.vb: ConvertMarkdownToHtml(String)
+  fullName: CampaignKit.Compendium.Helper.Data.HtmlService.ConvertMarkdownToHtml(string)
+  fullName.vb: CampaignKit.Compendium.Helper.Data.HtmlService.ConvertMarkdownToHtml(String)
+  nameWithType: HtmlService.ConvertMarkdownToHtml(string)
+  nameWithType.vb: HtmlService.ConvertMarkdownToHtml(String)
+- uid: CampaignKit.Compendium.Helper.Data.HtmlService.ConvertMarkdownToHtml*
+  name: ConvertMarkdownToHtml
+  href: api/CampaignKit.Compendium.Helper.Data.HtmlService.html#CampaignKit_Compendium_Helper_Data_HtmlService_ConvertMarkdownToHtml_
+  commentId: Overload:CampaignKit.Compendium.Helper.Data.HtmlService.ConvertMarkdownToHtml
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Helper.Data.HtmlService.ConvertMarkdownToHtml
+  nameWithType: HtmlService.ConvertMarkdownToHtml
 - uid: CampaignKit.Compendium.Helper.Data.MarkdownService
   name: MarkdownService
   href: api/CampaignKit.Compendium.Helper.Data.MarkdownService.html
   commentId: T:CampaignKit.Compendium.Helper.Data.MarkdownService
   fullName: CampaignKit.Compendium.Helper.Data.MarkdownService
   nameWithType: MarkdownService
+- uid: CampaignKit.Compendium.Helper.Data.MarkdownService.#ctor(Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.Helper.Data.MarkdownService})
+  name: MarkdownService(ILogger<MarkdownService>)
+  href: api/CampaignKit.Compendium.Helper.Data.MarkdownService.html#CampaignKit_Compendium_Helper_Data_MarkdownService__ctor_Microsoft_Extensions_Logging_ILogger_CampaignKit_Compendium_Helper_Data_MarkdownService__
+  commentId: M:CampaignKit.Compendium.Helper.Data.MarkdownService.#ctor(Microsoft.Extensions.Logging.ILogger{CampaignKit.Compendium.Helper.Data.MarkdownService})
+  name.vb: New(ILogger(Of MarkdownService))
+  fullName: CampaignKit.Compendium.Helper.Data.MarkdownService.MarkdownService(Microsoft.Extensions.Logging.ILogger<CampaignKit.Compendium.Helper.Data.MarkdownService>)
+  fullName.vb: CampaignKit.Compendium.Helper.Data.MarkdownService.New(Microsoft.Extensions.Logging.ILogger(Of CampaignKit.Compendium.Helper.Data.MarkdownService))
+  nameWithType: MarkdownService.MarkdownService(ILogger<MarkdownService>)
+  nameWithType.vb: MarkdownService.New(ILogger(Of MarkdownService))
+- uid: CampaignKit.Compendium.Helper.Data.MarkdownService.#ctor*
+  name: MarkdownService
+  href: api/CampaignKit.Compendium.Helper.Data.MarkdownService.html#CampaignKit_Compendium_Helper_Data_MarkdownService__ctor_
+  commentId: Overload:CampaignKit.Compendium.Helper.Data.MarkdownService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: CampaignKit.Compendium.Helper.Data.MarkdownService.MarkdownService
+  fullName.vb: CampaignKit.Compendium.Helper.Data.MarkdownService.New
+  nameWithType: MarkdownService.MarkdownService
+  nameWithType.vb: MarkdownService.New
 - uid: CampaignKit.Compendium.Helper.Data.MarkdownService.ConvertHtmlToMarkdown(System.String)
   name: ConvertHtmlToMarkdown(string)
   href: api/CampaignKit.Compendium.Helper.Data.MarkdownService.html#CampaignKit_Compendium_Helper_Data_MarkdownService_ConvertHtmlToMarkdown_System_String_
@@ -6786,6 +6877,28 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Helper.Pages.ErrorModel.ShowRequestId
   nameWithType: ErrorModel.ShowRequestId
+- uid: CampaignKit.Compendium.Helper.Program
+  name: Program
+  href: api/CampaignKit.Compendium.Helper.Program.html
+  commentId: T:CampaignKit.Compendium.Helper.Program
+  fullName: CampaignKit.Compendium.Helper.Program
+  nameWithType: Program
+- uid: CampaignKit.Compendium.Helper.Program.Main(System.String[])
+  name: Main(string[])
+  href: api/CampaignKit.Compendium.Helper.Program.html#CampaignKit_Compendium_Helper_Program_Main_System_String___
+  commentId: M:CampaignKit.Compendium.Helper.Program.Main(System.String[])
+  name.vb: Main(String())
+  fullName: CampaignKit.Compendium.Helper.Program.Main(string[])
+  fullName.vb: CampaignKit.Compendium.Helper.Program.Main(String())
+  nameWithType: Program.Main(string[])
+  nameWithType.vb: Program.Main(String())
+- uid: CampaignKit.Compendium.Helper.Program.Main*
+  name: Main
+  href: api/CampaignKit.Compendium.Helper.Program.html#CampaignKit_Compendium_Helper_Program_Main_
+  commentId: Overload:CampaignKit.Compendium.Helper.Program.Main
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Helper.Program.Main
+  nameWithType: Program.Main
 - uid: CampaignKit.Compendium.Markdown.Common
   name: CampaignKit.Compendium.Markdown.Common
   href: api/CampaignKit.Compendium.Markdown.Common.html
