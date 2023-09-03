@@ -1,12 +1,27 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="container-fluid">
-    <!-- Bootstrap Top Navbar -->
-    <NavMenu />
-
-    <!-- Main Content Area -->
-    <div class="mt-4">
-        @Body
+<div class="page">
+    <div class="sidebar" style="@IconMenuCssClass">
+        <NavMenu ShowIconMenu="ToggleIconMenu" />
     </div>
+
+    <main>
+        <div class="top-row px-4">
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
 </div>
 
+@code {
+    private bool _iconMenuActive { get; set; }
+    private string? IconMenuCssClass => _iconMenuActive ? "width: 80px;" : null;
+
+    protected void ToggleIconMenu(bool iconMenuActive)
+    {
+        _iconMenuActive = iconMenuActive;
+    }
+}
