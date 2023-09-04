@@ -29,7 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.WebS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.WOIN", "src\CampaignKit.Compendium.WOIN\CampaignKit.Compendium.WOIN.csproj", "{66A1151F-F158-4C52-9ECB-9E5EECACFB84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampaignKit.Compendium.Helper", "src\CampaignKit.Compendium.Helper\CampaignKit.Compendium.Helper.csproj", "{C881C4B2-0624-4CD2-97FA-BE0392EE06AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampaignKit.Compendium.Helper", "src\CampaignKit.Compendium.Helper\CampaignKit.Compendium.Helper.csproj", "{C881C4B2-0624-4CD2-97FA-BE0392EE06AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,93 @@
+﻿@page "/tree"
+@using System.IO
+@inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment env
+
+<h3>TreeDemo</h3>
+
+<div class="row">
+    <div class="col-md-4">
+        <h3>Load Tree with Static Data</h3>
+        <RadzenTree Expand="@LogExpand" Change="@LogChange" Style="width:100%">
+            <RadzenTreeItem Text="Product-1">
+                <RadzenTreeItem Text="Product-1.1">
+                    <RadzenTreeItem Text="Product-1.1.1"></RadzenTreeItem>
+                    <RadzenTreeItem Text="Product-1.1.2"></RadzenTreeItem>
+                    <RadzenTreeItem Text="Product-1.1.3"></RadzenTreeItem>
+                </RadzenTreeItem>
+            </RadzenTreeItem>
+        </RadzenTree>
+
+    </div>
+
+    <div class="col-md-4">
+        <h3>RadzenTree for Files and Directories</h3>
+        <RadzenTree Expand="@LoadFiles" Change="@LogChange" Data="@entries" Style="width:100%">
+            <RadzenTreeLevel Text="@GetTextForNode"></RadzenTreeLevel>
+        </RadzenTree>
+    </div>
+
+    <div class="card">
+        <div class="col-md-6">
+            <h3>Events</h3>
+            <RadzenCard Style="overflow:auto;height:500px;">
+                @foreach (var e in events.OrderByDescending(i => i.Key))
+                {
+                    @e.Value
+                    <br />
+                }
+            </RadzenCard>
+        </div>
+    </div>
+</div>
+
+@code {
+
+    Dictionary<DateTime, string> events = new Dictionary<DateTime, string>();
+    IEnumerable<string> entries = null;
+
+    void Log(string eventName, string value)
+    {
+        events.Add(DateTime.Now, $"{eventName}: {value}");
+    }
+
+    void LogChange(TreeEventArgs args)
+    {
+        Log("Change", $"Item Text: {args.Text}");
+    }
+
+    void LogExpand(TreeExpandEventArgs args)
+    {
+        if (args.Text is string text)
+        {
+            Log("Expand", $"Item Text: {text}");
+        }
+    }
+
+    // For Directories and Files
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        entries = Directory.GetDirectories(env.ContentRootPath)
+        .Where(entry =>
+        {
+            var name = Path.GetFileName(entry);
+            return !name.StartsWith(".") && !name.Equals("bin") && !name.Equals("obj");
+        });
+    }
+
+    void LoadFiles(TreeExpandEventArgs args)
+    {
+        var directory = args.Value as string;
+        args.Children.Data = Directory.EnumerateFileSystemEntries(directory);
+        args.Children.Text = GetTextForNode;
+        args.Children.HasChildren = (data) => Directory.Exists((string)data);
+
+        Log("Expand", $"Item Text: {args.Text}");
+
+    }
+
+    string GetTextForNode(object data)
+    {
+        return Path.GetFileName((string)data);
+    }
+}

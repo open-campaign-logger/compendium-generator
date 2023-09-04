@@ -1,14 +1,10 @@
 ﻿@page "/fetchwebpage"
-
-@using CampaignKit.Compendium.Helper
-@using CampaignKit.Compendium.Helper.Pages
-@using CampaignKit.Compendium.Helper.Data
-@using CampaignKit.Compendium.Core.Configuration
-@using Radzen.Blazor
-@using Radzen
+@using Microsoft.AspNetCore.Hosting
+@using System.IO
 
 <!-- Runtime Services -->
 @inject IJSRuntime jsRuntime
+@inject IWebHostEnvironment env
 
 <!-- DI Services -->
 @inject DownloadService downloadService
@@ -86,12 +82,14 @@
 
 <p>Use this utility to preview and modify Campaign Compendium configuration files..</p>
 
-<div class="row mt-4" style="align-items: stretch;">
+<div class="row">
 
     <!-- Compendium Tree View -->
     <div class="col-md-2" style="display: flex; flex-direction: column;">
         <RadzenUpload Accept=".json" Url="upload/single" Complete="@UploadComplete"></RadzenUpload>
-        <RadzenTree Data="@mainTree" TextProperty="Text"></RadzenTree>
+        <RadzenTree Expand="@LoadFiles" Change="@LogChange" Data="@entries" Style="width:100%">
+            <RadzenTreeLevel Text="@GetTextForNode"></RadzenTreeLevel>
+        </RadzenTree>
     </div>
 
     <!-- Markdown Editor Column -->
@@ -104,6 +102,21 @@
         <iframe id="webPreview" style="width: 100%; height: 700px; overflow: auto; box-sizing: border-box;"></iframe>
     </div>
 
+</div>
+
+<div class="row">
+    <div class="card">
+        <div class="col-md-6">
+            <h3>Events</h3>
+            <RadzenCard Style="overflow:auto;height:500px;">
+                @foreach (var e in events.OrderByDescending(i => i.Key))
+                {
+                    @e.Value
+                    <br />
+                }
+            </RadzenCard>
+        </div>
+    </div>
 </div>
 
 @code {
@@ -120,6 +133,46 @@
         // Create a tree from the compendium
         mainTree.Clear();
         mainTree.Add(compendiumService.CreateTreeFromCompendium(compendium));
+
+        // Signal State Change
+        StateHasChanged();
+    }
+
+    Dictionary<DateTime, string> events = new Dictionary<DateTime, string>();
+    IEnumerable<string> entries = null;
+
+    void Log(string eventName, string value)
+    {
+        events.Add(DateTime.Now, $"{eventName}: {value}");
+    }
+
+    void LogChange(TreeEventArgs args)
+    {
+        Log("Change", $"Item Text: {args.Text}");
+    }
+
+    void LogExpand(TreeExpandEventArgs args)
+    {
+        if (args.Text is string text)
+        {
+            Log("Expand", $"Item Text: {text}");
+        }
+    }
+
+    void LoadFiles(TreeExpandEventArgs args)
+    {
+        var directory = args.Value as string;
+        args.Children.Data = Directory.EnumerateFileSystemEntries(directory);
+        args.Children.Text = GetTextForNode;
+        args.Children.HasChildren = (data) => Directory.Exists((string)data);
+
+        Log("Expand", $"Item Text: {args.Text}");
+
+    }
+
+    string GetTextForNode(object data)
+    {
+        return Path.GetFileName((string)data);
     }
 
     /// <summary>

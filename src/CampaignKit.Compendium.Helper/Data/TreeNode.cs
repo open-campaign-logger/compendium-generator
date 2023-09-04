@@ -37,6 +37,11 @@ namespace CampaignKit.Compendium.Helper.Data
         public string Text { get; set; } = string.Empty;
 
         /// <summary>
+        /// Gets or sets the tree node value.
+        /// </summary> 
+        public string Value { get; set; } = string.Empty;
+
+        /// <summary>
         /// Gets or sets the collection of child nodes of the current TreeNode.
         /// </summary>
         public IEnumerable<TreeNode> Children { get; set; }
