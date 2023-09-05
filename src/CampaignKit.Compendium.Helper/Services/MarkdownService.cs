@@ -14,7 +14,7 @@
 // limitations under the License.
 // </copyright>
 
-namespace CampaignKit.Compendium.Helper.Data
+namespace CampaignKit.Compendium.Helper.Services
 {
     using HtmlAgilityPack;
 
@@ -53,7 +53,7 @@ namespace CampaignKit.Compendium.Helper.Data
             }
 
             // Log method entry.
-            this.logger.LogInformation("ConvertHtmlToMarkdown method called with html: {Html}", html[..50]);
+            logger.LogInformation("ConvertHtmlToMarkdown method called with html: {Html}", html[..50]);
 
             // Create a new HtmlDocument object
             var doc = new HtmlDocument();
@@ -82,7 +82,7 @@ namespace CampaignKit.Compendium.Helper.Data
             var markdown = converter.Convert(html);
 
             // Log the response
-            this.logger.LogInformation("ConvertHtmlToMarkdown method completed with response: {Response}", markdown[..50]);
+            logger.LogInformation("ConvertHtmlToMarkdown method completed with response: {Response}", markdown[..50]);
 
             // Return the reponse.
             return markdown;

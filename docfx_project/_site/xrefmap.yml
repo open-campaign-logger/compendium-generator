@@ -6547,19 +6547,19 @@ references:
   commentId: T:CampaignKit.Compendium.Helper.Controllers.UploadController
   fullName: CampaignKit.Compendium.Helper.Controllers.UploadController
   nameWithType: UploadController
-- uid: CampaignKit.Compendium.Helper.Controllers.UploadController.Index
-  name: Index()
-  href: api/CampaignKit.Compendium.Helper.Controllers.UploadController.html#CampaignKit_Compendium_Helper_Controllers_UploadController_Index
-  commentId: M:CampaignKit.Compendium.Helper.Controllers.UploadController.Index
-  fullName: CampaignKit.Compendium.Helper.Controllers.UploadController.Index()
-  nameWithType: UploadController.Index()
-- uid: CampaignKit.Compendium.Helper.Controllers.UploadController.Index*
-  name: Index
-  href: api/CampaignKit.Compendium.Helper.Controllers.UploadController.html#CampaignKit_Compendium_Helper_Controllers_UploadController_Index_
-  commentId: Overload:CampaignKit.Compendium.Helper.Controllers.UploadController.Index
+- uid: CampaignKit.Compendium.Helper.Controllers.UploadController.Single(Microsoft.AspNetCore.Http.IFormFile)
+  name: Single(IFormFile)
+  href: api/CampaignKit.Compendium.Helper.Controllers.UploadController.html#CampaignKit_Compendium_Helper_Controllers_UploadController_Single_Microsoft_AspNetCore_Http_IFormFile_
+  commentId: M:CampaignKit.Compendium.Helper.Controllers.UploadController.Single(Microsoft.AspNetCore.Http.IFormFile)
+  fullName: CampaignKit.Compendium.Helper.Controllers.UploadController.Single(Microsoft.AspNetCore.Http.IFormFile)
+  nameWithType: UploadController.Single(IFormFile)
+- uid: CampaignKit.Compendium.Helper.Controllers.UploadController.Single*
+  name: Single
+  href: api/CampaignKit.Compendium.Helper.Controllers.UploadController.html#CampaignKit_Compendium_Helper_Controllers_UploadController_Single_
+  commentId: Overload:CampaignKit.Compendium.Helper.Controllers.UploadController.Single
   isSpec: "True"
-  fullName: CampaignKit.Compendium.Helper.Controllers.UploadController.Index
-  nameWithType: UploadController.Index
+  fullName: CampaignKit.Compendium.Helper.Controllers.UploadController.Single
+  nameWithType: UploadController.Single
 - uid: CampaignKit.Compendium.Helper.Data
   name: CampaignKit.Compendium.Helper.Data
   href: api/CampaignKit.Compendium.Helper.Data.html
@@ -6591,6 +6591,19 @@ references:
   fullName.vb: CampaignKit.Compendium.Helper.Data.CompendiumService.New
   nameWithType: CompendiumService.CompendiumService
   nameWithType.vb: CompendiumService.New
+- uid: CampaignKit.Compendium.Helper.Data.CompendiumService.CreateTreeFromCompendium(CampaignKit.Compendium.Core.Configuration.PublicCompendium)
+  name: CreateTreeFromCompendium(PublicCompendium)
+  href: api/CampaignKit.Compendium.Helper.Data.CompendiumService.html#CampaignKit_Compendium_Helper_Data_CompendiumService_CreateTreeFromCompendium_CampaignKit_Compendium_Core_Configuration_PublicCompendium_
+  commentId: M:CampaignKit.Compendium.Helper.Data.CompendiumService.CreateTreeFromCompendium(CampaignKit.Compendium.Core.Configuration.PublicCompendium)
+  fullName: CampaignKit.Compendium.Helper.Data.CompendiumService.CreateTreeFromCompendium(CampaignKit.Compendium.Core.Configuration.PublicCompendium)
+  nameWithType: CompendiumService.CreateTreeFromCompendium(PublicCompendium)
+- uid: CampaignKit.Compendium.Helper.Data.CompendiumService.CreateTreeFromCompendium*
+  name: CreateTreeFromCompendium
+  href: api/CampaignKit.Compendium.Helper.Data.CompendiumService.html#CampaignKit_Compendium_Helper_Data_CompendiumService_CreateTreeFromCompendium_
+  commentId: Overload:CampaignKit.Compendium.Helper.Data.CompendiumService.CreateTreeFromCompendium
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Helper.Data.CompendiumService.CreateTreeFromCompendium
+  nameWithType: CompendiumService.CreateTreeFromCompendium
 - uid: CampaignKit.Compendium.Helper.Data.CompendiumService.LoadCompendium(System.String)
   name: LoadCompendium(string)
   href: api/CampaignKit.Compendium.Helper.Data.CompendiumService.html#CampaignKit_Compendium_Helper_Data_CompendiumService_LoadCompendium_System_String_
@@ -6730,6 +6743,70 @@ references:
   isSpec: "True"
   fullName: CampaignKit.Compendium.Helper.Data.MarkdownService.ConvertHtmlToMarkdown
   nameWithType: MarkdownService.ConvertHtmlToMarkdown
+- uid: CampaignKit.Compendium.Helper.Data.TreeNode
+  name: TreeNode
+  href: api/CampaignKit.Compendium.Helper.Data.TreeNode.html
+  commentId: T:CampaignKit.Compendium.Helper.Data.TreeNode
+  fullName: CampaignKit.Compendium.Helper.Data.TreeNode
+  nameWithType: TreeNode
+- uid: CampaignKit.Compendium.Helper.Data.TreeNode.#ctor
+  name: TreeNode()
+  href: api/CampaignKit.Compendium.Helper.Data.TreeNode.html#CampaignKit_Compendium_Helper_Data_TreeNode__ctor
+  commentId: M:CampaignKit.Compendium.Helper.Data.TreeNode.#ctor
+  name.vb: New()
+  fullName: CampaignKit.Compendium.Helper.Data.TreeNode.TreeNode()
+  fullName.vb: CampaignKit.Compendium.Helper.Data.TreeNode.New()
+  nameWithType: TreeNode.TreeNode()
+  nameWithType.vb: TreeNode.New()
+- uid: CampaignKit.Compendium.Helper.Data.TreeNode.#ctor*
+  name: TreeNode
+  href: api/CampaignKit.Compendium.Helper.Data.TreeNode.html#CampaignKit_Compendium_Helper_Data_TreeNode__ctor_
+  commentId: Overload:CampaignKit.Compendium.Helper.Data.TreeNode.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: CampaignKit.Compendium.Helper.Data.TreeNode.TreeNode
+  fullName.vb: CampaignKit.Compendium.Helper.Data.TreeNode.New
+  nameWithType: TreeNode.TreeNode
+  nameWithType.vb: TreeNode.New
+- uid: CampaignKit.Compendium.Helper.Data.TreeNode.Children
+  name: Children
+  href: api/CampaignKit.Compendium.Helper.Data.TreeNode.html#CampaignKit_Compendium_Helper_Data_TreeNode_Children
+  commentId: P:CampaignKit.Compendium.Helper.Data.TreeNode.Children
+  fullName: CampaignKit.Compendium.Helper.Data.TreeNode.Children
+  nameWithType: TreeNode.Children
+- uid: CampaignKit.Compendium.Helper.Data.TreeNode.Children*
+  name: Children
+  href: api/CampaignKit.Compendium.Helper.Data.TreeNode.html#CampaignKit_Compendium_Helper_Data_TreeNode_Children_
+  commentId: Overload:CampaignKit.Compendium.Helper.Data.TreeNode.Children
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Helper.Data.TreeNode.Children
+  nameWithType: TreeNode.Children
+- uid: CampaignKit.Compendium.Helper.Data.TreeNode.Text
+  name: Text
+  href: api/CampaignKit.Compendium.Helper.Data.TreeNode.html#CampaignKit_Compendium_Helper_Data_TreeNode_Text
+  commentId: P:CampaignKit.Compendium.Helper.Data.TreeNode.Text
+  fullName: CampaignKit.Compendium.Helper.Data.TreeNode.Text
+  nameWithType: TreeNode.Text
+- uid: CampaignKit.Compendium.Helper.Data.TreeNode.Text*
+  name: Text
+  href: api/CampaignKit.Compendium.Helper.Data.TreeNode.html#CampaignKit_Compendium_Helper_Data_TreeNode_Text_
+  commentId: Overload:CampaignKit.Compendium.Helper.Data.TreeNode.Text
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Helper.Data.TreeNode.Text
+  nameWithType: TreeNode.Text
+- uid: CampaignKit.Compendium.Helper.Data.TreeNode.Value
+  name: Value
+  href: api/CampaignKit.Compendium.Helper.Data.TreeNode.html#CampaignKit_Compendium_Helper_Data_TreeNode_Value
+  commentId: P:CampaignKit.Compendium.Helper.Data.TreeNode.Value
+  fullName: CampaignKit.Compendium.Helper.Data.TreeNode.Value
+  nameWithType: TreeNode.Value
+- uid: CampaignKit.Compendium.Helper.Data.TreeNode.Value*
+  name: Value
+  href: api/CampaignKit.Compendium.Helper.Data.TreeNode.html#CampaignKit_Compendium_Helper_Data_TreeNode_Value_
+  commentId: Overload:CampaignKit.Compendium.Helper.Data.TreeNode.Value
+  isSpec: "True"
+  fullName: CampaignKit.Compendium.Helper.Data.TreeNode.Value
+  nameWithType: TreeNode.Value
 - uid: CampaignKit.Compendium.Helper.Data.WeatherForecast
   name: WeatherForecast
   href: api/CampaignKit.Compendium.Helper.Data.WeatherForecast.html

@@ -1,6 +1,6 @@
 ﻿@page "/fetchwebpage"
-@using Microsoft.AspNetCore.Hosting
-@using System.IO
+@    using Microsoft.AspNetCore.Hosting
+@    using System.IO
 
 <!-- Runtime Services -->
 @inject IJSRuntime jsRuntime
@@ -122,35 +122,54 @@
 @code {
 
     private string url = "https://www.woinrules.com/characters/derived-statistics";
-    private PublicCompendium compendium = new PublicCompendium();
+    private List<PublicCompendium> compendium = new List<PublicCompendium>();
     private List<TreeNode> mainTree = new List<TreeNode>();
 
+    /// <summary>
+    /// Uploads a compendium and creates a tree from it.
+    /// </summary>
+    /// <returns>
+    /// A tree created from the uploaded compendium.
+    /// </returns>
     protected async Task UploadComplete(Radzen.UploadCompleteEventArgs args)
     {
-        // Convert the JSON to a compendium object
-        compendium = compendiumService.LoadCompendium(args.RawResponse);
+        // // Convert the JSON to a compendium object
+        // compendium = compendiumService.LoadCompendiums(args.RawResponse);
 
-        // Create a tree from the compendium
-        mainTree.Clear();
-        mainTree.Add(compendiumService.CreateTreeFromCompendium(compendium));
+        // // Create a tree from the compendium
+        // mainTree.Clear();
+        // await Task.Run(() => mainTree.Add(compendiumService.CreateTreeFromCompendium(compendium)));
 
-        // Signal State Change
-        StateHasChanged();
+        // // Signal State Change
+        // StateHasChanged();
     }
 
     Dictionary<DateTime, string> events = new Dictionary<DateTime, string>();
     IEnumerable<string> entries = null;
 
+    /// <summary>
+    /// Logs an event with a given name and value.
+    /// </summary>
+    /// <param name="eventName">The name of the event.</param>
+    /// <param name="value">The value of the event.</param>
     void Log(string eventName, string value)
     {
         events.Add(DateTime.Now, $"{eventName}: {value}");
     }
 
+    /// <summary>
+    /// Logs a change event with the item text from the TreeEventArgs.
+    /// </summary>
+    /// <param name="args">The TreeEventArgs containing the item text.</param>
     void LogChange(TreeEventArgs args)
     {
         Log("Change", $"Item Text: {args.Text}");
     }
 
+    /// <summary>
+    /// Logs the expand event of a tree item.
+    /// </summary>
+    /// <param name="args">The tree expand event arguments.</param>
     void LogExpand(TreeExpandEventArgs args)
     {
         if (args.Text is string text)

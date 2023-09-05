@@ -1,0 +1,23 @@
+﻿@page "/helper"
+
+<PageTitle>Helper</PageTitle>
+<RadzenRow>
+    <RadzenColumn>
+        <RadzenCard>
+            <p>Upload an existing CompendiumHelper configuration file to get started.</p>
+            <RadzenUpload Accept=".json" Url="upload/single" Complete="@UploadComplete"></RadzenUpload>
+        </RadzenCard>
+        <RadzenCard>
+            <RadzenTree Data="@PublicCompendiums">
+                <RadzenTreeLevel TextProperty="Title" />
+            </RadzenTree>
+        </RadzenCard>
+    </RadzenColumn>
+    <RadzenColumn>
+    </RadzenColumn>
+    <RadzenColumn>
+    </RadzenColumn>
+</RadzenRow>
+
+@code {
+}

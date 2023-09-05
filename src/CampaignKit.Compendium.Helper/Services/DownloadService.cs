@@ -14,7 +14,7 @@
 // limitations under the License.
 // </copyright>
 
-namespace CampaignKit.Compendium.Helper.Data
+namespace CampaignKit.Compendium.Helper.Services
 {
     /// <summary>
     /// DownloadService class provides methods for downloading data from the web.
@@ -49,7 +49,7 @@ namespace CampaignKit.Compendium.Helper.Data
             }
 
             // Log method entry.
-            this.logger.LogInformation("GetWebPage method called with URL: {Url}", url[..50]);
+            logger.LogInformation("GetWebPage method called with URL: {Url}", url[..50]);
 
             // Create an HTTP client
             using var client = new HttpClient();
@@ -82,7 +82,7 @@ namespace CampaignKit.Compendium.Helper.Data
             var content = await response.Content.ReadAsStringAsync();
 
             // Log the response
-            this.logger.LogInformation("GetWebPage method completed with response: {Response}", content[..50]);
+            logger.LogInformation("GetWebPage method completed with response: {Response}", content[..50]);
 
             // Return the response
             return content;

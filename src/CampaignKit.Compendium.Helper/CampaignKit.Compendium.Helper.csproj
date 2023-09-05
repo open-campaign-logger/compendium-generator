@@ -30,7 +30,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CampaignKit.Compendium.Core\CampaignKit.Compendium.Core.csproj" />
-    <ProjectReference Include="..\CampaignKit.Compendium.WebScraper\CampaignKit.Compendium.WebScraper.csproj" />
   </ItemGroup>
 
 </Project>

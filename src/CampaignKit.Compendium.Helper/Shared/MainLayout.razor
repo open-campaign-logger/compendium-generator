@@ -1,27 +1,22 @@
 ﻿@inherits LayoutComponentBase
+<RadzenDialog />
+<RadzenNotification />
+<RadzenTooltip />
+<RadzenContextMenu />
 
-<div class="page">
-    <div class="sidebar" style="@IconMenuCssClass">
-        <NavMenu ShowIconMenu="ToggleIconMenu" />
-    </div>
+<RadzenLayout style="grid-template-areas: 'rz-sidebar rz-header' 'rz-sidebar rz-body';">
+    <RadzenHeader>
+        <RadzenMenu>
+            <RadzenMenuItem Text="" Path="/" Image="/images/logo.png"></RadzenMenuItem>
+            <RadzenMenuItem Text="Compendium Helper" Path="/helper"></RadzenMenuItem>
+        </RadzenMenu>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
-
-@code {
-    private bool _iconMenuActive { get; set; }
-    private string? IconMenuCssClass => _iconMenuActive ? "width: 80px;" : null;
-
-    protected void ToggleIconMenu(bool iconMenuActive)
-    {
-        _iconMenuActive = iconMenuActive;
-    }
-}
+    </RadzenHeader>
+    <RadzenBody Expanded="@sidebarExpanded">
+        <RadzenRow class="rz-mx-auto rz-px-4 rz-pt-2 rz-pt-md-4 rz-pt-lg-6 rz-pt-xl-12 rz-pb-2 rz-pb-lg-12" Style="max-width: 1440px;">
+            <RadzenColumn Size="12">
+                @Body
+            </RadzenColumn>
+        </RadzenRow>
+    </RadzenBody>
+</RadzenLayout>

@@ -725,6 +725,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CampaignKit.Compendium.Helper.Data.TreeNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CampaignKit.Compendium.Helper.Data.TreeNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CampaignKit.Compendium.Helper.Data.WeatherForecast.yml",
       "output": {
         ".html": {
